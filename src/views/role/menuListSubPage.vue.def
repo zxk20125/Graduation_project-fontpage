@@ -1,0 +1,529 @@
+{
+    "structure": {
+        "id": "root",
+        "component": "v2Container",
+        "direction": "row",
+        "layout": [
+            100
+        ],
+        "style": {
+            "width": "100%",
+            "height": "100%"
+        },
+        "data": {},
+        "children": [
+            {
+                "component": "v2Container",
+                "href": "v2Container",
+                "direction": "col",
+                "children": [
+                    {
+                        "dataType": "def",
+                        "optionConfig": "${menuList}",
+                        "options": [
+                            {
+                                "active": "true",
+                                "label": "",
+                                "value": "",
+                                "expanded": false,
+                                "checked": false,
+                                "children": [
+                                    {
+                                        "active": "true",
+                                        "label": "",
+                                        "value": "",
+                                        "expanded": false,
+                                        "checked": false,
+                                        "children": [
+                                            {
+                                                "active": "true",
+                                                "label": "",
+                                                "value": "",
+                                                "checked": false
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "nodeKey": "id",
+                        "showCheckbox": true,
+                        "leafOnly": true,
+                        "visible": true,
+                        "__capacity": "1",
+                        "component": "v2-component-tree",
+                        "href": "v2-component-tree",
+                        "children": [],
+                        "events": {},
+                        "id": 1578992390778,
+                        "pid": 1578992360842,
+                        "commonStyle": {
+                            "position": "relative",
+                            "margin-top": "10px",
+                            "margin-bottom": "10px",
+                            "margin-left": "10px",
+                            "margin-right": "10px",
+                            "box-sizing": "border-box",
+                            "align-self": "auto",
+                            "flex-basis": "auto",
+                            "flex-shrink": 1,
+                            "flex-grow": 0,
+                            "overflow": "hidden",
+                            "animation-duration": "1s",
+                            "width": "auto",
+                            "height": "auto"
+                        },
+                        "sizeLocked": {
+                            "widthLock": true,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated"
+                        ],
+                        "props": [
+                            "optionConfig",
+                            "nodeKey",
+                            "showCheckbox",
+                            "value",
+                            "leafOnly",
+                            "visible",
+                            "if",
+                            "customClass"
+                        ],
+                        "customClass": []
+                    }
+                ],
+                "style": {},
+                "commonStyle": {
+                    "position": "relative",
+                    "margin-top": "0px",
+                    "margin-bottom": "0px",
+                    "margin-left": "0px",
+                    "margin-right": "0px",
+                    "box-sizing": "border-box",
+                    "align-self": "stretch",
+                    "flex-basis": "auto",
+                    "flex-shrink": 1,
+                    "flex-grow": 0,
+                    "overflow": "hidden",
+                    "display": "flex",
+                    "flex-direction": "row",
+                    "justify-content": "flex-start",
+                    "align-items": "flex-start",
+                    "flex-wrap": "nowrap",
+                    "align-content": "stretch",
+                    "min-width": "50px",
+                    "min-height": "50px",
+                    "animation-duration": "1s"
+                },
+                "id": 1578992360842,
+                "pid": "root",
+                "ctnStyle": [
+                    {},
+                    {}
+                ],
+                "sizeLocked": {
+                    "widthLock": false,
+                    "heightLock": false
+                },
+                "animate": [
+                    "",
+                    "animated",
+                    ""
+                ],
+                "customClass": [
+                    "v2Container-1578992360842"
+                ],
+                "props": [
+                    "visible",
+                    "if",
+                    "customClass"
+                ]
+            },
+            {
+                "component": "v2Container",
+                "href": "v2Container",
+                "direction": "col",
+                "children": [
+                    {
+                        "theme": {
+                            "btnType": "normal",
+                            "size": ""
+                        },
+                        "style": {
+                            "btnStyle": {}
+                        },
+                        "disabled": false,
+                        "loading": false,
+                        "btnName": "取消",
+                        "shape": "plain",
+                        "visible": true,
+                        "__capacity": "1",
+                        "component": "v2-component-btn",
+                        "href": "v2-component-btn",
+                        "children": [],
+                        "events": {
+                            "_op_componentBtn_btn": {
+                                "click": [
+                                    "v2_component_btn_1578995286000"
+                                ]
+                            }
+                        },
+                        "id": 1578995298008,
+                        "pid": 1578995352572,
+                        "commonStyle": {
+                            "position": "relative",
+                            "margin-top": "10px",
+                            "margin-bottom": "10px",
+                            "margin-left": "10px",
+                            "margin-right": "10px",
+                            "box-sizing": "border-box",
+                            "align-self": "auto",
+                            "flex-basis": "auto",
+                            "flex-shrink": "0",
+                            "flex-grow": "0",
+                            "overflow": "hidden",
+                            "animation-duration": "1s"
+                        },
+                        "sizeLocked": {
+                            "widthLock": false,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated"
+                        ],
+                        "customClass": [
+                            "common-btn-normal"
+                        ],
+                        "props": [
+                            "disabled",
+                            "loading",
+                            "btnName",
+                            "leftIcon",
+                            "rightIcon",
+                            "shape",
+                            "visible",
+                            "if",
+                            "customClass"
+                        ]
+                    },
+                    {
+                        "theme": {
+                            "btnType": "primary",
+                            "size": ""
+                        },
+                        "style": {
+                            "btnStyle": {}
+                        },
+                        "disabled": false,
+                        "loading": false,
+                        "btnName": "提交",
+                        "shape": "def",
+                        "visible": true,
+                        "__capacity": "1",
+                        "component": "v2-component-btn",
+                        "href": "v2-component-btn",
+                        "children": [],
+                        "events": {
+                            "_op_componentBtn_btn": {
+                                "click": [
+                                    "v2_component_btn_1578996906000"
+                                ]
+                            }
+                        },
+                        "id": 1578995354622,
+                        "pid": 1578995352572,
+                        "commonStyle": {
+                            "position": "relative",
+                            "margin-top": "10px",
+                            "margin-bottom": "10px",
+                            "margin-left": "10px",
+                            "margin-right": "10px",
+                            "box-sizing": "border-box",
+                            "align-self": "auto",
+                            "flex-basis": "auto",
+                            "flex-shrink": 1,
+                            "flex-grow": 0,
+                            "overflow": "hidden",
+                            "animation-duration": "1s"
+                        },
+                        "sizeLocked": {
+                            "widthLock": false,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated"
+                        ],
+                        "customClass": [
+                            "common-btn-focus",
+                            "margin-right20"
+                        ],
+                        "props": [
+                            "disabled",
+                            "loading",
+                            "btnName",
+                            "leftIcon",
+                            "rightIcon",
+                            "shape",
+                            "visible",
+                            "if",
+                            "customClass"
+                        ]
+                    }
+                ],
+                "style": {},
+                "commonStyle": {
+                    "position": "relative",
+                    "margin-top": "0px",
+                    "margin-bottom": "0px",
+                    "margin-left": "0px",
+                    "margin-right": "0px",
+                    "box-sizing": "border-box",
+                    "align-self": "stretch",
+                    "flex-basis": "auto",
+                    "flex-shrink": 1,
+                    "flex-grow": 0,
+                    "overflow": "hidden",
+                    "display": "flex",
+                    "flex-direction": "row",
+                    "justify-content": "flex-end",
+                    "align-items": "flex-start",
+                    "flex-wrap": "nowrap",
+                    "align-content": "stretch",
+                    "min-width": "50px",
+                    "min-height": "50px",
+                    "animation-duration": "1s"
+                },
+                "id": 1578995352572,
+                "pid": "root",
+                "ctnStyle": [
+                    {},
+                    {}
+                ],
+                "sizeLocked": {
+                    "widthLock": false,
+                    "heightLock": false
+                },
+                "animate": [
+                    "",
+                    "animated"
+                ],
+                "customClass": [
+                    "diaglog-btn-ctn"
+                ],
+                "props": [
+                    "visible",
+                    "if",
+                    "customClass"
+                ]
+            },
+            null
+        ],
+        "events": {},
+        "commonStyle": {
+            "display": "flex",
+            "flex-direction": "column",
+            "justify-content": "flex-start",
+            "align-items": "flex-start",
+            "flex-wrap": "nowrap",
+            "align-content": "stretch",
+            "align-self": "stretch",
+            "flex-shrink": 1,
+            "flex-grow": 0,
+            "min-width": "50px",
+            "min-height": "50px",
+            "animation-duration": "1s",
+            "border-radius": "0px",
+            "opacity": 1
+        },
+        "ctnStyle": [
+            {},
+            {}
+        ],
+        "realSize": [],
+        "sizeLocked": {
+            "widthLock": false,
+            "heightLock": false
+        },
+        "animate": [
+            "",
+            "animated",
+            ""
+        ],
+        "props": [
+            "visible",
+            "if",
+            "customClass"
+        ],
+        "customClass": [
+            "v2Container-root"
+        ]
+    },
+    "forms": [],
+    "logic": {
+        "methods": [
+            {
+                "name": "getMenuList",
+                "desp": "获取菜单列表",
+                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\nctx.__getVueIns('1578992390778').$refs._op_componentTree_tree.store.defaultExpandAll = true;\n\nctx.$axios.get(`${axios.server}/menu/list`).then(res=>{\n\n    ctx.menuList = ctx.transformMenuList(res.obj);\n    ctx.$nextTick(function(){\n       var selectedMenus = ctx.AParams.menus.map(function(item){\n            return item.id;\n        }).filter(function(item){\n            return !ctx.menuObj[item];\n        });\n        ctx.__getVueIns('1578992390778').$refs._op_componentTree_tree.setCheckedKeys(selectedMenus,false);\n    })\n    \n}).catch(error=>{\n    console.log(error);\n})",
+                "params": [],
+                "isEvent": false,
+                "custom": true
+            },
+            {
+                "name": "transformMenuList",
+                "desp": "数据转换",
+                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\nlet menuObj = {},\n    result = list || [];\nif (list && list.length) {\n    result\n        .sort((a, b) => {\n            return parseInt(a.order, 10) - parseInt(b.order, 10);\n        })\n        .map(i => {\n            !i.parentId && (i.parentId = \"\");\n            let p = menuObj[i.parentId];\n            if (!p) {\n                p = menuObj[i.parentId] = {\n                    id: i.parentId,\n                    children: []\n                };\n            } else {\n                !p.children && (p.children = []);\n            }\n            let item = menuObj[i.id] || {\n                id: i.id\n            };\n            item.label = i.title;\n            item.parentId = i.parentId || \"\";\n            menuObj[i.id] = item;\n            p.children.push(item);\n        });\n    ctx.menuObj = menuObj;\n    Object.keys(menuObj)\n        .filter(e => !menuObj[e].children)\n        .map(e => delete menuObj[e]);\n\n    return menuObj[\"\"].children;\n    \n} else {\n    return [];\n}",
+                "params": [
+                    {
+                        "name": "list",
+                        "desp": "菜单数据"
+                    }
+                ],
+                "isEvent": false,
+                "custom": true
+            },
+            {
+                "name": "v2_component_btn_1578995286000",
+                "desp": "关闭关联菜单子页面",
+                "code": "/**\n* 事件绑定在vue实例上，第一个参数是vue实例。\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\n**/\n\n//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\nctx.close();\n",
+                "params": [
+                    {
+                        "name": "vueIns",
+                        "desp": "组件的vue实例"
+                    }
+                ],
+                "isEvent": true,
+                "custom": true,
+                "id": 1578995298008
+            },
+            {
+                "name": "associateMenu",
+                "desp": "关联菜单",
+                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\nvar menuIds  = ctx.__getVueIns('1578992390778').$refs._op_componentTree_tree.getCheckedKeys();\nvar halfMenuIds  = ctx.__getVueIns('1578992390778').$refs._op_componentTree_tree.getHalfCheckedKeys();\n\nctx.$axios.post(`${axios.server}/role/update/menu/${ctx.AParams.id}`, JSON.stringify([...menuIds,...halfMenuIds]),{\n    headers: {\n        'Content-type':'application/json'\n    }\n}).then(res => {\n    //下一步的行为\n    if(res.success){\n        ctx.$notify({\n            type: 'success',\n            title: '关联菜单成功'\n        });\n        \n    }else{\n        this.$notify({\n            title: res.msg,\n            type: 'error'\n        });\n    }\n    ctx.close();\n    ctx.$root.confirm();\n        \n}).catch(function (error) {\n        console.log(error);\n});",
+                "params": [],
+                "isEvent": false,
+                "custom": true
+            },
+            {
+                "name": "v2_component_btn_1578996906000",
+                "desp": "关联菜单",
+                "code": "/**\n* 事件绑定在vue实例上，第一个参数是vue实例。\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\n**/\n\n//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\n/**\n方法名称：associateMenu\n方法描述：关联菜单\n\n**/\nctx.associateMenu();",
+                "params": [
+                    {
+                        "name": "vueIns",
+                        "desp": "组件的vue实例"
+                    }
+                ],
+                "isEvent": true,
+                "custom": true,
+                "id": 1578995354622
+            }
+        ],
+        "watch": {},
+        "beforeCreate": {
+            "code": ""
+        },
+        "created": {
+            "code": ""
+        },
+        "beforeMount": {
+            "code": ""
+        },
+        "mounted": {
+            "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\nctx.getMenuList();"
+        },
+        "beforeUpdate": {
+            "code": ""
+        },
+        "updated": {
+            "code": ""
+        },
+        "beforeDestroy": {
+            "code": ""
+        },
+        "destroyed": {
+            "code": ""
+        },
+        "activated": {
+            "code": ""
+        },
+        "deactivated": {
+            "code": ""
+        },
+        "pollList": [],
+        "url2data": {
+            "vdaSource": []
+        }
+    },
+    "dataBasket": {
+        "data": {},
+        "list": [
+            {
+                "desp": "菜单数据",
+                "name": "menuList",
+                "code": "[]",
+                "setCode": "",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false
+            },
+            {
+                "desp": "选中的数据",
+                "name": "selectedMenus",
+                "code": "[]",
+                "setCode": "",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false
+            },
+            {
+                "desp": "菜单对象",
+                "name": "menuObj",
+                "code": "{}",
+                "setCode": "",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false
+            }
+        ],
+        "mapping": {
+            "1578910493033": [
+                {
+                    "id": 1578910493033,
+                    "modelValue": "optionConfig",
+                    "dataValue": "menuList",
+                    "type": ""
+                }
+            ],
+            "1578992390778": [
+                {
+                    "id": 1578992390778,
+                    "modelValue": "optionConfig",
+                    "dataValue": "menuList",
+                    "type": ""
+                }
+            ]
+        }
+    },
+    "events": {},
+    "emitList": [],
+    "display": {
+        "icon": "icontongyong",
+        "desp": "关联菜单子页面",
+        "type": "gridLayout",
+        "width": "800px",
+        "height": "1080px"
+    },
+    "scssCode": ".diaglog-btn-ctn{\r\n    position:absolute!important;\r\n    bottom:0;\r\n    width:100%;\r\n    right:0;\r\n    border-top:1px solid #e5e5e5;\r\n}\r\n.common-btn-focus{\r\n   // background:#457ce2;\r\n    height:32px;\r\n   // color:#fff;\r\n    line-height:32px;\r\n    padding-top:0;\r\n    padding-bottom:0;\r\n}\r\n.common-btn-normal{\r\n    height:32px;\r\n    line-height:32px;\r\n    padding-top:0;\r\n    padding-bottom:0;\r\n    border:1px solid #dcdfe6;\r\n   // color:#606266;\r\n  //  background:#fff;\r\n}\r\n.margin-right20{\r\n    margin-right:20px!important;\r\n}\r\n.form-user-info-wrapper{\r\n    width:70%;\r\n    margin-left:auto!important;\r\n    margin-right:auto!important;\r\n}\r\n",
+    "nls": "",
+    "mixins": [],
+    "imports": [],
+    "disableVueSPA": false
+}

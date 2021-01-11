@@ -1,0 +1,1800 @@
+{
+    "structure": {
+        "id": "root",
+        "component": "v2Container",
+        "direction": "row",
+        "layout": [
+            100
+        ],
+        "style": {
+            "width": "100%",
+            "height": "100%"
+        },
+        "data": {},
+        "children": [
+            {
+                "direction": "row",
+                "visible": true,
+                "__capacity": "1",
+                "component": "v2-layout",
+                "href": "v2-layout",
+                "children": [
+                    {
+                        "height": "100px",
+                        "direction": "col",
+                        "visible": true,
+                        "__capacity": "1",
+                        "component": "v2-layout",
+                        "href": "v2-layout",
+                        "children": [
+                            {
+                                "style": {
+                                    "textStyle": {}
+                                },
+                                "text": "查询条件",
+                                "editable": false,
+                                "textBreak": true,
+                                "visible": true,
+                                "__capacity": "1",
+                                "component": "v2-component-text",
+                                "href": "v2-component-text",
+                                "children": [],
+                                "events": {},
+                                "id": 1579162661447,
+                                "pid": 1579162475512,
+                                "commonStyle": {
+                                    "position": "relative",
+                                    "margin-top": "10px",
+                                    "margin-bottom": "10px",
+                                    "margin-left": "10px",
+                                    "margin-right": "10px",
+                                    "box-sizing": "border-box",
+                                    "align-self": "auto",
+                                    "flex-basis": "auto",
+                                    "flex-shrink": "1",
+                                    "flex-grow": "0",
+                                    "overflow": "hidden",
+                                    "animation-duration": "1s"
+                                },
+                                "customClass": [],
+                                "sizeLocked": {
+                                    "widthLock": false,
+                                    "heightLock": false
+                                },
+                                "animate": [
+                                    "",
+                                    "animated"
+                                ]
+                            },
+                            {
+                                "theme": {
+                                    "btnType": "text"
+                                },
+                                "style": {
+                                    "btnStyle": {}
+                                },
+                                "disabled": false,
+                                "loading": false,
+                                "btnName": "${searchSwitch.btnName}",
+                                "leftIcon": "${searchSwitch.btnIcon}",
+                                "shape": "def",
+                                "visible": true,
+                                "__capacity": "1",
+                                "component": "v2-component-btn",
+                                "href": "v2-component-btn",
+                                "children": [],
+                                "events": {
+                                    "_op_componentBtn_btn": {
+                                        "click": [
+                                            "v2_component_btn_1579248259000"
+                                        ]
+                                    }
+                                },
+                                "id": 1579247522711,
+                                "pid": 1579162475512,
+                                "commonStyle": {
+                                    "position": "absolute",
+                                    "margin-top": "0",
+                                    "margin-bottom": "0",
+                                    "margin-left": "10px",
+                                    "margin-right": "30px",
+                                    "box-sizing": "border-box",
+                                    "align-self": "auto",
+                                    "flex-basis": "auto",
+                                    "flex-shrink": "1",
+                                    "flex-grow": "0",
+                                    "overflow": "hidden",
+                                    "right": "0",
+                                    "animation-duration": "1s"
+                                },
+                                "customClass": [],
+                                "sizeLocked": {
+                                    "widthLock": false,
+                                    "heightLock": false
+                                },
+                                "animate": [
+                                    "",
+                                    "animated"
+                                ]
+                            }
+                        ],
+                        "events": {},
+                        "id": 1579162475512,
+                        "pid": 1579154143412,
+                        "commonStyle": {
+                            "position": "relative",
+                            "margin-top": "0px",
+                            "margin-bottom": "0px",
+                            "margin-left": "0px",
+                            "margin-right": "0px",
+                            "box-sizing": "border-box",
+                            "align-self": "stretch",
+                            "flex-basis": "auto",
+                            "flex-shrink": 1,
+                            "flex-grow": 0,
+                            "overflow": "hidden",
+                            "display": "flex",
+                            "flex-direction": "row",
+                            "justify-content": "flex-start",
+                            "align-items": "center",
+                            "flex-wrap": "nowrap",
+                            "align-content": "stretch",
+                            "min-width": "50px",
+                            "min-height": "50px",
+                            "animation-duration": "1s"
+                        },
+                        "customClass": [
+                            "template-ctt-header"
+                        ],
+                        "sizeLocked": {
+                            "widthLock": false,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated"
+                        ],
+                        "ctnStyle": [
+                            {},
+                            {}
+                        ]
+                    },
+                    {
+                        "component": "v2-layout",
+                        "href": "v2-layout",
+                        "direction": "row",
+                        "children": [
+                            {
+                                "component": "v2-layout",
+                                "href": "v2-layout",
+                                "direction": "col",
+                                "children": [
+                                    {
+                                        "theme": {
+                                            "size": "medium"
+                                        },
+                                        "style": {
+                                            "label": {}
+                                        },
+                                        "disabled": false,
+                                        "label": "标题文本",
+                                        "placeholder": "请输入",
+                                        "titleMode": "col",
+                                        "labelWitdh": "80px",
+                                        "inputType": "text",
+                                        "rows": "2",
+                                        "showWordLimit": false,
+                                        "clearable": false,
+                                        "isRequired": false,
+                                        "autoComplete": false,
+                                        "visible": true,
+                                        "__capacity": "1",
+                                        "component": "v2-form-input",
+                                        "href": "v2-form-input",
+                                        "children": [],
+                                        "events": {},
+                                        "id": 1579154226141,
+                                        "pid": 1579154943625,
+                                        "commonStyle": {
+                                            "position": "relative",
+                                            "margin-top": "10px",
+                                            "margin-bottom": "10px",
+                                            "margin-left": "10px",
+                                            "margin-right": "10px",
+                                            "box-sizing": "border-box",
+                                            "align-self": "auto",
+                                            "flex-basis": "auto",
+                                            "flex-shrink": "1",
+                                            "flex-grow": "0",
+                                            "overflow": "hidden",
+                                            "animation-duration": "1s"
+                                        },
+                                        "sizeLocked": {
+                                            "widthLock": false,
+                                            "heightLock": false
+                                        },
+                                        "animate": [
+                                            "",
+                                            "animated"
+                                        ]
+                                    },
+                                    {
+                                        "theme": {
+                                            "size": "medium"
+                                        },
+                                        "style": {
+                                            "label": {}
+                                        },
+                                        "disabled": false,
+                                        "label": "标题文本",
+                                        "placeholder": "请输入",
+                                        "titleMode": "col",
+                                        "labelWitdh": "80px",
+                                        "inputType": "text",
+                                        "rows": "2",
+                                        "showWordLimit": false,
+                                        "clearable": false,
+                                        "isRequired": false,
+                                        "autoComplete": false,
+                                        "visible": true,
+                                        "__capacity": "1",
+                                        "component": "v2-form-input",
+                                        "href": "v2-form-input",
+                                        "children": [],
+                                        "events": {},
+                                        "id": 1579154975422,
+                                        "pid": 1579154943625,
+                                        "commonStyle": {
+                                            "position": "relative",
+                                            "margin-top": "10px",
+                                            "margin-bottom": "10px",
+                                            "margin-left": "10px",
+                                            "margin-right": "10px",
+                                            "box-sizing": "border-box",
+                                            "align-self": "auto",
+                                            "flex-basis": "auto",
+                                            "flex-shrink": "1",
+                                            "flex-grow": "0",
+                                            "overflow": "hidden",
+                                            "animation-duration": "1s"
+                                        },
+                                        "sizeLocked": {
+                                            "widthLock": false,
+                                            "heightLock": false
+                                        },
+                                        "animate": [
+                                            "",
+                                            "animated"
+                                        ]
+                                    },
+                                    {
+                                        "theme": {
+                                            "size": "medium"
+                                        },
+                                        "style": {
+                                            "label": {}
+                                        },
+                                        "disabled": false,
+                                        "label": "标题文本",
+                                        "placeholder": "请输入",
+                                        "titleMode": "col",
+                                        "labelWitdh": "80px",
+                                        "inputType": "text",
+                                        "rows": "2",
+                                        "showWordLimit": false,
+                                        "clearable": false,
+                                        "isRequired": false,
+                                        "autoComplete": false,
+                                        "visible": true,
+                                        "__capacity": "1",
+                                        "component": "v2-form-input",
+                                        "href": "v2-form-input",
+                                        "children": [],
+                                        "events": {},
+                                        "id": 1579154992868,
+                                        "pid": 1579154943625,
+                                        "commonStyle": {
+                                            "position": "relative",
+                                            "margin-top": "10px",
+                                            "margin-bottom": "10px",
+                                            "margin-left": "10px",
+                                            "margin-right": "10px",
+                                            "box-sizing": "border-box",
+                                            "align-self": "auto",
+                                            "flex-basis": "auto",
+                                            "flex-shrink": "1",
+                                            "flex-grow": "0",
+                                            "overflow": "hidden",
+                                            "animation-duration": "1s"
+                                        },
+                                        "sizeLocked": {
+                                            "widthLock": false,
+                                            "heightLock": false
+                                        },
+                                        "animate": [
+                                            "",
+                                            "animated"
+                                        ]
+                                    }
+                                ],
+                                "style": {},
+                                "commonStyle": {
+                                    "position": "relative",
+                                    "margin-top": "0px",
+                                    "margin-bottom": "0px",
+                                    "margin-left": "0px",
+                                    "margin-right": "0px",
+                                    "box-sizing": "border-box",
+                                    "align-self": "stretch",
+                                    "flex-basis": "auto",
+                                    "flex-shrink": "1",
+                                    "flex-grow": "0",
+                                    "overflow": "hidden",
+                                    "display": "flex",
+                                    "flex-direction": "row",
+                                    "justify-content": "flex-start",
+                                    "align-items": "flex-start",
+                                    "flex-wrap": "nowrap",
+                                    "align-content": "stretch",
+                                    "min-width": "50px",
+                                    "min-height": "50px",
+                                    "animation-duration": "1s"
+                                },
+                                "id": 1579154943625,
+                                "pid": 1579154293720,
+                                "ctnStyle": [
+                                    {},
+                                    {},
+                                    {}
+                                ],
+                                "sizeLocked": {
+                                    "widthLock": false,
+                                    "heightLock": false
+                                },
+                                "animate": [
+                                    "",
+                                    "animated"
+                                ]
+                            },
+                            {
+                                "component": "v2-layout",
+                                "href": "v2-layout",
+                                "direction": "col",
+                                "children": [
+                                    {
+                                        "theme": {
+                                            "size": "medium"
+                                        },
+                                        "style": {
+                                            "label": {}
+                                        },
+                                        "disabled": false,
+                                        "label": "标题文本",
+                                        "placeholder": "请输入",
+                                        "titleMode": "col",
+                                        "labelWitdh": "80px",
+                                        "inputType": "text",
+                                        "rows": "2",
+                                        "showWordLimit": false,
+                                        "clearable": false,
+                                        "isRequired": false,
+                                        "autoComplete": false,
+                                        "visible": true,
+                                        "__capacity": "1",
+                                        "component": "v2-form-input",
+                                        "href": "v2-form-input",
+                                        "children": [],
+                                        "events": {},
+                                        "id": 1579154302471,
+                                        "pid": 1579154978100,
+                                        "commonStyle": {
+                                            "position": "relative",
+                                            "margin-top": "10px",
+                                            "margin-bottom": "10px",
+                                            "margin-left": "10px",
+                                            "margin-right": "10px",
+                                            "box-sizing": "border-box",
+                                            "align-self": "auto",
+                                            "flex-basis": "auto",
+                                            "flex-shrink": "1",
+                                            "flex-grow": "0",
+                                            "overflow": "hidden",
+                                            "animation-duration": "1s"
+                                        },
+                                        "sizeLocked": {
+                                            "widthLock": false,
+                                            "heightLock": false
+                                        },
+                                        "animate": [
+                                            "",
+                                            "animated"
+                                        ]
+                                    },
+                                    {
+                                        "theme": {
+                                            "size": "medium"
+                                        },
+                                        "style": {
+                                            "label": {}
+                                        },
+                                        "disabled": false,
+                                        "label": "标题文本",
+                                        "placeholder": "请输入",
+                                        "titleMode": "col",
+                                        "labelWitdh": "80px",
+                                        "inputType": "text",
+                                        "rows": "2",
+                                        "showWordLimit": false,
+                                        "clearable": false,
+                                        "isRequired": false,
+                                        "autoComplete": false,
+                                        "visible": true,
+                                        "__capacity": "1",
+                                        "component": "v2-form-input",
+                                        "href": "v2-form-input",
+                                        "children": [],
+                                        "events": {},
+                                        "id": 1579154956779,
+                                        "pid": 1579154978100,
+                                        "commonStyle": {
+                                            "position": "relative",
+                                            "margin-top": "10px",
+                                            "margin-bottom": "10px",
+                                            "margin-left": "10px",
+                                            "margin-right": "10px",
+                                            "box-sizing": "border-box",
+                                            "align-self": "auto",
+                                            "flex-basis": "auto",
+                                            "flex-shrink": "1",
+                                            "flex-grow": "0",
+                                            "overflow": "hidden",
+                                            "animation-duration": "1s"
+                                        },
+                                        "sizeLocked": {
+                                            "widthLock": false,
+                                            "heightLock": false
+                                        },
+                                        "animate": [
+                                            "",
+                                            "animated"
+                                        ]
+                                    },
+                                    {
+                                        "theme": {
+                                            "size": "medium"
+                                        },
+                                        "style": {
+                                            "label": {}
+                                        },
+                                        "disabled": false,
+                                        "label": "标题文本",
+                                        "placeholder": "请输入",
+                                        "titleMode": "col",
+                                        "labelWitdh": "80px",
+                                        "inputType": "text",
+                                        "rows": "2",
+                                        "showWordLimit": false,
+                                        "clearable": false,
+                                        "isRequired": false,
+                                        "autoComplete": false,
+                                        "visible": true,
+                                        "__capacity": "1",
+                                        "component": "v2-form-input",
+                                        "href": "v2-form-input",
+                                        "children": [],
+                                        "events": {},
+                                        "id": 1579155000498,
+                                        "pid": 1579154978100,
+                                        "commonStyle": {
+                                            "position": "relative",
+                                            "margin-top": "10px",
+                                            "margin-bottom": "10px",
+                                            "margin-left": "10px",
+                                            "margin-right": "10px",
+                                            "box-sizing": "border-box",
+                                            "align-self": "auto",
+                                            "flex-basis": "auto",
+                                            "flex-shrink": "1",
+                                            "flex-grow": "0",
+                                            "overflow": "hidden",
+                                            "animation-duration": "1s"
+                                        },
+                                        "sizeLocked": {
+                                            "widthLock": false,
+                                            "heightLock": false
+                                        },
+                                        "animate": [
+                                            "",
+                                            "animated"
+                                        ]
+                                    }
+                                ],
+                                "style": {},
+                                "commonStyle": {
+                                    "position": "relative",
+                                    "margin-top": "0px",
+                                    "margin-bottom": "0px",
+                                    "margin-left": "0px",
+                                    "margin-right": "0px",
+                                    "box-sizing": "border-box",
+                                    "align-self": "stretch",
+                                    "flex-basis": "auto",
+                                    "flex-shrink": "1",
+                                    "flex-grow": "0",
+                                    "overflow": "hidden",
+                                    "display": "flex",
+                                    "flex-direction": "row",
+                                    "justify-content": "flex-start",
+                                    "align-items": "flex-start",
+                                    "flex-wrap": "nowrap",
+                                    "align-content": "stretch",
+                                    "min-width": "50px",
+                                    "min-height": "50px",
+                                    "animation-duration": "1s"
+                                },
+                                "id": 1579154978100,
+                                "pid": 1579154293720,
+                                "ctnStyle": [
+                                    {},
+                                    {},
+                                    {}
+                                ],
+                                "sizeLocked": {
+                                    "widthLock": false,
+                                    "heightLock": false
+                                },
+                                "animate": [
+                                    "",
+                                    "animated"
+                                ]
+                            },
+                            {
+                                "component": "v2-layout",
+                                "href": "v2-layout",
+                                "direction": "col",
+                                "children": [
+                                    {
+                                        "theme": {
+                                            "size": "medium"
+                                        },
+                                        "style": {
+                                            "label": {}
+                                        },
+                                        "disabled": false,
+                                        "label": "标题文本",
+                                        "placeholder": "请输入",
+                                        "titleMode": "col",
+                                        "labelWitdh": "80px",
+                                        "inputType": "text",
+                                        "rows": "2",
+                                        "showWordLimit": false,
+                                        "clearable": false,
+                                        "isRequired": false,
+                                        "autoComplete": false,
+                                        "visible": true,
+                                        "__capacity": "1",
+                                        "component": "v2-form-input",
+                                        "href": "v2-form-input",
+                                        "children": [],
+                                        "events": {},
+                                        "id": 1579154923344,
+                                        "pid": 1579154985460,
+                                        "commonStyle": {
+                                            "position": "relative",
+                                            "margin-top": "10px",
+                                            "margin-bottom": "10px",
+                                            "margin-left": "10px",
+                                            "margin-right": "10px",
+                                            "box-sizing": "border-box",
+                                            "align-self": "auto",
+                                            "flex-basis": "auto",
+                                            "flex-shrink": "1",
+                                            "flex-grow": "0",
+                                            "overflow": "hidden",
+                                            "animation-duration": "1s"
+                                        },
+                                        "sizeLocked": {
+                                            "widthLock": false,
+                                            "heightLock": false
+                                        },
+                                        "animate": [
+                                            "",
+                                            "animated"
+                                        ]
+                                    },
+                                    {
+                                        "theme": {
+                                            "size": "medium"
+                                        },
+                                        "style": {
+                                            "label": {}
+                                        },
+                                        "disabled": false,
+                                        "label": "标题文本",
+                                        "placeholder": "请输入",
+                                        "titleMode": "col",
+                                        "labelWitdh": "80px",
+                                        "inputType": "text",
+                                        "rows": "2",
+                                        "showWordLimit": false,
+                                        "clearable": false,
+                                        "isRequired": false,
+                                        "autoComplete": false,
+                                        "visible": true,
+                                        "__capacity": "1",
+                                        "component": "v2-form-input",
+                                        "href": "v2-form-input",
+                                        "children": [],
+                                        "events": {},
+                                        "id": 1579155042395,
+                                        "pid": 1579154985460,
+                                        "commonStyle": {
+                                            "position": "relative",
+                                            "margin-top": "10px",
+                                            "margin-bottom": "10px",
+                                            "margin-left": "10px",
+                                            "margin-right": "10px",
+                                            "box-sizing": "border-box",
+                                            "align-self": "auto",
+                                            "flex-basis": "auto",
+                                            "flex-shrink": "1",
+                                            "flex-grow": "0",
+                                            "overflow": "hidden",
+                                            "animation-duration": "1s"
+                                        },
+                                        "sizeLocked": {
+                                            "widthLock": false,
+                                            "heightLock": false
+                                        },
+                                        "animate": [
+                                            "",
+                                            "animated"
+                                        ]
+                                    },
+                                    {
+                                        "theme": {
+                                            "size": "medium"
+                                        },
+                                        "style": {
+                                            "label": {}
+                                        },
+                                        "disabled": false,
+                                        "label": "标题文本",
+                                        "placeholder": "请输入",
+                                        "titleMode": "col",
+                                        "labelWitdh": "80px",
+                                        "inputType": "text",
+                                        "rows": "2",
+                                        "showWordLimit": false,
+                                        "clearable": false,
+                                        "isRequired": false,
+                                        "autoComplete": false,
+                                        "visible": true,
+                                        "__capacity": "1",
+                                        "component": "v2-form-input",
+                                        "href": "v2-form-input",
+                                        "children": [],
+                                        "events": {},
+                                        "id": 1579155042771,
+                                        "pid": 1579154985460,
+                                        "commonStyle": {
+                                            "position": "relative",
+                                            "margin-top": "10px",
+                                            "margin-bottom": "10px",
+                                            "margin-left": "10px",
+                                            "margin-right": "10px",
+                                            "box-sizing": "border-box",
+                                            "align-self": "auto",
+                                            "flex-basis": "auto",
+                                            "flex-shrink": "1",
+                                            "flex-grow": "0",
+                                            "overflow": "hidden",
+                                            "animation-duration": "1s"
+                                        },
+                                        "sizeLocked": {
+                                            "widthLock": false,
+                                            "heightLock": false
+                                        },
+                                        "animate": [
+                                            "",
+                                            "animated"
+                                        ]
+                                    }
+                                ],
+                                "style": {},
+                                "commonStyle": {
+                                    "position": "relative",
+                                    "margin-top": "0px",
+                                    "margin-bottom": "0px",
+                                    "margin-left": "0px",
+                                    "margin-right": "0px",
+                                    "box-sizing": "border-box",
+                                    "align-self": "stretch",
+                                    "flex-basis": "auto",
+                                    "flex-shrink": "1",
+                                    "flex-grow": "0",
+                                    "overflow": "hidden",
+                                    "display": "flex",
+                                    "flex-direction": "row",
+                                    "justify-content": "flex-start",
+                                    "align-items": "flex-start",
+                                    "flex-wrap": "nowrap",
+                                    "align-content": "stretch",
+                                    "min-width": "50px",
+                                    "min-height": "50px"
+                                },
+                                "id": 1579154985460,
+                                "pid": 1579154293720,
+                                "ctnStyle": [
+                                    {},
+                                    {},
+                                    {}
+                                ]
+                            },
+                            {
+                                "component": "v2-layout",
+                                "href": "v2-layout",
+                                "direction": "col",
+                                "children": [
+                                    {
+                                        "theme": {
+                                            "size": "medium"
+                                        },
+                                        "style": {
+                                            "label": {}
+                                        },
+                                        "disabled": false,
+                                        "label": "标题文本",
+                                        "placeholder": "请输入",
+                                        "titleMode": "col",
+                                        "labelWitdh": "80px",
+                                        "inputType": "text",
+                                        "rows": "2",
+                                        "showWordLimit": false,
+                                        "clearable": false,
+                                        "isRequired": false,
+                                        "autoComplete": false,
+                                        "visible": true,
+                                        "__capacity": "1",
+                                        "component": "v2-form-input",
+                                        "href": "v2-form-input",
+                                        "children": [],
+                                        "events": {},
+                                        "id": 1579154938037,
+                                        "pid": 1579154979377,
+                                        "commonStyle": {
+                                            "position": "relative",
+                                            "margin-top": "10px",
+                                            "margin-bottom": "10px",
+                                            "margin-left": "10px",
+                                            "margin-right": "10px",
+                                            "box-sizing": "border-box",
+                                            "align-self": "auto",
+                                            "flex-basis": "auto",
+                                            "flex-shrink": "1",
+                                            "flex-grow": "0",
+                                            "overflow": "hidden",
+                                            "animation-duration": "1s"
+                                        },
+                                        "sizeLocked": {
+                                            "widthLock": false,
+                                            "heightLock": false
+                                        },
+                                        "animate": [
+                                            "",
+                                            "animated"
+                                        ]
+                                    },
+                                    {
+                                        "theme": {
+                                            "size": "medium"
+                                        },
+                                        "style": {
+                                            "label": {}
+                                        },
+                                        "disabled": false,
+                                        "label": "标题文本",
+                                        "placeholder": "请输入",
+                                        "titleMode": "col",
+                                        "labelWitdh": "80px",
+                                        "inputType": "text",
+                                        "rows": "2",
+                                        "showWordLimit": false,
+                                        "clearable": false,
+                                        "isRequired": false,
+                                        "autoComplete": false,
+                                        "visible": true,
+                                        "__capacity": "1",
+                                        "component": "v2-form-input",
+                                        "href": "v2-form-input",
+                                        "children": [],
+                                        "events": {},
+                                        "id": 1579154969866,
+                                        "pid": 1579154979377,
+                                        "commonStyle": {
+                                            "position": "relative",
+                                            "margin-top": "10px",
+                                            "margin-bottom": "10px",
+                                            "margin-left": "10px",
+                                            "margin-right": "10px",
+                                            "box-sizing": "border-box",
+                                            "align-self": "auto",
+                                            "flex-basis": "auto",
+                                            "flex-shrink": "1",
+                                            "flex-grow": "0",
+                                            "overflow": "hidden",
+                                            "animation-duration": "1s"
+                                        },
+                                        "sizeLocked": {
+                                            "widthLock": false,
+                                            "heightLock": false
+                                        },
+                                        "animate": [
+                                            "",
+                                            "animated"
+                                        ]
+                                    },
+                                    {
+                                        "theme": {
+                                            "size": "medium"
+                                        },
+                                        "style": {
+                                            "label": {}
+                                        },
+                                        "disabled": false,
+                                        "label": "标题文本",
+                                        "placeholder": "请输入",
+                                        "titleMode": "col",
+                                        "labelWitdh": "80px",
+                                        "inputType": "text",
+                                        "rows": "2",
+                                        "showWordLimit": false,
+                                        "clearable": false,
+                                        "isRequired": false,
+                                        "autoComplete": false,
+                                        "visible": true,
+                                        "__capacity": "1",
+                                        "component": "v2-form-input",
+                                        "href": "v2-form-input",
+                                        "children": [],
+                                        "events": {},
+                                        "id": 1579155021025,
+                                        "pid": 1579154979377,
+                                        "commonStyle": {
+                                            "position": "relative",
+                                            "margin-top": "10px",
+                                            "margin-bottom": "10px",
+                                            "margin-left": "10px",
+                                            "margin-right": "10px",
+                                            "box-sizing": "border-box",
+                                            "align-self": "auto",
+                                            "flex-basis": "auto",
+                                            "flex-shrink": "1",
+                                            "flex-grow": "0",
+                                            "overflow": "hidden",
+                                            "animation-duration": "1s"
+                                        },
+                                        "sizeLocked": {
+                                            "widthLock": false,
+                                            "heightLock": false
+                                        },
+                                        "animate": [
+                                            "",
+                                            "animated"
+                                        ]
+                                    }
+                                ],
+                                "style": {},
+                                "commonStyle": {
+                                    "position": "relative",
+                                    "margin-top": "0px",
+                                    "margin-bottom": "0px",
+                                    "margin-left": "0px",
+                                    "margin-right": "0px",
+                                    "box-sizing": "border-box",
+                                    "align-self": "stretch",
+                                    "flex-basis": "auto",
+                                    "flex-shrink": 1,
+                                    "flex-grow": 0,
+                                    "overflow": "hidden",
+                                    "display": "flex",
+                                    "flex-direction": "row",
+                                    "justify-content": "flex-start",
+                                    "align-items": "flex-start",
+                                    "flex-wrap": "nowrap",
+                                    "align-content": "stretch",
+                                    "min-width": "50px",
+                                    "min-height": "50px",
+                                    "animation-duration": "1s"
+                                },
+                                "id": 1579154979377,
+                                "pid": 1579154293720,
+                                "ctnStyle": [
+                                    {},
+                                    {},
+                                    {}
+                                ],
+                                "sizeLocked": {
+                                    "widthLock": false,
+                                    "heightLock": false
+                                },
+                                "animate": [
+                                    "",
+                                    "animated"
+                                ],
+                                "visible": "true"
+                            }
+                        ],
+                        "style": {},
+                        "commonStyle": {
+                            "position": "relative",
+                            "margin-top": "10px",
+                            "margin-bottom": "10px",
+                            "margin-left": "10px",
+                            "margin-right": "10px",
+                            "box-sizing": "border-box",
+                            "align-self": "stretch",
+                            "flex-basis": "100%",
+                            "flex-shrink": 1,
+                            "flex-grow": 0,
+                            "overflow": "hidden",
+                            "display": "flex",
+                            "flex-direction": "column",
+                            "justify-content": "flex-start",
+                            "align-items": "flex-start",
+                            "flex-wrap": "nowrap",
+                            "align-content": "stretch",
+                            "min-width": "50px",
+                            "min-height": "50px",
+                            "width": "calc(100% - 20px)",
+                            "animation-duration": "1s"
+                        },
+                        "id": 1579154293720,
+                        "pid": 1579154143412,
+                        "ctnStyle": [
+                            {},
+                            {},
+                            {},
+                            {}
+                        ],
+                        "sizeLocked": {
+                            "widthLock": true,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated"
+                        ]
+                    },
+                    {
+                        "component": "v2-layout",
+                        "href": "v2-layout",
+                        "direction": "col",
+                        "children": [
+                            {
+                                "theme": {
+                                    "btnType": "primary",
+                                    "size": "medium"
+                                },
+                                "style": {
+                                    "btnStyle": {}
+                                },
+                                "disabled": false,
+                                "loading": false,
+                                "btnName": "按钮",
+                                "shape": "def",
+                                "visible": true,
+                                "__capacity": "1",
+                                "component": "v2-component-btn",
+                                "href": "v2-component-btn",
+                                "children": [],
+                                "events": {},
+                                "id": 1579154403859,
+                                "pid": 1579154437462,
+                                "commonStyle": {
+                                    "position": "relative",
+                                    "margin-top": "10px",
+                                    "margin-bottom": "10px",
+                                    "margin-left": "10px",
+                                    "margin-right": "10px",
+                                    "box-sizing": "border-box",
+                                    "align-self": "auto",
+                                    "flex-basis": "auto",
+                                    "flex-shrink": "1",
+                                    "flex-grow": "0",
+                                    "overflow": "hidden",
+                                    "animation-duration": "1s"
+                                },
+                                "sizeLocked": {
+                                    "widthLock": false,
+                                    "heightLock": false
+                                },
+                                "animate": [
+                                    "",
+                                    "animated"
+                                ]
+                            },
+                            {
+                                "theme": {
+                                    "btnType": "normal",
+                                    "size": "medium"
+                                },
+                                "style": {
+                                    "btnStyle": {}
+                                },
+                                "disabled": false,
+                                "loading": false,
+                                "btnName": "按钮",
+                                "shape": "plain",
+                                "visible": true,
+                                "__capacity": "1",
+                                "component": "v2-component-btn",
+                                "href": "v2-component-btn",
+                                "children": [],
+                                "events": {},
+                                "id": 1579154403111,
+                                "pid": 1579154437462,
+                                "commonStyle": {
+                                    "position": "relative",
+                                    "margin-top": "10px",
+                                    "margin-bottom": "10px",
+                                    "margin-left": "10px",
+                                    "margin-right": "10px",
+                                    "box-sizing": "border-box",
+                                    "align-self": "auto",
+                                    "flex-basis": "auto",
+                                    "flex-shrink": "1",
+                                    "flex-grow": "0",
+                                    "overflow": "hidden",
+                                    "animation-duration": "1s"
+                                },
+                                "sizeLocked": {
+                                    "widthLock": false,
+                                    "heightLock": false
+                                },
+                                "animate": [
+                                    "",
+                                    "animated"
+                                ]
+                            }
+                        ],
+                        "style": {},
+                        "commonStyle": {
+                            "position": "relative",
+                            "margin-top": "0",
+                            "margin-bottom": "10px",
+                            "margin-left": "10px",
+                            "margin-right": "10px",
+                            "box-sizing": "border-box",
+                            "align-self": "stretch",
+                            "flex-basis": "auto",
+                            "flex-shrink": 1,
+                            "flex-grow": 0,
+                            "overflow": "hidden",
+                            "display": "flex",
+                            "flex-direction": "row",
+                            "justify-content": "center",
+                            "align-items": "center",
+                            "flex-wrap": "nowrap",
+                            "align-content": "stretch",
+                            "min-width": "50px",
+                            "min-height": "50px",
+                            "animation-duration": "1s",
+                            "width": "900px"
+                        },
+                        "id": 1579154437462,
+                        "pid": 1579154143412,
+                        "ctnStyle": [
+                            {},
+                            {}
+                        ],
+                        "sizeLocked": {
+                            "widthLock": true,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated"
+                        ]
+                    }
+                ],
+                "events": {},
+                "id": 1579154143412,
+                "pid": "root",
+                "commonStyle": {
+                    "position": "relative",
+                    "margin-top": "0px",
+                    "margin-bottom": "0px",
+                    "margin-left": "0px",
+                    "margin-right": "0px",
+                    "box-sizing": "border-box",
+                    "align-self": "stretch",
+                    "flex-basis": "auto",
+                    "flex-shrink": 0,
+                    "flex-grow": 0,
+                    "overflow": "hidden",
+                    "display": "flex",
+                    "flex-direction": "column",
+                    "justify-content": "flex-start",
+                    "align-items": "flex-start",
+                    "flex-wrap": "nowrap",
+                    "align-content": "stretch",
+                    "min-width": "50px",
+                    "min-height": "50px",
+                    "animation-duration": "1s"
+                },
+                "sizeLocked": {
+                    "widthLock": true,
+                    "heightLock": false
+                },
+                "animate": [
+                    "",
+                    "animated"
+                ],
+                "ctnStyle": [
+                    {},
+                    {},
+                    {},
+                    {}
+                ],
+                "customClass": "${pageSearchCtnClass}"
+            },
+            {
+                "direction": "row",
+                "visible": true,
+                "__capacity": "1",
+                "component": "v2-layout",
+                "href": "v2-layout",
+                "children": [
+                    {
+                        "height": "100px",
+                        "direction": "row",
+                        "visible": true,
+                        "__capacity": "1",
+                        "component": "v2-layout",
+                        "href": "v2-layout",
+                        "children": [
+                            {
+                                "style": {
+                                    "textStyle": {}
+                                },
+                                "text": "查询结果",
+                                "editable": false,
+                                "textBreak": true,
+                                "visible": true,
+                                "__capacity": "1",
+                                "component": "v2-component-text",
+                                "href": "v2-component-text",
+                                "children": [],
+                                "events": {},
+                                "id": 1579162688499,
+                                "pid": 1579162594504,
+                                "commonStyle": {
+                                    "position": "relative",
+                                    "margin-top": "10px",
+                                    "margin-bottom": "10px",
+                                    "margin-left": "10px",
+                                    "margin-right": "10px",
+                                    "box-sizing": "border-box",
+                                    "align-self": "auto",
+                                    "flex-basis": "auto",
+                                    "flex-shrink": "1",
+                                    "flex-grow": "0",
+                                    "overflow": "hidden",
+                                    "animation-duration": "1s"
+                                },
+                                "customClass": [],
+                                "sizeLocked": {
+                                    "widthLock": false,
+                                    "heightLock": false
+                                },
+                                "animate": [
+                                    "",
+                                    "animated"
+                                ]
+                            }
+                        ],
+                        "events": {},
+                        "id": 1579162594504,
+                        "pid": 1579154163610,
+                        "commonStyle": {
+                            "position": "relative",
+                            "margin-top": "0px",
+                            "margin-bottom": "0px",
+                            "margin-left": "0px",
+                            "margin-right": "0px",
+                            "box-sizing": "border-box",
+                            "align-self": "stretch",
+                            "flex-basis": "auto",
+                            "flex-shrink": 1,
+                            "flex-grow": 0,
+                            "overflow": "hidden",
+                            "display": "flex",
+                            "flex-direction": "column",
+                            "justify-content": "center",
+                            "align-items": "flex-start",
+                            "flex-wrap": "nowrap",
+                            "align-content": "stretch",
+                            "min-width": "50px",
+                            "min-height": "50px",
+                            "animation-duration": "1s"
+                        },
+                        "customClass": [
+                            "template-ctt-header"
+                        ],
+                        "sizeLocked": {
+                            "widthLock": false,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated"
+                        ],
+                        "ctnStyle": [
+                            {}
+                        ]
+                    },
+                    {
+                        "component": "v2-layout",
+                        "href": "v2-layout",
+                        "direction": "col",
+                        "children": [
+                            {
+                                "theme": {
+                                    "btnType": "primary",
+                                    "size": "medium"
+                                },
+                                "style": {
+                                    "btnStyle": {}
+                                },
+                                "disabled": false,
+                                "loading": false,
+                                "btnName": "按钮",
+                                "shape": "def",
+                                "visible": true,
+                                "__capacity": "1",
+                                "component": "v2-component-btn",
+                                "href": "v2-component-btn",
+                                "children": [],
+                                "events": {},
+                                "id": 1579156969254,
+                                "pid": 1579156896919,
+                                "commonStyle": {
+                                    "position": "relative",
+                                    "margin-top": "10px",
+                                    "margin-bottom": "10px",
+                                    "margin-left": "10px",
+                                    "margin-right": "10px",
+                                    "box-sizing": "border-box",
+                                    "align-self": "auto",
+                                    "flex-basis": "auto",
+                                    "flex-shrink": "1",
+                                    "flex-grow": "0",
+                                    "overflow": "hidden",
+                                    "animation-duration": "1s"
+                                },
+                                "sizeLocked": {
+                                    "widthLock": false,
+                                    "heightLock": false
+                                },
+                                "animate": [
+                                    "",
+                                    "animated"
+                                ]
+                            },
+                            {
+                                "theme": {
+                                    "btnType": "normal",
+                                    "size": "medium"
+                                },
+                                "style": {
+                                    "btnStyle": {}
+                                },
+                                "disabled": false,
+                                "loading": false,
+                                "btnName": "按钮",
+                                "shape": "plain",
+                                "visible": true,
+                                "__capacity": "1",
+                                "component": "v2-component-btn",
+                                "href": "v2-component-btn",
+                                "children": [],
+                                "events": {},
+                                "id": 1579156970010,
+                                "pid": 1579156896919,
+                                "commonStyle": {
+                                    "position": "relative",
+                                    "margin-top": "10px",
+                                    "margin-bottom": "10px",
+                                    "margin-left": "10px",
+                                    "margin-right": "10px",
+                                    "box-sizing": "border-box",
+                                    "align-self": "auto",
+                                    "flex-basis": "auto",
+                                    "flex-shrink": "1",
+                                    "flex-grow": "0",
+                                    "overflow": "hidden",
+                                    "animation-duration": "1s"
+                                },
+                                "sizeLocked": {
+                                    "widthLock": false,
+                                    "heightLock": false
+                                },
+                                "animate": [
+                                    "",
+                                    "animated"
+                                ]
+                            }
+                        ],
+                        "style": {},
+                        "commonStyle": {
+                            "position": "relative",
+                            "margin-top": "0px",
+                            "margin-bottom": "0px",
+                            "margin-left": "0px",
+                            "margin-right": "0px",
+                            "box-sizing": "border-box",
+                            "align-self": "stretch",
+                            "flex-basis": "auto",
+                            "flex-shrink": "1",
+                            "flex-grow": "0",
+                            "overflow": "hidden",
+                            "display": "flex",
+                            "flex-direction": "row",
+                            "justify-content": "flex-start",
+                            "align-items": "flex-start",
+                            "flex-wrap": "nowrap",
+                            "align-content": "stretch",
+                            "min-width": "50px",
+                            "min-height": "50px",
+                            "width": "100%",
+                            "animation-duration": "1s"
+                        },
+                        "id": 1579156896919,
+                        "pid": 1579154163610,
+                        "ctnStyle": [
+                            {},
+                            {},
+                            {}
+                        ],
+                        "sizeLocked": {
+                            "widthLock": true,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated"
+                        ],
+                        "customClass": []
+                    },
+                    {
+                        "theme": {
+                            "tableType": "border"
+                        },
+                        "loading": false,
+                        "columns": [
+                            {
+                                "active": true,
+                                "type": "link",
+                                "prop": "date",
+                                "label": "日期",
+                                "linkTarget": "_blank",
+                                "headerAlign": "left",
+                                "align": "left",
+                                "sortable": false,
+                                "openFilter": false,
+                                "combi": [
+                                    {
+                                        "active": "true"
+                                    }
+                                ],
+                                "tagMap": [
+                                    {
+                                        "active": "true",
+                                        "type": "text"
+                                    }
+                                ],
+                                "iconMap": [
+                                    {
+                                        "active": "true"
+                                    }
+                                ],
+                                "filterMap": [
+                                    {
+                                        "active": "true"
+                                    }
+                                ],
+                                "openTooltip": false,
+                                "handleLink": true,
+                                "handleLinkCB": "openSubPage"
+                            },
+                            {
+                                "active": true,
+                                "type": "text",
+                                "prop": "name",
+                                "label": "用户名",
+                                "linkTarget": "_blank",
+                                "headerAlign": "left",
+                                "align": "left",
+                                "sortable": false,
+                                "openFilter": false,
+                                "combi": [
+                                    {
+                                        "active": "true"
+                                    }
+                                ],
+                                "tagMap": [
+                                    {
+                                        "active": "true",
+                                        "type": "text"
+                                    }
+                                ],
+                                "iconMap": [
+                                    {
+                                        "active": "true"
+                                    }
+                                ],
+                                "filterMap": [
+                                    {
+                                        "active": "true"
+                                    }
+                                ]
+                            },
+                            {
+                                "active": true,
+                                "type": "text",
+                                "prop": "address",
+                                "label": "地址",
+                                "linkTarget": "_blank",
+                                "headerAlign": "left",
+                                "align": "left",
+                                "sortable": false,
+                                "openFilter": false,
+                                "combi": [
+                                    {
+                                        "active": "true"
+                                    }
+                                ],
+                                "tagMap": [
+                                    {
+                                        "active": "true",
+                                        "type": "text"
+                                    }
+                                ],
+                                "iconMap": [
+                                    {
+                                        "active": "true"
+                                    }
+                                ],
+                                "filterMap": [
+                                    {
+                                        "active": "true"
+                                    }
+                                ],
+                                "openTooltip": true,
+                                "handleTooltip": true,
+                                "tooltipEffect": "light",
+                                "tooltipContentCallback": "tooltipCallback"
+                            }
+                        ],
+                        "openIndex": false,
+                        "openPage": true,
+                        "pagerCount": 5,
+                        "openSetPageCallback": false,
+                        "setPageCallback": "setPageCallback",
+                        "totalCount": 1,
+                        "toolBar": true,
+                        "toolTitle": "操作",
+                        "toolLocation": "right",
+                        "toolWidth": "100",
+                        "toolBtns": [],
+                        "expand": false,
+                        "visible": true,
+                        "__capacity": "1",
+                        "component": "v2-component-table",
+                        "href": "v2-component-table",
+                        "children": [],
+                        "events": {},
+                        "id": 1579156958748,
+                        "pid": 1579154163610,
+                        "commonStyle": {
+                            "position": "relative",
+                            "margin-top": "10px",
+                            "margin-bottom": "10px",
+                            "margin-left": "10px",
+                            "margin-right": "10px",
+                            "box-sizing": "border-box",
+                            "align-self": "auto",
+                            "flex-basis": "auto",
+                            "flex-shrink": "1",
+                            "flex-grow": "0",
+                            "overflow": "hidden",
+                            "width": "calc(100% - 20px)",
+                            "animation-duration": "1s",
+                            "height": "100%"
+                        },
+                        "sizeLocked": {
+                            "widthLock": true,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated"
+                        ],
+                        "customClass": [],
+                        "offset": {
+                            "top": 366,
+                            "left": 10
+                        },
+                        "tHeight": "100%",
+                        "tMaxHeight": "100%",
+                        "tableData": "${tableData}"
+                    }
+                ],
+                "events": {},
+                "id": 1579154163610,
+                "pid": "root",
+                "commonStyle": {
+                    "position": "relative",
+                    "margin-top": "20px",
+                    "margin-bottom": "0px",
+                    "margin-left": "0px",
+                    "margin-right": "0px",
+                    "box-sizing": "border-box",
+                    "align-self": "stretch",
+                    "flex-basis": "100%",
+                    "flex-shrink": 1,
+                    "flex-grow": 0,
+                    "overflow": "hidden",
+                    "display": "flex",
+                    "flex-direction": "column",
+                    "justify-content": "flex-start",
+                    "align-items": "flex-start",
+                    "flex-wrap": "nowrap",
+                    "align-content": "stretch",
+                    "min-width": "50px",
+                    "animation-duration": "1s"
+                },
+                "sizeLocked": {
+                    "widthLock": false,
+                    "heightLock": false
+                },
+                "animate": [
+                    "",
+                    "animated"
+                ],
+                "ctnStyle": [
+                    {},
+                    {},
+                    {}
+                ],
+                "customClass": [
+                    "template-ctt-ctn"
+                ]
+            }
+        ],
+        "events": {},
+        "commonStyle": {
+            "display": "flex",
+            "flex-direction": "column",
+            "justify-content": "flex-start",
+            "align-items": "flex-start",
+            "flex-wrap": "nowrap",
+            "align-content": "stretch",
+            "align-self": "stretch",
+            "flex-shrink": "1",
+            "flex-grow": "0",
+            "min-width": "50px",
+            "min-height": "50px",
+            "animation-duration": "1s",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "height": "100%"
+        },
+        "ctnStyle": [
+            {},
+            {}
+        ],
+        "realSize": [],
+        "sizeLocked": {
+            "widthLock": false,
+            "heightLock": false
+        },
+        "animate": [
+            "",
+            "animated"
+        ],
+        "customClass": []
+    },
+    "forms": [],
+    "logic": {
+        "methods": [
+            {
+                "name": "openSubPage",
+                "desp": "打开子页面",
+                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\n\nctx.open({\n    status:true,\n    title: row.title,\n    path: row.path, //相当于页面的id，也是页面的路由\n    page: row.path,//vue页面组件的路径\n    // type:'BLANK', // 打开新的 tab\n    type:'SUB', // 打开子页面\n    params:{}\n})",
+                "params": [
+                    {
+                        "name": "index",
+                        "desp": "新参数"
+                    },
+                    {
+                        "name": "row",
+                        "desp": "新参数"
+                    },
+                    {
+                        "name": "item",
+                        "desp": "新参数"
+                    }
+                ],
+                "isEvent": false,
+                "custom": true
+            },
+            {
+                "name": "tooltipCallback",
+                "desp": "tooltip 回调",
+                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\n\nlet dom = document.createElement('button')\ndom.onclick = function(){\n    // 这里执行页面创建的方法\n    ctx.testEv(row)\n    // 这里执行原生的 js\n    console.log(`${ctx.testData}+${item.prop}+${row[item.prop]}+${index}`)\n}\ndom.innerHTML=`${row[item.prop]}+ ${index}`\nreturn {\n    dom\n}",
+                "params": [
+                    {
+                        "name": "index",
+                        "desp": "新参数"
+                    },
+                    {
+                        "name": "row",
+                        "desp": "新参数"
+                    },
+                    {
+                        "name": "item",
+                        "desp": "新参数"
+                    }
+                ],
+                "isEvent": false,
+                "custom": true
+            },
+            {
+                "name": "testEv",
+                "desp": "测试方法",
+                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\n\nconsole.log('param: ', param)\nalert(param.address)",
+                "params": [
+                    {
+                        "name": "param",
+                        "desp": "新参数"
+                    }
+                ],
+                "isEvent": false,
+                "custom": true
+            },
+            {
+                "name": "v2_component_btn_1579248259000",
+                "desp": "v2_component_btn_1579248259000",
+                "code": "/**\n* 事件绑定在vue实例上，第一个参数是vue实例。\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\n**/\n\n//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\n\nif(ctx.pageSearchCtnClass == 'template-ctt-ctn') {\n    ctx.searchSwitch.btnName = '展开高级搜索',\n    ctx.searchSwitch.btnIcon = 'el-icon-arrow-down'\n    ctx.pageSearchCtnClass = 'template-ctt-ctn template-search-fold'\n}else {\n    ctx.searchSwitch.btnName = '收起高级搜索',\n    ctx.searchSwitch.btnIcon = 'el-icon-arrow-up'\n    ctx.pageSearchCtnClass = 'template-ctt-ctn'\n}\n",
+                "params": [
+                    {
+                        "name": "vueIns",
+                        "desp": "组件的vue实例"
+                    }
+                ],
+                "isEvent": true,
+                "custom": true,
+                "id": 1579247522711
+            }
+        ],
+        "watch": {},
+        "beforeCreate": {
+            "code": ""
+        },
+        "created": {
+            "code": ""
+        },
+        "beforeMount": {
+            "code": ""
+        },
+        "mounted": {
+            "code": ""
+        },
+        "beforeUpdate": {
+            "code": ""
+        },
+        "updated": {
+            "code": ""
+        },
+        "beforeDestroy": {
+            "code": ""
+        },
+        "destroyed": {
+            "code": ""
+        },
+        "activated": {
+            "code": ""
+        },
+        "deactivated": {
+            "code": ""
+        },
+        "pollList": []
+    },
+    "dataBasket": {
+        "data": {},
+        "list": [
+            {
+                "desp": "表格数据",
+                "name": "tableData",
+                "code": "[{\r\n  date: '2016-05-01',\r\n  name: '王小虎',\r\n  address: '上海市普陀区金沙江路 1111 弄',\r\n  title: '页面1',\r\n  path: 'spa/newPage'\r\n}, {\r\n  date: '2016-05-02',\r\n  name: '王小虎',\r\n  address: '上海市普陀区金沙江路 2222 弄',\r\n  title: '页面2',\r\n  path: 'spa/newSubPage'\r\n}, {\r\n  date: '2016-05-03',\r\n  name: '王小虎',\r\n  address: '上海市普陀区金沙江路 3333 弄',\r\n  title: '页面3',\r\n  path: 'spa/open'\r\n}, {\r\n  date: '2016-05-04',\r\n  name: '王小虎',\r\n  address: '上海市普陀区金沙江路 4444 弄',\r\n  title: '页面4',\r\n  path: 'spa/spa'\r\n}]",
+                "setCode": "",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false
+            },
+            {
+                "desp": "测试数据",
+                "name": "testData",
+                "code": "xyz",
+                "setCode": "",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false
+            },
+            {
+                "desp": "搜索模式开关",
+                "name": "searchSwitch",
+                "code": "{\r\n    btnName: '收起高级搜索',\r\n    btnIcon: 'el-icon-arrow-up'\r\n}",
+                "setCode": "",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false
+            },
+            {
+                "desp": "搜索容器类",
+                "name": "pageSearchCtnClass",
+                "code": "template-ctt-ctn",
+                "setCode": "",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false
+            }
+        ],
+        "mapping": {
+            "1579156958748": [
+                {
+                    "id": 1579156958748,
+                    "modelValue": "tableData",
+                    "dataValue": "tableData",
+                    "type": ""
+                }
+            ],
+            "1579247522711": [
+                {
+                    "id": 1579247522711,
+                    "modelValue": "btnName",
+                    "dataValue": "searchSwitch.btnName",
+                    "type": ""
+                },
+                {
+                    "id": 1579247522711,
+                    "modelValue": "leftIcon",
+                    "dataValue": "searchSwitch.btnIcon",
+                    "type": ""
+                }
+            ],
+            "1579154143412": [
+                {
+                    "id": 1579154143412,
+                    "modelValue": "customClass",
+                    "dataValue": "pageSearchCtnClass",
+                    "type": ""
+                }
+            ]
+        }
+    },
+    "events": {},
+    "display": {
+        "icon": "icontongyong",
+        "desp": "信息查询模板",
+        "type": "gridLayout",
+        "width": "1200px",
+        "height": "800px"
+    },
+    "scssCode": ".template-ctt-ctn {\n  /* height: 100px; */\n  margin: 5px !important;\n  background: #fff;\n  border: 1px solid #ebeef5;\n  border-radius: 8px 8px 4px 4px;\n}\n\n.template-ctt-header {\n  background: #f5f7fa;\n  border-bottom: 2px solid #ebeef5;\n  font-size: 15px;\n  font-weight: bold;\n  color: #666;\n}\n\n.template-search-fold {\n  height: 185px;\n}\n"
+}

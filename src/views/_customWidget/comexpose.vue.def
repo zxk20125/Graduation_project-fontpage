@@ -1,0 +1,264 @@
+{
+    "structure": {
+        "__resolveFromCode": false,
+        "children": [
+            {
+                "__resolveFromCode": false,
+                "children": [
+                    {
+                        "__resolveFromCode": false,
+                        "children": [],
+                        "component": "v2-component-btn",
+                        "id": 1601005113997,
+                        "customClass": [
+                            "v2-component-btn-1601005113997"
+                        ],
+                        "commonStyle": {
+                            "flex-shrink": 0
+                        },
+                        "props": [
+                            "disabled",
+                            "loading",
+                            "btnName",
+                            "leftIcon",
+                            "rightIcon",
+                            "shape",
+                            "visible",
+                            "customClass"
+                        ],
+                        "theme": {
+                            "btnType": "normal&shape=plain",
+                            "size": ""
+                        },
+                        "disabled": false,
+                        "loading": false,
+                        "btnName": "+",
+                        "shape": "def",
+                        "events": {
+                            "_op_componentBtn_btn": {
+                                "click": {
+                                    "v2_component_btn_1601005112003": {}
+                                }
+                            }
+                        },
+                        "$ref": "v2ComponentBtn_1",
+                        "visible": true,
+                        "__capacity": "1",
+                        "href": "v2-component-btn",
+                        "name": "按钮",
+                        "version": "15.0.0",
+                        "pid": 1601010305085,
+                        "sizeLocked": {
+                            "widthLock": false,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated"
+                        ]
+                    },
+                    {
+                        "__resolveFromCode": false,
+                        "children": [],
+                        "component": "v2-component-btn",
+                        "id": 1601010330461,
+                        "customClass": [
+                            "v2-component-btn-1601010330461"
+                        ],
+                        "props": [
+                            "disabled",
+                            "loading",
+                            "btnName",
+                            "leftIcon",
+                            "rightIcon",
+                            "shape",
+                            "visible",
+                            "customClass"
+                        ],
+                        "theme": {
+                            "btnType": "normal&shape=plain",
+                            "size": ""
+                        },
+                        "disabled": false,
+                        "loading": false,
+                        "btnName": "-",
+                        "shape": "def",
+                        "events": {
+                            "_op_componentBtn_btn": {
+                                "click": {
+                                    "v2_component_btn_1601010313643": {}
+                                }
+                            }
+                        },
+                        "$ref": "v2ComponentBtn_2",
+                        "commonStyle": [],
+                        "visible": true,
+                        "__capacity": "1",
+                        "href": "v2-component-btn",
+                        "name": "按钮",
+                        "version": "15.0.0",
+                        "pid": 1601010305085,
+                        "sizeLocked": {
+                            "widthLock": false,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated"
+                        ]
+                    }
+                ],
+                "component": "v2Container",
+                "id": 1601010305085,
+                "customClass": [],
+                "$ref": "v2Container_1",
+                "commonStyle": {
+                    "box-sizing": "border-box",
+                    "display": "flex",
+                    "align-items": "flex-start",
+                    "align-self": "stretch",
+                    "height": "auto"
+                },
+                "href": "v2Container",
+                "direction": "col",
+                "style": {},
+                "pid": "root",
+                "props": [
+                    "visible",
+                    "customClass"
+                ]
+            }
+        ],
+        "component": "v2container",
+        "id": "root",
+        "commonStyle": {
+            "width": "100%",
+            "height": "100%",
+            "flex-shrink": "0",
+            "box-sizing": "border-box",
+            "display": "flex",
+            "align-items": "flex-start",
+            "align-self": "stretch"
+        },
+        "customClass": [],
+        "$ref": "v2container_root",
+        "direction": "row",
+        "layout": [
+            100
+        ],
+        "data": {},
+        "events": {},
+        "sizeLocked": {
+            "widthLock": false,
+            "heightLock": false
+        },
+        "animate": [
+            "",
+            "animated",
+            ""
+        ]
+    },
+    "forms": [],
+    "logic": {
+        "methods": [
+            {
+                "name": "v2_component_btn_1601005112003",
+                "desp": "点击增加事件",
+                "code": "//*====AGREE-ACTION-START====*//\n//*+AGREE-CONFIG-*//\n//{\n//\t\"name\": \"custom\",\n//\t\"main\": \"AGREE-CUSTOM\",\n//\t\"desp\": \"事件准备\",\n//\t\"code\": \"/**\\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\\n**/\\n\\n//函数内直接用ctx代替this访问vue页面的数据。\\nconst ctx = this;\",\n//\t\"showConfig\": true\n//}\n//*-AGREE-CONFIG+*//\n//*++++AGREE-CODE-START++++*//\n/**\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\n**/\n\n//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\n//*++++AGREE-CODE-END++++*//\n//*====AGREE-ACTION-END====*//\n\n\n/**\n抛出的事件名：add\n第一个参数：\"add\"为抛出的事件名\n不限制传参个数(默认第二个为event事件)\n**/\nctx.$emit(\"add\", $event);",
+                "params": [
+                    {
+                        "name": "$event",
+                        "desp": "$event"
+                    },
+                    {
+                        "name": "vueIns",
+                        "desp": "vueIns"
+                    }
+                ],
+                "isEvent": true,
+                "custom": true,
+                "id": 1601005112003
+            },
+            {
+                "name": "v2_component_btn_1601010313643",
+                "desp": "点击减少事件",
+                "code": "/**\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\n**/\n\n//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\n/**\n抛出的事件名：reduce\n第一个参数：\"reduce\"为抛出的事件名\n不限制传参个数(默认第二个为event事件)\n**/\nctx.$emit(\"reduce\", $event);",
+                "params": [
+                    {
+                        "name": "$event",
+                        "desp": "$event"
+                    },
+                    {
+                        "name": "vueIns",
+                        "desp": "vueIns"
+                    }
+                ],
+                "isEvent": true,
+                "custom": true,
+                "id": 1601010313643
+            }
+        ],
+        "watch": {},
+        "beforeCreate": {
+            "code": "let ctx = this;"
+        },
+        "created": {
+            "code": "let ctx = this;"
+        },
+        "beforeMount": {
+            "code": "let ctx = this;"
+        },
+        "mounted": {
+            "code": "let ctx = this;"
+        },
+        "beforeUpdate": {
+            "code": "let ctx = this;"
+        },
+        "updated": {
+            "code": "let ctx = this;"
+        },
+        "beforeDestroy": {
+            "code": "let ctx = this;"
+        },
+        "destroyed": {
+            "code": "let ctx = this;"
+        },
+        "activated": {
+            "code": "let ctx = this;"
+        },
+        "deactivated": {
+            "code": "let ctx = this;"
+        },
+        "pollList": []
+    },
+    "dataBasket": {
+        "data": {},
+        "list": [],
+        "mapping": {}
+    },
+    "events": {},
+    "emitList": [
+        {
+            "name": "reduce",
+            "desp": "减少"
+        },
+        {
+            "name": "add",
+            "desp": "增加"
+        }
+    ],
+    "display": {
+        "icon": "icontongyong",
+        "desp": "组件暴露事件",
+        "type": "gridLayout",
+        "width": "200px",
+        "height": "50px",
+        "isSelfAdaption": false,
+        "parentWidth": "200"
+    },
+    "scssCode": "",
+    "nls": "",
+    "mixins": [],
+    "imports": [],
+    "disableVueSPA": false
+}

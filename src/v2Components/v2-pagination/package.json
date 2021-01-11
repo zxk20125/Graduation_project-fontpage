@@ -1,0 +1,66 @@
+{
+  "name": "@v2-components/v2-pagination",
+  "version": "1.0.0",
+  "description": "分页器",
+  "main": "index.vue",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "xupinghua@agree.com.cn",
+  "license": "ISC",
+  "docs": {
+    "icon": "iconriqixuanze",
+    "type": "project",
+    "href": "v2-pagination",
+    "author": "xupinghua@agree.com.cn",
+    "name": "分页组件",
+    "option": [{
+        "name": "total",
+        "desp": "总数",
+        "defaultValue": 30,
+        "type": "string_input"
+      },{
+        "name": "pageSize",
+        "desp": "每页显示个数",
+        "defaultValue": 10,
+        "type": "string_input"
+      },{
+        "name": "currentPage",
+        "desp": "当前页码",
+        "defaultValue": 1,
+        "type": "string_input"
+      },{
+        "name": "pageSizeArr",
+        "desp": "每页显示个数选项",
+        "details":"该变量为数字数组，如[10,20,30,40]",
+        "type": "string_input"
+      },{
+        "name": "isShowTotal",
+        "desp": "是否显示总数",
+        "defaultValue": false,
+        "type": "boolean"
+      },{
+        "name": "isShowPageSize",
+        "desp": "是否调整每页显示个数",
+        "defaultValue": false,
+        "type": "boolean"
+      },{
+        "name": "isForward",
+        "desp": "是否显示前往按钮",
+        "defaultValue": false,
+        "type": "boolean"
+      },{
+        "name": "prevText",
+        "desp": "上一页按钮文字",
+        "type": "string_input"
+      },{
+        "name": "nextText",
+        "desp": "下一页按钮文字",
+        "type": "string_input"
+      }],
+    "css":{}
+  },
+  "dependencies": {
+
+  }
+}

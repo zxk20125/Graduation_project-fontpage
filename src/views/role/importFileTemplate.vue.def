@@ -1,0 +1,517 @@
+{
+    "structure": {
+        "id": "root",
+        "component": "v2Container",
+        "direction": "row",
+        "layout": [
+            100
+        ],
+        "style": {
+            "width": "100%",
+            "height": "100%"
+        },
+        "data": {},
+        "children": [
+            {
+                "theme": {
+                    "btnType": "text",
+                    "size": ""
+                },
+                "style": {
+                    "btnStyle": {}
+                },
+                "disabled": false,
+                "loading": false,
+                "btnName": "点击下载模板",
+                "shape": "def",
+                "visible": true,
+                "__capacity": "1",
+                "component": "v2-component-btn",
+                "href": "v2-component-btn",
+                "children": [],
+                "events": {
+                    "_op_componentBtn_btn": {
+                        "click": [
+                            "v2_component_btn_1579075628000"
+                        ]
+                    }
+                },
+                "id": 1579073644646,
+                "pid": "root",
+                "commonStyle": {
+                    "position": "relative",
+                    "margin-top": "10px",
+                    "margin-bottom": "10px",
+                    "margin-left": "10px",
+                    "margin-right": "10px",
+                    "box-sizing": "border-box",
+                    "align-self": "auto",
+                    "flex-basis": "auto",
+                    "flex-shrink": "0",
+                    "flex-grow": "0",
+                    "overflow": "hidden",
+                    "animation-duration": "1s"
+                },
+                "sizeLocked": {
+                    "widthLock": false,
+                    "heightLock": false
+                },
+                "animate": [
+                    "",
+                    "animated"
+                ],
+                "props": [
+                    "disabled",
+                    "loading",
+                    "btnName",
+                    "leftIcon",
+                    "rightIcon",
+                    "shape",
+                    "visible",
+                    "if",
+                    "customClass"
+                ]
+            },
+            {
+                "style": {
+                    "label": {}
+                },
+                "disabled": false,
+                "action": "${uploadUrl}",
+                "type": "drag",
+                "listType": "text",
+                "limitType": "${fileType}",
+                "limit": "1",
+                "limitSize": "2",
+                "autoUpload": false,
+                "btnText": "选择文件",
+                "btnUploadText": "上传",
+                "prompt": "先下载文件模板，在模板内填写数据，在导入模板，仅支持excel文件导入",
+                "isRequired": false,
+                "labelWitdh": "0",
+                "titleMode": "col",
+                "visible": true,
+                "__capacity": "1",
+                "component": "v2-form-upload",
+                "href": "v2-form-upload",
+                "children": [],
+                "events": {},
+                "id": 1579073713062,
+                "pid": "root",
+                "commonStyle": {
+                    "position": "relative",
+                    "margin-top": "10px",
+                    "margin-bottom": "10px",
+                    "margin-left": "10px",
+                    "margin-right": "10px",
+                    "box-sizing": "border-box",
+                    "align-self": "auto",
+                    "flex-basis": "auto",
+                    "flex-shrink": 1,
+                    "flex-grow": 0,
+                    "overflow": "hidden",
+                    "animation-duration": "1s"
+                },
+                "sizeLocked": {
+                    "widthLock": false,
+                    "heightLock": false
+                },
+                "animate": [
+                    "",
+                    "animated"
+                ],
+                "customClass": [],
+                "props": [
+                    "value",
+                    "handleChange",
+                    "successCallback",
+                    "handleRemove",
+                    "disabled",
+                    "action",
+                    "type",
+                    "listType",
+                    "limitType",
+                    "limit",
+                    "limitSize",
+                    "data",
+                    "fileName",
+                    "autoUpload",
+                    "btnText",
+                    "btnUploadText",
+                    "prompt",
+                    "isRequired",
+                    "label",
+                    "labelWitdh",
+                    "titleMode",
+                    "visible",
+                    "if",
+                    "customClass"
+                ]
+            },
+            {
+                "component": "v2Container",
+                "href": "v2Container",
+                "direction": "col",
+                "children": [
+                    {
+                        "theme": {
+                            "btnType": "normal",
+                            "size": ""
+                        },
+                        "style": {
+                            "btnStyle": {}
+                        },
+                        "disabled": false,
+                        "loading": false,
+                        "btnName": "取消",
+                        "shape": "plain",
+                        "visible": true,
+                        "__capacity": "1",
+                        "component": "v2-component-btn",
+                        "href": "v2-component-btn",
+                        "children": [],
+                        "events": {
+                            "_op_componentBtn_btn": {
+                                "click": [
+                                    "v2_component_btn_1579074044000"
+                                ]
+                            }
+                        },
+                        "id": 1579074107305,
+                        "pid": 1579074078301,
+                        "commonStyle": {
+                            "position": "relative",
+                            "margin-top": "10px",
+                            "margin-bottom": "10px",
+                            "margin-left": "10px",
+                            "margin-right": "10px",
+                            "box-sizing": "border-box",
+                            "align-self": "auto",
+                            "flex-basis": "auto",
+                            "flex-shrink": 1,
+                            "flex-grow": 0,
+                            "overflow": "hidden",
+                            "animation-duration": "1s"
+                        },
+                        "sizeLocked": {
+                            "widthLock": false,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated"
+                        ],
+                        "customClass": [
+                            "common-btn-normal"
+                        ],
+                        "props": [
+                            "disabled",
+                            "loading",
+                            "btnName",
+                            "leftIcon",
+                            "rightIcon",
+                            "shape",
+                            "visible",
+                            "if",
+                            "customClass"
+                        ]
+                    },
+                    {
+                        "theme": {
+                            "btnType": "primary",
+                            "size": ""
+                        },
+                        "style": {
+                            "btnStyle": {}
+                        },
+                        "disabled": false,
+                        "loading": false,
+                        "btnName": "导入",
+                        "shape": "def",
+                        "visible": true,
+                        "__capacity": "1",
+                        "component": "v2-component-btn",
+                        "href": "v2-component-btn",
+                        "children": [],
+                        "events": {
+                            "_op_componentBtn_btn": {
+                                "click": [
+                                    "v2_component_btn_1579074066000"
+                                ]
+                            }
+                        },
+                        "id": 1579074116294,
+                        "pid": 1579074078301,
+                        "commonStyle": {
+                            "position": "relative",
+                            "margin-top": "10px",
+                            "margin-bottom": "10px",
+                            "margin-left": "10px",
+                            "margin-right": "10px",
+                            "box-sizing": "border-box",
+                            "align-self": "auto",
+                            "flex-basis": "auto",
+                            "flex-shrink": 1,
+                            "flex-grow": 0,
+                            "overflow": "hidden",
+                            "animation-duration": "1s"
+                        },
+                        "sizeLocked": {
+                            "widthLock": false,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated"
+                        ],
+                        "customClass": [
+                            "common-btn-focus",
+                            "margin-right20"
+                        ],
+                        "props": [
+                            "disabled",
+                            "loading",
+                            "btnName",
+                            "leftIcon",
+                            "rightIcon",
+                            "shape",
+                            "visible",
+                            "if",
+                            "customClass"
+                        ]
+                    }
+                ],
+                "style": {},
+                "commonStyle": {
+                    "position": "relative",
+                    "margin-top": "0px",
+                    "margin-bottom": "0px",
+                    "margin-left": "0px",
+                    "margin-right": "0px",
+                    "box-sizing": "border-box",
+                    "align-self": "stretch",
+                    "flex-basis": "auto",
+                    "flex-shrink": 1,
+                    "flex-grow": 0,
+                    "overflow": "hidden",
+                    "display": "flex",
+                    "flex-direction": "row",
+                    "justify-content": "flex-end",
+                    "align-items": "flex-start",
+                    "flex-wrap": "nowrap",
+                    "align-content": "stretch",
+                    "min-width": "50px",
+                    "min-height": "50px",
+                    "animation-duration": "1s"
+                },
+                "id": 1579074078301,
+                "pid": "root",
+                "ctnStyle": [
+                    {},
+                    {}
+                ],
+                "customClass": [
+                    "diaglog-btn-ctn"
+                ],
+                "sizeLocked": {
+                    "widthLock": false,
+                    "heightLock": false
+                },
+                "animate": [
+                    "",
+                    "animated",
+                    ""
+                ],
+                "props": [
+                    "visible",
+                    "if",
+                    "customClass"
+                ]
+            }
+        ],
+        "events": {},
+        "commonStyle": {
+            "display": "flex",
+            "flex-direction": "column",
+            "justify-content": "flex-start",
+            "align-items": "flex-start",
+            "flex-wrap": "nowrap",
+            "align-content": "stretch",
+            "align-self": "stretch",
+            "flex-shrink": 1,
+            "flex-grow": 0,
+            "min-width": "50px",
+            "min-height": "50px",
+            "animation-duration": "1s"
+        },
+        "ctnStyle": [
+            {},
+            {},
+            {},
+            {}
+        ],
+        "realSize": [],
+        "sizeLocked": {
+            "widthLock": false,
+            "heightLock": false
+        },
+        "animate": [
+            "",
+            "animated",
+            ""
+        ],
+        "customClass": [
+            "form-user-info-wrapper"
+        ],
+        "props": [
+            "visible",
+            "if",
+            "customClass"
+        ]
+    },
+    "forms": [],
+    "logic": {
+        "methods": [
+            {
+                "name": "v2_component_btn_1579074044000",
+                "desp": "关闭导入子页面",
+                "code": "/**\n* 事件绑定在vue实例上，第一个参数是vue实例。\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\n**/\n\n//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\nctx.close();\n",
+                "params": [
+                    {
+                        "name": "vueIns",
+                        "desp": "组件的vue实例"
+                    }
+                ],
+                "isEvent": true,
+                "custom": true,
+                "id": 1579074107305
+            },
+            {
+                "name": "v2_component_btn_1579074066000",
+                "desp": "导入文件",
+                "code": "/**\n* 事件绑定在vue实例上，第一个参数是vue实例。\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\n**/\n\n//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\nctx.__getVueIns('1579073713062').$refs._op_formUpload_upload.submit();",
+                "params": [
+                    {
+                        "name": "vueIns",
+                        "desp": "组件的vue实例"
+                    }
+                ],
+                "isEvent": true,
+                "custom": true,
+                "id": 1579074116294
+            },
+            {
+                "name": "downloadTemplate",
+                "desp": "下载模板",
+                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\nctx.$axios.get(`${axios.server}/role/template`, {\n    responseType: 'blob'\n}).then(res => {\n    if (!res) {\n        ctx.$notify({\n            title: '下载模板失败',\n            type: 'error'\n        });\n        return;\n    } else {\n        var blob = new Blob([res], { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;charset=utf-8' }),\n            url = window.URL.createObjectURL(blob),\n            aLink = document.createElement(\"a\");\n\n        aLink.style.display = \"none\";\n        aLink.href = url;\n        aLink.setAttribute(\"download\", \"template.xlsx\");\n        document.body.appendChild(aLink);\n        aLink.click();\n        document.body.removeChild(aLink); //下载完成移除元素\n        window.URL.revokeObjectURL(url);\n        ctx.$notify({\n            type: 'success',\n            title: '下载模板成功'\n        });\n    }\n}).catch(error => {\n    console.log(error);\n})",
+                "params": [],
+                "isEvent": false,
+                "custom": true
+            },
+            {
+                "name": "v2_component_btn_1579075628000",
+                "desp": "下载模板",
+                "code": "/**\n* 事件绑定在vue实例上，第一个参数是vue实例。\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\n**/\n\n//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\n/**\n方法名称：downloadTemplate\n方法描述：下载模板\n\n**/\nctx.downloadTemplate();",
+                "params": [
+                    {
+                        "name": "vueIns",
+                        "desp": "组件的vue实例"
+                    }
+                ],
+                "isEvent": true,
+                "custom": true,
+                "id": 1579073644646
+            }
+        ],
+        "watch": {},
+        "beforeCreate": {
+            "code": ""
+        },
+        "created": {
+            "code": ""
+        },
+        "beforeMount": {
+            "code": ""
+        },
+        "mounted": {
+            "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\n\nctx.__getVueIns('1579073713062').$refs._op_formUpload_upload.headers = {\n    \"X-CSRF-TOKEN\":window.sessionStorage.getItem('token')\n};\nctx.__getVueIns('1579073713062').$refs._op_formUpload_upload.onSuccess = function (res,file,fileList) {\n    \n    if(res.success){\n        ctx.$notify({\n            title: '导入成功',\n            type: 'success'\n        });\n        ctx.close();\n        ctx.$root.confirm();\n    }else{\n        ctx.$notify({\n            title: '导入失败',\n            message:res.msg,\n            type: 'error'\n        });\n        ctx.close();\n    }\n\n}\nctx.__getVueIns('1579073713062').$refs._op_formUpload_upload.onError = function (error,file,fileList) {\n    ctx.$notify({\n        title: '导入失败',\n        type: 'error'\n    });\n    ctx.close();\n}"
+        },
+        "beforeUpdate": {
+            "code": ""
+        },
+        "updated": {
+            "code": ""
+        },
+        "beforeDestroy": {
+            "code": ""
+        },
+        "destroyed": {
+            "code": ""
+        },
+        "activated": {
+            "code": ""
+        },
+        "deactivated": {
+            "code": ""
+        },
+        "pollList": [],
+        "url2data": {
+            "vdaSource": []
+        }
+    },
+    "dataBasket": {
+        "data": {},
+        "list": [
+            {
+                "desp": "上传地址",
+                "name": "uploadUrl",
+                "code": "${axios.server}/role/import",
+                "setCode": "",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false
+            },
+            {
+                "desp": "文件格式",
+                "name": "fileType",
+                "code": "'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'",
+                "setCode": "",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false
+            }
+        ],
+        "mapping": {
+            "1579073713062": [
+                {
+                    "id": 1579073713062,
+                    "modelValue": "action",
+                    "dataValue": "uploadUrl",
+                    "type": ""
+                },
+                {
+                    "id": 1579073713062,
+                    "modelValue": "limitType",
+                    "dataValue": "fileType",
+                    "type": ""
+                }
+            ]
+        }
+    },
+    "events": {},
+    "emitList": [],
+    "display": {
+        "icon": "icontongyong",
+        "desp": "导入子页面",
+        "type": "gridLayout",
+        "width": "800px",
+        "height": "1080px"
+    },
+    "scssCode": ".diaglog-btn-ctn{\r\n    position:absolute!important;\r\n    bottom:0;\r\n    width:100%;\r\n    right:0;\r\n    border-top:1px solid #e5e5e5;\r\n}\r\n.common-btn-focus{\r\n    //background:#457ce2;\r\n    height:32px;\r\n   // color:#fff;\r\n    line-height:32px;\r\n    padding-top:0;\r\n    padding-bottom:0;\r\n}\r\n.common-btn-normal{\r\n    height:32px;\r\n    line-height:32px;\r\n    padding-top:0;\r\n    padding-bottom:0;\r\n    border:1px solid #dcdfe6;\r\n    //color:#606266;\r\n   // background:#fff;\r\n}\r\n.margin-right20{\r\n    margin-right:20px!important;\r\n}\r\n.form-user-info-wrapper{\r\n    width:70%;\r\n    margin-left:auto!important;\r\n    margin-right:auto!important;\r\n\r\n    .el-button--text{\r\n        margin:0 0 0 10px!important;\r\n    }\r\n}",
+    "nls": "",
+    "mixins": [],
+    "imports": [],
+    "disableVueSPA": false
+}

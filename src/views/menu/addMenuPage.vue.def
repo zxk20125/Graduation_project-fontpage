@@ -1,0 +1,1385 @@
+{
+    "structure": {
+        "children": [
+            {
+                "children": [],
+                "component": "v2-form-input",
+                "id": 1578989229995,
+                "customClass": [
+                    "form-item-block"
+                ],
+                "commonStyle": {
+                    "position": "relative",
+                    "margin-top": "10px",
+                    "margin-bottom": "10px",
+                    "margin-left": "10px",
+                    "margin-right": "10px",
+                    "overflow": "hidden",
+                    "animation-duration": "1s"
+                },
+                "props": [
+                    "value",
+                    "disabled",
+                    "label",
+                    "placeholder",
+                    "prepend",
+                    "append",
+                    "titleMode",
+                    "labelWitdh",
+                    "inputType",
+                    "rows",
+                    "maxlength",
+                    "minlength",
+                    "prefixIcon",
+                    "suffixIcon",
+                    "showWordLimit",
+                    "clearable",
+                    "isRequired",
+                    "autoComplete",
+                    "suggestion",
+                    "visible",
+                    "customClass"
+                ],
+                "labelWitdh": "${labelWidth}",
+                "theme": {},
+                "disabled": false,
+                "label": "名称",
+                "placeholder": "请输入名称",
+                "titleMode": "col",
+                "inputType": "text",
+                "rows": 2,
+                "showWordLimit": false,
+                "clearable": false,
+                "isRequired": true,
+                "autoComplete": false,
+                "visible": true,
+                "$ref": "v2-form-input_1578989229995",
+                "value.sync": "${menuObj.name}",
+                "style": {
+                    "label": {}
+                },
+                "value": "${menuObj.name}",
+                "__capacity": "1",
+                "href": "v2-form-input",
+                "events": {},
+                "pid": "root",
+                "sizeLocked": {
+                    "widthLock": false,
+                    "heightLock": false
+                },
+                "animate": [
+                    "",
+                    "animated"
+                ]
+            },
+            {
+                "children": [],
+                "component": "v2-form-input",
+                "id": 1578989270974,
+                "customClass": [
+                    "form-item-block"
+                ],
+                "commonStyle": {
+                    "position": "relative",
+                    "margin-top": "10px",
+                    "margin-bottom": "10px",
+                    "margin-left": "10px",
+                    "margin-right": "10px",
+                    "overflow": "hidden",
+                    "animation-duration": "1s"
+                },
+                "props": [
+                    "value",
+                    "disabled",
+                    "label",
+                    "placeholder",
+                    "prepend",
+                    "append",
+                    "titleMode",
+                    "labelWitdh",
+                    "inputType",
+                    "rows",
+                    "maxlength",
+                    "minlength",
+                    "prefixIcon",
+                    "suffixIcon",
+                    "showWordLimit",
+                    "clearable",
+                    "isRequired",
+                    "autoComplete",
+                    "suggestion",
+                    "visible",
+                    "customClass"
+                ],
+                "labelWitdh": "${labelWidth}",
+                "theme": {},
+                "disabled": false,
+                "label": "标题",
+                "placeholder": "请输入标题",
+                "titleMode": "col",
+                "inputType": "text",
+                "rows": 2,
+                "showWordLimit": false,
+                "clearable": false,
+                "isRequired": true,
+                "autoComplete": false,
+                "visible": true,
+                "$ref": "v2-form-input_1578989270974",
+                "value.sync": "${menuObj.title}",
+                "style": {
+                    "label": {}
+                },
+                "value": "${menuObj.title}",
+                "__capacity": "1",
+                "href": "v2-form-input",
+                "events": {},
+                "pid": "root",
+                "sizeLocked": {
+                    "widthLock": false,
+                    "heightLock": false
+                },
+                "animate": [
+                    "",
+                    "animated"
+                ]
+            },
+            {
+                "children": [],
+                "component": "v2-form-input",
+                "id": 1578989245653,
+                "customClass": [
+                    "form-item-block"
+                ],
+                "commonStyle": {
+                    "position": "relative",
+                    "margin-top": "10px",
+                    "margin-bottom": "10px",
+                    "margin-left": "10px",
+                    "margin-right": "10px",
+                    "overflow": "hidden",
+                    "animation-duration": "1s"
+                },
+                "props": [
+                    "value",
+                    "disabled",
+                    "label",
+                    "placeholder",
+                    "prepend",
+                    "append",
+                    "titleMode",
+                    "labelWitdh",
+                    "inputType",
+                    "rows",
+                    "maxlength",
+                    "minlength",
+                    "prefixIcon",
+                    "suffixIcon",
+                    "showWordLimit",
+                    "clearable",
+                    "isRequired",
+                    "autoComplete",
+                    "suggestion",
+                    "visible",
+                    "customClass"
+                ],
+                "labelWitdh": "${labelWidth}",
+                "theme": {},
+                "disabled": false,
+                "label": "路径",
+                "placeholder": "请输入路径",
+                "titleMode": "col",
+                "inputType": "text",
+                "rows": 2,
+                "showWordLimit": false,
+                "clearable": false,
+                "isRequired": false,
+                "autoComplete": false,
+                "visible": true,
+                "$ref": "v2-form-input_1578989245653",
+                "value.sync": "${menuObj.path}",
+                "style": {
+                    "label": {}
+                },
+                "value": "${menuObj.path}",
+                "__capacity": "1",
+                "href": "v2-form-input",
+                "events": {},
+                "pid": "root",
+                "sizeLocked": {
+                    "widthLock": false,
+                    "heightLock": false
+                },
+                "animate": [
+                    "",
+                    "animated"
+                ]
+            },
+            {
+                "children": [],
+                "component": "v2-form-select",
+                "id": 1578991541023,
+                "customClass": [
+                    "form-item-block",
+                    "v2-form-select-1578991541023"
+                ],
+                "commonStyle": {
+                    "position": "relative",
+                    "margin-top": "10px",
+                    "margin-bottom": "10px",
+                    "margin-left": "10px",
+                    "margin-right": "10px",
+                    "overflow": "hidden",
+                    "animation-duration": "1s",
+                    "flex-shrink": 0
+                },
+                "props": [
+                    "value",
+                    "disabled",
+                    "dataType",
+                    "optionConfig",
+                    "options",
+                    "label",
+                    "placeholder",
+                    "labelWitdh",
+                    "titleMode",
+                    "clearable",
+                    "filterable",
+                    "isRequired",
+                    "visible",
+                    "customClass"
+                ],
+                "labelWitdh": "${labelWidth}",
+                "optionConfig": "${menuList}",
+                "theme": {
+                    "size": ""
+                },
+                "disabled": false,
+                "dataType": "def",
+                "options": [
+                    {
+                        "active": "true",
+                        "label": "",
+                        "value": ""
+                    },
+                    {
+                        "active": true,
+                        "label": "",
+                        "value": ""
+                    }
+                ],
+                "label": "父级菜单",
+                "placeholder": "请选择父级菜单",
+                "titleMode": "col",
+                "clearable": false,
+                "filterable": true,
+                "isRequired": false,
+                "visible": true,
+                "$ref": "v2-form-select_1578991541023",
+                "value.sync": "${menuObj.parentId}",
+                "style": {
+                    "label": {}
+                },
+                "value": "${menuObj.parentId}",
+                "__capacity": "1",
+                "href": "v2-form-select",
+                "events": {
+                    "_op_formSelect_select": {}
+                },
+                "pid": "root",
+                "sizeLocked": {
+                    "widthLock": false,
+                    "heightLock": false
+                },
+                "animate": [
+                    "",
+                    "animated"
+                ]
+            },
+            {
+                "children": [],
+                "component": "v2-form-select",
+                "id": 1598930198699,
+                "customClass": [
+                    "form-item-block",
+                    "v2-form-select-1578991541023",
+                    "v2-form-select-1598930198699"
+                ],
+                "commonStyle": {
+                    "position": "relative",
+                    "margin-top": "10px",
+                    "margin-bottom": "10px",
+                    "margin-left": "10px",
+                    "margin-right": "10px",
+                    "overflow": "hidden",
+                    "animation-duration": "1s"
+                },
+                "props": [
+                    "value",
+                    "disabled",
+                    "dataType",
+                    "optionConfig",
+                    "options",
+                    "label",
+                    "placeholder",
+                    "labelWitdh",
+                    "titleMode",
+                    "clearable",
+                    "filterable",
+                    "isRequired",
+                    "visible",
+                    "customClass"
+                ],
+                "labelWitdh": "${labelWidth}",
+                "optionConfig": "${iconList}",
+                "theme": {
+                    "size": ""
+                },
+                "disabled": false,
+                "dataType": "def",
+                "options": [
+                    {
+                        "active": "true",
+                        "label": "",
+                        "value": ""
+                    },
+                    {
+                        "active": true,
+                        "label": "",
+                        "value": ""
+                    }
+                ],
+                "label": "图标",
+                "placeholder": "请选择图标",
+                "titleMode": "col",
+                "clearable": true,
+                "filterable": true,
+                "isRequired": false,
+                "visible": true,
+                "$ref": "v2FormSelect_1",
+                "value.sync": "${menuObj.icon}",
+                "style": {
+                    "label": {}
+                },
+                "value": "${menuObj.icon}",
+                "__capacity": "1",
+                "href": "v2-form-select",
+                "events": {
+                    "_op_formSelect_select": {}
+                },
+                "pid": "root",
+                "sizeLocked": {
+                    "widthLock": false,
+                    "heightLock": false
+                },
+                "animate": [
+                    "",
+                    "animated"
+                ],
+                "offset": {
+                    "top": 190,
+                    "left": 10
+                }
+            },
+            {
+                "children": [],
+                "component": "v2-form-input",
+                "id": 1578989273015,
+                "customClass": [
+                    "form-item-block"
+                ],
+                "commonStyle": {
+                    "position": "relative",
+                    "margin-top": "10px",
+                    "margin-bottom": "10px",
+                    "margin-left": "10px",
+                    "margin-right": "10px",
+                    "overflow": "hidden",
+                    "animation-duration": "1s"
+                },
+                "props": [
+                    "value",
+                    "disabled",
+                    "label",
+                    "placeholder",
+                    "prepend",
+                    "append",
+                    "titleMode",
+                    "labelWitdh",
+                    "inputType",
+                    "rows",
+                    "maxlength",
+                    "minlength",
+                    "prefixIcon",
+                    "suffixIcon",
+                    "showWordLimit",
+                    "clearable",
+                    "isRequired",
+                    "autoComplete",
+                    "suggestion",
+                    "visible",
+                    "customClass"
+                ],
+                "labelWitdh": "${labelWidth}",
+                "theme": {
+                    "size": ""
+                },
+                "disabled": false,
+                "label": "排序",
+                "placeholder": "请输入排序",
+                "titleMode": "col",
+                "inputType": "text",
+                "rows": 2,
+                "showWordLimit": false,
+                "clearable": false,
+                "isRequired": false,
+                "autoComplete": false,
+                "visible": true,
+                "$ref": "v2-form-input_1578989273015",
+                "value.sync": "${menuObj.order}",
+                "style": {
+                    "label": {}
+                },
+                "value": "${menuObj.order}",
+                "__capacity": "1",
+                "href": "v2-form-input",
+                "events": {
+                    "_op_formInput_input": {}
+                },
+                "pid": "root",
+                "sizeLocked": {
+                    "widthLock": false,
+                    "heightLock": false
+                },
+                "animate": [
+                    "",
+                    "animated"
+                ]
+            },
+            {
+                "children": [],
+                "component": "v2-form-input",
+                "id": 1578989373807,
+                "customClass": [
+                    "form-textarea"
+                ],
+                "commonStyle": {
+                    "position": "relative",
+                    "margin-top": "10px",
+                    "margin-bottom": "10px",
+                    "margin-left": "10px",
+                    "margin-right": "10px",
+                    "overflow": "hidden",
+                    "animation-duration": "1s"
+                },
+                "props": [
+                    "value",
+                    "disabled",
+                    "label",
+                    "placeholder",
+                    "prepend",
+                    "append",
+                    "titleMode",
+                    "labelWitdh",
+                    "inputType",
+                    "rows",
+                    "maxlength",
+                    "minlength",
+                    "prefixIcon",
+                    "suffixIcon",
+                    "showWordLimit",
+                    "clearable",
+                    "isRequired",
+                    "autoComplete",
+                    "suggestion",
+                    "visible",
+                    "customClass"
+                ],
+                "labelWitdh": "${labelWidth}",
+                "theme": {
+                    "size": ""
+                },
+                "disabled": false,
+                "label": "描述",
+                "placeholder": "请填写描述",
+                "titleMode": "col",
+                "inputType": "textarea",
+                "rows": 5,
+                "maxlength": 200,
+                "showWordLimit": true,
+                "clearable": false,
+                "isRequired": false,
+                "autoComplete": false,
+                "visible": true,
+                "$ref": "v2-form-input_1578989373807",
+                "value.sync": "${menuObj.desc}",
+                "style": {
+                    "label": {}
+                },
+                "value": "${menuObj.desc}",
+                "__capacity": "1",
+                "href": "v2-form-input",
+                "events": {
+                    "_op_formInput_input": {}
+                },
+                "pid": "root",
+                "sizeLocked": {
+                    "widthLock": false,
+                    "heightLock": false
+                },
+                "animate": [
+                    "",
+                    "animated"
+                ]
+            },
+            {
+                "children": [],
+                "component": "v2-form-switch",
+                "id": 1596089189700,
+                "customClass": [],
+                "commonStyle": {
+                    "margin-left": "10px",
+                    "margin-right": "10px"
+                },
+                "props": [
+                    "value",
+                    "disabled",
+                    "label",
+                    "activeText",
+                    "inactiveText",
+                    "labelWitdh",
+                    "titleMode",
+                    "isRequired",
+                    "visible",
+                    "customClass"
+                ],
+                "labelWitdh": "${labelWidth}",
+                "disabled": false,
+                "label": "增量部署",
+                "titleMode": "col",
+                "isRequired": false,
+                "visible": true,
+                "$ref": "form-switch-1",
+                "value.sync": "${menuObj.deploy}",
+                "style": {
+                    "title": {}
+                },
+                "value": "${menuObj.deploy}",
+                "__capacity": "1",
+                "href": "v2-form-switch",
+                "name": "开关",
+                "events": {
+                    "_op_formSwitch_switch": {}
+                },
+                "version": "12.0.0",
+                "pid": "root",
+                "sizeLocked": {
+                    "widthLock": false,
+                    "heightLock": false
+                },
+                "animate": [
+                    "",
+                    "animated"
+                ]
+            },
+            {
+                "children": [
+                    {
+                        "children": [],
+                        "component": "v2-component-btn",
+                        "id": 1580814867006,
+                        "customClass": [
+                            "common-btn-normal"
+                        ],
+                        "commonStyle": {
+                            "position": "relative",
+                            "margin-top": "10px",
+                            "margin-bottom": "10px",
+                            "margin-left": "10px",
+                            "margin-right": "10px",
+                            "flex-shrink": "0",
+                            "overflow": "hidden",
+                            "animation-duration": "1s"
+                        },
+                        "props": [
+                            "disabled",
+                            "loading",
+                            "btnName",
+                            "leftIcon",
+                            "rightIcon",
+                            "shape",
+                            "visible",
+                            "customClass"
+                        ],
+                        "theme": {
+                            "btnType": "normal",
+                            "size": ""
+                        },
+                        "disabled": false,
+                        "loading": false,
+                        "btnName": "取消",
+                        "shape": "plain",
+                        "visible": true,
+                        "events": {
+                            "_op_componentbtn_btn": {
+                                "click": [
+                                    "v2_component_btn_1580814836000"
+                                ]
+                            }
+                        },
+                        "$ref": "v2-component-btn_1580814867006",
+                        "style": {
+                            "btnStyle": {}
+                        },
+                        "__capacity": "1",
+                        "href": "v2-component-btn",
+                        "pid": 1580814894142,
+                        "sizeLocked": {
+                            "widthLock": false,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated"
+                        ]
+                    },
+                    {
+                        "children": [],
+                        "component": "v2-component-btn",
+                        "id": 1580814895794,
+                        "customClass": [
+                            "common-btn-focus",
+                            "margin-right20"
+                        ],
+                        "commonStyle": {
+                            "margin-top": "10px",
+                            "margin-bottom": "10px",
+                            "margin-left": "10px",
+                            "margin-right": "10px",
+                            "overflow": "hidden",
+                            "animation-duration": "1s"
+                        },
+                        "props": [
+                            "disabled",
+                            "loading",
+                            "btnName",
+                            "leftIcon",
+                            "rightIcon",
+                            "shape",
+                            "visible",
+                            "customClass"
+                        ],
+                        "theme": {
+                            "btnType": "primary",
+                            "size": ""
+                        },
+                        "disabled": false,
+                        "loading": false,
+                        "btnName": "提交",
+                        "shape": "def",
+                        "visible": true,
+                        "$ref": "v2-component-btn_1580814895794",
+                        "style": {
+                            "btnStyle": {}
+                        },
+                        "__capacity": "1",
+                        "href": "v2-component-btn",
+                        "events": {
+                            "_op_componentBtn_btn": {}
+                        },
+                        "pid": 1580814894142,
+                        "sizeLocked": {
+                            "widthLock": false,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated"
+                        ]
+                    }
+                ],
+                "component": "v2Container",
+                "id": 1580814894142,
+                "customClass": [
+                    "diaglog-btn-ctn",
+                    "V2Container"
+                ],
+                "commonStyle": {
+                    "position": "relative",
+                    "overflow": "hidden",
+                    "justify-content": "flex-end",
+                    "min-width": "50px",
+                    "min-height": "50px",
+                    "animation-duration": "1s",
+                    "flex-direction": "row",
+                    "align-self": "stretch",
+                    "flex-basis": "auto",
+                    "flex-shrink": "1",
+                    "opacity": "1",
+                    "flex-grow": "0",
+                    "flex-wrap": "nowrap",
+                    "align-content": "stretch",
+                    "margin-top": "0px",
+                    "margin-bottom": "0px",
+                    "margin-left": "0px",
+                    "margin-right": "0px",
+                    "border-radius": "0px",
+                    "box-sizing": "border-box",
+                    "display": "flex",
+                    "align-items": "flex-start",
+                    "height": "auto"
+                },
+                "props": [
+                    "visible",
+                    "customClass"
+                ],
+                "$ref": "v2Container_1580814894142",
+                "href": "v2Container",
+                "direction": "col",
+                "style": {},
+                "pid": "root",
+                "ctnStyle": [
+                    {},
+                    {}
+                ],
+                "sizeLocked": {
+                    "widthLock": false,
+                    "heightLock": false
+                },
+                "animate": [
+                    "",
+                    "animated",
+                    ""
+                ],
+                "events": {
+                    "_op_content": {}
+                }
+            }
+        ],
+        "component": "v2container",
+        "id": "root",
+        "commonStyle": {
+            "flex-direction": "column",
+            "min-width": "50px",
+            "min-height": "50px",
+            "animation-duration": "1s",
+            "flex-shrink": "0",
+            "box-sizing": "border-box"
+        },
+        "customClass": [
+            "form-user-info-wrapper",
+            "V2Container"
+        ],
+        "$ref": "v2container_root",
+        "direction": "row",
+        "layout": [
+            100
+        ],
+        "style": {
+            "width": "100%",
+            "height": "100%"
+        },
+        "data": {},
+        "events": {
+            "_op_content": {}
+        },
+        "ctnStyle": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+        ],
+        "realSize": [],
+        "sizeLocked": {
+            "widthLock": false,
+            "heightLock": false
+        },
+        "animate": [
+            "",
+            "animated",
+            ""
+        ],
+        "props": [
+            "visible"
+        ]
+    },
+    "forms": [
+        {
+            "name": "menuForm",
+            "desc": "菜单表单",
+            "validate_when": "blur",
+            "submit_emitters": [
+                {
+                    "widget_id": 1580814895794,
+                    "event": "(default)"
+                }
+            ],
+            "inputs": {
+                "1578989229995": {
+                    "desc": "名称",
+                    "validation": {
+                        "kind": "single-regexp",
+                        "value": {
+                            "value": "[a-zA-Z]+",
+                            "message": "名称为英文字符"
+                        }
+                    },
+                    "name": "name"
+                },
+                "1578989270974": {
+                    "desc": "标题",
+                    "validation": {
+                        "kind": "single-regexp",
+                        "value": {
+                            "value": "\\S+",
+                            "message": "标题不能为空"
+                        }
+                    },
+                    "name": "标题"
+                },
+                "1580814895794": {
+                    "desc": "提交",
+                    "validation": {
+                        "kind": "dict",
+                        "value": {
+                            "ref": null,
+                            "rules": [],
+                            "disabled_rules": []
+                        }
+                    },
+                    "name": "submitBtn"
+                }
+            },
+            "validate_callback": "(function(result, ctx, resolve, reject){\n    /**\n     *  result: {\n     *      ok: boolean,\n     *      child_results: Array<{\n     *          ok: boolean,  // 输入是否正确\n     *          message?: string,  // 错误提示\n     *          fieldName: string,  // 字段名\n     *          fieldDesc: string,  // 字段描述\n     *          wid: string,  // 输入组件 ID\n     *          vueIns: VueComponent  // 输入组件实例\n     *      }>\n     *  }  // 校验结果列表\n     *  ctx: VueComponent  // 页面的组件实例\n     *  resolve: () => void  // 校验完成，可以提交\n     *  reject: () => void  // 校验完成，不能提交\n     */\n    console.log('字段:')\n    result.child_results.forEach(r => {\n        if (r.ok) {\n            console.log(r.fieldName, '输入正确')\n        } else {\n            console.log(r.fieldName, '输入不正确', r.message)\n        }\n        if (r.vueIns.$showResult) {\n            // 在 r 所对应的组件上显示错误提示，\n            // 若无错误则清除提示。入参 { ok: boolean, message?: string }\n            r.vueIns.$showResult(r)\n        }\n    })\n    if (result.ok) {\n        console.log('=> 表单输入正确，验证通过')\n        resolve()\n    } else {\n        console.log('=> 表单输入不正确')\n        reject()\n    }\n})",
+            "submit_callback": "(function(data, ctx){\n    /**\n     *  data: { [key: string]: string }  // 要提交的数据\n     *  ctx: VueComponent  // 页面的组件实例\n     */\n    var params = {\n        name:ctx.menuObj.name,\n        desc:ctx.menuObj.desc,\n        title:ctx.menuObj.title,\n        path:ctx.menuObj.path,\n        icon:ctx.menuObj.icon,\n       // parentId:ctx.menuObj.parentId[0],\n       parentId:ctx.menuObj.parentId,\n        order:ctx.menuObj.order,\n        deploy:ctx.menuObj.deploy\n    };\n    ctx.AParams.id&&(params.id=ctx.AParams.id);\n\n    ctx.$root.confirm(params);\n\n})"
+        }
+    ],
+    "logic": {
+        "methods": [
+            {
+                "name": "getMenuList",
+                "desp": "获取菜单列表",
+                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\nctx.$axios.get(`${axios.server}/menu/list`).then(res=>{\n    if(res.status&&res.success){\n       \n        ctx.menuList = res.obj.sort((a, b) => {\n            return parseInt(a.order, 10) - parseInt(b.order, 10);\n        }).map(function(item){\n            return {\n                value:item.id,\n                label:item.title\n            }\n        })\n    }\n}).catch(error=>{\n    console.log(error);\n})",
+                "params": [],
+                "isEvent": false,
+                "custom": true
+            },
+            {
+                "name": "transformMenu",
+                "desp": "转换菜单数据",
+                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\nlet menuObj = {},\n    result = list || [];\nif (list && list.length) {\n    result\n        .sort((a, b) => {\n            return parseInt(a.order, 10) - parseInt(b.order, 10);\n        })\n        .map(i => {\n            !i.parentId && (i.parentId = \"\");\n            let p = menuObj[i.parentId];\n            if (!p) {\n                p = menuObj[i.parentId] = {\n                    value:i.parentId,\n                    id: i.parentId,\n                    children: []\n                };\n            } else {\n                !p.children && (p.children = []);\n            }\n            let item = menuObj[i.id] || {\n                id: i.id,\n                value:i.id\n            };\n            item.label = i.title;\n            item.parentId = i.parentId || \"\";\n            menuObj[i.id] = item;\n            p.children.push(item);\n        });\n    ctx.menuTreeObj = menuObj;\n    Object.keys(menuObj)\n        .filter(e => !menuObj[e].children)\n        .map(e => delete menuObj[e]);\n\n    return menuObj[\"\"].children;\n    \n} else {\n    return [];\n}",
+                "params": [
+                    {
+                        "name": "list",
+                        "desp": "菜单数据"
+                    }
+                ],
+                "isEvent": false,
+                "custom": true
+            },
+            {
+                "name": "setFormTips",
+                "desp": "表单提示",
+                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\npipe.tooltip(this.__getVueIns('1578989229995').$refs._op_formInput_input, {\n    content: '菜单名称为英文字符',\n    placement: 'top-start',\n    style: {// 内容的样式\n        fontSize: '12px'\n    }\n});\npipe.tooltip(this.__getVueIns('1578989270974').$refs._op_formInput_input, {\n    content: '请输入菜单标题',\n    placement: 'top-start',\n    style: {// 内容的样式\n        fontSize: '12px'\n    }\n})\npipe.tooltip(this.__getVueIns('1578989245653').$refs._op_formInput_input, {\n    content: '请填写菜单路径',\n    placement: 'top-start',\n    style: {// 内容的样式\n        fontSize: '12px'\n    }\n});\npipe.tooltip(this.__getVueIns('1578991541023').$refs._op_formSelect_select, {\n    content: '请选择父级菜单',\n    placement: 'top-start',\n    style: {// 内容的样式\n        fontSize: '12px'\n    }\n})\npipe.tooltip(this.__getVueIns('1580801069334').$refs._op_formInput_input, {\n    content: '请填写菜单图标类名，如el-icon-menu',\n    placement: 'top-start',\n    style: {// 内容的样式\n        fontSize: '12px'\n    }\n});\npipe.tooltip(this.__getVueIns('1578989273015').$refs._op_formInput_input, {\n    content: '请输入排序，为整数',\n    placement: 'top-start',\n    style: {// 内容的样式\n        fontSize: '12px'\n    }\n})\n\npipe.tooltip(this.__getVueIns('1578989373807').$refs._op_formInput_input, {\n    content: '菜单描述长度限制为 0 到 200 个字符',\n    placement: 'top-start',\n    style: {// 内容的样式\n        fontSize: '12px'\n    }\n})",
+                "params": [],
+                "isEvent": false,
+                "custom": true
+            },
+            {
+                "name": "v2_component_btn_1580802220000",
+                "desp": "v2_component_btn_1580802220000",
+                "code": "/**\n* 事件绑定在vue实例上，第一个参数是vue实例。\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\n**/\n\n//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\nctx.close();",
+                "params": [
+                    {
+                        "name": "vueIns",
+                        "desp": "组件的vue实例"
+                    }
+                ],
+                "isEvent": false,
+                "custom": true
+            },
+            {
+                "name": "getMenuDetail",
+                "desp": "获取菜单详情",
+                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\nctx.$axios.get(`${axios.server}/menu/get/${ctx.AParams.id}`).then(res=>{\n    if(res.status&&res.success){\n        ctx.menuObj.name=res.obj.name;\n        ctx.menuObj.title=res.obj.title;\n        ctx.menuObj.desc=res.obj.desc;\n        ctx.menuObj.path=res.obj.path;\n        ctx.menuObj.order=res.obj.order;\n        ctx.menuObj.icon=res.obj.icon;\n        ctx.menuObj.parentId=res.obj.parentId;\n        ctx.menuObj.deploy=res.obj.deploy;\n    }\n}).catch(error=>{\n    console.log(error);\n})",
+                "params": [],
+                "isEvent": false,
+                "custom": true
+            },
+            {
+                "name": "v2_component_btn_1580814836000",
+                "desp": "关闭菜单子页面",
+                "code": "/**\n* 事件绑定在vue实例上，第一个参数是vue实例。\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\n**/\n\n//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\nctx.close();",
+                "params": [
+                    {
+                        "name": "$event",
+                        "desp": "$event"
+                    },
+                    {
+                        "name": "vueIns",
+                        "desp": "组件的vue实例"
+                    }
+                ],
+                "isEvent": true,
+                "custom": true,
+                "id": 1580814836000
+            }
+        ],
+        "watch": {},
+        "beforeCreate": {
+            "code": "let ctx = this;"
+        },
+        "created": {
+            "code": "let ctx = this;"
+        },
+        "beforeMount": {
+            "code": "let ctx = this;"
+        },
+        "mounted": {
+            "code": "debugger;\nconst ctx = this;\nctx.getMenuList();\nif(ctx.AParams.id){\n    ctx.getMenuDetail();\n}\nctx.setFormTips();"
+        },
+        "beforeUpdate": {
+            "code": "let ctx = this;"
+        },
+        "updated": {
+            "code": "let ctx = this;"
+        },
+        "beforeDestroy": {
+            "code": "let ctx = this;"
+        },
+        "destroyed": {
+            "code": "let ctx = this;"
+        },
+        "activated": {
+            "code": "let ctx = this;"
+        },
+        "deactivated": {
+            "code": "let ctx = this;"
+        },
+        "pollList": [],
+        "url2data": {
+            "vdaSource": []
+        }
+    },
+    "dataBasket": {
+        "data": {},
+        "list": [
+            {
+                "desp": "标题宽度",
+                "name": "labelWidth",
+                "code": "'100px'",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false,
+                "sync": false
+            },
+            {
+                "desp": "菜单列表数据",
+                "name": "menuList",
+                "code": "[]",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false,
+                "sync": false
+            },
+            {
+                "desp": "图标列表",
+                "name": "iconList",
+                "code": "/** @type {V2ViewType} */\nlet ctx = this;\nreturn ctx.$root.__parent.$root.$store.state.icon.icons||[]",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "computed",
+                "showSet": false,
+                "sync": false
+            },
+            {
+                "desp": "菜单数据",
+                "name": "menuObj",
+                "code": "{\n    name:'',\n    title:'',\n    desc:'',\n    path:'',\n    order:'',\n    icon:'',\n    parentId:'',\n    deploy:false\n}",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false,
+                "sync": false,
+                "isExposed": true
+            }
+        ],
+        "mapping": {
+            "1578989229995": [
+                {
+                    "id": 1578989229995,
+                    "modelValue": "value",
+                    "dataValue": "menuObj.name",
+                    "type": ""
+                },
+                {
+                    "id": 1578989229995,
+                    "modelValue": "labelWitdh",
+                    "dataValue": "labelWidth",
+                    "type": ""
+                }
+            ],
+            "1578989270974": [
+                {
+                    "id": 1578989270974,
+                    "modelValue": "value",
+                    "dataValue": "menuObj.title",
+                    "type": ""
+                },
+                {
+                    "id": 1578989270974,
+                    "modelValue": "labelWitdh",
+                    "dataValue": "labelWidth",
+                    "type": ""
+                }
+            ],
+            "1578989245653": [
+                {
+                    "id": 1578989245653,
+                    "modelValue": "value",
+                    "dataValue": "menuObj.path",
+                    "type": ""
+                },
+                {
+                    "id": 1578989245653,
+                    "modelValue": "labelWitdh",
+                    "dataValue": "labelWidth",
+                    "type": ""
+                }
+            ],
+            "1578989303711": [
+                {
+                    "id": 1578989303711,
+                    "modelValue": "value",
+                    "dataValue": "selectedMenuTree",
+                    "type": ""
+                },
+                {
+                    "id": 1578989303711,
+                    "modelValue": "labelWitdh",
+                    "dataValue": "labelWidth",
+                    "type": ""
+                },
+                {
+                    "id": 1578989303711,
+                    "modelValue": "optionConfig",
+                    "dataValue": "menuTreeData",
+                    "type": ""
+                }
+            ],
+            "1578989273015": [
+                {
+                    "id": 1578989273015,
+                    "modelValue": "labelWitdh",
+                    "dataValue": "labelWidth",
+                    "type": ""
+                },
+                {
+                    "id": 1578989273015,
+                    "modelValue": "value",
+                    "dataValue": "menuObj.order",
+                    "type": ""
+                }
+            ],
+            "1578989373807": [
+                {
+                    "id": 1578989373807,
+                    "modelValue": "value",
+                    "dataValue": "menuObj.desc",
+                    "type": ""
+                },
+                {
+                    "id": 1578989373807,
+                    "modelValue": "labelWitdh",
+                    "dataValue": "labelWidth",
+                    "type": ""
+                }
+            ],
+            "1578991541023": [
+                {
+                    "id": 1578991541023,
+                    "modelValue": "value",
+                    "dataValue": "menuObj.parentId",
+                    "type": ""
+                },
+                {
+                    "id": 1578991541023,
+                    "modelValue": "labelWitdh",
+                    "dataValue": "labelWidth",
+                    "type": ""
+                },
+                {
+                    "id": 1578991541023,
+                    "modelValue": "optionConfig",
+                    "dataValue": "menuList",
+                    "type": ""
+                }
+            ],
+            "1580801069334": [
+                {
+                    "id": 1580801069334,
+                    "modelValue": "value",
+                    "dataValue": "menuObj.icon",
+                    "type": ""
+                },
+                {
+                    "id": 1580801069334,
+                    "modelValue": "labelWitdh",
+                    "dataValue": "labelWidth",
+                    "type": ""
+                }
+            ],
+            "1596089189700": [
+                {
+                    "id": 1596089189700,
+                    "modelValue": "labelWitdh",
+                    "dataValue": "labelWidth",
+                    "type": ""
+                },
+                {
+                    "id": 1596089189700,
+                    "modelValue": "value",
+                    "dataValue": "menuObj.deploy",
+                    "type": ""
+                }
+            ],
+            "1598930198699": [
+                {
+                    "id": 1598930198699,
+                    "modelValue": "labelWitdh",
+                    "dataValue": "labelWidth",
+                    "type": ""
+                },
+                {
+                    "id": 1598930198699,
+                    "modelValue": "value",
+                    "dataValue": "menuObj.icon",
+                    "type": ""
+                },
+                {
+                    "id": 1598930198699,
+                    "modelValue": "optionConfig",
+                    "dataValue": "iconList",
+                    "type": ""
+                }
+            ]
+        },
+        "[object Object],[object Object],[object Object],[object Object]": [
+            {
+                "desp": "标题宽度",
+                "name": "labelWidth",
+                "code": "'100px'",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false,
+                "sync": false
+            },
+            {
+                "desp": "菜单列表数据",
+                "name": "menuList",
+                "code": "[]",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false,
+                "sync": false
+            },
+            {
+                "desp": "菜单数据",
+                "name": "menuObj",
+                "code": "{\n    name:'',\n    title:'',\n    desc:'',\n    path:'',\n    order:'',\n    icon:'',\n    parentId:'',\n    deploy:false\n}",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false,
+                "sync": false,
+                "isExposed": true
+            },
+            {
+                "desp": "undefined初始数据",
+                "name": "menuObj.parentId1598930115233",
+                "code": "",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false,
+                "sync": false,
+                "isExposed": true
+            },
+            {
+                "desp": "undefined初始数据",
+                "name": "menuList1598930115233",
+                "code": "",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false,
+                "sync": false,
+                "isExposed": true
+            },
+            {
+                "desp": "undefined初始数据",
+                "name": "labelWidth1598930115233",
+                "code": "",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false,
+                "sync": false,
+                "isExposed": true
+            }
+        ],
+        "[object Object],[object Object],[object Object],[object Object],[object Object]": [
+            {
+                "desp": "标题宽度",
+                "name": "labelWidth",
+                "code": "'100px'",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false,
+                "sync": false
+            },
+            {
+                "desp": "菜单列表数据",
+                "name": "menuList",
+                "code": "[]",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false,
+                "sync": false
+            },
+            {
+                "desp": "菜单数据",
+                "name": "menuObj",
+                "code": "{\n    name:'',\n    title:'',\n    desc:'',\n    path:'',\n    order:'',\n    icon:'',\n    parentId:'',\n    deploy:false\n}",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false,
+                "sync": false,
+                "isExposed": true
+            },
+            {
+                "desp": "undefined初始数据",
+                "name": "menuObj.parentId1598930115233",
+                "code": "",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false,
+                "sync": false,
+                "isExposed": true
+            },
+            {
+                "desp": "undefined初始数据",
+                "name": "menuList1598930115233",
+                "code": "",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false,
+                "sync": false,
+                "isExposed": true
+            },
+            {
+                "desp": "undefined初始数据",
+                "name": "labelWidth1598930115233",
+                "code": "",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false,
+                "sync": false,
+                "isExposed": true
+            }
+        ],
+        "[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]": [
+            {
+                "desp": "标题宽度",
+                "name": "labelWidth",
+                "code": "'100px'",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false,
+                "sync": false
+            },
+            {
+                "desp": "菜单列表数据",
+                "name": "menuList",
+                "code": "[]",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false,
+                "sync": false
+            },
+            {
+                "desp": "菜单数据",
+                "name": "menuObj",
+                "code": "{\n    name:'',\n    title:'',\n    desc:'',\n    path:'',\n    order:'',\n    icon:'',\n    parentId:'',\n    deploy:false\n}",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false,
+                "sync": false,
+                "isExposed": true
+            },
+            {
+                "desp": "undefined初始数据",
+                "name": "menuObj.parentId1598930115233",
+                "code": "",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false,
+                "sync": false,
+                "isExposed": true
+            },
+            {
+                "desp": "undefined初始数据",
+                "name": "menuList1598930115233",
+                "code": "",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false,
+                "sync": false,
+                "isExposed": true
+            },
+            {
+                "desp": "undefined初始数据",
+                "name": "labelWidth1598930115233",
+                "code": "",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false,
+                "sync": false,
+                "isExposed": true
+            }
+        ]
+    },
+    "events": {},
+    "display": {
+        "icon": "icontongyong",
+        "desp": "新增菜单子页面",
+        "type": "gridLayout",
+        "width": "800px",
+        "height": "1080px"
+    },
+    "scssCode": ".diaglog-btn-ctn{\n    position:absolute!important;\n    bottom:0;\n    width:100%;\n    right:0;\n    border-top:1px solid #e5e5e5;\n}\n.common-btn-focus{\n  //  background:#457ce2;\n    height:32px;\n    color:#fff;\n    line-height:32px;\n    padding-top:0;\n    padding-bottom:0;\n}\n.common-btn-normal{\n    height:32px;\n    line-height:32px;\n    padding-top:0;\n    padding-bottom:0;\n    border:1px solid #dcdfe6;\n    //color:#606266;\n    //background:#fff;\n}\n.margin-right20{\n    margin-right:20px!important;\n}\n.form-user-info-wrapper{\n    width:70%;\n    margin-left:auto!important;\n    margin-right:auto!important;\n}\n.margin-bottom20{\n    margin-bottom:20px;\n}\n.form-textarea{\n    width:100%;\n    margin: 0 0 20px 0!important;\n}",
+    "nls": "",
+    "mixins": [],
+    "imports": [],
+    "disableVueSPA": false
+}

@@ -1,0 +1,54 @@
+{
+  "author": {
+    "name": "author@agree.com.cn"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "组件模板",
+  "docs": {
+    "__wrapper": "v2cpt",
+    "icon": "iconwenben",
+    "type": "project",
+    "href": "v2-component-div",
+    "name": "组件模板",
+    "option": [
+      {
+        "name": "配置项对应的英文名",
+        "desp": "配置项中文名",
+        "type": "配置项的输入类型",
+        "defaultValue": "默认值"
+      }
+    ],
+   
+    "slot": [
+      {
+        "name": "slot名称",
+        "desc": "slot描述",
+        "type": [
+          "none",
+          "text",
+          "icon",
+          "component",
+          "custom"
+        ]
+      }
+    ],
+    "events": [
+      {
+        "name": "事件名",
+        "desp": "事件描述",
+        "params": "事件参数"
+      }
+    ],
+    "css": {}
+  },
+  "keywords": [],
+  "license": "ISC",
+  "main": "index.vue",
+  "name": "@v2-components/v2-component-template",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "15.0.0",
+  "index": 30000002
+}

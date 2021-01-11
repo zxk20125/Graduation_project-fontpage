@@ -1,0 +1,71 @@
+{
+	"serve": {
+		"port": 7007,
+		"sockPath": "/sockjs-node",
+		"sockHost": "localhost",
+		"publicPath": "./",
+		"mockPort": 7001
+	},
+	"dataSource": {
+		"base": "/v1/ds",
+		"proxy": []
+	},
+	"info": {
+		"layout": "lt-layout",
+		"title": "AWEB管理端",
+		"logo": "img/agree-logo.png",
+		"driverType": "pc",
+		"mainPage": "/main/main.vue"
+	},
+	"folderDesp": {
+		"/src/views/user/Grautate_project": "WMSView",
+		"/src/views/GRP": "毕业设计"
+	},
+	"extensions": [
+		"webide.extension.auth",
+		"webide.extension.amdp",
+		"webide.extension.icon",
+		"webide.extension.font",
+		"webide.extension.forms",
+		"webide.extension.theme",
+		"webide.extension.credentials",
+		"webide.extension.echartOffline"
+	],
+	"theme": {
+		"themeCss": "/public/css/theme.css",
+		"themeVar": "/src/scss/element-variables.scss",
+		"themeFloder": "/src/scss"
+	},
+	"mockApis": [
+		{
+			"name": "local",
+			"desp": "本地自定义接口",
+			"children": []
+		},
+		[
+			{
+				"name": "amdp",
+				"desp": "门户接口",
+				"children": []
+			}
+		],
+		[
+			{
+				"name": "amdp",
+				"desp": "门户接口",
+				"children": []
+			}
+		],
+		[
+			{
+				"name": "amdp",
+				"desp": "门户接口",
+				"children": []
+			}
+		]
+	],
+	"settings": {
+		"cache": true,
+		"autoSave": true
+	}
+}

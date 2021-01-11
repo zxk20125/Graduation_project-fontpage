@@ -1,0 +1,573 @@
+{
+    "structure": {
+        "id": "root",
+        "component": "v2Container",
+        "direction": "row",
+        "layout": [
+            100
+        ],
+        "style": {
+            "width": "100%",
+            "height": "100%"
+        },
+        "data": {},
+        "children": [
+            {
+                "component": "v2-layout",
+                "href": "v2-layout",
+                "direction": "col",
+                "children": [
+                    {
+                        "component": "v2-layout",
+                        "href": "v2-layout",
+                        "direction": "col",
+                        "children": [
+                            {
+                                "style": {
+                                    "textStyle": {}
+                                },
+                                "text": "${text1}",
+                                "editable": false,
+                                "textBreak": true,
+                                "visible": true,
+                                "__capacity": "1",
+                                "component": "v2-component-text",
+                                "href": "v2-component-text",
+                                "children": [],
+                                "events": {},
+                                "id": 1578594709867,
+                                "pid": 1578594693591,
+                                "commonStyle": {
+                                    "position": "relative",
+                                    "margin-top": "10px",
+                                    "margin-bottom": "10px",
+                                    "margin-left": "10px",
+                                    "margin-right": "10px",
+                                    "box-sizing": "border-box",
+                                    "align-self": "auto",
+                                    "flex-basis": "auto",
+                                    "flex-shrink": "1",
+                                    "flex-grow": "0",
+                                    "overflow": "hidden",
+                                    "color": "#666",
+                                    "animation-duration": "1s"
+                                },
+                                "customClass": [],
+                                "sizeLocked": {
+                                    "widthLock": true,
+                                    "heightLock": false
+                                },
+                                "animate": [
+                                    "",
+                                    "animated"
+                                ]
+                            }
+                        ],
+                        "style": {},
+                        "commonStyle": {
+                            "position": "relative",
+                            "margin-top": "0px",
+                            "margin-bottom": "0px",
+                            "margin-left": "0px",
+                            "margin-right": "0px",
+                            "box-sizing": "border-box",
+                            "align-self": "stretch",
+                            "flex-basis": "auto",
+                            "flex-shrink": "1",
+                            "flex-grow": "0",
+                            "overflow": "hidden",
+                            "display": "flex",
+                            "flex-direction": "row",
+                            "justify-content": "flex-start",
+                            "align-items": "center",
+                            "flex-wrap": "nowrap",
+                            "align-content": "stretch",
+                            "min-width": "50px",
+                            "min-height": "50px",
+                            "width": "33%",
+                            "animation-duration": "1s"
+                        },
+                        "id": 1578594693591,
+                        "pid": 1578594648480,
+                        "ctnStyle": [
+                            {},
+                            {}
+                        ],
+                        "customClass": [],
+                        "sizeLocked": {
+                            "widthLock": true,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated"
+                        ]
+                    },
+                    {
+                        "component": "v2-layout",
+                        "href": "v2-layout",
+                        "direction": "col",
+                        "children": [
+                            {
+                                "style": {
+                                    "textStyle": {}
+                                },
+                                "text": "${text2}",
+                                "editable": false,
+                                "textBreak": true,
+                                "visible": true,
+                                "__capacity": "1",
+                                "component": "v2-component-text",
+                                "href": "v2-component-text",
+                                "children": [],
+                                "events": {},
+                                "id": 1578594767950,
+                                "pid": 1578594684879,
+                                "commonStyle": {
+                                    "position": "relative",
+                                    "margin-top": "10px",
+                                    "margin-bottom": "10px",
+                                    "margin-left": "10px",
+                                    "margin-right": "10px",
+                                    "box-sizing": "border-box",
+                                    "align-self": "auto",
+                                    "flex-basis": "auto",
+                                    "flex-shrink": "1",
+                                    "flex-grow": "0",
+                                    "overflow": "hidden",
+                                    "color": "#666",
+                                    "animation-duration": "1s"
+                                },
+                                "customClass": [],
+                                "sizeLocked": {
+                                    "widthLock": true,
+                                    "heightLock": false
+                                },
+                                "animate": [
+                                    "",
+                                    "animated"
+                                ]
+                            }
+                        ],
+                        "style": {},
+                        "commonStyle": {
+                            "position": "relative",
+                            "margin-top": "0px",
+                            "margin-bottom": "0px",
+                            "margin-left": "0px",
+                            "margin-right": "0px",
+                            "box-sizing": "border-box",
+                            "align-self": "stretch",
+                            "flex-basis": "auto",
+                            "flex-shrink": "1",
+                            "flex-grow": "0",
+                            "overflow": "hidden",
+                            "display": "flex",
+                            "flex-direction": "row",
+                            "justify-content": "flex-start",
+                            "align-items": "center",
+                            "flex-wrap": "nowrap",
+                            "align-content": "stretch",
+                            "min-width": "50px",
+                            "min-height": "50px",
+                            "width": "33%",
+                            "animation-duration": "1s"
+                        },
+                        "id": 1578594684879,
+                        "pid": 1578594648480,
+                        "ctnStyle": [
+                            {},
+                            {},
+                            {}
+                        ],
+                        "customClass": [],
+                        "sizeLocked": {
+                            "widthLock": true,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated"
+                        ]
+                    },
+                    {
+                        "component": "v2-layout",
+                        "href": "v2-layout",
+                        "direction": "col",
+                        "children": [
+                            {
+                                "theme": {
+                                    "btnType": "primary",
+                                    "size": "mini"
+                                },
+                                "style": {
+                                    "btnStyle": {}
+                                },
+                                "disabled": false,
+                                "loading": false,
+                                "btnName": "${btn1}",
+                                "shape": "def",
+                                "visible": true,
+                                "__capacity": "1",
+                                "component": "v2-component-btn",
+                                "href": "v2-component-btn",
+                                "children": [],
+                                "events": {
+                                    "_op_componentBtn_btn": {
+                                        "click": [
+                                            "v2_component_btn_1580976853000"
+                                        ]
+                                    }
+                                },
+                                "id": 1578597589651,
+                                "pid": 1578597498750,
+                                "commonStyle": {
+                                    "position": "relative",
+                                    "margin-top": "10px",
+                                    "margin-bottom": "10px",
+                                    "margin-left": "10px",
+                                    "margin-right": "10px",
+                                    "box-sizing": "border-box",
+                                    "align-self": "auto",
+                                    "flex-basis": "auto",
+                                    "flex-shrink": "1",
+                                    "flex-grow": "0",
+                                    "overflow": "hidden",
+                                    "animation-duration": "1s"
+                                },
+                                "sizeLocked": {
+                                    "widthLock": false,
+                                    "heightLock": false
+                                },
+                                "animate": [
+                                    "",
+                                    "animated"
+                                ]
+                            },
+                            {
+                                "theme": {
+                                    "btnType": "danger",
+                                    "size": "mini"
+                                },
+                                "style": {
+                                    "btnStyle": {}
+                                },
+                                "disabled": false,
+                                "loading": false,
+                                "btnName": "${btn2}",
+                                "shape": "def",
+                                "visible": true,
+                                "__capacity": "1",
+                                "component": "v2-component-btn",
+                                "href": "v2-component-btn",
+                                "children": [],
+                                "events": {
+                                    "_op_componentBtn_btn": {
+                                        "click": [
+                                            "v2_component_btn_1580976932000"
+                                        ]
+                                    }
+                                },
+                                "id": 1578597525309,
+                                "pid": 1578597498750,
+                                "commonStyle": {
+                                    "position": "relative",
+                                    "margin-top": "10px",
+                                    "margin-bottom": "10px",
+                                    "margin-left": "10px",
+                                    "margin-right": "10px",
+                                    "box-sizing": "border-box",
+                                    "align-self": "auto",
+                                    "flex-basis": "auto",
+                                    "flex-shrink": "1",
+                                    "flex-grow": "0",
+                                    "overflow": "hidden",
+                                    "animation-duration": "1s"
+                                },
+                                "sizeLocked": {
+                                    "widthLock": false,
+                                    "heightLock": false
+                                },
+                                "animate": [
+                                    "",
+                                    "animated"
+                                ]
+                            }
+                        ],
+                        "style": {},
+                        "commonStyle": {
+                            "position": "relative",
+                            "margin-top": "0px",
+                            "margin-bottom": "0px",
+                            "margin-left": "0px",
+                            "margin-right": "0px",
+                            "box-sizing": "border-box",
+                            "align-self": "stretch",
+                            "flex-basis": "auto",
+                            "flex-shrink": "1",
+                            "flex-grow": "0",
+                            "overflow": "hidden",
+                            "display": "flex",
+                            "flex-direction": "row",
+                            "justify-content": "flex-start",
+                            "align-items": "center",
+                            "flex-wrap": "nowrap",
+                            "align-content": "stretch",
+                            "min-width": "50px",
+                            "min-height": "50px",
+                            "width": "34%",
+                            "animation-duration": "1s"
+                        },
+                        "id": 1578597498750,
+                        "pid": 1578594648480,
+                        "ctnStyle": [
+                            {},
+                            {}
+                        ],
+                        "sizeLocked": {
+                            "widthLock": true,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated"
+                        ]
+                    }
+                ],
+                "style": {},
+                "commonStyle": {
+                    "position": "relative",
+                    "margin-top": "0px",
+                    "margin-bottom": "0px",
+                    "margin-left": "0",
+                    "margin-right": "0px",
+                    "box-sizing": "border-box",
+                    "align-self": "stretch",
+                    "flex-basis": "auto",
+                    "flex-shrink": "1",
+                    "flex-grow": "0",
+                    "overflow": "hidden",
+                    "display": "flex",
+                    "flex-direction": "row",
+                    "justify-content": "flex-start",
+                    "align-items": "flex-start",
+                    "flex-wrap": "nowrap",
+                    "align-content": "stretch",
+                    "min-width": "50px",
+                    "min-height": "50px",
+                    "animation-duration": "1s"
+                },
+                "id": 1578594648480,
+                "pid": "root",
+                "ctnStyle": [
+                    {},
+                    {},
+                    {}
+                ],
+                "customClass": [],
+                "sizeLocked": {
+                    "widthLock": false,
+                    "heightLock": false
+                },
+                "animate": [
+                    "",
+                    "animated"
+                ]
+            }
+        ],
+        "events": {},
+        "commonStyle": {
+            "display": "flex",
+            "flex-direction": "column",
+            "justify-content": "flex-start",
+            "align-items": "flex-start",
+            "flex-wrap": "nowrap",
+            "align-content": "stretch",
+            "align-self": "stretch",
+            "flex-shrink": "1",
+            "flex-grow": "0",
+            "min-width": "50px",
+            "min-height": "50px",
+            "animation-duration": "1s",
+            "border-width": "1px"
+        },
+        "ctnStyle": [
+            {}
+        ],
+        "customClass": [
+            "todo-item-ctn"
+        ],
+        "realSize": [],
+        "sizeLocked": {
+            "widthLock": false,
+            "heightLock": false
+        },
+        "animate": [
+            "",
+            "animated"
+        ]
+    },
+    "forms": [],
+    "logic": {
+        "methods": [
+            {
+                "name": "v2_component_btn_1580976853000",
+                "desp": "v2_component_btn_1580976853000",
+                "code": "/**\n* 事件绑定在vue实例上，第一个参数是vue实例。\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\n**/\n\n//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\n\n// ctx.$prompt('备注信息', '再次提醒', {\n//     confirmButtonText: '确定',\n//     cancelButtonText: '取消',\n//     // inputPattern: /[\\w!#$%&'*+/=?^_`{|}~-]+(?:\\.[\\w!#$%&'*+/=?^_`{|}~-]+)*@(?:[\\w](?:[\\w-]*[\\w])?\\.)+[\\w](?:[\\w-]*[\\w])?/,\n//     // inputErrorMessage: '邮箱格式不正确'\n//   })\nthis.$confirm('是否再次提醒该事件?', '提示', {\n      confirmButtonText: '确定',\n      cancelButtonText: '取消',\n      type: 'warning'\n    }).then(({ value }) => {\n    // TODO: 这里需要向后台提交请求\n    // 可以以 ctx.id 作为数据的标识符\n    // 然后在相应的响应回调中提示成功/失败信息\n    /**\n     * method:请求方式\n     * url: 请求路径,\n     * data: 请求体参数 \n    **/\n    // ctx.$axios({\n    //   method: 'post',\n    //   url: 'url',\n    //   data: {}\n    // }).then(res=>{\n    // // 成功回调，res为响应体\n    // }).catch(e=>{\n    // // 失败回调,e为错误提示\n    // });\n    this.$message({\n      type: 'success',\n      message: '已成功添加提醒'\n    });\n  }).catch(() => {\n    // this.$message({\n    //   type: 'info',\n    //   message: '取消输入'\n    // });\n  });",
+                "params": [
+                    {
+                        "name": "vueIns",
+                        "desp": "组件的vue实例"
+                    }
+                ],
+                "isEvent": true,
+                "custom": true,
+                "id": 1578597589651
+            },
+            {
+                "name": "v2_component_btn_1580976932000",
+                "desp": "v2_component_btn_1580976932000",
+                "code": "/**\n* 事件绑定在vue实例上，第一个参数是vue实例。\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\n**/\n\n//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\n\n// ctx.$prompt('备注信息', '移除提醒', {\n//     confirmButtonText: '确定',\n//     cancelButtonText: '取消',\n//     // inputPattern: /[\\w!#$%&'*+/=?^_`{|}~-]+(?:\\.[\\w!#$%&'*+/=?^_`{|}~-]+)*@(?:[\\w](?:[\\w-]*[\\w])?\\.)+[\\w](?:[\\w-]*[\\w])?/,\n//     // inputErrorMessage: '邮箱格式不正确'\n//   })\nthis.$confirm('是否移除事件提醒?', '提示', {\n      confirmButtonText: '确定',\n      cancelButtonText: '取消',\n      type: 'warning'\n    }).then(({ value }) => {\n    // TODO: 这里需要向后台提交请求\n    // 可以以 ctx.id 作为数据的标识符\n    // 然后在相应的响应回调中提示成功/失败信息\n    /**\n     * method:请求方式\n     * url: 请求路径,\n     * data: 请求体参数 \n    **/\n    // ctx.$axios({\n    //   method: 'post',\n    //   url: 'url',\n    //   data: {}\n    // }).then(res=>{\n    // // 成功回调，res为响应体\n    // }).catch(e=>{\n    // // 失败回调,e为错误提示\n    // });\n    this.$message({\n      type: 'success',\n      message: '已成功移除提醒'\n    });\n  }).catch(() => {\n    // this.$message({\n    //   type: 'info',\n    //   message: '取消输入'\n    // });\n  });",
+                "params": [
+                    {
+                        "name": "vueIns",
+                        "desp": "组件的vue实例"
+                    }
+                ],
+                "isEvent": true,
+                "custom": true,
+                "id": 1578597525309
+            }
+        ],
+        "watch": {},
+        "beforeCreate": {
+            "code": ""
+        },
+        "created": {
+            "code": ""
+        },
+        "beforeMount": {
+            "code": ""
+        },
+        "mounted": {
+            "code": ""
+        },
+        "beforeUpdate": {
+            "code": ""
+        },
+        "updated": {
+            "code": ""
+        },
+        "beforeDestroy": {
+            "code": ""
+        },
+        "destroyed": {
+            "code": ""
+        },
+        "activated": {
+            "code": ""
+        },
+        "deactivated": {
+            "code": ""
+        },
+        "pollList": []
+    },
+    "dataBasket": {
+        "data": {},
+        "list": [
+            {
+                "desp": "文本1",
+                "name": "text1",
+                "code": "20200202",
+                "setCode": "",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false
+            },
+            {
+                "desp": "文本2",
+                "name": "text2",
+                "code": "待调账 3 件",
+                "setCode": "",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false
+            },
+            {
+                "desp": "按钮1",
+                "name": "btn1",
+                "code": "按钮1",
+                "setCode": "",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false
+            },
+            {
+                "desp": "按钮2",
+                "name": "btn2",
+                "code": "按钮2",
+                "setCode": "",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false
+            },
+            {
+                "desp": "标识",
+                "name": "id",
+                "code": "''",
+                "setCode": "",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false
+            }
+        ],
+        "mapping": {
+            "1578594767950": [
+                {
+                    "id": 1578594767950,
+                    "modelValue": "text",
+                    "dataValue": "text2",
+                    "type": ""
+                }
+            ],
+            "1578594709867": [
+                {
+                    "id": 1578594709867,
+                    "modelValue": "text",
+                    "dataValue": "text1",
+                    "type": ""
+                }
+            ],
+            "1578597589651": [
+                {
+                    "id": 1578597589651,
+                    "modelValue": "btnName",
+                    "dataValue": "btn1",
+                    "type": ""
+                }
+            ],
+            "1578597525309": [
+                {
+                    "id": 1578597525309,
+                    "modelValue": "btnName",
+                    "dataValue": "btn2",
+                    "type": ""
+                }
+            ]
+        }
+    },
+    "events": {},
+    "display": {
+        "icon": "icontongyong",
+        "desp": "fx_水平文本按钮_1",
+        "type": "gridLayout",
+        "width": "800px",
+        "height": "45px"
+    },
+    "scssCode": ".todo-item-ctn{\n    border-bottom: 1px solid #ddd;\n}\n"
+}

@@ -1,0 +1,545 @@
+{
+    "structure": {
+        "id": "root",
+        "component": "v2Container",
+        "direction": "row",
+        "layout": [
+            100
+        ],
+        "style": {
+            "width": "100%",
+            "height": "100%"
+        },
+        "data": {},
+        "children": [
+            {
+                "theme": {
+                    "tableType": "border"
+                },
+                "tableData": "${roleTableList}",
+                "columns": [
+                    {
+                        "active": true,
+                        "prop": "roleId",
+                        "label": "ID",
+                        "sortable": true,
+                        "openFilter": false,
+                        "type": "text",
+                        "combi": [
+                            {
+                                "active": "true"
+                            }
+                        ],
+                        "tagMap": [
+                            {
+                                "active": "true",
+                                "type": "text"
+                            }
+                        ],
+                        "iconMap": [
+                            {
+                                "active": "true"
+                            }
+                        ],
+                        "filterMap": [
+                            {
+                                "active": "true"
+                            }
+                        ],
+                        "width": "150px"
+                    },
+                    {
+                        "active": true,
+                        "prop": "roleName",
+                        "label": "角色",
+                        "sortable": true,
+                        "openFilter": false,
+                        "type": "text",
+                        "combi": [
+                            {
+                                "active": "true"
+                            }
+                        ],
+                        "tagMap": [
+                            {
+                                "active": "true",
+                                "type": "text"
+                            }
+                        ],
+                        "iconMap": [
+                            {
+                                "active": "true"
+                            }
+                        ],
+                        "filterMap": [
+                            {
+                                "active": "true"
+                            }
+                        ],
+                        "width": "150px"
+                    },
+                    {
+                        "active": true,
+                        "prop": "desp",
+                        "label": "说明",
+                        "sortable": false,
+                        "openFilter": false,
+                        "type": "text",
+                        "combi": [
+                            {
+                                "active": "true"
+                            }
+                        ],
+                        "tagMap": [
+                            {
+                                "active": "true",
+                                "type": "text"
+                            }
+                        ],
+                        "iconMap": [
+                            {
+                                "active": "true"
+                            }
+                        ],
+                        "filterMap": [
+                            {
+                                "active": "true"
+                            }
+                        ],
+                        "width": "300px"
+                    }
+                ],
+                "selection": "multi",
+                "openIndex": false,
+                "openPage": false,
+                "toolBar": false,
+                "toolTitle": "操作列",
+                "toolLocation": "right",
+                "toolWidth": "100",
+                "toolBtns": [],
+                "expand": false,
+                "visible": true,
+                "__capacity": "1",
+                "component": "v2-component-table",
+                "href": "v2-component-table",
+                "children": [],
+                "events": {
+                    "_op_table_table": {
+                        "selection-change": [
+                            "v2_component_table_1578967582000"
+                        ]
+                    }
+                },
+                "id": 1578626611968,
+                "pid": "root",
+                "commonStyle": {
+                    "position": "relative",
+                    "margin-top": "10px",
+                    "margin-bottom": "10px",
+                    "margin-left": "10px",
+                    "margin-right": "10px",
+                    "box-sizing": "border-box",
+                    "align-self": "auto",
+                    "flex-basis": "auto",
+                    "flex-shrink": 1,
+                    "flex-grow": 0,
+                    "overflow": "hidden",
+                    "animation-duration": "1s",
+                    "width": "auto"
+                },
+                "sizeLocked": {
+                    "widthLock": true,
+                    "heightLock": false
+                },
+                "animate": [
+                    "",
+                    "animated"
+                ],
+                "customClass": [
+                    "role-table"
+                ],
+                "props": [
+                    "tableData",
+                    "loading",
+                    "columns",
+                    "selection",
+                    "value",
+                    "selectionLocation",
+                    "tHeight",
+                    "tMaxHeight",
+                    "openIndex",
+                    "indexLocation",
+                    "openPage",
+                    "pagerCount",
+                    "pageSizes",
+                    "pageSize",
+                    "openSetPageCallback",
+                    "setPageCallback",
+                    "currentPage",
+                    "totalCount",
+                    "toolBar",
+                    "toolTitle",
+                    "toolLocation",
+                    "toolWidth",
+                    "toolBtns",
+                    "expand",
+                    "expandMap",
+                    "visible"
+                ]
+            },
+            {
+                "component": "v2-layout",
+                "href": "v2-layout",
+                "direction": "col",
+                "children": [
+                    {
+                        "theme": {
+                            "btnType": "normal",
+                            "size": ""
+                        },
+                        "style": {
+                            "btnStyle": {}
+                        },
+                        "disabled": false,
+                        "loading": false,
+                        "btnName": "取消",
+                        "shape": "plain",
+                        "visible": true,
+                        "__capacity": "1",
+                        "component": "v2-component-btn",
+                        "href": "v2-component-btn",
+                        "children": [],
+                        "events": {
+                            "_op_componentBtn_btn": {
+                                "click": [
+                                    "v2_component_btn_1578966973000"
+                                ]
+                            }
+                        },
+                        "id": 1578966933302,
+                        "pid": 1578966899082,
+                        "commonStyle": {
+                            "position": "relative",
+                            "margin-top": "10px",
+                            "margin-bottom": "10px",
+                            "margin-left": "10px",
+                            "margin-right": "10px",
+                            "box-sizing": "border-box",
+                            "align-self": "auto",
+                            "flex-basis": "auto",
+                            "flex-shrink": "0",
+                            "flex-grow": "0",
+                            "overflow": "hidden",
+                            "animation-duration": "1s"
+                        },
+                        "sizeLocked": {
+                            "widthLock": false,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated"
+                        ],
+                        "customClass": [
+                            "common-btn-normal"
+                        ],
+                        "props": [
+                            "disabled",
+                            "loading",
+                            "btnName",
+                            "leftIcon",
+                            "rightIcon",
+                            "shape",
+                            "visible"
+                        ]
+                    },
+                    {
+                        "theme": {
+                            "btnType": "primary",
+                            "size": ""
+                        },
+                        "style": {
+                            "btnStyle": {}
+                        },
+                        "disabled": false,
+                        "loading": false,
+                        "btnName": "提交",
+                        "shape": "def",
+                        "visible": true,
+                        "__capacity": "1",
+                        "component": "v2-component-btn",
+                        "href": "v2-component-btn",
+                        "children": [],
+                        "events": {
+                            "_op_componentBtn_btn": {
+                                "click": [
+                                    "v2_component_btn_1578967772000"
+                                ]
+                            }
+                        },
+                        "id": 1578966925673,
+                        "pid": 1578966899082,
+                        "commonStyle": {
+                            "position": "relative",
+                            "margin-top": "10px",
+                            "margin-bottom": "10px",
+                            "margin-left": "10px",
+                            "margin-right": "10px",
+                            "box-sizing": "border-box",
+                            "align-self": "auto",
+                            "flex-basis": "auto",
+                            "flex-shrink": 1,
+                            "flex-grow": 0,
+                            "overflow": "hidden",
+                            "animation-duration": "1s"
+                        },
+                        "sizeLocked": {
+                            "widthLock": false,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated"
+                        ],
+                        "customClass": [
+                            "common-btn-focus",
+                            "margin-right20"
+                        ],
+                        "props": [
+                            "disabled",
+                            "loading",
+                            "btnName",
+                            "leftIcon",
+                            "rightIcon",
+                            "shape",
+                            "visible"
+                        ]
+                    }
+                ],
+                "style": {},
+                "commonStyle": {
+                    "position": "relative",
+                    "margin-top": "0px",
+                    "margin-bottom": "0px",
+                    "margin-left": "0px",
+                    "margin-right": "0px",
+                    "box-sizing": "border-box",
+                    "align-self": "stretch",
+                    "flex-basis": "auto",
+                    "flex-shrink": "1",
+                    "flex-grow": "0",
+                    "overflow": "hidden",
+                    "display": "flex",
+                    "flex-direction": "row",
+                    "justify-content": "flex-end",
+                    "align-items": "flex-start",
+                    "flex-wrap": "nowrap",
+                    "align-content": "stretch",
+                    "min-width": "50px",
+                    "min-height": "50px",
+                    "animation-duration": "1s"
+                },
+                "id": 1578966899082,
+                "pid": "root",
+                "ctnStyle": [
+                    {},
+                    {}
+                ],
+                "customClass": [
+                    "diaglog-btn-ctn"
+                ],
+                "sizeLocked": {
+                    "widthLock": false,
+                    "heightLock": false
+                },
+                "animate": [
+                    "",
+                    "animated"
+                ],
+                "props": [
+                    "height",
+                    "direction",
+                    "visible"
+                ]
+            }
+        ],
+        "events": {},
+        "commonStyle": {
+            "display": "flex",
+            "flex-direction": "column",
+            "justify-content": "flex-start",
+            "align-items": "flex-start",
+            "flex-wrap": "nowrap",
+            "align-content": "stretch",
+            "align-self": "stretch",
+            "flex-shrink": "1",
+            "flex-grow": "0",
+            "min-width": "50px",
+            "min-height": "50px",
+            "animation-duration": "1s"
+        },
+        "ctnStyle": [
+            {},
+            {}
+        ],
+        "realSize": [],
+        "sizeLocked": {
+            "widthLock": false,
+            "heightLock": false
+        },
+        "animate": [
+            "",
+            "animated"
+        ]
+    },
+    "forms": [],
+    "logic": {
+        "methods": [
+            {
+                "name": "getRoleList",
+                "desp": "获取角色表格数据",
+                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\n//console.log(ctx.AParams.roles);\nctx.$axios.get(`${axios.server}/role/list`).then(res => {\n  if (res.success && res.status) {\n    const tableData = res.obj || [];\n\n    ctx.roleTableList = tableData.map(function (item) {\n      return {\n        roleId: item.id,\n        roleName: item.name || '',\n        desp: item.desc || '',\n\n      }\n    });\n    ctx.$nextTick(function(){\n    \n      if (ctx.roleTableList.length &&ctx.AParams.roles&&ctx.AParams.roles.length) {\n        ctx.AParams.roles.forEach(item => {\n          for (let i = 0; i < ctx.roleTableList.length; i++) {\n            if (ctx.roleTableList[i].roleId === item.id) {\n              ctx.__getVueIns('1578626611968').$refs._op_table_table.toggleRowSelection(ctx.roleTableList[i]);\n            }\n          }\n\n        })\n      }\n    })\n\n  }\n}).catch(error => {\n\n})",
+                "params": [],
+                "isEvent": false,
+                "custom": true
+            },
+            {
+                "name": "v2_component_btn_1578966973000",
+                "desp": "关闭关联角色子页面",
+                "code": "/**\n* 事件绑定在vue实例上，第一个参数是vue实例。\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\n**/\n\n//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\nctx.close();",
+                "params": [
+                    {
+                        "name": "vueIns",
+                        "desp": "组件的vue实例"
+                    }
+                ],
+                "isEvent": true,
+                "custom": true,
+                "id": 1578966933302
+            },
+            {
+                "name": "associateRoles",
+                "desp": "关联角色",
+                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\nvar roleIds  = [];\n\nroleIds = ctx.selectedRoleList.map(function(item){\n    \n    return item.roleId;\n});\n\nctx.$axios.post(`${axios.server}/user/update/role/${ctx.AParams.id}`, JSON.stringify(roleIds),{\n    headers: {\n        'Content-type':'application/json'\n    }\n}).then(res => {\n    //下一步的行为\n    if(res.success){\n        ctx.$notify({\n            type: 'success',\n            title: '关联角色成功'\n        });\n        \n    }else{\n        this.$notify({\n            title: res.msg,\n            type: 'error'\n        });\n    }\n    ctx.close();\n    ctx.$root.confirm();\n        \n}).catch(function (error) {\n        console.log(error);\n});",
+                "params": [],
+                "isEvent": false,
+                "custom": true
+            },
+            {
+                "name": "v2_component_table_1578967582000",
+                "desp": "表格复选框状态改变时获取选中数据",
+                "code": "/**\n* 事件绑定在vue实例上，第一个参数是vue实例。\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\n**/\n\n//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\nctx.selectedRoleList = selections||[];",
+                "params": [
+                    {
+                        "name": "vueIns",
+                        "desp": "组件的vue实例"
+                    },
+                    {
+                        "name": "selections",
+                        "desp": "选中数据"
+                    }
+                ],
+                "isEvent": true,
+                "custom": true,
+                "id": 1578626611968
+            },
+            {
+                "name": "v2_component_btn_1578967772000",
+                "desp": "关联角色",
+                "code": "/**\n* 事件绑定在vue实例上，第一个参数是vue实例。\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\n**/\n\n//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\nctx.associateRoles();\n",
+                "params": [
+                    {
+                        "name": "vueIns",
+                        "desp": "组件的vue实例"
+                    }
+                ],
+                "isEvent": true,
+                "custom": true,
+                "id": 1578966925673
+            }
+        ],
+        "watch": {},
+        "beforeCreate": {
+            "code": ""
+        },
+        "created": {
+            "code": ""
+        },
+        "beforeMount": {
+            "code": ""
+        },
+        "mounted": {
+            "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\nctx.getRoleList();"
+        },
+        "beforeUpdate": {
+            "code": ""
+        },
+        "updated": {
+            "code": ""
+        },
+        "beforeDestroy": {
+            "code": ""
+        },
+        "destroyed": {
+            "code": ""
+        },
+        "activated": {
+            "code": ""
+        },
+        "deactivated": {
+            "code": ""
+        },
+        "pollList": [],
+        "url2data": {
+            "vdaSource": []
+        }
+    },
+    "dataBasket": {
+        "data": {},
+        "list": [
+            {
+                "desp": "角色表格数据",
+                "name": "roleTableList",
+                "code": "[]",
+                "setCode": "",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false
+            },
+            {
+                "desp": "选中的角色数据",
+                "name": "selectedRoleList",
+                "code": "[]",
+                "setCode": "",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false
+            }
+        ],
+        "mapping": {
+            "1578626611968": [
+                {
+                    "id": 1578626611968,
+                    "modelValue": "tableData",
+                    "dataValue": "roleTableList",
+                    "type": ""
+                }
+            ]
+        }
+    },
+    "events": {},
+    "display": {
+        "icon": "icontongyong",
+        "desp": "角色列表",
+        "type": "gridLayout",
+        "width": "800px",
+        "height": "1080px"
+    },
+    "scssCode": ".role-table{\n    height:auto !important;\n    margin:0 !important;\n    overflow:auto!important;\n\n    .el-table{\n        min-width:655px!important;\n\n        .cell{\n            white-space: nowrap;\n        }\n    }\n}\n.role-table .el-table__body-wrapper{\n    height:auto !important;\n}\n.diaglog-btn-ctn{\n    position:absolute!important;\n    bottom:0;\n    width:100%;\n    right:0;\n    border-top:1px solid #e5e5e5;\n}\n.common-btn-focus{\n //   background:#457ce2;\n    height:32px;\n //   color:#fff;\n    line-height:32px;\n    padding-top:0;\n    padding-bottom:0;\n}\n.common-btn-normal{\n    height:32px;\n    line-height:32px;\n    padding-top:0;\n    padding-bottom:0;\n    border:1px solid #dcdfe6;\n //   color:#606266;\n //   background:#fff;\n}\n.margin-right20{\n    margin-right:20px!important;\n}\n",
+    "nls": "",
+    "mixins": [],
+    "imports": [],
+    "disableVueSPA": false
+}

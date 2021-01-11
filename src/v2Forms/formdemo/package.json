@@ -1,0 +1,71 @@
+
+    {
+        "author": "sunxiaojie@agree.com.cn",
+        "bundleDependencies": false,
+        "deprecated": false,
+        "name":"formdemo",
+        "description": "示例",
+        "docs": {
+          "icon": "iconbiaoge",
+          "type": "form",
+          "href": "formdemo",
+          "author": "",
+          "name": "formdemo",
+          "option":[
+            {
+                "type": "string_input",
+                "name": "width",
+                "defaultValue": "",
+                "desp": "表单宽度"
+            },
+            
+            {
+                "type": "string_input",
+                "name": "formData",
+                "defaultValue": "",
+                "desp": "表单数据"
+            }
+          ],
+          "event":[
+            
+            {
+                "name":"confirm-submit",
+                "desp":"表单提交且校验通过时",
+                "params":[
+                    {
+                        "name":"formData",
+                        "desp":"表单数据"
+                    }
+                ]
+            },
+            {
+                "name":"async-validate",
+                "desp":"异步表单校验触发时，返回的结果",
+                "params":[
+                    {
+                        "name":"result",
+                        "desp":"异步返回的结果"
+                    },
+                    {
+                        "name":"keyName",
+                        "desp":"当前验证的key名"
+                    },
+                    {
+                        "name":"keyValue",
+                        "desp":"当前验证的key值"
+                    },
+                    {
+                        "name":"callback",
+                        "desp":"element校验函数"
+                    }
+                ]
+            }
+            ]
+        },
+        "keywords": [],
+        "license": "ISC",
+        "main": "index.vue",
+        "scripts": {},
+        "version": "15.0.0"
+     }
+    

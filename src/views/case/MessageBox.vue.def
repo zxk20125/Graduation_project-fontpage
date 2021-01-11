@@ -1,0 +1,2055 @@
+{
+    "structure": {
+        "id": "root",
+        "component": "v2Container",
+        "direction": "row",
+        "layout": [
+            100
+        ],
+        "data": {},
+        "children": [
+            {
+                "type": "ctn",
+                "author": "zhanghaixian@agree.com.cn",
+                "href": "v2Container",
+                "component": "v2Container",
+                "name": "v2Container",
+                "desp": "单容器",
+                "previewSrc": "/v1/support/screenshot/v2Container.png",
+                "id": 1601176168086,
+                "pid": "root",
+                "$ref": "v2Container_3",
+                "props": [
+                    "visible",
+                    "if",
+                    "customClass"
+                ],
+                "sizeLocked": {
+                    "widthLock": false,
+                    "heightLock": false
+                },
+                "animate": [
+                    "",
+                    "animated",
+                    ""
+                ],
+                "events": {
+                    "_op_content": {}
+                },
+                "children": [
+                    {
+                        "style": {
+                            "textStyle": {
+                                "font-weight": "bold"
+                            }
+                        },
+                        "text": "MessageBox 弹框",
+                        "overflow": "nomal",
+                        "overflowLine": 3,
+                        "editable": false,
+                        "textBreak": true,
+                        "visible": true,
+                        "__capacity": "1",
+                        "component": "v2-component-text",
+                        "href": "v2-component-text",
+                        "name": "文本",
+                        "children": [],
+                        "events": {
+                            "_op_componentText_text": {}
+                        },
+                        "version": "14.0.0",
+                        "id": 1601176405305,
+                        "pid": 1601176168086,
+                        "$ref": "v2ComponentText_1",
+                        "props": [
+                            "text",
+                            "overflow",
+                            "overflowLine",
+                            "title",
+                            "editable",
+                            "textBreak",
+                            "visible",
+                            "if",
+                            "customClass"
+                        ],
+                        "sizeLocked": {
+                            "widthLock": true,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated"
+                        ],
+                        "commonStyle": {
+                            "box-sizing": "border-box",
+                            "flex-shrink": "0",
+                            "color": "#000000",
+                            "font-size": "2.5em"
+                        }
+                    },
+                    {
+                        "type": "ctn",
+                        "author": "zhanghaixian@agree.com.cn",
+                        "href": "v2Container",
+                        "component": "v2Container",
+                        "name": "v2Container",
+                        "desp": "单容器",
+                        "previewSrc": "/v1/support/screenshot/v2Container.png",
+                        "id": 1601176871452,
+                        "pid": 1601176168086,
+                        "$ref": "v2Container_9",
+                        "props": [
+                            "visible",
+                            "if",
+                            "customClass"
+                        ],
+                        "sizeLocked": {
+                            "widthLock": false,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated",
+                            ""
+                        ],
+                        "events": {
+                            "_op_content": {}
+                        },
+                        "children": [
+                            {
+                                "style": {
+                                    "textStyle": {
+                                        "font-weight": "bold"
+                                    }
+                                },
+                                "text": "弹窗基础提示",
+                                "overflow": "nomal",
+                                "overflowLine": 3,
+                                "editable": false,
+                                "textBreak": true,
+                                "visible": true,
+                                "__capacity": "1",
+                                "component": "v2-component-text",
+                                "href": "v2-component-text",
+                                "name": "文本",
+                                "children": [],
+                                "events": {
+                                    "_op_componentText_text": {}
+                                },
+                                "version": "14.0.0",
+                                "id": 1601176925867,
+                                "pid": 1601176871452,
+                                "$ref": "v2ComponentText_3",
+                                "props": [
+                                    "text",
+                                    "overflow",
+                                    "overflowLine",
+                                    "title",
+                                    "editable",
+                                    "textBreak",
+                                    "visible",
+                                    "if",
+                                    "customClass"
+                                ],
+                                "sizeLocked": {
+                                    "widthLock": false,
+                                    "heightLock": false
+                                },
+                                "animate": [
+                                    "",
+                                    "animated"
+                                ],
+                                "commonStyle": {
+                                    "box-sizing": "border-box",
+                                    "flex-shrink": "0",
+                                    "color": "#000000",
+                                    "font-size": "1.8em",
+                                    "margin-top": "10px"
+                                }
+                            }
+                        ],
+                        "direction": "col",
+                        "commonStyle": {
+                            "display": "flex",
+                            "align-items": "flex-start",
+                            "align-self": "stretch",
+                            "height": "auto",
+                            "box-sizing": "border-box",
+                            "width": "100%",
+                            "flex-shrink": "0",
+                            "margin-top": "20px"
+                        }
+                    },
+                    {
+                        "style": {
+                            "textStyle": {}
+                        },
+                        "text": "当用户进行操作时会被触发，该对话框中断用户操作，直到用户确认知晓后才可关闭。",
+                        "overflow": "nomal",
+                        "overflowLine": 3,
+                        "editable": false,
+                        "textBreak": true,
+                        "visible": true,
+                        "__capacity": "1",
+                        "component": "v2-component-text",
+                        "href": "v2-component-text",
+                        "name": "文本",
+                        "children": [],
+                        "events": {
+                            "_op_componentText_text": {}
+                        },
+                        "version": "14.0.0",
+                        "id": 1601177074978,
+                        "pid": 1601177018441,
+                        "$ref": "v2ComponentText_7",
+                        "props": [
+                            "text",
+                            "overflow",
+                            "overflowLine",
+                            "title",
+                            "editable",
+                            "textBreak",
+                            "visible",
+                            "if",
+                            "customClass"
+                        ],
+                        "sizeLocked": {
+                            "widthLock": false,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated"
+                        ],
+                        "commonStyle": {
+                            "box-sizing": "border-box",
+                            "flex-shrink": "0",
+                            "color": "#000000",
+                            "font-size": "1.3em",
+                            "margin-top": "10px",
+                            "margin-bottom": "10px"
+                        }
+                    },
+                    {
+                        "type": "ctn",
+                        "author": "zhanghaixian@agree.com.cn",
+                        "href": "v2Container",
+                        "component": "v2Container",
+                        "name": "v2Container",
+                        "desp": "单容器",
+                        "previewSrc": "/v1/support/screenshot/v2Container.png",
+                        "id": 1601177018441,
+                        "pid": 1601176168086,
+                        "$ref": "v2Container_10",
+                        "props": [
+                            "visible",
+                            "if",
+                            "customClass"
+                        ],
+                        "sizeLocked": {
+                            "widthLock": false,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated",
+                            ""
+                        ],
+                        "events": {
+                            "_op_content": {}
+                        },
+                        "children": [
+                            {
+                                "style": {
+                                    "textStyle": {}
+                                },
+                                "text": "调用$alert方法即可打开消息提示，它模拟了系统的 alert，无法通过按下 ESC 或点击框外关闭。此例中接收了两个参数，message和title。值得一提的是，窗口被关闭后，它默认会返回一个Promise对象便于进行后续操作的处理。若不确定浏览器是否支持Promise，可自行引入第三方 polyfill 或像本例一样使用回调进行后续处理。",
+                                "overflow": "nomal",
+                                "overflowLine": 3,
+                                "editable": false,
+                                "textBreak": true,
+                                "visible": true,
+                                "__capacity": "1",
+                                "component": "v2-component-text",
+                                "href": "v2-component-text",
+                                "name": "文本",
+                                "children": [],
+                                "events": {
+                                    "_op_componentText_text": {}
+                                },
+                                "version": "14.0.0",
+                                "id": 1601177006865,
+                                "pid": 1601177018441,
+                                "$ref": "v2ComponentText_5",
+                                "props": [
+                                    "text",
+                                    "overflow",
+                                    "overflowLine",
+                                    "title",
+                                    "editable",
+                                    "textBreak",
+                                    "visible",
+                                    "if",
+                                    "customClass"
+                                ],
+                                "sizeLocked": {
+                                    "widthLock": false,
+                                    "heightLock": false
+                                },
+                                "animate": [
+                                    "",
+                                    "animated"
+                                ],
+                                "commonStyle": {
+                                    "box-sizing": "border-box",
+                                    "flex-shrink": "0",
+                                    "border-right-width": "0",
+                                    "border-left-width": "0",
+                                    "border-top-width": "0",
+                                    "border-bottom-width": "0",
+                                    "color": "#000000",
+                                    "font-size": "1.2em",
+                                    "margin-top": "10px",
+                                    "margin-bottom": "10px",
+                                    "margin-left": "10px",
+                                    "margin-right": "10px"
+                                }
+                            }
+                        ],
+                        "commonStyle": {
+                            "display": "flex",
+                            "align-items": "flex-start",
+                            "align-self": "stretch",
+                            "height": "auto",
+                            "box-sizing": "border-box",
+                            "width": "100%",
+                            "flex-shrink": "0",
+                            "flex-direction": "column",
+                            "border-style": "solid",
+                            "border-color": "rgb(4,190,189)",
+                            "border-width": "5px",
+                            "border-right-width": "0",
+                            "border-left-width": "5px",
+                            "border-top-width": "0",
+                            "border-bottom-width": "0",
+                            "background-color": "rgb(242,242,242)"
+                        }
+                    },
+                    {
+                        "theme": {
+                            "btnType": "primary",
+                            "size": ""
+                        },
+                        "disabled": false,
+                        "loading": false,
+                        "btnName": "点击打开弹框",
+                        "shape": "def",
+                        "visible": true,
+                        "__capacity": "1",
+                        "component": "v2-component-btn",
+                        "href": "v2-component-btn",
+                        "name": "按钮",
+                        "children": [],
+                        "events": {
+                            "_op_componentBtn_btn": {
+                                "click": [
+                                    "_op_componentBtn_btn_1600679224514"
+                                ]
+                            }
+                        },
+                        "version": "14.0.0",
+                        "id": 1600679212376,
+                        "pid": "root",
+                        "$ref": "v2ComponentBtn_1",
+                        "props": [
+                            "disabled",
+                            "loading",
+                            "btnName",
+                            "leftIcon",
+                            "rightIcon",
+                            "shape",
+                            "visible",
+                            "if",
+                            "customClass"
+                        ],
+                        "sizeLocked": {
+                            "widthLock": false,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated"
+                        ],
+                        "commonStyle": {
+                            "box-sizing": "border-box",
+                            "margin-top": "20px",
+                            "margin-left": "20px"
+                        }
+                    }
+                ],
+                "commonStyle": {
+                    "display": "flex",
+                    "align-items": "flex-start",
+                    "align-self": "stretch",
+                    "height": "auto",
+                    "box-sizing": "border-box",
+                    "width": "100%",
+                    "flex-shrink": "0",
+                    "flex-direction": "column"
+                }
+            },
+            {
+                "type": "ctn",
+                "author": "zhanghaixian@agree.com.cn",
+                "href": "v2Container",
+                "component": "v2Container",
+                "name": "v2Container",
+                "desp": "单容器",
+                "previewSrc": "/v1/support/screenshot/v2Container.png",
+                "id": 1601176195754,
+                "pid": "root",
+                "$ref": "v2Container_4",
+                "props": [
+                    "visible",
+                    "if",
+                    "customClass"
+                ],
+                "sizeLocked": {
+                    "widthLock": false,
+                    "heightLock": false
+                },
+                "animate": [
+                    "",
+                    "animated",
+                    ""
+                ],
+                "events": {
+                    "_op_content": {}
+                },
+                "children": [
+                    {
+                        "style": {
+                            "textStyle": {
+                                "font-weight": "bold"
+                            }
+                        },
+                        "text": "选择确认/取消",
+                        "overflow": "nomal",
+                        "overflowLine": 3,
+                        "editable": false,
+                        "textBreak": true,
+                        "visible": true,
+                        "__capacity": "1",
+                        "component": "v2-component-text",
+                        "href": "v2-component-text",
+                        "name": "文本",
+                        "children": [],
+                        "events": {
+                            "_op_componentText_text": {}
+                        },
+                        "version": "14.0.0",
+                        "id": 1601177294555,
+                        "pid": 1601176195754,
+                        "$ref": "v2ComponentText_8",
+                        "props": [
+                            "text",
+                            "overflow",
+                            "overflowLine",
+                            "title",
+                            "editable",
+                            "textBreak",
+                            "visible",
+                            "if",
+                            "customClass"
+                        ],
+                        "sizeLocked": {
+                            "widthLock": false,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated"
+                        ],
+                        "commonStyle": {
+                            "box-sizing": "border-box",
+                            "flex-shrink": "0",
+                            "color": "#000000",
+                            "font-size": "1.8em",
+                            "margin-top": "10px",
+                            "margin-bottom": "10px"
+                        }
+                    },
+                    {
+                        "style": {
+                            "textStyle": {}
+                        },
+                        "text": "提示用户确认其已经触发的动作，并询问是否进行此操作时会用到此对话框。",
+                        "overflow": "nomal",
+                        "overflowLine": 3,
+                        "editable": false,
+                        "textBreak": true,
+                        "visible": true,
+                        "__capacity": "1",
+                        "component": "v2-component-text",
+                        "href": "v2-component-text",
+                        "name": "文本",
+                        "children": [],
+                        "events": {
+                            "_op_componentText_text": {}
+                        },
+                        "version": "14.0.0",
+                        "id": 1601177358294,
+                        "pid": 1601176195754,
+                        "$ref": "v2ComponentText_9",
+                        "props": [
+                            "text",
+                            "overflow",
+                            "overflowLine",
+                            "title",
+                            "editable",
+                            "textBreak",
+                            "visible",
+                            "if",
+                            "customClass"
+                        ],
+                        "sizeLocked": {
+                            "widthLock": false,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated"
+                        ],
+                        "commonStyle": {
+                            "box-sizing": "border-box",
+                            "flex-shrink": "0",
+                            "color": "#000000",
+                            "font-size": "1.3em",
+                            "margin-top": "10",
+                            "margin-bottom": "10px"
+                        }
+                    },
+                    {
+                        "type": "ctn",
+                        "author": "zhanghaixian@agree.com.cn",
+                        "href": "v2Container",
+                        "component": "v2Container",
+                        "name": "v2Container",
+                        "desp": "单容器",
+                        "previewSrc": "/v1/support/screenshot/v2Container.png",
+                        "id": 1601177396721,
+                        "pid": 1601176195754,
+                        "$ref": "v2Container_11",
+                        "props": [
+                            "visible",
+                            "if",
+                            "customClass"
+                        ],
+                        "sizeLocked": {
+                            "widthLock": false,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated",
+                            ""
+                        ],
+                        "events": {
+                            "_op_content": {}
+                        },
+                        "children": [
+                            {
+                                "style": {
+                                    "textStyle": {}
+                                },
+                                "text": "调用$confirm方法即可打开消息提示，它模拟了系统的 confirm。Message Box 组件也拥有极高的定制性，我们可以传入options作为第三个参数，它是一个字面量对象。type字段表明消息类型，可以为success，error，info和warning，无效的设置将会被忽略。注意，第二个参数title必须定义为String类型，如果是Object，会被理解为options。在这里我们用了 Promise 来处理后续响应。",
+                                "overflow": "nomal",
+                                "overflowLine": 3,
+                                "editable": false,
+                                "textBreak": true,
+                                "visible": true,
+                                "__capacity": "1",
+                                "component": "v2-component-text",
+                                "href": "v2-component-text",
+                                "name": "文本",
+                                "children": [],
+                                "events": {
+                                    "_op_componentText_text": {}
+                                },
+                                "version": "14.0.0",
+                                "id": 1601177405053,
+                                "pid": 1601177396721,
+                                "$ref": "v2ComponentText_10",
+                                "props": [
+                                    "text",
+                                    "overflow",
+                                    "overflowLine",
+                                    "title",
+                                    "editable",
+                                    "textBreak",
+                                    "visible",
+                                    "if",
+                                    "customClass"
+                                ],
+                                "sizeLocked": {
+                                    "widthLock": false,
+                                    "heightLock": false
+                                },
+                                "animate": [
+                                    "",
+                                    "animated"
+                                ],
+                                "commonStyle": {
+                                    "box-sizing": "border-box",
+                                    "flex-shrink": "0",
+                                    "color": "#000000",
+                                    "font-size": "1.2em",
+                                    "margin-top": "10px",
+                                    "margin-bottom": "10px",
+                                    "margin-left": "10px",
+                                    "margin-right": "10px"
+                                }
+                            }
+                        ],
+                        "commonStyle": {
+                            "display": "flex",
+                            "align-items": "flex-start",
+                            "align-self": "stretch",
+                            "height": "auto",
+                            "box-sizing": "border-box",
+                            "width": "100%",
+                            "flex-shrink": "0",
+                            "flex-direction": "column",
+                            "border-style": "solid",
+                            "border-color": "rgb(4,190,189)",
+                            "border-width": "5px",
+                            "border-right-width": "0",
+                            "border-left-width": "5px",
+                            "border-top-width": "0",
+                            "border-bottom-width": "0",
+                            "background-color": "rgb(242,242,242)"
+                        }
+                    },
+                    {
+                        "theme": {
+                            "btnType": "normal&shape=plain",
+                            "size": ""
+                        },
+                        "disabled": false,
+                        "loading": false,
+                        "btnName": "点击打开选择弹窗",
+                        "shape": "def",
+                        "visible": true,
+                        "__capacity": "1",
+                        "component": "v2-component-btn",
+                        "href": "v2-component-btn",
+                        "name": "按钮",
+                        "children": [],
+                        "events": {
+                            "_op_componentBtn_btn": {
+                                "click": [
+                                    "_op_componentBtn_btn_1600679903177"
+                                ]
+                            }
+                        },
+                        "version": "14.0.0",
+                        "id": 1600679807959,
+                        "pid": "root",
+                        "$ref": "v2ComponentBtn_3",
+                        "props": [
+                            "disabled",
+                            "loading",
+                            "btnName",
+                            "leftIcon",
+                            "rightIcon",
+                            "shape",
+                            "visible",
+                            "if",
+                            "customClass"
+                        ],
+                        "sizeLocked": {
+                            "widthLock": false,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated"
+                        ],
+                        "commonStyle": {
+                            "box-sizing": "border-box",
+                            "background-color": "rgba(58, 232, 58, 0.94)",
+                            "color": "#FFFFFF",
+                            "margin-top": "20px",
+                            "margin-left": "20px"
+                        }
+                    }
+                ],
+                "commonStyle": {
+                    "display": "flex",
+                    "align-items": "flex-start",
+                    "align-self": "stretch",
+                    "height": "auto",
+                    "box-sizing": "border-box",
+                    "width": "100%",
+                    "flex-shrink": "0",
+                    "flex-direction": "column",
+                    "margin-top": "20px"
+                }
+            },
+            {
+                "type": "ctn",
+                "author": "zhanghaixian@agree.com.cn",
+                "href": "v2Container",
+                "component": "v2Container",
+                "name": "v2Container",
+                "desp": "单容器",
+                "previewSrc": "/v1/support/screenshot/v2Container.png",
+                "id": 1601176214040,
+                "pid": "root",
+                "$ref": "v2Container_5",
+                "props": [
+                    "visible",
+                    "if",
+                    "customClass"
+                ],
+                "sizeLocked": {
+                    "widthLock": false,
+                    "heightLock": false
+                },
+                "animate": [
+                    "",
+                    "animated",
+                    ""
+                ],
+                "events": {
+                    "_op_content": {}
+                },
+                "children": [
+                    {
+                        "style": {
+                            "textStyle": {
+                                "font-weight": "bold"
+                            }
+                        },
+                        "text": "提交内容",
+                        "overflow": "nomal",
+                        "overflowLine": 3,
+                        "editable": false,
+                        "textBreak": true,
+                        "visible": true,
+                        "__capacity": "1",
+                        "component": "v2-component-text",
+                        "href": "v2-component-text",
+                        "name": "文本",
+                        "children": [],
+                        "events": {
+                            "_op_componentText_text": {}
+                        },
+                        "version": "14.0.0",
+                        "id": 1601177937523,
+                        "pid": 1601176214040,
+                        "$ref": "v2ComponentText_11",
+                        "props": [
+                            "text",
+                            "overflow",
+                            "overflowLine",
+                            "title",
+                            "editable",
+                            "textBreak",
+                            "visible",
+                            "if",
+                            "customClass"
+                        ],
+                        "sizeLocked": {
+                            "widthLock": true,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated"
+                        ],
+                        "commonStyle": {
+                            "box-sizing": "border-box",
+                            "flex-shrink": "0",
+                            "color": "#000000",
+                            "font-size": "1.8em"
+                        }
+                    },
+                    {
+                        "style": {
+                            "textStyle": {}
+                        },
+                        "text": "当用户进行操作时会被触发，中断用户操作，提示用户进行输入的对话框。",
+                        "overflow": "nomal",
+                        "overflowLine": 3,
+                        "editable": false,
+                        "textBreak": true,
+                        "visible": true,
+                        "__capacity": "1",
+                        "component": "v2-component-text",
+                        "href": "v2-component-text",
+                        "name": "文本",
+                        "children": [],
+                        "events": {
+                            "_op_componentText_text": {}
+                        },
+                        "version": "14.0.0",
+                        "id": 1601177891478,
+                        "pid": 1601176214040,
+                        "$ref": "v2ComponentText_12",
+                        "props": [
+                            "text",
+                            "overflow",
+                            "overflowLine",
+                            "title",
+                            "editable",
+                            "textBreak",
+                            "visible",
+                            "if",
+                            "customClass"
+                        ],
+                        "sizeLocked": {
+                            "widthLock": false,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated"
+                        ],
+                        "commonStyle": {
+                            "box-sizing": "border-box",
+                            "flex-shrink": "0",
+                            "color": "#000000",
+                            "font-size": "1.3em",
+                            "margin-top": "10px"
+                        }
+                    },
+                    {
+                        "type": "ctn",
+                        "author": "zhanghaixian@agree.com.cn",
+                        "href": "v2Container",
+                        "component": "v2Container",
+                        "name": "v2Container",
+                        "desp": "单容器",
+                        "previewSrc": "/v1/support/screenshot/v2Container.png",
+                        "id": 1601177946120,
+                        "pid": 1601176214040,
+                        "$ref": "v2Container_12",
+                        "props": [
+                            "visible",
+                            "if",
+                            "customClass"
+                        ],
+                        "sizeLocked": {
+                            "widthLock": false,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated",
+                            ""
+                        ],
+                        "events": {
+                            "_op_content": {}
+                        },
+                        "children": [
+                            {
+                                "style": {
+                                    "textStyle": {}
+                                },
+                                "text": "调用$prompt方法即可打开消息提示，它模拟了系统的 prompt。可以用inputPattern字段自己规定匹配模式，或者用inputValidator规定校验函数，可以返回Boolean或String，返回false或字符串时均表示校验未通过，同时返回的字符串相当于定义了inputErrorMessage字段。此外，可以用inputPlaceholder字段来定义输入框的占位符。",
+                                "overflow": "nomal",
+                                "overflowLine": 3,
+                                "editable": false,
+                                "textBreak": true,
+                                "visible": true,
+                                "__capacity": "1",
+                                "component": "v2-component-text",
+                                "href": "v2-component-text",
+                                "name": "文本",
+                                "children": [],
+                                "events": {
+                                    "_op_componentText_text": {}
+                                },
+                                "version": "14.0.0",
+                                "id": 1601177902364,
+                                "pid": 1601177946120,
+                                "$ref": "v2ComponentText_13",
+                                "props": [
+                                    "text",
+                                    "overflow",
+                                    "overflowLine",
+                                    "title",
+                                    "editable",
+                                    "textBreak",
+                                    "visible",
+                                    "if",
+                                    "customClass"
+                                ],
+                                "sizeLocked": {
+                                    "widthLock": false,
+                                    "heightLock": false
+                                },
+                                "animate": [
+                                    "",
+                                    "animated"
+                                ],
+                                "commonStyle": {
+                                    "box-sizing": "border-box",
+                                    "flex-shrink": "0",
+                                    "color": "#000000",
+                                    "font-size": "1.2em",
+                                    "margin-top": "10px",
+                                    "margin-bottom": "10px",
+                                    "margin-left": "10px",
+                                    "margin-right": "10px"
+                                }
+                            }
+                        ],
+                        "commonStyle": {
+                            "display": "flex",
+                            "align-items": "flex-start",
+                            "align-self": "stretch",
+                            "height": "auto",
+                            "box-sizing": "border-box",
+                            "width": "100%",
+                            "flex-shrink": "0",
+                            "flex-direction": "column",
+                            "border-style": "solid",
+                            "border-color": "rgb(4,190,189)",
+                            "border-width": "5px",
+                            "border-right-width": "0",
+                            "border-left-width": "5px",
+                            "border-top-width": "0",
+                            "border-bottom-width": "0",
+                            "background-color": "rgb(242,242,242)",
+                            "margin-top": "10px"
+                        }
+                    },
+                    {
+                        "theme": {
+                            "btnType": "normal&shape=plain",
+                            "size": ""
+                        },
+                        "disabled": false,
+                        "loading": false,
+                        "btnName": "点击打开提交",
+                        "shape": "def",
+                        "visible": true,
+                        "__capacity": "1",
+                        "component": "v2-component-btn",
+                        "href": "v2-component-btn",
+                        "name": "按钮",
+                        "children": [],
+                        "events": {
+                            "_op_componentBtn_btn": {
+                                "click": [
+                                    "_op_componentBtn_btn_1600680260837"
+                                ]
+                            }
+                        },
+                        "version": "14.0.0",
+                        "id": 1600680204997,
+                        "pid": "root",
+                        "$ref": "v2ComponentBtn_4",
+                        "props": [
+                            "disabled",
+                            "loading",
+                            "btnName",
+                            "leftIcon",
+                            "rightIcon",
+                            "shape",
+                            "visible",
+                            "if",
+                            "customClass"
+                        ],
+                        "sizeLocked": {
+                            "widthLock": false,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated"
+                        ],
+                        "commonStyle": {
+                            "box-sizing": "border-box",
+                            "background-color": "rgba(249, 177, 68, 0.94)",
+                            "color": "#FFFFFF",
+                            "margin-top": "20px",
+                            "margin-left": "20px"
+                        }
+                    }
+                ],
+                "commonStyle": {
+                    "display": "flex",
+                    "align-items": "flex-start",
+                    "align-self": "stretch",
+                    "height": "auto",
+                    "box-sizing": "border-box",
+                    "width": "100%",
+                    "flex-shrink": "0",
+                    "flex-direction": "column",
+                    "margin-top": "30px",
+                    "margin-bottom": "30px"
+                }
+            },
+            {
+                "type": "ctn",
+                "author": "zhanghaixian@agree.com.cn",
+                "href": "v2Container",
+                "component": "v2Container",
+                "name": "v2Container",
+                "desp": "单容器",
+                "previewSrc": "/v1/support/screenshot/v2Container.png",
+                "id": 1601176282614,
+                "pid": "root",
+                "$ref": "v2Container_6",
+                "props": [
+                    "visible",
+                    "if",
+                    "customClass"
+                ],
+                "sizeLocked": {
+                    "widthLock": false,
+                    "heightLock": false
+                },
+                "animate": [
+                    "",
+                    "animated",
+                    ""
+                ],
+                "events": {
+                    "_op_content": {}
+                },
+                "children": [
+                    {
+                        "style": {
+                            "textStyle": {
+                                "font-weight": "bold"
+                            }
+                        },
+                        "text": "自定义弹框",
+                        "overflow": "nomal",
+                        "overflowLine": 3,
+                        "editable": false,
+                        "textBreak": true,
+                        "visible": true,
+                        "__capacity": "1",
+                        "component": "v2-component-text",
+                        "href": "v2-component-text",
+                        "name": "文本",
+                        "children": [],
+                        "events": {
+                            "_op_componentText_text": {}
+                        },
+                        "version": "14.0.0",
+                        "id": 1601178186189,
+                        "pid": 1601176282614,
+                        "$ref": "v2ComponentText_15",
+                        "props": [
+                            "text",
+                            "overflow",
+                            "overflowLine",
+                            "title",
+                            "editable",
+                            "textBreak",
+                            "visible",
+                            "if",
+                            "customClass"
+                        ],
+                        "sizeLocked": {
+                            "widthLock": false,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated"
+                        ],
+                        "commonStyle": {
+                            "box-sizing": "border-box",
+                            "flex-shrink": "0",
+                            "color": "#000000",
+                            "font-size": "1.8em"
+                        }
+                    },
+                    {
+                        "style": {
+                            "textStyle": {}
+                        },
+                        "text": "可自定义配置不同内容。",
+                        "overflow": "nomal",
+                        "overflowLine": 3,
+                        "editable": false,
+                        "textBreak": true,
+                        "visible": true,
+                        "__capacity": "1",
+                        "component": "v2-component-text",
+                        "href": "v2-component-text",
+                        "name": "文本",
+                        "children": [],
+                        "events": {
+                            "_op_componentText_text": {}
+                        },
+                        "version": "14.0.0",
+                        "id": 1601178119557,
+                        "pid": 1601176282614,
+                        "$ref": "v2ComponentText_16",
+                        "props": [
+                            "text",
+                            "overflow",
+                            "overflowLine",
+                            "title",
+                            "editable",
+                            "textBreak",
+                            "visible",
+                            "if",
+                            "customClass"
+                        ],
+                        "sizeLocked": {
+                            "widthLock": false,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated"
+                        ],
+                        "commonStyle": {
+                            "box-sizing": "border-box",
+                            "flex-shrink": "0",
+                            "color": "#000000",
+                            "font-size": "1.4em",
+                            "margin-top": "10px"
+                        }
+                    },
+                    {
+                        "type": "ctn",
+                        "author": "zhanghaixian@agree.com.cn",
+                        "href": "v2Container",
+                        "component": "v2Container",
+                        "name": "v2Container",
+                        "desp": "单容器",
+                        "previewSrc": "/v1/support/screenshot/v2Container.png",
+                        "id": 1601178224195,
+                        "pid": 1601176282614,
+                        "$ref": "v2Container_13",
+                        "props": [
+                            "visible",
+                            "if",
+                            "customClass"
+                        ],
+                        "sizeLocked": {
+                            "widthLock": false,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated",
+                            ""
+                        ],
+                        "events": {
+                            "_op_content": {}
+                        },
+                        "children": [
+                            {
+                                "style": {
+                                    "textStyle": {}
+                                },
+                                "text": "以上三个方法都是对$msgbox方法的再包装。本例直接调用$msgbox方法，使用了showCancelButton字段，用于显示取消按钮。另外可使用cancelButtonClass为其添加自定义样式，使用cancelButtonText来自定义按钮文本（Confirm 按钮也具有相同的字段，在文末的字段说明中有完整的字段列表）。此例还使用了beforeClose属性，它的值是一个方法，会在 MessageBox 的实例关闭前被调用，同时暂停实例的关闭。它有三个参数：action、实例本身和done方法。使用它能够在关闭前对实例进行一些操作，比如为确定按钮添加loading状态等；此时若需要关闭实例，可以调用done方法（若在beforeClose中没有调用done，则实例不会关闭）。",
+                                "overflow": "nomal",
+                                "overflowLine": 3,
+                                "editable": false,
+                                "textBreak": true,
+                                "visible": true,
+                                "__capacity": "1",
+                                "component": "v2-component-text",
+                                "href": "v2-component-text",
+                                "name": "文本",
+                                "children": [],
+                                "events": {
+                                    "_op_componentText_text": {}
+                                },
+                                "version": "14.0.0",
+                                "id": 1601178145282,
+                                "pid": 1601178224195,
+                                "$ref": "v2ComponentText_17",
+                                "props": [
+                                    "text",
+                                    "overflow",
+                                    "overflowLine",
+                                    "title",
+                                    "editable",
+                                    "textBreak",
+                                    "visible",
+                                    "if",
+                                    "customClass"
+                                ],
+                                "sizeLocked": {
+                                    "widthLock": false,
+                                    "heightLock": false
+                                },
+                                "animate": [
+                                    "",
+                                    "animated"
+                                ],
+                                "commonStyle": {
+                                    "box-sizing": "border-box",
+                                    "flex-shrink": "0",
+                                    "color": "#000000",
+                                    "font-size": "1.3em",
+                                    "margin-top": "10px",
+                                    "margin-bottom": "10px",
+                                    "margin-left": "10px",
+                                    "margin-right": "10px"
+                                }
+                            }
+                        ],
+                        "commonStyle": {
+                            "display": "flex",
+                            "align-items": "flex-start",
+                            "align-self": "stretch",
+                            "height": "auto",
+                            "box-sizing": "border-box",
+                            "width": "100%",
+                            "flex-shrink": "0",
+                            "flex-direction": "column",
+                            "border-style": "solid",
+                            "border-color": "rgb(4,190,189)",
+                            "border-width": "5px",
+                            "border-right-width": "0",
+                            "border-left-width": "5px",
+                            "border-top-width": "0",
+                            "border-bottom-width": "0",
+                            "background-color": "rgb(242,242,242)",
+                            "margin-top": "10px"
+                        }
+                    },
+                    {
+                        "theme": {
+                            "btnType": "normal&shape=plain",
+                            "size": ""
+                        },
+                        "disabled": false,
+                        "loading": false,
+                        "btnName": "自定义点击事件",
+                        "shape": "def",
+                        "visible": true,
+                        "__capacity": "1",
+                        "component": "v2-component-btn",
+                        "href": "v2-component-btn",
+                        "name": "按钮",
+                        "children": [],
+                        "events": {
+                            "_op_componentBtn_btn": {
+                                "click": [
+                                    "_op_componentBtn_btn_1600680698499"
+                                ]
+                            }
+                        },
+                        "version": "14.0.0",
+                        "id": 1600680653785,
+                        "pid": "root",
+                        "$ref": "v2ComponentBtn_5",
+                        "props": [
+                            "disabled",
+                            "loading",
+                            "btnName",
+                            "leftIcon",
+                            "rightIcon",
+                            "shape",
+                            "visible",
+                            "if",
+                            "customClass"
+                        ],
+                        "sizeLocked": {
+                            "widthLock": false,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated"
+                        ],
+                        "commonStyle": {
+                            "box-sizing": "border-box",
+                            "margin-top": "20px",
+                            "margin-left": "20px"
+                        }
+                    }
+                ],
+                "commonStyle": {
+                    "display": "flex",
+                    "align-items": "flex-start",
+                    "align-self": "stretch",
+                    "height": "auto",
+                    "box-sizing": "border-box",
+                    "width": "100%",
+                    "flex-shrink": "0",
+                    "flex-direction": "column"
+                }
+            },
+            {
+                "type": "ctn",
+                "author": "zhanghaixian@agree.com.cn",
+                "href": "v2Container",
+                "component": "v2Container",
+                "name": "v2Container",
+                "desp": "单容器",
+                "previewSrc": "/v1/support/screenshot/v2Container.png",
+                "id": 1601176233964,
+                "pid": "root",
+                "$ref": "v2Container_8",
+                "props": [
+                    "visible",
+                    "if",
+                    "customClass"
+                ],
+                "sizeLocked": {
+                    "widthLock": false,
+                    "heightLock": false
+                },
+                "animate": [
+                    "",
+                    "animated",
+                    ""
+                ],
+                "events": {
+                    "_op_content": {}
+                },
+                "children": [
+                    {
+                        "style": {
+                            "textStyle": {
+                                "font-weight": "bold"
+                            }
+                        },
+                        "text": "使用 HTML 片段",
+                        "overflow": "nomal",
+                        "overflowLine": 3,
+                        "editable": false,
+                        "textBreak": true,
+                        "visible": true,
+                        "__capacity": "1",
+                        "component": "v2-component-text",
+                        "href": "v2-component-text",
+                        "name": "文本",
+                        "children": [],
+                        "events": {
+                            "_op_componentText_text": {}
+                        },
+                        "version": "14.0.0",
+                        "id": 1601178371680,
+                        "pid": 1601176233964,
+                        "$ref": "v2ComponentText_18",
+                        "props": [
+                            "text",
+                            "overflow",
+                            "overflowLine",
+                            "title",
+                            "editable",
+                            "textBreak",
+                            "visible",
+                            "if",
+                            "customClass"
+                        ],
+                        "sizeLocked": {
+                            "widthLock": false,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated"
+                        ],
+                        "commonStyle": {
+                            "box-sizing": "border-box",
+                            "flex-shrink": "0",
+                            "color": "#000000",
+                            "font-size": "1.8em"
+                        }
+                    },
+                    {
+                        "style": {
+                            "textStyle": {}
+                        },
+                        "text": "message 属性支持传入 HTML 片段。",
+                        "overflow": "nomal",
+                        "overflowLine": 3,
+                        "editable": false,
+                        "textBreak": true,
+                        "visible": true,
+                        "__capacity": "1",
+                        "component": "v2-component-text",
+                        "href": "v2-component-text",
+                        "name": "文本",
+                        "children": [],
+                        "events": {
+                            "_op_componentText_text": {}
+                        },
+                        "version": "14.0.0",
+                        "id": 1601178415858,
+                        "pid": 1601176233964,
+                        "$ref": "v2ComponentText_19",
+                        "props": [
+                            "text",
+                            "overflow",
+                            "overflowLine",
+                            "title",
+                            "editable",
+                            "textBreak",
+                            "visible",
+                            "if",
+                            "customClass"
+                        ],
+                        "sizeLocked": {
+                            "widthLock": false,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated"
+                        ],
+                        "commonStyle": {
+                            "box-sizing": "border-box",
+                            "flex-shrink": "0",
+                            "color": "#000000",
+                            "font-size": "1.4em",
+                            "margin-top": "10px"
+                        }
+                    },
+                    {
+                        "type": "ctn",
+                        "author": "zhanghaixian@agree.com.cn",
+                        "href": "v2Container",
+                        "component": "v2Container",
+                        "name": "v2Container",
+                        "desp": "单容器",
+                        "previewSrc": "/v1/support/screenshot/v2Container.png",
+                        "id": 1601178348248,
+                        "pid": 1601176233964,
+                        "$ref": "v2Container_14",
+                        "props": [
+                            "visible",
+                            "if",
+                            "customClass"
+                        ],
+                        "sizeLocked": {
+                            "widthLock": false,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated",
+                            ""
+                        ],
+                        "events": {
+                            "_op_content": {}
+                        },
+                        "children": [
+                            {
+                                "style": {
+                                    "textStyle": {}
+                                },
+                                "text": "将dangerouslyUseHTMLString属性设置为 true，message 就会被当作 HTML 片段处理。",
+                                "overflow": "nomal",
+                                "overflowLine": 3,
+                                "editable": false,
+                                "textBreak": true,
+                                "visible": true,
+                                "__capacity": "1",
+                                "component": "v2-component-text",
+                                "href": "v2-component-text",
+                                "name": "文本",
+                                "children": [],
+                                "events": {
+                                    "_op_componentText_text": {}
+                                },
+                                "version": "14.0.0",
+                                "id": 1601178366398,
+                                "pid": 1601178348248,
+                                "$ref": "v2ComponentText_20",
+                                "props": [
+                                    "text",
+                                    "overflow",
+                                    "overflowLine",
+                                    "title",
+                                    "editable",
+                                    "textBreak",
+                                    "visible",
+                                    "if",
+                                    "customClass"
+                                ],
+                                "sizeLocked": {
+                                    "widthLock": false,
+                                    "heightLock": false
+                                },
+                                "animate": [
+                                    "",
+                                    "animated"
+                                ],
+                                "commonStyle": {
+                                    "box-sizing": "border-box",
+                                    "flex-shrink": "0",
+                                    "color": "#000000",
+                                    "font-size": "1.3em",
+                                    "margin-top": "10px",
+                                    "margin-bottom": "10px",
+                                    "margin-left": "10px"
+                                }
+                            }
+                        ],
+                        "commonStyle": {
+                            "display": "flex",
+                            "align-items": "flex-start",
+                            "align-self": "stretch",
+                            "height": "auto",
+                            "box-sizing": "border-box",
+                            "width": "100%",
+                            "flex-shrink": "0",
+                            "flex-direction": "column",
+                            "border-style": "solid",
+                            "border-color": "rgb(4,190,189)",
+                            "border-width": "5px",
+                            "border-right-width": "0",
+                            "border-left-width": "5px",
+                            "border-top-width": "0",
+                            "border-bottom-width": "0",
+                            "background-color": "rgb(242,242,242)",
+                            "margin-top": "10px",
+                            "margin-bottom": "10px"
+                        }
+                    },
+                    {
+                        "theme": {
+                            "btnType": "normal&shape=plain",
+                            "size": ""
+                        },
+                        "disabled": false,
+                        "loading": false,
+                        "btnName": "html片段",
+                        "shape": "def",
+                        "visible": true,
+                        "__capacity": "1",
+                        "component": "v2-component-btn",
+                        "href": "v2-component-btn",
+                        "name": "按钮",
+                        "children": [],
+                        "events": {
+                            "_op_componentBtn_btn": {
+                                "click": [
+                                    "_op_componentBtn_btn_1600680864617"
+                                ]
+                            }
+                        },
+                        "version": "14.0.0",
+                        "id": 1600680828026,
+                        "pid": "root",
+                        "$ref": "v2ComponentBtn_6",
+                        "props": [
+                            "disabled",
+                            "loading",
+                            "btnName",
+                            "leftIcon",
+                            "rightIcon",
+                            "shape",
+                            "visible",
+                            "if",
+                            "customClass"
+                        ],
+                        "sizeLocked": {
+                            "widthLock": false,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated"
+                        ],
+                        "commonStyle": {
+                            "box-sizing": "border-box",
+                            "background-color": "rgba(248, 63, 63, 0.79)",
+                            "color": "#FFFFFF",
+                            "margin-top": "20px",
+                            "margin-left": "20px"
+                        }
+                    }
+                ],
+                "commonStyle": {
+                    "display": "flex",
+                    "align-items": "flex-start",
+                    "align-self": "stretch",
+                    "height": "auto",
+                    "box-sizing": "border-box",
+                    "width": "100%",
+                    "flex-shrink": "0",
+                    "flex-direction": "column",
+                    "margin-top": "30px",
+                    "margin-bottom": "20px"
+                }
+            },
+            {
+                "type": "ctn",
+                "author": "zhanghaixian@agree.com.cn",
+                "href": "v2Container",
+                "component": "v2Container",
+                "name": "v2Container",
+                "desp": "单容器",
+                "previewSrc": "/v1/support/screenshot/v2Container.png",
+                "id": 1601179395503,
+                "pid": "root",
+                "$ref": "v2Container_15",
+                "props": [
+                    "visible",
+                    "if",
+                    "customClass"
+                ],
+                "sizeLocked": {
+                    "widthLock": false,
+                    "heightLock": false
+                },
+                "animate": [
+                    "",
+                    "animated",
+                    ""
+                ],
+                "events": {
+                    "_op_content": {}
+                },
+                "children": [
+                    {
+                        "style": {
+                            "textStyle": {
+                                "font-weight": "bold"
+                            }
+                        },
+                        "text": "居中布局",
+                        "overflow": "nomal",
+                        "overflowLine": 3,
+                        "editable": false,
+                        "textBreak": true,
+                        "visible": true,
+                        "__capacity": "1",
+                        "component": "v2-component-text",
+                        "href": "v2-component-text",
+                        "name": "文本",
+                        "children": [],
+                        "events": {
+                            "_op_componentText_text": {}
+                        },
+                        "version": "14.0.0",
+                        "id": 1601179383411,
+                        "pid": 1601179395503,
+                        "$ref": "v2ComponentText_21",
+                        "props": [
+                            "text",
+                            "overflow",
+                            "overflowLine",
+                            "title",
+                            "editable",
+                            "textBreak",
+                            "visible",
+                            "if",
+                            "customClass"
+                        ],
+                        "sizeLocked": {
+                            "widthLock": false,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated"
+                        ],
+                        "commonStyle": {
+                            "box-sizing": "border-box",
+                            "flex-shrink": "0",
+                            "color": "#000000",
+                            "font-size": "1.8em"
+                        }
+                    },
+                    {
+                        "style": {
+                            "textStyle": {}
+                        },
+                        "text": "内容支持居中布局",
+                        "overflow": "nomal",
+                        "overflowLine": 3,
+                        "editable": false,
+                        "textBreak": true,
+                        "visible": true,
+                        "__capacity": "1",
+                        "component": "v2-component-text",
+                        "href": "v2-component-text",
+                        "name": "文本",
+                        "children": [],
+                        "events": {
+                            "_op_componentText_text": {}
+                        },
+                        "version": "14.0.0",
+                        "id": 1601179420693,
+                        "pid": 1601179395503,
+                        "$ref": "v2ComponentText_22",
+                        "props": [
+                            "text",
+                            "overflow",
+                            "overflowLine",
+                            "title",
+                            "editable",
+                            "textBreak",
+                            "visible",
+                            "if",
+                            "customClass"
+                        ],
+                        "sizeLocked": {
+                            "widthLock": false,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated"
+                        ],
+                        "commonStyle": {
+                            "box-sizing": "border-box",
+                            "flex-shrink": "0",
+                            "color": "#000000",
+                            "font-size": "1.4em",
+                            "margin-top": "10px",
+                            "padding-bottom": "10px"
+                        }
+                    },
+                    {
+                        "type": "ctn",
+                        "author": "zhanghaixian@agree.com.cn",
+                        "href": "v2Container",
+                        "component": "v2Container",
+                        "name": "v2Container",
+                        "desp": "单容器",
+                        "previewSrc": "/v1/support/screenshot/v2Container.png",
+                        "id": 1601179424185,
+                        "pid": 1601179395503,
+                        "$ref": "v2Container_16",
+                        "props": [
+                            "visible",
+                            "if",
+                            "customClass"
+                        ],
+                        "sizeLocked": {
+                            "widthLock": false,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated",
+                            ""
+                        ],
+                        "events": {
+                            "_op_content": {}
+                        },
+                        "children": [
+                            {
+                                "style": {
+                                    "textStyle": {}
+                                },
+                                "text": "将 center 设置为 true 即可开启居中布局",
+                                "overflow": "nomal",
+                                "overflowLine": 3,
+                                "editable": false,
+                                "textBreak": true,
+                                "visible": true,
+                                "__capacity": "1",
+                                "component": "v2-component-text",
+                                "href": "v2-component-text",
+                                "name": "文本",
+                                "children": [],
+                                "events": {
+                                    "_op_componentText_text": {}
+                                },
+                                "version": "14.0.0",
+                                "id": 1601179448469,
+                                "pid": 1601179424185,
+                                "$ref": "v2ComponentText_23",
+                                "props": [
+                                    "text",
+                                    "overflow",
+                                    "overflowLine",
+                                    "title",
+                                    "editable",
+                                    "textBreak",
+                                    "visible",
+                                    "if",
+                                    "customClass"
+                                ],
+                                "sizeLocked": {
+                                    "widthLock": false,
+                                    "heightLock": false
+                                },
+                                "animate": [
+                                    "",
+                                    "animated"
+                                ],
+                                "commonStyle": {
+                                    "box-sizing": "border-box",
+                                    "flex-shrink": "0",
+                                    "color": "#000000",
+                                    "font-size": "1.3em",
+                                    "margin-top": "10px",
+                                    "margin-bottom": "10px",
+                                    "margin-left": "10px"
+                                }
+                            }
+                        ],
+                        "commonStyle": {
+                            "display": "flex",
+                            "align-items": "flex-start",
+                            "align-self": "stretch",
+                            "height": "auto",
+                            "box-sizing": "border-box",
+                            "width": "100%",
+                            "flex-shrink": "0",
+                            "flex-direction": "column",
+                            "border-style": "solid",
+                            "border-color": "rgb(4,190,189)",
+                            "border-width": "5px",
+                            "border-right-width": "0",
+                            "border-left-width": "5px",
+                            "border-top-width": "0",
+                            "border-bottom-width": "0",
+                            "background-color": "rgb(242,242,242)"
+                        }
+                    },
+                    {
+                        "theme": {
+                            "btnType": "primary",
+                            "size": ""
+                        },
+                        "disabled": false,
+                        "loading": false,
+                        "btnName": "居中布局",
+                        "shape": "def",
+                        "visible": true,
+                        "__capacity": "1",
+                        "component": "v2-component-btn",
+                        "href": "v2-component-btn",
+                        "name": "按钮",
+                        "children": [],
+                        "events": {
+                            "_op_componentBtn_btn": {
+                                "click": [
+                                    "_op_componentBtn_btn_1601179641859"
+                                ]
+                            }
+                        },
+                        "version": "14.0.0",
+                        "id": 1601179367425,
+                        "pid": 1601179424185,
+                        "$ref": "v2ComponentBtn_7",
+                        "props": [
+                            "disabled",
+                            "loading",
+                            "btnName",
+                            "leftIcon",
+                            "rightIcon",
+                            "shape",
+                            "visible",
+                            "if",
+                            "customClass"
+                        ],
+                        "sizeLocked": {
+                            "widthLock": false,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated"
+                        ],
+                        "commonStyle": {
+                            "box-sizing": "border-box",
+                            "flex-shrink": "0",
+                            "margin-top": "20px",
+                            "margin-left": "20px",
+                            "background-color": "rgba(120, 189, 221, 0.93)"
+                        }
+                    }
+                ],
+                "commonStyle": {
+                    "display": "flex",
+                    "align-items": "flex-start",
+                    "align-self": "stretch",
+                    "height": "auto",
+                    "box-sizing": "border-box",
+                    "width": "100%",
+                    "flex-shrink": "0",
+                    "flex-direction": "column"
+                }
+            }
+        ],
+        "events": {
+            "_op_content": {}
+        },
+        "props": [
+            "visible",
+            "if",
+            "customClass"
+        ],
+        "sizeLocked": {
+            "widthLock": true,
+            "heightLock": false
+        },
+        "animate": [
+            "",
+            "animated",
+            ""
+        ],
+        "realSize": [],
+        "commonStyle": {
+            "display": "flex",
+            "align-items": "flex-start",
+            "align-self": "stretch",
+            "height": "auto",
+            "box-sizing": "border-box",
+            "width": "80%",
+            "flex-direction": "column",
+            "flex-shrink": "0",
+            "color": "#FFFFFF",
+            "margin-top": "30px",
+            "margin-left": "30px"
+        }
+    },
+    "forms": [],
+    "logic": {
+        "methods": [
+            {
+                "name": "_op_componentBtn_btn_1600679224514",
+                "desp": "基础弹窗事件",
+                "code": "//*====AGREE-ACTION-START====*//\n//*+AGREE-CONFIG-/ {\"name\":\"custom\",\"main\":\"AGREE-CUSTOM\",\"desp\":\"事件准备\",\"code\":\"/**\\n* 事件绑定在vue实例上，第一个参数是vue实例。\\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\\n**/\\n\\n//函数内直接用ctx代替this访问vue页面的数据。\\nconst ctx = this;\\n\\nthis.$alert('这是一段内容', '标题名称', {\\n          confirmButtonText: '确定',\\n          callback: action => {\\n            this.$message({\\n              type: 'info',\\n              message: `action: ${ action }`\\n            });\\n          }\\n        });\",\"showConfig\":true} /-AGREE-CONFIG+*//\n//*++++AGREE-CODE-START++++*//\n/**\n* 事件绑定在vue实例上，第一个参数是vue实例。\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\n**/\n\n//函数内直接用ctx代替this访问vue页面的数据。\n// 调用$alert方法即可打开消息提示，它模拟了系统的 alert，无法通过按下 ESC 或点击框外关闭。\n// 此例中接收了两个参数，message和title。值得一提的是，窗口被关闭后，\n// 它默认会返回一个Promise对象便于进行后续操作的处理\nconst ctx = this;\n\nctx.$alert('这是一段内容', '标题名称', {\n          confirmButtonText: '确定',\n          callback: action => {\n            this.$message({\n              type: 'info',\n              message: `action: ${ action }`\n            });\n          }\n        });\n//*++++AGREE-CODE-END++++*//\n//*====AGREE-ACTION-END====*//",
+                "params": [
+                    {
+                        "name": "vueIns",
+                        "desp": "组件的vue实例"
+                    }
+                ],
+                "isEvent": true,
+                "custom": true,
+                "id": 1600679224514
+            },
+            {
+                "name": "_op_componentBtn_btn_1600679903177",
+                "desp": "确认取消事件",
+                "code": "//*====AGREE-ACTION-START====*//\n//*+AGREE-CONFIG-/ {\"name\":\"custom\",\"main\":\"AGREE-CUSTOM\",\"desp\":\"事件准备\",\"code\":\"/**\\n* 事件绑定在vue实例上，第一个参数是vue实例。\\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\\n**/\\n\\n//函数内直接用ctx代替this访问vue页面的数据。\\nconst ctx = this;\\n\\nthis.$confirm('此操作将永久删除该文件, 是否继续?', '提示', {\\n          confirmButtonText: '确定',\\n          cancelButtonText: '取消',\\n          type: 'warning'\\n        }).then(() => {\\n          this.$message({\\n            type: 'success',\\n            message: '删除成功!'\\n          });\\n        }).catch(() => {\\n          this.$message({\\n            type: 'info',\\n            message: '已取消删除'\\n          });          \\n        });\",\"showConfig\":true} /-AGREE-CONFIG+*//\n//*++++AGREE-CODE-START++++*//\n/**\n* 事件绑定在vue实例上，第一个参数是vue实例。\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\n**/\n\n//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\n// 调用$confirm方法即可打开消息提示，它模拟了系统的 confirm。Message Box 组件也拥有极高的\n// 定制性，我们可以传入options作为第三个参数，它是一个字面量对象。type字段表明消息类型，\n// 可以为success，error，info和warning，无效的设置将会被忽略。\n// 注意，第二个参数title必须定义为String类型，\n// 如果是Object，会被理解为options。在这里我们用了 Promise 来处理后续响应。\n\nctx.$confirm('此操作将永久删除该文件, 是否继续?', '提示', {\n          confirmButtonText: '确定',\n          cancelButtonText: '取消',\n          type: 'warning'\n        }).then(() => {\n          ctx.$message({\n            type: 'success',\n            message: '删除成功!'\n          });\n        }).catch(() => {\n          ctx.$message({\n            type: 'info',\n            message: '已取消删除'\n          });          \n        });\n//*++++AGREE-CODE-END++++*//\n//*====AGREE-ACTION-END====*//",
+                "params": [
+                    {
+                        "name": "vueIns",
+                        "desp": "组件的vue实例"
+                    }
+                ],
+                "isEvent": true,
+                "custom": true,
+                "id": 1600679903177
+            },
+            {
+                "name": "_op_componentBtn_btn_1600680260837",
+                "desp": "提交数据事件",
+                "code": "/**\n* 事件绑定在vue实例上，第一个参数是vue实例。\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\n**/\n\n//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\n// 调用$prompt方法即可打开消息提示，它模拟了系统的 prompt。\n// 可以用inputPattern字段自己规定匹配模式，或者用inputValidator规定校验函数，\n// 可以返回Boolean或String，返回false或字符串时均表示校验未通过，\n// 同时返回的字符串相当于定义了inputErrorMessage字段。\n// 此外，可以用inputPlaceholder字段来定义输入框的占位符。\n\nctx.$prompt('请输入邮箱', '提示', {\n          confirmButtonText: '确定',\n          cancelButtonText: '取消',\n          inputPattern: /[\\w!#$%&'*+/=?^_`{|}~-]+(?:\\.[\\w!#$%&'*+/=?^_`{|}~-]+)*@(?:[\\w](?:[\\w-]*[\\w])?\\.)+[\\w](?:[\\w-]*[\\w])?/,\n          inputErrorMessage: '邮箱格式不正确'\n        }).then(({ value }) => {\n          this.$message({\n            type: 'success',\n            message: '你的邮箱是: ' + value\n          });\n        }).catch(() => {\n          this.$message({\n            type: 'info',\n            message: '取消输入'\n          });       \n        });",
+                "params": [
+                    {
+                        "name": "vueIns",
+                        "desp": "组件的vue实例"
+                    }
+                ],
+                "isEvent": true,
+                "custom": true,
+                "id": 1600680260837
+            },
+            {
+                "name": "_op_componentBtn_btn_1600680698499",
+                "desp": "自定义点击事件",
+                "code": "//*====AGREE-ACTION-START====*//\n//*+AGREE-CONFIG-/ {\"name\":\"custom\",\"main\":\"AGREE-CUSTOM\",\"desp\":\"事件准备\",\"code\":\"/**\\n* 事件绑定在vue实例上，第一个参数是vue实例。\\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\\n**/\\n\\n//函数内直接用ctx代替this访问vue页面的数据。\\nconst ctx = this;\\n\\n const h = this.$createElement;\\n        this.$msgbox({\\n          title: '消息',\\n          message: h('p', null, [\\n            h('span', null, '内容可以是 '),\\n            h('i', { style: 'color: teal' }, 'VNode')\\n          ]),\\n          showCancelButton: true,\\n          confirmButtonText: '确定',\\n          cancelButtonText: '取消',\\n          beforeClose: (action, instance, done) => {\\n            if (action === 'confirm') {\\n              instance.confirmButtonLoading = true;\\n              instance.confirmButtonText = '执行中...';\\n              setTimeout(() => {\\n                done();\\n                setTimeout(() => {\\n                  instance.confirmButtonLoading = false;\\n                }, 300);\\n              }, 3000);\\n            } else {\\n              done();\\n            }\\n          }\\n        }).then(action => {\\n          this.$message({\\n            type: 'info',\\n            message: 'action: ' + action\\n          });\\n        });\",\"showConfig\":true} /-AGREE-CONFIG+*//\n//*++++AGREE-CODE-START++++*//\n/**\n* 事件绑定在vue实例上，第一个参数是vue实例。\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\n**/\n\n//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\n// 本例直接调用$msgbox方法，使用了showCancelButton字段，\n// 用于显示取消按钮。另外可使用cancelButtonClass为其添加自定义样式，\n// 使用cancelButtonText来自定义按钮文本（Confirm 按钮也具有相同的字段，\n// 在文末的字段说明中有完整的字段列表）。此例还使用了beforeClose属性，\n// 它的值是一个方法，会在 MessageBox 的实例关闭前被调用，同时暂停实例的关闭。\n// 它有三个参数：action、实例本身和done方法。使用它能够在关闭前对实例进行一些操作，\n// 比如为确定按钮添加loading状态等；此时若需要关闭实例，\n// 可以调用done方法（若在beforeClose中没有调用done，则实例不会关闭）。\n const h = ctx.$createElement;\n        ctx.$msgbox({\n          title: '消息',\n          message: h('p', null, [\n            h('span', null, '内容可以是 '),\n            h('i', { style: 'color: teal' }, 'VNode')\n          ]),\n          showCancelButton: true,\n          confirmButtonText: '确定',\n          cancelButtonText: '取消',\n          beforeClose: (action, instance, done) => {\n            if (action === 'confirm') {\n              instance.confirmButtonLoading = true;\n              instance.confirmButtonText = '执行中...';\n              setTimeout(() => {\n                done();\n                setTimeout(() => {\n                  instance.confirmButtonLoading = false;\n                }, 300);\n              }, 3000);\n            } else {\n              done();\n            }\n          }\n        }).then(action => {\n          ctx.$message({\n            type: 'info',\n            message: 'action: ' + action\n          });\n        });\n//*++++AGREE-CODE-END++++*//\n//*====AGREE-ACTION-END====*//",
+                "params": [
+                    {
+                        "name": "vueIns",
+                        "desp": "组件的vue实例"
+                    }
+                ],
+                "isEvent": true,
+                "custom": true,
+                "id": 1600680698499
+            },
+            {
+                "name": "_op_componentBtn_btn_1600680864617",
+                "desp": "html片段",
+                "code": "//*====AGREE-ACTION-START====*//\n//*+AGREE-CONFIG-/ {\"name\":\"custom\",\"main\":\"AGREE-CUSTOM\",\"desp\":\"事件准备\",\"code\":\"/**\\n* 事件绑定在vue实例上，第一个参数是vue实例。\\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\\n**/\\n\\n//函数内直接用ctx代替this访问vue页面的数据。\\nconst ctx = this;\\n// message 属性支持传入 HTML 片段。\\nctx.$alert('<strong>这是 <i>HTML</i> 片段</strong>', 'HTML 片段', {\\n          dangerouslyUseHTMLString: true\\n        });\",\"showConfig\":true} /-AGREE-CONFIG+*//\n//*++++AGREE-CODE-START++++*//\n/**\n* 事件绑定在vue实例上，第一个参数是vue实例。\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\n**/\n\n//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\n// message 属性支持传入 HTML 片段。\nctx.$alert('<strong>这是 <i>HTML</i> 片段</strong>', 'HTML 片段', {\n          dangerouslyUseHTMLString: true\n        });\n//*++++AGREE-CODE-END++++*//\n//*====AGREE-ACTION-END====*//",
+                "params": [
+                    {
+                        "name": "vueIns",
+                        "desp": "组件的vue实例"
+                    }
+                ],
+                "isEvent": true,
+                "custom": true,
+                "id": 1600680864617
+            },
+            {
+                "name": "_op_componentBtn_btn_1601179641859",
+                "desp": "_op_componentBtn_btn_1601179641859",
+                "code": "//*====AGREE-ACTION-START====*//\n//*+AGREE-CONFIG-/ {\"name\":\"custom\",\"main\":\"AGREE-CUSTOM\",\"desp\":\"事件准备\",\"code\":\"/**\\n* 事件绑定在vue实例上，第一个参数是vue实例。\\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\\n**/\\n\\n//函数内直接用ctx代替this访问vue页面的数据。\\nconst ctx = this;\\nthis.$confirm('此操作将永久删除该文件, 是否继续?', '提示', {\\n          confirmButtonText: '确定',\\n          cancelButtonText: '取消',\\n          type: 'warning',\\n          center: true\\n        }).then(() => {\\n          this.$message({\\n            type: 'success',\\n            message: '删除成功!'\\n          });\\n        }).catch(() => {\\n          this.$message({\\n            type: 'info',\\n            message: '已取消删除'\\n          });\\n        });\",\"showConfig\":true} /-AGREE-CONFIG+*//\n//*++++AGREE-CODE-START++++*//\n/**\n* 事件绑定在vue实例上，第一个参数是vue实例。\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\n**/\n\n//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\nthis.$confirm('此操作将永久删除该文件, 是否继续?', '提示', {\n          confirmButtonText: '确定',\n          cancelButtonText: '取消',\n          type: 'warning',\n          center: true\n        }).then(() => {\n          this.$message({\n            type: 'success',\n            message: '删除成功!'\n          });\n        }).catch(() => {\n          this.$message({\n            type: 'info',\n            message: '已取消删除'\n          });\n        });\n//*++++AGREE-CODE-END++++*//\n//*====AGREE-ACTION-END====*//",
+                "params": [
+                    {
+                        "name": "vueIns",
+                        "desp": "组件的vue实例"
+                    }
+                ],
+                "isEvent": true,
+                "custom": true,
+                "id": 1601179641859
+            }
+        ],
+        "watch": {},
+        "beforeCreate": {
+            "code": "let ctx = this;"
+        },
+        "created": {
+            "code": "let ctx = this;"
+        },
+        "beforeMount": {
+            "code": "let ctx = this;"
+        },
+        "mounted": {
+            "code": "let ctx = this;"
+        },
+        "beforeUpdate": {
+            "code": "let ctx = this;"
+        },
+        "updated": {
+            "code": "let ctx = this;"
+        },
+        "beforeDestroy": {
+            "code": "let ctx = this;"
+        },
+        "destroyed": {
+            "code": "let ctx = this;"
+        },
+        "activated": {
+            "code": "let ctx = this;"
+        },
+        "deactivated": {
+            "code": "let ctx = this;"
+        },
+        "pollList": []
+    },
+    "dataBasket": {
+        "data": {},
+        "list": [],
+        "mapping": {}
+    },
+    "events": {},
+    "emitList": [],
+    "display": {
+        "icon": "icontongyong",
+        "desp": "弹框确认案例",
+        "type": "gridLayout",
+        "width": "880px",
+        "height": "1500px",
+        "isSelfAdaption": false,
+        "parentWidth": "850"
+    },
+    "scssCode": "",
+    "nls": "",
+    "mixins": [],
+    "imports": [],
+    "disableVueSPA": false
+}

@@ -1,0 +1,365 @@
+{
+    "structure": {
+        "id": "root",
+        "component": "v2Container",
+        "direction": "row",
+        "layout": [
+            100
+        ],
+        "style": {
+            "width": "100%",
+            "height": "100%"
+        },
+        "data": {},
+        "children": [
+            {
+                "component": "v2-layout",
+                "href": "v2-layout",
+                "direction": "col",
+                "children": [
+                    {
+                        "component": "v2-layout",
+                        "href": "v2-layout",
+                        "direction": "col",
+                        "children": [
+                            {
+                                "style": {
+                                    "textStyle": {}
+                                },
+                                "text": "${text1}",
+                                "editable": false,
+                                "textBreak": true,
+                                "visible": true,
+                                "__capacity": "1",
+                                "component": "v2-component-text",
+                                "href": "v2-component-text",
+                                "children": [],
+                                "events": {},
+                                "id": 1578594709867,
+                                "pid": 1578594693591,
+                                "commonStyle": {
+                                    "position": "relative",
+                                    "margin-top": "10px",
+                                    "margin-bottom": "10px",
+                                    "margin-left": "10px",
+                                    "margin-right": "10px",
+                                    "box-sizing": "border-box",
+                                    "align-self": "auto",
+                                    "flex-basis": "auto",
+                                    "flex-shrink": "1",
+                                    "flex-grow": "0",
+                                    "overflow": "hidden",
+                                    "color": "#666",
+                                    "animation-duration": "1s"
+                                },
+                                "customClass": [],
+                                "sizeLocked": {
+                                    "widthLock": true,
+                                    "heightLock": false
+                                },
+                                "animate": [
+                                    "",
+                                    "animated"
+                                ]
+                            }
+                        ],
+                        "style": {},
+                        "commonStyle": {
+                            "position": "relative",
+                            "margin-top": "0px",
+                            "margin-bottom": "0px",
+                            "margin-left": "0px",
+                            "margin-right": "0px",
+                            "box-sizing": "border-box",
+                            "align-self": "stretch",
+                            "flex-basis": "auto",
+                            "flex-shrink": "1",
+                            "flex-grow": "0",
+                            "overflow": "hidden",
+                            "display": "flex",
+                            "flex-direction": "row",
+                            "justify-content": "flex-start",
+                            "align-items": "flex-start",
+                            "flex-wrap": "nowrap",
+                            "align-content": "stretch",
+                            "min-width": "50px",
+                            "min-height": "50px",
+                            "width": "50%",
+                            "animation-duration": "1s"
+                        },
+                        "id": 1578594693591,
+                        "pid": 1578594648480,
+                        "ctnStyle": [
+                            {},
+                            {}
+                        ],
+                        "customClass": [],
+                        "sizeLocked": {
+                            "widthLock": true,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated"
+                        ]
+                    },
+                    {
+                        "component": "v2-layout",
+                        "href": "v2-layout",
+                        "direction": "col",
+                        "children": [
+                            {
+                                "style": {
+                                    "textStyle": {}
+                                },
+                                "text": "${text2}",
+                                "editable": false,
+                                "textBreak": true,
+                                "visible": true,
+                                "__capacity": "1",
+                                "component": "v2-component-text",
+                                "href": "v2-component-text",
+                                "children": [],
+                                "events": {},
+                                "id": 1578594767950,
+                                "pid": 1578594684879,
+                                "commonStyle": {
+                                    "position": "relative",
+                                    "margin-top": "10px",
+                                    "margin-bottom": "10px",
+                                    "margin-left": "10px",
+                                    "margin-right": "10px",
+                                    "box-sizing": "border-box",
+                                    "align-self": "auto",
+                                    "flex-basis": "auto",
+                                    "flex-shrink": "1",
+                                    "flex-grow": "0",
+                                    "overflow": "hidden",
+                                    "color": "#666",
+                                    "animation-duration": "1s"
+                                },
+                                "customClass": [],
+                                "sizeLocked": {
+                                    "widthLock": true,
+                                    "heightLock": false
+                                },
+                                "animate": [
+                                    "",
+                                    "animated"
+                                ]
+                            }
+                        ],
+                        "style": {},
+                        "commonStyle": {
+                            "position": "relative",
+                            "margin-top": "0px",
+                            "margin-bottom": "0px",
+                            "margin-left": "0px",
+                            "margin-right": "0px",
+                            "box-sizing": "border-box",
+                            "align-self": "stretch",
+                            "flex-basis": "auto",
+                            "flex-shrink": "1",
+                            "flex-grow": "0",
+                            "overflow": "hidden",
+                            "display": "flex",
+                            "flex-direction": "row",
+                            "justify-content": "flex-start",
+                            "align-items": "flex-start",
+                            "flex-wrap": "nowrap",
+                            "align-content": "stretch",
+                            "min-width": "50px",
+                            "min-height": "50px",
+                            "width": "50%",
+                            "animation-duration": "1s"
+                        },
+                        "id": 1578594684879,
+                        "pid": 1578594648480,
+                        "ctnStyle": [
+                            {},
+                            {},
+                            {}
+                        ],
+                        "customClass": [],
+                        "sizeLocked": {
+                            "widthLock": true,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated"
+                        ]
+                    }
+                ],
+                "style": {},
+                "commonStyle": {
+                    "position": "relative",
+                    "margin-top": "0px",
+                    "margin-bottom": "0px",
+                    "margin-left": "0",
+                    "margin-right": "0px",
+                    "box-sizing": "border-box",
+                    "align-self": "stretch",
+                    "flex-basis": "auto",
+                    "flex-shrink": "1",
+                    "flex-grow": "0",
+                    "overflow": "hidden",
+                    "display": "flex",
+                    "flex-direction": "row",
+                    "justify-content": "flex-start",
+                    "align-items": "flex-start",
+                    "flex-wrap": "nowrap",
+                    "align-content": "stretch",
+                    "min-width": "50px",
+                    "min-height": "50px",
+                    "animation-duration": "1s"
+                },
+                "id": 1578594648480,
+                "pid": "root",
+                "ctnStyle": [
+                    {},
+                    {}
+                ],
+                "customClass": [],
+                "sizeLocked": {
+                    "widthLock": false,
+                    "heightLock": false
+                },
+                "animate": [
+                    "",
+                    "animated"
+                ]
+            }
+        ],
+        "events": {},
+        "commonStyle": {
+            "display": "flex",
+            "flex-direction": "column",
+            "justify-content": "flex-start",
+            "align-items": "flex-start",
+            "flex-wrap": "nowrap",
+            "align-content": "stretch",
+            "align-self": "stretch",
+            "flex-shrink": "1",
+            "flex-grow": "0",
+            "min-width": "50px",
+            "min-height": "50px",
+            "animation-duration": "1s",
+            "border-width": "1px"
+        },
+        "ctnStyle": [
+            {}
+        ],
+        "customClass": [
+            "todo-item-ctn",
+            "todo-item-done"
+        ],
+        "realSize": [],
+        "sizeLocked": {
+            "widthLock": false,
+            "heightLock": false
+        },
+        "animate": [
+            "",
+            "animated"
+        ]
+    },
+    "forms": [],
+    "logic": {
+        "methods": [],
+        "watch": {},
+        "beforeCreate": {
+            "code": ""
+        },
+        "created": {
+            "code": ""
+        },
+        "beforeMount": {
+            "code": ""
+        },
+        "mounted": {
+            "code": ""
+        },
+        "beforeUpdate": {
+            "code": ""
+        },
+        "updated": {
+            "code": ""
+        },
+        "beforeDestroy": {
+            "code": ""
+        },
+        "destroyed": {
+            "code": ""
+        },
+        "activated": {
+            "code": ""
+        },
+        "deactivated": {
+            "code": ""
+        },
+        "pollList": []
+    },
+    "dataBasket": {
+        "data": {},
+        "list": [
+            {
+                "desp": "文本1",
+                "name": "text1",
+                "code": "20200202",
+                "setCode": "",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false
+            },
+            {
+                "desp": "文本2",
+                "name": "text2",
+                "code": "待调账 3 件",
+                "setCode": "",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false
+            },
+            {
+                "desp": "标识",
+                "name": "id",
+                "code": "''",
+                "setCode": "",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false
+            }
+        ],
+        "mapping": {
+            "1578594767950": [
+                {
+                    "id": 1578594767950,
+                    "modelValue": "text",
+                    "dataValue": "text2",
+                    "type": ""
+                }
+            ],
+            "1578594709867": [
+                {
+                    "id": 1578594709867,
+                    "modelValue": "text",
+                    "dataValue": "text1",
+                    "type": ""
+                }
+            ]
+        }
+    },
+    "events": {},
+    "display": {
+        "icon": "icontongyong",
+        "desp": "fx_水平_1",
+        "type": "gridLayout",
+        "width": "800px",
+        "height": "45px"
+    },
+    "scssCode": ".todo-item-ctn{\n    border-bottom: 1px solid #ddd;\n}\n/* .todo-item-done{\n    border-bottom: 1px solid rgb(225, 243, 216);\n} */\n"
+}

@@ -1,0 +1,1 @@
+{"name":"@v2-pipe/download","main":"index.js","docs":{"desp":"下载","name":"download","icon":"","category":"api","label":"","labelType":"front","belongTo":"function","hasReturn":false,"returnValue":{"name":"","desp":"","details":"","type":"string","defaultValue":""},"params":[]},"category":"api","description":"上传下载","version":"6.0.0"}

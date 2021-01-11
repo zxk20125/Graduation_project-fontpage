@@ -1,0 +1,7 @@
+{
+	"layout": "lt-layout",
+	"title": "AWEB管理端",
+	"logo": "img/agree-logo.png",
+	"mainPage": "/main/main.vue",
+	"driverType": "pc"
+}

@@ -1,0 +1,42 @@
+{
+  "author": {
+    "name": "caohan@agree.com.cn"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "可合并行表格",
+  "docs": {
+    "belongTo": "aui",
+    "icon": "iconwenben",
+    "type": "project",
+    "href": "v2-custom-table",
+    "author": "caohan@agree.com.cn",
+    "version": 610000,
+    "accept": "divCtn",
+    "name": "可合并行表格",
+    "option": [
+      { 
+        "desp": "表头数据",
+        "name": "columnData",
+        "type": "string_input",
+        "defaultValue": "",
+        "placeholder": ""
+      },
+      {
+        "desp": "表格数据",
+        "name": "tableData",
+        "type": "string_input",
+        "defaultValue": ""     
+      }
+    ]
+  },
+  "keywords": [],
+  "license": "ISC",
+  "main": "index.vue",
+  "name": "@v2-components/v2-custom-table",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "6.0.1",
+  "index": 30000003
+}

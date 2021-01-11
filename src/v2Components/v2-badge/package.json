@@ -1,0 +1,73 @@
+{
+  "author": {
+    "name": "caohan@agree.com.cn"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "状态标记",
+  "docs": {
+    "belongTo": "aui",
+    "icon": "iconwenben",
+    "type": "project",
+    "href": "v2-badge",
+    "author": "caohan@agree.com.cn",
+    "version": 610000,
+    "accept": "divCtn",
+    "name": "状态标记",
+    "option": [
+      {
+        "desp": "状态标记尺寸",
+        "name": "badgeSize",
+        "type": "string_input",
+        "defaultValue": "",
+        "placeholder": ""
+      },
+      {
+        "desp": "状态标记配置",
+        "name": "badgeData",
+        "type": "string_input",
+        "defaultValue": "",
+        "placeholder": ""
+      },
+      {
+        "name": "labelWitdh",
+        "desp": "图标大小",
+        "defaultValue": "0px",
+        "type": "string_input"
+      },
+      {
+        "defaultValue": false,
+        "type": "boolean",
+        "name": "iconType",
+        "desp": "icon类型"
+      },
+      {
+        "defaultValue": "",
+        "valueArray": [
+          "primary",
+          "warning",
+          ""
+        ],
+        "doc": "#",
+        "type": "string_select",
+        "desp": "标记样式选择",
+        "despArray": [
+          "普通",
+          "警告",
+          "默认"
+        ],
+        "name": "styleSelect"
+      }
+
+    ]
+  },
+  "keywords": [],
+  "license": "ISC",
+  "main": "index.vue",
+  "name": "@v2-components/v2-badge",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "6.0.1",
+  "index": 30000003
+}

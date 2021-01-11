@@ -1,0 +1,76 @@
+[
+  {
+    "desp": "页面",
+    "name": "page",
+    "children": [
+      {
+        "showGet": true,
+        "showSet": false,
+        "name": "openPage",
+        "desp": "打开页面",
+        "code": "//  ## type 配置说明 ##\n//  * BLANK > 项目中的标签页\n//  * SUB > 当前页面上的弹窗页\n//  * WINDOW > 浏览器的新窗口\n//  * SELF > 自身页面\n\nctx.open({\n  status: true,\n  title: \"子页面\",\n  path: \"AUMS/infoCollect/tradeMonitor\",\n  page: \"AUMS/infoCollect/tradeMonitor\",\n  params: { id: \"12\" },\n // 弹窗自身是否插入至body 元素,嵌套的弹窗必须指点该属性并赋值为true \n //body:true, \n type: \"SUB\",\n  // 下面的配置适用于弹窗打开子页面的情形\n  width: \"950px\",\n  height: \"656px\",\n  customClass: \"poc-tip-dialog\",\n  hideCloseBtn: false,\n  hideConfirmBtn:true, //不配置这个属性，默认就都显示“取消”和“确定”按钮\n  hideCancelBtn:true,\n  confirmCallback: () => {\n    //这两个回调方法跟显不显示按钮没关系，如果子页面自己通过this.close()关闭之后，可以自己手动通过this.$store.commit('do_cancel',params)\n    //和this.$store.commit('do_confirm',params)调用父页面的这两个回调方法同时可以传递参数回父页面\n    console.log(\"点击确定\");\n  },\n  cancelCallback: e => {\n    console.log(\"点击取消\");\n  }\n});\n"
+      },
+      { 
+        "showGet": true,
+        "showSet": false,
+        "name": "closePage",
+        "desp": "关闭页面",
+        "code": "\n/* \n ## 关闭tab页 \n  path:'/example/add'\n  非必填。若不填则默认关闭当前页面。\n  若填写指定页面路由的路径，则关闭指定TAB页面。 \n  this.$root.close(path); \n \n ## 关闭当前弹窗，即子页面 \n  this.close()\n*/ \nthis.close(); \n"
+      },
+      {
+        "showGet": true,
+        "showSet": false,
+        "name": "comfirm",
+        "desp": "确认方法",
+        "code": "\n/** \n ## 子页面传值给父页面 \n  确定操作 \n  let confirmParams = {data: 'confirm msg'} \n  ctx.$root.confirm(confirmParams)  \n*/ \nthis.$root.confirm();"
+      },
+      {
+        "showGet": true,
+        "showSet": false,
+        "name": "cancel",
+        "desp": "取消方法",
+        "code": "\n// 取消操作 \nthis.$root.cancel();"
+      }
+    ]
+  },
+  {
+    "desp": "数据请求",
+    "name": "request",
+    "children": [
+      {
+        "showGet": true,
+        "showSet": false,
+        "name": "axios",
+        "desp": "请求",
+        "code": "/**\n * method:请求方式\n * url: 请求路径,\n * data: 请求体参数 \n**/\nctx.$axios({\n  method: 'post',\n  url: 'url',\n  data: {}\n}).then(res=>{\n// 成功回调，res为响应体\n}).catch(e=>{\n// 失败回调,e为错误提示\n});"
+      }
+    ]
+  },
+  {
+    "desp": "消息提示",
+    "name": "notify",
+    "children": [
+      {
+        "showGet": true,
+        "showSet": false,
+        "name": "mask",
+        "desp": "遮罩",
+        "code": "// 通过指令调用 loading\nlet loading = ctx.$loading({\n  lock: true,\n  text: '正在扫描文件,请稍后...',\n  spinner: 'el-icon-loading',\n  background: 'rgba(255, 255, 255, 0.5)',\n  customClass: 'poc-loading',   // 方便样式精准控制\n  // target: $('.loading-target')   // 遮罩的目标 DOM, 默认为 document.body\n});\n\n // 关闭遮罩\nloading.close();\n"
+      },
+      {
+        "showGet": true,
+        "showSet": false,
+        "name": "notify",
+        "desp": "通知",
+        "code": "ctx.$notify({\n  title: '提示',\n  message: '这是一条带有偏移的提示消息',\n  position: 'top-right', //top-right/top-left/bottom-right/bottom-left\n  offset: 100\n});\n"
+      },
+      {
+        "showGet": true,
+        "showSet": false,
+        "name": "message",
+        "desp": "消息提示",
+        "code": "ctx.$message({\n  type: 'success',  // success/warning/info/error\n  message: '恭喜你，这是一条成功消息'\n});\n"
+      }
+    ]
+  }
+]

@@ -1,0 +1,30 @@
+{
+    "name":"layoutList",
+    "desp":"布局列表",
+    "children":[{
+        "name":"lt-layout",
+        "desp":"基础布局",
+        "details":"布局一",
+        "thumbnail":"/config/layout/img/lt-layout.png",
+        "icon":"iconshangzuoyoubuju"
+    },{
+        "name":"lr-layout",
+        "desp":"左右布局",
+        "details":"布局二",
+        "thumbnail":"/config/layout/img/lr-layout.png",
+        "icon":"iconzuoyoubuju"
+    },{
+        "name":"tb-layout",
+        "desp":"上下布局",
+        "details":"布局三",
+        "thumbnail":"/config/layout/img/tb-layout.png",
+        "icon":"iconshangxiabuju"
+    },{
+        "name":"jn-layout",
+        "desp":"浅色布局",
+        "details":"布局四",
+        "thumbnail":"/config/layout/img/jn-layout.png",
+        "icon":"iconshangzuoyoubuju"
+    }]
+
+}

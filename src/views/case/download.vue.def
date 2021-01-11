@@ -1,0 +1,2302 @@
+{
+    "structure": {
+        "id": "root",
+        "component": "v2Container",
+        "direction": "row",
+        "layout": [
+            100
+        ],
+        "data": {},
+        "children": [
+            {
+                "type": "ctn",
+                "author": "zhanghaixian@agree.com.cn",
+                "href": "v2Container",
+                "component": "v2Container",
+                "name": "v2Container",
+                "desp": "单容器",
+                "previewSrc": "/v1/support/screenshot/v2Container.png",
+                "id": 1602209380851,
+                "pid": "root",
+                "$ref": "v2Container_5",
+                "props": [
+                    "visible",
+                    "if",
+                    "customClass"
+                ],
+                "sizeLocked": {
+                    "widthLock": false,
+                    "heightLock": false
+                },
+                "animate": [
+                    "",
+                    "animated",
+                    ""
+                ],
+                "events": {
+                    "_op_content": {}
+                },
+                "children": [
+                    {
+                        "style": {
+                            "textStyle": {
+                                "font-weight": "bold"
+                            }
+                        },
+                        "text": "使用上传组件实现上传",
+                        "overflow": "nomal",
+                        "overflowLine": 3,
+                        "editable": false,
+                        "textBreak": true,
+                        "visible": true,
+                        "__capacity": "1",
+                        "component": "v2-component-text",
+                        "href": "v2-component-text",
+                        "name": "文本",
+                        "children": [],
+                        "events": {
+                            "_op_componentText_text": {}
+                        },
+                        "version": "14.0.0",
+                        "id": 1602229222232,
+                        "pid": 1602209450917,
+                        "$ref": "v2ComponentText_24",
+                        "props": [
+                            "text",
+                            "overflow",
+                            "overflowLine",
+                            "title",
+                            "editable",
+                            "textBreak",
+                            "visible",
+                            "if",
+                            "customClass"
+                        ],
+                        "sizeLocked": {
+                            "widthLock": false,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated"
+                        ],
+                        "commonStyle": {
+                            "box-sizing": "border-box",
+                            "flex-shrink": "0",
+                            "font-size": "25px",
+                            "margin-top": "10px",
+                            "margin-bottom": "20px"
+                        }
+                    },
+                    {
+                        "type": "ctn",
+                        "author": "zhanghaixian@agree.com.cn",
+                        "href": "v2Container",
+                        "component": "v2Container",
+                        "name": "v2Container",
+                        "desp": "单容器",
+                        "previewSrc": "/v1/support/screenshot/v2Container.png",
+                        "id": 1602209450917,
+                        "pid": 1602209380851,
+                        "$ref": "v2Container_6",
+                        "props": [
+                            "visible",
+                            "if",
+                            "customClass"
+                        ],
+                        "sizeLocked": {
+                            "widthLock": false,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated",
+                            ""
+                        ],
+                        "events": {
+                            "_op_content": {}
+                        },
+                        "children": [
+                            {
+                                "style": {
+                                    "textStyle": {}
+                                },
+                                "text": "在基础组件拖拽一个上传组件到页面上,然后在上传组件的配置项里面,有个上传地址,这个就是后台的接口地址,比如本次的案例的后台地址'/file2/upload',由于后台在文件上传的时候需要hearders带有token,下面按钮点击之后就能为上传组件增加一个token值,这个一般都是放在生命周期靠前位置,比如mounted的时候就添加,本次为演示",
+                                "overflow": "nomal",
+                                "overflowLine": 3,
+                                "editable": false,
+                                "textBreak": true,
+                                "visible": true,
+                                "__capacity": "1",
+                                "component": "v2-component-text",
+                                "href": "v2-component-text",
+                                "name": "文本",
+                                "children": [],
+                                "events": {
+                                    "_op_componentText_text": {}
+                                },
+                                "version": "14.0.0",
+                                "id": 1602209428670,
+                                "pid": 1602209450917,
+                                "$ref": "v2ComponentText_7",
+                                "props": [
+                                    "text",
+                                    "overflow",
+                                    "overflowLine",
+                                    "title",
+                                    "editable",
+                                    "textBreak",
+                                    "visible",
+                                    "if",
+                                    "customClass"
+                                ],
+                                "sizeLocked": {
+                                    "widthLock": true,
+                                    "heightLock": false
+                                },
+                                "animate": [
+                                    "",
+                                    "animated"
+                                ],
+                                "commonStyle": {
+                                    "box-sizing": "border-box",
+                                    "flex-shrink": "0",
+                                    "margin-top": "10px",
+                                    "margin-bottom": "10px",
+                                    "margin-left": "10px",
+                                    "margin-right": "10px",
+                                    "font-size": "15px"
+                                }
+                            }
+                        ],
+                        "commonStyle": {
+                            "display": "flex",
+                            "align-items": "flex-start",
+                            "align-self": "stretch",
+                            "height": "auto",
+                            "box-sizing": "border-box",
+                            "width": "100%",
+                            "flex-shrink": "0",
+                            "flex-direction": "column",
+                            "border-style": "solid",
+                            "border-color": "rgb(4,190,189)",
+                            "border-width": "5px",
+                            "border-right-width": "0",
+                            "border-left-width": "5px",
+                            "border-top-width": "0",
+                            "border-bottom-width": "0",
+                            "background-color": "rgb(242,242,242)",
+                            "margin-bottom": "20px"
+                        }
+                    },
+                    {
+                        "type": "ctn",
+                        "author": "zhanghaixian@agree.com.cn",
+                        "href": "v2Container",
+                        "component": "v2Container",
+                        "name": "v2Container",
+                        "desp": "单容器",
+                        "previewSrc": "/v1/support/screenshot/v2Container.png",
+                        "hidden": false,
+                        "id": 1602295760895,
+                        "pid": 1602232412538,
+                        "$ref": "v2Container_12",
+                        "props": [
+                            "visible",
+                            "if",
+                            "customClass"
+                        ],
+                        "sizeLocked": {
+                            "widthLock": false,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated",
+                            ""
+                        ],
+                        "events": {
+                            "_op_content": {}
+                        },
+                        "children": [
+                            {
+                                "theme": {
+                                    "size": ""
+                                },
+                                "style": {
+                                    "label": {}
+                                },
+                                "value": "${filePartId}",
+                                "disabled": false,
+                                "label": "filePartId",
+                                "placeholder": "请输入分片标识",
+                                "titleMode": "col",
+                                "labelWitdh": "80px",
+                                "inputType": "text",
+                                "rows": "2",
+                                "showWordLimit": false,
+                                "clearable": false,
+                                "isRequired": false,
+                                "autoComplete": false,
+                                "visible": true,
+                                "__capacity": "1",
+                                "component": "v2-form-input",
+                                "href": "v2-form-input",
+                                "name": "输入框",
+                                "children": [],
+                                "events": {
+                                    "_op_formInput_input": {}
+                                },
+                                "version": "10.0.1",
+                                "id": 1602295787041,
+                                "pid": 1602295760895,
+                                "$ref": "v2FormInput_1",
+                                "props": [
+                                    "value",
+                                    "disabled",
+                                    "label",
+                                    "placeholder",
+                                    "prepend",
+                                    "append",
+                                    "titleMode",
+                                    "labelWitdh",
+                                    "inputType",
+                                    "rows",
+                                    "maxlength",
+                                    "minlength",
+                                    "prefixIcon",
+                                    "suffixIcon",
+                                    "showWordLimit",
+                                    "clearable",
+                                    "isRequired",
+                                    "autoComplete",
+                                    "suggestion",
+                                    "visible",
+                                    "if",
+                                    "customClass"
+                                ],
+                                "sizeLocked": {
+                                    "widthLock": false,
+                                    "heightLock": false
+                                },
+                                "animate": [
+                                    "",
+                                    "animated"
+                                ],
+                                "commonStyle": {
+                                    "box-sizing": "border-box",
+                                    "flex-shrink": "0",
+                                    "margin-bottom": "20px"
+                                }
+                            },
+                            {
+                                "theme": {
+                                    "size": ""
+                                },
+                                "style": {
+                                    "label": {}
+                                },
+                                "value": "${filePart}",
+                                "disabled": false,
+                                "label": "filePart",
+                                "placeholder": "请输入分片信息",
+                                "titleMode": "col",
+                                "labelWitdh": "80px",
+                                "inputType": "text",
+                                "rows": "2",
+                                "showWordLimit": false,
+                                "clearable": false,
+                                "isRequired": false,
+                                "autoComplete": false,
+                                "visible": true,
+                                "__capacity": "1",
+                                "component": "v2-form-input",
+                                "href": "v2-form-input",
+                                "name": "输入框",
+                                "children": [],
+                                "events": {
+                                    "_op_formInput_input": {}
+                                },
+                                "version": "10.0.1",
+                                "id": 1602295826677,
+                                "pid": 1602295760895,
+                                "$ref": "v2FormInput_2",
+                                "props": [
+                                    "value",
+                                    "disabled",
+                                    "label",
+                                    "placeholder",
+                                    "prepend",
+                                    "append",
+                                    "titleMode",
+                                    "labelWitdh",
+                                    "inputType",
+                                    "rows",
+                                    "maxlength",
+                                    "minlength",
+                                    "prefixIcon",
+                                    "suffixIcon",
+                                    "showWordLimit",
+                                    "clearable",
+                                    "isRequired",
+                                    "autoComplete",
+                                    "suggestion",
+                                    "visible",
+                                    "if",
+                                    "customClass"
+                                ],
+                                "sizeLocked": {
+                                    "widthLock": false,
+                                    "heightLock": false
+                                },
+                                "animate": [
+                                    "",
+                                    "animated"
+                                ],
+                                "commonStyle": {
+                                    "box-sizing": "border-box",
+                                    "flex-shrink": "0",
+                                    "margin-left": "20px"
+                                }
+                            }
+                        ],
+                        "direction": "col",
+                        "commonStyle": {
+                            "display": "flex",
+                            "align-items": "flex-start",
+                            "align-self": "stretch",
+                            "height": "auto",
+                            "box-sizing": "border-box",
+                            "width": "100%",
+                            "flex-shrink": "0"
+                        }
+                    },
+                    {
+                        "theme": {
+                            "btnType": "primary",
+                            "size": ""
+                        },
+                        "disabled": false,
+                        "loading": false,
+                        "btnName": "点击为上传组件增加token,分片参数",
+                        "shape": "def",
+                        "visible": true,
+                        "__capacity": "1",
+                        "component": "v2-component-btn",
+                        "href": "v2-component-btn",
+                        "name": "按钮",
+                        "children": [],
+                        "events": {
+                            "_op_componentBtn_btn": {
+                                "click": [
+                                    "_op_componentBtn_btn_1602211540144"
+                                ]
+                            }
+                        },
+                        "version": "14.0.0",
+                        "id": 1602211610578,
+                        "pid": 1602232559435,
+                        "$ref": "v2ComponentBtn_3",
+                        "props": [
+                            "disabled",
+                            "loading",
+                            "btnName",
+                            "leftIcon",
+                            "rightIcon",
+                            "shape",
+                            "visible",
+                            "if",
+                            "customClass"
+                        ],
+                        "sizeLocked": {
+                            "widthLock": false,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated"
+                        ],
+                        "commonStyle": {
+                            "box-sizing": "border-box",
+                            "flex-shrink": "0",
+                            "margin-bottom": "10px"
+                        },
+                        "customClass": [
+                            "v2-component-btn-1602211610578"
+                        ]
+                    },
+                    {
+                        "style": {
+                            "label": {}
+                        },
+                        "disabled": false,
+                        "action": "${uploadUrl}",
+                        "type": "normal",
+                        "listType": "text",
+                        "limitType": "*",
+                        "limit": "3",
+                        "limitSize": "50000",
+                        "autoUpload": true,
+                        "btnText": "选择文件",
+                        "btnUploadText": "上传",
+                        "prompt": "可以选择任意文件进行上传",
+                        "isRequired": false,
+                        "label": "使用上传组件",
+                        "labelWitdh": "100px",
+                        "titleMode": "col",
+                        "visible": true,
+                        "__capacity": "1",
+                        "component": "v2-form-upload",
+                        "href": "v2-form-upload",
+                        "name": "上传",
+                        "children": [],
+                        "events": {
+                            "_op_formUpload_upload": {}
+                        },
+                        "version": "14.0.0",
+                        "id": 1602209471420,
+                        "pid": 1602209380851,
+                        "$ref": "v2FormUpload_1",
+                        "props": [
+                            "value",
+                            "handleChange",
+                            "successCallback",
+                            "handleRemove",
+                            "disabled",
+                            "action",
+                            "type",
+                            "listType",
+                            "limitType",
+                            "limit",
+                            "limitSize",
+                            "data",
+                            "fileName",
+                            "autoUpload",
+                            "btnText",
+                            "btnUploadText",
+                            "prompt",
+                            "isRequired",
+                            "label",
+                            "labelWitdh",
+                            "titleMode",
+                            "visible",
+                            "if",
+                            "customClass"
+                        ],
+                        "sizeLocked": {
+                            "widthLock": false,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated"
+                        ],
+                        "successCallback": "successCallback",
+                        "commonStyle": {
+                            "box-sizing": "border-box",
+                            "flex-shrink": "0"
+                        },
+                        "customClass": [
+                            "v2-form-upload-1602209471420"
+                        ]
+                    }
+                ],
+                "commonStyle": {
+                    "display": "flex",
+                    "align-items": "flex-start",
+                    "align-self": "stretch",
+                    "height": "auto",
+                    "box-sizing": "border-box",
+                    "width": "100%",
+                    "flex-shrink": "0",
+                    "flex-direction": "column"
+                }
+            },
+            {
+                "type": "ctn",
+                "author": "zhanghaixian@agree.com.cn",
+                "href": "v2Container",
+                "component": "v2Container",
+                "name": "v2Container",
+                "desp": "单容器",
+                "previewSrc": "/v1/support/screenshot/v2Container.png",
+                "id": 1602232412538,
+                "pid": "root",
+                "$ref": "v2Container_9",
+                "props": [
+                    "visible",
+                    "if",
+                    "customClass"
+                ],
+                "sizeLocked": {
+                    "widthLock": false,
+                    "heightLock": false
+                },
+                "animate": [
+                    "",
+                    "animated",
+                    ""
+                ],
+                "events": {
+                    "_op_content": {}
+                },
+                "children": [
+                    {
+                        "component": "v2Container",
+                        "href": "v2Container",
+                        "direction": "row",
+                        "children": [
+                            {
+                                "style": {
+                                    "textStyle": {}
+                                },
+                                "text": "ctx.__getVueIns('1602209471420').$refs._op_formUpload_upload.headers = {                 \"X-CSRF-TOKEN\":window.sessionStorage.getItem('token'),                 \"filePartId\":'a',                 \"filePart\":'1/4'             };",
+                                "overflow": "nomal",
+                                "overflowLine": 3,
+                                "editable": false,
+                                "textBreak": true,
+                                "visible": true,
+                                "__capacity": "1",
+                                "component": "v2-component-text",
+                                "href": "v2-component-text",
+                                "name": "文本",
+                                "children": [],
+                                "events": {
+                                    "_op_componentText_text": {}
+                                },
+                                "version": "14.0.0",
+                                "id": 1602232483952,
+                                "pid": 1602232412538,
+                                "$ref": "v2ComponentText_25",
+                                "props": [
+                                    "text",
+                                    "overflow",
+                                    "overflowLine",
+                                    "title",
+                                    "editable",
+                                    "textBreak",
+                                    "visible",
+                                    "if",
+                                    "customClass"
+                                ],
+                                "sizeLocked": {
+                                    "widthLock": true,
+                                    "heightLock": false
+                                },
+                                "animate": [
+                                    "",
+                                    "animated"
+                                ],
+                                "commonStyle": {
+                                    "box-sizing": "border-box",
+                                    "flex-shrink": "0",
+                                    "font-size": "15px",
+                                    "margin-top": "10px",
+                                    "margin-bottom": "10px",
+                                    "margin-left": "10px",
+                                    "margin-right": "10px"
+                                }
+                            },
+                            {
+                                "style": {
+                                    "textStyle": {}
+                                },
+                                "text": "X-CSRF-TOKEN：获取登陆之后的token值，获取方式window.sessionStorage.getItem('token')",
+                                "overflow": "nomal",
+                                "overflowLine": 3,
+                                "editable": false,
+                                "textBreak": true,
+                                "visible": true,
+                                "__capacity": "1",
+                                "component": "v2-component-text",
+                                "href": "v2-component-text",
+                                "name": "文本",
+                                "children": [],
+                                "events": {
+                                    "_op_componentText_text": {}
+                                },
+                                "version": "14.0.0",
+                                "id": 1602236672490,
+                                "pid": 1602232559435,
+                                "$ref": "v2ComponentText_27",
+                                "props": [
+                                    "text",
+                                    "overflow",
+                                    "overflowLine",
+                                    "title",
+                                    "editable",
+                                    "textBreak",
+                                    "visible",
+                                    "if",
+                                    "customClass"
+                                ],
+                                "sizeLocked": {
+                                    "widthLock": false,
+                                    "heightLock": false
+                                },
+                                "animate": [
+                                    "",
+                                    "animated"
+                                ],
+                                "commonStyle": {
+                                    "box-sizing": "border-box",
+                                    "flex-shrink": "0",
+                                    "font-size": "15px",
+                                    "margin-bottom": "5px",
+                                    "margin-left": "10px",
+                                    "margin-right": "10px"
+                                }
+                            },
+                            {
+                                "style": {
+                                    "textStyle": {}
+                                },
+                                "text": "filePartId：分片标识。使用分片上传时前端需要为文件的分片生成一个统一的分片字符串标识，方便后端识别，合并。(如果不分片可以为空)",
+                                "overflow": "nomal",
+                                "overflowLine": 3,
+                                "editable": false,
+                                "textBreak": true,
+                                "visible": true,
+                                "__capacity": "1",
+                                "component": "v2-component-text",
+                                "href": "v2-component-text",
+                                "name": "文本",
+                                "children": [],
+                                "events": {
+                                    "_op_componentText_text": {}
+                                },
+                                "version": "14.0.0",
+                                "id": 1602236703851,
+                                "pid": 1602232559435,
+                                "$ref": "v2ComponentText_26",
+                                "props": [
+                                    "text",
+                                    "overflow",
+                                    "overflowLine",
+                                    "title",
+                                    "editable",
+                                    "textBreak",
+                                    "visible",
+                                    "if",
+                                    "customClass"
+                                ],
+                                "sizeLocked": {
+                                    "widthLock": false,
+                                    "heightLock": false
+                                },
+                                "animate": [
+                                    "",
+                                    "animated"
+                                ],
+                                "offset": {
+                                    "top": 751,
+                                    "left": 5
+                                },
+                                "commonStyle": {
+                                    "box-sizing": "border-box",
+                                    "flex-shrink": "0",
+                                    "font-size": "15px",
+                                    "margin-bottom": "5px",
+                                    "margin-left": "10px",
+                                    "margin-right": "10px"
+                                }
+                            },
+                            {
+                                "style": {
+                                    "textStyle": {}
+                                },
+                                "text": "filePart：分片信息。值的格式为 currentPart/total ，其中currentPart为当前分片数，total为总分片数，例如上传4个分片中的第一块分片为\"1/4\"。(如果不分片可以为空)",
+                                "overflow": "nomal",
+                                "overflowLine": 3,
+                                "editable": false,
+                                "textBreak": true,
+                                "visible": true,
+                                "__capacity": "1",
+                                "component": "v2-component-text",
+                                "href": "v2-component-text",
+                                "name": "文本",
+                                "children": [],
+                                "events": {
+                                    "_op_componentText_text": {}
+                                },
+                                "version": "14.0.0",
+                                "id": 1602236834095,
+                                "pid": 1602232559435,
+                                "$ref": "v2ComponentText_28",
+                                "props": [
+                                    "text",
+                                    "overflow",
+                                    "overflowLine",
+                                    "title",
+                                    "editable",
+                                    "textBreak",
+                                    "visible",
+                                    "if",
+                                    "customClass"
+                                ],
+                                "sizeLocked": {
+                                    "widthLock": false,
+                                    "heightLock": false
+                                },
+                                "animate": [
+                                    "",
+                                    "animated"
+                                ],
+                                "commonStyle": {
+                                    "box-sizing": "border-box",
+                                    "flex-shrink": "0",
+                                    "font-size": "15px",
+                                    "margin-bottom": "10px",
+                                    "margin-right": "10px",
+                                    "padding-left": "10px"
+                                }
+                            }
+                        ],
+                        "style": {},
+                        "id": 1602232559435,
+                        "pid": 1602232412538,
+                        "$ref": "v2Container_11",
+                        "props": [
+                            "visible",
+                            "if",
+                            "customClass"
+                        ],
+                        "sizeLocked": {
+                            "widthLock": true,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated",
+                            ""
+                        ],
+                        "events": {
+                            "_op_content": {}
+                        },
+                        "commonStyle": {
+                            "display": "flex",
+                            "align-items": "flex-start",
+                            "align-self": "stretch",
+                            "height": "auto",
+                            "box-sizing": "border-box",
+                            "flex-shrink": "0",
+                            "flex-direction": "column",
+                            "border-style": "solid",
+                            "border-color": "rgb(4,190,189)",
+                            "border-width": "5px",
+                            "border-right-width": "0",
+                            "border-left-width": "5px",
+                            "border-top-width": "0",
+                            "border-bottom-width": "0",
+                            "background-color": "rgb(242,242,242)",
+                            "margin-top": "20px",
+                            "margin-bottom": "20px",
+                            "min-height": "20px",
+                            "width": "100%"
+                        }
+                    }
+                ],
+                "commonStyle": {
+                    "display": "flex",
+                    "align-items": "flex-start",
+                    "align-self": "stretch",
+                    "height": "auto",
+                    "box-sizing": "border-box",
+                    "width": "100%",
+                    "flex-shrink": "0",
+                    "flex-direction": "column"
+                }
+            },
+            {
+                "style": {
+                    "textStyle": {}
+                },
+                "overflow": "nomal",
+                "overflowLine": 3,
+                "editable": false,
+                "textBreak": true,
+                "visible": true,
+                "__capacity": "1",
+                "component": "v2-component-text",
+                "href": "v2-component-text",
+                "name": "文本",
+                "children": [],
+                "events": {
+                    "_op_componentText_text": {}
+                },
+                "version": "14.0.0",
+                "id": 1602295788351,
+                "pid": "root",
+                "$ref": "v2ComponentText_29",
+                "props": [
+                    "text",
+                    "overflow",
+                    "overflowLine",
+                    "title",
+                    "editable",
+                    "textBreak",
+                    "visible",
+                    "if",
+                    "customClass"
+                ],
+                "sizeLocked": {
+                    "widthLock": false,
+                    "heightLock": false
+                },
+                "animate": [
+                    "",
+                    "animated"
+                ],
+                "commonStyle": {
+                    "box-sizing": "border-box",
+                    "flex-shrink": "0"
+                }
+            },
+            {
+                "component": "v2Container",
+                "href": "v2Container",
+                "direction": "col",
+                "children": [
+                    {
+                        "style": {
+                            "textStyle": {}
+                        },
+                        "text": "返回数据为： ",
+                        "overflow": "nomal",
+                        "overflowLine": 3,
+                        "editable": false,
+                        "textBreak": true,
+                        "visible": true,
+                        "__capacity": "1",
+                        "component": "v2-component-text",
+                        "href": "v2-component-text",
+                        "name": "文本",
+                        "children": [],
+                        "events": {
+                            "_op_componentText_text": {}
+                        },
+                        "version": "14.0.0",
+                        "id": 1602487129039,
+                        "pid": 1602487129454,
+                        "$ref": "v2ComponentText_31",
+                        "props": [
+                            "text",
+                            "overflow",
+                            "overflowLine",
+                            "title",
+                            "editable",
+                            "textBreak",
+                            "visible",
+                            "if",
+                            "customClass"
+                        ],
+                        "sizeLocked": {
+                            "widthLock": false,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated"
+                        ],
+                        "commonStyle": {
+                            "box-sizing": "border-box",
+                            "flex-shrink": "0",
+                            "font-size": "20px"
+                        }
+                    },
+                    {
+                        "style": {
+                            "textStyle": {}
+                        },
+                        "text": "${successData}",
+                        "overflow": "nomal",
+                        "overflowLine": 3,
+                        "editable": false,
+                        "textBreak": true,
+                        "visible": true,
+                        "__capacity": "1",
+                        "component": "v2-component-text",
+                        "href": "v2-component-text",
+                        "name": "文本",
+                        "children": [],
+                        "events": {
+                            "_op_componentText_text": {}
+                        },
+                        "version": "14.0.0",
+                        "id": 1602296092477,
+                        "pid": 1602487129454,
+                        "$ref": "v2ComponentText_30",
+                        "props": [
+                            "text",
+                            "overflow",
+                            "overflowLine",
+                            "title",
+                            "editable",
+                            "textBreak",
+                            "visible",
+                            "if",
+                            "customClass"
+                        ],
+                        "sizeLocked": {
+                            "widthLock": false,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated"
+                        ],
+                        "commonStyle": {
+                            "box-sizing": "border-box",
+                            "flex-shrink": "0",
+                            "font-size": "20px",
+                            "margin-bottom": "20px"
+                        }
+                    }
+                ],
+                "style": {},
+                "id": 1602487129454,
+                "pid": "root",
+                "$ref": "v2Container_13",
+                "props": [
+                    "visible",
+                    "if",
+                    "customClass"
+                ],
+                "sizeLocked": {
+                    "widthLock": false,
+                    "heightLock": false
+                },
+                "animate": [
+                    "",
+                    "animated",
+                    ""
+                ],
+                "events": {
+                    "_op_content": {}
+                },
+                "commonStyle": {
+                    "display": "flex",
+                    "align-items": "flex-start",
+                    "align-self": "stretch",
+                    "height": "auto",
+                    "box-sizing": "border-box",
+                    "flex-shrink": "0",
+                    "justify-content": "center"
+                }
+            },
+            {
+                "type": "ctn",
+                "author": "zhanghaixian@agree.com.cn",
+                "href": "v2Container",
+                "component": "v2Container",
+                "name": "v2Container",
+                "desp": "单容器",
+                "previewSrc": "/v1/support/screenshot/v2Container.png",
+                "hidden": false,
+                "id": 1601121755648,
+                "pid": "root",
+                "$ref": "v2Container_4",
+                "props": [
+                    "visible",
+                    "if",
+                    "customClass"
+                ],
+                "sizeLocked": {
+                    "widthLock": false,
+                    "heightLock": false
+                },
+                "animate": [
+                    "",
+                    "animated",
+                    ""
+                ],
+                "events": {
+                    "_op_content": {}
+                },
+                "children": [
+                    {
+                        "style": {
+                            "textStyle": {
+                                "font-weight": "bold"
+                            }
+                        },
+                        "text": "调用管道封装的方法进行下载操作",
+                        "overflow": "nomal",
+                        "overflowLine": 3,
+                        "editable": false,
+                        "textBreak": true,
+                        "visible": true,
+                        "__capacity": "1",
+                        "component": "v2-component-text",
+                        "href": "v2-component-text",
+                        "name": "文本",
+                        "children": [],
+                        "events": {
+                            "_op_componentText_text": {}
+                        },
+                        "version": "14.0.0",
+                        "id": 1601121908136,
+                        "pid": 1601121755648,
+                        "$ref": "v2ComponentText_6",
+                        "props": [
+                            "text",
+                            "overflow",
+                            "overflowLine",
+                            "title",
+                            "editable",
+                            "textBreak",
+                            "visible",
+                            "if",
+                            "customClass"
+                        ],
+                        "sizeLocked": {
+                            "widthLock": false,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated"
+                        ],
+                        "commonStyle": {
+                            "box-sizing": "border-box",
+                            "flex-shrink": "0",
+                            "font-size": "25px",
+                            "margin-bottom": "20px"
+                        }
+                    },
+                    {
+                        "theme": {
+                            "size": ""
+                        },
+                        "style": {
+                            "label": {}
+                        },
+                        "value": "${filePath}",
+                        "disabled": false,
+                        "label": "下载文件",
+                        "placeholder": "请输入下载文件名",
+                        "titleMode": "col",
+                        "labelWitdh": "100px",
+                        "inputType": "text",
+                        "rows": "2",
+                        "showWordLimit": false,
+                        "clearable": false,
+                        "isRequired": true,
+                        "autoComplete": false,
+                        "visible": true,
+                        "__capacity": "1",
+                        "component": "v2-form-input",
+                        "href": "v2-form-input",
+                        "name": "输入框",
+                        "children": [],
+                        "events": {
+                            "_op_formInput_input": {}
+                        },
+                        "version": "10.0.1",
+                        "id": 1602486224131,
+                        "pid": 1601121755648,
+                        "$ref": "v2FormInput_3",
+                        "props": [
+                            "value",
+                            "disabled",
+                            "label",
+                            "placeholder",
+                            "prepend",
+                            "append",
+                            "titleMode",
+                            "labelWitdh",
+                            "inputType",
+                            "rows",
+                            "maxlength",
+                            "minlength",
+                            "prefixIcon",
+                            "suffixIcon",
+                            "showWordLimit",
+                            "clearable",
+                            "isRequired",
+                            "autoComplete",
+                            "suggestion",
+                            "visible",
+                            "if",
+                            "customClass"
+                        ],
+                        "sizeLocked": {
+                            "widthLock": false,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated"
+                        ],
+                        "commonStyle": {
+                            "box-sizing": "border-box",
+                            "flex-shrink": "0"
+                        }
+                    },
+                    {
+                        "theme": {
+                            "btnType": "primary",
+                            "size": ""
+                        },
+                        "disabled": false,
+                        "loading": false,
+                        "btnName": "下载",
+                        "shape": "round",
+                        "visible": true,
+                        "__capacity": "1",
+                        "component": "v2-component-btn",
+                        "href": "v2-component-btn",
+                        "name": "按钮",
+                        "children": [],
+                        "events": {
+                            "_op_componentBtn_btn": {
+                                "click": [
+                                    "_op_componentBtn_btn_1600581899716"
+                                ]
+                            }
+                        },
+                        "version": "14.0.0",
+                        "id": 1600581961819,
+                        "pid": "root",
+                        "$ref": "v2ComponentBtn_1",
+                        "props": [
+                            "disabled",
+                            "loading",
+                            "btnName",
+                            "leftIcon",
+                            "rightIcon",
+                            "shape",
+                            "visible",
+                            "if",
+                            "customClass"
+                        ],
+                        "sizeLocked": {
+                            "widthLock": false,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated"
+                        ],
+                        "commonStyle": {
+                            "box-sizing": "border-box",
+                            "margin-top": "20px",
+                            "margin-left": "10px"
+                        }
+                    },
+                    {
+                        "type": "ctn",
+                        "author": "zhanghaixian@agree.com.cn",
+                        "href": "v2Container",
+                        "component": "v2Container",
+                        "name": "v2Container",
+                        "desp": "单容器",
+                        "previewSrc": "/v1/support/screenshot/v2Container.png",
+                        "id": 1602225149295,
+                        "pid": 1601121755648,
+                        "$ref": "v2Container_7",
+                        "props": [
+                            "visible",
+                            "if",
+                            "customClass"
+                        ],
+                        "sizeLocked": {
+                            "widthLock": false,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated",
+                            ""
+                        ],
+                        "events": {
+                            "_op_content": {}
+                        },
+                        "children": [
+                            {
+                                "type": "ctn",
+                                "author": "zhanghaixian@agree.com.cn",
+                                "href": "v2Container",
+                                "component": "v2Container",
+                                "name": "v2Container",
+                                "desp": "单容器",
+                                "previewSrc": "/v1/support/screenshot/v2Container.png",
+                                "id": 1602226699428,
+                                "pid": 1602225149295,
+                                "$ref": "v2Container_8",
+                                "props": [
+                                    "visible",
+                                    "if",
+                                    "customClass"
+                                ],
+                                "sizeLocked": {
+                                    "widthLock": false,
+                                    "heightLock": false
+                                },
+                                "animate": [
+                                    "",
+                                    "animated",
+                                    ""
+                                ],
+                                "events": {
+                                    "_op_content": {}
+                                },
+                                "children": [
+                                    {
+                                        "style": {
+                                            "textStyle": {}
+                                        },
+                                        "text": "调用已经封装好的下载管道,代码案例如下,在管道的封装方法中有更为详细的说明文档",
+                                        "overflow": "nomal",
+                                        "overflowLine": 3,
+                                        "editable": false,
+                                        "textBreak": true,
+                                        "visible": true,
+                                        "__capacity": "1",
+                                        "component": "v2-component-text",
+                                        "href": "v2-component-text",
+                                        "name": "文本",
+                                        "children": [],
+                                        "events": {
+                                            "_op_componentText_text": {}
+                                        },
+                                        "version": "14.0.0",
+                                        "id": 1602226733000,
+                                        "pid": 1602226699428,
+                                        "$ref": "v2ComponentText_9",
+                                        "props": [
+                                            "text",
+                                            "overflow",
+                                            "overflowLine",
+                                            "title",
+                                            "editable",
+                                            "textBreak",
+                                            "visible",
+                                            "if",
+                                            "customClass"
+                                        ],
+                                        "sizeLocked": {
+                                            "widthLock": false,
+                                            "heightLock": false
+                                        },
+                                        "animate": [
+                                            "",
+                                            "animated"
+                                        ],
+                                        "commonStyle": {
+                                            "box-sizing": "border-box",
+                                            "flex-shrink": "0",
+                                            "font-size": "15px"
+                                        }
+                                    },
+                                    {
+                                        "style": {
+                                            "textStyle": {}
+                                        },
+                                        "text": "pipe.download({",
+                                        "overflow": "nomal",
+                                        "overflowLine": 3,
+                                        "editable": false,
+                                        "textBreak": true,
+                                        "visible": true,
+                                        "__capacity": "1",
+                                        "component": "v2-component-text",
+                                        "href": "v2-component-text",
+                                        "name": "文本",
+                                        "children": [],
+                                        "events": {
+                                            "_op_componentText_text": {}
+                                        },
+                                        "version": "14.0.0",
+                                        "id": 1602226769889,
+                                        "pid": 1602226699428,
+                                        "$ref": "v2ComponentText_10",
+                                        "props": [
+                                            "text",
+                                            "overflow",
+                                            "overflowLine",
+                                            "title",
+                                            "editable",
+                                            "textBreak",
+                                            "visible",
+                                            "if",
+                                            "customClass"
+                                        ],
+                                        "sizeLocked": {
+                                            "widthLock": false,
+                                            "heightLock": false
+                                        },
+                                        "animate": [
+                                            "",
+                                            "animated"
+                                        ],
+                                        "commonStyle": {
+                                            "box-sizing": "border-box",
+                                            "flex-shrink": "0",
+                                            "font-size": "15px"
+                                        }
+                                    },
+                                    {
+                                        "style": {
+                                            "textStyle": {}
+                                        },
+                                        "text": "    data:{filePath:'/2020-10-16/1602817806380.zip'},",
+                                        "overflow": "nomal",
+                                        "overflowLine": 3,
+                                        "editable": false,
+                                        "textBreak": true,
+                                        "visible": true,
+                                        "__capacity": "1",
+                                        "component": "v2-component-text",
+                                        "href": "v2-component-text",
+                                        "name": "文本",
+                                        "children": [],
+                                        "events": {
+                                            "_op_componentText_text": {}
+                                        },
+                                        "version": "14.0.0",
+                                        "id": 1602226821806,
+                                        "pid": 1602226699428,
+                                        "$ref": "v2ComponentText_11",
+                                        "props": [
+                                            "text",
+                                            "overflow",
+                                            "overflowLine",
+                                            "title",
+                                            "editable",
+                                            "textBreak",
+                                            "visible",
+                                            "if",
+                                            "customClass"
+                                        ],
+                                        "sizeLocked": {
+                                            "widthLock": false,
+                                            "heightLock": false
+                                        },
+                                        "animate": [
+                                            "",
+                                            "animated"
+                                        ],
+                                        "commonStyle": {
+                                            "box-sizing": "border-box",
+                                            "flex-shrink": 0,
+                                            "margin-left": "10px",
+                                            "font-size": "15px",
+                                            "border-radius": "0px",
+                                            "flex-grow": 0,
+                                            "opacity": 1
+                                        },
+                                        "customClass": [
+                                            "v2-component-text-1602226821806"
+                                        ]
+                                    },
+                                    {
+                                        "style": {
+                                            "textStyle": {}
+                                        },
+                                        "text": "   // 下载服务器上面的文件的路径，这个文件路径是自己上传的，如果要测试，自己上传看返回数据路径",
+                                        "overflow": "nomal",
+                                        "overflowLine": 3,
+                                        "editable": false,
+                                        "textBreak": true,
+                                        "visible": true,
+                                        "__capacity": "1",
+                                        "component": "v2-component-text",
+                                        "href": "v2-component-text",
+                                        "name": "文本",
+                                        "children": [],
+                                        "events": {
+                                            "_op_componentText_text": {}
+                                        },
+                                        "version": "14.0.0",
+                                        "id": 1602226797011,
+                                        "pid": 1602226699428,
+                                        "$ref": "v2ComponentText_12",
+                                        "props": [
+                                            "text",
+                                            "overflow",
+                                            "overflowLine",
+                                            "title",
+                                            "editable",
+                                            "textBreak",
+                                            "visible",
+                                            "if",
+                                            "customClass"
+                                        ],
+                                        "sizeLocked": {
+                                            "widthLock": false,
+                                            "heightLock": false
+                                        },
+                                        "animate": [
+                                            "",
+                                            "animated"
+                                        ],
+                                        "commonStyle": {
+                                            "box-sizing": "border-box",
+                                            "flex-shrink": "0",
+                                            "margin-left": "10px",
+                                            "font-size": "15px"
+                                        }
+                                    },
+                                    {
+                                        "style": {
+                                            "textStyle": {}
+                                        },
+                                        "text": " type:'get',",
+                                        "overflow": "nomal",
+                                        "overflowLine": 3,
+                                        "editable": false,
+                                        "textBreak": true,
+                                        "visible": true,
+                                        "__capacity": "1",
+                                        "component": "v2-component-text",
+                                        "href": "v2-component-text",
+                                        "name": "文本",
+                                        "children": [],
+                                        "events": {
+                                            "_op_componentText_text": {}
+                                        },
+                                        "version": "14.0.0",
+                                        "id": 1602226828485,
+                                        "pid": 1602226699428,
+                                        "$ref": "v2ComponentText_13",
+                                        "props": [
+                                            "text",
+                                            "overflow",
+                                            "overflowLine",
+                                            "title",
+                                            "editable",
+                                            "textBreak",
+                                            "visible",
+                                            "if",
+                                            "customClass"
+                                        ],
+                                        "sizeLocked": {
+                                            "widthLock": false,
+                                            "heightLock": false
+                                        },
+                                        "animate": [
+                                            "",
+                                            "animated"
+                                        ],
+                                        "commonStyle": {
+                                            "box-sizing": "border-box",
+                                            "flex-shrink": "0",
+                                            "margin-left": "10px",
+                                            "font-size": "15px"
+                                        }
+                                    },
+                                    {
+                                        "style": {
+                                            "textStyle": {}
+                                        },
+                                        "text": "// 下载请求是get请求",
+                                        "overflow": "nomal",
+                                        "overflowLine": 3,
+                                        "editable": false,
+                                        "textBreak": true,
+                                        "visible": true,
+                                        "__capacity": "1",
+                                        "component": "v2-component-text",
+                                        "href": "v2-component-text",
+                                        "name": "文本",
+                                        "children": [],
+                                        "events": {
+                                            "_op_componentText_text": {}
+                                        },
+                                        "version": "14.0.0",
+                                        "id": 1602226810350,
+                                        "pid": 1602226699428,
+                                        "$ref": "v2ComponentText_14",
+                                        "props": [
+                                            "text",
+                                            "overflow",
+                                            "overflowLine",
+                                            "title",
+                                            "editable",
+                                            "textBreak",
+                                            "visible",
+                                            "if",
+                                            "customClass"
+                                        ],
+                                        "sizeLocked": {
+                                            "widthLock": false,
+                                            "heightLock": false
+                                        },
+                                        "animate": [
+                                            "",
+                                            "animated"
+                                        ],
+                                        "commonStyle": {
+                                            "box-sizing": "border-box",
+                                            "flex-shrink": "0",
+                                            "margin-left": "10px",
+                                            "font-size": "15px"
+                                        }
+                                    },
+                                    {
+                                        "style": {
+                                            "textStyle": {}
+                                        },
+                                        "text": "url:'$ {axios.server}/file2/download'",
+                                        "overflow": "nomal",
+                                        "overflowLine": 3,
+                                        "editable": false,
+                                        "textBreak": true,
+                                        "visible": true,
+                                        "__capacity": "1",
+                                        "component": "v2-component-text",
+                                        "href": "v2-component-text",
+                                        "name": "文本",
+                                        "children": [],
+                                        "events": {
+                                            "_op_componentText_text": {}
+                                        },
+                                        "version": "14.0.0",
+                                        "id": 1602226877899,
+                                        "pid": 1602226699428,
+                                        "$ref": "v2ComponentText_15",
+                                        "props": [
+                                            "text",
+                                            "overflow",
+                                            "overflowLine",
+                                            "title",
+                                            "editable",
+                                            "textBreak",
+                                            "visible",
+                                            "if",
+                                            "customClass"
+                                        ],
+                                        "sizeLocked": {
+                                            "widthLock": false,
+                                            "heightLock": false
+                                        },
+                                        "animate": [
+                                            "",
+                                            "animated"
+                                        ],
+                                        "commonStyle": {
+                                            "box-sizing": "border-box",
+                                            "flex-shrink": "0",
+                                            "margin-left": "10px",
+                                            "font-size": "15px"
+                                        }
+                                    },
+                                    {
+                                        "style": {
+                                            "textStyle": {}
+                                        },
+                                        "text": "    // 下载的后台接口路径",
+                                        "overflow": "nomal",
+                                        "overflowLine": 3,
+                                        "editable": false,
+                                        "textBreak": true,
+                                        "visible": true,
+                                        "__capacity": "1",
+                                        "component": "v2-component-text",
+                                        "href": "v2-component-text",
+                                        "name": "文本",
+                                        "children": [],
+                                        "events": {
+                                            "_op_componentText_text": {}
+                                        },
+                                        "version": "14.0.0",
+                                        "id": 1602226795758,
+                                        "pid": 1602226699428,
+                                        "$ref": "v2ComponentText_16",
+                                        "props": [
+                                            "text",
+                                            "overflow",
+                                            "overflowLine",
+                                            "title",
+                                            "editable",
+                                            "textBreak",
+                                            "visible",
+                                            "if",
+                                            "customClass"
+                                        ],
+                                        "sizeLocked": {
+                                            "widthLock": false,
+                                            "heightLock": false
+                                        },
+                                        "animate": [
+                                            "",
+                                            "animated"
+                                        ],
+                                        "commonStyle": {
+                                            "box-sizing": "border-box",
+                                            "flex-shrink": "0",
+                                            "margin-left": "10px",
+                                            "font-size": "15px"
+                                        }
+                                    },
+                                    {
+                                        "style": {
+                                            "textStyle": {}
+                                        },
+                                        "text": "    success(response){",
+                                        "overflow": "nomal",
+                                        "overflowLine": 3,
+                                        "editable": false,
+                                        "textBreak": true,
+                                        "visible": true,
+                                        "__capacity": "1",
+                                        "component": "v2-component-text",
+                                        "href": "v2-component-text",
+                                        "name": "文本",
+                                        "children": [],
+                                        "events": {
+                                            "_op_componentText_text": {}
+                                        },
+                                        "version": "14.0.0",
+                                        "id": 1602226897611,
+                                        "pid": 1602226699428,
+                                        "$ref": "v2ComponentText_17",
+                                        "props": [
+                                            "text",
+                                            "overflow",
+                                            "overflowLine",
+                                            "title",
+                                            "editable",
+                                            "textBreak",
+                                            "visible",
+                                            "if",
+                                            "customClass"
+                                        ],
+                                        "sizeLocked": {
+                                            "widthLock": false,
+                                            "heightLock": false
+                                        },
+                                        "animate": [
+                                            "",
+                                            "animated"
+                                        ],
+                                        "commonStyle": {
+                                            "box-sizing": "border-box",
+                                            "flex-shrink": "0",
+                                            "margin-left": "10px",
+                                            "font-size": "15px"
+                                        }
+                                    },
+                                    {
+                                        "style": {
+                                            "textStyle": {}
+                                        },
+                                        "text": " if(response.status){ if(response.status){",
+                                        "overflow": "nomal",
+                                        "overflowLine": 3,
+                                        "editable": false,
+                                        "textBreak": true,
+                                        "visible": true,
+                                        "__capacity": "1",
+                                        "component": "v2-component-text",
+                                        "href": "v2-component-text",
+                                        "name": "文本",
+                                        "children": [],
+                                        "events": {
+                                            "_op_componentText_text": {}
+                                        },
+                                        "version": "14.0.0",
+                                        "id": 1602226839901,
+                                        "pid": 1602226699428,
+                                        "$ref": "v2ComponentText_18",
+                                        "props": [
+                                            "text",
+                                            "overflow",
+                                            "overflowLine",
+                                            "title",
+                                            "editable",
+                                            "textBreak",
+                                            "visible",
+                                            "if",
+                                            "customClass"
+                                        ],
+                                        "sizeLocked": {
+                                            "widthLock": false,
+                                            "heightLock": false
+                                        },
+                                        "animate": [
+                                            "",
+                                            "animated"
+                                        ],
+                                        "commonStyle": {
+                                            "box-sizing": "border-box",
+                                            "flex-shrink": "0",
+                                            "margin-left": "10px",
+                                            "font-size": "15px"
+                                        }
+                                    },
+                                    {
+                                        "style": {
+                                            "textStyle": {}
+                                        },
+                                        "text": " console.log('下载成功');",
+                                        "overflow": "nomal",
+                                        "overflowLine": 3,
+                                        "editable": false,
+                                        "textBreak": true,
+                                        "visible": true,
+                                        "__capacity": "1",
+                                        "component": "v2-component-text",
+                                        "href": "v2-component-text",
+                                        "name": "文本",
+                                        "children": [],
+                                        "events": {
+                                            "_op_componentText_text": {}
+                                        },
+                                        "version": "14.0.0",
+                                        "id": 1602226854013,
+                                        "pid": 1602226699428,
+                                        "$ref": "v2ComponentText_19",
+                                        "props": [
+                                            "text",
+                                            "overflow",
+                                            "overflowLine",
+                                            "title",
+                                            "editable",
+                                            "textBreak",
+                                            "visible",
+                                            "if",
+                                            "customClass"
+                                        ],
+                                        "sizeLocked": {
+                                            "widthLock": false,
+                                            "heightLock": false
+                                        },
+                                        "animate": [
+                                            "",
+                                            "animated"
+                                        ],
+                                        "commonStyle": {
+                                            "box-sizing": "border-box",
+                                            "flex-shrink": "0",
+                                            "margin-left": "10px",
+                                            "font-size": "15px"
+                                        }
+                                    },
+                                    {
+                                        "style": {
+                                            "textStyle": {}
+                                        },
+                                        "text": "  }else{",
+                                        "overflow": "nomal",
+                                        "overflowLine": 3,
+                                        "editable": false,
+                                        "textBreak": true,
+                                        "visible": true,
+                                        "__capacity": "1",
+                                        "component": "v2-component-text",
+                                        "href": "v2-component-text",
+                                        "name": "文本",
+                                        "children": [],
+                                        "events": {
+                                            "_op_componentText_text": {}
+                                        },
+                                        "version": "14.0.0",
+                                        "id": 1602226901983,
+                                        "pid": 1602226699428,
+                                        "$ref": "v2ComponentText_20",
+                                        "props": [
+                                            "text",
+                                            "overflow",
+                                            "overflowLine",
+                                            "title",
+                                            "editable",
+                                            "textBreak",
+                                            "visible",
+                                            "if",
+                                            "customClass"
+                                        ],
+                                        "sizeLocked": {
+                                            "widthLock": false,
+                                            "heightLock": false
+                                        },
+                                        "animate": [
+                                            "",
+                                            "animated"
+                                        ],
+                                        "commonStyle": {
+                                            "box-sizing": "border-box",
+                                            "flex-shrink": "0",
+                                            "margin-left": "10px",
+                                            "font-size": "15px"
+                                        }
+                                    },
+                                    {
+                                        "style": {
+                                            "textStyle": {}
+                                        },
+                                        "text": " console.log('下载失败',response); }",
+                                        "overflow": "nomal",
+                                        "overflowLine": 3,
+                                        "editable": false,
+                                        "textBreak": true,
+                                        "visible": true,
+                                        "__capacity": "1",
+                                        "component": "v2-component-text",
+                                        "href": "v2-component-text",
+                                        "name": "文本",
+                                        "children": [],
+                                        "events": {
+                                            "_op_componentText_text": {}
+                                        },
+                                        "version": "14.0.0",
+                                        "id": 1602226872335,
+                                        "pid": 1602226699428,
+                                        "$ref": "v2ComponentText_21",
+                                        "props": [
+                                            "text",
+                                            "overflow",
+                                            "overflowLine",
+                                            "title",
+                                            "editable",
+                                            "textBreak",
+                                            "visible",
+                                            "if",
+                                            "customClass"
+                                        ],
+                                        "sizeLocked": {
+                                            "widthLock": false,
+                                            "heightLock": false
+                                        },
+                                        "animate": [
+                                            "",
+                                            "animated"
+                                        ],
+                                        "commonStyle": {
+                                            "box-sizing": "border-box",
+                                            "flex-shrink": "0",
+                                            "margin-left": "10px",
+                                            "font-size": "15px"
+                                        }
+                                    },
+                                    {
+                                        "style": {
+                                            "textStyle": {}
+                                        },
+                                        "text": "   }",
+                                        "overflow": "nomal",
+                                        "overflowLine": 3,
+                                        "editable": false,
+                                        "textBreak": true,
+                                        "visible": true,
+                                        "__capacity": "1",
+                                        "component": "v2-component-text",
+                                        "href": "v2-component-text",
+                                        "name": "文本",
+                                        "children": [],
+                                        "events": {
+                                            "_op_componentText_text": {}
+                                        },
+                                        "version": "14.0.0",
+                                        "id": 1602227021943,
+                                        "pid": 1602226699428,
+                                        "$ref": "v2ComponentText_22",
+                                        "props": [
+                                            "text",
+                                            "overflow",
+                                            "overflowLine",
+                                            "title",
+                                            "editable",
+                                            "textBreak",
+                                            "visible",
+                                            "if",
+                                            "customClass"
+                                        ],
+                                        "sizeLocked": {
+                                            "widthLock": false,
+                                            "heightLock": false
+                                        },
+                                        "animate": [
+                                            "",
+                                            "animated"
+                                        ],
+                                        "commonStyle": {
+                                            "box-sizing": "border-box",
+                                            "flex-shrink": "0",
+                                            "margin-left": "10px",
+                                            "font-size": "15px"
+                                        }
+                                    },
+                                    {
+                                        "style": {
+                                            "textStyle": {}
+                                        },
+                                        "text": "})",
+                                        "overflow": "nomal",
+                                        "overflowLine": 3,
+                                        "editable": false,
+                                        "textBreak": true,
+                                        "visible": true,
+                                        "__capacity": "1",
+                                        "component": "v2-component-text",
+                                        "href": "v2-component-text",
+                                        "name": "文本",
+                                        "children": [],
+                                        "events": {
+                                            "_op_componentText_text": {}
+                                        },
+                                        "version": "14.0.0",
+                                        "id": 1602226986142,
+                                        "pid": 1602226699428,
+                                        "$ref": "v2ComponentText_23",
+                                        "props": [
+                                            "text",
+                                            "overflow",
+                                            "overflowLine",
+                                            "title",
+                                            "editable",
+                                            "textBreak",
+                                            "visible",
+                                            "if",
+                                            "customClass"
+                                        ],
+                                        "sizeLocked": {
+                                            "widthLock": false,
+                                            "heightLock": false
+                                        },
+                                        "animate": [
+                                            "",
+                                            "animated"
+                                        ],
+                                        "commonStyle": {
+                                            "box-sizing": "border-box",
+                                            "flex-shrink": "0",
+                                            "font-size": "15px"
+                                        }
+                                    }
+                                ],
+                                "commonStyle": {
+                                    "display": "flex",
+                                    "align-items": "flex-start",
+                                    "align-self": "stretch",
+                                    "height": "auto",
+                                    "box-sizing": "border-box",
+                                    "width": "100%",
+                                    "flex-shrink": "0",
+                                    "flex-direction": "column",
+                                    "margin-top": "10px",
+                                    "margin-bottom": "10px",
+                                    "margin-left": "10px"
+                                }
+                            }
+                        ],
+                        "commonStyle": {
+                            "display": "flex",
+                            "align-items": "flex-start",
+                            "align-self": "stretch",
+                            "height": "auto",
+                            "box-sizing": "border-box",
+                            "width": "100%",
+                            "flex-shrink": "0",
+                            "flex-direction": "column",
+                            "border-style": "solid",
+                            "border-color": "rgb(4,190,189)",
+                            "border-width": "5px",
+                            "border-right-width": "0",
+                            "border-left-width": "5px",
+                            "border-top-width": "0",
+                            "border-bottom-width": "0",
+                            "background-color": "rgb(242,242,242)",
+                            "margin-top": "20px"
+                        }
+                    }
+                ],
+                "direction": "col",
+                "commonStyle": {
+                    "display": "flex",
+                    "align-items": "flex-start",
+                    "align-self": "stretch",
+                    "height": "auto",
+                    "box-sizing": "border-box",
+                    "width": "100%",
+                    "flex-shrink": "0",
+                    "flex-direction": "column"
+                }
+            }
+        ],
+        "events": {
+            "_op_content": {}
+        },
+        "props": [
+            "visible",
+            "if",
+            "customClass"
+        ],
+        "realSize": [],
+        "sizeLocked": {
+            "widthLock": true,
+            "heightLock": false
+        },
+        "animate": [
+            "",
+            "animated",
+            ""
+        ],
+        "commonStyle": {
+            "display": "flex",
+            "align-items": "center",
+            "align-self": "stretch",
+            "height": "auto",
+            "box-sizing": "border-box",
+            "width": "90%",
+            "flex-direction": "column",
+            "flex-shrink": "0",
+            "min-height": "20px"
+        }
+    },
+    "forms": [],
+    "logic": {
+        "methods": [
+            {
+                "name": "_op_componentBtn_btn_1600581899716",
+                "desp": "下载点击事件",
+                "code": "//*====AGREE-ACTION-START====*//\n//*+AGREE-CONFIG-/ {\"name\":\"custom\",\"main\":\"AGREE-CUSTOM\",\"desp\":\"事件准备\",\"code\":\"/**\\n* 事件绑定在vue实例上，第一个参数是vue实例。\\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\\n**/\\n\\n//函数内直接用ctx代替this访问vue页面的数据。\\nconst ctx = this;\\nconsole.log(123)\",\"showConfig\":true} /-AGREE-CONFIG+*//\n//*++++AGREE-CODE-START++++*//\n/**\n* 事件绑定在vue实例上，第一个参数是vue实例。\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\n**/\n\n//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\nconsole.log(123)\n//*++++AGREE-CODE-END++++*//\n//*====AGREE-ACTION-END====*//\n\n// debugger\n// const loading = ctx.$loading({\n//     lock: true,\n//     text: '加载中',\n//     spinner: 'el-icon-loading',\n//     background: 'rgba(255, 255, 255, 0.9)',\n//     target: ctx.$el\n// });\n\nif(ctx.filePath!=''){\npipe.download({\n    data:{filePath: ctx.filePath},\n    type:'get',\n    url:`${axios.server}/file2/download`,\n    success(response){\n        debugger\n        if(response.status==200){\n           ctx.$message({\n                        type: 'success',\n                        message: '开始下载，请稍候…'\n                    });\n        }else{\n            ctx.$message({\n                        type: 'error',\n                        message: '下载失败，请确认输入框是否为返回文件名…'\n                    });\n        }\n    }\n})\n}else{\n     ctx.$message({\n                        type: 'error',\n                        message: '请输入下载文件名'\n                    });\n}\n\n\n// alert(ctx.path1)\n// console.log(ctx.path1)",
+                "params": [
+                    {
+                        "name": "vueIns",
+                        "desp": "组件的vue实例"
+                    }
+                ],
+                "isEvent": true,
+                "custom": true,
+                "id": 1600581899716
+            },
+            {
+                "name": "_op_componentBtn_btn_1600659528685",
+                "desp": "_op_componentBtn_btn_1600659528685",
+                "code": "//*====AGREE-ACTION-START====*//\n//*+AGREE-CONFIG-/ {\"name\":\"custom\",\"main\":\"AGREE-CUSTOM\",\"desp\":\"事件准备\",\"code\":\"/**\\n* 事件绑定在vue实例上，第一个参数是vue实例。\\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\\n**/\\n\\n//函数内直接用ctx代替this访问vue页面的数据。\\nconst ctx = this;\",\"showConfig\":true} /-AGREE-CONFIG+*//\n//*++++AGREE-CODE-START++++*//\n/**\n* 事件绑定在vue实例上，第一个参数是vue实例。\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\n**/\n\n//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\ndebugger\n//*++++AGREE-CODE-END++++*//\n//*====AGREE-ACTION-END====*//\n// const loading = ctx.$loading({\n//     lock: true,\n//     text: '加载中',\n//     spinner: 'el-icon-loading',\n//     background: 'rgba(255, 255, 255, 0.9)',\n//     target: ctx.$el\n// });",
+                "params": [
+                    {
+                        "name": "vueIns",
+                        "desp": "组件的vue实例"
+                    }
+                ],
+                "isEvent": false,
+                "custom": true
+            },
+            {
+                "name": "_op_componentBtn_btn_1602211540144",
+                "desp": "按钮点击",
+                "code": "//*====AGREE-ACTION-START====*//\n//*+AGREE-CONFIG-/ {\"name\":\"custom\",\"main\":\"AGREE-CUSTOM\",\"desp\":\"事件准备\",\"code\":\"/**\\n* 事件绑定在vue实例上，第一个参数是vue实例。\\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\\n**/\\n\\n//函数内直接用ctx代替this访问vue页面的数据。\\nconst ctx = this;\\n\\n\",\"showConfig\":true} /-AGREE-CONFIG+*//\n//*++++AGREE-CODE-START++++*//\n/**\n* 事件绑定在vue实例上，第一个参数是vue实例。\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\n**/\n\n//函数内直接用ctx代替this访问vue页面的数据。\n\nconst ctx = this;\n\n\n//*++++AGREE-CODE-END++++*//\n//*====AGREE-ACTION-END====*//\n\n\nctx.__getVueIns('1602209471420').$refs._op_formUpload_upload.headers = {\n                \"X-CSRF-TOKEN\":window.sessionStorage.getItem('token'),\n                \"filePartId\":ctx.filePartId,\n                \"filePart\":ctx.filePart\n            };\n            \nif(ctx.__getVueIns('1602209471420').$refs._op_formUpload_upload.headers){\n    ctx.successData='增加token成功';\n console.log('增加token成功',ctx.__getVueIns('1602209471420').$refs._op_formUpload_upload.headers)\n\n}\n\nctx.successCallback();         \n        \n// ctx.__getVueIns('1602209471420').$refs._op_formUpload_upload.submit()",
+                "params": [
+                    {
+                        "name": "vueIns",
+                        "desp": "组件的vue实例"
+                    }
+                ],
+                "isEvent": true,
+                "custom": true,
+                "id": 1602211540144
+            },
+            {
+                "name": "successCallback",
+                "desp": "成功回调",
+                "code": "// 函数内直接用 ctx 代替 this 访问 Vue 页面的数据。\n/** @type {V2ViewType} */\nconst ctx = this;\nconsole.log(res)\nconsole.log(file)\nconsole.log(FileList)\n\nctx.successData = res",
+                "params": [
+                    {
+                        "name": "res",
+                        "desp": "返回参数"
+                    },
+                    {
+                        "name": "file",
+                        "desp": "文件"
+                    },
+                    {
+                        "name": "fileList",
+                        "desp": "fileList"
+                    }
+                ],
+                "isEvent": false,
+                "custom": true
+            }
+        ],
+        "watch": {},
+        "beforeCreate": {
+            "code": "let ctx = this;"
+        },
+        "created": {
+            "code": "let ctx = this;"
+        },
+        "beforeMount": {
+            "code": "let ctx = this;"
+        },
+        "mounted": {
+            "code": "let ctx = this;"
+        },
+        "beforeUpdate": {
+            "code": "let ctx = this;"
+        },
+        "updated": {
+            "code": "let ctx = this;"
+        },
+        "beforeDestroy": {
+            "code": "let ctx = this;"
+        },
+        "destroyed": {
+            "code": "let ctx = this;"
+        },
+        "activated": {
+            "code": "let ctx = this;"
+        },
+        "deactivated": {
+            "code": "let ctx = this;"
+        },
+        "pollList": []
+    },
+    "dataBasket": {
+        "data": {},
+        "list": [
+            {
+                "desp": "分片标识",
+                "name": "filePartId",
+                "code": "''",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false,
+                "sync": false
+            },
+            {
+                "desp": "分片信息",
+                "name": "filePart",
+                "code": "''",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false,
+                "sync": false
+            },
+            {
+                "desp": "成功上传返回数据",
+                "name": "successData",
+                "code": "'后台传回来数据'",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false,
+                "sync": false
+            },
+            {
+                "desp": "下载的文件路径",
+                "name": "filePath",
+                "code": "'/2020-10-16/1602817806380.zip'",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false,
+                "sync": false,
+                "isExposed": false
+            },
+            {
+                "desp": "选择文件路径",
+                "name": "uploadUrl",
+                "code": "/** @type {V2ViewType} */\nlet ctx = this;\nreturn `${axios.server}/file2/upload`",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "computed",
+                "showSet": false,
+                "sync": false
+            }
+        ],
+        "mapping": {
+            "1600656088834": [],
+            "1600660435781": [
+                {
+                    "id": 1600660435781,
+                    "modelValue": "value",
+                    "dataValue": "path1",
+                    "type": ""
+                },
+                {
+                    "id": 1600660435781,
+                    "modelValue": "successCallback",
+                    "dataValue": "path2",
+                    "type": ""
+                },
+                {
+                    "id": 1600660435781,
+                    "modelValue": "action",
+                    "dataValue": "path3",
+                    "type": ""
+                },
+                {
+                    "id": 1600660435781,
+                    "modelValue": "data",
+                    "dataValue": "path4",
+                    "type": ""
+                },
+                {
+                    "id": 1600660435781,
+                    "modelValue": "fileName",
+                    "dataValue": "path5",
+                    "type": ""
+                }
+            ],
+            "1600842741970": [
+                {
+                    "id": 1600842741970,
+                    "modelValue": "action",
+                    "dataValue": "uploadUrl",
+                    "type": ""
+                }
+            ],
+            "1602209471420": [
+                {
+                    "id": 1602209471420,
+                    "modelValue": "action",
+                    "dataValue": "uploadUrl",
+                    "type": ""
+                }
+            ],
+            "1602296092477": [
+                {
+                    "id": 1602296092477,
+                    "modelValue": "text",
+                    "dataValue": "successData",
+                    "type": ""
+                }
+            ],
+            "1602295787041": [
+                {
+                    "id": 1602295787041,
+                    "modelValue": "value",
+                    "dataValue": "filePartId",
+                    "type": ""
+                }
+            ],
+            "1602295826677": [
+                {
+                    "id": 1602295826677,
+                    "modelValue": "value",
+                    "dataValue": "filePart",
+                    "type": ""
+                }
+            ],
+            "1602486224131": [
+                {
+                    "id": 1602486224131,
+                    "modelValue": "value",
+                    "dataValue": "filePath",
+                    "type": ""
+                }
+            ]
+        }
+    },
+    "events": {},
+    "emitList": [],
+    "display": {
+        "icon": "icontongyong",
+        "desp": "上传下载",
+        "type": "gridLayout",
+        "width": "800px",
+        "height": "1500px",
+        "isSelfAdaption": false,
+        "parentWidth": "500"
+    },
+    "scssCode": "",
+    "nls": "",
+    "mixins": [],
+    "imports": [],
+    "disableVueSPA": false
+}

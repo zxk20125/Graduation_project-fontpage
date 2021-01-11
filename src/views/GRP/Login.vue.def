@@ -1,0 +1,350 @@
+{
+    "structure": {
+        "__resolveFromCode": false,
+        "children": [
+            {
+                "__resolveFromCode": false,
+                "children": [
+                    {
+                        "__resolveFromCode": false,
+                        "children": [],
+                        "component": "v2-form-input",
+                        "id": 1610350193224,
+                        "customClass": [
+                            "v2-form-input-1610350095999",
+                            ""
+                        ],
+                        "commonStyle": {
+                            "align-self": "auto",
+                            "background-color": "#FFFFFF"
+                        },
+                        "props": [
+                            "value",
+                            "disabled",
+                            "label",
+                            "placeholder",
+                            "prepend",
+                            "append",
+                            "titleMode",
+                            "labelWitdh",
+                            "inputType",
+                            "rows",
+                            "maxlength",
+                            "minlength",
+                            "prefixIcon",
+                            "suffixIcon",
+                            "showWordLimit",
+                            "clearable",
+                            "isRequired",
+                            "autoComplete",
+                            "suggestion",
+                            "visible",
+                            "if",
+                            "customClass"
+                        ],
+                        "theme": {
+                            "size": ""
+                        },
+                        "disabled": false,
+                        "label": "账号",
+                        "placeholder": "请输入",
+                        "titleMode": "col",
+                        "labelWitdh": "80px",
+                        "inputType": "text",
+                        "rows": 2,
+                        "showWordLimit": false,
+                        "clearable": false,
+                        "isRequired": false,
+                        "autoComplete": false,
+                        "if": true,
+                        "$ref": "v2FormInput_3",
+                        "style": {
+                            "label": {}
+                        },
+                        "visible": true,
+                        "__capacity": "1",
+                        "href": "v2-form-input",
+                        "name": "输入框",
+                        "events": {},
+                        "version": "16.0.0",
+                        "pid": 1610350128822,
+                        "sizeLocked": {
+                            "widthLock": false,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated"
+                        ],
+                        "offset": {
+                            "top": 40,
+                            "left": 0
+                        }
+                    },
+                    {
+                        "__resolveFromCode": false,
+                        "children": [],
+                        "component": "v2-form-input",
+                        "id": 1610350556716,
+                        "customClass": [
+                            "v2-form-input-1610350095999"
+                        ],
+                        "commonStyle": {
+                            "align-self": "auto"
+                        },
+                        "props": [
+                            "value",
+                            "disabled",
+                            "label",
+                            "placeholder",
+                            "prepend",
+                            "append",
+                            "titleMode",
+                            "labelWitdh",
+                            "inputType",
+                            "rows",
+                            "maxlength",
+                            "minlength",
+                            "prefixIcon",
+                            "suffixIcon",
+                            "showWordLimit",
+                            "clearable",
+                            "isRequired",
+                            "autoComplete",
+                            "suggestion",
+                            "visible",
+                            "if",
+                            "customClass"
+                        ],
+                        "theme": {
+                            "size": ""
+                        },
+                        "disabled": false,
+                        "label": "密码",
+                        "placeholder": "请输入",
+                        "titleMode": "col",
+                        "labelWitdh": "80px",
+                        "inputType": "text",
+                        "rows": 2,
+                        "showWordLimit": false,
+                        "clearable": false,
+                        "isRequired": false,
+                        "autoComplete": false,
+                        "if": true,
+                        "$ref": "v2FormInput_4",
+                        "style": {
+                            "label": {}
+                        },
+                        "visible": true,
+                        "__capacity": "1",
+                        "href": "v2-form-input",
+                        "name": "输入框",
+                        "events": {},
+                        "version": "16.0.0",
+                        "pid": 1610350128822,
+                        "sizeLocked": {
+                            "widthLock": false,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated"
+                        ],
+                        "offset": {
+                            "top": 40,
+                            "left": 0
+                        }
+                    }
+                ],
+                "component": "v2Container",
+                "id": 1610350128822,
+                "customClass": [
+                    "v2Container-1610350128822",
+                    ""
+                ],
+                "commonStyle": {
+                    "box-sizing": "border-box",
+                    "align-self": "stretch",
+                    "display": "flex",
+                    "flex-direction": "column",
+                    "justify-content": "center",
+                    "align-items": "center",
+                    "background-color": "rgba(0, 0, 0, 0)",
+                    "height": "1082.00px",
+                    "border-radius": "0px",
+                    "flex-grow": 0,
+                    "flex-shrink": 0,
+                    "opacity": 1
+                },
+                "$ref": "v2Container_2",
+                "href": "v2Container",
+                "direction": "col",
+                "style": {},
+                "pid": "root",
+                "props": [
+                    "visible",
+                    "if",
+                    "element-loading-text",
+                    "element-loading-spinner",
+                    "element-loading-background",
+                    "customClass"
+                ],
+                "sizeLocked": {
+                    "widthLock": true,
+                    "heightLock": false
+                },
+                "animate": [
+                    "",
+                    "animated",
+                    ""
+                ]
+            }
+        ],
+        "component": "v2Container",
+        "id": "root",
+        "commonStyle": {
+            "width": "100%",
+            "height": "100%",
+            "display": "flex",
+            "align-items": "flex-start",
+            "align-self": "stretch",
+            "box-sizing": "border-box",
+            "flex-direction": "column",
+            "flex-shrink": "0"
+        },
+        "customClass": [],
+        "$ref": "v2Container_root",
+        "direction": "row",
+        "layout": [
+            100
+        ],
+        "data": {},
+        "events": {},
+        "props": [
+            "visible",
+            "if",
+            "element-loading-text",
+            "element-loading-spinner",
+            "element-loading-background",
+            "customClass"
+        ],
+        "realSize": [],
+        "sizeLocked": {
+            "widthLock": false,
+            "heightLock": false
+        },
+        "animate": [
+            "",
+            "animated",
+            ""
+        ]
+    },
+    "forms": [],
+    "logic": {
+        "methods": [
+            {
+                "name": "loginMethod",
+                "desp": "登陆",
+                "code": "// 函数内直接用 ctx 代替 this 访问 Vue 页面的数据。\n/** @type {V2ViewType} */\nconst ctx = this;\n",
+                "params": [],
+                "isEvent": false,
+                "custom": true
+            }
+        ],
+        "watch": {},
+        "beforeCreate": {
+            "code": "let ctx = this;"
+        },
+        "created": {
+            "code": "let ctx = this;"
+        },
+        "beforeMount": {
+            "code": "let ctx = this;"
+        },
+        "mounted": {
+            "code": "let ctx = this;"
+        },
+        "beforeUpdate": {
+            "code": "let ctx = this;"
+        },
+        "updated": {
+            "code": "let ctx = this;"
+        },
+        "beforeDestroy": {
+            "code": "let ctx = this;"
+        },
+        "destroyed": {
+            "code": "let ctx = this;"
+        },
+        "activated": {
+            "code": "let ctx = this;"
+        },
+        "deactivated": {
+            "code": "let ctx = this;"
+        },
+        "pollList": []
+    },
+    "dataBasket": {
+        "data": {},
+        "list": [
+            {
+                "desp": "账号",
+                "name": "userName",
+                "code": "''",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false,
+                "sync": false,
+                "syncComputed": "computed_newPageData",
+                "isExposed": true
+            },
+            {
+                "desp": "密码",
+                "name": "passWord",
+                "code": "''",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false,
+                "sync": false,
+                "syncComputed": "computed_newPageData",
+                "isExposed": true
+            },
+            {
+                "desp": "请求数据",
+                "name": "reqMessage",
+                "code": "''",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false,
+                "sync": false,
+                "syncComputed": "computed_newPageData",
+                "isExposed": true
+            }
+        ],
+        "mapping": {}
+    },
+    "events": {},
+    "emitList": [],
+    "display": {
+        "icon": "icontongyong",
+        "desp": "登陆界面",
+        "type": "gridLayout",
+        "width": "1650px",
+        "height": "1080px",
+        "isSelfAdaption": false,
+        "parentWidth": "1650"
+    },
+    "originCss": "",
+    "cssType": "scss",
+    "cssConfig": {
+        "scoped": null
+    },
+    "nls": "",
+    "mixins": [],
+    "imports": [],
+    "disableVueSPA": false,
+    "disableSupport": false
+}

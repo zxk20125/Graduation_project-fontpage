@@ -1,0 +1,608 @@
+{
+    "structure": {
+        "__resolveFromCode": false,
+        "children": [
+            {
+                "__resolveFromCode": false,
+                "children": [
+                    {
+                        "__resolveFromCode": false,
+                        "component": "v2-component-text",
+                        "id": 1601261546193,
+                        "customClass": [
+                            "v2-component-text-1601261546193"
+                        ],
+                        "props": [
+                            "text",
+                            "overflow",
+                            "overflowLine",
+                            "title",
+                            "editable",
+                            "textBreak",
+                            "visible"
+                        ],
+                        "$ref": "v2ComponentText_7",
+                        "commonStyle": [],
+                        "overflow": "normal",
+                        "textBreak": true,
+                        "text": "组件的事件暴露",
+                        "editable": false,
+                        "style": {
+                            "textStyle": {
+                                "font-weight": "bold"
+                            }
+                        },
+                        "overflowLine": 3,
+                        "visible": true,
+                        "__capacity": "1",
+                        "href": "v2-component-text",
+                        "name": "文本",
+                        "events": {
+                            "_op_componentText_text": {}
+                        },
+                        "version": "15.0.0",
+                        "pid": 1601260183473,
+                        "sizeLocked": {
+                            "widthLock": false,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated"
+                        ]
+                    },
+                    {
+                        "__resolveFromCode": false,
+                        "children": [
+                            {
+                                "__resolveFromCode": false,
+                                "component": "v2-component-text",
+                                "id": 1601259347332,
+                                "customClass": [
+                                    "v2-component-text-1601259347332",
+                                    "text_margin"
+                                ],
+                                "props": [
+                                    "text",
+                                    "overflow",
+                                    "overflowLine",
+                                    "title",
+                                    "editable",
+                                    "textBreak",
+                                    "visible"
+                                ],
+                                "$ref": "v2ComponentText_3",
+                                "commonStyle": [],
+                                "overflow": "normal",
+                                "textBreak": true,
+                                "text": "创建的组件通过事件暴露(实际就是ctx.$emit(\"暴露事件名\", $event);),将事件暴露到页面,通过组件的事件触发相对应的暴露事件(@暴露事件名,监听事件暴露出来的组件事件),在父页面的暴露事件中写相对应的操作作逻辑(如修改页面数据,调用方法等),来以此达到修改父页面,",
+                                "editable": false,
+                                "style": {
+                                    "textStyle": {}
+                                },
+                                "overflowLine": 3,
+                                "visible": true,
+                                "__capacity": "1",
+                                "href": "v2-component-text",
+                                "name": "文本",
+                                "events": {
+                                    "_op_componentText_text": {}
+                                },
+                                "version": "15.0.0",
+                                "pid": 1601258964335,
+                                "sizeLocked": {
+                                    "widthLock": false,
+                                    "heightLock": false
+                                },
+                                "animate": [
+                                    "",
+                                    "animated"
+                                ]
+                            },
+                            {
+                                "__resolveFromCode": false,
+                                "component": "v2-component-text",
+                                "id": 1601260476464,
+                                "customClass": [
+                                    "v2-component-text-1601260476464",
+                                    "text_margin"
+                                ],
+                                "props": [
+                                    "text",
+                                    "overflow",
+                                    "overflowLine",
+                                    "title",
+                                    "editable",
+                                    "textBreak",
+                                    "visible"
+                                ],
+                                "$ref": "v2ComponentText_6",
+                                "commonStyle": [],
+                                "overflow": "normal",
+                                "textBreak": true,
+                                "text": "这个按钮名绑定了一个页面数据,可以通过下方组件的+,-对按钮的数据进行加法和减法操作",
+                                "editable": false,
+                                "style": {
+                                    "textStyle": {}
+                                },
+                                "overflowLine": 3,
+                                "visible": true,
+                                "__capacity": "1",
+                                "href": "v2-component-text",
+                                "name": "文本",
+                                "events": {
+                                    "_op_componentText_text": {}
+                                },
+                                "version": "15.0.0",
+                                "pid": 1601260183473,
+                                "sizeLocked": {
+                                    "widthLock": true,
+                                    "heightLock": false
+                                },
+                                "animate": [
+                                    "",
+                                    "animated"
+                                ]
+                            }
+                        ],
+                        "component": "v2Container",
+                        "id": 1601260183473,
+                        "customClass": [
+                            "v2Container-1601260183473"
+                        ],
+                        "commonStyle": {
+                            "width": "100%",
+                            "flex-direction": "column",
+                            "flex-shrink": "0",
+                            "border-style": "solid",
+                            "border-color": "rgb(4,190,189)",
+                            "border-width": "5px",
+                            "border-right-width": "0",
+                            "border-left-width": "5px",
+                            "border-top-width": "0",
+                            "border-bottom-width": "0",
+                            "background-color": "rgb(224,224,224)",
+                            "margin-top": "10px",
+                            "margin-bottom": "10px",
+                            "box-sizing": "border-box",
+                            "display": "flex",
+                            "align-items": "flex-start",
+                            "align-self": "stretch",
+                            "height": "auto"
+                        },
+                        "$ref": "v2Container_5",
+                        "type": "ctn",
+                        "author": "zhanghaixian@agree.com.cn",
+                        "href": "v2Container",
+                        "name": "v2Container",
+                        "desp": "单容器",
+                        "previewSrc": "/v1/support/screenshot/v2Container.png",
+                        "hidden": false,
+                        "pid": 1601258988084,
+                        "props": [
+                            "visible"
+                        ],
+                        "sizeLocked": {
+                            "widthLock": false,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated",
+                            ""
+                        ],
+                        "events": {
+                            "_op_content": {}
+                        }
+                    },
+                    {
+                        "__resolveFromCode": false,
+                        "children": [],
+                        "component": "v2-component-btn",
+                        "id": 1601259037377,
+                        "customClass": [
+                            "v2-component-btn-1601259037377"
+                        ],
+                        "commonStyle": {
+                            "width": "100px"
+                        },
+                        "props": [
+                            "disabled",
+                            "loading",
+                            "btnName",
+                            "leftIcon",
+                            "rightIcon",
+                            "shape",
+                            "visible"
+                        ],
+                        "btnName": "${changeNumber}",
+                        "theme": {
+                            "btnType": "primary",
+                            "size": ""
+                        },
+                        "disabled": false,
+                        "loading": false,
+                        "shape": "def",
+                        "$ref": "v2ComponentBtn_1",
+                        "visible": true,
+                        "__capacity": "1",
+                        "href": "v2-component-btn",
+                        "name": "按钮",
+                        "events": {},
+                        "version": "15.0.0",
+                        "pid": 1601258988084,
+                        "sizeLocked": {
+                            "widthLock": true,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated"
+                        ]
+                    }
+                ],
+                "component": "v2Container",
+                "id": 1601258988084,
+                "customClass": [
+                    "v2Container-1601258988084"
+                ],
+                "commonStyle": {
+                    "width": "100%",
+                    "flex-direction": "column",
+                    "box-sizing": "border-box",
+                    "display": "flex",
+                    "align-items": "flex-start",
+                    "align-self": "stretch",
+                    "height": "auto"
+                },
+                "$ref": "v2Container_2",
+                "type": "ctn",
+                "author": "zhanghaixian@agree.com.cn",
+                "href": "v2Container",
+                "name": "v2Container",
+                "desp": "单容器",
+                "previewSrc": "/v1/support/screenshot/v2Container.png",
+                "pid": "root",
+                "props": [
+                    "visible"
+                ],
+                "sizeLocked": {
+                    "widthLock": false,
+                    "heightLock": false
+                },
+                "animate": [
+                    "",
+                    "animated",
+                    ""
+                ]
+            },
+            {
+                "__resolveFromCode": false,
+                "children": [
+                    {
+                        "__resolveFromCode": false,
+                        "children": [],
+                        "component": "v2-component-comexpose",
+                        "id": 1601259034020,
+                        "customClass": [
+                            "v2-component-comexpose-1601259034020"
+                        ],
+                        "commonStyle": {
+                            "height": "50px",
+                            "width": "200px"
+                        },
+                        "events": {
+                            "mountpoint": {
+                                "add": {
+                                    "v2_component_comexpose_1601259143645": {}
+                                },
+                                "reduce": {
+                                    "v2_component_comexpose_1601259147268": {}
+                                }
+                            }
+                        },
+                        "$ref": "v2ComponentComexpose_1",
+                        "visible": true,
+                        "__capacity": "1",
+                        "href": "v2-component-comexpose",
+                        "name": "组件暴露事件",
+                        "cptpath": "/src/views/_customWidget/comexpose.vue",
+                        "pid": 1601259036678,
+                        "props": [
+                            "visible"
+                        ],
+                        "sizeLocked": {
+                            "widthLock": false,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated"
+                        ]
+                    },
+                    {
+                        "__resolveFromCode": false,
+                        "children": [
+                            {
+                                "__resolveFromCode": false,
+                                "component": "v2-component-text",
+                                "id": 1601259372112,
+                                "customClass": [
+                                    "v2-component-text-1601259372112",
+                                    "text_margin"
+                                ],
+                                "props": [
+                                    "text",
+                                    "overflow",
+                                    "overflowLine",
+                                    "title",
+                                    "editable",
+                                    "textBreak",
+                                    "visible"
+                                ],
+                                "$ref": "v2ComponentText_5",
+                                "commonStyle": [],
+                                "overflow": "normal",
+                                "textBreak": true,
+                                "text": "一开始给两个按钮创建了点击事件,当鼠标点击按钮的时候触发相对应的事件,+号的按钮暴露的事件命名为增加事件,-号事件命名为减少事件,对事件进行命名有助于我们之后修改页面或者组件时候辨别,事件的命名相当于事件的注释,在组件中分别将增加事件和减少事件暴露出来,暴露的事件名英文就是组件的调用时候所使用,中文名也就是注释.这样就创建了两个暴露事件,以这个为例,+号新建了一个点击事件,点击事件暴露出来一个add的事件,在页面中使用的时候就可以让组件绑定暴露的事件,可以达到,点击加号,触发点击事件,点击事件触发add事件,add事件在页面修改页面的参数,实现,点击组件加号修改页面的值",
+                                "editable": false,
+                                "style": {
+                                    "textStyle": {}
+                                },
+                                "overflowLine": 3,
+                                "visible": true,
+                                "__capacity": "1",
+                                "href": "v2-component-text",
+                                "name": "文本",
+                                "events": {
+                                    "_op_componentText_text": {}
+                                },
+                                "version": "15.0.0",
+                                "pid": 1601259036678,
+                                "sizeLocked": {
+                                    "widthLock": false,
+                                    "heightLock": false
+                                },
+                                "animate": [
+                                    "",
+                                    "animated"
+                                ]
+                            }
+                        ],
+                        "component": "v2Container",
+                        "id": 1601260153286,
+                        "customClass": [
+                            "v2Container-1601260153286"
+                        ],
+                        "commonStyle": {
+                            "width": "100%",
+                            "flex-direction": "column",
+                            "border-style": "solid",
+                            "border-color": "rgb(4,190,189)",
+                            "border-width": "5px",
+                            "border-right-width": "0",
+                            "border-left-width": "5px",
+                            "border-top-width": "0",
+                            "border-bottom-width": "0",
+                            "background-color": "rgb(224,224,224)",
+                            "box-sizing": "border-box",
+                            "display": "flex",
+                            "align-items": "flex-start",
+                            "align-self": "stretch",
+                            "height": "auto"
+                        },
+                        "$ref": "v2Container_4",
+                        "type": "ctn",
+                        "author": "zhanghaixian@agree.com.cn",
+                        "href": "v2Container",
+                        "name": "v2Container",
+                        "desp": "单容器",
+                        "previewSrc": "/v1/support/screenshot/v2Container.png",
+                        "hidden": false,
+                        "pid": 1601259036678,
+                        "props": [
+                            "visible"
+                        ],
+                        "sizeLocked": {
+                            "widthLock": false,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated",
+                            ""
+                        ],
+                        "events": {
+                            "_op_content": {}
+                        }
+                    }
+                ],
+                "component": "v2Container",
+                "id": 1601259036678,
+                "customClass": [
+                    "v2Container-1601259036678"
+                ],
+                "commonStyle": {
+                    "width": "100%",
+                    "flex-direction": "column",
+                    "box-sizing": "border-box",
+                    "display": "flex",
+                    "align-items": "flex-start",
+                    "align-self": "stretch",
+                    "height": "auto"
+                },
+                "$ref": "v2Container_3",
+                "type": "ctn",
+                "author": "zhanghaixian@agree.com.cn",
+                "href": "v2Container",
+                "name": "v2Container",
+                "desp": "单容器",
+                "previewSrc": "/v1/support/screenshot/v2Container.png",
+                "pid": "root",
+                "props": [
+                    "visible"
+                ],
+                "sizeLocked": {
+                    "widthLock": false,
+                    "heightLock": false
+                },
+                "animate": [
+                    "",
+                    "animated",
+                    ""
+                ]
+            }
+        ],
+        "component": "v2container",
+        "id": "root",
+        "commonStyle": {
+            "width": "80%",
+            "height": "100%",
+            "flex-shrink": "0",
+            "flex-direction": "column",
+            "box-sizing": "border-box",
+            "display": "flex",
+            "align-items": "flex-start",
+            "align-self": "stretch"
+        },
+        "customClass": [],
+        "$ref": "v2container_root",
+        "direction": "row",
+        "layout": [
+            100
+        ],
+        "data": {},
+        "events": {},
+        "realSize": [],
+        "sizeLocked": {
+            "widthLock": true,
+            "heightLock": false
+        },
+        "animate": [
+            "",
+            "animated",
+            ""
+        ]
+    },
+    "forms": [],
+    "logic": {
+        "methods": [
+            {
+                "name": "v2_component_comexpose_1601259143645",
+                "desp": "对changeNumber进行加法操作",
+                "code": "//*====AGREE-ACTION-START====*//\n//*+AGREE-CONFIG-*//\n//{\n//\t\"name\": \"custom\",\n//\t\"main\": \"AGREE-CUSTOM\",\n//\t\"desp\": \"事件准备\",\n//\t\"code\": \"/**\\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\\n**/\\n\\n//函数内直接用ctx代替this访问vue页面的数据。\\nconst ctx = this;\\n\\nctx.changeNumber=ctx.changeNumber+1;\",\n//\t\"showConfig\": true\n//}\n//*-AGREE-CONFIG+*//\n//*++++AGREE-CODE-START++++*//\n/**\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\n**/\n\n//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\n\nctx.changeNumber=ctx.changeNumber+1;\n//*++++AGREE-CODE-END++++*//\n//*====AGREE-ACTION-END====*//",
+                "params": [
+                    {
+                        "name": "$event",
+                        "desp": "$event"
+                    },
+                    {
+                        "name": "vueIns",
+                        "desp": "组件的vue实例"
+                    }
+                ],
+                "isEvent": true,
+                "custom": true,
+                "id": 1601259143645
+            },
+            {
+                "name": "v2_component_comexpose_1601259147268",
+                "desp": "对changeNumber进行减法操作",
+                "code": "//*====AGREE-ACTION-START====*//\n//*+AGREE-CONFIG-*//\n//{\n//\t\"name\": \"custom\",\n//\t\"main\": \"AGREE-CUSTOM\",\n//\t\"desp\": \"事件准备\",\n//\t\"code\": \"/**\\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\\n**/\\n\\n//函数内直接用ctx代替this访问vue页面的数据。\\nconst ctx = this;\\nctx.changeNumber=ctx.changeNumber+1;\",\n//\t\"showConfig\": true\n//}\n//*-AGREE-CONFIG+*//\n//*++++AGREE-CODE-START++++*//\n/**\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\n**/\n\n//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\nctx.changeNumber=ctx.changeNumber-1;\n//*++++AGREE-CODE-END++++*//\n//*====AGREE-ACTION-END====*//",
+                "params": [
+                    {
+                        "name": "$event",
+                        "desp": "$event"
+                    },
+                    {
+                        "name": "vueIns",
+                        "desp": "vueIns"
+                    }
+                ],
+                "isEvent": true,
+                "custom": true,
+                "id": 1601259147268
+            },
+            {
+                "name": "undefined",
+                "desp": "undefined",
+                "code": "/**\n* 事件绑定在vue实例上，第一个参数是vue实例。\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\n**/\n\n//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;",
+                "params": [],
+                "isEvent": false,
+                "custom": true
+            }
+        ],
+        "watch": {},
+        "beforeCreate": {
+            "code": "let ctx = this;"
+        },
+        "created": {
+            "code": "let ctx = this;"
+        },
+        "beforeMount": {
+            "code": "let ctx = this;"
+        },
+        "mounted": {
+            "code": "let ctx = this;"
+        },
+        "beforeUpdate": {
+            "code": "let ctx = this;"
+        },
+        "updated": {
+            "code": "let ctx = this;"
+        },
+        "beforeDestroy": {
+            "code": "let ctx = this;"
+        },
+        "destroyed": {
+            "code": "let ctx = this;"
+        },
+        "activated": {
+            "code": "let ctx = this;"
+        },
+        "deactivated": {
+            "code": "let ctx = this;"
+        },
+        "pollList": []
+    },
+    "dataBasket": {
+        "data": {},
+        "list": [
+            {
+                "desp": "数字改变",
+                "name": "changeNumber",
+                "code": "1",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false,
+                "sync": false
+            }
+        ],
+        "mapping": {
+            "1601259037377": [
+                {
+                    "id": 1601259037377,
+                    "modelValue": "btnName",
+                    "dataValue": "changeNumber",
+                    "type": ""
+                }
+            ]
+        }
+    },
+    "events": {},
+    "display": {
+        "icon": "icontongyong",
+        "desp": "组件事件暴露",
+        "type": "gridLayout",
+        "width": "800px",
+        "height": "800px",
+        "isSelfAdaption": false,
+        "parentWidth": "800"
+    },
+    "scssCode": ".text_margin{\n    margin:10px;\n}\n",
+    "nls": "",
+    "mixins": [],
+    "imports": [],
+    "disableVueSPA": false
+}

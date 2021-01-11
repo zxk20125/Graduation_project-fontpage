@@ -1,0 +1,1226 @@
+{
+    "structure": {
+        "__resolveFromCode": false,
+        "children": [
+            {
+                "__resolveFromCode": false,
+                "children": [
+                    {
+                        "__resolveFromCode": false,
+                        "children": [
+                            {
+                                "__resolveFromCode": false,
+                                "children": [],
+                                "component": "v2-form-input",
+                                "id": 1578552493733,
+                                "customClass": [
+                                    "form-item-block"
+                                ],
+                                "commonStyle": {
+                                    "position": "relative",
+                                    "margin-top": "10px",
+                                    "margin-bottom": "10px",
+                                    "margin-left": "10px",
+                                    "margin-right": "10px",
+                                    "align-self": "auto",
+                                    "overflow": "hidden",
+                                    "animation-duration": "1s"
+                                },
+                                "props": [
+                                    "value",
+                                    "disabled",
+                                    "label",
+                                    "placeholder",
+                                    "prepend",
+                                    "append",
+                                    "titleMode",
+                                    "labelWitdh",
+                                    "inputType",
+                                    "rows",
+                                    "maxlength",
+                                    "minlength",
+                                    "prefixIcon",
+                                    "suffixIcon",
+                                    "showWordLimit",
+                                    "clearable",
+                                    "isRequired",
+                                    "autoComplete",
+                                    "suggestion",
+                                    "visible",
+                                    "if",
+                                    "customClass"
+                                ],
+                                "labelWitdh": "${labelWidth}",
+                                "theme": {},
+                                "disabled": false,
+                                "label": "用户名",
+                                "placeholder": "请输入用户名",
+                                "titleMode": "col",
+                                "inputType": "text",
+                                "rows": 2,
+                                "showWordLimit": false,
+                                "clearable": false,
+                                "isRequired": true,
+                                "autoComplete": false,
+                                "$ref": "v2-form-input_1578552493733",
+                                "value.sync": "${userData.username}",
+                                "style": {
+                                    "label": {}
+                                },
+                                "value": "${userData.username}",
+                                "visible": true,
+                                "__capacity": "1",
+                                "href": "v2-form-input",
+                                "events": {},
+                                "pid": 1578552513559,
+                                "sizeLocked": {
+                                    "widthLock": false,
+                                    "heightLock": false
+                                },
+                                "animate": [
+                                    "",
+                                    "animated"
+                                ]
+                            },
+                            {
+                                "__resolveFromCode": false,
+                                "children": [],
+                                "component": "v2-form-input",
+                                "id": 1578552559896,
+                                "customClass": [
+                                    "form-item-block"
+                                ],
+                                "commonStyle": {
+                                    "position": "relative",
+                                    "margin-top": "10px",
+                                    "margin-bottom": "10px",
+                                    "margin-left": "10px",
+                                    "margin-right": "10px",
+                                    "align-self": "auto",
+                                    "overflow": "hidden",
+                                    "animation-duration": "1s"
+                                },
+                                "props": [
+                                    "value",
+                                    "disabled",
+                                    "label",
+                                    "placeholder",
+                                    "prepend",
+                                    "append",
+                                    "titleMode",
+                                    "labelWitdh",
+                                    "inputType",
+                                    "rows",
+                                    "maxlength",
+                                    "minlength",
+                                    "prefixIcon",
+                                    "suffixIcon",
+                                    "showWordLimit",
+                                    "clearable",
+                                    "isRequired",
+                                    "autoComplete",
+                                    "suggestion",
+                                    "visible",
+                                    "if",
+                                    "customClass"
+                                ],
+                                "labelWitdh": "${labelWidth}",
+                                "theme": {},
+                                "disabled": false,
+                                "label": "昵称",
+                                "placeholder": "请输入昵称",
+                                "titleMode": "col",
+                                "inputType": "text",
+                                "rows": 2,
+                                "showWordLimit": false,
+                                "clearable": false,
+                                "isRequired": true,
+                                "autoComplete": false,
+                                "$ref": "v2-form-input_1578552559896",
+                                "value.sync": "${userData.nickname}",
+                                "style": {
+                                    "label": {}
+                                },
+                                "value": "${userData.nickname}",
+                                "visible": true,
+                                "__capacity": "1",
+                                "href": "v2-form-input",
+                                "events": {},
+                                "pid": 1578552513559,
+                                "sizeLocked": {
+                                    "widthLock": false,
+                                    "heightLock": false
+                                },
+                                "animate": [
+                                    "",
+                                    "animated"
+                                ]
+                            },
+                            {
+                                "__resolveFromCode": false,
+                                "children": [],
+                                "component": "v2-form-input",
+                                "id": 1578552443987,
+                                "customClass": [
+                                    "form-item-block"
+                                ],
+                                "commonStyle": {
+                                    "position": "relative",
+                                    "margin-top": "10px",
+                                    "margin-bottom": "10px",
+                                    "margin-left": "10px",
+                                    "margin-right": "10px",
+                                    "align-self": "auto",
+                                    "overflow": "hidden",
+                                    "animation-duration": "1s"
+                                },
+                                "props": [
+                                    "value",
+                                    "disabled",
+                                    "label",
+                                    "placeholder",
+                                    "prepend",
+                                    "append",
+                                    "titleMode",
+                                    "labelWitdh",
+                                    "inputType",
+                                    "rows",
+                                    "maxlength",
+                                    "minlength",
+                                    "prefixIcon",
+                                    "suffixIcon",
+                                    "showWordLimit",
+                                    "clearable",
+                                    "isRequired",
+                                    "autoComplete",
+                                    "suggestion",
+                                    "visible",
+                                    "if",
+                                    "customClass"
+                                ],
+                                "labelWitdh": "${labelWidth}",
+                                "theme": {},
+                                "disabled": false,
+                                "label": "密码",
+                                "placeholder": "请输入用户密码",
+                                "titleMode": "col",
+                                "inputType": "password",
+                                "rows": 2,
+                                "showWordLimit": false,
+                                "clearable": false,
+                                "isRequired": true,
+                                "autoComplete": false,
+                                "$ref": "v2-form-input_1578552443987",
+                                "value.sync": "${userData.password}",
+                                "style": {
+                                    "label": {}
+                                },
+                                "value": "${userData.password}",
+                                "visible": true,
+                                "__capacity": "1",
+                                "href": "v2-form-input",
+                                "events": {},
+                                "pid": 1578552513559,
+                                "sizeLocked": {
+                                    "widthLock": false,
+                                    "heightLock": false
+                                },
+                                "animate": [
+                                    "",
+                                    "animated"
+                                ]
+                            },
+                            {
+                                "__resolveFromCode": false,
+                                "children": [],
+                                "component": "v2-form-input",
+                                "id": 1578552629581,
+                                "customClass": [
+                                    "form-item-block"
+                                ],
+                                "commonStyle": {
+                                    "position": "relative",
+                                    "margin-top": "10px",
+                                    "margin-bottom": "10px",
+                                    "margin-left": "10px",
+                                    "margin-right": "10px",
+                                    "align-self": "auto",
+                                    "overflow": "hidden",
+                                    "animation-duration": "1s"
+                                },
+                                "props": [
+                                    "value",
+                                    "disabled",
+                                    "label",
+                                    "placeholder",
+                                    "prepend",
+                                    "append",
+                                    "titleMode",
+                                    "labelWitdh",
+                                    "inputType",
+                                    "rows",
+                                    "maxlength",
+                                    "minlength",
+                                    "prefixIcon",
+                                    "suffixIcon",
+                                    "showWordLimit",
+                                    "clearable",
+                                    "isRequired",
+                                    "autoComplete",
+                                    "suggestion",
+                                    "visible",
+                                    "if",
+                                    "customClass"
+                                ],
+                                "labelWitdh": "${labelWidth}",
+                                "theme": {},
+                                "disabled": false,
+                                "label": "确认密码",
+                                "placeholder": "请再次输入密码",
+                                "titleMode": "col",
+                                "inputType": "password",
+                                "rows": 2,
+                                "showWordLimit": false,
+                                "clearable": false,
+                                "isRequired": true,
+                                "autoComplete": false,
+                                "$ref": "v2-form-input_1578552629581",
+                                "value.sync": "${userData.repeatPwd}",
+                                "style": {
+                                    "label": {}
+                                },
+                                "value": "${userData.repeatPwd}",
+                                "visible": true,
+                                "__capacity": "1",
+                                "href": "v2-form-input",
+                                "events": {},
+                                "pid": 1578552513559,
+                                "sizeLocked": {
+                                    "widthLock": false,
+                                    "heightLock": false
+                                },
+                                "animate": [
+                                    "",
+                                    "animated"
+                                ]
+                            },
+                            {
+                                "__resolveFromCode": false,
+                                "children": [],
+                                "component": "v2-form-input",
+                                "id": 1578552704152,
+                                "customClass": [
+                                    "form-item-block"
+                                ],
+                                "commonStyle": {
+                                    "position": "relative",
+                                    "margin-top": "10px",
+                                    "margin-bottom": "10px",
+                                    "margin-left": "10px",
+                                    "margin-right": "10px",
+                                    "align-self": "auto",
+                                    "overflow": "hidden",
+                                    "animation-duration": "1s"
+                                },
+                                "props": [
+                                    "value",
+                                    "disabled",
+                                    "label",
+                                    "placeholder",
+                                    "prepend",
+                                    "append",
+                                    "titleMode",
+                                    "labelWitdh",
+                                    "inputType",
+                                    "rows",
+                                    "maxlength",
+                                    "minlength",
+                                    "prefixIcon",
+                                    "suffixIcon",
+                                    "showWordLimit",
+                                    "clearable",
+                                    "isRequired",
+                                    "autoComplete",
+                                    "suggestion",
+                                    "visible",
+                                    "if",
+                                    "customClass"
+                                ],
+                                "labelWitdh": "${labelWidth}",
+                                "theme": {},
+                                "disabled": false,
+                                "label": "联系电话",
+                                "placeholder": "请输入联系电话",
+                                "titleMode": "col",
+                                "inputType": "text",
+                                "rows": 2,
+                                "showWordLimit": false,
+                                "clearable": false,
+                                "isRequired": true,
+                                "autoComplete": false,
+                                "$ref": "v2-form-input_1578552704152",
+                                "value.sync": "${userData.phone}",
+                                "style": {
+                                    "label": {}
+                                },
+                                "value": "${userData.phone}",
+                                "visible": true,
+                                "__capacity": "1",
+                                "href": "v2-form-input",
+                                "events": {},
+                                "pid": 1578552513559,
+                                "sizeLocked": {
+                                    "widthLock": false,
+                                    "heightLock": false
+                                },
+                                "animate": [
+                                    "",
+                                    "animated"
+                                ]
+                            },
+                            {
+                                "__resolveFromCode": false,
+                                "children": [],
+                                "component": "v2-form-input",
+                                "id": 1578552715892,
+                                "customClass": [
+                                    "form-item-block"
+                                ],
+                                "commonStyle": {
+                                    "position": "relative",
+                                    "margin-top": "10px",
+                                    "margin-bottom": "10px",
+                                    "margin-left": "10px",
+                                    "margin-right": "10px",
+                                    "align-self": "auto",
+                                    "overflow": "hidden",
+                                    "animation-duration": "1s",
+                                    "height": "80px"
+                                },
+                                "props": [
+                                    "value",
+                                    "disabled",
+                                    "label",
+                                    "placeholder",
+                                    "prepend",
+                                    "append",
+                                    "titleMode",
+                                    "labelWitdh",
+                                    "inputType",
+                                    "rows",
+                                    "maxlength",
+                                    "minlength",
+                                    "prefixIcon",
+                                    "suffixIcon",
+                                    "showWordLimit",
+                                    "clearable",
+                                    "isRequired",
+                                    "autoComplete",
+                                    "suggestion",
+                                    "visible",
+                                    "if",
+                                    "customClass"
+                                ],
+                                "labelWitdh": "${labelWidth}",
+                                "theme": {},
+                                "disabled": false,
+                                "label": "邮箱",
+                                "placeholder": "请输入邮箱",
+                                "titleMode": "col",
+                                "inputType": "text",
+                                "rows": 2,
+                                "showWordLimit": false,
+                                "clearable": false,
+                                "isRequired": true,
+                                "autoComplete": false,
+                                "$ref": "v2-form-input_1578552715892",
+                                "value.sync": "${userData.email}",
+                                "style": {
+                                    "label": {}
+                                },
+                                "value": "${userData.email}",
+                                "visible": true,
+                                "__capacity": "1",
+                                "href": "v2-form-input",
+                                "events": {},
+                                "pid": 1578552513559,
+                                "sizeLocked": {
+                                    "widthLock": true,
+                                    "heightLock": false
+                                },
+                                "animate": [
+                                    "",
+                                    "animated"
+                                ]
+                            },
+                            {
+                                "__resolveFromCode": false,
+                                "children": [],
+                                "component": "v2-form-switch",
+                                "id": 1578552940623,
+                                "customClass": [],
+                                "commonStyle": {
+                                    "position": "relative",
+                                    "margin-top": "10px",
+                                    "margin-bottom": "10px",
+                                    "align-self": "auto",
+                                    "overflow": "hidden",
+                                    "width": "265px",
+                                    "animation-duration": "1s"
+                                },
+                                "props": [
+                                    "value",
+                                    "disabled",
+                                    "label",
+                                    "activeText",
+                                    "inactiveText",
+                                    "labelWitdh",
+                                    "titleMode",
+                                    "isRequired",
+                                    "visible",
+                                    "if",
+                                    "customClass"
+                                ],
+                                "labelWitdh": "${labelWidth}",
+                                "disabled": false,
+                                "label": "状态",
+                                "activeText": "启用",
+                                "inactiveText": "不启用",
+                                "titleMode": "col",
+                                "isRequired": false,
+                                "$ref": "v2-form-switch_1578552940623",
+                                "value.sync": "${userData.status}",
+                                "style": {
+                                    "title": {}
+                                },
+                                "value": "${userData.status}",
+                                "visible": true,
+                                "__capacity": "1",
+                                "href": "v2-form-switch",
+                                "events": {},
+                                "pid": 1578552513559,
+                                "sizeLocked": {
+                                    "widthLock": true,
+                                    "heightLock": false
+                                },
+                                "animate": [
+                                    "",
+                                    "animated"
+                                ]
+                            },
+                            {
+                                "__resolveFromCode": false,
+                                "children": [],
+                                "component": "v2-form-input",
+                                "id": 1578553052538,
+                                "customClass": [
+                                    "form-textarea-margin"
+                                ],
+                                "commonStyle": {
+                                    "position": "relative",
+                                    "margin-top": "10px",
+                                    "margin-bottom": "10px",
+                                    "margin-left": "10px",
+                                    "margin-right": "10px",
+                                    "align-self": "auto",
+                                    "overflow": "hidden",
+                                    "animation-duration": "1s"
+                                },
+                                "props": [
+                                    "value",
+                                    "disabled",
+                                    "label",
+                                    "placeholder",
+                                    "prepend",
+                                    "append",
+                                    "titleMode",
+                                    "labelWitdh",
+                                    "inputType",
+                                    "rows",
+                                    "maxlength",
+                                    "minlength",
+                                    "prefixIcon",
+                                    "suffixIcon",
+                                    "showWordLimit",
+                                    "clearable",
+                                    "isRequired",
+                                    "autoComplete",
+                                    "suggestion",
+                                    "visible",
+                                    "if",
+                                    "customClass"
+                                ],
+                                "labelWitdh": "${labelWidth}",
+                                "theme": {},
+                                "disabled": false,
+                                "label": "描述",
+                                "placeholder": "请填写描述",
+                                "titleMode": "col",
+                                "inputType": "textarea",
+                                "rows": 5,
+                                "maxlength": 200,
+                                "showWordLimit": true,
+                                "clearable": false,
+                                "isRequired": false,
+                                "autoComplete": false,
+                                "$ref": "v2-form-input_1578553052538",
+                                "value.sync": "${userData.desp}",
+                                "style": {
+                                    "label": {}
+                                },
+                                "value": "${userData.desp}",
+                                "visible": true,
+                                "__capacity": "1",
+                                "href": "v2-form-input",
+                                "events": {},
+                                "pid": 1578552513559,
+                                "sizeLocked": {
+                                    "widthLock": false,
+                                    "heightLock": false
+                                },
+                                "animate": [
+                                    "",
+                                    "animated"
+                                ]
+                            }
+                        ],
+                        "component": "v2Container",
+                        "id": 1578552513559,
+                        "customClass": [
+                            "form-user-info-wrapper"
+                        ],
+                        "commonStyle": {
+                            "position": "relative",
+                            "box-sizing": "border-box",
+                            "align-self": "stretch",
+                            "overflow": "hidden",
+                            "display": "block",
+                            "flex-direction": "column",
+                            "align-items": "flex-start",
+                            "min-width": "50px",
+                            "min-height": "50px",
+                            "animation-duration": "1s",
+                            "height": "auto"
+                        },
+                        "$ref": "v2Container_1578552513559",
+                        "href": "v2Container",
+                        "direction": "row",
+                        "style": {},
+                        "pid": 1578552432842,
+                        "ctnStyle": [
+                            {},
+                            {},
+                            {},
+                            {},
+                            {},
+                            {},
+                            {},
+                            {},
+                            {}
+                        ],
+                        "sizeLocked": {
+                            "widthLock": false,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated",
+                            ""
+                        ],
+                        "props": [
+                            "visible",
+                            "if",
+                            "customClass"
+                        ]
+                    }
+                ],
+                "component": "v2Container",
+                "id": 1578552432842,
+                "customClass": [],
+                "commonStyle": {
+                    "position": "relative",
+                    "box-sizing": "border-box",
+                    "align-self": "stretch",
+                    "overflow": "hidden",
+                    "display": "flex",
+                    "flex-direction": "row",
+                    "align-items": "flex-start",
+                    "min-width": "50px",
+                    "min-height": "50px",
+                    "animation-duration": "1s",
+                    "height": "auto"
+                },
+                "$ref": "v2Container_1578552432842",
+                "href": "v2Container",
+                "direction": "col",
+                "style": {},
+                "pid": "root",
+                "ctnStyle": [
+                    {},
+                    {}
+                ],
+                "sizeLocked": {
+                    "widthLock": false,
+                    "heightLock": false
+                },
+                "animate": [
+                    "",
+                    "animated"
+                ],
+                "props": [
+                    "visible",
+                    "if",
+                    "customClass"
+                ]
+            },
+            {
+                "__resolveFromCode": false,
+                "children": [
+                    {
+                        "__resolveFromCode": false,
+                        "children": [],
+                        "component": "v2-component-btn",
+                        "id": 1579166368331,
+                        "customClass": [
+                            "common-btn-normal"
+                        ],
+                        "commonStyle": {
+                            "position": "relative",
+                            "margin-top": "10px",
+                            "margin-bottom": "10px",
+                            "margin-left": "10px",
+                            "margin-right": "10px",
+                            "align-self": "auto",
+                            "flex-shrink": "0",
+                            "overflow": "hidden",
+                            "animation-duration": "1s"
+                        },
+                        "props": [
+                            "disabled",
+                            "loading",
+                            "btnName",
+                            "leftIcon",
+                            "rightIcon",
+                            "shape",
+                            "visible",
+                            "if",
+                            "customClass"
+                        ],
+                        "theme": {
+                            "btnType": "normal",
+                            "size": ""
+                        },
+                        "disabled": false,
+                        "loading": false,
+                        "btnName": "取消",
+                        "shape": "plain",
+                        "events": {
+                            "_op_componentBtn_btn": {
+                                "click": {
+                                    "v2_component_btn_1578929870000": {}
+                                }
+                            }
+                        },
+                        "$ref": "v2-component-btn_1579166368331",
+                        "style": {
+                            "btnStyle": {}
+                        },
+                        "visible": true,
+                        "__capacity": "1",
+                        "href": "v2-component-btn",
+                        "pid": 1579166395224,
+                        "sizeLocked": {
+                            "widthLock": false,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated"
+                        ]
+                    },
+                    {
+                        "__resolveFromCode": false,
+                        "children": [],
+                        "component": "v2-component-btn",
+                        "id": 1579166462098,
+                        "customClass": [
+                            "common-btn-focus",
+                            "margin-right20"
+                        ],
+                        "commonStyle": {
+                            "position": "relative",
+                            "margin-top": "10px",
+                            "margin-bottom": "10px",
+                            "margin-left": "10px",
+                            "margin-right": "10px",
+                            "align-self": "auto",
+                            "overflow": "hidden",
+                            "animation-duration": "1s"
+                        },
+                        "props": [
+                            "disabled",
+                            "loading",
+                            "btnName",
+                            "leftIcon",
+                            "rightIcon",
+                            "shape",
+                            "visible",
+                            "if",
+                            "customClass"
+                        ],
+                        "theme": {
+                            "btnType": "primary",
+                            "size": ""
+                        },
+                        "disabled": false,
+                        "loading": false,
+                        "btnName": "提交",
+                        "shape": "def",
+                        "$ref": "v2-component-btn_1579166462098",
+                        "style": {
+                            "btnStyle": {}
+                        },
+                        "visible": true,
+                        "__capacity": "1",
+                        "href": "v2-component-btn",
+                        "events": {},
+                        "pid": 1579166395224,
+                        "sizeLocked": {
+                            "widthLock": false,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated"
+                        ]
+                    }
+                ],
+                "component": "v2Container",
+                "id": 1579166395224,
+                "customClass": [
+                    "diaglog-btn-ctn"
+                ],
+                "commonStyle": {
+                    "position": "relative",
+                    "box-sizing": "border-box",
+                    "align-self": "stretch",
+                    "overflow": "hidden",
+                    "display": "flex",
+                    "flex-direction": "row",
+                    "justify-content": "flex-end",
+                    "align-items": "flex-start",
+                    "min-width": "50px",
+                    "min-height": "50px",
+                    "animation-duration": "1s",
+                    "height": "auto"
+                },
+                "$ref": "v2Container_1579166395224",
+                "href": "v2Container",
+                "direction": "col",
+                "style": {},
+                "pid": "root",
+                "ctnStyle": [
+                    {},
+                    {}
+                ],
+                "sizeLocked": {
+                    "widthLock": false,
+                    "heightLock": false
+                },
+                "animate": [
+                    "",
+                    "animated"
+                ],
+                "props": [
+                    "visible",
+                    "if",
+                    "customClass"
+                ]
+            }
+        ],
+        "component": "v2Container",
+        "id": "root",
+        "commonStyle": {
+            "display": "flex",
+            "flex-direction": "column",
+            "align-items": "flex-start",
+            "align-self": "stretch",
+            "min-width": "50px",
+            "min-height": "50px",
+            "animation-duration": "1s",
+            "box-sizing": "border-box",
+            "height": "auto"
+        },
+        "customClass": [],
+        "$ref": "v2Container_root",
+        "direction": "row",
+        "layout": [
+            100
+        ],
+        "style": {
+            "width": "100%",
+            "height": "100%"
+        },
+        "data": {},
+        "events": {},
+        "ctnStyle": [
+            {},
+            {}
+        ],
+        "realSize": [],
+        "sizeLocked": {
+            "widthLock": false,
+            "heightLock": false
+        },
+        "animate": [
+            "",
+            "animated",
+            ""
+        ],
+        "props": [
+            "visible",
+            "if",
+            "customClass"
+        ]
+    },
+    "forms": [
+        {
+            "name": "addUserForm",
+            "desc": "新增用户表单",
+            "validate_when": "blur",
+            "validate_callback": "(function(result, ctx, resolve, reject){\n    /**\n     *  result: {\n     *      ok: boolean,\n     *      child_results: Array<{\n     *          ok: boolean,  // 输入是否正确\n     *          message?: string,  // 错误提示\n     *          fieldName: string,  // 字段名\n     *          fieldDesc: string,  // 字段描述\n     *          wid: string,  // 输入组件 ID\n     *          vueIns: VueComponent  // 输入组件实例\n     *      }>\n     *  }  // 校验结果列表\n     *  ctx: VueComponent  // 页面的组件实例\n     *  resolve: () => void  // 校验完成，可以提交\n     *  reject: () => void  // 校验完成，不能提交\n     */\n    //console.log('字段:')\n    result.child_results.forEach(r => {\n        if (r.ok) {\n            console.log(r.fieldName, '输入正确')\n        } else {\n            console.log(r.fieldName, '输入不正确', r.message)\n        }\n        if (r.vueIns.$showResult) {\n            // 在 r 所对应的组件上显示错误提示，\n            // 若无错误则清除提示。入参 { ok: boolean, message?: string }\n            r.vueIns.$showResult(r)\n        }\n    })\n    if (result.ok) {\n        console.log('=> 表单输入正确，验证通过')\n        resolve()\n    } else {\n        console.log('=> 表单输入不正确')\n        reject()\n    }\n})",
+            "submit_emitters": [
+                {
+                    "widget_id": 1579166462098,
+                    "event": "(default)"
+                }
+            ],
+            "submit_callback": "(function(data, ctx){\n    /**\n     *  data: { [key: string]: string }  // 要提交的数据\n     *  ctx: VueComponent  // 页面的组件实例\n     */\n\n    var params = {\n        desc: data.desp||'',\n        email: data.email||'',\n        name: data.username||'',\n        nickname: data.nickname||'',\n        password: data.password||'',\n        phone: data.phone||'',\n        status: data.status?'1':'2'\n\n    };\n\n    ctx.$root.confirm(params);    \n  \n})",
+            "inputs": {
+                "1578552559896": {
+                    "desc": "昵称",
+                    "validation": {
+                        "kind": "single-regexp",
+                        "value": {
+                            "value": "\\S{1,50}",
+                            "message": "昵称不能为空,长度限制在1到50个字符"
+                        }
+                    },
+                    "name": "nickname"
+                },
+                "1578552493733": {
+                    "desc": "用户名",
+                    "validation": {
+                        "kind": "single-regexp",
+                        "value": {
+                            "value": "[a-zA-Z]{1,50}",
+                            "message": "用户名不能空，长度限制在1到50个字符，且为全英文字符"
+                        }
+                    },
+                    "name": "username"
+                },
+                "1578552443987": {
+                    "desc": "密码",
+                    "validation": {
+                        "kind": "single-regexp",
+                        "value": {
+                            "value": "\\S{6,24}",
+                            "message": "密码为6~24位的字符串"
+                        }
+                    },
+                    "name": "password"
+                },
+                "1578552629581": {
+                    "desc": "确认密码",
+                    "validation": {
+                        "kind": "single-js",
+                        "value": {
+                            "value": "(value, vueIns, ctx) => {\r\n\r\n    return value &&(value===ctx.userData.password)\r\n}",
+                            "message": "两次密码不一致"
+                        }
+                    },
+                    "name": "repeatPwd"
+                },
+                "1578552704152": {
+                    "desc": "联系电话",
+                    "validation": {
+                        "kind": "single-regexp",
+                        "value": {
+                            "value": "1[3|7|8]\\d{9}$|^19[8-9]\\d{8}$|^166\\d{8}|^15[0-3|5-9]\\d{8}|^14[5|7]\\d{8}",
+                            "message": "请输入为11位的手机号码"
+                        }
+                    },
+                    "name": "phone"
+                },
+                "1578552715892": {
+                    "desc": "邮箱",
+                    "validation": {
+                        "kind": "single-regexp",
+                        "value": {
+                            "value": "\\S+@\\S+\\.\\S+",
+                            "message": "邮箱不能为空"
+                        }
+                    },
+                    "name": "email"
+                },
+                "1578552940623": {
+                    "desc": "状态",
+                    "validation": {
+                        "kind": "dict",
+                        "value": {
+                            "ref": null,
+                            "rules": [],
+                            "disabled_rules": []
+                        }
+                    },
+                    "name": "status"
+                },
+                "1578553052538": {
+                    "desc": "描述",
+                    "validation": {
+                        "kind": "single-js",
+                        "value": {
+                            "value": "(value, vueIns, ctx) => value.length<=200",
+                            "message": "用户描述长度限制为 0 到 200 个字符"
+                        }
+                    },
+                    "name": "desp"
+                },
+                "1579166462098": {
+                    "desc": "提交",
+                    "validation": {
+                        "kind": "dict",
+                        "value": {
+                            "ref": null,
+                            "rules": [],
+                            "disabled_rules": []
+                        }
+                    },
+                    "name": "提交"
+                }
+            }
+        }
+    ],
+    "logic": {
+        "methods": [
+            {
+                "name": "v2_component_btn_1578929870000",
+                "desp": "关闭新增用户子页面",
+                "code": "/**\n* 事件绑定在vue实例上，第一个参数是vue实例。\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\n**/\n\n//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\nctx.close();",
+                "params": [
+                    {
+                        "name": "vueIns",
+                        "desp": "组件的vue实例"
+                    }
+                ],
+                "isEvent": true,
+                "custom": true,
+                "id": 1578929870000
+            },
+            {
+                "name": "getUserDetail",
+                "desp": "获取用户数据",
+                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\nctx.$axios.get(`${axios.server}/user/get/${ctx.AParams.id}`).then(res=>{\n    if(res.success&&res.status){\n        var obj = res.obj;\n\n        ctx.userData.username=obj&&obj.name;\n        //ctx.userData.password = obj&&obj.password;\n        ctx.userData.nickname  = obj&&obj.nickname;\n        ctx.userData.phone= obj&&obj.phone;\n        ctx.userData.email= obj&&obj.email;\n        ctx.userData.status= obj.status===\"1\"?true:false;\n        ctx.userData.desp= obj&&obj.desc;\n\n    }\n}).catch(error=>{\n    console.log(error);\n})",
+                "params": [],
+                "isEvent": false,
+                "custom": true
+            },
+            {
+                "name": "setFormToolTips",
+                "desp": "表单提示",
+                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\npipe.tooltip(this.__getVueIns('1578552493733').$refs._op_formInput_input, {\n    content: '用户名长度限制为 1 到 50 个字符，且全为英文字符',\n    placement: 'top-start',\n    style: {// 内容的样式\n        fontSize: '12px'\n    }\n});\npipe.tooltip(this.__getVueIns('1578552559896').$refs._op_formInput_input, {\n    content: '昵称长度限制为 1 到 50 个字符',\n    placement: 'top-start',\n    style: {// 内容的样式\n        fontSize: '12px'\n    }\n})\npipe.tooltip(this.__getVueIns('1578552443987').$refs._op_formInput_input, {\n    content: '密码长度限制为 6 到 24 个字符',\n    placement: 'top-start',\n    style: {// 内容的样式\n        fontSize: '12px'\n    }\n});\npipe.tooltip(this.__getVueIns('1578552629581').$refs._op_formInput_input, {\n    content: '请再次输入密码',\n    placement: 'top-start',\n    style: {// 内容的样式\n        fontSize: '12px'\n    }\n})\npipe.tooltip(this.__getVueIns('1578552704152').$refs._op_formInput_input, {\n    content: '联系电话长度限制为11个字符',\n    placement: 'top-start',\n    style: {// 内容的样式\n        fontSize: '12px'\n    }\n});\npipe.tooltip(this.__getVueIns('1578552715892').$refs._op_formInput_input, {\n    content: '请输入邮箱',\n    placement: 'top-start',\n    style: {// 内容的样式\n        fontSize: '12px'\n    }\n})\n\npipe.tooltip(this.__getVueIns('1578553052538').$refs._op_formInput_input, {\n    content: '用户描述长度限制为 0 到 200 个字符',\n    placement: 'top-start',\n    style: {// 内容的样式\n        fontSize: '12px'\n    }\n})",
+                "params": [],
+                "isEvent": false,
+                "custom": true
+            }
+        ],
+        "watch": {},
+        "beforeCreate": {
+            "code": "let ctx = this;"
+        },
+        "created": {
+            "code": "let ctx = this;"
+        },
+        "beforeMount": {
+            "code": "let ctx = this;"
+        },
+        "mounted": {
+            "code": "const ctx = this;\nif(ctx.AParams.id){\n    ctx.getUserDetail();\n}\nctx.setFormToolTips();"
+        },
+        "beforeUpdate": {
+            "code": "let ctx = this;"
+        },
+        "updated": {
+            "code": "let ctx = this;"
+        },
+        "beforeDestroy": {
+            "code": "let ctx = this;"
+        },
+        "destroyed": {
+            "code": "let ctx = this;"
+        },
+        "activated": {
+            "code": "let ctx = this;"
+        },
+        "deactivated": {
+            "code": "let ctx = this;"
+        },
+        "pollList": [],
+        "url2data": {
+            "vdaSource": []
+        }
+    },
+    "dataBasket": {
+        "data": {},
+        "list": [
+            {
+                "desp": "表单标题宽度",
+                "name": "labelWidth",
+                "code": "'100px'",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false,
+                "sync": false
+            },
+            {
+                "desp": "新增用户数据",
+                "name": "userData",
+                "code": "{\n    username:'',\n    password:'',\n    nickname:'',\n    repeatPwd:'',\n    phone:'',\n    email:'',\n    status:true,\n    desp:''\n}",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false,
+                "sync": false
+            }
+        ],
+        "mapping": {
+            "1578552493733": [
+                {
+                    "id": 1578552493733,
+                    "modelValue": "value",
+                    "dataValue": "userData.username",
+                    "type": ""
+                },
+                {
+                    "id": 1578552493733,
+                    "modelValue": "labelWitdh",
+                    "dataValue": "labelWidth",
+                    "type": ""
+                }
+            ],
+            "1578552559896": [
+                {
+                    "id": 1578552559896,
+                    "modelValue": "value",
+                    "dataValue": "userData.nickname",
+                    "type": ""
+                },
+                {
+                    "id": 1578552559896,
+                    "modelValue": "labelWitdh",
+                    "dataValue": "labelWidth",
+                    "type": ""
+                }
+            ],
+            "1578552443987": [
+                {
+                    "id": 1578552443987,
+                    "modelValue": "labelWitdh",
+                    "dataValue": "labelWidth",
+                    "type": ""
+                },
+                {
+                    "id": 1578552443987,
+                    "modelValue": "value",
+                    "dataValue": "userData.password",
+                    "type": ""
+                }
+            ],
+            "1578552629581": [
+                {
+                    "id": 1578552629581,
+                    "modelValue": "labelWitdh",
+                    "dataValue": "labelWidth",
+                    "type": ""
+                },
+                {
+                    "id": 1578552629581,
+                    "modelValue": "value",
+                    "dataValue": "userData.repeatPwd",
+                    "type": ""
+                }
+            ],
+            "1578552704152": [
+                {
+                    "id": 1578552704152,
+                    "modelValue": "labelWitdh",
+                    "dataValue": "labelWidth",
+                    "type": ""
+                },
+                {
+                    "id": 1578552704152,
+                    "modelValue": "value",
+                    "dataValue": "userData.phone",
+                    "type": ""
+                }
+            ],
+            "1578552715892": [
+                {
+                    "id": 1578552715892,
+                    "modelValue": "labelWitdh",
+                    "dataValue": "labelWidth",
+                    "type": ""
+                },
+                {
+                    "id": 1578552715892,
+                    "modelValue": "value",
+                    "dataValue": "userData.email",
+                    "type": ""
+                }
+            ],
+            "1578553052538": [
+                {
+                    "id": 1578553052538,
+                    "modelValue": "value",
+                    "dataValue": "userData.desp",
+                    "type": ""
+                },
+                {
+                    "id": 1578553052538,
+                    "modelValue": "labelWitdh",
+                    "dataValue": "labelWidth",
+                    "type": ""
+                }
+            ],
+            "1578552940623": [
+                {
+                    "id": 1578552940623,
+                    "modelValue": "labelWitdh",
+                    "dataValue": "labelWidth",
+                    "type": ""
+                },
+                {
+                    "id": 1578552940623,
+                    "modelValue": "value",
+                    "dataValue": "userData.status",
+                    "type": ""
+                }
+            ]
+        }
+    },
+    "events": {},
+    "emitList": [],
+    "display": {
+        "icon": "icontongyong",
+        "desp": "新增用户子页面",
+        "type": "gridLayout",
+        "width": "800px",
+        "height": "1080px"
+    },
+    "scssCode": ".diaglog-btn-ctn {\n  position: absolute !important;\n  bottom: 0;\n  width: 100%;\n  right: 0;\n  border-top: 1px solid #e5e5e5; }\n\n.common-btn-focus {\n  height: 32px;\n  line-height: 32px;\n  padding-top: 0;\n  padding-bottom: 0; }\n\n.common-btn-normal {\n  height: 32px;\n  line-height: 32px;\n  padding-top: 0;\n  padding-bottom: 0;\n  border: 1px solid #dcdfe6; }\n\n.margin-right20 {\n  margin-right: 20px !important; }\n\n.form-user-info-wrapper {\n  width: 70%;\n  margin-left: auto !important;\n  margin-right: auto !important; }\n\n.margin-bottom20 {\n  margin-bottom: 20px; }\n\n.form-textarea-margin {\n  margin: 0 0 20px 0 !important; }\n",
+    "nls": "",
+    "mixins": [],
+    "imports": [],
+    "disableVueSPA": false
+}

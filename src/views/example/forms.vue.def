@@ -1,0 +1,226 @@
+{
+    "structure": {
+        "__resolveFromCode": false,
+        "children": [
+            {
+                "__resolveFromCode": false,
+                "children": [],
+                "component": "formdemo",
+                "id": 1600161233343,
+                "customClass": [
+                    "formdemo-1600161233343"
+                ],
+                "props": [
+                    "width",
+                    "formData"
+                ],
+                "width": "60%",
+                "events": {
+                    "mountpoint": {
+                        "confirmSubmit": {
+                            "formdemo_1600161223134": {}
+                        }
+                    }
+                },
+                "$ref": "formdemo_1",
+                "commonStyle": {},
+                "__wrapper": "v2cpt",
+                "type": "form",
+                "href": "formdemo",
+                "name": "formdemo",
+                "event": [
+                    {
+                        "name": "confirm-submit",
+                        "desp": "表单提交且校验通过时",
+                        "params": [
+                            {
+                                "name": "formData",
+                                "desp": "表单数据"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "async-validate",
+                        "desp": "异步表单校验触发时，返回的结果",
+                        "params": [
+                            {
+                                "name": "result",
+                                "desp": "异步返回的结果"
+                            },
+                            {
+                                "name": "keyName",
+                                "desp": "当前验证的key名"
+                            },
+                            {
+                                "name": "keyValue",
+                                "desp": "当前验证的key值"
+                            },
+                            {
+                                "name": "callback",
+                                "desp": "element校验函数"
+                            }
+                        ]
+                    }
+                ],
+                "desp": "formdemo",
+                "previewSrc": "/v1/support/screenshot/formdemo.png",
+                "pid": "root",
+                "sizeLocked": {
+                    "widthLock": false,
+                    "heightLock": false
+                },
+                "animate": [
+                    "",
+                    "animated"
+                ],
+                "formData": "${formData}"
+            }
+        ],
+        "component": "v2container",
+        "id": "root",
+        "commonStyle": {
+            "height": "100%",
+            "width": "100%",
+            "flex-direction": "column",
+            "flex-shrink": 0,
+            "border-radius": "0px",
+            "flex-grow": 0,
+            "opacity": 1
+        },
+        "customClass": [
+            "v2container-undefined",
+            "v2container-root"
+        ],
+        "$ref": "v2container_root",
+        "direction": "row",
+        "layout": [
+            100
+        ],
+        "data": {},
+        "events": {},
+        "props": [
+            "visible",
+            "customClass"
+        ],
+        "realSize": [],
+        "sizeLocked": {
+            "widthLock": false,
+            "heightLock": false
+        },
+        "animate": [
+            "",
+            "animated",
+            ""
+        ]
+    },
+    "forms": [],
+    "logic": {
+        "methods": [
+            {
+                "name": "form_demo_1600160919639",
+                "desp": "form_demo_1600160919639",
+                "code": "/**\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\n**/\n\n//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;",
+                "params": [
+                    {
+                        "name": "formData",
+                        "desp": "表单数据"
+                    },
+                    {
+                        "name": "vueIns",
+                        "desp": "组件的vue实例"
+                    }
+                ],
+                "isEvent": false,
+                "custom": true
+            },
+            {
+                "name": "formdemo_1600161223134",
+                "desp": "formdemo_1600161223134",
+                "code": "/**\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\n**/\n\n//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\nalert('接受提交事件，数据为'+JSON.stringify(formData))",
+                "params": [
+                    {
+                        "name": "formData",
+                        "desp": "表单数据"
+                    }
+                ],
+                "isEvent": true,
+                "custom": true,
+                "id": 1600161223134
+            }
+        ],
+        "watch": {},
+        "beforeCreate": {
+            "code": "let ctx = this;"
+        },
+        "created": {
+            "code": "let ctx = this;"
+        },
+        "beforeMount": {
+            "code": "let ctx = this;"
+        },
+        "mounted": {
+            "code": "let ctx = this;"
+        },
+        "beforeUpdate": {
+            "code": "let ctx = this;"
+        },
+        "updated": {
+            "code": "let ctx = this;"
+        },
+        "beforeDestroy": {
+            "code": "let ctx = this;"
+        },
+        "destroyed": {
+            "code": "let ctx = this;"
+        },
+        "activated": {
+            "code": "let ctx = this;"
+        },
+        "deactivated": {
+            "code": "let ctx = this;"
+        },
+        "pollList": []
+    },
+    "dataBasket": {
+        "data": {},
+        "list": [
+            {
+                "desp": "表单初始数据",
+                "name": "formData",
+                "code": "{\n    field101: '',\n    info: {\n    field103: '',\n    field105: '',\n    },\n    cardInfo: {\n    field109: '',\n    field110: '',\n    }\n}",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false,
+                "sync": false,
+                "syncComputed": "computed_newPageData",
+                "isExposed": false
+            }
+        ],
+        "mapping": {
+            "1600161233343": [
+                {
+                    "id": 1600161233343,
+                    "modelValue": "formData",
+                    "dataValue": "formData"
+                }
+            ]
+        }
+    },
+    "events": {},
+    "emitList": [],
+    "display": {
+        "icon": "icontongyong",
+        "desp": "表单编辑器生成案例",
+        "type": "gridLayout",
+        "width": "1650px",
+        "height": "1080px",
+        "isSelfAdaption": false,
+        "parentWidth": "1650"
+    },
+    "scssCode": "",
+    "nls": "",
+    "mixins": [],
+    "imports": [],
+    "disableVueSPA": false
+}

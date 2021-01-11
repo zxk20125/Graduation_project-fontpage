@@ -1,0 +1,578 @@
+{
+    "structure": {
+        "id": "root",
+        "component": "v2Container",
+        "direction": "row",
+        "layout": [
+            100
+        ],
+        "style": {
+            "width": "100%",
+            "height": "100%"
+        },
+        "data": {},
+        "children": [
+            {
+                "theme": {},
+                "style": {
+                    "label": {}
+                },
+                "disabled": "${isDisable}",
+                "label": "角色名",
+                "placeholder": "请输入角色名",
+                "titleMode": "col",
+                "labelWitdh": "80px",
+                "inputType": "text",
+                "rows": "2",
+                "showWordLimit": false,
+                "clearable": false,
+                "isRequired": true,
+                "autoComplete": false,
+                "visible": true,
+                "__capacity": "1",
+                "component": "v2-form-input",
+                "href": "v2-form-input",
+                "children": [],
+                "events": {},
+                "id": 1578880992719,
+                "pid": "root",
+                "commonStyle": {
+                    "position": "relative",
+                    "margin-top": "10px",
+                    "margin-bottom": "10px",
+                    "margin-left": "10px",
+                    "margin-right": "10px",
+                    "box-sizing": "border-box",
+                    "align-self": "auto",
+                    "flex-basis": "auto",
+                    "flex-shrink": "1",
+                    "flex-grow": "0",
+                    "overflow": "hidden",
+                    "animation-duration": "1s"
+                },
+                "sizeLocked": {
+                    "widthLock": false,
+                    "heightLock": false
+                },
+                "animate": [
+                    "",
+                    "animated"
+                ],
+                "value": "${roleName}",
+                "customClass": [
+                    "form-item-block"
+                ],
+                "props": [
+                    "value",
+                    "disabled",
+                    "label",
+                    "placeholder",
+                    "prepend",
+                    "append",
+                    "titleMode",
+                    "labelWitdh",
+                    "inputType",
+                    "rows",
+                    "maxlength",
+                    "minlength",
+                    "prefixIcon",
+                    "suffixIcon",
+                    "showWordLimit",
+                    "clearable",
+                    "isRequired",
+                    "autoComplete",
+                    "suggestion",
+                    "visible",
+                    "if",
+                    "customClass"
+                ]
+            },
+            {
+                "theme": {
+                    "size": ""
+                },
+                "style": {
+                    "label": {}
+                },
+                "disabled": false,
+                "label": "描述",
+                "placeholder": "请填写描述",
+                "titleMode": "col",
+                "labelWitdh": "80px",
+                "inputType": "textarea",
+                "rows": "5",
+                "showWordLimit": true,
+                "clearable": false,
+                "isRequired": false,
+                "autoComplete": false,
+                "visible": true,
+                "__capacity": "1",
+                "component": "v2-form-input",
+                "href": "v2-form-input",
+                "children": [],
+                "events": {},
+                "id": 1578881040593,
+                "pid": "root",
+                "commonStyle": {
+                    "position": "relative",
+                    "margin-top": "10px",
+                    "margin-bottom": "10px",
+                    "margin-left": "10px",
+                    "margin-right": "10px",
+                    "box-sizing": "border-box",
+                    "align-self": "auto",
+                    "flex-basis": "auto",
+                    "flex-shrink": "1",
+                    "flex-grow": "0",
+                    "overflow": "hidden",
+                    "animation-duration": "1s",
+                    "border-radius": "0px",
+                    "opacity": 1
+                },
+                "sizeLocked": {
+                    "widthLock": false,
+                    "heightLock": false
+                },
+                "animate": [
+                    "",
+                    "animated"
+                ],
+                "value": "${desp}",
+                "customClass": [
+                    "form-textarea-margin",
+                    "v2-form-input-1578881040593"
+                ],
+                "maxlength": "200",
+                "props": [
+                    "value",
+                    "disabled",
+                    "label",
+                    "placeholder",
+                    "prepend",
+                    "append",
+                    "titleMode",
+                    "labelWitdh",
+                    "inputType",
+                    "rows",
+                    "maxlength",
+                    "minlength",
+                    "prefixIcon",
+                    "suffixIcon",
+                    "showWordLimit",
+                    "clearable",
+                    "isRequired",
+                    "autoComplete",
+                    "suggestion",
+                    "visible",
+                    "if",
+                    "customClass"
+                ]
+            },
+            {
+                "component": "v2Container",
+                "href": "v2Container",
+                "direction": "col",
+                "children": [
+                    {
+                        "theme": {
+                            "btnType": "normal",
+                            "size": ""
+                        },
+                        "style": {
+                            "btnStyle": {}
+                        },
+                        "disabled": false,
+                        "loading": false,
+                        "btnName": "取消",
+                        "shape": "plain",
+                        "visible": true,
+                        "__capacity": "1",
+                        "component": "v2-component-btn",
+                        "href": "v2-component-btn",
+                        "children": [],
+                        "events": {
+                            "_op_componentBtn_btn": {
+                                "click": [
+                                    "v2_component_btn_1578894579000"
+                                ]
+                            }
+                        },
+                        "id": 1578881089113,
+                        "pid": 1578881127712,
+                        "commonStyle": {
+                            "position": "relative",
+                            "margin-top": "10px",
+                            "margin-bottom": "10px",
+                            "margin-left": "10px",
+                            "margin-right": "10px",
+                            "box-sizing": "border-box",
+                            "align-self": "auto",
+                            "flex-basis": "auto",
+                            "flex-shrink": "0",
+                            "flex-grow": "0",
+                            "overflow": "hidden",
+                            "animation-duration": "1s"
+                        },
+                        "sizeLocked": {
+                            "widthLock": false,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated"
+                        ],
+                        "customClass": [
+                            "common-btn-normal"
+                        ],
+                        "props": [
+                            "disabled",
+                            "loading",
+                            "btnName",
+                            "leftIcon",
+                            "rightIcon",
+                            "shape",
+                            "visible",
+                            "if",
+                            "customClass"
+                        ]
+                    },
+                    {
+                        "theme": {
+                            "btnType": "primary",
+                            "size": ""
+                        },
+                        "style": {
+                            "btnStyle": {}
+                        },
+                        "disabled": false,
+                        "loading": false,
+                        "btnName": "提交",
+                        "shape": "def",
+                        "visible": true,
+                        "__capacity": "1",
+                        "component": "v2-component-btn",
+                        "href": "v2-component-btn",
+                        "children": [],
+                        "events": {
+                            "_op_componentBtn_btn": {}
+                        },
+                        "id": 1578881126091,
+                        "pid": 1578881127712,
+                        "commonStyle": {
+                            "position": "relative",
+                            "margin-top": "10px",
+                            "margin-bottom": "10px",
+                            "margin-left": "10px",
+                            "margin-right": "10px",
+                            "box-sizing": "border-box",
+                            "align-self": "auto",
+                            "flex-basis": "auto",
+                            "flex-shrink": "1",
+                            "flex-grow": "0",
+                            "overflow": "hidden",
+                            "animation-duration": "1s"
+                        },
+                        "sizeLocked": {
+                            "widthLock": false,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated"
+                        ],
+                        "customClass": [
+                            "common-btn-focus",
+                            "margin-right20"
+                        ],
+                        "props": [
+                            "disabled",
+                            "loading",
+                            "btnName",
+                            "leftIcon",
+                            "rightIcon",
+                            "shape",
+                            "visible",
+                            "if",
+                            "customClass"
+                        ]
+                    }
+                ],
+                "style": {},
+                "commonStyle": {
+                    "position": "relative",
+                    "margin-top": "0px",
+                    "margin-bottom": "0px",
+                    "margin-left": "0px",
+                    "margin-right": "0px",
+                    "box-sizing": "border-box",
+                    "align-self": "stretch",
+                    "flex-basis": "auto",
+                    "flex-shrink": "1",
+                    "flex-grow": "0",
+                    "overflow": "hidden",
+                    "display": "flex",
+                    "flex-direction": "row",
+                    "justify-content": "flex-end",
+                    "align-items": "flex-start",
+                    "flex-wrap": "nowrap",
+                    "align-content": "stretch",
+                    "min-width": "50px",
+                    "min-height": "50px",
+                    "animation-duration": "1s"
+                },
+                "id": 1578881127712,
+                "pid": "root",
+                "ctnStyle": [
+                    {},
+                    {}
+                ],
+                "sizeLocked": {
+                    "widthLock": false,
+                    "heightLock": false
+                },
+                "animate": [
+                    "",
+                    "animated"
+                ],
+                "customClass": [
+                    "diaglog-btn-ctn"
+                ],
+                "props": [
+                    "visible",
+                    "if",
+                    "customClass"
+                ]
+            }
+        ],
+        "events": {},
+        "commonStyle": {
+            "display": "block",
+            "flex-direction": "column",
+            "justify-content": "flex-start",
+            "align-items": "flex-start",
+            "flex-wrap": "nowrap",
+            "align-content": "stretch",
+            "align-self": "stretch",
+            "flex-shrink": 1,
+            "flex-grow": 0,
+            "min-width": "50px",
+            "min-height": "50px",
+            "animation-duration": "1s"
+        },
+        "ctnStyle": [
+            {},
+            {},
+            {}
+        ],
+        "realSize": [],
+        "sizeLocked": {
+            "widthLock": false,
+            "heightLock": false
+        },
+        "animate": [
+            "",
+            "animated",
+            ""
+        ],
+        "customClass": [
+            "form-user-info-wrapper"
+        ],
+        "props": [
+            "visible",
+            "if",
+            "customClass"
+        ]
+    },
+    "forms": [
+        {
+            "name": "roleForm",
+            "desc": "角色信息表单",
+            "validate_when": "blur",
+            "validate_callback": "(function(result, ctx, resolve, reject){\n    /**\n     *  result: {\n     *      ok: boolean,\n     *      child_results: Array<{\n     *          ok: boolean,  // 输入是否正确\n     *          message?: string,  // 错误提示\n     *          fieldName: string,  // 字段名\n     *          fieldDesc: string,  // 字段描述\n     *          wid: string,  // 输入组件 ID\n     *          vueIns: VueComponent  // 输入组件实例\n     *      }>\n     *  }  // 校验结果列表\n     *  ctx: VueComponent  // 页面的组件实例\n     *  resolve: () => void  // 校验完成，可以提交\n     *  reject: () => void  // 校验完成，不能提交\n     */\n    console.log('字段:')\n    result.child_results.forEach(r => {\n        if (r.ok) {\n            console.log(r.fieldName, '输入正确')\n        } else {\n            console.log(r.fieldName, '输入不正确', r.message)\n        }\n        if (r.vueIns.$showResult) {\n            // 在 r 所对应的组件上显示错误提示，\n            // 若无错误则清除提示。入参 { ok: boolean, message?: string }\n            r.vueIns.$showResult(r)\n        }\n    })\n    if (result.ok) {\n        console.log('=> 表单输入正确，验证通过')\n        resolve()\n    } else {\n        console.log('=> 表单输入不正确')\n        reject()\n    }\n})",
+            "submit_emitters": [
+                {
+                    "widget_id": 1578881126091,
+                    "event": "(default)"
+                }
+            ],
+            "submit_callback": "(function(data, ctx){\n    /**\n     *  data: { [key: string]: string }  // 要提交的数据\n     *  ctx: VueComponent  // 页面的组件实例\n     */\n\n    var params = {\n        desc:data.desp||'',\n        name:data.roleName||''\n    };\n    if(ctx.AParams.id){\n        params.id = ctx.AParams.id;\n        ctx.$axios.post(`${axios.server}/role/update`,params).then(res=>{\n\n            if(res.success){\n                ctx.$notify({\n                    title: '编辑角色成功',\n                    type: 'success'\n                });\n                ctx.$root.confirm();\n                ctx.close();\n            }else{\n                ctx.$notify({\n                    title: res.msg,\n                    type: 'error'\n                });\n                ctx.close();\n            }\n        }).catch(error=>{\n            console.log(error);\n        })\n    }else{\n        ctx.$axios.post(`${axios.server}/role/add`,params).then(res=>{\n\n            if(res.success){\n                ctx.$notify({\n                    title: '新增角色成功',\n                    type: 'success'\n                });\n                ctx.$root.confirm();\n                ctx.close();\n            }else{\n                ctx.$notify({\n                    title: res.msg,\n                    type: 'error'\n                });\n                //ctx.close();\n            }\n        }).catch(error=>{\n            console.log(error);\n        })\n    }\n\n})",
+            "inputs": {
+                "1578880992719": {
+                    "desc": "角色名",
+                    "validation": {
+                        "kind": "single-regexp",
+                        "value": {
+                            "value": "ROLE_[A-Z_]+",
+                            "message": "角色名以ROLE_开头，只包含大写字母和下划线"
+                        }
+                    },
+                    "name": "roleName"
+                },
+                "1578881040593": {
+                    "desc": "描述",
+                    "validation": {
+                        "kind": "single-js",
+                        "value": {
+                            "value": "(value, vueIns, ctx) => value.length <=200",
+                            "message": "角色描述长度限制为 0 到 200 个字符"
+                        }
+                    },
+                    "name": "desp"
+                },
+                "1578881126091": {
+                    "desc": "提交",
+                    "validation": {
+                        "kind": "dict",
+                        "value": {
+                            "ref": null,
+                            "rules": [],
+                            "disabled_rules": []
+                        }
+                    },
+                    "name": "提交"
+                }
+            }
+        }
+    ],
+    "logic": {
+        "methods": [
+            {
+                "name": "v2_component_btn_1578894579000",
+                "desp": "关闭新增角色子页面",
+                "code": "/**\n* 事件绑定在vue实例上，第一个参数是vue实例。\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\n**/\n\n//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\n\nctx.close();",
+                "params": [
+                    {
+                        "name": "vueIns",
+                        "desp": "组件的vue实例"
+                    }
+                ],
+                "isEvent": true,
+                "custom": true,
+                "id": 1578881089113
+            },
+            {
+                "name": "getRoleDetail",
+                "desp": "获取角色详情",
+                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\n\nctx.$axios.get(`${axios.server}/role/get/${ctx.AParams.id}`).then(res=>{\n    if(res.success&&res.status){\n        ctx.roleName = res.obj&&res.obj.name;\n        ctx.desp = res.obj&&res.obj.desc;\n    }\n}).catch(error=>{\n    console.log(error);\n})",
+                "params": [],
+                "isEvent": false,
+                "custom": true
+            },
+            {
+                "name": "setFormToolTips",
+                "desp": "显示表单提示",
+                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\npipe.tooltip(this.__getVueIns('1578880992719').$refs._op_formInput_input, {\n    content: '角色名以ROLE_开头，只包含大写字母和下划线',\n    placement: 'top-start',\n    style: {// 内容的样式\n        fontSize: '12px'\n    }\n});\npipe.tooltip(this.__getVueIns('1578881040593').$refs._op_formInput_input, {\n    content: '用户描述长度限制为 0 到 200 个字符',\n    placement: 'top-start',\n    style: {// 内容的样式\n        fontSize: '12px'\n    }\n})\n",
+                "params": [],
+                "isEvent": false,
+                "custom": true
+            }
+        ],
+        "watch": {},
+        "beforeCreate": {
+            "code": ""
+        },
+        "created": {
+            "code": ""
+        },
+        "beforeMount": {
+            "code": ""
+        },
+        "mounted": {
+            "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\nif(ctx.AParams.id){\n    ctx.getRoleDetail();\n    ctx.isDisable = true;\n}\nctx.setFormToolTips();"
+        },
+        "beforeUpdate": {
+            "code": ""
+        },
+        "updated": {
+            "code": ""
+        },
+        "beforeDestroy": {
+            "code": ""
+        },
+        "destroyed": {
+            "code": ""
+        },
+        "activated": {
+            "code": ""
+        },
+        "deactivated": {
+            "code": ""
+        },
+        "pollList": [],
+        "url2data": {
+            "vdaSource": []
+        }
+    },
+    "dataBasket": {
+        "data": {},
+        "list": [
+            {
+                "desp": "角色名",
+                "name": "roleName",
+                "code": "",
+                "setCode": "",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false
+            },
+            {
+                "desp": "描述",
+                "name": "desp",
+                "code": "",
+                "setCode": "",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false
+            },
+            {
+                "desp": "是否禁填",
+                "name": "isDisable",
+                "code": "false",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false
+            }
+        ],
+        "mapping": {
+            "1578880992719": [
+                {
+                    "id": 1578880992719,
+                    "modelValue": "value",
+                    "dataValue": "roleName",
+                    "type": ""
+                },
+                {
+                    "id": 1578880992719,
+                    "modelValue": "disabled",
+                    "dataValue": "isDisable",
+                    "type": "boolean"
+                }
+            ],
+            "1578881040593": [
+                {
+                    "id": 1578881040593,
+                    "modelValue": "value",
+                    "dataValue": "desp",
+                    "type": ""
+                }
+            ]
+        }
+    },
+    "events": {},
+    "emitList": [],
+    "display": {
+        "icon": "icontongyong",
+        "desp": "新增角色子页面",
+        "type": "gridLayout",
+        "width": "800px",
+        "height": "1080px"
+    },
+    "scssCode": ".diaglog-btn-ctn{\r\n    position:absolute!important;\r\n    bottom:0;\r\n    width:100%;\r\n    right:0;\r\n    border-top:1px solid #e5e5e5;\r\n}\r\n.common-btn-focus{\r\n   // background:#457ce2;\r\n    height:32px;\r\n   // color:#fff;\r\n    line-height:32px;\r\n    padding-top:0;\r\n    padding-bottom:0;\r\n}\r\n.common-btn-normal{\r\n    height:32px;\r\n    line-height:32px;\r\n    padding-top:0;\r\n    padding-bottom:0;\r\n    border:1px solid #dcdfe6;\r\n   // color:#606266;\r\n  //  background:#fff;\r\n}\r\n.margin-right20{\r\n    margin-right:0 0 20px 0!important;\r\n}\r\n.form-user-info-wrapper{\r\n    width:70%;\r\n    margin-left:auto!important;\r\n    margin-right:auto!important;\r\n}\r\n.margin-bottom20{\r\n    margin-bottom:20px;\r\n}\r\n.form-textarea-margin{\r\n    margin:0 0 20px 0!important;\r\n}",
+    "nls": "",
+    "mixins": [],
+    "imports": [],
+    "disableVueSPA": false
+}

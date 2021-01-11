@@ -1,0 +1,86 @@
+{
+  "author": {
+    "name": "caohan@agree.com.cn"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "element表单",
+  "docs": {
+    "__wrapper": "v2cpt",
+    "icon": "iconwenben",
+    "type": "element",
+    "href": "el-form",
+    "author": "caohan@agree.com.cn",
+    "version": 610000,
+    "name": "element表单",
+    "option": [
+      {
+        "desp": "表单数据对象",
+        "name": "$model",
+        "type": "string_input",
+        "defaultValue": ""
+      },
+      {
+        "desp": "表单验证规则",
+        "name": "rules",
+        "type": "string_input",
+        "defaultValue": ""
+      },
+      {
+        "name": "inline",
+        "desp": "行内表单模式",
+        "type": "boolean",
+        "defaultValue": false
+      },
+      {
+        "defaultValue": false,
+        "type": "string_select",
+        "name": "label-position",
+        "desp": "表单域标签的位置",
+        "valueArray": [
+          "left",
+          "right",
+          "top"
+        ],
+        "despArray": [
+          "左",
+          "右",
+          "上"
+        ]
+      },
+      {
+        "name": "label-width",
+        "desp": "表单域标签的宽度",
+        "type": "string_input",
+        "defaultValue": ""
+      },
+      {
+        "name": "show-message",
+        "desp": "是否显示校验错误信息",
+        "type": "boolean",
+        "defaultValue": true
+      }
+    ],
+    "slot": [
+      {
+        "name": "default",
+        "desc": "表单内容",
+        "limit": 1,
+        "type": [
+          "text",
+          "icon",
+          "component",
+          "custom"
+        ]
+      }
+    ]
+  },
+  "keywords": [],
+  "license": "ISC",
+  "name": "@v2-components/v2-form",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "6.0.1",
+  "index": 30000003
+}
