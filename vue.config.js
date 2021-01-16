@@ -30,7 +30,7 @@ module.exports = {
       // },
       '/aweb-api': {
         // target: `http://192.168.0.38:8066/aweb-api`,
-        target: `http://localhost:8066/aweb-api`,
+        target: `http://127.0.0.1:8088`,
         changeOrigin: true,     // target是域名的话，需要这个参数，
         secure: false,          // 设置支持https协议的代理
         ws: false,
