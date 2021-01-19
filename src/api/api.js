@@ -38,11 +38,9 @@ export const logout=params=>{
 // }
 export const getRoutersList = params=>{
  
-<<<<<<< HEAD
+
   return axios.get(`${axios.server}/WMS/current`);
-=======
-  return axios.get(`${axios.server}/index`);
->>>>>>> 5e0e94f5ade23b04a27fa2d3877f422b3e2813a6
+
 }
 //验证码
 export const getVerifyImage=()=>{
