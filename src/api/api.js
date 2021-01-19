@@ -26,7 +26,7 @@ export const requestLogin = params => {
 };
 export const logout=params=>{
   //return axios.delete(`${axios.server}/signOut.do`, {params:params})
-  return axios.get(`${axios.server}/logout`);
+  return axios.get(`${axios.server}/WMS/logout`);
 }
 
 //菜单
