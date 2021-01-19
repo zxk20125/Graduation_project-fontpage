@@ -126,17 +126,16 @@ export default {
 
           this.logining = true;
           this.$store.dispatch("user/login", loginParams)
-            .then(() => {
-              //if(data.status&&data.success){
-                _this.$router.push({ path: "/" });
-
+            .then((data)=> {
+              if(data.status&&data.success){
+                _this.$router.push("/ava");
                 this.logining = false;
-              //}
+              }
             })
             .catch(err => {
               this.logining = false;
               this.$notify({
-                title: "登录失败",
+                title: err.status,
                 message: err&&err.msg,
                 type: "error"
               });
