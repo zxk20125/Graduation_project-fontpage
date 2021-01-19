@@ -1,11 +1,19 @@
 <template>
     <v2container :wid="`root`" style="width:100%;height:100%;display:flex;align-items:flex-start;align-self:stretch;box-sizing:border-box;flex-direction:column;flex-shrink:0;" class="V2Container">
-        <div :wid="`1610350128822`" class="v2Container-1610350128822 V2Container" style="box-sizing:border-box;align-self:stretch;display:flex;flex-direction:column;justify-content:center;align-items:center;background-color:rgba(0, 0, 0, 0);height:1082.00px;flex-shrink:0;" ref="v2Container_2">
-            <v2-form-input :wid="`1610350193224`" class="v2-form-input-1610350095999 V2Widget" :style="{'align-self':'auto','background-color':'#FFFFFF'}" :theme="{'size':''}" :disabled="false" :label="`账号`" :placeholder="`请输入`" :title-mode="`col`" :label-witdh="`80px`" :input-type="`text`" :rows="2" :show-word-limit="false" :clearable="false" :is-required="false" :auto-complete="false" :if="true" ref="v2FormInput_3">
+        <v2-component-menu :wid="`1611026916850`" class="v2-component-menu-1611026916850 V2Widget" :style="{'align-self':'auto'}" :menu-data="[]" :collapse="false" :unique-opened="false" :router="false" :collapse-transition="true" :background-color="`#fff`" :text-color="`#303133`" :active-text-color="`#409EFF`" :default-active="0" :default-openeds="[]" :if="true" ref="v2ComponentMenu_1">
+        </v2-component-menu>
+        <v2-ctn-xy :wid="`1610965817126`" class="v2-ctn-xy-1610965817126 V2Widget" :style="{'align-self':'stretch','min-width':'50px','min-height':'50px','height':'1046px','flex-shrink':0}" :if="true" ref="v2CtnXy_3">
+            <v2-form-input :wid="`1610965844991`" class="v2-form-input-1610965844991 V2Widget" :style="{'position':'absolute','top':'310px','left':'497px'}" :theme="{'size':''}" :disabled="false" :label="`标题文本`" :placeholder="`请输入`" :title-mode="`col`" :label-witdh="`80px`" :input-type="`text`" :rows="2" :show-word-limit="false" :clearable="false" :is-required="false" :auto-complete="false" :if="true" ref="v2FormInput_14">
             </v2-form-input>
-            <v2-form-input :wid="`1610350556716`" class="v2-form-input-1610350095999 V2Widget" :style="{'align-self':'auto'}" :theme="{'size':''}" :disabled="false" :label="`密码`" :placeholder="`请输入`" :title-mode="`col`" :label-witdh="`80px`" :input-type="`text`" :rows="2" :show-word-limit="false" :clearable="false" :is-required="false" :auto-complete="false" :if="true" ref="v2FormInput_4">
-            </v2-form-input>
-        </div>
+            <v2-component-btn :wid="`1610965878943`" class="v2-component-btn-1610965878943 V2Widget" :style="{'position':'absolute','top':'387px','left':'506px'}" :theme="{'btnType':'normal&shape=plain','size':''}" :disabled="false" :loading="false" :btn-name="`按钮`" :shape="`def`" :if="true" ref="v2ComponentBtn_11">
+            </v2-component-btn>
+            <v2-component-btn :wid="`1610965873293`" class="V2Widget" :style="{'position':'absolute','top':'385px','left':'668px'}" :theme="{'btnType':'normal&shape=plain','size':''}" :disabled="false" :loading="false" :btn-name="`按钮`" :shape="`def`" :if="true" ref="v2ComponentBtn_12">
+            </v2-component-btn>
+            <v2-ctn-order :wid="`1610966500403`" class="v2-ctn-order-1610966500403 V2Widget" :style="{'position':'absolute','top':'262px','left':'129px','height':'628px','width':'776px'}" :if="true" ref="v2CtnOrder_1">
+                <v2-form-input :wid="`1610965796005`" class="v2-form-input-1610965796005 V2Widget" :style="{'position':'absolute','top':'177px','left':'461.6px','background-color':'#FFFFFF'}" :theme="{'size':''}" :disabled="false" :label="`标题文本`" :placeholder="`请输入`" :title-mode="`col`" :label-witdh="`80px`" :input-type="`text`" :rows="2" :show-word-limit="false" :clearable="false" :is-required="false" :auto-complete="false" :if="true" ref="v2FormInput_13">
+                </v2-form-input>
+            </v2-ctn-order>
+        </v2-ctn-xy>
     </v2container>
 </template>
 <script>
@@ -39,24 +47,7 @@
             }
         },
         'props': {
-            /* 账号 */
-            'userName': {
-                'default': () => {
-                    return ''
-                }
-            },
-            /* 密码 */
-            'passWord': {
-                'default': () => {
-                    return ''
-                }
-            },
-            /* 请求数据 */
-            'reqMessage': {
-                'default': () => {
-                    return ''
-                }
-            }
+
         },
         'computed': {
 
@@ -65,15 +56,7 @@
 
         },
         'methods': {
-            /**
-             *  登陆
-             */
-            loginMethod() {
-                // 函数内直接用 ctx 代替 this 访问 Vue 页面的数据。
-                /** @type {V2ViewType} */
-                const ctx = this;
-                
-            }
+
         },
         beforeCreate() {
             let ctx = this;
@@ -114,5 +97,7 @@
     }
 </script>
 <style lang="scss">
-
+/*某某容器*/
+.class-name{
+}
 </style>

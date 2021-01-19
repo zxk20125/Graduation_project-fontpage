@@ -1,4 +1,4 @@
 export default {
-      'server':'/abc',
+      'server':'/aweb-api',
       
   }

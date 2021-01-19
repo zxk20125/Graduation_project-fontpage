@@ -12,8 +12,8 @@
 	},
 	"info": {
 		"layout": "lt-layout",
-		"title": "AWEB管理端",
-		"logo": "img/agree-logo.png",
+		"title": "宅急送后台管理端",
+		"logo": "img/footer-logo2.png",
 		"driverType": "pc",
 		"mainPage": "/main/main.vue"
 	},

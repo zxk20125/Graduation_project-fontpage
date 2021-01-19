@@ -21,7 +21,7 @@ export const requestLogin = params => {
   formData.append('username',params.username);
   formData.append('password', params.password);
   formData.append('code', params.code);
-  return  axios.post(`${axios.server}/login`,formData);
+  return  axios.post(`${axios.server}/WMS/login`,formData);
 
 };
 export const logout=params=>{
@@ -38,7 +38,7 @@ export const logout=params=>{
 // }
 export const getRoutersList = params=>{
  
-  return axios.get(`${axios.server}/current`);
+  return axios.get(`${axios.server}/WMS/current`);
 }
 //验证码
 export const getVerifyImage=()=>{
