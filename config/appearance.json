@@ -1,6 +1,6 @@
 {
 	"layout": "lt-layout",
-	"title": "AWEB管理端",
+	"title": "宅急送后台管理系统",
 	"logo": "img/agree-logo.png",
 	"mainPage": "/main/main.vue",
 	"driverType": "pc"
