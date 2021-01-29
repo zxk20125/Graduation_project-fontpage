@@ -30,7 +30,11 @@ module.exports = {
       // },
       '/GDP': {
         // target: `http://192.168.0.38:8066/aweb-api`,
+<<<<<<< HEAD
         target: `http://localhost:8088/GDP`,
+=======
+        target: `http://127.0.0.1:8088`,
+>>>>>>> 87aaa3dea60a274bdf82cbc68c5915ca7cad5c47
         changeOrigin: true,     // target是域名的话，需要这个参数，
         secure: false,          // 设置支持https协议的代理
         ws: false,

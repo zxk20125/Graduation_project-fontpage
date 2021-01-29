@@ -5,14 +5,14 @@
       :index="JSON.stringify({path:`${tPath}/${item.path}`,name:item.name})"
       :key="item.path"
     >
-      <i v-if="item.meta && item.meta.icon" :class="item.meta.icon"></i>
-      <span v-if="item.meta && item.meta.title" class="admin-menu-title">{{item.meta.title}}</span>
+      <i v-if="item && item.icon" :class="item.icon"></i>
+      <span v-if="item.meta && item.meta.title" class="admin-menu-title">{{item.title}}</span>
     </el-menu-item>
 
     <el-submenu v-else :index="item.path">
       <template slot="title">
-        <i v-if="item.meta && item.meta.icon" :class="item.meta.icon"></i>
-        <span v-if="item.meta && item.meta.title" class="admin-menu-title">{{item.meta.title}}</span>
+        <i v-if="item && item.icon" :class="item.icon"></i>
+        <span v-if="item && item.title" class="admin-menu-title">{{item.title}}</span>
       </template>
       <side-bar-item
         v-for="sub in item.children"

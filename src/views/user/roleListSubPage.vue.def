@@ -159,15 +159,17 @@
                     "role-table"
                 ],
                 "props": [
-                    "tableData",
-                    "loading",
+                    "tooltipEffect",
                     "columns",
+                    "tableData",
                     "selection",
+                    "radioSelect",
                     "value",
                     "selectionLocation",
                     "tHeight",
                     "tMaxHeight",
                     "openIndex",
+                    "loading",
                     "indexLocation",
                     "openPage",
                     "pagerCount",
@@ -179,19 +181,82 @@
                     "totalCount",
                     "toolBar",
                     "toolTitle",
+                    "toolHeaderAlign",
                     "toolLocation",
                     "toolWidth",
                     "toolBtns",
                     "expand",
                     "expandMap",
-                    "visible"
+                    "visible",
+                    "if",
+                    "customClass"
                 ]
             },
             {
-                "component": "v2-layout",
-                "href": "v2-layout",
+                "component": "v2Container",
+                "href": "v2Container",
                 "direction": "col",
                 "children": [
+                    {
+                        "menuData": [],
+                        "collapse": false,
+                        "uniqueOpened": false,
+                        "router": false,
+                        "collapseTransition": true,
+                        "backgroundColor": "#fff",
+                        "textColor": "#303133",
+                        "activeTextColor": "#409EFF",
+                        "defaultActive": "0",
+                        "defaultOpeneds": [],
+                        "visible": true,
+                        "if": true,
+                        "__capacity": "1",
+                        "component": "v2-component-menu",
+                        "href": "v2-component-menu",
+                        "name": "侧边菜单",
+                        "children": [],
+                        "events": {},
+                        "version": "16.0.0",
+                        "id": 1611039281360,
+                        "pid": 1578966899082,
+                        "$ref": "v2ComponentMenu_1",
+                        "commonStyle": {
+                            "box-sizing": "border-box",
+                            "align-self": "auto",
+                            "flex-basis": "auto",
+                            "flex-shrink": 1,
+                            "flex-grow": 0,
+                            "border-radius": "0px",
+                            "opacity": 1
+                        },
+                        "props": [
+                            "menuData",
+                            "collapse",
+                            "uniqueOpened",
+                            "router",
+                            "collapseTransition",
+                            "backgroundColor",
+                            "textColor",
+                            "activeTextColor",
+                            "defaultActive",
+                            "defaultOpeneds",
+                            "visible",
+                            "if",
+                            "customClass"
+                        ],
+                        "customClass": [
+                            "v2-component-menu-1611039281360",
+                            ""
+                        ],
+                        "sizeLocked": {
+                            "widthLock": false,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated"
+                        ]
+                    },
                     {
                         "theme": {
                             "btnType": "normal",
@@ -250,7 +315,9 @@
                             "leftIcon",
                             "rightIcon",
                             "shape",
-                            "visible"
+                            "visible",
+                            "if",
+                            "customClass"
                         ]
                     },
                     {
@@ -312,7 +379,9 @@
                             "leftIcon",
                             "rightIcon",
                             "shape",
-                            "visible"
+                            "visible",
+                            "if",
+                            "customClass"
                         ]
                     }
                 ],
@@ -354,12 +423,16 @@
                 },
                 "animate": [
                     "",
-                    "animated"
+                    "animated",
+                    ""
                 ],
                 "props": [
-                    "height",
-                    "direction",
-                    "visible"
+                    "visible",
+                    "if",
+                    "element-loading-text",
+                    "element-loading-spinner",
+                    "element-loading-background",
+                    "customClass"
                 ]
             }
         ],
@@ -390,6 +463,14 @@
         "animate": [
             "",
             "animated"
+        ],
+        "props": [
+            "visible",
+            "if",
+            "element-loading-text",
+            "element-loading-spinner",
+            "element-loading-background",
+            "customClass"
         ]
     },
     "forms": [],
@@ -530,6 +611,7 @@
         }
     },
     "events": {},
+    "emitList": [],
     "display": {
         "icon": "icontongyong",
         "desp": "角色列表",
@@ -537,9 +619,11 @@
         "width": "800px",
         "height": "1080px"
     },
-    "scssCode": ".role-table{\n    height:auto !important;\n    margin:0 !important;\n    overflow:auto!important;\n\n    .el-table{\n        min-width:655px!important;\n\n        .cell{\n            white-space: nowrap;\n        }\n    }\n}\n.role-table .el-table__body-wrapper{\n    height:auto !important;\n}\n.diaglog-btn-ctn{\n    position:absolute!important;\n    bottom:0;\n    width:100%;\n    right:0;\n    border-top:1px solid #e5e5e5;\n}\n.common-btn-focus{\n //   background:#457ce2;\n    height:32px;\n //   color:#fff;\n    line-height:32px;\n    padding-top:0;\n    padding-bottom:0;\n}\n.common-btn-normal{\n    height:32px;\n    line-height:32px;\n    padding-top:0;\n    padding-bottom:0;\n    border:1px solid #dcdfe6;\n //   color:#606266;\n //   background:#fff;\n}\n.margin-right20{\n    margin-right:20px!important;\n}\n",
+    "originCss": "",
+    "cssType": "",
     "nls": "",
     "mixins": [],
     "imports": [],
-    "disableVueSPA": false
+    "disableVueSPA": false,
+    "disableSupport": false
 }

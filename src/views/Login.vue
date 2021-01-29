@@ -4,7 +4,7 @@
       <div class="login-left-ctn">
         <img src="../img/login.jpg">
         <p class="login-title">宅急送</p>
-        <p class="vue-spa-version">曾学锴 &copy; 2020</p>
+        <p class="vue-spa-version">曾学锴 &copy; 2021</p>
       </div>
       <el-form
         :model="ruleForm"
@@ -126,17 +126,16 @@ export default {
 
           this.logining = true;
           this.$store.dispatch("user/login", loginParams)
-            .then(() => {
-              //if(data.status&&data.success){
-                _this.$router.push({ path: "/" });
-
+            .then((data)=> {
+              if(data.status&&data.success){
+                _this.$router.push("/ava");
                 this.logining = false;
-              //}
+              }
             })
             .catch(err => {
               this.logining = false;
               this.$notify({
-                title: "登录失败",
+                title: err.status,
                 message: err&&err.msg,
                 type: "error"
               });

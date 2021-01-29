@@ -15,7 +15,7 @@
           </div>
         </el-col>
         <el-col :span="12" class="aweb-userinfo">
-          <el-tooltip
+          <!-- <el-tooltip
             effect="dark"
             placement="top"
             v-for="item in caseList"
@@ -28,8 +28,7 @@
               class="aweb-download-btn"
               @click="openMarket(item.doc)"
             ></el-button>
-          </el-tooltip>
-
+          </el-tooltip> -->
           <el-dropdown trigger="hover">
             <span class="el-dropdown-link aweb-userinfo-inner">
               <img :src="sysUserAvatar" />
@@ -46,8 +45,12 @@
     </div>
     <div class="aweb-body">
       <!-- 侧边导航 -->
-      <side-bar :collapsed="collapsed"></side-bar>
-      <tabs-view class="aweb-ctt"></tabs-view>
+         
+      <side-bar :collapsed="collapsed">
+      </side-bar>
+      <tabs-view class="aweb-ctt">
+       
+      </tabs-view>
     </div>
   </div>
 </template>
@@ -56,11 +59,13 @@ import { mixins } from "@v2-lib/vue.spa.plugin";
 import { getToken } from "@/utils/user";
 import sideBar from "../../components/sideBar";
 import tabsView from "../../components/tabsView";
+import SideBarItem from '../../components/sideBar/sideBarItem.vue';
 export default {
   name: "layout",
   components: {
     sideBar,
-    tabsView
+    tabsView,
+    SideBarItem
   },
   data() {
     return {
@@ -84,14 +89,15 @@ export default {
           doc:"https://vue-api.awebide.com/aweb-api/swagger-ui.html#/"
         }
       ],
+              
       // sysName: "AWEB_ADMIN",
       collapsed: false
-    };
+  }
   },
-
   mixins: [mixins],
 
   methods: {
+     
     logout: function() {
       var _this = this;
       this.$confirm("确认退出吗?", "提示", {})

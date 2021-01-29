@@ -72,27 +72,7 @@ export default {
   },
   data() {
     return {
-      caseList: [
-        {
-          tip: "下载后端案例",
-          icon: "el-icon-sold-out",
-          name: "end",
-          doc:"https://git.awebide.com/awebfe/backend/AWEB_Spring_7.0/"
-        },
-        {
-          tip: "下载前端案例",
-          icon: "el-icon-sold-out",
-          name: "font",
-          doc:"https://git.awebide.com/template-admin/vue-admin"
-        },
-        {
-          tip: "后台接口文档",
-          icon: "el-icon-sold-out",
-          name: "endDoc",
-          doc:"https://vue-api.awebide.com/aweb-api/swagger-ui.html#/"
-        }
-      ],
-      // sysName: "AWEB_ADMIN",
+     
       collapsed: false
     };
   },
