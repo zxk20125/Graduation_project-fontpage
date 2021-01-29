@@ -12,13 +12,10 @@
 	},
 	"info": {
 		"layout": "lt-layout",
-<<<<<<< HEAD
 		"title": "宅急送后台管理系统",
 		"logo": "img/agree-logo.png",
-=======
 		"title": "宅急送后台管理端",
 		"logo": "img/footer-logo2.png",
->>>>>>> 87aaa3dea60a274bdf82cbc68c5915ca7cad5c47
 		"driverType": "pc",
 		"mainPage": "/main/main.vue"
 	},
