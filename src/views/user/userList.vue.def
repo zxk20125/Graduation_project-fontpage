@@ -58,8 +58,8 @@
                         "clearable": false,
                         "isRequired": false,
                         "autoComplete": false,
-                        "$ref": "v2-form-input_1579152715570",
                         "value.sync": "${username}",
+                        "$ref": "v2-form-input_1579152715570",
                         "style": {
                             "label": {
                                 "text-align": "right"
@@ -183,8 +183,8 @@
                         "labelWitdh": "80px",
                         "titleMode": "col",
                         "isRequired": false,
-                        "$ref": "v2-form-treeselect_1579152759468",
                         "value.sync": "${userStatus}",
+                        "$ref": "v2-form-treeselect_1579152759468",
                         "visible": true,
                         "__capacity": "1",
                         "href": "v2-form-treeselect",
@@ -208,7 +208,8 @@
                         "component": "v2-form-datepicker",
                         "id": 1578537726108,
                         "customClass": [
-                            "v2-form-datepicker-1578537726108"
+                            "v2-form-datepicker-1578537726108",
+                            ""
                         ],
                         "commonStyle": {
                             "animation-duration": "1s",
@@ -252,8 +253,8 @@
                         "format": "yyyy 年 MM 月 dd 日",
                         "valueFormat": "timestamp",
                         "align": "left",
-                        "$ref": "v2-form-datepicker_1578537726108",
                         "value.sync": "${createTime}",
+                        "$ref": "v2-form-datepicker_1578537726108",
                         "style": {
                             "label": {
                                 "text-align": "right"
@@ -282,8 +283,8 @@
                         "component": "v2-component-btn",
                         "id": 1578539012886,
                         "customClass": [
-                            "common-btn-focus",
-                            "v2-component-btn-1578539012886"
+                            "v2-component-btn-1578539012886",
+                            "common-btn-focus"
                         ],
                         "commonStyle": {
                             "animation-duration": "1s",
@@ -394,10 +395,11 @@
                         "children": [],
                         "component": "v2-component-btn",
                         "id": 1578539271197,
-                        "visible": "${$AUTH(`user/userList`,1578539271197)}",
+                        "visible": "${true}",
                         "customClass": [
-                            "common-btn-focus",
-                            "v2-component-btn-1578539271197"
+                            "v2-component-btn-1578539271197",
+                            "",
+                            "common-btn-focus"
                         ],
                         "commonStyle": {
                             "animation-duration": "1s",
@@ -406,7 +408,7 @@
                             "margin-bottom": "10px",
                             "margin-left": "10px",
                             "margin-right": "10px",
-                            "flex-shrink": "0"
+                            "flex-shrink": 0
                         },
                         "props": [
                             "disabled",
@@ -419,11 +421,11 @@
                             "if",
                             "customClass"
                         ],
+                        "disabled": false,
                         "theme": {
                             "btnType": "primary",
                             "size": "medium"
                         },
-                        "disabled": false,
                         "loading": false,
                         "btnName": "新增用户",
                         "shape": "def",
@@ -455,10 +457,11 @@
                         "children": [],
                         "component": "v2-component-btn",
                         "id": 1578539296885,
-                        "visible": "${$AUTH(`user/userList`,1578539296885)}",
+                        "visible": "${true}",
                         "customClass": [
-                            "common-btn-normal",
-                            "v2-component-btn-1578539296885"
+                            "v2-component-btn-1578539296885",
+                            "",
+                            "common-btn-normal"
                         ],
                         "commonStyle": {
                             "animation-duration": "1s",
@@ -515,7 +518,8 @@
                 "component": "v2Container",
                 "id": 1578539257540,
                 "customClass": [
-                    "v2Container-1578539257540"
+                    "v2Container-1578539257540",
+                    ""
                 ],
                 "commonStyle": {
                     "display": "flex",
@@ -527,7 +531,11 @@
                     "overflow": "hidden",
                     "min-height": "50px",
                     "animation-duration": "1s",
-                    "flex-direction": "row"
+                    "flex-direction": "row",
+                    "border-radius": "0px",
+                    "flex-grow": 0,
+                    "flex-shrink": 0,
+                    "opacity": 1
                 },
                 "$ref": "v2Container_1578539257540",
                 "href": "v2Container",
@@ -578,10 +586,7 @@
                     "margin-right": "10px",
                     "width": "calc(100% - 20px)",
                     "height": "100%",
-                    "border-radius": "0px",
-                    "flex-grow": 0,
-                    "flex-shrink": 0,
-                    "opacity": 1
+                    "flex-shrink": 0
                 },
                 "props": [
                     "tooltipEffect",
@@ -900,6 +905,7 @@
                     }
                 ],
                 "expand": false,
+                "value.sync": "${selectedUserList}",
                 "events": {
                     "_op_table_table": {
                         "selectionChange": {
@@ -908,7 +914,6 @@
                     }
                 },
                 "$ref": "v2-component-table_1578539272258",
-                "value.sync": "${selectedUserList}",
                 "visible": true,
                 "__capacity": "1",
                 "href": "v2-component-table",
@@ -957,7 +962,8 @@
         },
         "animate": [
             "",
-            "animated"
+            "animated",
+            ""
         ],
         "ctnStyle": [
             {},
@@ -1066,7 +1072,7 @@
             {
                 "name": "getPageUserList",
                 "desp": "获取用户分页数据",
-                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\npage&&(ctx.currentPage=page);\n!page&&(ctx.currentPage=1);\nsize&&(ctx.pageSize=size);\n!size&&(ctx.pageSize=10);\nconst params = {\n  \"pageNum\": ctx.currentPage,\n  \"pageSize\": ctx.pageSize,\n  \"orders\": [\n    {\n      \"key\": \"createTime\",\n      \"order\": \"desc\"\n    }\n  ],\n  \"query\": {\n    \"name\": ctx.username||'',\n    \"status\":ctx.userStatus.length===1?ctx.userStatus[0]:''\n  },\n    \"ranges\": [\n    {\n      \"from\": ctx.createTime?ctx.createTime[0]:null,\n      \"key\": \"createTime\",\n      \"to\":  ctx.createTime?ctx.createTime[1]+1000*60*60*24-1:null\n    }\n  ]\n};\n\nctx.$axios.post(`${axios.server}/user/list`,params).then(res=>{\n    if(res.success&&res.status){\n      const tableData = res.obj&&res.obj.content||[];\n      \n      ctx.userTableList  = tableData.map(function(item){\n        return{\n          id:item.id,\n          username:item.name||'',\n          desp:item.desc||'',\n          createTime:ctx.timesTransferToDate(item.createTime),\n          creator:item.createUserName,\n          editor:item.updateUserName,\n          editTime:ctx.timesTransferToDate(item.updateTime),\n          nickname:item.nickname,\n          status:item.status,\n          roles:item.roles\n\n        }\n      });\n      ctx.userTotalCount = res.obj&&res.obj.totalElements;\n    }\n}).catch(error=>{\n  \n})",
+                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\npage&&(ctx.currentPage=page);\n!page&&(ctx.currentPage=1);\nsize&&(ctx.pageSize=size);\n!size&&(ctx.pageSize=10);\nconst params = {\n  \"pageNum\": ctx.currentPage,\n  \"pageSize\": ctx.pageSize,\n  \"orders\": [\n    {\n      \"key\": \"create_Time\",\n      \"order\": \"desc\"\n    }\n  ],\n  \"query\": {\n    \"name\": ctx.username||'',\n    \"status\":ctx.userStatus.length===1?ctx.userStatus[0]:''\n  },\n    \"ranges\": [\n    {\n      \"from\": ctx.createTime?ctx.createTime[0]:null,\n      \"key\": \"create_Time\",\n      \"to\":  ctx.createTime?ctx.createTime[1]+1000*60*60*24-1:null\n    }\n  ]\n};\n\nctx.$axios.post(`${axios.server}/user/list`,params).then(res=>{\n    if(res.success&&res.status){\n      const tableData = res.obj&&res.obj.records||[];\n      \n      ctx.userTableList  = tableData.map(function(item){\n        return{\n          id:item.id,\n          username:item.name||'',\n          desp:item.desc||'',\n          createTime:ctx.timesTransferToDate(item.createTime),\n          creator:item.createUserName,\n          editor:item.updateUserName,\n          editTime:ctx.timesTransferToDate(item.updateTime),\n          nickname:item.nickname,\n          status:item.status,\n          roles:item.roles\n\n        }\n      });\n      ctx.userTotalCount = res.obj&&res.obj.totalElements;\n    }\n}).catch(error=>{\n  \n})",
                 "params": [
                     {
                         "name": "page",
@@ -1344,21 +1350,15 @@
             "1578539296885": [
                 {
                     "id": 1578539296885,
-                    "modelValue": "visible",
-                    "dataValue": "$AUTH(`user/userList`,1578539296885)",
-                    "type": ""
-                },
-                {
-                    "id": 1578539296885,
-                    "modelValue": "visible",
-                    "dataValue": "$AUTH(`user/userList`,1578539296885)",
-                    "type": ""
-                },
-                {
-                    "id": 1578539296885,
                     "modelValue": "disabled",
                     "dataValue": "isDisabled",
                     "type": "boolean"
+                },
+                {
+                    "id": 1578539296885,
+                    "modelValue": "visible",
+                    "dataValue": "true",
+                    "type": ""
                 }
             ],
             "1579152110683": [
@@ -1397,13 +1397,7 @@
                 {
                     "id": 1578539271197,
                     "modelValue": "visible",
-                    "dataValue": "$AUTH(`user/userList`,1578539271197)",
-                    "type": ""
-                },
-                {
-                    "id": 1578539271197,
-                    "modelValue": "visible",
-                    "dataValue": "$AUTH(`user/userList`,1578539271197)",
+                    "dataValue": "true",
                     "type": ""
                 }
             ]

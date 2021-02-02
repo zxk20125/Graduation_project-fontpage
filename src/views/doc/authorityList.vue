@@ -1,24 +1,24 @@
 <template>
     <v2container :wid="`root`" style="display:flex;align-items:flex-start;align-self:stretch;height:100%;box-sizing:border-box;animation-duration:1s;flex-direction:column;min-width:50px;min-height:50px;" class="V2Container">
-        <div :wid="`1578537283708`" class="V2Container" style="display:flex;align-items:flex-start;align-self:stretch;height:auto;box-sizing:border-box;position:relative;overflow:hidden;min-width:50px;min-height:50px;animation-duration:1s;" ref="v2Container_1578537283708">
+        <div :wid="`1578537283708`" class="V2Container" style="display:flex;align-items:flex-start;align-self:stretch;height:auto;box-sizing:border-box;position:relative;overflow:hidden;min-width:50px;min-height:50px;animation-duration:1s;flex-direction:column;" ref="v2Container_1578537283708">
             <v2-form-input :wid="`1579152715570`" class="V2Widget" :style="{'position':'relative','margin-top':'10px','margin-bottom':'10px','margin-left':'10px','margin-right':'10px','overflow':'hidden','animation-duration':'1s'}" :theme="{'size':'medium'}" :disabled="false" :label="`创建用户`" :placeholder="`请输入创建用户`" :title-mode="`col`" :label-witdh="`80px`" :input-type="`text`" :rows="2" :show-word-limit="false" :clearable="false" :is-required="false" :auto-complete="false" ref="v2-form-input_1579152715570" :value.sync="creator">
             </v2-form-input>
             <v2-form-input :wid="`1580789804791`" class="V2Widget" :style="{'position':'relative','margin-top':'10px','margin-bottom':'10px','margin-left':'10px','margin-right':'10px','overflow':'hidden','animation-duration':'1s'}" :theme="{'size':''}" :disabled="false" :label="`权限名称`" :placeholder="`请输入权限名称`" :title-mode="`col`" :label-witdh="`80px`" :input-type="`text`" :rows="2" :show-word-limit="false" :clearable="false" :is-required="false" :auto-complete="false" ref="v2-form-input_1580789804791" :value.sync="name">
             </v2-form-input>
             <v2-form-datepicker :wid="`1578537726108`" class="form-item V2Widget" :style="{'position':'relative','margin-top':'10px','margin-bottom':'10px','margin-left':'10px','margin-right':'10px','overflow':'hidden','animation-duration':'1s'}" :theme="{}" :disabled="false" :label="`创建时间`" :label-witdh="`80px`" :placeholder="`请选择`" :title-mode="`col`" :type="`daterange`" :is-required="false" :clearable="true" :format="`yyyy 年 MM 月 dd 日`" :value-format="`timestamp`" :align="`left`" ref="v2-form-datepicker_1578537726108" :value.sync="createTime">
             </v2-form-datepicker>
-            <v2-component-btn :wid="`1578539012886`" class="V2Widget" :style="{'position':'relative','margin-top':'10px','margin-bottom':'10px','margin-left':'10px','margin-right':'10px','flex-shrink':'0','overflow':'hidden','animation-duration':'1s'}" :theme="{'btnType':'primary','size':''}" :disabled="false" :loading="false" :btn-name="`查询`" :shape="`def`" @_op_component-btn_btn:click="v2_component_btn_1578965103000" ref="v2-component-btn_1578539012886">
+            <v2-component-btn :wid="`1578539012886`" class="V2Widget" :style="{'position':'relative','margin-top':'10px','margin-bottom':'10px','margin-left':'10px','margin-right':'10px','flex-shrink':0,'overflow':'hidden','animation-duration':'1s'}" :theme="{'btnType':'primary','size':''}" :disabled="false" :loading="false" :btn-name="`查询`" :shape="`def`" @_op_component-btn_btn:click="v2_component_btn_1578965103000" ref="v2-component-btn_1578539012886">
             </v2-component-btn>
         </div>
-        <div :wid="`1578539257540`" class="V2Container" style="display:flex;align-items:flex-start;align-self:stretch;height:auto;box-sizing:border-box;position:relative;overflow:hidden;min-width:50px;min-height:50px;animation-duration:1s;" ref="v2Container_1578539257540">
-            <v2-component-btn :wid="`1578539271197`" class="V2Widget" :style="{'position':'relative','margin-top':'10px','margin-bottom':'10px','margin-left':'10px','margin-right':'10px','overflow':'hidden','animation-duration':'1s'}" :theme="{'btnType':'primary','size':''}" :disabled="false" :loading="false" :btn-name="`新增权限`" :shape="`def`" @_op_component-btn_btn:click="v2_component_btn_1578838760000" ref="v2-component-btn_1578539271197">
+        <div :wid="`1578539257540`" class="V2Container" style="display:flex;align-items:flex-start;align-self:stretch;height:auto;box-sizing:border-box;position:relative;overflow:hidden;min-width:50px;min-height:50px;animation-duration:1s;flex-direction:column;" ref="v2Container_1578539257540">
+            <v2-component-btn :wid="`1578539271197`" class="V2Widget" :style="{'position':'relative','margin-top':'10px','margin-bottom':'10px','margin-left':'10px','margin-right':'10px','overflow':'hidden','animation-duration':'1s','flex-shrink':0}" :theme="{'btnType':'primary','size':''}" :disabled="false" :loading="false" :btn-name="`新增权限`" :shape="`def`" @_op_component-btn_btn:click="v2_component_btn_1578838760000" ref="v2-component-btn_1578539271197">
             </v2-component-btn>
             <v2-component-btn :wid="`1578539296885`" class="V2Widget" :style="{'position':'relative','margin-top':'10px','margin-bottom':'10px','margin-left':'10px','margin-right':'10px','overflow':'hidden','animation-duration':'1s'}" :disabled="isDisabled" :theme="{'btnType':'normal','size':''}" :loading="false" :btn-name="`删除`" :shape="`plain`" @_op_component-btn_btn:click="v2_component_btn_1578838839000" ref="v2-component-btn_1578539296885">
             </v2-component-btn>
         </div>
-        <v2-component-table :wid="`1578539272258`" class="V2Widget" :style="{'position':'relative','margin-top':'10px','margin-bottom':'10px','margin-left':'10px','margin-right':'10px','flex-basis':'100%','overflow':'hidden','animation-duration':'1s','width':'calc(100% - 20px)'}" :tableData="authorityTableList" :pageSize="pageSize" :totalCount="authorityTotalCount" :theme="{'tableType':'border','size':''}" :columns="[{'active':true,'prop':'name','label':'权限名称','sortable':true,'openFilter':false,'type':'text','combi':[{'active':'true'}],'tagMap':[{'active':'true','type':'text'}],'iconMap':[{'active':'true'}],'filterMap':[{'active':'true'}]},{'active':true,'prop':'creator','label':'创建用户','sortable':true,'openFilter':false,'type':'text','combi':[{'active':'true'}],'tagMap':[{'active':'true','type':'text'}],'iconMap':[{'active':'true'}],'filterMap':[{'active':'true'}]},{'active':true,'prop':'createTime','label':'创建时间','sortable':true,'openFilter':false,'type':'text','combi':[{'active':'true'}],'tagMap':[{'active':'true','type':'text'}],'iconMap':[{'active':'true'}],'filterMap':[{'active':'true'}]},{'active':true,'prop':'editor','label':'最近修改用户','sortable':true,'openFilter':false,'type':'text','combi':[{'active':'true'}],'tagMap':[{'active':'true','type':'text'}],'iconMap':[{'active':'true'}],'filterMap':[{'active':'true'}]},{'active':true,'prop':'editTime','label':'最近修改时间','sortable':true,'openFilter':false,'type':'text','combi':[{'active':'true'}],'tagMap':[{'active':'true','type':'text'}],'iconMap':[{'active':'true'}],'filterMap':[{'active':'true'}]},{'active':true,'prop':'desp','label':'描述','sortable':false,'openFilter':false,'type':'text','combi':[{'active':'true'}],'tagMap':[{'active':'true','type':'text'}],'iconMap':[{'active':'true'}],'filterMap':[{'active':'true'}]}]" :table-data="authorityTableList" :selection="`multi`" :selection-location="`left`" :t-height="`100%`" :t-max-height="`100%`" :open-index="false" :open-page="true" :page-size="pageSize" :open-set-page-callback="true" :set-page-callback="`getPageAuthorityList`" :total-count="authorityTotalCount" :tool-bar="true" :tool-title="`操作列`" :tool-location="`right`" :tool-width="`100px`" :tool-btns="[{'active':true,'btnName':'编辑','type':'text','handler':'editAuthority'}]" :expand="false" @_op_table_table:selection-change="v2_component_table_1578928960000" ref="v2-component-table_1578539272258">
+        <v2-component-table :wid="`1578539272258`" class="V2Widget" :style="{'position':'relative','margin-top':'10px','margin-bottom':'10px','margin-left':'10px','margin-right':'10px','flex-basis':'100%','overflow':'hidden','animation-duration':'1s','width':'calc(100% - 20px)'}" :tableData="authorityTableList" :pageSize="pageSize" :totalCount="authorityTotalCount" :theme="{'tableType':'border','size':''}" :columns="[{'active':true,'prop':'name','label':'权限名称','sortable':true,'openFilter':false,'type':'text','combi':[{'active':'true'}],'tagMap':[{'active':'true','type':'text'}],'iconMap':[{'active':'true'}],'filterMap':[{'active':'true'}]},{'active':true,'prop':'creator','label':'创建用户','sortable':true,'openFilter':false,'type':'text','combi':[{'active':'true'}],'tagMap':[{'active':'true','type':'text'}],'iconMap':[{'active':'true'}],'filterMap':[{'active':'true'}]},{'active':true,'prop':'createTime','label':'创建时间','sortable':true,'openFilter':false,'type':'text','combi':[{'active':'true'}],'tagMap':[{'active':'true','type':'text'}],'iconMap':[{'active':'true'}],'filterMap':[{'active':'true'}]},{'active':true,'prop':'editor','label':'最近修改用户','sortable':true,'openFilter':false,'type':'text','combi':[{'active':'true'}],'tagMap':[{'active':'true','type':'text'}],'iconMap':[{'active':'true'}],'filterMap':[{'active':'true'}]},{'active':true,'prop':'editTime','label':'最近修改时间','sortable':true,'openFilter':false,'type':'text','combi':[{'active':'true'}],'tagMap':[{'active':'true','type':'text'}],'iconMap':[{'active':'true'}],'filterMap':[{'active':'true'}]},{'active':true,'prop':'desp','label':'描述','sortable':false,'openFilter':false,'type':'text','combi':[{'active':'true'}],'tagMap':[{'active':'true','type':'text'}],'iconMap':[{'active':'true'}],'filterMap':[{'active':'true'}]}]" :table-data="authorityTableList" :selection="`multi`" :selection-location="`left`" :t-height="`100%`" :t-max-height="`100%`" :open-index="false" :open-page="true" :page-size="pageSize" :open-set-page-callback="true" :set-page-callback="`getPageAuthorityList`" :total-count="authorityTotalCount" :tool-bar="true" :tool-title="`操作列`" :tool-location="`right`" :tool-width="`100px`" :tool-btns="[{'active':true,'btnName':'编辑','type':'text','handler':'editAuthority','rowName':'','toolIcon':'','rowValue':''}]" :expand="false" @_op_table_table:selection-change="v2_component_table_1578928960000" ref="v2-component-table_1578539272258">
         </v2-component-table>
-        <v2-pagination :wid="`1578838455979`" v-show="false" class="common-pagination V2Widget" :style="{'position':'relative','margin-top':'10px','margin-bottom':'10px','margin-left':'10px','margin-right':'10px','overflow':'hidden','animation-duration':'1s'}" :total="authorityTotalCount" :pageSize="pageSize" :currentPage="currentPage" @_op_pagination:current-change="v2_pagination_1578929249000" @_op_pagination:size-change="v2_pagination_1578929439000" ref="v2-pagination_1578838455979">
+        <v2-pagination :wid="`1578838455979`" v-show="false" class="common-pagination V2Widget" :style="{'position':'relative','margin-top':'10px','margin-bottom':'10px','margin-left':'10px','margin-right':'10px','overflow':'hidden','animation-duration':'1s'}" :total="authorityTotalCount" :pageSize="pageSize" :currentPage="currentPage" :pagesize="pageSize" :currentpage="currentPage" @_op_pagination:current-change="v2_pagination_1578929249000" @_op_pagination:size-change="v2_pagination_1578929439000" ref="v2-pagination_1578838455979">
         </v2-pagination>
     </v2container>
 </template>
@@ -226,7 +226,7 @@
              *  打开新增权限子页面
              *  @param 组件的vue实例 vueIns
              */
-            v2_component_btn_1578838760000(vueIns) {
+            v2_component_btn_1578838760000($event, vueIns=this.$refs['v2-component-btn_1578539271197']) {
                 /**
                 * 事件绑定在vue实例上，第一个参数是vue实例。
                 * 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN
@@ -246,7 +246,7 @@
              *  删除选中权限数据
              *  @param 组件的vue实例 vueIns
              */
-            v2_component_btn_1578838839000(vueIns) {
+            v2_component_btn_1578838839000($event, vueIns=this.$refs['v2-component-btn_1578539296885']) {
                 /**
                 * 事件绑定在vue实例上，第一个参数是vue实例。
                 * 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN
@@ -297,7 +297,7 @@
                 
                 ctx.$axios.post(`${axios.server}/authority/list`,params).then(res=>{
                     if(res.success&&res.status){
-                      const tableData = res.obj&&res.obj.content||[];
+                      const tableData = res.obj&&res.obj.records||[];
                       
                       ctx.authorityTableList  = tableData.map(function(item){
                         return{
@@ -344,7 +344,7 @@
              *  @param 组件的vue实例 vueIns
              *  @param 选中的数据 selections
              */
-            v2_component_table_1578928960000(vueIns, selections) {
+            v2_component_table_1578928960000($event, vueIns=this.$refs['v2-component-table_1578539272258'], selections) {
                 /**
                 * 事件绑定在vue实例上，第一个参数是vue实例。
                 * 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN
@@ -365,7 +365,7 @@
              *  @param 组件的vue实例 vueIns
              *  @param 当前页码 currentPage
              */
-            v2_pagination_1578929249000(vueIns, currentPage) {
+            v2_pagination_1578929249000($event, vueIns=this.$refs['v2-pagination_1578838455979'], currentPage) {
                 /**
                 * 事件绑定在vue实例上，第一个参数是vue实例。
                 * 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN
@@ -381,7 +381,7 @@
              *  @param 组件的vue实例 vueIns
              *  @param 每页显示个数 pageSize
              */
-            v2_pagination_1578929439000(vueIns, pageSize) {
+            v2_pagination_1578929439000($event, vueIns=this.$refs['v2-pagination_1578838455979'], pageSize) {
                 /**
                 * 事件绑定在vue实例上，第一个参数是vue实例。
                 * 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN
@@ -396,7 +396,7 @@
              *  查询权限列表
              *  @param 组件的vue实例 vueIns
              */
-            v2_component_btn_1578965103000(vueIns) {
+            v2_component_btn_1578965103000($event, vueIns=this.$refs['v2-component-btn_1578539012886']) {
                 /**
                 * 事件绑定在vue实例上，第一个参数是vue实例。
                 * 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN
