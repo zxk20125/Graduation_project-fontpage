@@ -11,15 +11,7 @@
         <div :wid="`1578839261978`" class="v2Container-1578839261978 V2Container" style="display:flex;align-items:flex-start;align-self:stretch;height:auto;box-sizing:border-box;min-width:50px;overflow:hidden;min-height:50px;animation-duration:1s;flex-shrink:0;flex-direction:row;" ref="v2Container_1578839261978">
             <v2-component-btn :wid="`1578839200941`" class="v2-component-btn-1578839200941 V2Widget" :style="{'animation-duration':'1s','overflow':'hidden','margin-top':'10px','margin-bottom':'10px','margin-left':'10px','margin-right':'10px','flex-shrink':'0'}" :theme="{'btnType':'primary','size':'medium'}" :btn-name="`新增角色`" @_op_component-btn_btn:click="v2_component_btn_1578893003000" ref="v2-component-btn_1578839200941">
             </v2-component-btn>
-            <v2-component-btn :wid="`1579240061839`" class="v2-component-btn-1579240061839 V2Widget" :style="{'animation-duration':'1s','overflow':'hidden','margin-top':'10px','margin-bottom':'10px','margin-left':'10px','margin-right':'10px'}" :theme="{'btnType':'primary','size':'medium'}" :btn-name="`导入`" @_op_component-btn_btn:click="v2_component_btn_1579240033000" ref="v2-component-btn_1579240061839">
-            </v2-component-btn>
-            <v2-component-btn :wid="`1579058632986`" v-show="$AUTH(`role/roleList`,1579058632986)" class="v2-component-btn-1579058632986 V2Widget" :style="{'animation-duration':'1s','overflow':'hidden','margin-top':'10px','margin-bottom':'10px','margin-left':'10px','margin-right':'10px','flex-shrink':'0'}" :disabled="isDisabled" :theme="{'btnType':'primary','size':'medium'}" :btn-name="`导出excel`" @_op_component-btn_btn:click="v2_component_btn_1579059575000" ref="v2-component-btn_1579058632986">
-            </v2-component-btn>
-            <v2-component-btn :wid="`1579239830566`" v-show="$AUTH(`role/roleList`,1579239830566)" class="v2-component-btn-1579239830566 V2Widget" :style="{'animation-duration':'1s','overflow':'hidden','margin-top':'10px','margin-bottom':'10px','margin-left':'10px','margin-right':'10px'}" :disabled="isDisabled" :theme="{'btnType':'primary','size':'medium'}" :btn-name="`导出pdf`" @_op_component-btn_btn:click="v2_component_btn_1579239816000" ref="v2-component-btn_1579239830566">
-            </v2-component-btn>
-            <v2-component-btn :wid="`1579169614891`" class="V2Widget" :style="{'animation-duration':'1s','overflow':'hidden','margin-top':'10px','margin-bottom':'10px','margin-left':'10px','margin-right':'10px','flex-shrink':'0'}" :disabled="isDisabled" :theme="{'btnType':'normal','size':'medium'}" :btn-name="`删除`" :shape="`plain`" @_op_component-btn_btn:click="v2_component_btn_1578903078000" ref="v2-component-btn_1579169614891">
-            </v2-component-btn>
-            <v2-component-btn :wid="`1586250571705`" class="v2-component-btn-1586250571705 V2Widget" :style="{'animation-duration':'1s','overflow':'hidden','margin-top':'10px','margin-bottom':'10px','margin-left':'10px','margin-right':'10px','flex-shrink':0}" :disabled="isDisablePrint" :theme="{'size':'medium','btnType':'normal'}" :btn-name="`打印`" :shape="`plain`" @_op_component-btn_btn:click="v2_component_btn_1586250496000" ref="v2-component-btn_1586250571705">
+            <v2-component-btn :wid="`1579169614891`" class="V2Widget" :style="{'animation-duration':'1s','overflow':'hidden','margin-top':'10px','margin-bottom':'10px','margin-left':'10px','margin-right':'10px','flex-shrink':0}" :disabled="isDisabled" :theme="{'btnType':'normal','size':'medium'}" :btn-name="`删除`" :shape="`plain`" @_op_component-btn_btn:click="v2_component_btn_1578903078000" ref="v2-component-btn_1579169614891">
             </v2-component-btn>
         </div>
         <v2-component-table :wid="`1578839285432`" class="v2-component-table-1578839285432 V2Widget" :style="{'animation-duration':'1s','overflow':'hidden','margin-top':'10px','margin-bottom':'10px','margin-left':'10px','margin-right':'10px','flex-basis':'100%','width':'calc(100% - 20px)','height':'auto','flex-shrink':0}" :tableData="roleTableData" :pageSize="pageSize" :totalCount="roleTotalCount" :theme="{'tableType':'border','size':'medium'}" :columns="[{'active':true,'type':'text','prop':'roleName','label':'角色名称','linkTarget':'_blank','headerAlign':'left','align':'left','sortable':true,'openFilter':false,'combi':[{'active':'true'}],'tagMap':[{'active':'true','type':'text'}],'iconMap':[{'active':'true'}],'filterMap':[{'active':'true'}]},{'active':true,'type':'text','prop':'creator','label':'创建用户','linkTarget':'_blank','headerAlign':'left','align':'left','sortable':true,'openFilter':false,'combi':[{'active':'true'}],'tagMap':[{'active':'true','type':'text'}],'iconMap':[{'active':'true'}],'filterMap':[{'active':'true'}]},{'active':true,'type':'text','prop':'createTime','label':'创建时间','linkTarget':'_blank','headerAlign':'left','align':'left','sortable':true,'openFilter':false,'combi':[{'active':'true'}],'tagMap':[{'active':'true','type':'text'}],'iconMap':[{'active':'true'}],'filterMap':[{'active':'true'}]},{'active':true,'type':'text','prop':'editor','label':'最近修改用户','linkTarget':'_blank','headerAlign':'left','align':'left','sortable':false,'openFilter':false,'combi':[{'active':'true'}],'tagMap':[{'active':'true','type':'text'}],'iconMap':[{'active':'true'}],'filterMap':[{'active':'true'}]},{'active':true,'type':'text','prop':'editTime','label':'最近修改时间','linkTarget':'_blank','headerAlign':'left','align':'left','sortable':true,'openFilter':false,'combi':[{'active':'true'}],'tagMap':[{'active':'true','type':'text'}],'iconMap':[{'active':'true'}],'filterMap':[{'active':'true'}],'useMinWidth':true},{'active':true,'type':'text','prop':'desp','label':'描述','linkTarget':'_blank','headerAlign':'left','align':'left','sortable':false,'openFilter':false,'combi':[{'active':'true'}],'tagMap':[{'active':'true','type':'text'}],'iconMap':[{'active':'true'}],'filterMap':[{'active':'true'}]}]" :table-data="roleTableData" :selection="`multi`" :t-height="`100%`" :t-max-height="`100%`" :open-index="false" :open-page="true" :page-size="pageSize" :open-set-page-callback="true" :set-page-callback="`getPageRoleList`" :total-count="roleTotalCount" :tool-bar="true" :tool-title="`操作`" :tool-width="280" :tool-btns="[{'active':'true','btnName':'关联菜单','type':'text','handler':'openAssociateMenuSubPage','rowName':'','toolIcon':'','rowValue':''},{'active':true,'btnName':'关联权限','type':'text','handler':'openAssociateAuthSubPage','rowName':'','toolIcon':'','rowValue':''},{'active':true,'btnName':'关联组件','type':'text','handler':'openComponentPage','rowName':'','toolIcon':'','rowValue':''},{'active':true,'btnName':'编辑','type':'text','handler':'openEditRoleSubPage','rowName':'','toolIcon':'','rowValue':''}]" :expand="false" @_op_table_table:selection-change="v2_component_table_1578902624000" ref="v2-component-table_1578839285432">
@@ -50,7 +42,7 @@
 
                         ]
                     },
-                    'mapping': {"1578839285432":[{"id":1578839285432,"modelValue":"tableData","dataValue":"roleTableData","type":""},{"id":1578839285432,"modelValue":"pageSize","dataValue":"pageSize","type":""},{"id":1578839285432,"modelValue":"totalCount","dataValue":"roleTotalCount","type":""}],"1578839218090":[{"id":1578839218090,"modelValue":"value","dataValue":"queryRoleParams.roleName","type":""}],"1578886111204":[{"id":1578886111204,"modelValue":"value","dataValue":"queryRoleParams.createTime","type":""}],"1578839881638":[{"id":1578839881638,"modelValue":"total","dataValue":"roleTotalCount","type":""},{"id":1578839881638,"modelValue":"pageSize","dataValue":"pageSize","type":""},{"id":1578839881638,"modelValue":"currentPage","dataValue":"currentPage","type":""}],"1578839276942":[{"id":1578839276942,"modelValue":"disabled","dataValue":"isDisabled","type":"boolean"}],"1579058658755":[{"id":1579058658755,"modelValue":"disabled","dataValue":"isDisabled","type":"boolean"}],"1579058632986":[{"id":1579058632986,"modelValue":"visible","dataValue":"$AUTH(`role/roleList`,1579058632986)","type":""},{"id":1579058632986,"modelValue":"disabled","dataValue":"isDisabled","type":"boolean"}],"1579070147220":[{"id":1579070147220,"modelValue":"disabled","dataValue":"isDisabled","type":"boolean"}],"1579169614891":[{"id":1579169614891,"modelValue":"disabled","dataValue":"isDisabled","type":"boolean"}],"1579239830566":[{"id":1579239830566,"modelValue":"disabled","dataValue":"isDisabled","type":"boolean"},{"id":1579239830566,"modelValue":"visible","dataValue":"$AUTH(`role/roleList`,1579239830566)","type":""}],"1586250571705":[{"id":1586250571705,"modelValue":"disabled","dataValue":"isDisablePrint","type":"boolean"}],"1603072569815":[{"id":1603072569815,"modelValue":"value","dataValue":"queryRoleParams.roleName","type":""}],"1603072597918":[{"id":1603072597918,"modelValue":"value","dataValue":"queryRoleParams.createTime","type":""}]}
+                    'mapping': {"1578839285432":[{"id":1578839285432,"modelValue":"tableData","dataValue":"roleTableData","type":""},{"id":1578839285432,"modelValue":"pageSize","dataValue":"pageSize","type":""},{"id":1578839285432,"modelValue":"totalCount","dataValue":"roleTotalCount","type":""}],"1578839218090":[{"id":1578839218090,"modelValue":"value","dataValue":"queryRoleParams.roleName","type":""}],"1578886111204":[{"id":1578886111204,"modelValue":"value","dataValue":"queryRoleParams.createTime","type":""}],"1578839881638":[{"id":1578839881638,"modelValue":"total","dataValue":"roleTotalCount","type":""},{"id":1578839881638,"modelValue":"pageSize","dataValue":"pageSize","type":""},{"id":1578839881638,"modelValue":"currentPage","dataValue":"currentPage","type":""}],"1578839276942":[{"id":1578839276942,"modelValue":"disabled","dataValue":"isDisabled","type":"boolean"}],"1579058658755":[{"id":1579058658755,"modelValue":"disabled","dataValue":"isDisabled","type":"boolean"}],"1579058632986":[{"id":1579058632986,"modelValue":"disabled","dataValue":"isDisabled","type":"boolean"},{"id":1579058632986,"modelValue":"visible","dataValue":"$AUTH(`role/roleList`,1579058632986)","type":""}],"1579070147220":[{"id":1579070147220,"modelValue":"disabled","dataValue":"isDisabled","type":"boolean"}],"1579169614891":[{"id":1579169614891,"modelValue":"disabled","dataValue":"isDisabled","type":"boolean"}],"1579239830566":[{"id":1579239830566,"modelValue":"disabled","dataValue":"isDisabled","type":"boolean"},{"id":1579239830566,"modelValue":"visible","dataValue":"$AUTH(`role/roleList`,1579239830566)","type":""}],"1586250571705":[{"id":1586250571705,"modelValue":"disabled","dataValue":"isDisablePrint","type":"boolean"}],"1603072569815":[{"id":1603072569815,"modelValue":"value","dataValue":"queryRoleParams.roleName","type":""}],"1603072597918":[{"id":1603072597918,"modelValue":"value","dataValue":"queryRoleParams.createTime","type":""}]}
                 },
                 /* 角色表格数据 */
                 'roleTableData': [],
@@ -248,7 +240,7 @@
                 //console.log(ctx.__getVueIns('_op_pagination'));
                 ctx.$axios.post(`${axios.server}/role/list`,params).then(res=>{
                     if(res.success&&res.status){
-                      const tableData = res.obj&&res.obj.content||[];
+                      const tableData = res.obj&&res.obj.records||[];
                       
                       ctx.roleTableData  = tableData.map(function(item){
                         return{
@@ -517,26 +509,6 @@
                 });
             },
             /**
-             *  导出excel文件
-             *  @param $event $event
-             *  @param 组件的vue实例 vueIns
-             */
-            v2_component_btn_1579059575000($event, vueIns=this.$refs['v2-component-btn_1579058632986']) {
-                /**
-                * 事件绑定在vue实例上，第一个参数是vue实例。
-                * 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN
-                **/
-                
-                //函数内直接用ctx代替this访问vue页面的数据。
-                const ctx = this;
-                /**
-                方法名称：exportExcel
-                方法描述：导出excel
-                
-                **/
-                ctx.exportExcel();
-            },
-            /**
              *  v2_component_btn_1579059590000
              *  @param 组件的vue实例 vueIns
              */
@@ -580,56 +552,6 @@
                 }
             },
             /**
-             *  导出pdf文件
-             *  @param $event $event
-             *  @param 组件的vue实例 vueIns
-             */
-            v2_component_btn_1579239816000($event, vueIns=this.$refs['v2-component-btn_1579239830566']) {
-                /**
-                * 事件绑定在vue实例上，第一个参数是vue实例。
-                * 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN
-                **/
-                
-                //函数内直接用ctx代替this访问vue页面的数据。
-                const ctx = this;
-                /**
-                方法名称：exportPdf
-                方法描述：导出pdf
-                
-                **/
-                ctx.exportPdf();
-            },
-            /**
-             *  打开导入子页面
-             *  @param $event $event
-             *  @param 组件的vue实例 vueIns
-             */
-            v2_component_btn_1579240033000($event, vueIns=this.$refs['v2-component-btn_1579240061839']) {
-                /**
-                * 事件绑定在vue实例上，第一个参数是vue实例。
-                * 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN
-                **/
-                
-                //函数内直接用ctx代替this访问vue页面的数据。
-                const ctx = this;
-                ctx.openImportFilePage();
-                // ctx.open({
-                //     title:'导入流程',
-                //     path:'role/import',
-                //     component:'role/importFileTemplate',
-                //     type:'SUB',
-                //     closeOnClickModal:false,
-                //     hideConfirmBtn:true, 
-                //     hideCancelBtn:true, 
-                //     confirmCallback:() => { 
-                //         ctx.getPageRoleList();
-                //     },
-                //     cancelCallback:(e) => {
-                
-                //     }
-                // });
-            },
-            /**
              *  打开导入子页面
              */
             openImportFilePage() {
@@ -650,22 +572,6 @@
                 
                     }
                 });
-            },
-            /**
-             *  打印
-             *  @param $event $event
-             *  @param 组件的vue实例 vueIns
-             */
-            v2_component_btn_1586250496000($event, vueIns=this.$refs['v2-component-btn_1586250571705']) {
-                /**
-                * 事件绑定在vue实例上，第一个参数是vue实例。
-                * 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN
-                **/
-                
-                //函数内直接用ctx代替this访问vue页面的数据。
-                /** @type {V2ViewType} */
-                const ctx = this;
-                ctx.printPage();
             },
             /**
              *  打印数据

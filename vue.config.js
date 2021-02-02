@@ -28,9 +28,10 @@ module.exports = {
       //   pathRewrite: {
       //   }
       // },
-      '/aweb-api': {
+      '/GDP': {
         // target: `http://192.168.0.38:8066/aweb-api`,
-        target: `http://localhost:8066/aweb-api`,
+        target: `http://localhost:8088/GDP`,
+
         changeOrigin: true,     // target是域名的话，需要这个参数，
         secure: false,          // 设置支持https协议的代理
         ws: false,
@@ -38,7 +39,7 @@ module.exports = {
           console.log(chalk.magentaBright(`\n > ${req.url}`))
         },
         pathRewrite: {
-          "^/aweb-api": ""
+          "^/GDP": ""
         },
 
         //重写cookie路径

@@ -324,8 +324,8 @@
                 
                 ctx.$axios.post(`${axios.server}/menu/list`,params).then(res=>{
                     if(res.success&&res.status){
-                      const tableData = res.obj&&res.obj.content||[];
-                      
+                      const tableData = res.obj&&res.obj.records||[];
+                      console.log(JSON.stringify(res))
                       ctx.menuTableList  = tableData.map(function(item){
                         return{
                           id:item.id,

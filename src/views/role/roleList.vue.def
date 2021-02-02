@@ -334,200 +334,6 @@
                         "__resolveFromCode": false,
                         "children": [],
                         "component": "v2-component-btn",
-                        "id": 1579240061839,
-                        "customClass": [
-                            "v2-component-btn-1579240061839"
-                        ],
-                        "commonStyle": {
-                            "animation-duration": "1s",
-                            "overflow": "hidden",
-                            "margin-top": "10px",
-                            "margin-bottom": "10px",
-                            "margin-left": "10px",
-                            "margin-right": "10px"
-                        },
-                        "props": [
-                            "disabled",
-                            "loading",
-                            "btnName",
-                            "leftIcon",
-                            "rightIcon",
-                            "shape",
-                            "visible",
-                            "if",
-                            "customClass"
-                        ],
-                        "theme": {
-                            "btnType": "primary",
-                            "size": "medium"
-                        },
-                        "btnName": "导入",
-                        "events": {
-                            "_op_componentBtn_btn": {
-                                "click": {
-                                    "v2_component_btn_1579240033000": {}
-                                }
-                            }
-                        },
-                        "$ref": "v2-component-btn_1579240061839",
-                        "style": {
-                            "btnStyle": {}
-                        },
-                        "disabled": false,
-                        "loading": false,
-                        "shape": "def",
-                        "visible": true,
-                        "__capacity": "1",
-                        "href": "v2-component-btn",
-                        "pid": 1578839261978,
-                        "sizeLocked": {
-                            "widthLock": false,
-                            "heightLock": false
-                        },
-                        "animate": [
-                            "",
-                            "animated"
-                        ],
-                        "$defaultProps": {
-                            "disabled": true,
-                            "loading": true,
-                            "shape": true,
-                            "visible": true
-                        }
-                    },
-                    {
-                        "__resolveFromCode": false,
-                        "children": [],
-                        "component": "v2-component-btn",
-                        "id": 1579058632986,
-                        "visible": "${$AUTH(`role/roleList`,1579058632986)}",
-                        "customClass": [
-                            "v2-component-btn-1579058632986"
-                        ],
-                        "commonStyle": {
-                            "animation-duration": "1s",
-                            "overflow": "hidden",
-                            "margin-top": "10px",
-                            "margin-bottom": "10px",
-                            "margin-left": "10px",
-                            "margin-right": "10px",
-                            "flex-shrink": "0"
-                        },
-                        "props": [
-                            "disabled",
-                            "loading",
-                            "btnName",
-                            "leftIcon",
-                            "rightIcon",
-                            "shape",
-                            "visible",
-                            "if",
-                            "customClass"
-                        ],
-                        "disabled": "${isDisabled}",
-                        "theme": {
-                            "btnType": "primary",
-                            "size": "medium"
-                        },
-                        "btnName": "导出excel",
-                        "events": {
-                            "_op_componentBtn_btn": {
-                                "click": {
-                                    "v2_component_btn_1579059575000": {}
-                                }
-                            }
-                        },
-                        "$ref": "v2-component-btn_1579058632986",
-                        "style": {
-                            "btnStyle": {}
-                        },
-                        "loading": false,
-                        "shape": "def",
-                        "__capacity": "1",
-                        "href": "v2-component-btn",
-                        "pid": 1578839261978,
-                        "sizeLocked": {
-                            "widthLock": false,
-                            "heightLock": false
-                        },
-                        "animate": [
-                            "",
-                            "animated"
-                        ],
-                        "$defaultProps": {
-                            "loading": true,
-                            "shape": true,
-                            "visible": true
-                        }
-                    },
-                    {
-                        "__resolveFromCode": false,
-                        "children": [],
-                        "component": "v2-component-btn",
-                        "id": 1579239830566,
-                        "visible": "${$AUTH(`role/roleList`,1579239830566)}",
-                        "customClass": [
-                            "v2-component-btn-1579239830566"
-                        ],
-                        "commonStyle": {
-                            "animation-duration": "1s",
-                            "overflow": "hidden",
-                            "margin-top": "10px",
-                            "margin-bottom": "10px",
-                            "margin-left": "10px",
-                            "margin-right": "10px"
-                        },
-                        "props": [
-                            "disabled",
-                            "loading",
-                            "btnName",
-                            "leftIcon",
-                            "rightIcon",
-                            "shape",
-                            "visible",
-                            "if",
-                            "customClass"
-                        ],
-                        "disabled": "${isDisabled}",
-                        "theme": {
-                            "btnType": "primary",
-                            "size": "medium"
-                        },
-                        "btnName": "导出pdf",
-                        "events": {
-                            "_op_componentBtn_btn": {
-                                "click": {
-                                    "v2_component_btn_1579239816000": {}
-                                }
-                            }
-                        },
-                        "$ref": "v2-component-btn_1579239830566",
-                        "style": {
-                            "btnStyle": {}
-                        },
-                        "loading": false,
-                        "shape": "def",
-                        "__capacity": "1",
-                        "href": "v2-component-btn",
-                        "pid": 1578839261978,
-                        "sizeLocked": {
-                            "widthLock": false,
-                            "heightLock": false
-                        },
-                        "animate": [
-                            "",
-                            "animated"
-                        ],
-                        "$defaultProps": {
-                            "loading": true,
-                            "shape": true,
-                            "visible": true
-                        }
-                    },
-                    {
-                        "__resolveFromCode": false,
-                        "children": [],
-                        "component": "v2-component-btn",
                         "id": 1579169614891,
                         "customClass": [],
                         "commonStyle": {
@@ -537,7 +343,7 @@
                             "margin-bottom": "10px",
                             "margin-left": "10px",
                             "margin-right": "10px",
-                            "flex-shrink": "0"
+                            "flex-shrink": 0
                         },
                         "props": [
                             "disabled",
@@ -585,76 +391,13 @@
                             "loading": true,
                             "visible": true
                         }
-                    },
-                    {
-                        "__resolveFromCode": false,
-                        "children": [],
-                        "component": "v2-component-btn",
-                        "id": 1586250571705,
-                        "customClass": [
-                            "v2-component-btn-1586250571705"
-                        ],
-                        "commonStyle": {
-                            "animation-duration": "1s",
-                            "overflow": "hidden",
-                            "margin-top": "10px",
-                            "margin-bottom": "10px",
-                            "margin-left": "10px",
-                            "margin-right": "10px",
-                            "flex-shrink": 0
-                        },
-                        "props": [
-                            "disabled",
-                            "loading",
-                            "btnName",
-                            "leftIcon",
-                            "rightIcon",
-                            "shape",
-                            "visible",
-                            "if",
-                            "customClass"
-                        ],
-                        "disabled": "${isDisablePrint}",
-                        "theme": {
-                            "size": "medium",
-                            "btnType": "normal"
-                        },
-                        "btnName": "打印",
-                        "shape": "plain",
-                        "events": {
-                            "_op_componentBtn_btn": {
-                                "click": {
-                                    "v2_component_btn_1586250496000": {}
-                                }
-                            }
-                        },
-                        "$ref": "v2-component-btn_1586250571705",
-                        "style": {
-                            "btnStyle": {}
-                        },
-                        "loading": false,
-                        "visible": true,
-                        "__capacity": "1",
-                        "href": "v2-component-btn",
-                        "pid": 1578839261978,
-                        "sizeLocked": {
-                            "widthLock": false,
-                            "heightLock": false
-                        },
-                        "animate": [
-                            "",
-                            "animated"
-                        ],
-                        "$defaultProps": {
-                            "loading": true,
-                            "visible": true
-                        }
                     }
                 ],
                 "component": "v2Container",
                 "id": 1578839261978,
                 "customClass": [
-                    "v2Container-1578839261978"
+                    "v2Container-1578839261978",
+                    ""
                 ],
                 "commonStyle": {
                     "display": "flex",
@@ -709,8 +452,7 @@
                 "component": "v2-component-table",
                 "id": 1578839285432,
                 "customClass": [
-                    "v2-component-table-1578839285432",
-                    ""
+                    "v2-component-table-1578839285432"
                 ],
                 "commonStyle": {
                     "animation-duration": "1s",
@@ -722,10 +464,7 @@
                     "flex-basis": "100%",
                     "width": "calc(100% - 20px)",
                     "height": "auto",
-                    "border-radius": "0px",
-                    "flex-grow": 0,
-                    "flex-shrink": 0,
-                    "opacity": 1
+                    "flex-shrink": 0
                 },
                 "props": [
                     "tooltipEffect",
@@ -1143,7 +882,7 @@
             {
                 "name": "getPageRoleList",
                 "desp": "获取分页角色列表",
-                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\npage&&(ctx.currentPage=page);\n!page&&(ctx.currentPage=1);\nsize&&(ctx.pageSize=size);\n!size&&(ctx.pageSize=10);\nconst params = {\n  \"pageNum\": ctx.currentPage,\n  \"pageSize\": ctx.pageSize,\n  \"orders\": [\n    {\n      \"key\": \"createTime\",\n      \"order\": \"desc\"\n    }\n  ],\n  \"query\": {\n\n    \"name\": ctx.queryRoleParams.roleName||'',\n  },\n  \"ranges\": [\n    {\n      \"from\": ctx.queryRoleParams.createTime?ctx.queryRoleParams.createTime[0]:null,\n      \"key\": \"createTime\",\n      \"to\":  ctx.queryRoleParams.createTime?ctx.queryRoleParams.createTime[1]+1000*60*60*24-1:null\n    }\n  ]\n};\n//console.log(ctx.__getVueIns('_op_pagination'));\nctx.$axios.post(`${axios.server}/role/list`,params).then(res=>{\n    if(res.success&&res.status){\n      const tableData = res.obj&&res.obj.content||[];\n      \n      ctx.roleTableData  = tableData.map(function(item){\n        return{\n          roleId:item.id,\n          menus:item.menus||[],\n          authorities:item.authorities||[],\n          roleName:item.name||'',\n          desp:item.desc||'',\n          createTime:ctx.timesTransferToDate(item.createTime),\n          creator:item.createUserName,\n          editor:item.updateUserName,\n          editTime:ctx.timesTransferToDate(item.updateTime)\n        }\n      });\n      ctx.roleTotalCount = res.obj&&res.obj.totalElements;\n    }\n}).catch(error=>{\n  \n})",
+                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\npage&&(ctx.currentPage=page);\n!page&&(ctx.currentPage=1);\nsize&&(ctx.pageSize=size);\n!size&&(ctx.pageSize=10);\nconst params = {\n  \"pageNum\": ctx.currentPage,\n  \"pageSize\": ctx.pageSize,\n  \"orders\": [\n    {\n      \"key\": \"createTime\",\n      \"order\": \"desc\"\n    }\n  ],\n  \"query\": {\n\n    \"name\": ctx.queryRoleParams.roleName||'',\n  },\n  \"ranges\": [\n    {\n      \"from\": ctx.queryRoleParams.createTime?ctx.queryRoleParams.createTime[0]:null,\n      \"key\": \"createTime\",\n      \"to\":  ctx.queryRoleParams.createTime?ctx.queryRoleParams.createTime[1]+1000*60*60*24-1:null\n    }\n  ]\n};\n//console.log(ctx.__getVueIns('_op_pagination'));\nctx.$axios.post(`${axios.server}/role/list`,params).then(res=>{\n    if(res.success&&res.status){\n      const tableData = res.obj&&res.obj.records||[];\n      \n      ctx.roleTableData  = tableData.map(function(item){\n        return{\n          roleId:item.id,\n          menus:item.menus||[],\n          authorities:item.authorities||[],\n          roleName:item.name||'',\n          desp:item.desc||'',\n          createTime:ctx.timesTransferToDate(item.createTime),\n          creator:item.createUserName,\n          editor:item.updateUserName,\n          editTime:ctx.timesTransferToDate(item.updateTime)\n        }\n      });\n      ctx.roleTotalCount = res.obj&&res.obj.totalElements;\n    }\n}).catch(error=>{\n  \n})",
                 "params": [
                     {
                         "name": "page",
@@ -1272,24 +1011,6 @@
                 "custom": true
             },
             {
-                "name": "v2_component_btn_1579059575000",
-                "desp": "导出excel文件",
-                "code": "/**\n* 事件绑定在vue实例上，第一个参数是vue实例。\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\n**/\n\n//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\n/**\n方法名称：exportExcel\n方法描述：导出excel\n\n**/\nctx.exportExcel();",
-                "params": [
-                    {
-                        "name": "$event",
-                        "desp": "$event"
-                    },
-                    {
-                        "name": "vueIns",
-                        "desp": "组件的vue实例"
-                    }
-                ],
-                "isEvent": true,
-                "custom": true,
-                "id": 1579059575000
-            },
-            {
                 "name": "v2_component_btn_1579059590000",
                 "desp": "v2_component_btn_1579059590000",
                 "code": "/**\n* 事件绑定在vue实例上，第一个参数是vue实例。\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\n**/\n\n//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\n/**\n方法名称：exportPdf\n方法描述：导出pdf\n\n**/\nctx.exportPdf();",
@@ -1320,66 +1041,12 @@
                 "custom": true
             },
             {
-                "name": "v2_component_btn_1579239816000",
-                "desp": "导出pdf文件",
-                "code": "/**\n* 事件绑定在vue实例上，第一个参数是vue实例。\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\n**/\n\n//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\n/**\n方法名称：exportPdf\n方法描述：导出pdf\n\n**/\nctx.exportPdf();",
-                "params": [
-                    {
-                        "name": "$event",
-                        "desp": "$event"
-                    },
-                    {
-                        "name": "vueIns",
-                        "desp": "组件的vue实例"
-                    }
-                ],
-                "isEvent": true,
-                "custom": true,
-                "id": 1579239816000
-            },
-            {
-                "name": "v2_component_btn_1579240033000",
-                "desp": "打开导入子页面",
-                "code": "/**\n* 事件绑定在vue实例上，第一个参数是vue实例。\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\n**/\n\n//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\nctx.openImportFilePage();\n// ctx.open({\n//     title:'导入流程',\n//     path:'role/import',\n//     component:'role/importFileTemplate',\n//     type:'SUB',\n//     closeOnClickModal:false,\n//     hideConfirmBtn:true, \n//     hideCancelBtn:true, \n//     confirmCallback:() => { \n//         ctx.getPageRoleList();\n//     },\n//     cancelCallback:(e) => {\n\n//     }\n// });",
-                "params": [
-                    {
-                        "name": "$event",
-                        "desp": "$event"
-                    },
-                    {
-                        "name": "vueIns",
-                        "desp": "组件的vue实例"
-                    }
-                ],
-                "isEvent": true,
-                "custom": true,
-                "id": 1579240033000
-            },
-            {
                 "name": "openImportFilePage",
                 "desp": "打开导入子页面",
                 "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\nctx.open({\n    title:'导入流程',\n    path:'role/import',\n    component:'role/importFileTemplate',\n    type:'SUB',\n    closeOnClickModal:false,\n    hideConfirmBtn:true, \n    hideCancelBtn:true, \n    confirmCallback:() => { \n        ctx.getPageRoleList();\n    },\n    cancelCallback:(e) => {\n\n    }\n});",
                 "params": [],
                 "isEvent": false,
                 "custom": true
-            },
-            {
-                "name": "v2_component_btn_1586250496000",
-                "desp": "打印",
-                "code": "/**\n* 事件绑定在vue实例上，第一个参数是vue实例。\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\n**/\n\n//函数内直接用ctx代替this访问vue页面的数据。\n/** @type {V2ViewType} */\nconst ctx = this;\nctx.printPage();",
-                "params": [
-                    {
-                        "name": "$event",
-                        "desp": "$event"
-                    },
-                    {
-                        "name": "vueIns",
-                        "desp": "组件的vue实例"
-                    }
-                ],
-                "isEvent": true,
-                "custom": true,
-                "id": 1586250496000
             },
             {
                 "name": "printPage",
@@ -1603,15 +1270,15 @@
             "1579058632986": [
                 {
                     "id": 1579058632986,
-                    "modelValue": "visible",
-                    "dataValue": "$AUTH(`role/roleList`,1579058632986)",
-                    "type": ""
-                },
-                {
-                    "id": 1579058632986,
                     "modelValue": "disabled",
                     "dataValue": "isDisabled",
                     "type": "boolean"
+                },
+                {
+                    "id": 1579058632986,
+                    "modelValue": "visible",
+                    "dataValue": "$AUTH(`role/roleList`,1579058632986)",
+                    "type": ""
                 }
             ],
             "1579070147220": [

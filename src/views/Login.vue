@@ -4,7 +4,7 @@
       <div class="login-left-ctn">
         <img src="../img/login.jpg">
         <p class="login-title">宅急送</p>
-        <p class="vue-spa-version">曾学锴 &copy; 2020</p>
+        <p class="vue-spa-version">曾学锴 &copy; 2021</p>
       </div>
       <el-form
         :model="ruleForm"
