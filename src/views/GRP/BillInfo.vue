@@ -6,7 +6,7 @@
             <v2-component-btn :wid="`1612855111983`" class="v2-component-btn-1612855111983 V2Widget" :style="{'align-self':'auto'}" :theme="{'btnType':'primary','size':''}" :disabled="false" :loading="false" :btn-name="`查询`" :shape="`def`" :if="true" @_op_component-btn_btn:undefined="v2_component_btn_1613138459846" ref="v2ComponentBtn_1">
             </v2-component-btn>
         </div>
-        <v2-component-table :wid="`1612854187456`" class="v2-component-table-1612854187456 V2Widget" :style="{'align-self':'auto','height':'90%','margin-left':'0','width':'98%','flex-shrink':0}" :setPageCallback="setPageCallback" :toolBar="true" :tableData="staffList" :pageSize="pageSize" :totalCount="addressTotalCount" :theme="{'tableType':'border','size':''}" :tooltip-effect="`dark`" :columns="[{'active':true,'type':'text','prop':'waybill_id','label':'运单号','handleLink':true,'handleLinkCB':'handleLinkCallback','linkTarget':'_blank','openTooltip':false,'handleTooltip':true,'tooltipContent':'提示','tooltipContentCallback':'tooltipContentCallback','useMinWidth':true,'headerAlign':'left','align':'left','sortable':false,'openFilter':false,'combi':[],'tagMap':[],'textMap':[],'iconMap':[],'filterMap':[]},{'active':true,'type':'text','prop':'order_id','label':'订单号','handleLink':true,'handleLinkCB':'handleLinkCallback','linkTarget':'_blank','openTooltip':false,'handleTooltip':true,'tooltipContent':'提示','tooltipContentCallback':'tooltipContentCallback','useMinWidth':true,'headerAlign':'left','align':'left','sortable':false,'openFilter':false,'combi':[],'tagMap':[],'textMap':[],'iconMap':[],'filterMap':[]},{'active':true,'type':'text','prop':'status','label':'状态','handleLink':true,'handleLinkCB':'handleLinkCallback','linkTarget':'_blank','openTooltip':false,'handleTooltip':true,'tooltipContent':'提示','tooltipContentCallback':'tooltipContentCallback','useMinWidth':true,'headerAlign':'left','align':'left','sortable':false,'openFilter':false,'combi':[],'tagMap':[],'textMap':[],'iconMap':[],'filterMap':[]},{'active':true,'type':'text','prop':'pay','label':'是否付款','handleLink':true,'handleLinkCB':'handleLinkCallback','linkTarget':'_blank','openTooltip':false,'handleTooltip':true,'tooltipContent':'提示','tooltipContentCallback':'tooltipContentCallback','useMinWidth':true,'headerAlign':'left','align':'left','sortable':false,'openFilter':false,'combi':[],'tagMap':[],'textMap':[],'iconMap':[],'filterMap':[]}]" :table-data="staffList" :selection-location="`left`" :t-height="`100%`" :t-max-height="`100%`" :open-index="false" :loading="false" :index-location="`left`" :open-page="true" :page-size="pageSize" :open-set-page-callback="true" :set-page-callback="`getAddressInfo`" :total-count="addressTotalCount" :tool-bar="true" :tool-title="`操作`" :tool-header-align="`left`" :tool-location="`right`" :tool-width="100" :tool-btns="[{'active':true,'btnName':'编辑','type':'text','handler':'','rowName':' ','toolIcon':' ','rowValue':' '},{'active':true,'btnName':'运单物流','type':'text','handler':'','rowName':' ','toolIcon':' ','rowValue':' '}]" :expand="false" :if="true" ref="v2ComponentTable_1">
+        <v2-component-table :wid="`1612854187456`" class="v2-component-table-1612854187456 V2Widget" :style="{'align-self':'auto','height':'816.00px','margin-left':'0','width':'calc(100% - 20px)','flex-shrink':0}" :setPageCallback="setPageCallback" :toolBar="true" :tableData="billInfoList" :pageSize="pageSize" :totalCount="billTotalCount" :theme="{'tableType':'border','size':''}" :tooltip-effect="`dark`" :columns="[{'active':true,'type':'text','prop':'waybill_id','label':'运单号','handleLink':true,'handleLinkCB':'handleLinkCallback','linkTarget':'_blank','openTooltip':false,'handleTooltip':true,'tooltipContent':'提示','tooltipContentCallback':'tooltipContentCallback','useMinWidth':true,'headerAlign':'left','align':'left','sortable':false,'openFilter':false,'combi':[],'tagMap':[],'textMap':[],'iconMap':[],'filterMap':[]},{'active':true,'type':'text','prop':'order_id','label':'订单号','handleLink':true,'handleLinkCB':'handleLinkCallback','linkTarget':'_blank','openTooltip':false,'handleTooltip':true,'tooltipContent':'提示','tooltipContentCallback':'tooltipContentCallback','useMinWidth':true,'headerAlign':'left','align':'left','sortable':false,'openFilter':false,'combi':[],'tagMap':[],'textMap':[],'iconMap':[],'filterMap':[]},{'active':true,'type':'text','prop':'status','label':'状态','handleLink':true,'handleLinkCB':'handleLinkCallback','linkTarget':'_blank','openTooltip':false,'handleTooltip':true,'tooltipContent':'提示','tooltipContentCallback':'tooltipContentCallback','useMinWidth':true,'headerAlign':'left','align':'left','sortable':false,'openFilter':false,'combi':[],'tagMap':[],'textMap':[],'iconMap':[],'filterMap':[]},{'active':true,'type':'text','prop':'pay','label':'是否付款','handleLink':true,'handleLinkCB':'handleLinkCallback','linkTarget':'_blank','openTooltip':false,'handleTooltip':true,'tooltipContent':'提示','tooltipContentCallback':'tooltipContentCallback','useMinWidth':true,'headerAlign':'left','align':'left','sortable':false,'openFilter':false,'combi':[],'tagMap':[],'textMap':[],'iconMap':[],'filterMap':[]}]" :table-data="billInfoList" :selection-location="`left`" :t-height="`100%`" :t-max-height="`100%`" :open-index="false" :loading="false" :index-location="`left`" :open-page="true" :page-size="pageSize" :open-set-page-callback="true" :set-page-callback="`getbillInfo`" :total-count="billTotalCount" :tool-bar="true" :tool-title="`操作`" :tool-header-align="`left`" :tool-location="`right`" :tool-width="100" :tool-btns="[{'active':true,'btnName':'编辑','type':'text','handler':'','rowName':' ','toolIcon':' ','rowValue':' '},{'active':true,'btnName':'运单物流','type':'text','handler':'','rowName':' ','toolIcon':' ','rowValue':' '}]" :expand="false" :if="true" ref="v2ComponentTable_1">
         </v2-component-table>
     </v2container>
 </template>
@@ -34,10 +34,12 @@
 
                         ]
                     },
-                    'mapping': {"1612854187456":[{"id":1612854187456,"modelValue":"setPageCallback","dataValue":"setPageCallback","type":""},{"id":1612854187456,"modelValue":"toolBar","dataValue":"true","type":""},{"id":1612854187456,"modelValue":"tableData","dataValue":"staffList","type":""},{"id":1612854187456,"modelValue":"pageSize","dataValue":"pageSize","type":""},{"id":1612854187456,"modelValue":"totalCount","dataValue":"addressTotalCount","type":""}],"1612854599723":[{"id":1612854599723,"modelValue":"value","dataValue":"waybill_id","type":""}]}
+                    'mapping': {"1612854187456":[{"id":1612854187456,"modelValue":"setPageCallback","dataValue":"setPageCallback","type":""},{"id":1612854187456,"modelValue":"toolBar","dataValue":"true","type":""},{"id":1612854187456,"modelValue":"tableData","dataValue":"billInfoList","type":""},{"id":1612854187456,"modelValue":"pageSize","dataValue":"pageSize","type":""},{"id":1612854187456,"modelValue":"totalCount","dataValue":"billTotalCount","type":""}],"1612854599723":[{"id":1612854599723,"modelValue":"value","dataValue":"waybill_id","type":""}]}
                 },
-                /* 运单信息 */
+                /* 运单号 */
                 'waybill_id': '',
+                /* 运单信息列表 */
+                'billInfoList': [],
                 /* 版本号，请勿修改 */
                 '__VERSION': 4.0
             }
@@ -49,14 +51,8 @@
                     return 10
                 }
             },
-            /* 客户地址信息列表 */
-            'staffList': {
-                'default': () => {
-                    return []
-                }
-            },
             /* 数据总条数 */
-            'staffTotalCount': {
+            'billTotalCount': {
                 'default': () => {
                     return 1
                 }
@@ -70,9 +66,11 @@
         },
         'methods': {
             /**
-             *  获取客户地址信息
+             *  获取运单信息
+             *  @param 新参数 page
+             *  @param 新参数 size
              */
-            getStaffInfo() {
+            getbillInfo(page, size) {
                 //函数内直接用ctx代替this访问vue页面的数据。
                 const ctx = this;
                 page&&(ctx.currentPage=page);
@@ -82,22 +80,22 @@
                 const params = {
                   "pageNum": ctx.currentPage,
                   "pageSize": ctx.pageSize,
-                  "staff_name":ctx.staff_name
+                  "orders": [],
+                  "query": {
+                    "waybillId": ctx.waybill_id
+                  },
+                  "ranges": []
                 };
-                
-                ctx.$axios.post(`${axios.server}/staff/list`,params).then(res=>{
+                ctx.$axios.post(`${axios.server}/billInfo/list`,params).then(res=>{
                     if(res.success&&res.status){
-                      const tableData = res.obj&&res.obj.records||[];
+                      const tableData = res.obj||[];
                       
-                      ctx.staffList  = tableData.map(function(item){
+                      ctx.billInfoList  = tableData.map(function(item){
                         return{
-                          staff_name:item.staff_name,
-                          staff_age:item.staff_age,
-                          staff_sex:item.staff_sex,
-                          staff_id:item.staff_id,
-                          staff_phone:item.staff_phone,
-                          hiredate:item.hiredate,
-                          dot_id:item.dot_id
+                          waybill_id:item.waybillId,
+                          order_id:item.orderId,
+                          status:item.staff_sex,
+                          pay:item.staff_id,
                         }
                       });
                       ctx.staffTotalCount = res.obj&&res.obj.totalElements;

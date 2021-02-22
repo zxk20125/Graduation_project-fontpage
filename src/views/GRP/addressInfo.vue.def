@@ -20,27 +20,29 @@
                             "flex-shrink": 0
                         },
                         "props": [
-                            "value",
+                            "theme",
                             "disabled",
                             "label",
                             "placeholder",
-                            "prepend",
-                            "append",
                             "titleMode",
                             "labelWitdh",
                             "inputType",
                             "rows",
-                            "maxlength",
-                            "minlength",
-                            "prefixIcon",
-                            "suffixIcon",
                             "showWordLimit",
                             "clearable",
                             "isRequired",
                             "autoComplete",
+                            "if",
+                            "value.sync",
+                            "value",
+                            "prepend",
+                            "append",
+                            "maxlength",
+                            "minlength",
+                            "prefixIcon",
+                            "suffixIcon",
                             "suggestion",
                             "visible",
-                            "if",
                             "customClass"
                         ],
                         "theme": {
@@ -92,14 +94,15 @@
                             "align-self": "auto"
                         },
                         "props": [
+                            "theme",
                             "disabled",
                             "loading",
                             "btnName",
+                            "shape",
+                            "if",
                             "leftIcon",
                             "rightIcon",
-                            "shape",
                             "visible",
-                            "if",
                             "customClass"
                         ],
                         "theme": {
@@ -149,8 +152,8 @@
                     "height": "auto"
                 },
                 "props": [
-                    "visible",
                     "if",
+                    "visible",
                     "element-loading-text",
                     "element-loading-spinner",
                     "element-loading-background",
@@ -191,20 +194,19 @@
                 ],
                 "commonStyle": {
                     "align-self": "auto",
-                    "height": "578.00px",
+                    "height": "864.00px",
                     "margin-left": "0",
                     "width": "calc(100% - 20px)",
-                    "flex-shrink": 0,
-                    "border-radius": "0px",
-                    "opacity": 1
+                    "flex-shrink": 0
                 },
                 "props": [
+                    "setPageCallback",
+                    "tableData",
+                    "pageSize",
+                    "totalCount",
+                    "theme",
                     "tooltipEffect",
                     "columns",
-                    "tableData",
-                    "selection",
-                    "radioSelect",
-                    "value",
                     "selectionLocation",
                     "tHeight",
                     "tMaxHeight",
@@ -212,13 +214,7 @@
                     "loading",
                     "indexLocation",
                     "openPage",
-                    "pagerCount",
-                    "pageSizes",
-                    "pageSize",
                     "openSetPageCallback",
-                    "setPageCallback",
-                    "currentPage",
-                    "totalCount",
                     "toolBar",
                     "toolTitle",
                     "toolHeaderAlign",
@@ -226,9 +222,15 @@
                     "toolWidth",
                     "toolBtns",
                     "expand",
+                    "if",
+                    "selection",
+                    "radioSelect",
+                    "value",
+                    "pagerCount",
+                    "pageSizes",
+                    "currentPage",
                     "expandMap",
                     "visible",
-                    "if",
                     "customClass"
                 ],
                 "setPageCallback": "getAddressInfo",
@@ -371,9 +373,8 @@
         "component": "v2Container",
         "id": "root",
         "commonStyle": {
-            "flex-shrink": 0,
-            "box-sizing": "border-box",
-            "flex-grow": 0
+            "flex-shrink": "0",
+            "box-sizing": "border-box"
         },
         "customClass": [],
         "$ref": "v2Container_root",
@@ -408,7 +409,7 @@
             {
                 "name": "getAddressInfo",
                 "desp": "获取客户地址信息",
-                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\npage&&(ctx.currentPage=page);\n!page&&(ctx.currentPage=1);\nsize&&(ctx.pageSize=size);\n!size&&(ctx.pageSize=10);\nconst params = {\n  \"pageNum\": ctx.currentPage,\n  \"pageSize\": ctx.pageSize,\n  \"orders\": [\n    {\n      \"key\": \"\",\n      \"order\": \"\"\n    }\n  ],\n  \"query\": {\n    \"name\": ctx.login_name||'',\n  },\n    \"ranges\": [\n    {\n      \"from\":\"\",\n      \"key\": \"\",\n      \"to\":  \"\"\n    }\n  ]\n};\n\nctx.$axios.post(`${axios.server}/address/list`,params).then(res=>{\n    if(res.success&&res.status){\n      const tableData = res.obj&&res.obj||[];\n      \n      ctx.addressList  = tableData.map(function(item){\n        return{\n          login_name:item.login_name,\n          address_name:item.address_name||'',\n          address:item.address||'',\n          phone:item.phone\n        }\n      });\n      ctx.addressTotalCount = res.obj&&res.obj.totalElements;\n    }\n}).catch(error=>{\n  \n})",
+                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\npage&&(ctx.currentPage=page);\n!page&&(ctx.currentPage=1);\nsize&&(ctx.pageSize=size);\n!size&&(ctx.pageSize=10);\nconst params = {\n  \"pageNum\": ctx.currentPage,\n  \"pageSize\": ctx.pageSize,\n  \"orders\": [],\n  \"query\": {\n    \"login_name\": ctx.login_name\n  },\n  \"ranges\": []\n};\n\nctx.$axios.post(`${axios.server}/addressInfo/list`,params).then(res=>{\n    if(res.success&&res.status){\n      const tableData = res.obj&&res.obj||[];\n      \n      ctx.addressList  = tableData.map(function(item){\n        return{\n          login_name:item.login_name,\n          address_name:item.address_name||'',\n          address:item.address||'',\n          phone:item.phone\n        }\n      });\n      ctx.addressTotalCount = res.obj&&res.obj.totalElements;\n    }\n}).catch(error=>{\n  \n})",
                 "params": [
                     {
                         "name": "page",

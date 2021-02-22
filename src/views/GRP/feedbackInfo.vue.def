@@ -16,7 +16,9 @@
                     "height": "90%",
                     "margin-left": "0",
                     "width": "98%",
-                    "flex-shrink": 0
+                    "flex-shrink": 0,
+                    "border-radius": "0px",
+                    "opacity": 1
                 },
                 "props": [
                     "tooltipEffect",
@@ -51,11 +53,11 @@
                     "if",
                     "customClass"
                 ],
-                "setPageCallback": "getAddressInfo",
-                "tableData": "${staffList}",
+                "setPageCallback": "getfeedBackInfo",
+                "toolBar": true,
+                "tableData": "${feedBackfList}",
                 "pageSize": "${pageSize}",
                 "totalCount": "${addressTotalCount}",
-                "toolBar": true,
                 "theme": {
                     "tableType": "border",
                     "size": ""
@@ -244,10 +246,19 @@
     "logic": {
         "methods": [
             {
-                "name": "getStaffInfo",
+                "name": "getfeedBackInfo",
                 "desp": "获取客户地址信息",
-                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\npage&&(ctx.currentPage=page);\n!page&&(ctx.currentPage=1);\nsize&&(ctx.pageSize=size);\n!size&&(ctx.pageSize=10);\nconst params = {\n  \"pageNum\": ctx.currentPage,\n  \"pageSize\": ctx.pageSize,\n  \"staff_name\":ctx.staff_name\n};\n\nctx.$axios.post(`${axios.server}/staff/list`,params).then(res=>{\n    if(res.success&&res.status){\n      const tableData = res.obj&&res.obj.records||[];\n      \n      ctx.staffList  = tableData.map(function(item){\n        return{\n          staff_name:item.staff_name,\n          staff_age:item.staff_age,\n          staff_sex:item.staff_sex,\n          staff_id:item.staff_id,\n          staff_phone:item.staff_phone,\n          hiredate:item.hiredate,\n          dot_id:item.dot_id\n        }\n      });\n      ctx.staffTotalCount = res.obj&&res.obj.totalElements;\n    }\n}).catch(error=>{\n  \n})",
-                "params": [],
+                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\npage&&(ctx.currentPage=page);\n!page&&(ctx.currentPage=1);\nsize&&(ctx.pageSize=size);\n!size&&(ctx.pageSize=10);\n\nctx.$axios.get(`${axios.server}/feedBackInfo/list`).then(res=>{\n    if(res.success&&res.status){\n      const tableData = res.obj||[];\n      ctx.feedBackfList  = tableData.map(function(item){\n        return{\n          customer_id:item.feedbackId,\n          feedback_content:item.feedbackContent,\n          customer_phone:item.staff_sex,\n          customer_email:item.mailxbox,\n        }\n      });\n      ctx.staffTotalCount = res.obj&&res.obj.totalElements;\n    }\n}).catch(error=>{\n  \n})",
+                "params": [
+                    {
+                        "name": "page",
+                        "desp": "新参数"
+                    },
+                    {
+                        "name": "size",
+                        "desp": "新参数"
+                    }
+                ],
                 "isEvent": false,
                 "custom": true
             },
@@ -318,9 +329,9 @@
                 "isExposed": true
             },
             {
-                "desp": "客户地址信息列表",
-                "name": "staffList",
-                "code": "[]",
+                "desp": "数据总条数",
+                "name": "staffTotalCount",
+                "code": "1",
                 "source": "pageData",
                 "belongTo": "data",
                 "type": "data",
@@ -329,9 +340,9 @@
                 "isExposed": true
             },
             {
-                "desp": "数据总条数",
-                "name": "staffTotalCount",
-                "code": "1",
+                "desp": "客户地址信息列表",
+                "name": "feedBackfList",
+                "code": "[]",
                 "source": "pageData",
                 "belongTo": "data",
                 "type": "data",
@@ -357,7 +368,7 @@
                 {
                     "id": 1612854187456,
                     "modelValue": "tableData",
-                    "dataValue": "staffList",
+                    "dataValue": "feedBackfList",
                     "type": ""
                 },
                 {

@@ -61,9 +61,9 @@
                 ],
                 "commonStyle": {
                     "align-self": "auto",
-                    "height": "90%",
+                    "height": "816.00px",
                     "margin-left": "0",
-                    "width": "98%",
+                    "width": "calc(100% - 20px)",
                     "flex-shrink": 0,
                     "border-radius": "0px",
                     "opacity": 1
@@ -101,9 +101,9 @@
                     "if",
                     "customClass"
                 ],
-                "setPageCallback": "getAddressInfo",
+                "setPageCallback": "getshipAddressInfo",
                 "toolBar": true,
-                "tableData": "${branchList}",
+                "tableData": "${shipAddressList}",
                 "pageSize": "${pageSize}",
                 "totalCount": "${addressTotalCount}",
                 "theme": {
@@ -160,7 +160,7 @@
                     },
                     {
                         "active": true,
-                        "type": "text",
+                        "type": "money",
                         "prop": "ship_address_money ",
                         "label": "定价(元)",
                         "handleLink": true,
@@ -182,6 +182,7 @@
                         "filterMap": []
                     }
                 ],
+                "selection": "multi",
                 "selectionLocation": "left",
                 "tHeight": "100%",
                 "tMaxHeight": "100%",
@@ -208,6 +209,7 @@
                 "expand": false,
                 "if": true,
                 "$ref": "v2ComponentTable_1",
+                "value.sync": "${selectData}",
                 "visible": true,
                 "__capacity": "1",
                 "href": "v2-component-table",
@@ -223,15 +225,15 @@
                     "",
                     "animated"
                 ],
-                "selection": "multi",
                 "value": "${selectData}"
             }
         ],
         "component": "v2Container",
         "id": "root",
         "commonStyle": {
-            "flex-shrink": "0",
-            "box-sizing": "border-box"
+            "flex-shrink": 0,
+            "box-sizing": "border-box",
+            "flex-grow": 0
         },
         "customClass": [],
         "$ref": "v2Container_root",
@@ -264,10 +266,19 @@
     "logic": {
         "methods": [
             {
-                "name": "getStaffInfo",
+                "name": "getshipAddressInfo",
                 "desp": "获取客户地址信息",
-                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\npage&&(ctx.currentPage=page);\n!page&&(ctx.currentPage=1);\nsize&&(ctx.pageSize=size);\n!size&&(ctx.pageSize=10);\nconst params = {\n  \"pageNum\": ctx.currentPage,\n  \"pageSize\": ctx.pageSize,\n  \"staff_name\":ctx.staff_name\n};\n\nctx.$axios.post(`${axios.server}/staff/list`,params).then(res=>{\n    if(res.success&&res.status){\n      const tableData = res.obj&&res.obj.records||[];\n      \n      ctx.staffList  = tableData.map(function(item){\n        return{\n          staff_name:item.staff_name,\n          staff_age:item.staff_age,\n          staff_sex:item.staff_sex,\n          staff_id:item.staff_id,\n          staff_phone:item.staff_phone,\n          hiredate:item.hiredate,\n          dot_id:item.dot_id\n        }\n      });\n      ctx.staffTotalCount = res.obj&&res.obj.totalElements;\n    }\n}).catch(error=>{\n  \n})",
-                "params": [],
+                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\npage && (ctx.currentPage = page);\n!page && (ctx.currentPage = 1);\nsize && (ctx.pageSize = size);\n!size && (ctx.pageSize = 10);\nconst params = {\n  \"pageNum\": ctx.currentPage,\n  \"pageSize\": ctx.pageSize,\n  \"orders\": [],\n  \"query\": {\n    \"customerName\": ctx.name,\n    \"idCardNo\": ctx.id_cardno\n  },\n  \"ranges\": []\n};\n\nctx.$axios.post(`${axios.server}/shipAddressInfo/list`, params).then(res => {\n  if (res.success && res.status) {\n    const tableData = res.obj || [];\n\n    ctx.shipAddressList = tableData.map(function (item) {\n      return {\n        start_address: item.startAddress,\n        end_address: item.endAddress,\n        ship_address_money: item.shipAddressMoney,\n      }\n    });\n    ctx.staffTotalCount = res.obj && res.obj.totalElements;\n  }\n}).catch(error => {\n\n})",
+                "params": [
+                    {
+                        "name": "page",
+                        "desp": "新参数"
+                    },
+                    {
+                        "name": "size",
+                        "desp": "新参数"
+                    }
+                ],
                 "isEvent": false,
                 "custom": true
             },
@@ -317,6 +328,16 @@
         "data": {},
         "list": [
             {
+                "desp": "选中的数据",
+                "name": "selectData",
+                "code": "``",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false,
+                "sync": false
+            },
+            {
                 "desp": "页码数",
                 "name": "pageSize",
                 "code": "10",
@@ -340,7 +361,7 @@
             },
             {
                 "desp": "客户地址信息列表",
-                "name": "branchList",
+                "name": "shipAddressList",
                 "code": "[]",
                 "source": "pageData",
                 "belongTo": "data",
@@ -348,16 +369,6 @@
                 "showSet": false,
                 "sync": false,
                 "isExposed": true
-            },
-            {
-                "desp": "选中的数据",
-                "name": "selectData",
-                "code": "",
-                "setCode": "",
-                "source": "pageData",
-                "belongTo": "data",
-                "type": "data",
-                "showSet": false
             }
         ],
         "mapping": {
@@ -377,7 +388,13 @@
                 {
                     "id": 1612854187456,
                     "modelValue": "tableData",
-                    "dataValue": "branchList",
+                    "dataValue": "shipAddressList",
+                    "type": ""
+                },
+                {
+                    "id": 1612854187456,
+                    "modelValue": "value",
+                    "dataValue": "selectData",
                     "type": ""
                 },
                 {
@@ -390,12 +407,6 @@
                     "id": 1612854187456,
                     "modelValue": "totalCount",
                     "dataValue": "addressTotalCount",
-                    "type": ""
-                },
-                {
-                    "id": 1612854187456,
-                    "modelValue": "value",
-                    "dataValue": "selectData",
                     "type": ""
                 }
             ],

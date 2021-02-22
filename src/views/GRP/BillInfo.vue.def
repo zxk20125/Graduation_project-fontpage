@@ -19,9 +19,7 @@
                             "align-self": "auto",
                             "padding-left": 0,
                             "flex-shrink": 0,
-                            "border-radius": "0px",
-                            "flex-grow": 0,
-                            "opacity": 1
+                            "flex-grow": 0
                         },
                         "props": [
                             "value",
@@ -63,7 +61,7 @@
                         "autoComplete": false,
                         "if": true,
                         "$ref": "v2FormInput_4",
-                        "value.sync": "${staff_name}",
+                        "value.sync": "${waybill_id}",
                         "style": {
                             "label": {}
                         },
@@ -90,8 +88,7 @@
                         "component": "v2-component-btn",
                         "id": 1612855111983,
                         "customClass": [
-                            "v2-component-btn-1612855111983",
-                            ""
+                            "v2-component-btn-1612855111983"
                         ],
                         "commonStyle": {
                             "align-self": "auto"
@@ -143,8 +140,7 @@
                 "component": "v2Container",
                 "id": 1612854178100,
                 "customClass": [
-                    "v2Container-1612854178100",
-                    ""
+                    "v2Container-1612854178100"
                 ],
                 "commonStyle": {
                     "box-sizing": "border-box",
@@ -197,10 +193,12 @@
                 ],
                 "commonStyle": {
                     "align-self": "auto",
-                    "height": "90%",
+                    "height": "816.00px",
                     "margin-left": "0",
-                    "width": "98%",
-                    "flex-shrink": 0
+                    "width": "calc(100% - 20px)",
+                    "flex-shrink": 0,
+                    "border-radius": "0px",
+                    "opacity": 1
                 },
                 "props": [
                     "tooltipEffect",
@@ -235,11 +233,11 @@
                     "if",
                     "customClass"
                 ],
-                "setPageCallback": "getAddressInfo",
-                "tableData": "${staffList}",
-                "pageSize": "${pageSize}",
-                "totalCount": "${addressTotalCount}",
+                "setPageCallback": "getbillInfo",
                 "toolBar": true,
+                "tableData": "${billInfoList}",
+                "pageSize": "${pageSize}",
+                "totalCount": "${billTotalCount}",
                 "theme": {
                     "tableType": "border",
                     "size": ""
@@ -428,10 +426,19 @@
     "logic": {
         "methods": [
             {
-                "name": "getStaffInfo",
-                "desp": "获取客户地址信息",
-                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\npage&&(ctx.currentPage=page);\n!page&&(ctx.currentPage=1);\nsize&&(ctx.pageSize=size);\n!size&&(ctx.pageSize=10);\nconst params = {\n  \"pageNum\": ctx.currentPage,\n  \"pageSize\": ctx.pageSize,\n  \"staff_name\":ctx.staff_name\n};\n\nctx.$axios.post(`${axios.server}/staff/list`,params).then(res=>{\n    if(res.success&&res.status){\n      const tableData = res.obj&&res.obj.records||[];\n      \n      ctx.staffList  = tableData.map(function(item){\n        return{\n          staff_name:item.staff_name,\n          staff_age:item.staff_age,\n          staff_sex:item.staff_sex,\n          staff_id:item.staff_id,\n          staff_phone:item.staff_phone,\n          hiredate:item.hiredate,\n          dot_id:item.dot_id\n        }\n      });\n      ctx.staffTotalCount = res.obj&&res.obj.totalElements;\n    }\n}).catch(error=>{\n  \n})",
-                "params": [],
+                "name": "getbillInfo",
+                "desp": "获取运单信息",
+                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\npage&&(ctx.currentPage=page);\n!page&&(ctx.currentPage=1);\nsize&&(ctx.pageSize=size);\n!size&&(ctx.pageSize=10);\nconst params = {\n  \"pageNum\": ctx.currentPage,\n  \"pageSize\": ctx.pageSize,\n  \"orders\": [],\n  \"query\": {\n    \"waybillId\": ctx.waybill_id\n  },\n  \"ranges\": []\n};\nctx.$axios.post(`${axios.server}/billInfo/list`,params).then(res=>{\n    if(res.success&&res.status){\n      const tableData = res.obj||[];\n      \n      ctx.billInfoList  = tableData.map(function(item){\n        return{\n          waybill_id:item.waybillId,\n          order_id:item.orderId,\n          status:item.staff_sex,\n          pay:item.staff_id,\n        }\n      });\n      ctx.staffTotalCount = res.obj&&res.obj.totalElements;\n    }\n}).catch(error=>{\n  \n})",
+                "params": [
+                    {
+                        "name": "page",
+                        "desp": "新参数"
+                    },
+                    {
+                        "name": "size",
+                        "desp": "新参数"
+                    }
+                ],
                 "isEvent": false,
                 "custom": true
             },
@@ -499,6 +506,17 @@
         "data": {},
         "list": [
             {
+                "desp": "运单号",
+                "name": "waybill_id",
+                "code": "''",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false,
+                "sync": false,
+                "isExposed": false
+            },
+            {
                 "desp": "页码数",
                 "name": "pageSize",
                 "code": "10",
@@ -510,19 +528,19 @@
                 "isExposed": true
             },
             {
-                "desp": "客户地址信息列表",
-                "name": "staffList",
+                "desp": "运单信息列表",
+                "name": "billInfoList",
                 "code": "[]",
+                "setCode": "",
                 "source": "pageData",
                 "belongTo": "data",
                 "type": "data",
                 "showSet": false,
-                "sync": false,
-                "isExposed": true
+                "isExposed": false
             },
             {
                 "desp": "数据总条数",
-                "name": "staffTotalCount",
+                "name": "billTotalCount",
                 "code": "1",
                 "source": "pageData",
                 "belongTo": "data",
@@ -530,17 +548,6 @@
                 "showSet": false,
                 "sync": false,
                 "isExposed": true
-            },
-            {
-                "desp": "运单信息",
-                "name": "waybill_id",
-                "code": "''",
-                "source": "pageData",
-                "belongTo": "data",
-                "type": "data",
-                "showSet": false,
-                "sync": false,
-                "isExposed": false
             }
         ],
         "mapping": {
@@ -560,7 +567,7 @@
                 {
                     "id": 1612854187456,
                     "modelValue": "tableData",
-                    "dataValue": "staffList",
+                    "dataValue": "billInfoList",
                     "type": ""
                 },
                 {
@@ -572,7 +579,7 @@
                 {
                     "id": 1612854187456,
                     "modelValue": "totalCount",
-                    "dataValue": "addressTotalCount",
+                    "dataValue": "billTotalCount",
                     "type": ""
                 }
             ],

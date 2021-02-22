@@ -1,6 +1,6 @@
 <template>
     <v2container :wid="`root`" style="flex-shrink:0;box-sizing:border-box;" class="V2Container">
-        <v2-component-table :wid="`1612854187456`" class="v2-component-table-1612854187456 V2Widget" :style="{'align-self':'auto','height':'90%','margin-left':'0','width':'98%','flex-shrink':0}" :setPageCallback="setPageCallback" :toolBar="true" :tableData="staffList" :pageSize="pageSize" :totalCount="addressTotalCount" :theme="{'tableType':'border','size':''}" :tooltip-effect="`dark`" :columns="[{'active':true,'type':'text','prop':'customer_id','label':'反馈客户','handleLink':true,'handleLinkCB':'handleLinkCallback','linkTarget':'_blank','openTooltip':false,'handleTooltip':true,'tooltipContent':'提示','tooltipContentCallback':'tooltipContentCallback','useMinWidth':true,'headerAlign':'left','align':'left','sortable':false,'openFilter':false,'combi':[],'tagMap':[],'textMap':[],'iconMap':[],'filterMap':[]},{'active':true,'type':'text','prop':'feedback_content','label':'反馈内容','handleLink':true,'handleLinkCB':'handleLinkCallback','linkTarget':'_blank','openTooltip':false,'handleTooltip':true,'tooltipContent':'提示','tooltipContentCallback':'tooltipContentCallback','useMinWidth':true,'headerAlign':'left','align':'left','sortable':false,'openFilter':false,'combi':[],'tagMap':[],'textMap':[],'iconMap':[],'filterMap':[]},{'active':true,'type':'text','prop':'customer_phone','label':'客户联系电话','handleLink':true,'handleLinkCB':'handleLinkCallback','linkTarget':'_blank','openTooltip':false,'handleTooltip':true,'tooltipContent':'提示','tooltipContentCallback':'tooltipContentCallback','useMinWidth':true,'headerAlign':'left','align':'left','sortable':false,'openFilter':false,'combi':[],'tagMap':[],'textMap':[],'iconMap':[],'filterMap':[]},{'active':true,'type':'text','prop':'customer_email','label':'客户邮箱','handleLink':true,'handleLinkCB':'handleLinkCallback','linkTarget':'_blank','openTooltip':false,'handleTooltip':true,'tooltipContent':'提示','tooltipContentCallback':'tooltipContentCallback','useMinWidth':true,'headerAlign':'left','align':'left','sortable':false,'openFilter':false,'combi':[],'tagMap':[],'textMap':[],'iconMap':[],'filterMap':[]}]" :table-data="staffList" :selection-location="`left`" :t-height="`100%`" :t-max-height="`100%`" :open-index="false" :loading="false" :index-location="`left`" :open-page="true" :page-size="pageSize" :open-set-page-callback="true" :set-page-callback="`getAddressInfo`" :total-count="addressTotalCount" :tool-bar="true" :tool-title="`操作`" :tool-header-align="`left`" :tool-location="`right`" :tool-width="100" :tool-btns="[{'active':true,'btnName':'编辑','type':'text','handler':'','rowName':' ','toolIcon':' ','rowValue':' '},{'active':true,'btnName':'删除','type':'text','handler':'','rowName':' ','toolIcon':' ','rowValue':' '}]" :expand="false" :if="true" ref="v2ComponentTable_1">
+        <v2-component-table :wid="`1612854187456`" class="v2-component-table-1612854187456 V2Widget" :style="{'align-self':'auto','height':'90%','margin-left':'0','width':'98%','flex-shrink':0}" :setPageCallback="setPageCallback" :toolBar="true" :tableData="feedBackfList" :pageSize="pageSize" :totalCount="addressTotalCount" :theme="{'tableType':'border','size':''}" :tooltip-effect="`dark`" :columns="[{'active':true,'type':'text','prop':'customer_id','label':'反馈客户','handleLink':true,'handleLinkCB':'handleLinkCallback','linkTarget':'_blank','openTooltip':false,'handleTooltip':true,'tooltipContent':'提示','tooltipContentCallback':'tooltipContentCallback','useMinWidth':true,'headerAlign':'left','align':'left','sortable':false,'openFilter':false,'combi':[],'tagMap':[],'textMap':[],'iconMap':[],'filterMap':[]},{'active':true,'type':'text','prop':'feedback_content','label':'反馈内容','handleLink':true,'handleLinkCB':'handleLinkCallback','linkTarget':'_blank','openTooltip':false,'handleTooltip':true,'tooltipContent':'提示','tooltipContentCallback':'tooltipContentCallback','useMinWidth':true,'headerAlign':'left','align':'left','sortable':false,'openFilter':false,'combi':[],'tagMap':[],'textMap':[],'iconMap':[],'filterMap':[]},{'active':true,'type':'text','prop':'customer_phone','label':'客户联系电话','handleLink':true,'handleLinkCB':'handleLinkCallback','linkTarget':'_blank','openTooltip':false,'handleTooltip':true,'tooltipContent':'提示','tooltipContentCallback':'tooltipContentCallback','useMinWidth':true,'headerAlign':'left','align':'left','sortable':false,'openFilter':false,'combi':[],'tagMap':[],'textMap':[],'iconMap':[],'filterMap':[]},{'active':true,'type':'text','prop':'customer_email','label':'客户邮箱','handleLink':true,'handleLinkCB':'handleLinkCallback','linkTarget':'_blank','openTooltip':false,'handleTooltip':true,'tooltipContent':'提示','tooltipContentCallback':'tooltipContentCallback','useMinWidth':true,'headerAlign':'left','align':'left','sortable':false,'openFilter':false,'combi':[],'tagMap':[],'textMap':[],'iconMap':[],'filterMap':[]}]" :table-data="feedBackfList" :selection-location="`left`" :t-height="`100%`" :t-max-height="`100%`" :open-index="false" :loading="false" :index-location="`left`" :open-page="true" :page-size="pageSize" :open-set-page-callback="true" :set-page-callback="`getfeedBackInfo`" :total-count="addressTotalCount" :tool-bar="true" :tool-title="`操作`" :tool-header-align="`left`" :tool-location="`right`" :tool-width="100" :tool-btns="[{'active':true,'btnName':'编辑','type':'text','handler':'','rowName':' ','toolIcon':' ','rowValue':' '},{'active':true,'btnName':'删除','type':'text','handler':'','rowName':' ','toolIcon':' ','rowValue':' '}]" :expand="false" :if="true" ref="v2ComponentTable_1">
         </v2-component-table>
     </v2container>
 </template>
@@ -28,7 +28,7 @@
 
                         ]
                     },
-                    'mapping': {"1612854187456":[{"id":1612854187456,"modelValue":"setPageCallback","dataValue":"setPageCallback","type":""},{"id":1612854187456,"modelValue":"toolBar","dataValue":"true","type":""},{"id":1612854187456,"modelValue":"tableData","dataValue":"staffList","type":""},{"id":1612854187456,"modelValue":"pageSize","dataValue":"pageSize","type":""},{"id":1612854187456,"modelValue":"totalCount","dataValue":"addressTotalCount","type":""}],"1612854599723":[{"id":1612854599723,"modelValue":"value","dataValue":"staff_name","type":""}]}
+                    'mapping': {"1612854187456":[{"id":1612854187456,"modelValue":"setPageCallback","dataValue":"setPageCallback","type":""},{"id":1612854187456,"modelValue":"toolBar","dataValue":"true","type":""},{"id":1612854187456,"modelValue":"tableData","dataValue":"feedBackfList","type":""},{"id":1612854187456,"modelValue":"pageSize","dataValue":"pageSize","type":""},{"id":1612854187456,"modelValue":"totalCount","dataValue":"addressTotalCount","type":""}],"1612854599723":[{"id":1612854599723,"modelValue":"value","dataValue":"staff_name","type":""}]}
                 },
                 /* 员工姓名 */
                 'staff_name': '',
@@ -43,16 +43,16 @@
                     return 10
                 }
             },
-            /* 客户地址信息列表 */
-            'staffList': {
-                'default': () => {
-                    return []
-                }
-            },
             /* 数据总条数 */
             'staffTotalCount': {
                 'default': () => {
                     return 1
+                }
+            },
+            /* 客户地址信息列表 */
+            'feedBackfList': {
+                'default': () => {
+                    return []
                 }
             }
         },
@@ -65,33 +65,26 @@
         'methods': {
             /**
              *  获取客户地址信息
+             *  @param 新参数 page
+             *  @param 新参数 size
              */
-            getStaffInfo() {
+            getfeedBackInfo(page, size) {
                 //函数内直接用ctx代替this访问vue页面的数据。
                 const ctx = this;
                 page&&(ctx.currentPage=page);
                 !page&&(ctx.currentPage=1);
                 size&&(ctx.pageSize=size);
                 !size&&(ctx.pageSize=10);
-                const params = {
-                  "pageNum": ctx.currentPage,
-                  "pageSize": ctx.pageSize,
-                  "staff_name":ctx.staff_name
-                };
                 
-                ctx.$axios.post(`${axios.server}/staff/list`,params).then(res=>{
+                ctx.$axios.get(`${axios.server}/feedBackInfo/list`).then(res=>{
                     if(res.success&&res.status){
-                      const tableData = res.obj&&res.obj.records||[];
-                      
-                      ctx.staffList  = tableData.map(function(item){
+                      const tableData = res.obj||[];
+                      ctx.feedBackfList  = tableData.map(function(item){
                         return{
-                          staff_name:item.staff_name,
-                          staff_age:item.staff_age,
-                          staff_sex:item.staff_sex,
-                          staff_id:item.staff_id,
-                          staff_phone:item.staff_phone,
-                          hiredate:item.hiredate,
-                          dot_id:item.dot_id
+                          customer_id:item.feedbackId,
+                          feedback_content:item.feedbackContent,
+                          customer_phone:item.staff_sex,
+                          customer_email:item.mailxbox,
                         }
                       });
                       ctx.staffTotalCount = res.obj&&res.obj.totalElements;

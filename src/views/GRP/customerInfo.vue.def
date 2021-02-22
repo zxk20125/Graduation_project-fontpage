@@ -60,8 +60,8 @@
                         "clearable": false,
                         "isRequired": false,
                         "autoComplete": false,
-                        "value.sync": "${name}",
                         "$ref": "v2-form-input_1579152715570",
+                        "value.sync": "${name}",
                         "style": {
                             "label": {}
                         },
@@ -137,8 +137,8 @@
                         "clearable": false,
                         "isRequired": false,
                         "autoComplete": false,
-                        "value.sync": "${name}",
                         "$ref": "v2-form-input_1580789804791",
+                        "value.sync": "${name}",
                         "style": {
                             "label": {}
                         },
@@ -283,11 +283,11 @@
                 ],
                 "commonStyle": {
                     "align-self": "auto",
-                    "width": "98%",
-                    "height": "985px",
+                    "width": "calc(100% - 20px)",
+                    "height": "816.00px",
+                    "flex-shrink": 0,
                     "border-radius": "0px",
                     "flex-grow": 0,
-                    "flex-shrink": 0,
                     "opacity": 1
                 },
                 "props": [
@@ -502,7 +502,7 @@
                 "indexLocation": "left",
                 "openPage": true,
                 "openSetPageCallback": true,
-                "setPageCallback": "setPageCallback",
+                "setPageCallback": "getcustomerInfoList",
                 "toolBar": true,
                 "toolTitle": "操作",
                 "toolHeaderAlign": "left",
@@ -536,7 +536,8 @@
                 "animate": [
                     "",
                     "animated"
-                ]
+                ],
+                "totalCount": "${customerTotalCount}"
             }
         ],
         "component": "v2Container",
@@ -584,7 +585,7 @@
             {
                 "name": "getcustomerInfoList",
                 "desp": "获取用户列表",
-                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\npage&&(ctx.currentPage=page);\n!page&&(ctx.currentPage=1);\nsize&&(ctx.pageSize=size);\n!size&&(ctx.pageSize=10);\nconst params = {\n  \"pageNum\": ctx.currentPage,\n  \"pageSize\": ctx.pageSize,\n  \"appreqbody\":\n    {\n      \"name\": ctx.name,\n      \"id_cardno\": ctx.id_cardno\n    }\n};\n\nctx.$axios.post(`${axios.server}/customer/list`,params).then(res=>{\n    if(res.success&&res.status){\n      const tableData = res.obj&&res.obj.records||[];\n      \n      ctx.authorityTableList  = tableData.map(function(item){\n        return{\n          name:item.id,\n          login_name:item.name||'',\n          age:item.desc||'',\n          sex:ctx.timesTransferToDate(item.createTime),\n          phone:item.createUserName,\n          id_cardno:item.updateUserName,\n        }\n      });\n    }\n}).catch(error=>{\n  \n})",
+                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\npage && (ctx.currentPage = page);\n!page && (ctx.currentPage = 1);\nsize && (ctx.pageSize = size);\n!size && (ctx.pageSize = 10);\nconst params = {\n  \"pageNum\": ctx.currentPage,\n  \"pageSize\": ctx.pageSize,\n  \"orders\": [],\n  \"query\": {\n    \"customerName\": ctx.name,\n    \"idCardNo\": ctx.id_cardno\n  },\n  \"ranges\": []\n};\n\n\nctx.$axios.post(`${axios.server}/customer/list`, params).then(res => {\n  if (res.success && res.status) {\n    const tableData = res.obj&&res.obj.records||[];\n    console.log(tableData)\n    ctx.customerInfoList = tableData.map(function (item) {\n      return {\n        name: item.customerName,\n        login_name: item.customerLoginName || '',\n        age: item.customerAge || '',\n        sex: item.customerSex,\n        phone: item.customerPhone,\n        id_cardno: item.idCardNo,\n      }\n    });\n    console.log(ctx.customerInfoList)\n     ctx.userTotalCount = res.obj&&res.obj.totalElements;\n  }\n}).catch(error => {\n\n})",
                 "params": [
                     {
                         "name": "page",
@@ -720,6 +721,18 @@
                 "showSet": false,
                 "sync": false,
                 "isExposed": true
+            },
+            {
+                "desp": "客户总数据",
+                "name": "customerTotalCount",
+                "code": "1",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false,
+                "sync": false,
+                "syncComputed": "computed_newPageData",
+                "isExposed": true
             }
         ],
         "mapping": {
@@ -740,6 +753,12 @@
                     "id": 1612534187575,
                     "modelValue": "currentPage",
                     "dataValue": "currentPage",
+                    "type": ""
+                },
+                {
+                    "id": 1612534187575,
+                    "modelValue": "totalCount",
+                    "dataValue": "customerTotalCount",
                     "type": ""
                 }
             ],

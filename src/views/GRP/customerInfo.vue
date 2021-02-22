@@ -8,7 +8,7 @@
             <v2-component-btn :wid="`1612535127748`" class="v2-component-btn-1578539012886 V2Widget" :style="{'position':'relative','margin-top':'10px','margin-bottom':'10px','margin-left':'10px','margin-right':'10px','flex-shrink':0,'overflow':'hidden','animation-duration':'1s'}" :theme="{'btnType':'primary','size':'medium'}" :disabled="false" :loading="false" :btn-name="`查询`" :shape="`def`" @_op_component-btn_btn:click="v2_component_btn_1578965103000" ref="v2-component-btn_1578539012886">
             </v2-component-btn>
         </div>
-        <v2-component-table :wid="`1612534187575`" class="v2-component-table-1612534187575 V2Widget" :style="{'align-self':'auto','width':'98%','height':'985px','flex-shrink':0}" :tableData="customerInfoList" :pageSize="pageSize" :currentPage="currentPage" :theme="{'tableType':'border','size':''}" :tooltip-effect="`dark`" :columns="[{'active':true,'type':'text','prop':'name','label':'姓名','handleLink':true,'handleLinkCB':'handleLinkCallback','linkTarget':'_blank','openTooltip':false,'handleTooltip':true,'tooltipContent':'提示','tooltipContentCallback':'tooltipContentCallback','useMinWidth':true,'headerAlign':'left','align':'left','sortable':false,'openFilter':false,'combi':[],'tagMap':[],'textMap':[],'iconMap':[],'filterMap':[]},{'active':true,'type':'text','prop':'login_name','label':'账号','handleLink':true,'handleLinkCB':'handleLinkCallback','linkTarget':'_blank','openTooltip':false,'handleTooltip':true,'tooltipContent':'提示','tooltipContentCallback':'tooltipContentCallback','useMinWidth':true,'headerAlign':'left','align':'left','sortable':false,'openFilter':false,'combi':[],'tagMap':[],'textMap':[],'iconMap':[],'filterMap':[]},{'active':true,'type':'text','prop':'password','label':'密码','handleLink':true,'handleLinkCB':'handleLinkCallback','linkTarget':'_blank','openTooltip':false,'handleTooltip':true,'tooltipContent':'提示','tooltipContentCallback':'tooltipContentCallback','useMinWidth':true,'headerAlign':'left','align':'left','sortable':false,'openFilter':false,'combi':[],'tagMap':[],'textMap':[],'iconMap':[],'filterMap':[]},{'active':true,'type':'text','prop':'age','label':'年龄','handleLink':true,'handleLinkCB':'handleLinkCallback','linkTarget':'_blank','openTooltip':false,'handleTooltip':true,'tooltipContent':'提示','tooltipContentCallback':'tooltipContentCallback','useMinWidth':true,'headerAlign':'left','align':'left','sortable':false,'openFilter':false,'combi':[],'tagMap':[],'textMap':[],'iconMap':[],'filterMap':[]},{'active':true,'type':'text','prop':'sex','label':'性别','handleLink':true,'handleLinkCB':'handleLinkCallback','linkTarget':'_blank','openTooltip':false,'handleTooltip':true,'tooltipContent':'提示','tooltipContentCallback':'tooltipContentCallback','useMinWidth':true,'headerAlign':'left','align':'left','sortable':false,'openFilter':false,'combi':[],'tagMap':[],'textMap':[],'iconMap':[],'filterMap':[]},{'active':true,'type':'text','prop':'phone','label':'手机','handleLink':true,'handleLinkCB':'handleLinkCallback','linkTarget':'_blank','openTooltip':false,'handleTooltip':true,'tooltipContent':'提示','tooltipContentCallback':'tooltipContentCallback','useMinWidth':true,'headerAlign':'left','align':'left','sortable':false,'openFilter':false,'combi':[],'tagMap':[],'textMap':[],'iconMap':[],'filterMap':[]},{'active':true,'type':'text','prop':'id_cardno','label':'身份证号','handleLink':true,'handleLinkCB':'handleLinkCallback','linkTarget':'_blank','openTooltip':false,'handleTooltip':true,'tooltipContent':'提示','tooltipContentCallback':'tooltipContentCallback','useMinWidth':true,'headerAlign':'left','align':'left','sortable':false,'openFilter':false,'combi':[],'tagMap':[],'textMap':[],'iconMap':[],'filterMap':[]}]" :table-data="customerInfoList" :selection-location="`left`" :t-height="`100%`" :t-max-height="`100%`" :open-index="false" :loading="false" :index-location="`left`" :open-page="true" :page-size="pageSize" :open-set-page-callback="true" :set-page-callback="`setPageCallback`" :current-page="currentPage" :tool-bar="true" :tool-title="`操作`" :tool-header-align="`left`" :tool-location="`right`" :tool-width="100" :tool-btns="[{'active':true,'btnName':'修改','type':'primary','handler':'','rowName':' ','toolIcon':' ','rowValue':' '}]" :expand="false" :if="true" ref="v2ComponentTable_2">
+        <v2-component-table :wid="`1612534187575`" class="v2-component-table-1612534187575 V2Widget" :style="{'align-self':'auto','width':'calc(100% - 20px)','height':'816.00px','flex-shrink':0}" :tableData="customerInfoList" :pageSize="pageSize" :currentPage="currentPage" :totalCount="customerTotalCount" :theme="{'tableType':'border','size':''}" :tooltip-effect="`dark`" :columns="[{'active':true,'type':'text','prop':'name','label':'姓名','handleLink':true,'handleLinkCB':'handleLinkCallback','linkTarget':'_blank','openTooltip':false,'handleTooltip':true,'tooltipContent':'提示','tooltipContentCallback':'tooltipContentCallback','useMinWidth':true,'headerAlign':'left','align':'left','sortable':false,'openFilter':false,'combi':[],'tagMap':[],'textMap':[],'iconMap':[],'filterMap':[]},{'active':true,'type':'text','prop':'login_name','label':'账号','handleLink':true,'handleLinkCB':'handleLinkCallback','linkTarget':'_blank','openTooltip':false,'handleTooltip':true,'tooltipContent':'提示','tooltipContentCallback':'tooltipContentCallback','useMinWidth':true,'headerAlign':'left','align':'left','sortable':false,'openFilter':false,'combi':[],'tagMap':[],'textMap':[],'iconMap':[],'filterMap':[]},{'active':true,'type':'text','prop':'password','label':'密码','handleLink':true,'handleLinkCB':'handleLinkCallback','linkTarget':'_blank','openTooltip':false,'handleTooltip':true,'tooltipContent':'提示','tooltipContentCallback':'tooltipContentCallback','useMinWidth':true,'headerAlign':'left','align':'left','sortable':false,'openFilter':false,'combi':[],'tagMap':[],'textMap':[],'iconMap':[],'filterMap':[]},{'active':true,'type':'text','prop':'age','label':'年龄','handleLink':true,'handleLinkCB':'handleLinkCallback','linkTarget':'_blank','openTooltip':false,'handleTooltip':true,'tooltipContent':'提示','tooltipContentCallback':'tooltipContentCallback','useMinWidth':true,'headerAlign':'left','align':'left','sortable':false,'openFilter':false,'combi':[],'tagMap':[],'textMap':[],'iconMap':[],'filterMap':[]},{'active':true,'type':'text','prop':'sex','label':'性别','handleLink':true,'handleLinkCB':'handleLinkCallback','linkTarget':'_blank','openTooltip':false,'handleTooltip':true,'tooltipContent':'提示','tooltipContentCallback':'tooltipContentCallback','useMinWidth':true,'headerAlign':'left','align':'left','sortable':false,'openFilter':false,'combi':[],'tagMap':[],'textMap':[],'iconMap':[],'filterMap':[]},{'active':true,'type':'text','prop':'phone','label':'手机','handleLink':true,'handleLinkCB':'handleLinkCallback','linkTarget':'_blank','openTooltip':false,'handleTooltip':true,'tooltipContent':'提示','tooltipContentCallback':'tooltipContentCallback','useMinWidth':true,'headerAlign':'left','align':'left','sortable':false,'openFilter':false,'combi':[],'tagMap':[],'textMap':[],'iconMap':[],'filterMap':[]},{'active':true,'type':'text','prop':'id_cardno','label':'身份证号','handleLink':true,'handleLinkCB':'handleLinkCallback','linkTarget':'_blank','openTooltip':false,'handleTooltip':true,'tooltipContent':'提示','tooltipContentCallback':'tooltipContentCallback','useMinWidth':true,'headerAlign':'left','align':'left','sortable':false,'openFilter':false,'combi':[],'tagMap':[],'textMap':[],'iconMap':[],'filterMap':[]}]" :table-data="customerInfoList" :selection-location="`left`" :t-height="`100%`" :t-max-height="`100%`" :open-index="false" :loading="false" :index-location="`left`" :open-page="true" :page-size="pageSize" :open-set-page-callback="true" :set-page-callback="`getcustomerInfoList`" :current-page="currentPage" :total-count="customerTotalCount" :tool-bar="true" :tool-title="`操作`" :tool-header-align="`left`" :tool-location="`right`" :tool-width="100" :tool-btns="[{'active':true,'btnName':'修改','type':'primary','handler':'','rowName':' ','toolIcon':' ','rowValue':' '}]" :expand="false" :if="true" ref="v2ComponentTable_2">
         </v2-component-table>
     </v2container>
 </template>
@@ -36,7 +36,7 @@
 
                         ]
                     },
-                    'mapping': {"1612534187575":[{"id":1612534187575,"modelValue":"tableData","dataValue":"customerInfoList","type":""},{"id":1612534187575,"modelValue":"pageSize","dataValue":"pageSize","type":""},{"id":1612534187575,"modelValue":"currentPage","dataValue":"currentPage","type":""}],"1612535040338":[{"id":1612535040338,"modelValue":"value","dataValue":"name","type":""}],"1612535055323":[{"id":1612535055323,"modelValue":"value","dataValue":"createTime","type":""}],"1612535042388":[{"id":1612535042388,"modelValue":"value","dataValue":"name","type":""}]}
+                    'mapping': {"1612534187575":[{"id":1612534187575,"modelValue":"tableData","dataValue":"customerInfoList","type":""},{"id":1612534187575,"modelValue":"pageSize","dataValue":"pageSize","type":""},{"id":1612534187575,"modelValue":"currentPage","dataValue":"currentPage","type":""},{"id":1612534187575,"modelValue":"totalCount","dataValue":"customerTotalCount","type":""}],"1612535040338":[{"id":1612535040338,"modelValue":"value","dataValue":"name","type":""}],"1612535055323":[{"id":1612535055323,"modelValue":"value","dataValue":"createTime","type":""}],"1612535042388":[{"id":1612535042388,"modelValue":"value","dataValue":"name","type":""}]}
                 },
                 /* 当前页面 */
                 'currentPage': 1,
@@ -68,6 +68,12 @@
                 'default': () => {
                     return 10
                 }
+            },
+            /* 客户总数据 */
+            'customerTotalCount': {
+                'default': () => {
+                    return 1
+                }
             }
         },
         'computed': {
@@ -85,37 +91,41 @@
             getcustomerInfoList(page, size) {
                 //函数内直接用ctx代替this访问vue页面的数据。
                 const ctx = this;
-                page&&(ctx.currentPage=page);
-                !page&&(ctx.currentPage=1);
-                size&&(ctx.pageSize=size);
-                !size&&(ctx.pageSize=10);
+                page && (ctx.currentPage = page);
+                !page && (ctx.currentPage = 1);
+                size && (ctx.pageSize = size);
+                !size && (ctx.pageSize = 10);
                 const params = {
                   "pageNum": ctx.currentPage,
                   "pageSize": ctx.pageSize,
-                  "appreqbody":
-                    {
-                      "name": ctx.name,
-                      "id_cardno": ctx.id_cardno
-                    }
+                  "orders": [],
+                  "query": {
+                    "customerName": ctx.name,
+                    "idCardNo": ctx.id_cardno
+                  },
+                  "ranges": []
                 };
                 
-                ctx.$axios.post(`${axios.server}/customer/list`,params).then(res=>{
-                    if(res.success&&res.status){
-                      const tableData = res.obj&&res.obj.records||[];
-                      
-                      ctx.authorityTableList  = tableData.map(function(item){
-                        return{
-                          name:item.id,
-                          login_name:item.name||'',
-                          age:item.desc||'',
-                          sex:ctx.timesTransferToDate(item.createTime),
-                          phone:item.createUserName,
-                          id_cardno:item.updateUserName,
-                        }
-                      });
-                    }
-                }).catch(error=>{
-                  
+                
+                ctx.$axios.post(`${axios.server}/customer/list`, params).then(res => {
+                  if (res.success && res.status) {
+                    const tableData = res.obj&&res.obj.records||[];
+                    console.log(tableData)
+                    ctx.customerInfoList = tableData.map(function (item) {
+                      return {
+                        name: item.customerName,
+                        login_name: item.customerLoginName || '',
+                        age: item.customerAge || '',
+                        sex: item.customerSex,
+                        phone: item.customerPhone,
+                        id_cardno: item.idCardNo,
+                      }
+                    });
+                    console.log(ctx.customerInfoList)
+                     ctx.userTotalCount = res.obj&&res.obj.totalElements;
+                  }
+                }).catch(error => {
+                
                 })
             },
             /**
