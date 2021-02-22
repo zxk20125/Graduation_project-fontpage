@@ -1,0 +1,423 @@
+{
+    "structure": {
+        "__resolveFromCode": false,
+        "children": [
+            {
+                "__resolveFromCode": false,
+                "children": [],
+                "component": "v2-component-table",
+                "id": 1612854187456,
+                "customClass": [
+                    "v2-component-table-1612854187456",
+                    ""
+                ],
+                "commonStyle": {
+                    "align-self": "auto",
+                    "height": "90%",
+                    "margin-left": "0",
+                    "width": "98%",
+                    "flex-shrink": 0,
+                    "border-radius": "0px",
+                    "opacity": 1
+                },
+                "props": [
+                    "tooltipEffect",
+                    "columns",
+                    "tableData",
+                    "selection",
+                    "radioSelect",
+                    "value",
+                    "selectionLocation",
+                    "tHeight",
+                    "tMaxHeight",
+                    "openIndex",
+                    "loading",
+                    "indexLocation",
+                    "openPage",
+                    "pagerCount",
+                    "pageSizes",
+                    "pageSize",
+                    "openSetPageCallback",
+                    "setPageCallback",
+                    "currentPage",
+                    "totalCount",
+                    "toolBar",
+                    "toolTitle",
+                    "toolHeaderAlign",
+                    "toolLocation",
+                    "toolWidth",
+                    "toolBtns",
+                    "expand",
+                    "expandMap",
+                    "visible",
+                    "if",
+                    "customClass"
+                ],
+                "setPageCallback": "getAddressInfo",
+                "tableData": "${staffList}",
+                "pageSize": "${pageSize}",
+                "totalCount": "${addressTotalCount}",
+                "toolBar": true,
+                "theme": {
+                    "tableType": "border",
+                    "size": ""
+                },
+                "tooltipEffect": "dark",
+                "columns": [
+                    {
+                        "active": true,
+                        "type": "text",
+                        "prop": "order_id",
+                        "label": "订单编号",
+                        "handleLink": true,
+                        "handleLinkCB": "handleLinkCallback",
+                        "linkTarget": "_blank",
+                        "openTooltip": false,
+                        "handleTooltip": true,
+                        "tooltipContent": "提示",
+                        "tooltipContentCallback": "tooltipContentCallback",
+                        "useMinWidth": true,
+                        "headerAlign": "left",
+                        "align": "left",
+                        "sortable": false,
+                        "openFilter": false,
+                        "combi": [],
+                        "tagMap": [],
+                        "textMap": [],
+                        "iconMap": [],
+                        "filterMap": []
+                    },
+                    {
+                        "active": true,
+                        "type": "text",
+                        "prop": "customer",
+                        "label": "下单用户",
+                        "handleLink": true,
+                        "handleLinkCB": "handleLinkCallback",
+                        "linkTarget": "_blank",
+                        "openTooltip": false,
+                        "handleTooltip": true,
+                        "tooltipContent": "提示",
+                        "tooltipContentCallback": "tooltipContentCallback",
+                        "useMinWidth": true,
+                        "headerAlign": "left",
+                        "align": "left",
+                        "sortable": false,
+                        "openFilter": false,
+                        "combi": [],
+                        "tagMap": [],
+                        "textMap": [],
+                        "iconMap": [],
+                        "filterMap": []
+                    },
+                    {
+                        "active": true,
+                        "type": "text",
+                        "prop": "addressInfo",
+                        "label": "地址信息",
+                        "handleLink": true,
+                        "handleLinkCB": "handleLinkCallback",
+                        "linkTarget": "_blank",
+                        "openTooltip": false,
+                        "handleTooltip": true,
+                        "tooltipContent": "提示",
+                        "tooltipContentCallback": "tooltipContentCallback",
+                        "useMinWidth": true,
+                        "headerAlign": "left",
+                        "align": "left",
+                        "sortable": false,
+                        "openFilter": false,
+                        "combi": [],
+                        "tagMap": [],
+                        "textMap": [],
+                        "iconMap": [],
+                        "filterMap": []
+                    },
+                    {
+                        "active": true,
+                        "type": "text",
+                        "prop": " shipInfo",
+                        "label": "物品信息",
+                        "handleLink": true,
+                        "handleLinkCB": "handleLinkCallback",
+                        "linkTarget": "_blank",
+                        "openTooltip": false,
+                        "handleTooltip": true,
+                        "tooltipContent": "提示",
+                        "tooltipContentCallback": "tooltipContentCallback",
+                        "useMinWidth": true,
+                        "headerAlign": "left",
+                        "align": "left",
+                        "sortable": false,
+                        "openFilter": false,
+                        "combi": [],
+                        "tagMap": [],
+                        "textMap": [],
+                        "iconMap": [],
+                        "filterMap": []
+                    },
+                    {
+                        "active": true,
+                        "type": "text",
+                        "prop": "order_time",
+                        "label": "下单时间",
+                        "handleLink": true,
+                        "handleLinkCB": "handleLinkCallback",
+                        "linkTarget": "_blank",
+                        "openTooltip": false,
+                        "handleTooltip": true,
+                        "tooltipContent": "提示",
+                        "tooltipContentCallback": "tooltipContentCallback",
+                        "useMinWidth": true,
+                        "headerAlign": "left",
+                        "align": "left",
+                        "sortable": false,
+                        "openFilter": false,
+                        "combi": [],
+                        "tagMap": [],
+                        "textMap": [],
+                        "iconMap": [],
+                        "filterMap": []
+                    }
+                ],
+                "selectionLocation": "left",
+                "tHeight": "100%",
+                "tMaxHeight": "100%",
+                "openIndex": false,
+                "loading": false,
+                "indexLocation": "left",
+                "openPage": true,
+                "openSetPageCallback": true,
+                "toolTitle": "操作",
+                "toolHeaderAlign": "left",
+                "toolLocation": "right",
+                "toolWidth": 100,
+                "toolBtns": [
+                    {
+                        "active": true,
+                        "btnName": "留言",
+                        "type": "text",
+                        "handler": "",
+                        "rowName": " ",
+                        "toolIcon": " ",
+                        "rowValue": " "
+                    }
+                ],
+                "expand": false,
+                "if": true,
+                "$ref": "v2ComponentTable_1",
+                "visible": true,
+                "__capacity": "1",
+                "href": "v2-component-table",
+                "name": "表格",
+                "events": {},
+                "version": "16.1.3",
+                "pid": "root",
+                "sizeLocked": {
+                    "widthLock": true,
+                    "heightLock": false
+                },
+                "animate": [
+                    "",
+                    "animated"
+                ]
+            }
+        ],
+        "component": "v2Container",
+        "id": "root",
+        "commonStyle": {
+            "flex-shrink": "0",
+            "box-sizing": "border-box"
+        },
+        "customClass": [],
+        "$ref": "v2Container_root",
+        "direction": "row",
+        "layout": [
+            100
+        ],
+        "data": {},
+        "events": {},
+        "props": [
+            "visible",
+            "if",
+            "element-loading-text",
+            "element-loading-spinner",
+            "element-loading-background",
+            "customClass"
+        ],
+        "realSize": [],
+        "sizeLocked": {
+            "widthLock": false,
+            "heightLock": false
+        },
+        "animate": [
+            "",
+            "animated",
+            ""
+        ]
+    },
+    "forms": [],
+    "logic": {
+        "methods": [
+            {
+                "name": "getStaffInfo",
+                "desp": "获取客户地址信息",
+                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\npage&&(ctx.currentPage=page);\n!page&&(ctx.currentPage=1);\nsize&&(ctx.pageSize=size);\n!size&&(ctx.pageSize=10);\nconst params = {\n  \"pageNum\": ctx.currentPage,\n  \"pageSize\": ctx.pageSize,\n  \"staff_name\":ctx.staff_name\n};\n\nctx.$axios.post(`${axios.server}/staff/list`,params).then(res=>{\n    if(res.success&&res.status){\n      const tableData = res.obj&&res.obj.records||[];\n      \n      ctx.staffList  = tableData.map(function(item){\n        return{\n          staff_name:item.staff_name,\n          staff_age:item.staff_age,\n          staff_sex:item.staff_sex,\n          staff_id:item.staff_id,\n          staff_phone:item.staff_phone,\n          hiredate:item.hiredate,\n          dot_id:item.dot_id\n        }\n      });\n      ctx.staffTotalCount = res.obj&&res.obj.totalElements;\n    }\n}).catch(error=>{\n  \n})",
+                "params": [],
+                "isEvent": false,
+                "custom": true
+            },
+            {
+                "name": "openEditStaffPage",
+                "desp": "打开编辑子页面",
+                "code": "// 函数内直接用 ctx 代替 this 访问 Vue 页面的数据。\n/** @type {V2ViewType} */\nconst ctx = this;",
+                "params": [],
+                "isEvent": false,
+                "custom": true
+            }
+        ],
+        "watch": {},
+        "beforeCreate": {
+            "code": "let ctx = this;"
+        },
+        "created": {
+            "code": "let ctx = this;"
+        },
+        "beforeMount": {
+            "code": "let ctx = this;"
+        },
+        "mounted": {
+            "code": "let ctx = this;"
+        },
+        "beforeUpdate": {
+            "code": "let ctx = this;"
+        },
+        "updated": {
+            "code": "let ctx = this;"
+        },
+        "beforeDestroy": {
+            "code": "let ctx = this;"
+        },
+        "destroyed": {
+            "code": "let ctx = this;"
+        },
+        "activated": {
+            "code": "let ctx = this;"
+        },
+        "deactivated": {
+            "code": "let ctx = this;"
+        },
+        "pollList": []
+    },
+    "dataBasket": {
+        "data": {},
+        "list": [
+            {
+                "desp": "员工姓名",
+                "name": "staff_name",
+                "code": "''",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false,
+                "sync": false
+            },
+            {
+                "desp": "页码数",
+                "name": "pageSize",
+                "code": "10",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false,
+                "sync": false,
+                "isExposed": true
+            },
+            {
+                "desp": "客户地址信息列表",
+                "name": "staffList",
+                "code": "[]",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false,
+                "sync": false,
+                "isExposed": true
+            },
+            {
+                "desp": "数据总条数",
+                "name": "staffTotalCount",
+                "code": "1",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false,
+                "sync": false,
+                "isExposed": true
+            }
+        ],
+        "mapping": {
+            "1612854187456": [
+                {
+                    "id": 1612854187456,
+                    "modelValue": "setPageCallback",
+                    "dataValue": "setPageCallback",
+                    "type": ""
+                },
+                {
+                    "id": 1612854187456,
+                    "modelValue": "toolBar",
+                    "dataValue": "true",
+                    "type": ""
+                },
+                {
+                    "id": 1612854187456,
+                    "modelValue": "tableData",
+                    "dataValue": "staffList",
+                    "type": ""
+                },
+                {
+                    "id": 1612854187456,
+                    "modelValue": "pageSize",
+                    "dataValue": "pageSize",
+                    "type": ""
+                },
+                {
+                    "id": 1612854187456,
+                    "modelValue": "totalCount",
+                    "dataValue": "addressTotalCount",
+                    "type": ""
+                }
+            ],
+            "1612854599723": [
+                {
+                    "id": 1612854599723,
+                    "modelValue": "value",
+                    "dataValue": "staff_name",
+                    "type": ""
+                }
+            ]
+        }
+    },
+    "events": {},
+    "emitList": [],
+    "display": {
+        "icon": "icontongyong",
+        "desp": "订单管理",
+        "type": "gridLayout",
+        "width": "1653px",
+        "height": "1080px",
+        "isSelfAdaption": false,
+        "parentWidth": "1650"
+    },
+    "originCss": "",
+    "cssType": "scss",
+    "cssConfig": {
+        "scoped": null
+    },
+    "nls": "",
+    "mixins": [],
+    "imports": [],
+    "disableVueSPA": false,
+    "disableSupport": false
+}
