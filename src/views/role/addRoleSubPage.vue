@@ -77,7 +77,7 @@
                                  */
                             
                                 var params = {
-                                    desc:data.desp||'',
+                                    DESCRIPTION:data.desp||'',
                                     name:data.roleName||''
                                 };
                                 if(ctx.AParams.id){

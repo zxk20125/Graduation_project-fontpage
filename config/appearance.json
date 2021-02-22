@@ -1,7 +1,7 @@
 {
 	"layout": "lt-layout",
-	"title": "AWEB管理端",
-	"logo": "img/agree-logo.png",
+	"title": "宅急送后台",
+	"logo": "img/跑腿login.jpg",
 	"mainPage": "/main/main.vue",
 	"driverType": "pc"
 }

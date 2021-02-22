@@ -531,7 +531,8 @@
                 "component": "v2-component-table",
                 "id": 1578539272258,
                 "customClass": [
-                    "v2-component-table-1578539272258"
+                    "v2-component-table-1578539272258",
+                    ""
                 ],
                 "commonStyle": {
                     "position": "relative",
@@ -565,6 +566,7 @@
                     "toolWidth",
                     "toolBtns",
                     "expand",
+                    "value.sync",
                     "tooltipEffect",
                     "radioSelect",
                     "value",
@@ -794,6 +796,7 @@
                     }
                 },
                 "$ref": "v2-component-table_1578539272258",
+                "value.sync": "${selectedAuthorityList}",
                 "visible": true,
                 "__capacity": "1",
                 "href": "v2-component-table",
@@ -805,7 +808,8 @@
                 "animate": [
                     "",
                     "animated"
-                ]
+                ],
+                "value": "${selectedAuthorityList}"
             },
             {
                 "__resolveFromCode": false,
@@ -1268,6 +1272,12 @@
                     "modelValue": "totalCount",
                     "dataValue": "authorityTotalCount",
                     "type": ""
+                },
+                {
+                    "id": 1578539272258,
+                    "modelValue": "value",
+                    "dataValue": "selectedAuthorityList",
+                    "type": ""
                 }
             ],
             "1578838455979": [
@@ -1334,6 +1344,7 @@
         }
     },
     "events": {},
+    "emitList": [],
     "display": {
         "icon": "icontongyong",
         "desp": "权限列表",
@@ -1341,9 +1352,14 @@
         "width": "1000px",
         "height": "1080px"
     },
-    "scssCode": "",
+    "originCss": "",
+    "cssType": "scss",
+    "cssConfig": {
+        "scoped": null
+    },
     "nls": "",
     "mixins": [],
     "imports": [],
-    "disableVueSPA": false
+    "disableVueSPA": false,
+    "disableSupport": false
 }

@@ -343,7 +343,7 @@
                         "children": [],
                         "component": "v2-component-btn",
                         "id": 1578539271197,
-                        "visible": "${$AUTH(`menu/menuList`,1578539271197)}",
+                        "visible": "${true}",
                         "customClass": [],
                         "commonStyle": {
                             "position": "relative",
@@ -351,9 +351,12 @@
                             "margin-bottom": "10px",
                             "margin-left": "10px",
                             "margin-right": "10px",
-                            "flex-shrink": "0",
+                            "flex-shrink": 0,
                             "overflow": "hidden",
-                            "animation-duration": "1s"
+                            "animation-duration": "1s",
+                            "border-radius": "0px",
+                            "flex-grow": 0,
+                            "opacity": 1
                         },
                         "props": [
                             "disabled",
@@ -402,7 +405,7 @@
                         "children": [],
                         "component": "v2-component-btn",
                         "id": 1578539296885,
-                        "visible": "${$AUTH(`menu/menuList`,1578539296885)}",
+                        "visible": "${true}",
                         "customClass": [],
                         "commonStyle": {
                             "position": "relative",
@@ -411,7 +414,9 @@
                             "margin-left": "10px",
                             "margin-right": "10px",
                             "overflow": "hidden",
-                            "animation-duration": "1s"
+                            "animation-duration": "1s",
+                            "flex-basis": "auto",
+                            "flex-shrink": 0
                         },
                         "props": [
                             "disabled",
@@ -1374,15 +1379,15 @@
             "1578539296885": [
                 {
                     "id": 1578539296885,
-                    "modelValue": "visible",
-                    "dataValue": "$AUTH(`menu/menuList`,1578539296885)",
-                    "type": ""
-                },
-                {
-                    "id": 1578539296885,
                     "modelValue": "disabled",
                     "dataValue": "isDisabled",
                     "type": "boolean"
+                },
+                {
+                    "id": 1578539296885,
+                    "modelValue": "visible",
+                    "dataValue": "true",
+                    "type": ""
                 }
             ],
             "1579152110683": [
@@ -1421,7 +1426,7 @@
                 {
                     "id": 1578539271197,
                     "modelValue": "visible",
-                    "dataValue": "$AUTH(`menu/menuList`,1578539271197)",
+                    "dataValue": "true",
                     "type": ""
                 }
             ]
