@@ -1,0 +1,793 @@
+{
+    "structure": {
+        "__resolveFromCode": false,
+        "children": [
+            {
+                "__resolveFromCode": false,
+                "children": [
+                    {
+                        "__resolveFromCode": false,
+                        "children": [],
+                        "component": "v2-form-input",
+                        "id": 1612535040338,
+                        "customClass": [
+                            "v2-form-input-1579152715570"
+                        ],
+                        "commonStyle": {
+                            "position": "relative",
+                            "margin-top": "10px",
+                            "margin-bottom": "10px",
+                            "margin-left": "10px",
+                            "margin-right": "10px",
+                            "overflow": "hidden",
+                            "animation-duration": "1s"
+                        },
+                        "props": [
+                            "value",
+                            "disabled",
+                            "label",
+                            "placeholder",
+                            "prepend",
+                            "append",
+                            "titleMode",
+                            "labelWitdh",
+                            "inputType",
+                            "rows",
+                            "maxlength",
+                            "minlength",
+                            "prefixIcon",
+                            "suffixIcon",
+                            "showWordLimit",
+                            "clearable",
+                            "isRequired",
+                            "autoComplete",
+                            "suggestion",
+                            "visible",
+                            "if",
+                            "customClass"
+                        ],
+                        "theme": {
+                            "size": "medium"
+                        },
+                        "disabled": false,
+                        "label": "创建用户",
+                        "placeholder": "请输入",
+                        "titleMode": "col",
+                        "labelWitdh": "80px",
+                        "inputType": "text",
+                        "rows": 2,
+                        "showWordLimit": false,
+                        "clearable": false,
+                        "isRequired": false,
+                        "autoComplete": false,
+                        "value.sync": "${name}",
+                        "$ref": "v2-form-input_1579152715570",
+                        "style": {
+                            "label": {}
+                        },
+                        "visible": true,
+                        "__capacity": "1",
+                        "href": "v2-form-input",
+                        "events": {
+                            "_op_formInput_input": {}
+                        },
+                        "pid": 1612535056658,
+                        "sizeLocked": {
+                            "widthLock": true,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated"
+                        ],
+                        "value": "${name}"
+                    },
+                    {
+                        "__resolveFromCode": false,
+                        "children": [],
+                        "component": "v2-form-input",
+                        "id": 1612535042388,
+                        "customClass": [
+                            "v2-form-input-1580789804791"
+                        ],
+                        "commonStyle": {
+                            "position": "relative",
+                            "margin-top": "10px",
+                            "margin-bottom": "10px",
+                            "margin-left": "10px",
+                            "margin-right": "10px",
+                            "overflow": "hidden",
+                            "animation-duration": "1s"
+                        },
+                        "props": [
+                            "value",
+                            "disabled",
+                            "label",
+                            "placeholder",
+                            "prepend",
+                            "append",
+                            "titleMode",
+                            "labelWitdh",
+                            "inputType",
+                            "rows",
+                            "maxlength",
+                            "minlength",
+                            "prefixIcon",
+                            "suffixIcon",
+                            "showWordLimit",
+                            "clearable",
+                            "isRequired",
+                            "autoComplete",
+                            "suggestion",
+                            "visible",
+                            "if",
+                            "customClass"
+                        ],
+                        "theme": {
+                            "size": "medium"
+                        },
+                        "disabled": false,
+                        "label": "身份证号",
+                        "placeholder": "请输入",
+                        "titleMode": "col",
+                        "labelWitdh": "80px",
+                        "inputType": "text",
+                        "rows": 2,
+                        "showWordLimit": false,
+                        "clearable": false,
+                        "isRequired": false,
+                        "autoComplete": false,
+                        "value.sync": "${name}",
+                        "$ref": "v2-form-input_1580789804791",
+                        "style": {
+                            "label": {}
+                        },
+                        "value": "${name}",
+                        "visible": true,
+                        "__capacity": "1",
+                        "href": "v2-form-input",
+                        "events": {
+                            "_op_formInput_input": {}
+                        },
+                        "pid": 1612535056658,
+                        "sizeLocked": {
+                            "widthLock": false,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated"
+                        ]
+                    },
+                    {
+                        "__resolveFromCode": false,
+                        "children": [],
+                        "component": "v2-component-btn",
+                        "id": 1612535127748,
+                        "customClass": [
+                            "v2-component-btn-1578539012886"
+                        ],
+                        "commonStyle": {
+                            "position": "relative",
+                            "margin-top": "10px",
+                            "margin-bottom": "10px",
+                            "margin-left": "10px",
+                            "margin-right": "10px",
+                            "flex-shrink": 0,
+                            "overflow": "hidden",
+                            "animation-duration": "1s"
+                        },
+                        "props": [
+                            "disabled",
+                            "loading",
+                            "btnName",
+                            "leftIcon",
+                            "rightIcon",
+                            "shape",
+                            "visible",
+                            "if",
+                            "customClass"
+                        ],
+                        "theme": {
+                            "btnType": "primary",
+                            "size": "medium"
+                        },
+                        "disabled": false,
+                        "loading": false,
+                        "btnName": "查询",
+                        "shape": "def",
+                        "events": {
+                            "_op_componentBtn_btn": {
+                                "click": {
+                                    "v2_component_btn_1578965103000": {}
+                                }
+                            }
+                        },
+                        "$ref": "v2-component-btn_1578539012886",
+                        "style": {
+                            "btnStyle": {}
+                        },
+                        "visible": true,
+                        "__capacity": "1",
+                        "href": "v2-component-btn",
+                        "pid": 1612535056658,
+                        "sizeLocked": {
+                            "widthLock": false,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated"
+                        ]
+                    }
+                ],
+                "component": "v2Container",
+                "id": 1612535056658,
+                "customClass": [
+                    "v2Container-1578537283708"
+                ],
+                "commonStyle": {
+                    "display": "flex",
+                    "align-items": "flex-start",
+                    "align-self": "stretch",
+                    "height": "auto",
+                    "box-sizing": "border-box",
+                    "position": "relative",
+                    "overflow": "hidden",
+                    "min-width": "50px",
+                    "min-height": "50px",
+                    "animation-duration": "1s",
+                    "flex-direction": "row"
+                },
+                "$ref": "v2Container_6",
+                "href": "v2Container",
+                "direction": "col",
+                "style": {},
+                "pid": 1612534870967,
+                "ctnStyle": [
+                    {},
+                    {},
+                    {},
+                    {}
+                ],
+                "sizeLocked": {
+                    "widthLock": false,
+                    "heightLock": false
+                },
+                "animate": [
+                    "",
+                    "animated",
+                    ""
+                ],
+                "props": [
+                    "visible",
+                    "if",
+                    "element-loading-text",
+                    "element-loading-spinner",
+                    "element-loading-background",
+                    "customClass"
+                ],
+                "offset": {
+                    "top": 0,
+                    "left": 0
+                }
+            },
+            {
+                "__resolveFromCode": false,
+                "children": [],
+                "component": "v2-component-table",
+                "id": 1612534187575,
+                "customClass": [
+                    "v2-component-table-1612534187575",
+                    ""
+                ],
+                "commonStyle": {
+                    "align-self": "auto",
+                    "width": "98%",
+                    "height": "985px",
+                    "border-radius": "0px",
+                    "flex-grow": 0,
+                    "flex-shrink": 0,
+                    "opacity": 1
+                },
+                "props": [
+                    "tooltipEffect",
+                    "columns",
+                    "tableData",
+                    "selection",
+                    "radioSelect",
+                    "value",
+                    "selectionLocation",
+                    "tHeight",
+                    "tMaxHeight",
+                    "openIndex",
+                    "loading",
+                    "indexLocation",
+                    "openPage",
+                    "pagerCount",
+                    "pageSizes",
+                    "pageSize",
+                    "openSetPageCallback",
+                    "setPageCallback",
+                    "currentPage",
+                    "totalCount",
+                    "toolBar",
+                    "toolTitle",
+                    "toolHeaderAlign",
+                    "toolLocation",
+                    "toolWidth",
+                    "toolBtns",
+                    "expand",
+                    "expandMap",
+                    "visible",
+                    "if",
+                    "customClass"
+                ],
+                "tableData": "${customerInfoList}",
+                "pageSize": "${pageSize}",
+                "currentPage": "${currentPage}",
+                "theme": {
+                    "tableType": "border",
+                    "size": ""
+                },
+                "tooltipEffect": "dark",
+                "columns": [
+                    {
+                        "active": true,
+                        "type": "text",
+                        "prop": "name",
+                        "label": "姓名",
+                        "handleLink": true,
+                        "handleLinkCB": "handleLinkCallback",
+                        "linkTarget": "_blank",
+                        "openTooltip": false,
+                        "handleTooltip": true,
+                        "tooltipContent": "提示",
+                        "tooltipContentCallback": "tooltipContentCallback",
+                        "useMinWidth": true,
+                        "headerAlign": "left",
+                        "align": "left",
+                        "sortable": false,
+                        "openFilter": false,
+                        "combi": [],
+                        "tagMap": [],
+                        "textMap": [],
+                        "iconMap": [],
+                        "filterMap": []
+                    },
+                    {
+                        "active": true,
+                        "type": "text",
+                        "prop": "login_name",
+                        "label": "账号",
+                        "handleLink": true,
+                        "handleLinkCB": "handleLinkCallback",
+                        "linkTarget": "_blank",
+                        "openTooltip": false,
+                        "handleTooltip": true,
+                        "tooltipContent": "提示",
+                        "tooltipContentCallback": "tooltipContentCallback",
+                        "useMinWidth": true,
+                        "headerAlign": "left",
+                        "align": "left",
+                        "sortable": false,
+                        "openFilter": false,
+                        "combi": [],
+                        "tagMap": [],
+                        "textMap": [],
+                        "iconMap": [],
+                        "filterMap": []
+                    },
+                    {
+                        "active": true,
+                        "type": "text",
+                        "prop": "password",
+                        "label": "密码",
+                        "handleLink": true,
+                        "handleLinkCB": "handleLinkCallback",
+                        "linkTarget": "_blank",
+                        "openTooltip": false,
+                        "handleTooltip": true,
+                        "tooltipContent": "提示",
+                        "tooltipContentCallback": "tooltipContentCallback",
+                        "useMinWidth": true,
+                        "headerAlign": "left",
+                        "align": "left",
+                        "sortable": false,
+                        "openFilter": false,
+                        "combi": [],
+                        "tagMap": [],
+                        "textMap": [],
+                        "iconMap": [],
+                        "filterMap": []
+                    },
+                    {
+                        "active": true,
+                        "type": "text",
+                        "prop": "age",
+                        "label": "年龄",
+                        "handleLink": true,
+                        "handleLinkCB": "handleLinkCallback",
+                        "linkTarget": "_blank",
+                        "openTooltip": false,
+                        "handleTooltip": true,
+                        "tooltipContent": "提示",
+                        "tooltipContentCallback": "tooltipContentCallback",
+                        "useMinWidth": true,
+                        "headerAlign": "left",
+                        "align": "left",
+                        "sortable": false,
+                        "openFilter": false,
+                        "combi": [],
+                        "tagMap": [],
+                        "textMap": [],
+                        "iconMap": [],
+                        "filterMap": []
+                    },
+                    {
+                        "active": true,
+                        "type": "text",
+                        "prop": "sex",
+                        "label": "性别",
+                        "handleLink": true,
+                        "handleLinkCB": "handleLinkCallback",
+                        "linkTarget": "_blank",
+                        "openTooltip": false,
+                        "handleTooltip": true,
+                        "tooltipContent": "提示",
+                        "tooltipContentCallback": "tooltipContentCallback",
+                        "useMinWidth": true,
+                        "headerAlign": "left",
+                        "align": "left",
+                        "sortable": false,
+                        "openFilter": false,
+                        "combi": [],
+                        "tagMap": [],
+                        "textMap": [],
+                        "iconMap": [],
+                        "filterMap": []
+                    },
+                    {
+                        "active": true,
+                        "type": "text",
+                        "prop": "phone",
+                        "label": "手机",
+                        "handleLink": true,
+                        "handleLinkCB": "handleLinkCallback",
+                        "linkTarget": "_blank",
+                        "openTooltip": false,
+                        "handleTooltip": true,
+                        "tooltipContent": "提示",
+                        "tooltipContentCallback": "tooltipContentCallback",
+                        "useMinWidth": true,
+                        "headerAlign": "left",
+                        "align": "left",
+                        "sortable": false,
+                        "openFilter": false,
+                        "combi": [],
+                        "tagMap": [],
+                        "textMap": [],
+                        "iconMap": [],
+                        "filterMap": []
+                    },
+                    {
+                        "active": true,
+                        "type": "text",
+                        "prop": "id_cardno",
+                        "label": "身份证号",
+                        "handleLink": true,
+                        "handleLinkCB": "handleLinkCallback",
+                        "linkTarget": "_blank",
+                        "openTooltip": false,
+                        "handleTooltip": true,
+                        "tooltipContent": "提示",
+                        "tooltipContentCallback": "tooltipContentCallback",
+                        "useMinWidth": true,
+                        "headerAlign": "left",
+                        "align": "left",
+                        "sortable": false,
+                        "openFilter": false,
+                        "combi": [],
+                        "tagMap": [],
+                        "textMap": [],
+                        "iconMap": [],
+                        "filterMap": []
+                    }
+                ],
+                "selectionLocation": "left",
+                "tHeight": "100%",
+                "tMaxHeight": "100%",
+                "openIndex": false,
+                "loading": false,
+                "indexLocation": "left",
+                "openPage": true,
+                "openSetPageCallback": true,
+                "setPageCallback": "setPageCallback",
+                "toolBar": true,
+                "toolTitle": "操作",
+                "toolHeaderAlign": "left",
+                "toolLocation": "right",
+                "toolWidth": 100,
+                "toolBtns": [
+                    {
+                        "active": true,
+                        "btnName": "修改",
+                        "type": "primary",
+                        "handler": "",
+                        "rowName": " ",
+                        "toolIcon": " ",
+                        "rowValue": " "
+                    }
+                ],
+                "expand": false,
+                "if": true,
+                "$ref": "v2ComponentTable_2",
+                "visible": true,
+                "__capacity": "1",
+                "href": "v2-component-table",
+                "name": "表格",
+                "events": {},
+                "version": "16.1.3",
+                "pid": "root",
+                "sizeLocked": {
+                    "widthLock": true,
+                    "heightLock": false
+                },
+                "animate": [
+                    "",
+                    "animated"
+                ]
+            }
+        ],
+        "component": "v2Container",
+        "id": "root",
+        "commonStyle": {
+            "width": "100%",
+            "height": "100%",
+            "display": "flex",
+            "align-items": "flex-start",
+            "align-self": "stretch",
+            "box-sizing": "border-box",
+            "flex-direction": "column",
+            "flex-shrink": "0"
+        },
+        "customClass": [],
+        "$ref": "v2Container_root",
+        "direction": "row",
+        "layout": [
+            100
+        ],
+        "data": {},
+        "events": {},
+        "props": [
+            "visible",
+            "if",
+            "element-loading-text",
+            "element-loading-spinner",
+            "element-loading-background",
+            "customClass"
+        ],
+        "realSize": [],
+        "sizeLocked": {
+            "widthLock": false,
+            "heightLock": false
+        },
+        "animate": [
+            "",
+            "animated",
+            ""
+        ]
+    },
+    "forms": [],
+    "logic": {
+        "methods": [
+            {
+                "name": "getcustomerInfoList",
+                "desp": "获取用户列表",
+                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\npage&&(ctx.currentPage=page);\n!page&&(ctx.currentPage=1);\nsize&&(ctx.pageSize=size);\n!size&&(ctx.pageSize=10);\nconst params = {\n  \"pageNum\": ctx.currentPage,\n  \"pageSize\": ctx.pageSize,\n  \"appreqbody\":\n    {\n      \"name\": ctx.name,\n      \"id_cardno\": ctx.id_cardno\n    }\n};\n\nctx.$axios.post(`${axios.server}/customer/list`,params).then(res=>{\n    if(res.success&&res.status){\n      const tableData = res.obj&&res.obj.records||[];\n      \n      ctx.authorityTableList  = tableData.map(function(item){\n        return{\n          name:item.id,\n          login_name:item.name||'',\n          age:item.desc||'',\n          sex:ctx.timesTransferToDate(item.createTime),\n          phone:item.createUserName,\n          id_cardno:item.updateUserName,\n        }\n      });\n    }\n}).catch(error=>{\n  \n})",
+                "params": [
+                    {
+                        "name": "page",
+                        "desp": "当前页码"
+                    },
+                    {
+                        "name": "size",
+                        "desp": "总条数"
+                    }
+                ],
+                "isEvent": false,
+                "custom": true
+            },
+            {
+                "name": "openEditSub",
+                "desp": "打开编辑子页面",
+                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\n\nctx.open({\n    title: '编辑客户信息',\n    path: '/edit/customer',\n    component: 'GRP/customerEditSub',\n    type: 'SUB',\n    closeOnClickModal: false,\n    hideConfirmBtn: true,\n    hideCancelBtn: true,\n    width: \"600px\", //弹窗的宽\n    height: \"500px\", //高，不设置默认是auto\n    closeOnClickModal: true,//点击弹窗外部是否关闭弹窗，不设置默认是true：会关闭，false：不关闭\n    params:{\"id\":row.id},\n    confirmCallback: (ret) => {\n        ctx.$axios.post(`${axios.server}/customer/edit`, ret).then(res => {\n            //下一步的行为\n            if (res.success) {\n                ctx.$notify({\n                    title: '客户信息编辑成功',\n                    type: 'success'\n                });\n                ctx.getPageAuthorityList();\n            } else {\n                ctx.$notify({\n                    title: res.msg,\n                    type: 'error'\n                });\n\n            }\n        }).catch(function (error) {\n            console.log(error);\n            ctx.$notify({\n                title: error.msg || '编辑失败',\n                type: 'error'\n            });\n        });\n\n    },\n    cancelCallback: (e) => {\n        console.log('点击取消')\n    }\n})",
+                "params": [
+                    {
+                        "name": "row",
+                        "desp": "本行"
+                    }
+                ],
+                "isEvent": false,
+                "custom": true
+            }
+        ],
+        "watch": {},
+        "beforeCreate": {
+            "code": "let ctx = this;"
+        },
+        "created": {
+            "code": "let ctx = this;"
+        },
+        "beforeMount": {
+            "code": "let ctx = this;"
+        },
+        "mounted": {
+            "code": "let ctx = this;"
+        },
+        "beforeUpdate": {
+            "code": "let ctx = this;"
+        },
+        "updated": {
+            "code": "let ctx = this;"
+        },
+        "beforeDestroy": {
+            "code": "let ctx = this;"
+        },
+        "destroyed": {
+            "code": "let ctx = this;"
+        },
+        "activated": {
+            "code": "let ctx = this;"
+        },
+        "deactivated": {
+            "code": "let ctx = this;"
+        },
+        "pollList": []
+    },
+    "dataBasket": {
+        "data": {},
+        "list": [
+            {
+                "desp": "当前页面",
+                "name": "currentPage",
+                "code": "1",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false,
+                "sync": false
+            },
+            {
+                "desp": "姓名",
+                "name": "name",
+                "code": "''",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false,
+                "sync": false
+            },
+            {
+                "desp": "身份证号",
+                "name": "id_cardno",
+                "code": "``",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false,
+                "sync": false
+            },
+            {
+                "desp": "创建时间",
+                "name": "createTime",
+                "code": "``",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false,
+                "sync": false
+            },
+            {
+                "desp": "请求数据",
+                "name": "reqMessage",
+                "code": "''",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false,
+                "sync": false,
+                "isExposed": true
+            },
+            {
+                "desp": "客户信息列表",
+                "name": "customerInfoList",
+                "code": "[]",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false,
+                "sync": false,
+                "isExposed": true
+            },
+            {
+                "desp": "每页数量",
+                "name": "pageSize",
+                "code": "10",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false,
+                "sync": false,
+                "isExposed": true
+            }
+        ],
+        "mapping": {
+            "1612534187575": [
+                {
+                    "id": 1612534187575,
+                    "modelValue": "tableData",
+                    "dataValue": "customerInfoList",
+                    "type": ""
+                },
+                {
+                    "id": 1612534187575,
+                    "modelValue": "pageSize",
+                    "dataValue": "pageSize",
+                    "type": ""
+                },
+                {
+                    "id": 1612534187575,
+                    "modelValue": "currentPage",
+                    "dataValue": "currentPage",
+                    "type": ""
+                }
+            ],
+            "1612535040338": [
+                {
+                    "id": 1612535040338,
+                    "modelValue": "value",
+                    "dataValue": "name",
+                    "type": ""
+                }
+            ],
+            "1612535055323": [
+                {
+                    "id": 1612535055323,
+                    "modelValue": "value",
+                    "dataValue": "createTime",
+                    "type": ""
+                }
+            ],
+            "1612535042388": [
+                {
+                    "id": 1612535042388,
+                    "modelValue": "value",
+                    "dataValue": "name",
+                    "type": ""
+                }
+            ]
+        }
+    },
+    "events": {},
+    "emitList": [],
+    "display": {
+        "icon": "icontongyong",
+        "desp": "客户信息",
+        "type": "gridLayout",
+        "width": "1650px",
+        "height": "1080px",
+        "isSelfAdaption": false,
+        "parentWidth": "1650"
+    },
+    "originCss": "",
+    "cssType": "scss",
+    "cssConfig": {
+        "scoped": null
+    },
+    "nls": "",
+    "mixins": [],
+    "imports": [],
+    "disableVueSPA": false,
+    "disableSupport": false
+}
