@@ -11,13 +11,15 @@
                         "component": "v2-form-input",
                         "id": 1612854599723,
                         "customClass": [
-                            "v2-form-input-1612854599723"
+                            "v2-form-input-1612854599723",
+                            ""
                         ],
                         "commonStyle": {
                             "position": "relative",
                             "align-self": "auto",
                             "padding-left": 0,
-                            "flex-shrink": 0
+                            "flex-shrink": 0,
+                            "flex-grow": 0
                         },
                         "props": [
                             "value",
@@ -47,7 +49,7 @@
                             "size": ""
                         },
                         "disabled": false,
-                        "label": "员工姓名",
+                        "label": "员工账号",
                         "placeholder": "请输入",
                         "titleMode": "col",
                         "labelWitdh": "80px",
@@ -86,10 +88,13 @@
                         "component": "v2-component-btn",
                         "id": 1612855111983,
                         "customClass": [
-                            "v2-component-btn-1612855111983"
+                            "v2-component-btn-1612855111983",
+                            ""
                         ],
                         "commonStyle": {
-                            "align-self": "auto"
+                            "align-self": "auto",
+                            "flex-shrink": 0,
+                            "flex-grow": 0
                         },
                         "props": [
                             "disabled",
@@ -113,8 +118,10 @@
                         "if": true,
                         "events": {
                             "_op_componentBtn_btn": {
-                                "undefined": {
-                                    "v2_component_btn_1613138459846": {}
+                                "click": {
+                                    "v2_component_btn_1614091887290": {
+                                        "params": ""
+                                    }
                                 }
                             }
                         },
@@ -132,13 +139,77 @@
                         "animate": [
                             "",
                             "animated"
+                        ],
+                        "rightIcon": "el-icon-search"
+                    },
+                    {
+                        "theme": {
+                            "btnType": "primary",
+                            "size": ""
+                        },
+                        "disabled": false,
+                        "loading": false,
+                        "btnName": "新增",
+                        "rightIcon": "el-icon-plus",
+                        "shape": "def",
+                        "visible": true,
+                        "if": true,
+                        "__capacity": "1",
+                        "component": "v2-component-btn",
+                        "href": "v2-component-btn",
+                        "name": "按钮",
+                        "children": [],
+                        "events": {
+                            "_op_componentBtn_btn": {
+                                "click": {
+                                    "v2_component_btn_1614086629526": {
+                                        "params": ""
+                                    }
+                                }
+                            }
+                        },
+                        "version": "16.0.0",
+                        "id": 1614086695490,
+                        "pid": 1612854178100,
+                        "$ref": "v2ComponentBtn_3",
+                        "commonStyle": {
+                            "box-sizing": "border-box",
+                            "align-self": "auto",
+                            "flex-basis": "auto",
+                            "flex-shrink": 1,
+                            "flex-grow": "0",
+                            "margin-left": "20px"
+                        },
+                        "props": [
+                            "disabled",
+                            "loading",
+                            "btnName",
+                            "leftIcon",
+                            "rightIcon",
+                            "shape",
+                            "visible",
+                            "if",
+                            "customClass"
+                        ],
+                        "customClass": [
+                            "v2-component-btn-1614086695490",
+                            ""
+                        ],
+                        "sizeLocked": {
+                            "widthLock": false,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated"
                         ]
                     }
                 ],
                 "component": "v2Container",
                 "id": 1612854178100,
                 "customClass": [
-                    "v2Container-1612854178100"
+                    "v2Container-1612854178100",
+                    ""
                 ],
                 "commonStyle": {
                     "box-sizing": "border-box",
@@ -191,9 +262,9 @@
                 ],
                 "commonStyle": {
                     "align-self": "auto",
-                    "height": "90%",
+                    "height": "816.00px",
                     "margin-left": "0",
-                    "width": "98%",
+                    "width": "calc(100% - 20px)",
                     "flex-shrink": 0,
                     "border-radius": "0px",
                     "opacity": 1
@@ -231,10 +302,11 @@
                     "if",
                     "customClass"
                 ],
-                "setPageCallback": "getAddressInfo",
+                "setPageCallback": "getStaffInfo",
                 "tableData": "${staffList}",
                 "pageSize": "${pageSize}",
-                "totalCount": "${addressTotalCount}",
+                "totalCount": "${staffTotalCount}",
+                "toolBar": true,
                 "theme": {
                     "tableType": "border",
                     "size": ""
@@ -411,7 +483,6 @@
                 "indexLocation": "left",
                 "openPage": true,
                 "openSetPageCallback": true,
-                "toolBar": true,
                 "toolTitle": "操作",
                 "toolHeaderAlign": "left",
                 "toolLocation": "right",
@@ -421,16 +492,7 @@
                         "active": true,
                         "btnName": "编辑",
                         "type": "text",
-                        "handler": "",
-                        "rowName": " ",
-                        "toolIcon": " ",
-                        "rowValue": " "
-                    },
-                    {
-                        "active": true,
-                        "btnName": "新增",
-                        "type": "text",
-                        "handler": "",
+                        "handler": "editStaff",
                         "rowName": " ",
                         "toolIcon": " ",
                         "rowValue": " "
@@ -459,8 +521,9 @@
         "component": "v2Container",
         "id": "root",
         "commonStyle": {
-            "flex-shrink": "0",
-            "box-sizing": "border-box"
+            "flex-shrink": 0,
+            "box-sizing": "border-box",
+            "flex-grow": 0
         },
         "customClass": [],
         "$ref": "v2Container_root",
@@ -495,8 +558,17 @@
             {
                 "name": "getStaffInfo",
                 "desp": "获取客户地址信息",
-                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\npage&&(ctx.currentPage=page);\n!page&&(ctx.currentPage=1);\nsize&&(ctx.pageSize=size);\n!size&&(ctx.pageSize=10);\nconst params = {\n  \"pageNum\": ctx.currentPage,\n  \"pageSize\": ctx.pageSize,\n  \"staff_name\":ctx.staff_name\n};\n\nctx.$axios.post(`${axios.server}/staff/list`,params).then(res=>{\n    if(res.success&&res.status){\n      const tableData = res.obj&&res.obj.records||[];\n      \n      ctx.staffList  = tableData.map(function(item){\n        return{\n          staff_name:item.staff_name,\n          staff_age:item.staff_age,\n          staff_sex:item.staff_sex,\n          staff_id:item.staff_id,\n          staff_phone:item.staff_phone,\n          hiredate:item.hiredate,\n          dot_id:item.dot_id\n        }\n      });\n      ctx.staffTotalCount = res.obj&&res.obj.totalElements;\n    }\n}).catch(error=>{\n  \n})",
-                "params": [],
+                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\npage&&(ctx.currentPage=page);\n!page&&(ctx.currentPage=1);\nsize&&(ctx.pageSize=size);\n!size&&(ctx.pageSize=10);\nconst params = {\n  \"pageNum\": ctx.currentPage,\n  \"pageSize\": ctx.pageSize,\n  \"orders\": [],\n  \"query\": {\n    \"staffName\": ctx.staff_name\n  },\n  \"ranges\": []\n};\n\nctx.$axios.post(`${axios.server}/staffInfo/list`,params).then(res=>{\n    if(res.success&&res.status){\n      const tableData = res.obj && res.obj.records||[];\n      \n      ctx.staffList  = tableData.map(function(item){\n        return{\n          staff_name:item.staffName,\n          staff_age:item.staffAge,\n          staff_sex:item.staffSex,\n          staff_id:item.staffId,\n          staff_phone:item.staffPhone,\n          hiredate:item.hiredate,\n          dot_id:item.dotId\n        }\n      });\n      ctx.staffTotalCount = res.obj&&res.obj.total;\n    }\n}).catch(error=>{\n  \n})",
+                "params": [
+                    {
+                        "name": "page",
+                        "desp": "新参数"
+                    },
+                    {
+                        "name": "size",
+                        "desp": "新参数"
+                    }
+                ],
                 "isEvent": false,
                 "custom": true
             },
@@ -520,11 +592,50 @@
             },
             {
                 "name": "openEditStaffPage",
-                "desp": "打开编辑子页面",
-                "code": "// 函数内直接用 ctx 代替 this 访问 Vue 页面的数据。\n/** @type {V2ViewType} */\nconst ctx = this;",
+                "desp": "新增配送员信息",
+                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\n\nctx.open({\n    title:'新增配送员',\n    path:'/add/authority',\n    component:'GRP/editStaffSubPage',\n    type:'SUB',\n    closeOnClickModal:false,\n    hideConfirmBtn:true, \n    hideCancelBtn:true, \n    confirmCallback:(params) => { \n       \n        ctx.$axios.post(`${axios.server}/staffInfo/add`, params).then(res => {\n            //下一步的行为\n            if(res.success){\n                ctx.$notify({\n                    title: '新增权限成功',\n                    type: 'success'\n                });\n                ctx.getPageAuthorityList();\n            }else{\n                ctx.$notify({\n                    title: res.msg,\n                    type: 'error'\n                });\n\n            }\n        }).catch(function (error) {\n            console.log(error);\n            ctx.$notify({\n                    title: error.msg || '新增失败',\n                    type: 'error'\n                });\n        });   \n  \n    },\n    cancelCallback:(e) => {\n        console.log('点击取消')\n    }\n})",
                 "params": [],
                 "isEvent": false,
                 "custom": true
+            },
+            {
+                "name": "editStaff",
+                "desp": "编辑配送员信息",
+                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\nconsole.log(row.staff_id)\nctx.open({\n    title:'编辑配送员信息',\n    path:'/edit/Staff',\n    component:'GRP/editStaffSubPage',\n    type:'SUB',\n    closeOnClickModal:false,\n    params:{staffId:row.staff_id},\n    hideConfirmBtn:true, \n    hideCancelBtn:true, \n    confirmCallback:(params) => { \n        ctx.$axios.post(`${axios.server}/staffInfo/update`, params).then(res => {\n        //下一步的行为\n            if(res.success){\n                ctx.$notify({\n                    title: '编辑配送员成功',\n                    type: 'success'\n                });\n               ctx.getStaffInfo(ctx.currentPage);\n                \n            }else{\n                ctx.$notify({\n                    title: res.msg,\n                    type: 'error'\n                });\n               \n            }\n        }).catch(function (error) {\n            console.log(error);\n            ctx.$notify({\n                title: error.msg || '编辑失败',\n                type: 'error'\n            });\n        });\n       \n    },\n    cancelCallback:(e) => {\n        console.log('点击取消')\n    }\n})",
+                "params": [
+                    {
+                        "name": "index",
+                        "desp": "新参数"
+                    },
+                    {
+                        "name": "row",
+                        "desp": "新参数"
+                    }
+                ],
+                "isEvent": false,
+                "custom": true
+            },
+            {
+                "name": "v2_component_btn_1614086629526",
+                "desp": "新增",
+                "code": "/**\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\n**/\n\n//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\n/**\n方法名称：openEditStaffPage\n方法描述：新增配送员信息\n\n**/\nctx.openEditStaffPage();",
+                "params": [],
+                "isEvent": true,
+                "custom": true,
+                "id": 1614086695490,
+                "isExposed": false,
+                "emitName": ""
+            },
+            {
+                "name": "v2_component_btn_1614091887290",
+                "desp": "查询",
+                "code": "/**\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\n**/\n\n//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\n/**\n方法名称：getStaffInfo\n方法描述：获取客户地址信息\n参数1:page(新参数)\n参数2:size(新参数)\n**/\nctx.getStaffInfo(ctx.currentPage);",
+                "params": [],
+                "isEvent": true,
+                "custom": true,
+                "id": 1612855111983,
+                "isExposed": false,
+                "emitName": ""
             }
         ],
         "watch": {},
@@ -571,10 +682,11 @@
                 "belongTo": "data",
                 "type": "data",
                 "showSet": false,
-                "sync": false
+                "sync": false,
+                "isExposed": false
             },
             {
-                "desp": "页码数",
+                "desp": "每页数量",
                 "name": "pageSize",
                 "code": "10",
                 "source": "pageData",
@@ -605,6 +717,18 @@
                 "showSet": false,
                 "sync": false,
                 "isExposed": true
+            },
+            {
+                "desp": "当前页码",
+                "name": "currentPage",
+                "code": "1",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false,
+                "sync": false,
+                "syncComputed": "computed_newPageData",
+                "isExposed": true
             }
         ],
         "mapping": {
@@ -613,6 +737,12 @@
                     "id": 1612854187456,
                     "modelValue": "setPageCallback",
                     "dataValue": "setPageCallback",
+                    "type": ""
+                },
+                {
+                    "id": 1612854187456,
+                    "modelValue": "toolBar",
+                    "dataValue": "true",
                     "type": ""
                 },
                 {
@@ -630,13 +760,7 @@
                 {
                     "id": 1612854187456,
                     "modelValue": "totalCount",
-                    "dataValue": "addressTotalCount",
-                    "type": ""
-                },
-                {
-                    "id": 1612854187456,
-                    "modelValue": "toolBar",
-                    "dataValue": "true",
+                    "dataValue": "staffTotalCount",
                     "type": ""
                 }
             ],

@@ -1,12 +1,14 @@
 <template>
     <v2container :wid="`root`" style="flex-shrink:0;box-sizing:border-box;" class="V2Container">
         <div :wid="`1612854178100`" class="v2Container-1612854178100 V2Container" style="box-sizing:border-box;align-self:stretch;display:flex;flex-direction:row;align-items:flex-start;height:auto;" :if="true" ref="v2Container_1">
-            <v2-form-input :wid="`1612854599723`" class="v2-form-input-1612854599723 V2Widget" :style="{'position':'relative','align-self':'auto','padding-left':0,'flex-shrink':0}" :theme="{'size':''}" :disabled="false" :label="`员工姓名`" :placeholder="`请输入`" :title-mode="`col`" :label-witdh="`80px`" :input-type="`text`" :rows="2" :show-word-limit="false" :clearable="false" :is-required="false" :auto-complete="false" :if="true" ref="v2FormInput_4" :value.sync="staff_name">
+            <v2-form-input :wid="`1612854599723`" class="v2-form-input-1612854599723 V2Widget" :style="{'position':'relative','align-self':'auto','padding-left':0,'flex-shrink':0}" :theme="{'size':''}" :disabled="false" :label="`员工账号`" :placeholder="`请输入`" :title-mode="`col`" :label-witdh="`80px`" :input-type="`text`" :rows="2" :show-word-limit="false" :clearable="false" :is-required="false" :auto-complete="false" :if="true" ref="v2FormInput_4" :value.sync="staff_name">
             </v2-form-input>
-            <v2-component-btn :wid="`1612855111983`" class="v2-component-btn-1612855111983 V2Widget" :style="{'align-self':'auto'}" :theme="{'btnType':'primary','size':''}" :disabled="false" :loading="false" :btn-name="`查询`" :shape="`def`" :if="true" @_op_component-btn_btn:undefined="v2_component_btn_1613138459846" ref="v2ComponentBtn_1">
+            <v2-component-btn :wid="`1612855111983`" class="v2-component-btn-1612855111983 V2Widget" :style="{'align-self':'auto','flex-shrink':0}" :theme="{'btnType':'primary','size':''}" :disabled="false" :loading="false" :btn-name="`查询`" :right-icon="`el-icon-search`" :shape="`def`" :if="true" @_op_component-btn_btn:click="v2_component_btn_1614091887290" ref="v2ComponentBtn_1">
+            </v2-component-btn>
+            <v2-component-btn :wid="`1614086695490`" class="v2-component-btn-1614086695490 V2Widget" :style="{'align-self':'auto','margin-left':'20px'}" :theme="{'btnType':'primary','size':''}" :disabled="false" :loading="false" :btn-name="`新增`" :right-icon="`el-icon-plus`" :shape="`def`" :if="true" @_op_component-btn_btn:click="v2_component_btn_1614086629526" ref="v2ComponentBtn_3">
             </v2-component-btn>
         </div>
-        <v2-component-table :wid="`1612854187456`" class="v2-component-table-1612854187456 V2Widget" :style="{'align-self':'auto','height':'90%','margin-left':'0','width':'98%','flex-shrink':0}" :setPageCallback="setPageCallback" :tableData="staffList" :pageSize="pageSize" :totalCount="addressTotalCount" :toolBar="true" :theme="{'tableType':'border','size':''}" :tooltip-effect="`dark`" :columns="[{'active':true,'type':'text','prop':'staff_id','label':'员工编号','handleLink':true,'handleLinkCB':'handleLinkCallback','linkTarget':'_blank','openTooltip':false,'handleTooltip':true,'tooltipContent':'提示','tooltipContentCallback':'tooltipContentCallback','useMinWidth':true,'headerAlign':'left','align':'left','sortable':false,'openFilter':false,'combi':[],'tagMap':[],'textMap':[],'iconMap':[],'filterMap':[]},{'active':true,'type':'text','prop':'staff_name','label':'姓名','handleLink':true,'handleLinkCB':'handleLinkCallback','linkTarget':'_blank','openTooltip':false,'handleTooltip':true,'tooltipContent':'提示','tooltipContentCallback':'tooltipContentCallback','useMinWidth':true,'headerAlign':'left','align':'left','sortable':false,'openFilter':false,'combi':[],'tagMap':[],'textMap':[],'iconMap':[],'filterMap':[]},{'active':true,'type':'text','prop':'staff_sex','label':'性别','handleLink':true,'handleLinkCB':'handleLinkCallback','linkTarget':'_blank','openTooltip':false,'handleTooltip':true,'tooltipContent':'提示','tooltipContentCallback':'tooltipContentCallback','useMinWidth':true,'headerAlign':'left','align':'left','sortable':false,'openFilter':false,'combi':[],'tagMap':[],'textMap':[],'iconMap':[],'filterMap':[]},{'active':true,'type':'text','prop':'staff_age','label':'年龄','handleLink':true,'handleLinkCB':'handleLinkCallback','linkTarget':'_blank','openTooltip':false,'handleTooltip':true,'tooltipContent':'提示','tooltipContentCallback':'tooltipContentCallback','useMinWidth':true,'headerAlign':'left','align':'left','sortable':false,'openFilter':false,'combi':[],'tagMap':[],'textMap':[],'iconMap':[],'filterMap':[]},{'active':true,'type':'text','prop':'staff_phone','label':'联系号码','handleLink':true,'handleLinkCB':'handleLinkCallback','linkTarget':'_blank','openTooltip':false,'handleTooltip':true,'tooltipContent':'提示','tooltipContentCallback':'tooltipContentCallback','useMinWidth':true,'headerAlign':'left','align':'left','sortable':false,'openFilter':false,'combi':[],'tagMap':[],'textMap':[],'iconMap':[],'filterMap':[]},{'active':true,'type':'text','prop':'dot_id','label':'所属网点','handleLink':true,'handleLinkCB':'handleLinkCallback','linkTarget':'_blank','openTooltip':false,'handleTooltip':true,'tooltipContent':'提示','tooltipContentCallback':'tooltipContentCallback','useMinWidth':true,'headerAlign':'left','align':'left','sortable':false,'openFilter':false,'combi':[],'tagMap':[],'textMap':[],'iconMap':[],'filterMap':[]},{'active':true,'type':'text','prop':'hiredate','label':'入职时间','handleLink':true,'handleLinkCB':'handleLinkCallback','linkTarget':'_blank','openTooltip':false,'handleTooltip':true,'tooltipContent':'提示','tooltipContentCallback':'tooltipContentCallback','useMinWidth':true,'headerAlign':'left','align':'left','sortable':false,'openFilter':false,'combi':[],'tagMap':[],'textMap':[],'iconMap':[],'filterMap':[]}]" :table-data="staffList" :selection-location="`left`" :t-height="`100%`" :t-max-height="`100%`" :open-index="false" :loading="false" :index-location="`left`" :open-page="true" :page-size="pageSize" :open-set-page-callback="true" :set-page-callback="`getAddressInfo`" :total-count="addressTotalCount" :tool-bar="true" :tool-title="`操作`" :tool-header-align="`left`" :tool-location="`right`" :tool-width="100" :tool-btns="[{'active':true,'btnName':'编辑','type':'text','handler':'','rowName':' ','toolIcon':' ','rowValue':' '},{'active':true,'btnName':'新增','type':'text','handler':'','rowName':' ','toolIcon':' ','rowValue':' '}]" :expand="false" :if="true" ref="v2ComponentTable_1">
+        <v2-component-table :wid="`1612854187456`" class="v2-component-table-1612854187456 V2Widget" :style="{'align-self':'auto','height':'816.00px','margin-left':'0','width':'calc(100% - 20px)','flex-shrink':0}" :setPageCallback="setPageCallback" :toolBar="true" :tableData="staffList" :pageSize="pageSize" :totalCount="staffTotalCount" :theme="{'tableType':'border','size':''}" :tooltip-effect="`dark`" :columns="[{'active':true,'type':'text','prop':'staff_id','label':'员工编号','handleLink':true,'handleLinkCB':'handleLinkCallback','linkTarget':'_blank','openTooltip':false,'handleTooltip':true,'tooltipContent':'提示','tooltipContentCallback':'tooltipContentCallback','useMinWidth':true,'headerAlign':'left','align':'left','sortable':false,'openFilter':false,'combi':[],'tagMap':[],'textMap':[],'iconMap':[],'filterMap':[]},{'active':true,'type':'text','prop':'staff_name','label':'姓名','handleLink':true,'handleLinkCB':'handleLinkCallback','linkTarget':'_blank','openTooltip':false,'handleTooltip':true,'tooltipContent':'提示','tooltipContentCallback':'tooltipContentCallback','useMinWidth':true,'headerAlign':'left','align':'left','sortable':false,'openFilter':false,'combi':[],'tagMap':[],'textMap':[],'iconMap':[],'filterMap':[]},{'active':true,'type':'text','prop':'staff_sex','label':'性别','handleLink':true,'handleLinkCB':'handleLinkCallback','linkTarget':'_blank','openTooltip':false,'handleTooltip':true,'tooltipContent':'提示','tooltipContentCallback':'tooltipContentCallback','useMinWidth':true,'headerAlign':'left','align':'left','sortable':false,'openFilter':false,'combi':[],'tagMap':[],'textMap':[],'iconMap':[],'filterMap':[]},{'active':true,'type':'text','prop':'staff_age','label':'年龄','handleLink':true,'handleLinkCB':'handleLinkCallback','linkTarget':'_blank','openTooltip':false,'handleTooltip':true,'tooltipContent':'提示','tooltipContentCallback':'tooltipContentCallback','useMinWidth':true,'headerAlign':'left','align':'left','sortable':false,'openFilter':false,'combi':[],'tagMap':[],'textMap':[],'iconMap':[],'filterMap':[]},{'active':true,'type':'text','prop':'staff_phone','label':'联系号码','handleLink':true,'handleLinkCB':'handleLinkCallback','linkTarget':'_blank','openTooltip':false,'handleTooltip':true,'tooltipContent':'提示','tooltipContentCallback':'tooltipContentCallback','useMinWidth':true,'headerAlign':'left','align':'left','sortable':false,'openFilter':false,'combi':[],'tagMap':[],'textMap':[],'iconMap':[],'filterMap':[]},{'active':true,'type':'text','prop':'dot_id','label':'所属网点','handleLink':true,'handleLinkCB':'handleLinkCallback','linkTarget':'_blank','openTooltip':false,'handleTooltip':true,'tooltipContent':'提示','tooltipContentCallback':'tooltipContentCallback','useMinWidth':true,'headerAlign':'left','align':'left','sortable':false,'openFilter':false,'combi':[],'tagMap':[],'textMap':[],'iconMap':[],'filterMap':[]},{'active':true,'type':'text','prop':'hiredate','label':'入职时间','handleLink':true,'handleLinkCB':'handleLinkCallback','linkTarget':'_blank','openTooltip':false,'handleTooltip':true,'tooltipContent':'提示','tooltipContentCallback':'tooltipContentCallback','useMinWidth':true,'headerAlign':'left','align':'left','sortable':false,'openFilter':false,'combi':[],'tagMap':[],'textMap':[],'iconMap':[],'filterMap':[]}]" :table-data="staffList" :selection-location="`left`" :t-height="`100%`" :t-max-height="`100%`" :open-index="false" :loading="false" :index-location="`left`" :open-page="true" :page-size="pageSize" :open-set-page-callback="true" :set-page-callback="`getStaffInfo`" :total-count="staffTotalCount" :tool-bar="true" :tool-title="`操作`" :tool-header-align="`left`" :tool-location="`right`" :tool-width="100" :tool-btns="[{'active':true,'btnName':'编辑','type':'text','handler':'editStaff','rowName':' ','toolIcon':' ','rowValue':' '}]" :expand="false" :if="true" ref="v2ComponentTable_1">
         </v2-component-table>
     </v2container>
 </template>
@@ -34,7 +36,7 @@
 
                         ]
                     },
-                    'mapping': {"1612854187456":[{"id":1612854187456,"modelValue":"setPageCallback","dataValue":"setPageCallback","type":""},{"id":1612854187456,"modelValue":"tableData","dataValue":"staffList","type":""},{"id":1612854187456,"modelValue":"pageSize","dataValue":"pageSize","type":""},{"id":1612854187456,"modelValue":"totalCount","dataValue":"addressTotalCount","type":""},{"id":1612854187456,"modelValue":"toolBar","dataValue":"true","type":""}],"1612854599723":[{"id":1612854599723,"modelValue":"value","dataValue":"staff_name","type":""}]}
+                    'mapping': {"1612854187456":[{"id":1612854187456,"modelValue":"setPageCallback","dataValue":"setPageCallback","type":""},{"id":1612854187456,"modelValue":"toolBar","dataValue":"true","type":""},{"id":1612854187456,"modelValue":"tableData","dataValue":"staffList","type":""},{"id":1612854187456,"modelValue":"pageSize","dataValue":"pageSize","type":""},{"id":1612854187456,"modelValue":"totalCount","dataValue":"staffTotalCount","type":""}],"1612854599723":[{"id":1612854599723,"modelValue":"value","dataValue":"staff_name","type":""}]}
                 },
                 /* 员工姓名 */
                 'staff_name': '',
@@ -43,7 +45,7 @@
             }
         },
         'props': {
-            /* 页码数 */
+            /* 每页数量 */
             'pageSize': {
                 'default': () => {
                     return 10
@@ -60,6 +62,12 @@
                 'default': () => {
                     return 1
                 }
+            },
+            /* 当前页码 */
+            'currentPage': {
+                'default': () => {
+                    return 1
+                }
             }
         },
         'computed': {
@@ -71,8 +79,10 @@
         'methods': {
             /**
              *  获取客户地址信息
+             *  @param 新参数 page
+             *  @param 新参数 size
              */
-            getStaffInfo() {
+            getStaffInfo(page, size) {
                 //函数内直接用ctx代替this访问vue页面的数据。
                 const ctx = this;
                 page&&(ctx.currentPage=page);
@@ -82,25 +92,29 @@
                 const params = {
                   "pageNum": ctx.currentPage,
                   "pageSize": ctx.pageSize,
-                  "staff_name":ctx.staff_name
+                  "orders": [],
+                  "query": {
+                    "staffName": ctx.staff_name
+                  },
+                  "ranges": []
                 };
                 
-                ctx.$axios.post(`${axios.server}/staff/list`,params).then(res=>{
+                ctx.$axios.post(`${axios.server}/staffInfo/list`,params).then(res=>{
                     if(res.success&&res.status){
-                      const tableData = res.obj&&res.obj.records||[];
+                      const tableData = res.obj && res.obj.records||[];
                       
                       ctx.staffList  = tableData.map(function(item){
                         return{
-                          staff_name:item.staff_name,
-                          staff_age:item.staff_age,
-                          staff_sex:item.staff_sex,
-                          staff_id:item.staff_id,
-                          staff_phone:item.staff_phone,
+                          staff_name:item.staffName,
+                          staff_age:item.staffAge,
+                          staff_sex:item.staffSex,
+                          staff_id:item.staffId,
+                          staff_phone:item.staffPhone,
                           hiredate:item.hiredate,
-                          dot_id:item.dot_id
+                          dot_id:item.dotId
                         }
                       });
-                      ctx.staffTotalCount = res.obj&&res.obj.totalElements;
+                      ctx.staffTotalCount = res.obj&&res.obj.total;
                     }
                 }).catch(error=>{
                   
@@ -111,7 +125,7 @@
              *  @param $event $event
              *  @param 组件的vue实例 vueIns
              */
-            v2_component_btn_1613138459846($event, vueIns=this.$refs['v2ComponentBtn_1']) {
+            v2_component_btn_1613138459846($event, vueIns) {
                 //*====AGREE-ACTION-START====*//
                 //*+AGREE-CONFIG-*//
                 //{
@@ -135,12 +149,134 @@
                 ctx.getStaffInfo();
             },
             /**
-             *  打开编辑子页面
+             *  新增配送员信息
              */
             openEditStaffPage() {
-                // 函数内直接用 ctx 代替 this 访问 Vue 页面的数据。
-                /** @type {V2ViewType} */
+                //函数内直接用ctx代替this访问vue页面的数据。
                 const ctx = this;
+                
+                ctx.open({
+                    title:'新增配送员',
+                    path:'/add/authority',
+                    component:'GRP/editStaffSubPage',
+                    type:'SUB',
+                    closeOnClickModal:false,
+                    hideConfirmBtn:true, 
+                    hideCancelBtn:true, 
+                    confirmCallback:(params) => { 
+                       
+                        ctx.$axios.post(`${axios.server}/staffInfo/add`, params).then(res => {
+                            //下一步的行为
+                            if(res.success){
+                                ctx.$notify({
+                                    title: '新增权限成功',
+                                    type: 'success'
+                                });
+                                ctx.getPageAuthorityList();
+                            }else{
+                                ctx.$notify({
+                                    title: res.msg,
+                                    type: 'error'
+                                });
+                
+                            }
+                        }).catch(function (error) {
+                            console.log(error);
+                            ctx.$notify({
+                                    title: error.msg || '新增失败',
+                                    type: 'error'
+                                });
+                        });   
+                  
+                    },
+                    cancelCallback:(e) => {
+                        console.log('点击取消')
+                    }
+                })
+            },
+            /**
+             *  编辑配送员信息
+             *  @param 新参数 index
+             *  @param 新参数 row
+             */
+            editStaff(index, row) {
+                //函数内直接用ctx代替this访问vue页面的数据。
+                const ctx = this;
+                console.log(row.staff_id)
+                ctx.open({
+                    title:'编辑配送员信息',
+                    path:'/edit/Staff',
+                    component:'GRP/editStaffSubPage',
+                    type:'SUB',
+                    closeOnClickModal:false,
+                    params:{staffId:row.staff_id},
+                    hideConfirmBtn:true, 
+                    hideCancelBtn:true, 
+                    confirmCallback:(params) => { 
+                        ctx.$axios.post(`${axios.server}/staffInfo/update`, params).then(res => {
+                        //下一步的行为
+                            if(res.success){
+                                ctx.$notify({
+                                    title: '编辑配送员成功',
+                                    type: 'success'
+                                });
+                               ctx.getStaffInfo(ctx.currentPage);
+                                
+                            }else{
+                                ctx.$notify({
+                                    title: res.msg,
+                                    type: 'error'
+                                });
+                               
+                            }
+                        }).catch(function (error) {
+                            console.log(error);
+                            ctx.$notify({
+                                title: error.msg || '编辑失败',
+                                type: 'error'
+                            });
+                        });
+                       
+                    },
+                    cancelCallback:(e) => {
+                        console.log('点击取消')
+                    }
+                })
+            },
+            /**
+             *  新增
+             */
+            v2_component_btn_1614086629526($event, vueIns=this.$refs['v2ComponentBtn_3']) {
+                /**
+                * 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN
+                **/
+                
+                //函数内直接用ctx代替this访问vue页面的数据。
+                const ctx = this;
+                /**
+                方法名称：openEditStaffPage
+                方法描述：新增配送员信息
+                
+                **/
+                ctx.openEditStaffPage();
+            },
+            /**
+             *  查询
+             */
+            v2_component_btn_1614091887290($event, vueIns=this.$refs['v2ComponentBtn_1']) {
+                /**
+                * 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN
+                **/
+                
+                //函数内直接用ctx代替this访问vue页面的数据。
+                const ctx = this;
+                /**
+                方法名称：getStaffInfo
+                方法描述：获取客户地址信息
+                参数1:page(新参数)
+                参数2:size(新参数)
+                **/
+                ctx.getStaffInfo(ctx.currentPage);
             }
         },
         beforeCreate() {

@@ -11,38 +11,38 @@
                         "component": "v2-form-input",
                         "id": 1612854599723,
                         "customClass": [
-                            "v2-form-input-1612854599723"
+                            "v2-form-input-1612854599723",
+                            ""
                         ],
                         "commonStyle": {
                             "position": "relative",
                             "align-self": "auto",
                             "padding-left": 0,
-                            "flex-shrink": 0
+                            "flex-shrink": 0,
+                            "flex-grow": 0
                         },
                         "props": [
-                            "theme",
+                            "value",
                             "disabled",
                             "label",
                             "placeholder",
+                            "prepend",
+                            "append",
                             "titleMode",
                             "labelWitdh",
                             "inputType",
                             "rows",
-                            "showWordLimit",
-                            "clearable",
-                            "isRequired",
-                            "autoComplete",
-                            "if",
-                            "value.sync",
-                            "value",
-                            "prepend",
-                            "append",
                             "maxlength",
                             "minlength",
                             "prefixIcon",
                             "suffixIcon",
+                            "showWordLimit",
+                            "clearable",
+                            "isRequired",
+                            "autoComplete",
                             "suggestion",
                             "visible",
+                            "if",
                             "customClass"
                         ],
                         "theme": {
@@ -88,21 +88,25 @@
                         "component": "v2-component-btn",
                         "id": 1612855111983,
                         "customClass": [
-                            "v2-component-btn-1612855111983"
+                            "v2-component-btn-1612855111983",
+                            ""
                         ],
                         "commonStyle": {
-                            "align-self": "auto"
+                            "align-self": "auto",
+                            "border-radius": "0px",
+                            "flex-grow": 0,
+                            "flex-shrink": 0,
+                            "opacity": 1
                         },
                         "props": [
-                            "theme",
                             "disabled",
                             "loading",
                             "btnName",
-                            "shape",
-                            "if",
                             "leftIcon",
                             "rightIcon",
+                            "shape",
                             "visible",
+                            "if",
                             "customClass"
                         ],
                         "theme": {
@@ -116,8 +120,10 @@
                         "if": true,
                         "events": {
                             "_op_componentBtn_btn": {
-                                "undefined": {
-                                    "v2_component_btn_1613138459846": {}
+                                "click": {
+                                    "v2_component_btn_1614179211305": {
+                                        "params": ""
+                                    }
                                 }
                             }
                         },
@@ -141,7 +147,8 @@
                 "component": "v2Container",
                 "id": 1612854178100,
                 "customClass": [
-                    "v2Container-1612854178100"
+                    "v2Container-1612854178100",
+                    ""
                 ],
                 "commonStyle": {
                     "box-sizing": "border-box",
@@ -152,8 +159,8 @@
                     "height": "auto"
                 },
                 "props": [
-                    "if",
                     "visible",
+                    "if",
                     "element-loading-text",
                     "element-loading-spinner",
                     "element-loading-background",
@@ -200,13 +207,12 @@
                     "flex-shrink": 0
                 },
                 "props": [
-                    "setPageCallback",
-                    "tableData",
-                    "pageSize",
-                    "totalCount",
-                    "theme",
                     "tooltipEffect",
                     "columns",
+                    "tableData",
+                    "selection",
+                    "radioSelect",
+                    "value",
                     "selectionLocation",
                     "tHeight",
                     "tMaxHeight",
@@ -214,7 +220,13 @@
                     "loading",
                     "indexLocation",
                     "openPage",
+                    "pagerCount",
+                    "pageSizes",
+                    "pageSize",
                     "openSetPageCallback",
+                    "setPageCallback",
+                    "currentPage",
+                    "totalCount",
                     "toolBar",
                     "toolTitle",
                     "toolHeaderAlign",
@@ -222,15 +234,9 @@
                     "toolWidth",
                     "toolBtns",
                     "expand",
-                    "if",
-                    "selection",
-                    "radioSelect",
-                    "value",
-                    "pagerCount",
-                    "pageSizes",
-                    "currentPage",
                     "expandMap",
                     "visible",
+                    "if",
                     "customClass"
                 ],
                 "setPageCallback": "getAddressInfo",
@@ -373,8 +379,9 @@
         "component": "v2Container",
         "id": "root",
         "commonStyle": {
-            "flex-shrink": "0",
-            "box-sizing": "border-box"
+            "flex-shrink": 0,
+            "box-sizing": "border-box",
+            "flex-grow": 0
         },
         "customClass": [],
         "$ref": "v2Container_root",
@@ -409,7 +416,7 @@
             {
                 "name": "getAddressInfo",
                 "desp": "获取客户地址信息",
-                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\npage&&(ctx.currentPage=page);\n!page&&(ctx.currentPage=1);\nsize&&(ctx.pageSize=size);\n!size&&(ctx.pageSize=10);\nconst params = {\n  \"pageNum\": ctx.currentPage,\n  \"pageSize\": ctx.pageSize,\n  \"orders\": [],\n  \"query\": {\n    \"login_name\": ctx.login_name\n  },\n  \"ranges\": []\n};\n\nctx.$axios.post(`${axios.server}/addressInfo/list`,params).then(res=>{\n    if(res.success&&res.status){\n      const tableData = res.obj&&res.obj||[];\n      \n      ctx.addressList  = tableData.map(function(item){\n        return{\n          login_name:item.login_name,\n          address_name:item.address_name||'',\n          address:item.address||'',\n          phone:item.phone\n        }\n      });\n      ctx.addressTotalCount = res.obj&&res.obj.totalElements;\n    }\n}).catch(error=>{\n  \n})",
+                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\npage&&(ctx.currentPage=page);\n!page&&(ctx.currentPage=1);\nsize&&(ctx.pageSize=size);\n!size&&(ctx.pageSize=10);\nconst params = {\n  \"pageNum\": ctx.currentPage,\n  \"pageSize\": ctx.pageSize,\n  \"orders\": [],\n  \"query\": {\n    \"loginName\": ctx.login_name\n  },\n  \"ranges\": []\n};\n\nctx.$axios.post(`${axios.server}/addressInfo/list`,params).then(res=>{\n    if(res.success&&res.status){\n      const tableData = res.obj && res.obj.records||[];\n      \n      ctx.addressList  = tableData.map(function(item){\n        return{\n          login_name:item.loginName,\n          address_name:item.addressName||'',\n          address:item.address||'',\n          phone:item.phone\n        }\n      });\n      ctx.addressTotalCount = res.obj&&res.obj.totalElements;\n    }\n}).catch(error=>{\n  \n})",
                 "params": [
                     {
                         "name": "page",
@@ -440,6 +447,17 @@
                 "isEvent": true,
                 "custom": true,
                 "id": 1613138459846
+            },
+            {
+                "name": "v2_component_btn_1614179211305",
+                "desp": "查询",
+                "code": "/**\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\n**/\n\n//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\n/**\n方法名称：getAddressInfo\n方法描述：获取客户地址信息\n参数1:page(新参数)\n参数2:size(新参数)\n**/\nctx.getAddressInfo(ctx.currentPage);\n",
+                "params": [],
+                "isEvent": true,
+                "custom": true,
+                "id": 1612855111983,
+                "isExposed": false,
+                "emitName": ""
             }
         ],
         "watch": {},
@@ -513,6 +531,17 @@
             {
                 "desp": "数据总条数",
                 "name": "addressTotalCount",
+                "code": "1",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false,
+                "sync": false,
+                "isExposed": true
+            },
+            {
+                "desp": "当前页码",
+                "name": "currentPage",
                 "code": "1",
                 "source": "pageData",
                 "belongTo": "data",

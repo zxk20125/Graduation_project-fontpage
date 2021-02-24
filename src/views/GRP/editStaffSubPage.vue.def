@@ -27,24 +27,26 @@
                                     "animation-duration": "1s"
                                 },
                                 "props": [
-                                    "value",
+                                    "labelWitdh",
+                                    "theme",
                                     "disabled",
                                     "label",
                                     "placeholder",
-                                    "prepend",
-                                    "append",
                                     "titleMode",
-                                    "labelWitdh",
                                     "inputType",
                                     "rows",
-                                    "maxlength",
-                                    "minlength",
-                                    "prefixIcon",
-                                    "suffixIcon",
                                     "showWordLimit",
                                     "clearable",
                                     "isRequired",
                                     "autoComplete",
+                                    "value.sync",
+                                    "value",
+                                    "prepend",
+                                    "append",
+                                    "maxlength",
+                                    "minlength",
+                                    "prefixIcon",
+                                    "suffixIcon",
                                     "suggestion",
                                     "visible",
                                     "if",
@@ -54,7 +56,7 @@
                                 "theme": {
                                     "size": ""
                                 },
-                                "disabled": true,
+                                "disabled": false,
                                 "label": "姓名",
                                 "placeholder": "请输入用户名",
                                 "titleMode": "col",
@@ -64,12 +66,12 @@
                                 "clearable": false,
                                 "isRequired": true,
                                 "autoComplete": false,
-                                "value.sync": "${staffData.staff_name}",
+                                "value.sync": "${staffName}",
                                 "$ref": "v2-form-input_1579252216073",
                                 "style": {
                                     "label": {}
                                 },
-                                "value": "${staffData.staff_name}",
+                                "value": "${staffName}",
                                 "visible": true,
                                 "__capacity": "1",
                                 "href": "v2-form-input",
@@ -103,24 +105,26 @@
                                     "animation-duration": "1s"
                                 },
                                 "props": [
-                                    "value",
+                                    "labelWitdh",
+                                    "theme",
                                     "disabled",
                                     "label",
                                     "placeholder",
-                                    "prepend",
-                                    "append",
                                     "titleMode",
-                                    "labelWitdh",
                                     "inputType",
                                     "rows",
-                                    "maxlength",
-                                    "minlength",
-                                    "prefixIcon",
-                                    "suffixIcon",
                                     "showWordLimit",
                                     "clearable",
                                     "isRequired",
                                     "autoComplete",
+                                    "value.sync",
+                                    "value",
+                                    "prepend",
+                                    "append",
+                                    "maxlength",
+                                    "minlength",
+                                    "prefixIcon",
+                                    "suffixIcon",
                                     "suggestion",
                                     "visible",
                                     "if",
@@ -134,18 +138,18 @@
                                 "label": "年龄",
                                 "placeholder": "请输入员工年龄",
                                 "titleMode": "col",
-                                "inputType": "password",
+                                "inputType": "text",
                                 "rows": 2,
                                 "showWordLimit": false,
                                 "clearable": false,
                                 "isRequired": true,
                                 "autoComplete": false,
-                                "value.sync": "${staffData.staff_age}",
+                                "value.sync": "${staffAge}",
                                 "$ref": "v2-form-input_1578552443987",
                                 "style": {
                                     "label": {}
                                 },
-                                "value": "${staffData.staff_age}",
+                                "value": "${staffAge}",
                                 "visible": true,
                                 "__capacity": "1",
                                 "href": "v2-form-input",
@@ -179,24 +183,26 @@
                                     "animation-duration": "1s"
                                 },
                                 "props": [
-                                    "value",
+                                    "labelWitdh",
+                                    "theme",
                                     "disabled",
                                     "label",
                                     "placeholder",
-                                    "prepend",
-                                    "append",
                                     "titleMode",
-                                    "labelWitdh",
                                     "inputType",
                                     "rows",
-                                    "maxlength",
-                                    "minlength",
-                                    "prefixIcon",
-                                    "suffixIcon",
                                     "showWordLimit",
                                     "clearable",
                                     "isRequired",
                                     "autoComplete",
+                                    "value.sync",
+                                    "value",
+                                    "prepend",
+                                    "append",
+                                    "maxlength",
+                                    "minlength",
+                                    "prefixIcon",
+                                    "suffixIcon",
                                     "suggestion",
                                     "visible",
                                     "if",
@@ -216,12 +222,12 @@
                                 "clearable": false,
                                 "isRequired": true,
                                 "autoComplete": false,
-                                "value.sync": "${staffData.staff_phone}",
+                                "value.sync": "${staffPhone}",
                                 "$ref": "v2-form-input_1578552704152",
                                 "style": {
                                     "label": {}
                                 },
-                                "value": "${staffData.staff_phone}",
+                                "value": "${staffPhone}",
                                 "visible": true,
                                 "__capacity": "1",
                                 "href": "v2-form-input",
@@ -242,50 +248,54 @@
                                 "component": "v2-form-select",
                                 "id": 1613226146968,
                                 "customClass": [
-                                    "v2-form-select-1613225357594"
+                                    "v2-form-select-1613225357594",
+                                    ""
                                 ],
                                 "commonStyle": {
-                                    "width": "220px",
+                                    "width": "210.00px",
                                     "align-self": "auto",
                                     "margin-left": "20px",
                                     "padding-left": "10px",
                                     "margin-bottom": "10px"
                                 },
                                 "props": [
-                                    "value",
+                                    "optionConfig",
+                                    "theme",
+                                    "labelWitdh",
                                     "disabled",
                                     "dataType",
-                                    "optionConfig",
                                     "options",
                                     "label",
                                     "placeholder",
-                                    "labelWitdh",
                                     "titleMode",
                                     "clearable",
                                     "prefix",
                                     "filterable",
                                     "isRequired",
-                                    "visible",
                                     "if",
+                                    "value.sync",
+                                    "value",
+                                    "visible",
                                     "customClass"
                                 ],
+                                "optionConfig": "${dotList}",
                                 "theme": {
                                     "size": ""
                                 },
+                                "labelWitdh": "80px",
                                 "disabled": false,
                                 "dataType": "def",
                                 "options": [],
                                 "label": "网点",
                                 "placeholder": "请选择",
-                                "labelWitdh": "80px",
                                 "titleMode": "col",
                                 "clearable": false,
                                 "prefix": false,
                                 "filterable": true,
-                                "isRequired": false,
+                                "isRequired": true,
                                 "if": true,
+                                "value.sync": "${dotId}",
                                 "$ref": "v2FormSelect_6",
-                                "value.sync": "${staffData.staff_phone}",
                                 "style": {
                                     "label": {}
                                 },
@@ -308,7 +318,7 @@
                                     "top": 210,
                                     "left": 140
                                 },
-                                "value": "${staffData.staff_phone}"
+                                "value": "${dotId}"
                             },
                             {
                                 "__resolveFromCode": false,
@@ -316,48 +326,53 @@
                                 "component": "v2-form-select",
                                 "id": 1613225479973,
                                 "customClass": [
-                                    "v2-form-select-1613225357594"
+                                    "v2-form-select-1613225357594",
+                                    ""
                                 ],
                                 "commonStyle": {
-                                    "width": "220px",
+                                    "width": "209.00px",
                                     "align-self": "auto",
                                     "margin-left": "20px",
                                     "padding-left": "10px",
                                     "margin-bottom": "10px"
                                 },
                                 "props": [
-                                    "value",
+                                    "optionConfig",
+                                    "theme",
+                                    "labelWitdh",
                                     "disabled",
                                     "dataType",
-                                    "optionConfig",
                                     "options",
                                     "label",
                                     "placeholder",
-                                    "labelWitdh",
                                     "titleMode",
                                     "clearable",
                                     "prefix",
                                     "filterable",
                                     "isRequired",
-                                    "visible",
                                     "if",
+                                    "value.sync",
+                                    "value",
+                                    "visible",
                                     "customClass"
                                 ],
+                                "optionConfig": "${sexList}",
                                 "theme": {
                                     "size": ""
                                 },
+                                "labelWitdh": "80px",
                                 "disabled": false,
                                 "dataType": "def",
                                 "options": [],
                                 "label": "性别",
                                 "placeholder": "请选择",
-                                "labelWitdh": "80px",
                                 "titleMode": "col",
                                 "clearable": false,
                                 "prefix": false,
                                 "filterable": true,
-                                "isRequired": false,
+                                "isRequired": true,
                                 "if": true,
+                                "value.sync": "${staffSex}",
                                 "$ref": "v2FormSelect_2",
                                 "style": {
                                     "label": {}
@@ -380,7 +395,8 @@
                                 "offset": {
                                     "top": 210,
                                     "left": 130
-                                }
+                                },
+                                "value": "${staffSex}"
                             }
                         ],
                         "component": "v2Container",
@@ -451,10 +467,7 @@
                     "min-height": "50px",
                     "animation-duration": "1s",
                     "height": "auto",
-                    "flex-shrink": 0,
-                    "border-radius": "0px",
-                    "flex-grow": 0,
-                    "opacity": 1
+                    "flex-shrink": "0"
                 },
                 "$ref": "v2Container_1578552432842",
                 "href": "v2Container",
@@ -506,12 +519,13 @@
                             "animation-duration": "1s"
                         },
                         "props": [
+                            "theme",
                             "disabled",
                             "loading",
                             "btnName",
+                            "shape",
                             "leftIcon",
                             "rightIcon",
-                            "shape",
                             "visible",
                             "if",
                             "customClass"
@@ -568,12 +582,13 @@
                             "animation-duration": "1s"
                         },
                         "props": [
+                            "theme",
                             "disabled",
                             "loading",
                             "btnName",
+                            "shape",
                             "leftIcon",
                             "rightIcon",
-                            "shape",
                             "visible",
                             "if",
                             "customClass"
@@ -830,7 +845,15 @@
             {
                 "name": "getStaffDetail",
                 "desp": "获取配送员数据",
-                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;staff\nctx.$axios.get(`${axios.server}/staff/get/${ctx.AParams.id}`).then(res=>{\n    if(res.success&&res.status){\n        var obj = res.obj;\n\n        ctx.userData.username=obj&&obj.name;\n        //ctx.userData.password = obj&&obj.password;\n        ctx.userData.nickname  = obj&&obj.nickname;\n        ctx.userData.phone= obj&&obj.phone;\n        ctx.userData.email= obj&&obj.email;\n        ctx.userData.status= obj.status===\"1\"?true:false;\n        ctx.userData.desp= obj&&obj.desc;\n\n    }\n}).catch(error=>{\n    console.log(error);\n})",
+                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\nctx.$axios.get(`${axios.server}/staffInfo/get/${ctx.AParams.staffId}`).then(res=>{\n    if(res.success&&res.status){\n        var obj = res.obj;\n\n        ctx.staffName=obj&&obj.staffName;\n        ctx.staffAge  = obj&&obj.staffAge;\n        ctx.staffPhone= obj&&obj.staffPhone;\n        ctx.staffSex= obj&&obj.staffSex;\n        ctx.dotId= obj&&obj.dotId;\n        \n        \n    }\n}).catch(error=>{\n    console.log(error);\n})",
+                "params": [],
+                "isEvent": false,
+                "custom": true
+            },
+            {
+                "name": "getDotList",
+                "desp": "获取网点列表",
+                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\nctx.$axios.get(`${axios.server}/branchInfo/list`).then(res=>{\n    if(res.status&&res.success){\n       \n        ctx.dotList = res.obj.map(function(item){\n            return {\n                value:item.dotId,\n                label:item.dotName\n            }\n        })\n    }\n}).catch(error=>{\n    console.log(error);\n})",
                 "params": [],
                 "isEvent": false,
                 "custom": true
@@ -847,7 +870,7 @@
             "code": "let ctx = this;"
         },
         "mounted": {
-            "code": "const ctx = this;\nif(ctx.AParams.id){\n    ctx.getUserDetail();\n}\nctx.setFormToolTips();"
+            "code": "const ctx = this;\nif(ctx.AParams.staffId){\n    ctx.getStaffDetail();\n}\nctx.getDotList();"
         },
         "beforeUpdate": {
             "code": "let ctx = this;"
@@ -898,7 +921,7 @@
             {
                 "desp": "员工数据",
                 "name": "staffData",
-                "code": "{\n    staff_name:'',\n    staff_age:'',\n    staff_phone:'',\n    dot_id:'',\n    staff_sex:''\n}",
+                "code": "{\n    staffName:'',\n    staffAge:'',\n    staffPhone:'',\n    dotId:'',\n    staffSex:''\n}",
                 "source": "pageData",
                 "belongTo": "data",
                 "type": "data",
@@ -908,7 +931,62 @@
             {
                 "desp": "网点",
                 "name": "dotList",
-                "code": "[\n]",
+                "code": "[]",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false,
+                "sync": false,
+                "isExposed": true
+            },
+            {
+                "desp": "员工姓名",
+                "name": "staffName",
+                "code": "''",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false,
+                "sync": false,
+                "isExposed": true
+            },
+            {
+                "desp": "年龄",
+                "name": "staffAge",
+                "code": "''",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false,
+                "sync": false,
+                "isExposed": true
+            },
+            {
+                "desp": "联系电话",
+                "name": "staffPhone",
+                "code": "''",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false,
+                "sync": false,
+                "isExposed": true
+            },
+            {
+                "desp": "网点",
+                "name": "dotId",
+                "code": "''",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false,
+                "sync": false,
+                "isExposed": true
+            },
+            {
+                "desp": "性别",
+                "name": "staffSex",
+                "code": "''",
                 "source": "pageData",
                 "belongTo": "data",
                 "type": "data",
@@ -949,14 +1027,14 @@
             "1578552443987": [
                 {
                     "id": 1578552443987,
-                    "modelValue": "value",
-                    "dataValue": "staffData.staff_age",
+                    "modelValue": "labelWitdh",
+                    "dataValue": "labelWidth",
                     "type": ""
                 },
                 {
                     "id": 1578552443987,
-                    "modelValue": "labelWitdh",
-                    "dataValue": "labelWidth",
+                    "modelValue": "value",
+                    "dataValue": "staffAge",
                     "type": ""
                 }
             ],
@@ -977,14 +1055,14 @@
             "1578552704152": [
                 {
                     "id": 1578552704152,
-                    "modelValue": "value",
-                    "dataValue": "staffData.staff_phone",
+                    "modelValue": "labelWitdh",
+                    "dataValue": "labelWidth",
                     "type": ""
                 },
                 {
                     "id": 1578552704152,
-                    "modelValue": "labelWitdh",
-                    "dataValue": "labelWidth",
+                    "modelValue": "value",
+                    "dataValue": "staffPhone",
                     "type": ""
                 }
             ],
@@ -1033,14 +1111,14 @@
             "1579252216073": [
                 {
                     "id": 1579252216073,
-                    "modelValue": "labelWitdh",
-                    "dataValue": "labelWidth",
+                    "modelValue": "value",
+                    "dataValue": "staffName",
                     "type": ""
                 },
                 {
                     "id": 1579252216073,
-                    "modelValue": "value",
-                    "dataValue": "staffData.staff_name",
+                    "modelValue": "labelWitdh",
+                    "dataValue": "labelWidth",
                     "type": ""
                 }
             ],
@@ -1048,7 +1126,27 @@
                 {
                     "id": 1613226146968,
                     "modelValue": "value",
-                    "dataValue": "staffData.staff_phone",
+                    "dataValue": "dotId",
+                    "type": ""
+                },
+                {
+                    "id": 1613226146968,
+                    "modelValue": "optionConfig",
+                    "dataValue": "dotList",
+                    "type": ""
+                }
+            ],
+            "1613225479973": [
+                {
+                    "id": 1613225479973,
+                    "modelValue": "value",
+                    "dataValue": "staffSex",
+                    "type": ""
+                },
+                {
+                    "id": 1613225479973,
+                    "modelValue": "optionConfig",
+                    "dataValue": "sexList",
                     "type": ""
                 }
             ]
