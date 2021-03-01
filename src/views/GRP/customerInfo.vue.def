@@ -11,7 +11,8 @@
                         "component": "v2-form-input",
                         "id": 1612535040338,
                         "customClass": [
-                            "v2-form-input-1579152715570"
+                            "v2-form-input-1579152715570",
+                            ""
                         ],
                         "commonStyle": {
                             "position": "relative",
@@ -20,7 +21,11 @@
                             "margin-left": "10px",
                             "margin-right": "10px",
                             "overflow": "hidden",
-                            "animation-duration": "1s"
+                            "animation-duration": "1s",
+                            "border-radius": "0px",
+                            "flex-grow": 0,
+                            "flex-shrink": 0,
+                            "opacity": 1
                         },
                         "props": [
                             "value",
@@ -50,7 +55,7 @@
                             "size": "medium"
                         },
                         "disabled": false,
-                        "label": "创建用户",
+                        "label": "用户账号",
                         "placeholder": "请输入",
                         "titleMode": "col",
                         "labelWitdh": "80px",
@@ -80,84 +85,7 @@
                             "",
                             "animated"
                         ],
-                        "value": "${name}"
-                    },
-                    {
-                        "__resolveFromCode": false,
-                        "children": [],
-                        "component": "v2-form-input",
-                        "id": 1612535042388,
-                        "customClass": [
-                            "v2-form-input-1580789804791"
-                        ],
-                        "commonStyle": {
-                            "position": "relative",
-                            "margin-top": "10px",
-                            "margin-bottom": "10px",
-                            "margin-left": "10px",
-                            "margin-right": "10px",
-                            "overflow": "hidden",
-                            "animation-duration": "1s"
-                        },
-                        "props": [
-                            "value",
-                            "disabled",
-                            "label",
-                            "placeholder",
-                            "prepend",
-                            "append",
-                            "titleMode",
-                            "labelWitdh",
-                            "inputType",
-                            "rows",
-                            "maxlength",
-                            "minlength",
-                            "prefixIcon",
-                            "suffixIcon",
-                            "showWordLimit",
-                            "clearable",
-                            "isRequired",
-                            "autoComplete",
-                            "suggestion",
-                            "visible",
-                            "if",
-                            "customClass"
-                        ],
-                        "theme": {
-                            "size": "medium"
-                        },
-                        "disabled": false,
-                        "label": "身份证号",
-                        "placeholder": "请输入",
-                        "titleMode": "col",
-                        "labelWitdh": "80px",
-                        "inputType": "text",
-                        "rows": 2,
-                        "showWordLimit": false,
-                        "clearable": false,
-                        "isRequired": false,
-                        "autoComplete": false,
-                        "$ref": "v2-form-input_1580789804791",
-                        "value.sync": "${name}",
-                        "style": {
-                            "label": {}
-                        },
-                        "value": "${name}",
-                        "visible": true,
-                        "__capacity": "1",
-                        "href": "v2-form-input",
-                        "events": {
-                            "_op_formInput_input": {}
-                        },
-                        "pid": 1612535056658,
-                        "sizeLocked": {
-                            "widthLock": false,
-                            "heightLock": false
-                        },
-                        "animate": [
-                            "",
-                            "animated"
-                        ]
+                        "value": "${customerLoginName}"
                     },
                     {
                         "__resolveFromCode": false,
@@ -165,7 +93,8 @@
                         "component": "v2-component-btn",
                         "id": 1612535127748,
                         "customClass": [
-                            "v2-component-btn-1578539012886"
+                            "v2-component-btn-1578539012886",
+                            ""
                         ],
                         "commonStyle": {
                             "position": "relative",
@@ -199,7 +128,14 @@
                         "events": {
                             "_op_componentBtn_btn": {
                                 "click": {
-                                    "v2_component_btn_1578965103000": {}
+                                    "v2_component_btn_1614351319319": {
+                                        "params": ""
+                                    }
+                                },
+                                "undefined": {
+                                    "v2_component_btn_1614351600155": {
+                                        "params": ""
+                                    }
                                 }
                             }
                         },
@@ -218,7 +154,8 @@
                         "animate": [
                             "",
                             "animated"
-                        ]
+                        ],
+                        "rightIcon": "el-icon-search"
                     }
                 ],
                 "component": "v2Container",
@@ -381,29 +318,6 @@
                     {
                         "active": true,
                         "type": "text",
-                        "prop": "password",
-                        "label": "密码",
-                        "handleLink": true,
-                        "handleLinkCB": "handleLinkCallback",
-                        "linkTarget": "_blank",
-                        "openTooltip": false,
-                        "handleTooltip": true,
-                        "tooltipContent": "提示",
-                        "tooltipContentCallback": "tooltipContentCallback",
-                        "useMinWidth": true,
-                        "headerAlign": "left",
-                        "align": "left",
-                        "sortable": false,
-                        "openFilter": false,
-                        "combi": [],
-                        "tagMap": [],
-                        "textMap": [],
-                        "iconMap": [],
-                        "filterMap": []
-                    },
-                    {
-                        "active": true,
-                        "type": "text",
                         "prop": "age",
                         "label": "年龄",
                         "handleLink": true,
@@ -492,6 +406,28 @@
                         "textMap": [],
                         "iconMap": [],
                         "filterMap": []
+                    },
+                    {
+                        "active": true,
+                        "type": "text",
+                        "prop": "id",
+                        "handleLink": true,
+                        "handleLinkCB": "handleLinkCallback",
+                        "linkTarget": "_blank",
+                        "openTooltip": false,
+                        "handleTooltip": true,
+                        "tooltipContent": "提示",
+                        "tooltipContentCallback": "tooltipContentCallback",
+                        "useMinWidth": true,
+                        "headerAlign": "left",
+                        "align": "left",
+                        "sortable": false,
+                        "openFilter": false,
+                        "combi": [],
+                        "tagMap": [],
+                        "textMap": [],
+                        "iconMap": [],
+                        "filterMap": []
                     }
                 ],
                 "selectionLocation": "left",
@@ -513,7 +449,7 @@
                         "active": true,
                         "btnName": "修改",
                         "type": "primary",
-                        "handler": "",
+                        "handler": "openEditSub",
                         "rowName": " ",
                         "toolIcon": " ",
                         "rowValue": " "
@@ -550,7 +486,7 @@
             "align-self": "stretch",
             "box-sizing": "border-box",
             "flex-direction": "column",
-            "flex-shrink": "0"
+            "flex-shrink": 0
         },
         "customClass": [],
         "$ref": "v2Container_root",
@@ -585,7 +521,7 @@
             {
                 "name": "getcustomerInfoList",
                 "desp": "获取用户列表",
-                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\npage && (ctx.currentPage = page);\n!page && (ctx.currentPage = 1);\nsize && (ctx.pageSize = size);\n!size && (ctx.pageSize = 10);\nconst params = {\n  \"pageNum\": ctx.currentPage,\n  \"pageSize\": ctx.pageSize,\n  \"orders\": [],\n  \"query\": {\n    \"customerName\": ctx.name,\n    \"idCardNo\": ctx.id_cardno\n  },\n  \"ranges\": []\n};\n\n\nctx.$axios.post(`${axios.server}/customer/list`, params).then(res => {\n  if (res.success && res.status) {\n    const tableData = res.obj&&res.obj.records||[];\n    console.log(tableData)\n    ctx.customerInfoList = tableData.map(function (item) {\n      return {\n        name: item.customerName,\n        login_name: item.customerLoginName || '',\n        age: item.customerAge || '',\n        sex: item.customerSex,\n        phone: item.customerPhone,\n        id_cardno: item.idCardNo,\n      }\n    });\n    console.log(ctx.customerInfoList)\n     ctx.userTotalCount = res.obj&&res.obj.totalElements;\n  }\n}).catch(error => {\n\n})",
+                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\npage && (ctx.currentPage = page);\n!page && (ctx.currentPage = 1);\nsize && (ctx.pageSize = size);\n!size && (ctx.pageSize = 10);\nconst params = {\n  \"pageNum\": ctx.currentPage,\n  \"pageSize\": ctx.pageSize,\n  \"orders\": [],\n  \"query\": {\n    \"customerLoginName\": ctx.customerLoginName,\n  },\n  \"ranges\": []\n};\n\n\nctx.$axios.post(`${axios.server}/customerInfo/list`, params).then(res => {\n  if (res.success && res.status) {\n    const tableData = res.obj&&res.obj.records||[];\n    console.log(tableData)\n    ctx.customerInfoList = tableData.map(function (item) {\n      return {\n        name: item.customerName,\n        login_name: item.customerLoginName || '',\n        age: item.customerAge || '',\n        sex: item.customerSex,\n        phone: item.customerPhone,\n        id_cardno: item.idCardNo,\n        id:item.customerId\n      }\n    });\n    console.log(ctx.customerInfoList)\n     ctx.userTotalCount = res.obj&&res.obj.totalElements;\n  }\n}).catch(error => {\n\n})",
                 "params": [
                     {
                         "name": "page",
@@ -602,15 +538,50 @@
             {
                 "name": "openEditSub",
                 "desp": "打开编辑子页面",
-                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\n\nctx.open({\n    title: '编辑客户信息',\n    path: '/edit/customer',\n    component: 'GRP/customerEditSub',\n    type: 'SUB',\n    closeOnClickModal: false,\n    hideConfirmBtn: true,\n    hideCancelBtn: true,\n    width: \"600px\", //弹窗的宽\n    height: \"500px\", //高，不设置默认是auto\n    closeOnClickModal: true,//点击弹窗外部是否关闭弹窗，不设置默认是true：会关闭，false：不关闭\n    params:{\"id\":row.id},\n    confirmCallback: (ret) => {\n        ctx.$axios.post(`${axios.server}/customer/edit`, ret).then(res => {\n            //下一步的行为\n            if (res.success) {\n                ctx.$notify({\n                    title: '客户信息编辑成功',\n                    type: 'success'\n                });\n                ctx.getPageAuthorityList();\n            } else {\n                ctx.$notify({\n                    title: res.msg,\n                    type: 'error'\n                });\n\n            }\n        }).catch(function (error) {\n            console.log(error);\n            ctx.$notify({\n                title: error.msg || '编辑失败',\n                type: 'error'\n            });\n        });\n\n    },\n    cancelCallback: (e) => {\n        console.log('点击取消')\n    }\n})",
+                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\n\nctx.open({\n    title: '编辑客户信息',\n    path: '/edit/customer',\n    component: 'GRP/editCustomerSubPage',\n    type: 'SUB',\n    closeOnClickModal: false,\n    hideConfirmBtn: true,\n    hideCancelBtn: true,\n    width: \"600px\", //弹窗的宽\n    height: \"500px\", //高，不设置默认是auto\n    closeOnClickModal: true,//点击弹窗外部是否关闭弹窗，不设置默认是true：会关闭，false：不关闭\n    params:{id:row.id},\n    confirmCallback: (ret) => {\n        ctx.$axios.post(`${axios.server}/customer/edit`, ret).then(res => {\n            //下一步的行为\n            if (res.success) {\n                ctx.$notify({\n                    title: '客户信息编辑成功',\n                    type: 'success'\n                });\n            } else {\n                ctx.$notify({\n                    title: res.msg,\n                    type: 'error'\n                });\n\n            }\n        }).catch(function (error) {\n            console.log(error);\n            ctx.$notify({\n                title: error.msg || '编辑失败',\n                type: 'error'\n            });\n        });\n\n    },\n    cancelCallback: (e) => {\n        console.log('点击取消')\n    }\n})",
                 "params": [
                     {
-                        "name": "row",
+                        "name": "index",
                         "desp": "本行"
+                    },
+                    {
+                        "name": "row",
+                        "desp": "新参数"
                     }
                 ],
                 "isEvent": false,
                 "custom": true
+            },
+            {
+                "name": "v2_component_btn_1614351319319",
+                "desp": "查询",
+                "code": "//*====AGREE-ACTION-START====*//\n//*+AGREE-CONFIG-*//\n//{\n//\t\"name\": \"custom\",\n//\t\"params\": {}\n//}\n//*-AGREE-CONFIG+*//\n//*++++AGREE-CODE-START++++*//\n/**\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\n**/\n\n//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\n\n/**\n方法名称：getcustomerInfoList\n方法描述：获取用户列表\n参数1:page(当前页码)\n参数2:size(总条数)\n**/\nctx.getcustomerInfoList(ctx.currentPage);",
+                "params": [],
+                "isEvent": true,
+                "custom": true,
+                "id": 1612535127748,
+                "isExposed": false,
+                "emitName": ""
+            },
+            {
+                "name": "v2_component_btn_1614351600155",
+                "desp": "v2_component_btn_1614351600155",
+                "code": "//*====AGREE-ACTION-START====*//\n//*+AGREE-CONFIG-*//\n//{\n//\t\"name\": \"custom\",\n//\t\"params\": {}\n//}\n//*-AGREE-CONFIG+*//\n//*++++AGREE-CODE-START++++*//\n/**\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\n**/\n\n//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\n//*++++AGREE-CODE-END++++*//\n//*====AGREE-ACTION-END====*//\n\n\n/**\n方法名称：getcustomerInfoList\n方法描述：获取用户列表\n参数1:page(当前页码)\n参数2:size(总条数)\n**/\nctx.getcustomerInfoList(ctx.currentPage);",
+                "params": [
+                    {
+                        "name": "$event",
+                        "desp": "$event"
+                    },
+                    {
+                        "name": "vueIns",
+                        "desp": "组件的vue实例"
+                    }
+                ],
+                "isEvent": true,
+                "custom": true,
+                "id": 1612535127748,
+                "isExposed": false,
+                "emitName": ""
             }
         ],
         "watch": {},
@@ -653,26 +624,6 @@
                 "desp": "当前页面",
                 "name": "currentPage",
                 "code": "1",
-                "source": "pageData",
-                "belongTo": "data",
-                "type": "data",
-                "showSet": false,
-                "sync": false
-            },
-            {
-                "desp": "姓名",
-                "name": "name",
-                "code": "''",
-                "source": "pageData",
-                "belongTo": "data",
-                "type": "data",
-                "showSet": false,
-                "sync": false
-            },
-            {
-                "desp": "身份证号",
-                "name": "id_cardno",
-                "code": "``",
                 "source": "pageData",
                 "belongTo": "data",
                 "type": "data",
@@ -733,6 +684,17 @@
                 "sync": false,
                 "syncComputed": "computed_newPageData",
                 "isExposed": true
+            },
+            {
+                "desp": "用户账号",
+                "name": "customerLoginName",
+                "code": "''",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false,
+                "sync": false,
+                "isExposed": false
             }
         ],
         "mapping": {
@@ -766,7 +728,7 @@
                 {
                     "id": 1612535040338,
                     "modelValue": "value",
-                    "dataValue": "name",
+                    "dataValue": "customerLoginName",
                     "type": ""
                 }
             ],

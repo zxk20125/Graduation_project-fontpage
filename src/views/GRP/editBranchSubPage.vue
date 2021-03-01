@@ -1,17 +1,15 @@
 <template>
     <v2container :wid="`root`" style="display:flex;flex-direction:column;align-items:flex-start;align-self:stretch;min-width:50px;min-height:50px;animation-duration:1s;box-sizing:border-box;height:auto;flex-shrink:0;" class="V2Container">
         <div :wid="`1578552432842`" class="V2Container" style="position:relative;box-sizing:border-box;align-self:stretch;overflow:hidden;display:flex;flex-direction:row;align-items:flex-start;min-width:50px;min-height:50px;animation-duration:1s;height:auto;flex-shrink:0;" ref="v2Container_1578552432842">
-            <div :wid="`1578552513559`" class="form-user-info-wrapper V2Container" style="position:relative;box-sizing:border-box;align-self:stretch;overflow:hidden;display:block;flex-direction:column;align-items:flex-start;min-width:50px;min-height:50px;animation-duration:1s;flex-shrink:0;" ref="v2Container_1578552513559">
-                <v2-form-input :wid="`1579252216073`" class="form-item-block V2Widget" :style="{'position':'relative','margin-top':'10px','margin-bottom':'10px','margin-left':'10px','margin-right':'10px','align-self':'auto','overflow':'hidden','animation-duration':'1s'}" :labelWitdh="labelWidth" :theme="{'size':''}" :label-witdh="labelWidth" :disabled="true" :label="`姓名`" :placeholder="`请输入用户名`" :title-mode="`col`" :input-type="`text`" :rows="2" :show-word-limit="false" :clearable="false" :is-required="true" :auto-complete="false" :value.sync="staffData.staff_name" ref="v2-form-input_1579252216073">
+            <div :wid="`1578552513559`" class="form-user-info-wrapper V2Container" style="position:relative;box-sizing:border-box;align-self:stretch;overflow:hidden;display:block;flex-direction:column;align-items:flex-start;min-width:50px;min-height:50px;animation-duration:1s;flex-shrink:0;height:226.00px;" ref="v2Container_1578552513559">
+                <v2-form-input :wid="`1579252216073`" class="form-item-block V2Widget" :style="{'position':'relative','margin-top':'10px','margin-bottom':'10px','margin-left':'10px','margin-right':'10px','align-self':'auto','overflow':'hidden','animation-duration':'1s'}" :labelWitdh="labelWidth" :theme="{'size':'medium'}" :label-witdh="labelWidth" :disabled="false" :label="`网点名`" :placeholder="`请输入网点名`" :title-mode="`col`" :input-type="`text`" :rows="2" :show-word-limit="false" :clearable="false" :is-required="true" :auto-complete="false" :value.sync="dotName" ref="v2-form-input_1579252216073">
                 </v2-form-input>
-                <v2-form-input :wid="`1578552443987`" class="form-item-block V2Widget" :style="{'position':'relative','margin-top':'10px','margin-bottom':'10px','margin-left':'10px','margin-right':'10px','align-self':'auto','overflow':'hidden','animation-duration':'1s'}" :labelWitdh="labelWidth" :theme="{'size':''}" :label-witdh="labelWidth" :disabled="false" :label="`年龄`" :placeholder="`请输入员工年龄`" :title-mode="`col`" :input-type="`password`" :rows="2" :show-word-limit="false" :clearable="false" :is-required="true" :auto-complete="false" :value.sync="staffData.staff_age" ref="v2-form-input_1578552443987">
+                <v2-form-input :wid="`1578552443987`" class="form-item-block V2Widget" :style="{'position':'relative','margin-top':'10px','margin-bottom':'10px','margin-left':'10px','margin-right':'10px','align-self':'auto','overflow':'hidden','animation-duration':'1s'}" :labelWitdh="labelWidth" :theme="{'size':'medium'}" :label-witdh="labelWidth" :disabled="false" :label="`网点城市`" :placeholder="`请输入网点城市`" :title-mode="`col`" :input-type="`text`" :rows="2" :show-word-limit="false" :clearable="false" :is-required="true" :auto-complete="false" :value.sync="dotCity" ref="v2-form-input_1578552443987">
                 </v2-form-input>
-                <v2-form-input :wid="`1578552704152`" class="form-item-block V2Widget" :style="{'position':'relative','margin-top':'10px','margin-bottom':'10px','margin-left':'10px','margin-right':'10px','align-self':'auto','overflow':'hidden','animation-duration':'1s'}" :labelWitdh="labelWidth" :theme="{'size':''}" :label-witdh="labelWidth" :disabled="false" :label="`联系电话`" :placeholder="`请输入联系电话`" :title-mode="`col`" :input-type="`text`" :rows="2" :show-word-limit="false" :clearable="false" :is-required="true" :auto-complete="false" :value.sync="staffData.staff_phone" ref="v2-form-input_1578552704152">
+                <v2-form-input :wid="`1614610993221`" class="v2-form-input-1614610993221 V2Widget" :style="{'position':'relative','overflow':'hidden','margin-top':'10px','margin-bottom':'10px','margin-left':'10px','margin-right':'10px','align-self':'auto','animation-duration':'1s'}" :labelWitdh="labelWidth" :theme="{'size':'medium'}" :disabled="false" :label="`网点地址`" :placeholder="`请输入网点地址`" :title-mode="`col`" :label-witdh="labelWidth" :input-type="`text`" :rows="2" :show-word-limit="false" :clearable="false" :is-required="true" :auto-complete="false" :if="true" ref="v2FormInput_1" :value.sync="dotAddress">
                 </v2-form-input>
-                <v2-form-select :wid="`1613226146968`" class="v2-form-select-1613225357594 V2Widget" :style="{'width':'220px','align-self':'auto','margin-left':'20px','padding-left':'10px','margin-bottom':'10px'}" :theme="{'size':''}" :disabled="false" :data-type="`def`" :options="[]" :label="`网点`" :placeholder="`请选择`" :label-witdh="`80px`" :title-mode="`col`" :clearable="false" :prefix="false" :filterable="true" :is-required="false" :if="true" ref="v2FormSelect_6" :value.sync="staffData.staff_phone">
-                </v2-form-select>
-                <v2-form-select :wid="`1613225479973`" class="v2-form-select-1613225357594 V2Widget" :style="{'width':'220px','align-self':'auto','margin-left':'20px','padding-left':'10px','margin-bottom':'10px'}" :theme="{'size':''}" :disabled="false" :data-type="`def`" :options="[]" :label="`性别`" :placeholder="`请选择`" :label-witdh="`80px`" :title-mode="`col`" :clearable="false" :prefix="false" :filterable="true" :is-required="false" :if="true" ref="v2FormSelect_2">
-                </v2-form-select>
+                <v2-form-input :wid="`1578552704152`" class="form-item-block V2Widget" :style="{'position':'relative','margin-top':'10px','margin-bottom':'10px','margin-left':'10px','margin-right':'10px','align-self':'auto','overflow':'hidden','animation-duration':'1s'}" :labelWitdh="labelWidth" :theme="{'size':'medium'}" :label-witdh="labelWidth" :disabled="false" :label="`联系电话`" :placeholder="`请输入联系电话`" :title-mode="`col`" :input-type="`text`" :rows="2" :show-word-limit="false" :clearable="false" :is-required="true" :auto-complete="false" :value.sync="dotPhone" ref="v2-form-input_1578552704152">
+                </v2-form-input>
             </div>
         </div>
         <div :wid="`1579166732561`" class="diaglog-btn-ctn V2Container" style="position:relative;box-sizing:border-box;align-self:stretch;overflow:hidden;display:flex;flex-direction:row;justify-content:flex-end;align-items:flex-start;min-width:50px;min-height:50px;animation-duration:1s;height:auto;" ref="v2Container_1579166732561">
@@ -104,39 +102,37 @@
                             })
                         ]
                     },
-                    'mapping': {"1578552493733":[{"id":1578552493733,"modelValue":"labelWitdh","dataValue":"labelWidth","type":""},{"id":1578552493733,"modelValue":"value","dataValue":"userData.username","type":""}],"1578552559896":[{"id":1578552559896,"modelValue":"value","dataValue":"userData.nickname","type":""},{"id":1578552559896,"modelValue":"labelWitdh","dataValue":"labelWidth","type":""}],"1578552443987":[{"id":1578552443987,"modelValue":"value","dataValue":"staffData.staff_age","type":""},{"id":1578552443987,"modelValue":"labelWitdh","dataValue":"labelWidth","type":""}],"1578552629581":[{"id":1578552629581,"modelValue":"labelWitdh","dataValue":"labelWidth","type":""},{"id":1578552629581,"modelValue":"value","dataValue":"userData.repeatPwd","type":""}],"1578552704152":[{"id":1578552704152,"modelValue":"value","dataValue":"staffData.staff_phone","type":""},{"id":1578552704152,"modelValue":"labelWitdh","dataValue":"labelWidth","type":""}],"1578552715892":[{"id":1578552715892,"modelValue":"value","dataValue":"userData.email","type":""},{"id":1578552715892,"modelValue":"labelWitdh","dataValue":"labelWidth","type":""}],"1578553052538":[{"id":1578553052538,"modelValue":"labelWitdh","dataValue":"labelWidth","type":""},{"id":1578553052538,"modelValue":"value","dataValue":"userData.desp","type":""}],"1578552940623":[{"id":1578552940623,"modelValue":"labelWitdh","dataValue":"labelWidth","type":""},{"id":1578552940623,"modelValue":"value","dataValue":"userData.status","type":""}],"1579252216073":[{"id":1579252216073,"modelValue":"labelWitdh","dataValue":"labelWidth","type":""},{"id":1579252216073,"modelValue":"value","dataValue":"staffData.staff_name","type":""}],"1613226146968":[{"id":1613226146968,"modelValue":"value","dataValue":"staffData.staff_phone","type":""}]}
+                    'mapping': {"1578552493733":[{"id":1578552493733,"modelValue":"labelWitdh","dataValue":"labelWidth","type":""},{"id":1578552493733,"modelValue":"value","dataValue":"userData.username","type":""}],"1578552559896":[{"id":1578552559896,"modelValue":"value","dataValue":"userData.nickname","type":""},{"id":1578552559896,"modelValue":"labelWitdh","dataValue":"labelWidth","type":""}],"1578552443987":[{"id":1578552443987,"modelValue":"labelWitdh","dataValue":"labelWidth","type":""},{"id":1578552443987,"modelValue":"value","dataValue":"dotCity","type":""}],"1578552629581":[{"id":1578552629581,"modelValue":"labelWitdh","dataValue":"labelWidth","type":""},{"id":1578552629581,"modelValue":"value","dataValue":"userData.repeatPwd","type":""}],"1578552704152":[{"id":1578552704152,"modelValue":"labelWitdh","dataValue":"labelWidth","type":""},{"id":1578552704152,"modelValue":"value","dataValue":"dotPhone","type":""}],"1578552715892":[{"id":1578552715892,"modelValue":"value","dataValue":"userData.email","type":""},{"id":1578552715892,"modelValue":"labelWitdh","dataValue":"labelWidth","type":""}],"1578553052538":[{"id":1578553052538,"modelValue":"labelWitdh","dataValue":"labelWidth","type":""},{"id":1578553052538,"modelValue":"value","dataValue":"userData.desp","type":""}],"1578552940623":[{"id":1578552940623,"modelValue":"labelWitdh","dataValue":"labelWidth","type":""},{"id":1578552940623,"modelValue":"value","dataValue":"userData.status","type":""}],"1579252216073":[{"id":1579252216073,"modelValue":"labelWitdh","dataValue":"labelWidth","type":""},{"id":1579252216073,"modelValue":"value","dataValue":"dotName","type":""}],"1613226146968":[{"id":1613226146968,"modelValue":"value","dataValue":"staffData.staff_phone","type":""}],"1614610971726":[{"id":1614610971726,"modelValue":"value","dataValue":"staffData.staff_phone1614610900013","type":""},{"id":1614610971726,"modelValue":"labelWitdh","dataValue":"labelWidth1614610900013","type":""}],"1614610993221":[{"id":1614610993221,"modelValue":"labelWitdh","dataValue":"labelWidth","type":""},{"id":1614610993221,"modelValue":"value","dataValue":"dotAddress","type":""}]}
                 },
                 /* 表单标题宽度 */
                 'labelWidth': '100px',
-                /* 性别 */
-                'sexList': [
-                  {
-                    "value": "男",
-                    "label": "男"
-                  },
-                  {
-                    "value": "女",
-                    "label": "女"
-                  }
-                ],
-                /* 员工数据 */
-                'staffData': {
-                    staff_name:'',
-                    staff_age:'',
-                    staff_phone:'',
-                    dot_id:'',
-                    staff_sex:''
-                },
                 /* 版本号，请勿修改 */
                 '__VERSION': 4.0
             }
         },
         'props': {
-            /* 网点 */
-            'dotList': {
+            /* 网点名 */
+            'dotName': {
                 'default': () => {
-                    return [
-                    ]
+                    return ''
+                }
+            },
+            /* 联系电话 */
+            'dotPhone': {
+                'default': () => {
+                    return ''
+                }
+            },
+            /* 网点地址 */
+            'dotAddress': {
+                'default': () => {
+                    return ''
+                }
+            },
+            /* 网点所属城市 */
+            'dotCity': {
+                'default': () => {
+                    return ''
                 }
             }
         },
@@ -163,22 +159,20 @@
                 ctx.close();
             },
             /**
-             *  获取配送员数据
+             *  获取网点数据
              */
-            getStaffDetail() {
+            getBranchDetail() {
                 //函数内直接用ctx代替this访问vue页面的数据。
-                const ctx = this;staff
-                ctx.$axios.get(`${axios.server}/staff/get/${ctx.AParams.id}`).then(res=>{
+                const ctx = this;
+                ctx.$axios.get(`${axios.server}/branchInfo/get/${ctx.AParams.id}`).then(res=>{
                     if(res.success&&res.status){
                         var obj = res.obj;
                 
-                        ctx.userData.username=obj&&obj.name;
-                        //ctx.userData.password = obj&&obj.password;
-                        ctx.userData.nickname  = obj&&obj.nickname;
-                        ctx.userData.phone= obj&&obj.phone;
-                        ctx.userData.email= obj&&obj.email;
-                        ctx.userData.status= obj.status==="1"?true:false;
-                        ctx.userData.desp= obj&&obj.desc;
+                
+                        ctx.dotName=obj.dotName;
+                        ctx.dotPhone=obj.dotPhone;
+                        ctx.dotAddress=obj.dotAddress;
+                        ctx.dotCity=obj.dotCity;
                 
                     }
                 }).catch(error=>{
@@ -254,10 +248,10 @@
             /* Resume */;
             /* User Code */;
             const ctx = this;
-            if(ctx.AParams.id){
-                ctx.getUserDetail();
+            if (ctx.AParams.id) {
+                ctx.getBranchDetail();
             }
-            ctx.setFormToolTips();
+            
         },
         beforeUpdate() {
             let ctx = this;

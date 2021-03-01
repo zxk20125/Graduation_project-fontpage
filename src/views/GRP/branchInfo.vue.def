@@ -22,34 +22,36 @@
                             "flex-grow": 0
                         },
                         "props": [
-                            "value",
+                            "theme",
                             "disabled",
                             "label",
                             "placeholder",
-                            "prepend",
-                            "append",
                             "titleMode",
                             "labelWitdh",
                             "inputType",
                             "rows",
-                            "maxlength",
-                            "minlength",
-                            "prefixIcon",
-                            "suffixIcon",
                             "showWordLimit",
                             "clearable",
                             "isRequired",
                             "autoComplete",
+                            "if",
+                            "value.sync",
+                            "value",
+                            "prepend",
+                            "append",
+                            "maxlength",
+                            "minlength",
+                            "prefixIcon",
+                            "suffixIcon",
                             "suggestion",
                             "visible",
-                            "if",
                             "customClass"
                         ],
                         "theme": {
                             "size": ""
                         },
                         "disabled": false,
-                        "label": "员工姓名",
+                        "label": "网点名",
                         "placeholder": "请输入",
                         "titleMode": "col",
                         "labelWitdh": "80px",
@@ -61,7 +63,7 @@
                         "autoComplete": false,
                         "if": true,
                         "$ref": "v2FormInput_4",
-                        "value.sync": "${staff_name}",
+                        "value.sync": "${dot_name}",
                         "style": {
                             "label": {}
                         },
@@ -80,7 +82,7 @@
                             "",
                             "animated"
                         ],
-                        "value": "${staff_name}"
+                        "value": "${dot_name}"
                     },
                     {
                         "__resolveFromCode": false,
@@ -94,14 +96,15 @@
                             "align-self": "auto"
                         },
                         "props": [
+                            "theme",
                             "disabled",
                             "loading",
                             "btnName",
+                            "shape",
+                            "if",
                             "leftIcon",
                             "rightIcon",
-                            "shape",
                             "visible",
-                            "if",
                             "customClass"
                         ],
                         "theme": {
@@ -151,8 +154,8 @@
                     "height": "auto"
                 },
                 "props": [
-                    "visible",
                     "if",
+                    "visible",
                     "element-loading-text",
                     "element-loading-spinner",
                     "element-loading-background",
@@ -193,20 +196,20 @@
                 ],
                 "commonStyle": {
                     "align-self": "auto",
-                    "height": "90%",
+                    "height": "816.00px",
                     "margin-left": "0",
-                    "width": "98%",
-                    "flex-shrink": 0,
-                    "border-radius": "0px",
-                    "opacity": 1
+                    "width": "calc(100% - 20px)",
+                    "flex-shrink": 0
                 },
                 "props": [
+                    "setPageCallback",
+                    "toolBar",
+                    "pageSize",
+                    "tableData",
+                    "totalCount",
+                    "theme",
                     "tooltipEffect",
                     "columns",
-                    "tableData",
-                    "selection",
-                    "radioSelect",
-                    "value",
                     "selectionLocation",
                     "tHeight",
                     "tMaxHeight",
@@ -214,30 +217,29 @@
                     "loading",
                     "indexLocation",
                     "openPage",
-                    "pagerCount",
-                    "pageSizes",
-                    "pageSize",
                     "openSetPageCallback",
-                    "setPageCallback",
-                    "currentPage",
-                    "totalCount",
-                    "toolBar",
                     "toolTitle",
                     "toolHeaderAlign",
                     "toolLocation",
                     "toolWidth",
                     "toolBtns",
                     "expand",
+                    "if",
+                    "selection",
+                    "radioSelect",
+                    "value",
+                    "pagerCount",
+                    "pageSizes",
+                    "currentPage",
                     "expandMap",
                     "visible",
-                    "if",
                     "customClass"
                 ],
-                "setPageCallback": "getAddressInfo",
-                "tableData": "${staffList}",
-                "pageSize": "${pageSize}",
-                "totalCount": "${addressTotalCount}",
+                "setPageCallback": "getbranchInfo",
                 "toolBar": true,
+                "pageSize": "${pageSize}",
+                "tableData": "${branchList}",
+                "totalCount": "${branchTotalCount}",
                 "theme": {
                     "tableType": "border",
                     "size": ""
@@ -247,8 +249,8 @@
                     {
                         "active": true,
                         "type": "text",
-                        "prop": "staff_id",
-                        "label": "员工编号",
+                        "prop": "dot_name",
+                        "label": "网点名",
                         "handleLink": true,
                         "handleLinkCB": "handleLinkCallback",
                         "linkTarget": "_blank",
@@ -270,8 +272,8 @@
                     {
                         "active": true,
                         "type": "text",
-                        "prop": "staff_name",
-                        "label": "姓名",
+                        "prop": "dot_city",
+                        "label": "网点所在城市",
                         "handleLink": true,
                         "handleLinkCB": "handleLinkCallback",
                         "linkTarget": "_blank",
@@ -293,8 +295,8 @@
                     {
                         "active": true,
                         "type": "text",
-                        "prop": "staff_sex",
-                        "label": "性别",
+                        "prop": "dot_address",
+                        "label": "网点地址",
                         "handleLink": true,
                         "handleLinkCB": "handleLinkCallback",
                         "linkTarget": "_blank",
@@ -316,30 +318,7 @@
                     {
                         "active": true,
                         "type": "text",
-                        "prop": "staff_age",
-                        "label": "年龄",
-                        "handleLink": true,
-                        "handleLinkCB": "handleLinkCallback",
-                        "linkTarget": "_blank",
-                        "openTooltip": false,
-                        "handleTooltip": true,
-                        "tooltipContent": "提示",
-                        "tooltipContentCallback": "tooltipContentCallback",
-                        "useMinWidth": true,
-                        "headerAlign": "left",
-                        "align": "left",
-                        "sortable": false,
-                        "openFilter": false,
-                        "combi": [],
-                        "tagMap": [],
-                        "textMap": [],
-                        "iconMap": [],
-                        "filterMap": []
-                    },
-                    {
-                        "active": true,
-                        "type": "text",
-                        "prop": "staff_phone",
+                        "prop": "dot_phone",
                         "label": "联系号码",
                         "handleLink": true,
                         "handleLinkCB": "handleLinkCallback",
@@ -362,31 +341,7 @@
                     {
                         "active": true,
                         "type": "text",
-                        "prop": "dot_id",
-                        "label": "所属网点",
-                        "handleLink": true,
-                        "handleLinkCB": "handleLinkCallback",
-                        "linkTarget": "_blank",
-                        "openTooltip": false,
-                        "handleTooltip": true,
-                        "tooltipContent": "提示",
-                        "tooltipContentCallback": "tooltipContentCallback",
-                        "useMinWidth": true,
-                        "headerAlign": "left",
-                        "align": "left",
-                        "sortable": false,
-                        "openFilter": false,
-                        "combi": [],
-                        "tagMap": [],
-                        "textMap": [],
-                        "iconMap": [],
-                        "filterMap": []
-                    },
-                    {
-                        "active": true,
-                        "type": "text",
-                        "prop": "hiredate",
-                        "label": "入职时间",
+                        "prop": "id",
                         "handleLink": true,
                         "handleLinkCB": "handleLinkCallback",
                         "linkTarget": "_blank",
@@ -422,17 +377,8 @@
                     {
                         "active": true,
                         "btnName": "编辑",
-                        "type": "text",
-                        "handler": "",
-                        "rowName": " ",
-                        "toolIcon": " ",
-                        "rowValue": " "
-                    },
-                    {
-                        "active": true,
-                        "btnName": "新增",
-                        "type": "text",
-                        "handler": "",
+                        "type": "primary",
+                        "handler": "openEditBranchPage",
                         "rowName": " ",
                         "toolIcon": " ",
                         "rowValue": " "
@@ -497,8 +443,17 @@
             {
                 "name": "getbranchInfo",
                 "desp": "获取网点信息",
-                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\npage&&(ctx.currentPage=page);\n!page&&(ctx.currentPage=1);\nsize&&(ctx.pageSize=size);\n!size&&(ctx.pageSize=10);\nconst params = {\n  \"pageNum\": ctx.currentPage,\n  \"pageSize\": ctx.pageSize,\n  \"orders\": [],\n  \"query\": {\n    \"customerName\": ctx.name,\n    \"idCardNo\": ctx.id_cardno\n  },\n  \"ranges\": []\n};\n\n\nctx.$axios.post(`${axios.server}/branchInfo/list`,params).then(res=>{\n    if(res.success&&res.status){\n      const tableData = res.obj&&res.obj.records||[];\n      \n      ctx.staffList  = tableData.map(function(item){\n        return{\n          staff_name:item.staff_name,\n          staff_age:item.staff_age,\n          staff_sex:item.staff_sex,\n          staff_id:item.staff_id,\n          staff_phone:item.staff_phone,\n          hiredate:item.hiredate,\n          dot_id:item.dot_id\n        }\n      });\n      ctx.staffTotalCount = res.obj&&res.obj.totalElements;\n    }\n}).catch(error=>{\n  \n})",
-                "params": [],
+                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\npage&&(ctx.currentPage=page);\n!page&&(ctx.currentPage=1);\nsize&&(ctx.pageSize=size);\n!size&&(ctx.pageSize=10);\nconst params = {\n  \"pageNum\": ctx.currentPage,\n  \"pageSize\": ctx.pageSize,\n  \"orders\": [],\n  \"query\": {\n    \"dotName\": ctx.dot_name,\n  },\n  \"ranges\": []\n};\n\n\nctx.$axios.post(`${axios.server}/branchInfo/list`,params).then(res=>{\n    if(res.success&&res.status){\n      const tableData = res.obj&&res.obj.records||[];\n      \n      ctx.branchList  = tableData.map(function(item){\n        return{\n          dot_name:item.dotName,\n          dot_city:item.dotCity,\n          dot_address:item.dotAddress,\n          dot_phone:item.dotPhone,\n          id:item.dotId\n        }\n      });\n      ctx.branchTotalCount = res.obj&&res.obj.totalElements;\n    }\n}).catch(error=>{\n  \n})",
+                "params": [
+                    {
+                        "name": "page",
+                        "desp": "新参数"
+                    },
+                    {
+                        "name": "size",
+                        "desp": "新参数"
+                    }
+                ],
                 "isEvent": false,
                 "custom": true
             },
@@ -521,10 +476,19 @@
                 "id": 1613138459846
             },
             {
-                "name": "openEditStaffPage",
+                "name": "openEditBranchPage",
                 "desp": "打开编辑子页面",
-                "code": "// 函数内直接用 ctx 代替 this 访问 Vue 页面的数据。\n/** @type {V2ViewType} */\nconst ctx = this;",
-                "params": [],
+                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\nconsole.log(row.staff_id)\nctx.open({\n    title:'编辑网点信息',\n    path:'/edit/Branch',\n    component:'GRP/editBranchSubPage',\n    type:'SUB',\n    closeOnClickModal:false,\n    params:{id:row.id},\n    hideConfirmBtn:true, \n    hideCancelBtn:true, \n    confirmCallback:(params) => { \n        ctx.$axios.post(`${axios.server}/branchInfo/update`, params).then(res => {\n        //下一步的行为\n            if(res.success){\n                ctx.$notify({\n                    title: '编辑网点信息成功',\n                    type: 'success'\n                });\n               ctx.getStaffInfo(ctx.currentPage);\n                \n            }else{\n                ctx.$notify({\n                    title: res.msg,\n                    type: 'error'\n                });\n               \n            }\n        }).catch(function (error) {\n            console.log(error);\n            ctx.$notify({\n                title: error.msg || '编辑失败',\n                type: 'error'\n            });\n        });\n       \n    },\n    cancelCallback:(e) => {\n        console.log('点击取消')\n    }\n})",
+                "params": [
+                    {
+                        "name": "index",
+                        "desp": "新参数"
+                    },
+                    {
+                        "name": "row",
+                        "desp": "新参数"
+                    }
+                ],
                 "isEvent": false,
                 "custom": true
             }
@@ -566,8 +530,8 @@
         "data": {},
         "list": [
             {
-                "desp": "员工姓名",
-                "name": "staff_name",
+                "desp": "网点名",
+                "name": "dot_name",
                 "code": "''",
                 "source": "pageData",
                 "belongTo": "data",
@@ -587,9 +551,9 @@
                 "isExposed": true
             },
             {
-                "desp": "客户地址信息列表",
-                "name": "staffList",
-                "code": "[]",
+                "desp": "数据总条数",
+                "name": "branchTotalCount",
+                "code": "1",
                 "source": "pageData",
                 "belongTo": "data",
                 "type": "data",
@@ -598,9 +562,9 @@
                 "isExposed": true
             },
             {
-                "desp": "数据总条数",
-                "name": "staffTotalCount",
-                "code": "1",
+                "desp": "客户地址信息列表",
+                "name": "branchList",
+                "code": "[]",
                 "source": "pageData",
                 "belongTo": "data",
                 "type": "data",
@@ -626,7 +590,7 @@
                 {
                     "id": 1612854187456,
                     "modelValue": "tableData",
-                    "dataValue": "staffList",
+                    "dataValue": "branchList",
                     "type": ""
                 },
                 {
@@ -638,7 +602,7 @@
                 {
                     "id": 1612854187456,
                     "modelValue": "totalCount",
-                    "dataValue": "addressTotalCount",
+                    "dataValue": "branchTotalCount",
                     "type": ""
                 }
             ],
@@ -646,7 +610,7 @@
                 {
                     "id": 1612854599723,
                     "modelValue": "value",
-                    "dataValue": "staff_name",
+                    "dataValue": "dot_name",
                     "type": ""
                 }
             ]

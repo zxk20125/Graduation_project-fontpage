@@ -94,7 +94,8 @@
                         "commonStyle": {
                             "align-self": "auto",
                             "flex-shrink": 0,
-                            "flex-grow": 0
+                            "flex-grow": 0,
+                            "margin-left": "10px"
                         },
                         "props": [
                             "disabled",
@@ -491,7 +492,7 @@
                     {
                         "active": true,
                         "btnName": "编辑",
-                        "type": "text",
+                        "type": "primary",
                         "handler": "editStaff",
                         "rowName": " ",
                         "toolIcon": " ",
