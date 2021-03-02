@@ -19,7 +19,9 @@
                             "align-self": "auto",
                             "padding-left": 0,
                             "flex-shrink": 0,
-                            "flex-grow": 0
+                            "border-radius": "0px",
+                            "flex-grow": 0,
+                            "opacity": 1
                         },
                         "props": [
                             "value",
@@ -88,13 +90,11 @@
                         "component": "v2-component-btn",
                         "id": 1612855111983,
                         "customClass": [
-                            "v2-component-btn-1612855111983",
-                            ""
+                            "v2-component-btn-1612855111983"
                         ],
                         "commonStyle": {
                             "align-self": "auto",
                             "flex-shrink": 0,
-                            "flex-grow": 0,
                             "margin-left": "10px"
                         },
                         "props": [
@@ -115,14 +115,13 @@
                         "disabled": false,
                         "loading": false,
                         "btnName": "查询",
+                        "rightIcon": "el-icon-search",
                         "shape": "def",
                         "if": true,
                         "events": {
                             "_op_componentBtn_btn": {
                                 "click": {
-                                    "v2_component_btn_1614091887290": {
-                                        "params": ""
-                                    }
+                                    "v2_component_btn_1614091887290": {}
                                 }
                             }
                         },
@@ -140,45 +139,18 @@
                         "animate": [
                             "",
                             "animated"
-                        ],
-                        "rightIcon": "el-icon-search"
+                        ]
                     },
                     {
-                        "theme": {
-                            "btnType": "primary",
-                            "size": ""
-                        },
-                        "disabled": false,
-                        "loading": false,
-                        "btnName": "新增",
-                        "rightIcon": "el-icon-plus",
-                        "shape": "def",
-                        "visible": true,
-                        "if": true,
-                        "__capacity": "1",
-                        "component": "v2-component-btn",
-                        "href": "v2-component-btn",
-                        "name": "按钮",
+                        "__resolveFromCode": false,
                         "children": [],
-                        "events": {
-                            "_op_componentBtn_btn": {
-                                "click": {
-                                    "v2_component_btn_1614086629526": {
-                                        "params": ""
-                                    }
-                                }
-                            }
-                        },
-                        "version": "16.0.0",
+                        "component": "v2-component-btn",
                         "id": 1614086695490,
-                        "pid": 1612854178100,
-                        "$ref": "v2ComponentBtn_3",
+                        "customClass": [
+                            "v2-component-btn-1614086695490"
+                        ],
                         "commonStyle": {
-                            "box-sizing": "border-box",
                             "align-self": "auto",
-                            "flex-basis": "auto",
-                            "flex-shrink": 1,
-                            "flex-grow": "0",
                             "margin-left": "20px"
                         },
                         "props": [
@@ -192,10 +164,30 @@
                             "if",
                             "customClass"
                         ],
-                        "customClass": [
-                            "v2-component-btn-1614086695490",
-                            ""
-                        ],
+                        "theme": {
+                            "btnType": "primary",
+                            "size": ""
+                        },
+                        "disabled": false,
+                        "loading": false,
+                        "btnName": "新增",
+                        "rightIcon": "el-icon-plus",
+                        "shape": "def",
+                        "if": true,
+                        "events": {
+                            "_op_componentBtn_btn": {
+                                "click": {
+                                    "v2_component_btn_1614086629526": {}
+                                }
+                            }
+                        },
+                        "$ref": "v2ComponentBtn_3",
+                        "visible": true,
+                        "__capacity": "1",
+                        "href": "v2-component-btn",
+                        "name": "按钮",
+                        "version": "16.0.0",
+                        "pid": 1612854178100,
                         "sizeLocked": {
                             "widthLock": false,
                             "heightLock": false
@@ -209,8 +201,7 @@
                 "component": "v2Container",
                 "id": 1612854178100,
                 "customClass": [
-                    "v2Container-1612854178100",
-                    ""
+                    "v2Container-1612854178100"
                 ],
                 "commonStyle": {
                     "box-sizing": "border-box",
@@ -266,9 +257,7 @@
                     "height": "816.00px",
                     "margin-left": "0",
                     "width": "calc(100% - 20px)",
-                    "flex-shrink": 0,
-                    "border-radius": "0px",
-                    "opacity": 1
+                    "flex-shrink": 0
                 },
                 "props": [
                     "tooltipEffect",
@@ -303,11 +292,10 @@
                     "if",
                     "customClass"
                 ],
-                "setPageCallback": "getStaffInfo",
+                "toolBar": true,
                 "tableData": "${staffList}",
                 "pageSize": "${pageSize}",
                 "totalCount": "${staffTotalCount}",
-                "toolBar": true,
                 "theme": {
                     "tableType": "border",
                     "size": ""
@@ -484,6 +472,7 @@
                 "indexLocation": "left",
                 "openPage": true,
                 "openSetPageCallback": true,
+                "setPageCallback": "getStaffInfo",
                 "toolTitle": "操作",
                 "toolHeaderAlign": "left",
                 "toolLocation": "right",
@@ -516,15 +505,15 @@
                 "animate": [
                     "",
                     "animated"
-                ]
+                ],
+                "currentPage": "${currentPage}"
             }
         ],
         "component": "v2Container",
         "id": "root",
         "commonStyle": {
-            "flex-shrink": 0,
-            "box-sizing": "border-box",
-            "flex-grow": 0
+            "flex-shrink": "0",
+            "box-sizing": "border-box"
         },
         "customClass": [],
         "$ref": "v2Container_root",
@@ -587,9 +576,8 @@
                         "desp": "组件的vue实例"
                     }
                 ],
-                "isEvent": true,
-                "custom": true,
-                "id": 1613138459846
+                "isEvent": false,
+                "custom": true
             },
             {
                 "name": "openEditStaffPage",
@@ -620,23 +608,37 @@
                 "name": "v2_component_btn_1614086629526",
                 "desp": "新增",
                 "code": "/**\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\n**/\n\n//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\n/**\n方法名称：openEditStaffPage\n方法描述：新增配送员信息\n\n**/\nctx.openEditStaffPage();",
-                "params": [],
+                "params": [
+                    {
+                        "name": "$event",
+                        "desp": "$event"
+                    },
+                    {
+                        "name": "vueIns",
+                        "desp": "vueIns"
+                    }
+                ],
                 "isEvent": true,
                 "custom": true,
-                "id": 1614086695490,
-                "isExposed": false,
-                "emitName": ""
+                "id": 1614086629526
             },
             {
                 "name": "v2_component_btn_1614091887290",
                 "desp": "查询",
                 "code": "/**\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\n**/\n\n//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\n/**\n方法名称：getStaffInfo\n方法描述：获取客户地址信息\n参数1:page(新参数)\n参数2:size(新参数)\n**/\nctx.getStaffInfo(ctx.currentPage);",
-                "params": [],
+                "params": [
+                    {
+                        "name": "$event",
+                        "desp": "$event"
+                    },
+                    {
+                        "name": "vueIns",
+                        "desp": "vueIns"
+                    }
+                ],
                 "isEvent": true,
                 "custom": true,
-                "id": 1612855111983,
-                "isExposed": false,
-                "emitName": ""
+                "id": 1614091887290
             }
         ],
         "watch": {},
@@ -683,8 +685,7 @@
                 "belongTo": "data",
                 "type": "data",
                 "showSet": false,
-                "sync": false,
-                "isExposed": false
+                "sync": false
             },
             {
                 "desp": "每页数量",
@@ -728,7 +729,6 @@
                 "type": "data",
                 "showSet": false,
                 "sync": false,
-                "syncComputed": "computed_newPageData",
                 "isExposed": true
             }
         ],
@@ -762,6 +762,12 @@
                     "id": 1612854187456,
                     "modelValue": "totalCount",
                     "dataValue": "staffTotalCount",
+                    "type": ""
+                },
+                {
+                    "id": 1612854187456,
+                    "modelValue": "currentPage",
+                    "dataValue": "currentPage",
                     "type": ""
                 }
             ],
