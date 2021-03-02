@@ -1,12 +1,12 @@
 <template>
     <v2container :wid="`root`" style="flex-shrink:0;box-sizing:border-box;" class="V2Container">
         <div :wid="`1612854178100`" class="v2Container-1612854178100 V2Container" style="box-sizing:border-box;align-self:stretch;display:flex;flex-direction:row;align-items:flex-start;height:auto;" :if="true" ref="v2Container_1">
-            <v2-form-input :wid="`1612854599723`" class="v2-form-input-1612854599723 V2Widget" :style="{'position':'relative','align-self':'auto','padding-left':0,'flex-shrink':0}" :theme="{'size':''}" :disabled="false" :label="`运单号`" :placeholder="`请输入`" :title-mode="`col`" :label-witdh="`80px`" :input-type="`text`" :rows="2" :show-word-limit="false" :clearable="false" :is-required="false" :auto-complete="false" :if="true" ref="v2FormInput_4" :value.sync="waybill_id">
+            <v2-form-input :wid="`1612854599723`" class="v2-form-input-1612854599723 V2Widget" :style="{'position':'relative','align-self':'auto','padding-left':0,'flex-shrink':0,'text-align':'left'}" :theme="{'size':''}" :disabled="false" :label="`运单号`" :placeholder="`请输入`" :title-mode="`col`" :label-witdh="`65px`" :input-type="`text`" :rows="2" :show-word-limit="false" :clearable="false" :is-required="false" :auto-complete="false" :if="true" ref="v2FormInput_4" :value.sync="waybill_id">
             </v2-form-input>
-            <v2-component-btn :wid="`1612855111983`" class="v2-component-btn-1612855111983 V2Widget" :style="{'align-self':'auto'}" :theme="{'btnType':'primary','size':''}" :disabled="false" :loading="false" :btn-name="`查询`" :shape="`def`" :if="true" @_op_component-btn_btn:undefined="v2_component_btn_1613138459846" ref="v2ComponentBtn_1">
+            <v2-component-btn :wid="`1612855111983`" class="v2-component-btn-1612855111983 V2Widget" :style="{'align-self':'auto','margin-left':'10px'}" :theme="{'btnType':'primary','size':''}" :disabled="false" :loading="false" :btn-name="`查询`" :shape="`def`" :if="true" @_op_component-btn_btn:undefined="v2_component_btn_1613138459846" ref="v2ComponentBtn_1">
             </v2-component-btn>
         </div>
-        <v2-component-table :wid="`1612854187456`" class="v2-component-table-1612854187456 V2Widget" :style="{'align-self':'auto','height':'816.00px','margin-left':'0','width':'calc(100% - 20px)','flex-shrink':0}" :toolBar="true" :tableData="billInfoList" :pageSize="pageSize" :totalCount="billTotalCount" :theme="{'tableType':'border','size':''}" :tooltip-effect="`dark`" :columns="[{'active':true,'type':'text','prop':'waybill_id','label':'运单号','handleLink':true,'handleLinkCB':'handleLinkCallback','linkTarget':'_blank','openTooltip':false,'handleTooltip':true,'tooltipContent':'提示','tooltipContentCallback':'tooltipContentCallback','useMinWidth':true,'headerAlign':'left','align':'left','sortable':false,'openFilter':false,'combi':[],'tagMap':[],'textMap':[],'iconMap':[],'filterMap':[]},{'active':true,'type':'text','prop':'order_id','label':'订单号','handleLink':true,'handleLinkCB':'handleLinkCallback','linkTarget':'_blank','openTooltip':false,'handleTooltip':true,'tooltipContent':'提示','tooltipContentCallback':'tooltipContentCallback','useMinWidth':true,'headerAlign':'left','align':'left','sortable':false,'openFilter':false,'combi':[],'tagMap':[],'textMap':[],'iconMap':[],'filterMap':[]},{'active':true,'type':'text','prop':'status','label':'状态','handleLink':true,'handleLinkCB':'handleLinkCallback','linkTarget':'_blank','openTooltip':false,'handleTooltip':true,'tooltipContent':'提示','tooltipContentCallback':'tooltipContentCallback','useMinWidth':true,'headerAlign':'left','align':'left','sortable':false,'openFilter':false,'combi':[],'tagMap':[],'textMap':[],'iconMap':[],'filterMap':[]},{'active':true,'type':'text','prop':'pay','label':'是否付款','handleLink':true,'handleLinkCB':'handleLinkCallback','linkTarget':'_blank','openTooltip':false,'handleTooltip':true,'tooltipContent':'提示','tooltipContentCallback':'tooltipContentCallback','useMinWidth':true,'headerAlign':'left','align':'left','sortable':false,'openFilter':false,'combi':[],'tagMap':[],'textMap':[],'iconMap':[],'filterMap':[]}]" :table-data="billInfoList" :selection-location="`left`" :t-height="`100%`" :t-max-height="`100%`" :open-index="false" :loading="false" :index-location="`left`" :open-page="true" :page-size="pageSize" :open-set-page-callback="true" :set-page-callback="`getbillInfo`" :total-count="billTotalCount" :tool-bar="true" :tool-title="`操作`" :tool-header-align="`left`" :tool-location="`right`" :tool-width="100" :tool-btns="[{'active':true,'btnName':'编辑','type':'text','handler':'','rowName':' ','toolIcon':' ','rowValue':' '},{'active':true,'btnName':'运单物流','type':'text','handler':'','rowName':' ','toolIcon':' ','rowValue':' '}]" :expand="false" :if="true" ref="v2ComponentTable_1">
+        <v2-component-table :wid="`1612854187456`" class="v2-component-table-1612854187456 V2Widget" :style="{'align-self':'auto','margin-left':'0','width':'calc(100% - 20px)','flex-shrink':0,'height':'816.00px'}" :setPageCallback="setPageCallback" :toolBar="true" :tableData="billInfoList" :pageSize="pageSize" :totalCount="billTotalCount" :theme="{'tableType':'border','size':'small'}" :tooltip-effect="`dark`" :columns="[{'active':true,'type':'text','prop':'waybill_id','label':'运单号','handleLink':true,'handleLinkCB':'handleLinkCallback','linkTarget':'_blank','openTooltip':false,'handleTooltip':true,'tooltipContent':'提示','tooltipContentCallback':'tooltipContentCallback','useMinWidth':true,'headerAlign':'left','align':'left','sortable':false,'openFilter':false,'combi':[],'tagMap':[],'textMap':[],'iconMap':[],'filterMap':[]},{'active':true,'type':'text','prop':'status','label':'状态','handleLink':true,'handleLinkCB':'handleLinkCallback','linkTarget':'_blank','openTooltip':false,'handleTooltip':true,'tooltipContent':'提示','tooltipContentCallback':'tooltipContentCallback','useMinWidth':true,'headerAlign':'left','align':'left','sortable':false,'openFilter':false,'combi':[],'tagMap':[],'textMap':[],'iconMap':[],'filterMap':[]},{'active':true,'type':'text','prop':'pay','label':'是否付款','handleLink':true,'handleLinkCB':'handleLinkCallback','linkTarget':'_blank','openTooltip':false,'handleTooltip':true,'tooltipContent':'提示','tooltipContentCallback':'tooltipContentCallback','useMinWidth':true,'headerAlign':'left','align':'left','sortable':false,'openFilter':false,'combi':[],'tagMap':[],'textMap':[],'iconMap':[],'filterMap':[]},{'active':true,'type':'link','prop':'order_id','label':'订单号','handleLink':true,'handleLinkCB':'handleLinkCallback','linkTarget':'_blank','openTooltip':false,'handleTooltip':true,'tooltipContent':'提示','tooltipContentCallback':'tooltipContentCallback','useMinWidth':true,'headerAlign':'left','align':'left','sortable':false,'openFilter':false,'combi':[],'tagMap':[],'textMap':[],'iconMap':[],'filterMap':[]}]" :table-data="billInfoList" :selection-location="`left`" :t-height="`100%`" :t-max-height="`100%`" :open-index="false" :loading="false" :index-location="`left`" :open-page="true" :page-size="pageSize" :open-set-page-callback="true" :set-page-callback="`getbillInfo`" :total-count="billTotalCount" :tool-bar="true" :tool-title="`操作`" :tool-header-align="`left`" :tool-location="`right`" :tool-width="100" :tool-btns="[{'active':true,'btnName':'运单物流','type':'text','handler':'','rowName':' ','toolIcon':' ','rowValue':' '}]" :expand="false" :if="true" ref="v2ComponentTable_1">
         </v2-component-table>
     </v2container>
 </template>
@@ -73,10 +73,10 @@
             getbillInfo(page, size) {
                 //函数内直接用ctx代替this访问vue页面的数据。
                 const ctx = this;
-                page&&(ctx.currentPage=page);
-                !page&&(ctx.currentPage=1);
-                size&&(ctx.pageSize=size);
-                !size&&(ctx.pageSize=10);
+                page && (ctx.currentPage = page);
+                !page && (ctx.currentPage = 1);
+                size && (ctx.pageSize = size);
+                !size && (ctx.pageSize = 10);
                 const params = {
                   "pageNum": ctx.currentPage,
                   "pageSize": ctx.pageSize,
@@ -86,22 +86,22 @@
                   },
                   "ranges": []
                 };
-                ctx.$axios.post(`${axios.server}/billInfo/list`,params).then(res=>{
-                    if(res.success&&res.status){
-                      const tableData = res.obj||[];
-                      
-                      ctx.billInfoList  = tableData.map(function(item){
-                        return{
-                          waybill_id:item.waybillId,
-                          order_id:item.orderId,
-                          status:item.staff_sex,
-                          pay:item.staff_id,
-                        }
-                      });
-                      ctx.staffTotalCount = res.obj&&res.obj.totalElements;
-                    }
-                }).catch(error=>{
-                  
+                ctx.$axios.post(`${axios.server}/billInfo/list`, params).then(res => {
+                  if (res.success && res.status) {
+                    const tableData = res.obj && res.obj.records || [];
+                
+                    ctx.billInfoList = tableData.map(function (item) {
+                      return {
+                        waybill_id: item.waybillId,
+                        order_id: item.orderId,
+                        status: ctx.checkStatus(item.confirmTime,item.finishTime,item.cancelTime,item.paymentTime),
+                        pay: ctx.checkPayment(item.paymentTime),
+                      }
+                    });
+                    ctx.staffTotalCount = res.obj && res.obj.totalElements;
+                  }
+                }).catch(error => {
+                
                 })
             },
             /**
@@ -139,6 +139,36 @@
                 // 函数内直接用 ctx 代替 this 访问 Vue 页面的数据。
                 /** @type {V2ViewType} */
                 const ctx = this;
+            },
+            /**
+             *  判断是否付款
+             *  @param 新参数 payTime
+             */
+            checkPayment(payTime) {
+                // 函数内直接用 ctx 代替 this 访问 Vue 页面的数据。
+                /** @type {V2ViewType} */
+                const ctx = this;
+                if(null!=payTime) return "已付款";
+                else if(null==payTime) return"未付款"
+            },
+            /**
+             *  判断状态
+             *  @param 新参数 confirmTime
+             *  @param 新参数 finishTime
+             *  @param 新参数 cancelTime
+             *  @param 新参数 paymentTime
+             */
+            checkStatus(confirmTime, finishTime, cancelTime, paymentTime) {
+                // 函数内直接用 ctx 代替 this 访问 Vue 页面的数据。
+                /** @type {V2ViewType} */
+                const ctx = this;
+                if(null!= cancelTime) return "已取消";
+                if(null== paymentTime) return "未付款";
+                if(null==confirmTime) return"未揽件";
+                if(null==finishTime) return "运送中"
+                if(null!= finishTime) return"已完成";
+                
+                
             }
         },
         beforeCreate() {

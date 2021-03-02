@@ -23,26 +23,24 @@
                             "animation-duration": "1s"
                         },
                         "props": [
-                            "theme",
+                            "value",
                             "disabled",
                             "label",
                             "placeholder",
+                            "prepend",
+                            "append",
                             "titleMode",
                             "labelWitdh",
                             "inputType",
                             "rows",
-                            "showWordLimit",
-                            "clearable",
-                            "isRequired",
-                            "autoComplete",
-                            "value.sync",
-                            "value",
-                            "prepend",
-                            "append",
                             "maxlength",
                             "minlength",
                             "prefixIcon",
                             "suffixIcon",
+                            "showWordLimit",
+                            "clearable",
+                            "isRequired",
+                            "autoComplete",
                             "suggestion",
                             "visible",
                             "if",
@@ -62,8 +60,8 @@
                         "clearable": false,
                         "isRequired": false,
                         "autoComplete": false,
-                        "$ref": "v2-form-input_1579152715570",
                         "value.sync": "${creator}",
+                        "$ref": "v2-form-input_1579152715570",
                         "style": {
                             "label": {}
                         },
@@ -102,26 +100,24 @@
                             "animation-duration": "1s"
                         },
                         "props": [
-                            "theme",
+                            "value",
                             "disabled",
                             "label",
                             "placeholder",
+                            "prepend",
+                            "append",
                             "titleMode",
                             "labelWitdh",
                             "inputType",
                             "rows",
-                            "showWordLimit",
-                            "clearable",
-                            "isRequired",
-                            "autoComplete",
-                            "value.sync",
-                            "value",
-                            "prepend",
-                            "append",
                             "maxlength",
                             "minlength",
                             "prefixIcon",
                             "suffixIcon",
+                            "showWordLimit",
+                            "clearable",
+                            "isRequired",
+                            "autoComplete",
                             "suggestion",
                             "visible",
                             "if",
@@ -141,8 +137,8 @@
                         "clearable": false,
                         "isRequired": false,
                         "autoComplete": false,
-                        "$ref": "v2-form-input_1580789804791",
                         "value.sync": "${name}",
+                        "$ref": "v2-form-input_1580789804791",
                         "style": {
                             "label": {}
                         },
@@ -182,7 +178,7 @@
                             "animation-duration": "1s"
                         },
                         "props": [
-                            "theme",
+                            "value",
                             "disabled",
                             "label",
                             "labelWitdh",
@@ -194,8 +190,6 @@
                             "format",
                             "valueFormat",
                             "align",
-                            "value.sync",
-                            "value",
                             "disabledDateType",
                             "disabledDateList",
                             "disabledDateListVar",
@@ -218,8 +212,8 @@
                         "format": "yyyy 年 MM 月 dd 日",
                         "valueFormat": "timestamp",
                         "align": "left",
-                        "$ref": "v2-form-datepicker_1578537726108",
                         "value.sync": "${createTime}",
+                        "$ref": "v2-form-datepicker_1578537726108",
                         "style": {
                             "label": {}
                         },
@@ -257,13 +251,12 @@
                             "animation-duration": "1s"
                         },
                         "props": [
-                            "theme",
                             "disabled",
                             "loading",
                             "btnName",
-                            "shape",
                             "leftIcon",
                             "rightIcon",
+                            "shape",
                             "visible",
                             "if",
                             "customClass"
@@ -371,13 +364,12 @@
                             "flex-shrink": 0
                         },
                         "props": [
-                            "theme",
                             "disabled",
                             "loading",
                             "btnName",
-                            "shape",
                             "leftIcon",
                             "rightIcon",
+                            "shape",
                             "visible",
                             "if",
                             "customClass"
@@ -433,12 +425,11 @@
                         },
                         "props": [
                             "disabled",
-                            "theme",
                             "loading",
                             "btnName",
-                            "shape",
                             "leftIcon",
                             "rightIcon",
+                            "shape",
                             "visible",
                             "if",
                             "customClass"
@@ -544,38 +535,40 @@
                     "overflow": "hidden",
                     "animation-duration": "1s",
                     "width": "calc(100% - 20px)",
-                    "flex-shrink": 0
+                    "flex-shrink": 0,
+                    "border-radius": "0px",
+                    "flex-grow": 0,
+                    "height": "557.00px",
+                    "opacity": 1
                 },
                 "props": [
-                    "tableData",
-                    "pageSize",
-                    "totalCount",
-                    "theme",
+                    "tooltipEffect",
                     "columns",
+                    "tableData",
                     "selection",
+                    "radioSelect",
+                    "value",
                     "selectionLocation",
                     "tHeight",
                     "tMaxHeight",
                     "openIndex",
+                    "loading",
+                    "indexLocation",
                     "openPage",
+                    "pagerCount",
+                    "pageSizes",
+                    "pageSize",
                     "openSetPageCallback",
                     "setPageCallback",
+                    "currentPage",
+                    "totalCount",
                     "toolBar",
                     "toolTitle",
+                    "toolHeaderAlign",
                     "toolLocation",
                     "toolWidth",
                     "toolBtns",
                     "expand",
-                    "value.sync",
-                    "tooltipEffect",
-                    "radioSelect",
-                    "value",
-                    "loading",
-                    "indexLocation",
-                    "pagerCount",
-                    "pageSizes",
-                    "currentPage",
-                    "toolHeaderAlign",
                     "expandMap",
                     "visible",
                     "if",
@@ -788,6 +781,7 @@
                     }
                 ],
                 "expand": false,
+                "value.sync": "${selectedAuthorityList}",
                 "events": {
                     "_op_table_table": {
                         "selectionChange": {
@@ -796,7 +790,6 @@
                     }
                 },
                 "$ref": "v2-component-table_1578539272258",
-                "value.sync": "${selectedAuthorityList}",
                 "visible": true,
                 "__capacity": "1",
                 "href": "v2-component-table",
@@ -1263,6 +1256,12 @@
                 },
                 {
                     "id": 1578539272258,
+                    "modelValue": "value",
+                    "dataValue": "selectedAuthorityList",
+                    "type": ""
+                },
+                {
+                    "id": 1578539272258,
                     "modelValue": "pageSize",
                     "dataValue": "pageSize",
                     "type": ""
@@ -1271,12 +1270,6 @@
                     "id": 1578539272258,
                     "modelValue": "totalCount",
                     "dataValue": "authorityTotalCount",
-                    "type": ""
-                },
-                {
-                    "id": 1578539272258,
-                    "modelValue": "value",
-                    "dataValue": "selectedAuthorityList",
                     "type": ""
                 }
             ],

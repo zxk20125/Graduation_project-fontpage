@@ -19,7 +19,8 @@
                             "align-self": "auto",
                             "padding-left": 0,
                             "flex-shrink": 0,
-                            "flex-grow": 0
+                            "flex-grow": 0,
+                            "text-align": "left"
                         },
                         "props": [
                             "value",
@@ -52,7 +53,7 @@
                         "label": "运单号",
                         "placeholder": "请输入",
                         "titleMode": "col",
-                        "labelWitdh": "80px",
+                        "labelWitdh": "65px",
                         "inputType": "text",
                         "rows": 2,
                         "showWordLimit": false,
@@ -88,10 +89,12 @@
                         "component": "v2-component-btn",
                         "id": 1612855111983,
                         "customClass": [
-                            "v2-component-btn-1612855111983"
+                            "v2-component-btn-1612855111983",
+                            ""
                         ],
                         "commonStyle": {
-                            "align-self": "auto"
+                            "align-self": "auto",
+                            "margin-left": "10px"
                         },
                         "props": [
                             "disabled",
@@ -193,12 +196,12 @@
                 ],
                 "commonStyle": {
                     "align-self": "auto",
-                    "height": "816.00px",
                     "margin-left": "0",
                     "width": "calc(100% - 20px)",
                     "flex-shrink": 0,
                     "border-radius": "0px",
-                    "opacity": 1
+                    "opacity": 1,
+                    "height": "816.00px"
                 },
                 "props": [
                     "tooltipEffect",
@@ -233,14 +236,13 @@
                     "if",
                     "customClass"
                 ],
-                "setPageCallback": "getbillInfo",
                 "toolBar": true,
                 "tableData": "${billInfoList}",
                 "pageSize": "${pageSize}",
                 "totalCount": "${billTotalCount}",
                 "theme": {
                     "tableType": "border",
-                    "size": ""
+                    "size": "small"
                 },
                 "tooltipEffect": "dark",
                 "columns": [
@@ -249,29 +251,6 @@
                         "type": "text",
                         "prop": "waybill_id",
                         "label": "运单号",
-                        "handleLink": true,
-                        "handleLinkCB": "handleLinkCallback",
-                        "linkTarget": "_blank",
-                        "openTooltip": false,
-                        "handleTooltip": true,
-                        "tooltipContent": "提示",
-                        "tooltipContentCallback": "tooltipContentCallback",
-                        "useMinWidth": true,
-                        "headerAlign": "left",
-                        "align": "left",
-                        "sortable": false,
-                        "openFilter": false,
-                        "combi": [],
-                        "tagMap": [],
-                        "textMap": [],
-                        "iconMap": [],
-                        "filterMap": []
-                    },
-                    {
-                        "active": true,
-                        "type": "text",
-                        "prop": "order_id",
-                        "label": "订单号",
                         "handleLink": true,
                         "handleLinkCB": "handleLinkCallback",
                         "linkTarget": "_blank",
@@ -335,6 +314,29 @@
                         "textMap": [],
                         "iconMap": [],
                         "filterMap": []
+                    },
+                    {
+                        "active": true,
+                        "type": "link",
+                        "prop": "order_id",
+                        "label": "订单号",
+                        "handleLink": true,
+                        "handleLinkCB": "handleLinkCallback",
+                        "linkTarget": "_blank",
+                        "openTooltip": false,
+                        "handleTooltip": true,
+                        "tooltipContent": "提示",
+                        "tooltipContentCallback": "tooltipContentCallback",
+                        "useMinWidth": true,
+                        "headerAlign": "left",
+                        "align": "left",
+                        "sortable": false,
+                        "openFilter": false,
+                        "combi": [],
+                        "tagMap": [],
+                        "textMap": [],
+                        "iconMap": [],
+                        "filterMap": []
                     }
                 ],
                 "selectionLocation": "left",
@@ -345,20 +347,12 @@
                 "indexLocation": "left",
                 "openPage": true,
                 "openSetPageCallback": true,
+                "setPageCallback": "getbillInfo",
                 "toolTitle": "操作",
                 "toolHeaderAlign": "left",
                 "toolLocation": "right",
                 "toolWidth": 100,
                 "toolBtns": [
-                    {
-                        "active": true,
-                        "btnName": "编辑",
-                        "type": "text",
-                        "handler": "",
-                        "rowName": " ",
-                        "toolIcon": " ",
-                        "rowValue": " "
-                    },
                     {
                         "active": true,
                         "btnName": "运单物流",
@@ -392,8 +386,9 @@
         "component": "v2Container",
         "id": "root",
         "commonStyle": {
-            "flex-shrink": "0",
-            "box-sizing": "border-box"
+            "flex-shrink": 0,
+            "box-sizing": "border-box",
+            "flex-grow": 0
         },
         "customClass": [],
         "$ref": "v2Container_root",
@@ -428,7 +423,7 @@
             {
                 "name": "getbillInfo",
                 "desp": "获取运单信息",
-                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\npage&&(ctx.currentPage=page);\n!page&&(ctx.currentPage=1);\nsize&&(ctx.pageSize=size);\n!size&&(ctx.pageSize=10);\nconst params = {\n  \"pageNum\": ctx.currentPage,\n  \"pageSize\": ctx.pageSize,\n  \"orders\": [],\n  \"query\": {\n    \"waybillId\": ctx.waybill_id\n  },\n  \"ranges\": []\n};\nctx.$axios.post(`${axios.server}/billInfo/list`,params).then(res=>{\n    if(res.success&&res.status){\n      const tableData = res.obj||[];\n      \n      ctx.billInfoList  = tableData.map(function(item){\n        return{\n          waybill_id:item.waybillId,\n          order_id:item.orderId,\n          status:item.staff_sex,\n          pay:item.staff_id,\n        }\n      });\n      ctx.staffTotalCount = res.obj&&res.obj.totalElements;\n    }\n}).catch(error=>{\n  \n})",
+                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\npage && (ctx.currentPage = page);\n!page && (ctx.currentPage = 1);\nsize && (ctx.pageSize = size);\n!size && (ctx.pageSize = 10);\nconst params = {\n  \"pageNum\": ctx.currentPage,\n  \"pageSize\": ctx.pageSize,\n  \"orders\": [],\n  \"query\": {\n    \"waybillId\": ctx.waybill_id\n  },\n  \"ranges\": []\n};\nctx.$axios.post(`${axios.server}/billInfo/list`, params).then(res => {\n  if (res.success && res.status) {\n    const tableData = res.obj && res.obj.records || [];\n\n    ctx.billInfoList = tableData.map(function (item) {\n      return {\n        waybill_id: item.waybillId,\n        order_id: item.orderId,\n        status: ctx.checkStatus(item.confirmTime,item.finishTime,item.cancelTime,item.paymentTime),\n        pay: ctx.checkPayment(item.paymentTime),\n      }\n    });\n    ctx.staffTotalCount = res.obj && res.obj.totalElements;\n  }\n}).catch(error => {\n\n})",
                 "params": [
                     {
                         "name": "page",
@@ -465,6 +460,44 @@
                 "desp": "打开编辑子页面",
                 "code": "// 函数内直接用 ctx 代替 this 访问 Vue 页面的数据。\n/** @type {V2ViewType} */\nconst ctx = this;",
                 "params": [],
+                "isEvent": false,
+                "custom": true
+            },
+            {
+                "name": "checkPayment",
+                "desp": "判断是否付款",
+                "code": "// 函数内直接用 ctx 代替 this 访问 Vue 页面的数据。\n/** @type {V2ViewType} */\nconst ctx = this;\nif(null!=payTime) return \"已付款\";\nelse if(null==payTime) return\"未付款\"",
+                "params": [
+                    {
+                        "name": "payTime",
+                        "desp": "新参数"
+                    }
+                ],
+                "isEvent": false,
+                "custom": true
+            },
+            {
+                "name": "checkStatus",
+                "desp": "判断状态",
+                "code": "// 函数内直接用 ctx 代替 this 访问 Vue 页面的数据。\n/** @type {V2ViewType} */\nconst ctx = this;\nif(null!= cancelTime) return \"已取消\";\nif(null== paymentTime) return \"未付款\";\nif(null==confirmTime) return\"未揽件\";\nif(null==finishTime) return \"运送中\"\nif(null!= finishTime) return\"已完成\";\n\n",
+                "params": [
+                    {
+                        "name": "confirmTime",
+                        "desp": "新参数"
+                    },
+                    {
+                        "name": "finishTime",
+                        "desp": "新参数"
+                    },
+                    {
+                        "name": "cancelTime",
+                        "desp": "新参数"
+                    },
+                    {
+                        "name": "paymentTime",
+                        "desp": "新参数"
+                    }
+                ],
                 "isEvent": false,
                 "custom": true
             }
@@ -513,8 +546,17 @@
                 "belongTo": "data",
                 "type": "data",
                 "showSet": false,
-                "sync": false,
-                "isExposed": false
+                "sync": false
+            },
+            {
+                "desp": "运单信息列表",
+                "name": "billInfoList",
+                "code": "[]",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false,
+                "sync": false
             },
             {
                 "desp": "页码数",
@@ -526,17 +568,6 @@
                 "showSet": false,
                 "sync": false,
                 "isExposed": true
-            },
-            {
-                "desp": "运单信息列表",
-                "name": "billInfoList",
-                "code": "[]",
-                "setCode": "",
-                "source": "pageData",
-                "belongTo": "data",
-                "type": "data",
-                "showSet": false,
-                "isExposed": false
             },
             {
                 "desp": "数据总条数",

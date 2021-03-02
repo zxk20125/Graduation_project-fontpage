@@ -13,9 +13,9 @@
                 ],
                 "commonStyle": {
                     "align-self": "auto",
-                    "height": "90%",
+                    "height": "816.00px",
                     "margin-left": "0",
-                    "width": "98%",
+                    "width": "calc(100% - 20px)",
                     "flex-shrink": 0,
                     "border-radius": "0px",
                     "opacity": 1
@@ -53,11 +53,11 @@
                     "if",
                     "customClass"
                 ],
-                "setPageCallback": "getAddressInfo",
-                "tableData": "${staffList}",
+                "setPageCallback": "getOrderInfo",
+                "toolBar": false,
+                "tableData": "${orderList}",
                 "pageSize": "${pageSize}",
-                "totalCount": "${addressTotalCount}",
-                "toolBar": true,
+                "totalCount": "${orderTotalCount}",
                 "theme": {
                     "tableType": "border",
                     "size": ""
@@ -113,8 +113,8 @@
                     {
                         "active": true,
                         "type": "text",
-                        "prop": "addressInfo",
-                        "label": "地址信息",
+                        "prop": "sender",
+                        "label": "寄件地址",
                         "handleLink": true,
                         "handleLinkCB": "handleLinkCallback",
                         "linkTarget": "_blank",
@@ -136,7 +136,30 @@
                     {
                         "active": true,
                         "type": "text",
-                        "prop": " shipInfo",
+                        "prop": "reciver",
+                        "label": "收件地址",
+                        "handleLink": true,
+                        "handleLinkCB": "handleLinkCallback",
+                        "linkTarget": "_blank",
+                        "openTooltip": false,
+                        "handleTooltip": true,
+                        "tooltipContent": "提示",
+                        "tooltipContentCallback": "tooltipContentCallback",
+                        "useMinWidth": true,
+                        "headerAlign": "left",
+                        "align": "left",
+                        "sortable": false,
+                        "openFilter": false,
+                        "combi": [],
+                        "tagMap": [],
+                        "textMap": [],
+                        "iconMap": [],
+                        "filterMap": []
+                    },
+                    {
+                        "active": true,
+                        "type": "text",
+                        "prop": "shipInfo",
                         "label": "物品信息",
                         "handleLink": true,
                         "handleLinkCB": "handleLinkCallback",
@@ -260,10 +283,19 @@
     "logic": {
         "methods": [
             {
-                "name": "getStaffInfo",
-                "desp": "获取客户地址信息",
-                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\npage&&(ctx.currentPage=page);\n!page&&(ctx.currentPage=1);\nsize&&(ctx.pageSize=size);\n!size&&(ctx.pageSize=10);\nconst params = {\n  \"pageNum\": ctx.currentPage,\n  \"pageSize\": ctx.pageSize,\n  \"staff_name\":ctx.staff_name\n};\n\nctx.$axios.post(`${axios.server}/staff/list`,params).then(res=>{\n    if(res.success&&res.status){\n      const tableData = res.obj&&res.obj.records||[];\n      \n      ctx.staffList  = tableData.map(function(item){\n        return{\n          staff_name:item.staff_name,\n          staff_age:item.staff_age,\n          staff_sex:item.staff_sex,\n          staff_id:item.staff_id,\n          staff_phone:item.staff_phone,\n          hiredate:item.hiredate,\n          dot_id:item.dot_id\n        }\n      });\n      ctx.staffTotalCount = res.obj&&res.obj.totalElements;\n    }\n}).catch(error=>{\n  \n})",
-                "params": [],
+                "name": "getOrderInfo",
+                "desp": "获取订单信息",
+                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\npage&&(ctx.currentPage=page);\n!page&&(ctx.currentPage=1);\nsize&&(ctx.pageSize=size);\n!size&&(ctx.pageSize=10);\nconst params = {\n  \"pageNum\": ctx.currentPage,\n  \"pageSize\": ctx.pageSize,\n  \"orders\": [],\n  \"query\": {},\n  \"ranges\": []\n};\n\nctx.$axios.post(`${axios.server}/orderInfo/list`,params).then(res=>{\n    if(res.success&&res.status){\n      const tableData = res.obj&&res.obj.records||[];\n      \n      ctx.orderList  = tableData.map(function(item){\n        return{\n          order_id:item.orderId,\n          customer:item.loginName,\n          sender:\"寄件人:\"+item.sender+\"\\n\"+item.senderPhone+\"\\n\"+item.senderAddress,\n          reciver:\"收件人:\"+item.receiver+\"\\n\"+item.receiverPhone+\"\\n\"+item.receivingAddress,\n          shipInfo:item.resSort+\"\\n重量:\"+item.weight+\"\\n\"+\n          ctx.checkInsured(item.insuredPrice)+\"\\n运费:\"+item.freight+\"元\\n\"+\n          item.paymentMethod,\n          order_time:item.orderTime,\n        }\n      });\n      ctx.orderTotalCount = res.obj&&res.obj.total;\n    }\n}).catch(error=>{\n  \n})",
+                "params": [
+                    {
+                        "name": "page",
+                        "desp": "新参数"
+                    },
+                    {
+                        "name": "size",
+                        "desp": "新参数"
+                    }
+                ],
                 "isEvent": false,
                 "custom": true
             },
@@ -272,6 +304,19 @@
                 "desp": "打开编辑子页面",
                 "code": "// 函数内直接用 ctx 代替 this 访问 Vue 页面的数据。\n/** @type {V2ViewType} */\nconst ctx = this;",
                 "params": [],
+                "isEvent": false,
+                "custom": true
+            },
+            {
+                "name": "checkInsured",
+                "desp": "判断是否保价",
+                "code": "// 函数内直接用 ctx 代替 this 访问 Vue 页面的数据。\n/** @type {V2ViewType} */\nconst ctx = this;\nif(insured==1)return \"已保价\";\nelse if(insured==0)return \"未保价\";",
+                "params": [
+                    {
+                        "name": "insured",
+                        "desp": "新参数"
+                    }
+                ],
                 "isEvent": false,
                 "custom": true
             }
@@ -313,16 +358,6 @@
         "data": {},
         "list": [
             {
-                "desp": "员工姓名",
-                "name": "staff_name",
-                "code": "''",
-                "source": "pageData",
-                "belongTo": "data",
-                "type": "data",
-                "showSet": false,
-                "sync": false
-            },
-            {
                 "desp": "页码数",
                 "name": "pageSize",
                 "code": "10",
@@ -334,8 +369,8 @@
                 "isExposed": true
             },
             {
-                "desp": "客户地址信息列表",
-                "name": "staffList",
+                "desp": "订单信息信息列表",
+                "name": "orderList",
                 "code": "[]",
                 "source": "pageData",
                 "belongTo": "data",
@@ -346,7 +381,7 @@
             },
             {
                 "desp": "数据总条数",
-                "name": "staffTotalCount",
+                "name": "orderTotalCount",
                 "code": "1",
                 "source": "pageData",
                 "belongTo": "data",
@@ -373,7 +408,7 @@
                 {
                     "id": 1612854187456,
                     "modelValue": "tableData",
-                    "dataValue": "staffList",
+                    "dataValue": "orderList",
                     "type": ""
                 },
                 {
@@ -385,7 +420,7 @@
                 {
                     "id": 1612854187456,
                     "modelValue": "totalCount",
-                    "dataValue": "addressTotalCount",
+                    "dataValue": "orderTotalCount",
                     "type": ""
                 }
             ],
@@ -410,7 +445,7 @@
         "isSelfAdaption": false,
         "parentWidth": "1650"
     },
-    "originCss": "",
+    "originCss": ".el-table .cell{\n    white-space:pre-line;\n}",
     "cssType": "scss",
     "cssConfig": {
         "scoped": null
