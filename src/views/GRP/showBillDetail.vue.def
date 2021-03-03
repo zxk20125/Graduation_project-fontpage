@@ -3,66 +3,58 @@
         "__resolveFromCode": false,
         "children": [
             {
-                "visible": true,
-                "if": true,
-                "__capacity": "1",
-                "__loadSwitch": false,
-                "__loading": false,
-                "element-loading-text": "正在加载中，请稍候…",
-                "element-loading-spinner": "el-icon-loading",
-                "element-loading-background": "rgba(0, 0, 0, 0.8)",
-                "component": "v2Container",
-                "href": "v2Container",
-                "name": "单容器",
+                "__resolveFromCode": false,
                 "children": [
                     {
-                        "style": {
-                            "title": {},
-                            "value": {}
-                        },
-                        "title": "订单编号",
-                        "value": "${order_id}",
-                        "overflow": "normal",
-                        "overflowLine": 3,
-                        "textBreak": true,
-                        "type": "text",
-                        "direction": "text-value-col",
-                        "visible": true,
-                        "if": true,
-                        "__capacity": "1",
-                        "component": "v2-component-text-value",
-                        "href": "v2-component-text-value",
-                        "name": "文本值",
+                        "__resolveFromCode": false,
                         "children": [],
-                        "events": {},
-                        "version": "16.0.0",
+                        "component": "v2-component-text-value",
                         "id": 1614697534034,
-                        "pid": 1614697445658,
-                        "$ref": "v2ComponentTextValue_6",
+                        "customClass": [
+                            "v2-component-text-value-1614697534034",
+                            ""
+                        ],
                         "commonStyle": {
-                            "box-sizing": "border-box",
                             "align-self": "auto",
-                            "flex-basis": "auto",
-                            "flex-shrink": 1,
+                            "width": "322.00px",
                             "flex-grow": 0,
-                            "width": "322.00px"
+                            "flex-shrink": 0,
+                            "height": "56.6px"
                         },
                         "props": [
                             "title",
-                            "value",
                             "overflow",
                             "overflowLine",
                             "textBreak",
                             "type",
                             "direction",
-                            "visible",
                             "if",
+                            "value.sync",
+                            "value",
+                            "visible",
                             "customClass"
                         ],
-                        "customClass": [
-                            "v2-component-text-value-1614697534034",
-                            ""
-                        ],
+                        "title": "订单编号",
+                        "overflow": "normal",
+                        "overflowLine": 3,
+                        "textBreak": true,
+                        "type": "text",
+                        "direction": "text-value-col",
+                        "if": true,
+                        "$ref": "v2ComponentTextValue_6",
+                        "value.sync": "${order_id}",
+                        "style": {
+                            "title": {},
+                            "value": {}
+                        },
+                        "value": "${order_id}",
+                        "visible": true,
+                        "__capacity": "1",
+                        "href": "v2-component-text-value",
+                        "name": "文本值",
+                        "events": {},
+                        "version": "16.0.0",
+                        "pid": 1614697445658,
                         "sizeLocked": {
                             "widthLock": true,
                             "heightLock": false
@@ -73,115 +65,55 @@
                         ]
                     },
                     {
-                        "style": {
-                            "title": {},
-                            "value": {}
-                        },
-                        "title": "下单用户",
-                        "value": "${order_id}",
-                        "overflow": "normal",
-                        "overflowLine": 3,
-                        "textBreak": true,
-                        "type": "text",
-                        "direction": "text-value-col",
-                        "visible": true,
-                        "if": true,
-                        "__capacity": "1",
-                        "component": "v2-component-text-value",
-                        "href": "v2-component-text-value",
-                        "name": "文本值",
+                        "__resolveFromCode": false,
                         "children": [],
-                        "events": {},
-                        "version": "16.0.0",
+                        "component": "v2-component-text-value",
                         "id": 1614697544289,
-                        "pid": 1614697445658,
-                        "$ref": "v2ComponentTextValue_7",
-                        "commonStyle": {
-                            "box-sizing": "border-box",
-                            "align-self": "auto",
-                            "flex-basis": "auto",
-                            "flex-shrink": 1,
-                            "flex-grow": "0",
-                            "width": "322.00px"
-                        },
-                        "props": [
-                            "title",
-                            "value",
-                            "overflow",
-                            "overflowLine",
-                            "textBreak",
-                            "type",
-                            "direction",
-                            "visible",
-                            "if",
-                            "customClass"
-                        ],
                         "customClass": [
                             "v2-component-text-value-1614697534034",
                             ""
                         ],
-                        "sizeLocked": {
-                            "widthLock": true,
-                            "heightLock": false
-                        },
-                        "animate": [
-                            "",
-                            "animated"
-                        ],
-                        "offset": {
-                            "top": 10,
-                            "left": 0
-                        }
-                    },
-                    {
-                        "style": {
-                            "title": {},
-                            "value": {}
-                        },
-                        "title": "寄件地址",
-                        "value": "${order_id}",
-                        "overflow": "normal",
-                        "overflowLine": 3,
-                        "textBreak": true,
-                        "type": "text",
-                        "direction": "text-value-col",
-                        "visible": true,
-                        "if": true,
-                        "__capacity": "1",
-                        "component": "v2-component-text-value",
-                        "href": "v2-component-text-value",
-                        "name": "文本值",
-                        "children": [],
-                        "events": {},
-                        "version": "16.0.0",
-                        "id": 1614697453934,
-                        "pid": 1614697445658,
-                        "$ref": "v2ComponentTextValue_8",
                         "commonStyle": {
-                            "box-sizing": "border-box",
                             "align-self": "auto",
-                            "flex-basis": "auto",
-                            "flex-shrink": 1,
+                            "width": "322.00px",
                             "flex-grow": 0,
-                            "height": "24px",
-                            "width": "322.00px"
+                            "flex-shrink": 0,
+                            "height": "53.6px"
                         },
                         "props": [
                             "title",
-                            "value",
                             "overflow",
                             "overflowLine",
                             "textBreak",
                             "type",
                             "direction",
-                            "visible",
                             "if",
+                            "value.sync",
+                            "value",
+                            "visible",
                             "customClass"
                         ],
-                        "customClass": [
-                            "v2-component-text-value-1614697534034",
-                            ""
-                        ],
+                        "title": "下单用户",
+                        "overflow": "normal",
+                        "overflowLine": 3,
+                        "textBreak": true,
+                        "type": "text",
+                        "direction": "text-value-col",
+                        "if": true,
+                        "$ref": "v2ComponentTextValue_7",
+                        "value.sync": "${order_id}",
+                        "style": {
+                            "title": {},
+                            "value": {}
+                        },
+                        "value": "${loginName}",
+                        "visible": true,
+                        "__capacity": "1",
+                        "href": "v2-component-text-value",
+                        "name": "文本值",
+                        "events": {},
+                        "version": "16.0.0",
+                        "pid": 1614697445658,
                         "sizeLocked": {
                             "widthLock": true,
                             "heightLock": false
@@ -196,54 +128,118 @@
                         }
                     },
                     {
-                        "style": {
-                            "title": {},
-                            "value": {}
-                        },
-                        "title": "收件地址",
-                        "value": "${order_id}",
-                        "overflow": "normal",
-                        "overflowLine": 3,
-                        "textBreak": true,
-                        "type": "text",
-                        "direction": "text-value-col",
-                        "visible": true,
-                        "if": true,
-                        "__capacity": "1",
-                        "component": "v2-component-text-value",
-                        "href": "v2-component-text-value",
-                        "name": "文本值",
+                        "__resolveFromCode": false,
                         "children": [],
-                        "events": {},
-                        "version": "16.0.0",
-                        "id": 1614697672395,
-                        "pid": 1614697445658,
-                        "$ref": "v2ComponentTextValue_9",
+                        "component": "v2-component-text-value",
+                        "id": 1614697453934,
+                        "customClass": [
+                            "v2-component-text-value-1614697534034",
+                            ""
+                        ],
                         "commonStyle": {
-                            "box-sizing": "border-box",
                             "align-self": "auto",
-                            "flex-basis": "auto",
-                            "flex-shrink": 1,
-                            "flex-grow": "0",
-                            "height": "24px",
-                            "width": "322.00px"
+                            "height": "81.00px",
+                            "width": "322.00px",
+                            "flex-grow": 0,
+                            "flex-shrink": 0
                         },
                         "props": [
                             "title",
-                            "value",
                             "overflow",
                             "overflowLine",
                             "textBreak",
                             "type",
                             "direction",
-                            "visible",
                             "if",
+                            "value.sync",
+                            "value",
+                            "visible",
                             "customClass"
                         ],
+                        "title": "寄件地址",
+                        "overflow": "normal",
+                        "overflowLine": 3,
+                        "textBreak": true,
+                        "type": "text",
+                        "direction": "text-value-col",
+                        "if": true,
+                        "$ref": "v2ComponentTextValue_8",
+                        "value.sync": "${order_id}",
+                        "style": {
+                            "title": {},
+                            "value": {}
+                        },
+                        "value": "${sender}",
+                        "visible": true,
+                        "__capacity": "1",
+                        "href": "v2-component-text-value",
+                        "name": "文本值",
+                        "events": {},
+                        "version": "16.0.0",
+                        "pid": 1614697445658,
+                        "sizeLocked": {
+                            "widthLock": true,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated"
+                        ],
+                        "offset": {
+                            "top": 10,
+                            "left": 0
+                        }
+                    },
+                    {
+                        "__resolveFromCode": false,
+                        "children": [],
+                        "component": "v2-component-text-value",
+                        "id": 1614697672395,
                         "customClass": [
                             "v2-component-text-value-1614697534034",
                             ""
                         ],
+                        "commonStyle": {
+                            "align-self": "auto",
+                            "height": "85.00px",
+                            "width": "322.00px",
+                            "flex-grow": 0,
+                            "flex-shrink": 0
+                        },
+                        "props": [
+                            "title",
+                            "overflow",
+                            "overflowLine",
+                            "textBreak",
+                            "type",
+                            "direction",
+                            "if",
+                            "value.sync",
+                            "value",
+                            "visible",
+                            "customClass"
+                        ],
+                        "title": "收件地址",
+                        "overflow": "normal",
+                        "overflowLine": 3,
+                        "textBreak": true,
+                        "type": "text",
+                        "direction": "text-value-col",
+                        "if": true,
+                        "$ref": "v2ComponentTextValue_9",
+                        "value.sync": "${order_id}",
+                        "style": {
+                            "title": {},
+                            "value": {}
+                        },
+                        "value": "${reciver}",
+                        "visible": true,
+                        "__capacity": "1",
+                        "href": "v2-component-text-value",
+                        "name": "文本值",
+                        "events": {},
+                        "version": "16.0.0",
+                        "pid": 1614697445658,
                         "sizeLocked": {
                             "widthLock": true,
                             "heightLock": false
@@ -258,54 +254,55 @@
                         }
                     },
                     {
-                        "style": {
-                            "title": {},
-                            "value": {}
-                        },
-                        "title": "物品信息",
-                        "value": "${order_id}",
-                        "overflow": "normal",
-                        "overflowLine": 3,
-                        "textBreak": true,
-                        "type": "text",
-                        "direction": "text-value-col",
-                        "visible": true,
-                        "if": true,
-                        "__capacity": "1",
-                        "component": "v2-component-text-value",
-                        "href": "v2-component-text-value",
-                        "name": "文本值",
+                        "__resolveFromCode": false,
                         "children": [],
-                        "events": {},
-                        "version": "16.0.0",
+                        "component": "v2-component-text-value",
                         "id": 1614697706848,
-                        "pid": 1614697445658,
-                        "$ref": "v2ComponentTextValue_10",
+                        "customClass": [
+                            "v2-component-text-value-1614697534034",
+                            ""
+                        ],
                         "commonStyle": {
-                            "box-sizing": "border-box",
                             "align-self": "auto",
-                            "flex-basis": "auto",
-                            "flex-shrink": "1",
-                            "flex-grow": "0",
-                            "height": "24.00px",
-                            "width": "322.00px"
+                            "height": "50.00px",
+                            "width": "322.00px",
+                            "flex-grow": 0,
+                            "flex-shrink": 0
                         },
                         "props": [
                             "title",
-                            "value",
                             "overflow",
                             "overflowLine",
                             "textBreak",
                             "type",
                             "direction",
-                            "visible",
                             "if",
+                            "value.sync",
+                            "value",
+                            "visible",
                             "customClass"
                         ],
-                        "customClass": [
-                            "v2-component-text-value-1614697534034",
-                            ""
-                        ],
+                        "title": "物品信息",
+                        "overflow": "normal",
+                        "overflowLine": 3,
+                        "textBreak": true,
+                        "type": "text",
+                        "direction": "text-value-col",
+                        "if": true,
+                        "$ref": "v2ComponentTextValue_10",
+                        "value.sync": "${order_id}",
+                        "style": {
+                            "title": {},
+                            "value": {}
+                        },
+                        "value": "${stuffInfo}",
+                        "visible": true,
+                        "__capacity": "1",
+                        "href": "v2-component-text-value",
+                        "name": "文本值",
+                        "events": {},
+                        "version": "16.0.0",
+                        "pid": 1614697445658,
                         "sizeLocked": {
                             "widthLock": true,
                             "heightLock": false
@@ -320,54 +317,55 @@
                         }
                     },
                     {
-                        "style": {
-                            "title": {},
-                            "value": {}
-                        },
-                        "title": "下单时间",
-                        "value": "${order_id}",
-                        "overflow": "normal",
-                        "overflowLine": 3,
-                        "textBreak": true,
-                        "type": "text",
-                        "direction": "text-value-col",
-                        "visible": true,
-                        "if": true,
-                        "__capacity": "1",
-                        "component": "v2-component-text-value",
-                        "href": "v2-component-text-value",
-                        "name": "文本值",
+                        "__resolveFromCode": false,
                         "children": [],
-                        "events": {},
-                        "version": "16.0.0",
+                        "component": "v2-component-text-value",
                         "id": 1614697671782,
-                        "pid": 1614697445658,
-                        "$ref": "v2ComponentTextValue_11",
+                        "customClass": [
+                            "v2-component-text-value-1614697534034",
+                            ""
+                        ],
                         "commonStyle": {
-                            "box-sizing": "border-box",
                             "align-self": "auto",
-                            "flex-basis": "auto",
-                            "flex-shrink": "1",
-                            "flex-grow": "0",
-                            "height": "24px",
-                            "width": "322.00px"
+                            "height": "56.00px",
+                            "width": "322.00px",
+                            "flex-grow": 0,
+                            "flex-shrink": 0
                         },
                         "props": [
                             "title",
-                            "value",
                             "overflow",
                             "overflowLine",
                             "textBreak",
                             "type",
                             "direction",
-                            "visible",
                             "if",
+                            "value.sync",
+                            "value",
+                            "visible",
                             "customClass"
                         ],
-                        "customClass": [
-                            "v2-component-text-value-1614697534034",
-                            ""
-                        ],
+                        "title": "下单时间",
+                        "overflow": "normal",
+                        "overflowLine": 3,
+                        "textBreak": true,
+                        "type": "text",
+                        "direction": "text-value-col",
+                        "if": true,
+                        "$ref": "v2ComponentTextValue_11",
+                        "value.sync": "${order_id}",
+                        "style": {
+                            "title": {},
+                            "value": {}
+                        },
+                        "value": "${orderTime}",
+                        "visible": true,
+                        "__capacity": "1",
+                        "href": "v2-component-text-value",
+                        "name": "文本值",
+                        "events": {},
+                        "version": "16.0.0",
+                        "pid": 1614697445658,
                         "sizeLocked": {
                             "widthLock": true,
                             "heightLock": false
@@ -382,36 +380,42 @@
                         }
                     }
                 ],
-                "events": {},
+                "component": "v2Container",
                 "id": 1614697445658,
-                "pid": "root",
-                "$ref": "v2Container_1",
+                "customClass": [
+                    "v2Container-1614697445658",
+                    ""
+                ],
                 "commonStyle": {
                     "box-sizing": "border-box",
                     "align-self": "stretch",
-                    "flex-basis": "auto",
-                    "flex-shrink": "1",
-                    "flex-grow": "0",
                     "display": "flex",
                     "flex-direction": "column",
-                    "justify-content": "flex-start",
                     "align-items": "flex-start",
-                    "flex-wrap": "nowrap",
-                    "align-content": "stretch",
-                    "height": "418.00px"
+                    "height": "390.00px",
+                    "width": "724.00px"
                 },
                 "props": [
-                    "visible",
                     "if",
+                    "visible",
                     "element-loading-text",
                     "element-loading-spinner",
                     "element-loading-background",
                     "customClass"
                 ],
-                "customClass": [
-                    "v2Container-1614697445658",
-                    ""
-                ],
+                "if": true,
+                "$ref": "v2Container_1",
+                "visible": true,
+                "__capacity": "1",
+                "__loadSwitch": false,
+                "__loading": false,
+                "element-loading-text": "正在加载中，请稍候…",
+                "element-loading-spinner": "el-icon-loading",
+                "element-loading-background": "rgba(0, 0, 0, 0.8)",
+                "href": "v2Container",
+                "name": "单容器",
+                "events": {},
+                "pid": "root",
                 "sizeLocked": {
                     "widthLock": true,
                     "heightLock": false
@@ -426,8 +430,8 @@
         "component": "v2Container",
         "id": "root",
         "commonStyle": {
-            "height": "500.00px",
-            "width": "900px",
+            "height": "450px",
+            "width": "400px",
             "box-sizing": "border-box",
             "align-self": "auto",
             "border-right-width": "0",
@@ -436,8 +440,8 @@
             "border-bottom-width": "0",
             "margin-top": "10px",
             "margin-bottom": "10px",
-            "flex-grow": 0,
-            "flex-shrink": 0
+            "flex-shrink": 0,
+            "flex-grow": 0
         },
         "customClass": [],
         "$ref": "v2Container_root",
@@ -468,7 +472,29 @@
     },
     "forms": [],
     "logic": {
-        "methods": [],
+        "methods": [
+            {
+                "name": "getOrderInfo",
+                "desp": "获取订单详情",
+                "code": "// 函数内直接用 ctx 代替 this 访问 Vue 页面的数据。\n/** @type {V2ViewType} */\nconst ctx = this;\nctx.$axios.get(`${axios.server}/orderInfo/get/${ctx.order_id}`).then(res => {\n    if (res.success && res.status) {\n        \n        var item = res.obj;\n        console.log(item.stuffInfo)\n        ctx.loginName = item.loginName;\n        ctx.sender = \"寄件人:\" + item.sender + \"\\n\" + item.senderPhone + \"\\n\" + item.senderAddress;\n        ctx.reciver = \"收件人:\" + item.receiver + \"\\n\" + item.receiverPhone + \"\\n\" + item.receivingAddress;\n        ctx.stuffInfo = item.resSort + \"\\n重量:\" + item.weight + \"\\n\" +\n            ctx.checkInsured(item.insuredPrice) + \"\\n运费:\" + item.freight + \"元\\n\" +\n            item.paymentMethod;\n        ctx.orderTime = String(item.orderTime);\n    }\n\n}).catch(error => {\n    console.log(error);\n})",
+                "params": [],
+                "isEvent": false,
+                "custom": true
+            },
+            {
+                "name": "checkInsured",
+                "desp": "判断是否保价",
+                "code": "// 函数内直接用 ctx 代替 this 访问 Vue 页面的数据。\n/** @type {V2ViewType} */\nconst ctx = this;\nif(insured==1)return \"已保价\";\nelse if(insured==0)return \"未保价\";",
+                "params": [
+                    {
+                        "name": "insured",
+                        "desp": "新参数"
+                    }
+                ],
+                "isEvent": false,
+                "custom": true
+            }
+        ],
         "watch": {},
         "beforeCreate": {
             "code": "let ctx = this;"
@@ -480,7 +506,7 @@
             "code": "let ctx = this;"
         },
         "mounted": {
-            "code": "let ctx = this;"
+            "code": "const ctx = this;\r\nctx.getOrderInfo();"
         },
         "beforeUpdate": {
             "code": "let ctx = this;"
@@ -509,12 +535,71 @@
                 "desp": "订单编号",
                 "name": "order_id",
                 "code": "''",
-                "setCode": "",
                 "source": "pageData",
                 "belongTo": "data",
                 "type": "data",
                 "showSet": false,
-                "isExposed": false
+                "sync": false
+            },
+            {
+                "desp": "下单用户",
+                "name": "loginName",
+                "code": "''",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false,
+                "sync": false,
+                "syncComputed": "computed_newPageData",
+                "isExposed": true
+            },
+            {
+                "desp": "寄件地址",
+                "name": "sender",
+                "code": "''",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false,
+                "sync": false,
+                "syncComputed": "computed_newPageData",
+                "isExposed": true
+            },
+            {
+                "desp": "收件地址",
+                "name": "reciver",
+                "code": "''",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false,
+                "sync": false,
+                "syncComputed": "computed_newPageData",
+                "isExposed": true
+            },
+            {
+                "desp": "物品信息",
+                "name": "stuffInfo",
+                "code": "''",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false,
+                "sync": false,
+                "syncComputed": "computed_newPageData",
+                "isExposed": true
+            },
+            {
+                "desp": "下单时间",
+                "name": "orderTime",
+                "code": "''",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false,
+                "sync": false,
+                "syncComputed": "computed_newPageData",
+                "isExposed": true
             }
         ],
         "mapping": {
@@ -557,7 +642,7 @@
                 {
                     "id": 1614697544289,
                     "modelValue": "value",
-                    "dataValue": "order_id",
+                    "dataValue": "loginName",
                     "type": ""
                 }
             ],
@@ -565,7 +650,7 @@
                 {
                     "id": 1614697453934,
                     "modelValue": "value",
-                    "dataValue": "order_id",
+                    "dataValue": "sender",
                     "type": ""
                 }
             ],
@@ -573,7 +658,23 @@
                 {
                     "id": 1614697672395,
                     "modelValue": "value",
-                    "dataValue": "order_id",
+                    "dataValue": "reciver",
+                    "type": ""
+                }
+            ],
+            "1614697706848": [
+                {
+                    "id": 1614697706848,
+                    "modelValue": "value",
+                    "dataValue": "stuffInfo",
+                    "type": ""
+                }
+            ],
+            "1614697671782": [
+                {
+                    "id": 1614697671782,
+                    "modelValue": "value",
+                    "dataValue": "orderTime",
                     "type": ""
                 }
             ]

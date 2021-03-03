@@ -112,6 +112,8 @@
             },
             /**
              *  查询
+             *  @param $event $event
+             *  @param vueIns vueIns
              */
             v2_component_btn_1613138459846($event, vueIns=this.$refs['v2ComponentBtn_1']) {
                 //*====AGREE-ACTION-START====*//
@@ -153,8 +155,8 @@
                     closeOnClickModal: false,
                     hideConfirmBtn: true,
                     hideCancelBtn: true,
-                    width: "910px", //弹窗的宽
-                    height: "510px", //高，不设置默认是auto
+                    width: "500px", //弹窗的宽
+                    height: "600px", //高，不设置默认是auto
                     closeOnClickModal: true,//点击弹窗外部是否关闭弹窗，不设置默认是true：会关闭，false：不关闭
                     params:{order_id:row.order_id},
                     confirmCallback: (ret) => {
@@ -213,19 +215,6 @@
                 if(null==confirmTime) return"未揽件";
                 if(null==finishTime) return "运送中"
                 if(null!= finishTime) return"已完成";
-            },
-            /**
-             *  v2_component_btn_1614691890570
-             *  @param $event $event
-             *  @param 组件的vue实例 vueIns
-             */
-            v2_component_btn_1614691890570($event, vueIns) {
-                /**
-                * 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN
-                **/
-                
-                //函数内直接用ctx代替this访问vue页面的数据。
-                const ctx = this;
             },
             /**
              *  查询

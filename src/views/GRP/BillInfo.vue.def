@@ -11,16 +11,14 @@
                         "component": "v2-form-input",
                         "id": 1612854599723,
                         "customClass": [
-                            "v2-form-input-1612854599723",
-                            ""
+                            "v2-form-input-1612854599723"
                         ],
                         "commonStyle": {
                             "position": "relative",
                             "align-self": "auto",
                             "padding-left": 0,
                             "flex-shrink": 0,
-                            "text-align": "left",
-                            "flex-grow": 0
+                            "text-align": "left"
                         },
                         "props": [
                             "value",
@@ -89,13 +87,11 @@
                         "component": "v2-component-btn",
                         "id": 1612855111983,
                         "customClass": [
-                            "v2-component-btn-1612855111983",
-                            ""
+                            "v2-component-btn-1612855111983"
                         ],
                         "commonStyle": {
                             "align-self": "auto",
                             "margin-left": "10px",
-                            "flex-grow": 0,
                             "flex-shrink": 0
                         },
                         "props": [
@@ -124,9 +120,7 @@
                                     "v2_component_btn_1613138459846": {}
                                 },
                                 "undefined": {
-                                    "v2_component_btn_1614691893888": {
-                                        "params": ""
-                                    }
+                                    "v2_component_btn_1614691893888": {}
                                 }
                             }
                         },
@@ -247,6 +241,7 @@
                 "toolBar": true,
                 "tableData": "${billInfoList}",
                 "pageSize": "${pageSize}",
+                "currentPage": "${currentPage}",
                 "totalCount": "${billTotalCount}",
                 "theme": {
                     "tableType": "border",
@@ -387,8 +382,7 @@
                 "animate": [
                     "",
                     "animated"
-                ],
-                "currentPage": "${currentPage}"
+                ]
             }
         ],
         "component": "v2Container",
@@ -448,17 +442,24 @@
                 "name": "v2_component_btn_1613138459846",
                 "desp": "查询",
                 "code": "//*====AGREE-ACTION-START====*//\n//*+AGREE-CONFIG-*//\n//{\n//\t\"name\": \"custom\",\n//\t\"params\": {}\n//}\n//*-AGREE-CONFIG+*//\n//*++++AGREE-CODE-START++++*//\n/**\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\n**/\n\n//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\n\n/**\n方法名称：getStaffInfo\n方法描述：获取客户地址信息\n\n**/\nctx.getbillInfo(ctx.currentPage);",
-                "params": [],
+                "params": [
+                    {
+                        "name": "$event",
+                        "desp": "$event"
+                    },
+                    {
+                        "name": "vueIns",
+                        "desp": "vueIns"
+                    }
+                ],
                 "isEvent": true,
                 "custom": true,
-                "id": 1613138459846,
-                "isExposed": false,
-                "emitName": ""
+                "id": 1613138459846
             },
             {
                 "name": "openEditBillPage",
                 "desp": "打开编辑子页面",
-                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\n\nctx.open({\n    title: '编辑客户信息',\n    path: '/edit/order',\n    component: 'GRP/showBillDetail',\n    type: 'SUB',\n    closeOnClickModal: false,\n    hideConfirmBtn: true,\n    hideCancelBtn: true,\n    width: \"910px\", //弹窗的宽\n    height: \"510px\", //高，不设置默认是auto\n    closeOnClickModal: true,//点击弹窗外部是否关闭弹窗，不设置默认是true：会关闭，false：不关闭\n    params:{order_id:row.order_id},\n    confirmCallback: (ret) => {\n        ctx.$axios.post(`${axios.server}/orderInfo/edit`, ret).then(res => {\n            //下一步的行为\n            if (res.success) {\n                ctx.$notify({\n                    title: '客户信息编辑成功',\n                    type: 'success'\n                });\n            } else {\n                ctx.$notify({\n                    title: res.msg,\n                    type: 'error'\n                });\n\n            }\n        }).catch(function (error) {\n            console.log(error);\n            ctx.$notify({\n                title: error.msg || '编辑失败',\n                type: 'error'\n            });\n        });\n\n    },\n    cancelCallback: (e) => {\n        console.log('点击取消')\n    }\n})",
+                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\n\nctx.open({\n    title: '编辑客户信息',\n    path: '/edit/order',\n    component: 'GRP/showBillDetail',\n    type: 'SUB',\n    closeOnClickModal: false,\n    hideConfirmBtn: true,\n    hideCancelBtn: true,\n    width: \"500px\", //弹窗的宽\n    height: \"600px\", //高，不设置默认是auto\n    closeOnClickModal: true,//点击弹窗外部是否关闭弹窗，不设置默认是true：会关闭，false：不关闭\n    params:{order_id:row.order_id},\n    confirmCallback: (ret) => {\n        ctx.$axios.post(`${axios.server}/orderInfo/edit`, ret).then(res => {\n            //下一步的行为\n            if (res.success) {\n                ctx.$notify({\n                    title: '客户信息编辑成功',\n                    type: 'success'\n                });\n            } else {\n                ctx.$notify({\n                    title: res.msg,\n                    type: 'error'\n                });\n\n            }\n        }).catch(function (error) {\n            console.log(error);\n            ctx.$notify({\n                title: error.msg || '编辑失败',\n                type: 'error'\n            });\n        });\n\n    },\n    cancelCallback: (e) => {\n        console.log('点击取消')\n    }\n})",
                 "params": [
                     {
                         "name": "index",
@@ -511,26 +512,6 @@
                 "custom": true
             },
             {
-                "name": "v2_component_btn_1614691890570",
-                "desp": "v2_component_btn_1614691890570",
-                "code": "/**\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\n**/\n\n//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;",
-                "params": [
-                    {
-                        "name": "$event",
-                        "desp": "$event"
-                    },
-                    {
-                        "name": "vueIns",
-                        "desp": "组件的vue实例"
-                    }
-                ],
-                "isEvent": true,
-                "custom": true,
-                "id": 1612855111983,
-                "isExposed": false,
-                "emitName": ""
-            },
-            {
                 "name": "v2_component_btn_1614691893888",
                 "desp": "查询",
                 "code": "\n//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\n//*++++AGREE-CODE-END++++*//\n//*====AGREE-ACTION-END====*//\n\n\n/**\n方法名称：getbillInfo\n方法描述：获取运单信息\n参数1:page(新参数)\n参数2:size(新参数)\n**/\nctx.getbillInfo(ctx.currentPage);",
@@ -546,9 +527,7 @@
                 ],
                 "isEvent": true,
                 "custom": true,
-                "id": 1612855111983,
-                "isExposed": false,
-                "emitName": ""
+                "id": 1614691893888
             }
         ],
         "watch": {},
@@ -638,7 +617,6 @@
                 "type": "data",
                 "showSet": false,
                 "sync": false,
-                "syncComputed": "computed_newPageData",
                 "isExposed": true
             }
         ],

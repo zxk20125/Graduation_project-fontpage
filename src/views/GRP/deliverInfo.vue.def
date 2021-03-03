@@ -11,17 +11,13 @@
                         "component": "v2-form-input",
                         "id": 1612854599723,
                         "customClass": [
-                            "v2-form-input-1612854599723",
-                            ""
+                            "v2-form-input-1612854599723"
                         ],
                         "commonStyle": {
                             "position": "relative",
                             "align-self": "auto",
                             "padding-left": 0,
-                            "flex-shrink": 0,
-                            "border-radius": "0px",
-                            "flex-grow": 0,
-                            "opacity": 1
+                            "flex-shrink": 0
                         },
                         "props": [
                             "value",
@@ -257,7 +253,9 @@
                     "height": "816.00px",
                     "margin-left": "0",
                     "width": "calc(100% - 20px)",
-                    "flex-shrink": 0
+                    "flex-shrink": 0,
+                    "border-radius": "0px",
+                    "opacity": 1
                 },
                 "props": [
                     "tooltipEffect",
@@ -292,10 +290,12 @@
                     "if",
                     "customClass"
                 ],
+                "setPageCallback": "getStaffInfo",
                 "toolBar": true,
                 "tableData": "${staffList}",
                 "pageSize": "${pageSize}",
                 "totalCount": "${staffTotalCount}",
+                "currentPage": "${currentPage}",
                 "theme": {
                     "tableType": "border",
                     "size": ""
@@ -472,7 +472,6 @@
                 "indexLocation": "left",
                 "openPage": true,
                 "openSetPageCallback": true,
-                "setPageCallback": "getStaffInfo",
                 "toolTitle": "操作",
                 "toolHeaderAlign": "left",
                 "toolLocation": "right",
@@ -505,8 +504,7 @@
                 "animate": [
                     "",
                     "animated"
-                ],
-                "currentPage": "${currentPage}"
+                ]
             }
         ],
         "component": "v2Container",
@@ -590,7 +588,7 @@
             {
                 "name": "editStaff",
                 "desp": "编辑配送员信息",
-                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\nconsole.log(row.staff_id)\nctx.open({\n    title:'编辑配送员信息',\n    path:'/edit/Staff',\n    component:'GRP/editStaffSubPage',\n    type:'SUB',\n    closeOnClickModal:false,\n    params:{staffId:row.staff_id},\n    hideConfirmBtn:true, \n    hideCancelBtn:true, \n    confirmCallback:(params) => { \n        ctx.$axios.post(`${axios.server}/staffInfo/update`, params).then(res => {\n        //下一步的行为\n            if(res.success){\n                ctx.$notify({\n                    title: '编辑配送员成功',\n                    type: 'success'\n                });\n               ctx.getStaffInfo(ctx.currentPage);\n                \n            }else{\n                ctx.$notify({\n                    title: res.msg,\n                    type: 'error'\n                });\n               \n            }\n        }).catch(function (error) {\n            console.log(error);\n            ctx.$notify({\n                title: error.msg || '编辑失败',\n                type: 'error'\n            });\n        });\n       \n    },\n    cancelCallback:(e) => {\n        console.log('点击取消')\n    }\n})",
+                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\nconsole.log(row.staff_id)\nctx.open({\n    title:'编辑配送员信息',\n    path:'/edit/Staff',\n    component:'example/editExampleSubPage',\n    type:'SUB',\n    closeOnClickModal:false,\n    params:{staffId:row.staff_id},\n    width:\"25vw\",\n    height:\"25vw\",\n    hideConfirmBtn:true, \n    hideCancelBtn:true, \n    confirmCallback:(params) => { \n        ctx.$axios.post(`${axios.server}/staffInfo/update`, params).then(res => {\n        //下一步的行为\n            if(res.success){\n                ctx.$notify({\n                    title: '编辑配送员成功',\n                    type: 'success'\n                });\n               ctx.getStaffInfo(ctx.currentPage);\n                \n            }else{\n                ctx.$notify({\n                    title: res.msg,\n                    type: 'error'\n                });\n               \n            }\n        }).catch(function (error) {\n            console.log(error);\n            ctx.$notify({\n                title: error.msg || '编辑失败',\n                type: 'error'\n            });\n        });\n       \n    },\n    cancelCallback:(e) => {\n        console.log('点击取消')\n    }\n})",
                 "params": [
                     {
                         "name": "index",
@@ -760,14 +758,14 @@
                 },
                 {
                     "id": 1612854187456,
-                    "modelValue": "totalCount",
-                    "dataValue": "staffTotalCount",
+                    "modelValue": "currentPage",
+                    "dataValue": "currentPage",
                     "type": ""
                 },
                 {
                     "id": 1612854187456,
-                    "modelValue": "currentPage",
-                    "dataValue": "currentPage",
+                    "modelValue": "totalCount",
+                    "dataValue": "staffTotalCount",
                     "type": ""
                 }
             ],

@@ -1,6 +1,6 @@
 <template>
-    <v2container :wid="`root`" style="display:flex;flex-direction:column;align-items:flex-start;align-self:stretch;min-width:50px;min-height:50px;animation-duration:1s;" class="V2Container">
-        <div :wid="`1578552432842`" class="V2Container" style="position:relative;box-sizing:border-box;align-self:stretch;overflow:hidden;display:flex;flex-direction:row;align-items:flex-start;min-width:50px;min-height:50px;animation-duration:1s;" ref="v2Container_1578552432842">
+    <v2container :wid="`root`" style="display:flex;flex-direction:column;align-items:flex-start;align-self:stretch;min-width:50px;min-height:50px;animation-duration:1s;box-sizing:border-box;height:auto;" class="V2Container">
+        <div :wid="`1578552432842`" class="V2Container" style="position:relative;box-sizing:border-box;align-self:stretch;overflow:hidden;display:flex;flex-direction:row;align-items:flex-start;min-width:50px;min-height:50px;animation-duration:1s;height:auto;flex-shrink:0;" ref="v2Container_1578552432842">
             <div :wid="`1578552513559`" class="form-user-info-wrapper V2Container" style="position:relative;box-sizing:border-box;align-self:stretch;overflow:hidden;display:block;flex-direction:column;align-items:flex-start;min-width:50px;min-height:50px;animation-duration:1s;" ref="v2Container_1578552513559">
                 <v2-form-input :wid="`1579252216073`" class="form-item-block V2Widget" :style="{'position':'relative','margin-top':'10px','margin-bottom':'10px','margin-left':'10px','margin-right':'10px','align-self':'auto','overflow':'hidden','animation-duration':'1s'}" :labelWitdh="labelWidth" :theme="{}" :disabled="true" :label="`用户名`" :placeholder="`请输入用户名`" :title-mode="`col`" :label-witdh="labelWidth" :input-type="`text`" :rows="2" :show-word-limit="false" :clearable="false" :is-required="true" :auto-complete="false" ref="v2-form-input_1579252216073" :value.sync="userData.username">
                 </v2-form-input>
@@ -8,7 +8,7 @@
                 </v2-form-input>
                 <v2-form-input :wid="`1578552443987`" class="form-item-block V2Widget" :style="{'position':'relative','margin-top':'10px','margin-bottom':'10px','margin-left':'10px','margin-right':'10px','align-self':'auto','overflow':'hidden','animation-duration':'1s'}" :labelWitdh="labelWidth" :theme="{}" :disabled="false" :label="`密码`" :placeholder="`请输入用户密码`" :title-mode="`col`" :label-witdh="labelWidth" :input-type="`password`" :rows="2" :show-word-limit="false" :clearable="false" :is-required="false" :auto-complete="false" ref="v2-form-input_1578552443987" :value.sync="userData.password">
                 </v2-form-input>
-                <v2-form-input :wid="`1578552629581`" class="form-item-block V2Widget" :style="{'position':'relative','margin-top':'10px','margin-bottom':'10px','margin-left':'10px','margin-right':'10px','align-self':'auto','overflow':'hidden','animation-duration':'1s'}" :labelWitdh="labelWidth" :theme="{}" :disabled="false" :label="`确认密码`" :placeholder="`请再次输入密码`" :title-mode="`col`" :label-witdh="labelWidth" :input-type="`password`" :rows="2" :show-word-limit="false" :clearable="false" :is-required="false" :auto-complete="false" ref="v2-form-input_1578552629581" :value.sync="userData.repeatPwd">
+                <v2-form-input :wid="`1578552629581`" class="form-item-block V2Widget" :style="{'position':'relative','margin-top':'10px','margin-bottom':'10px','margin-left':'10px','margin-right':'10px','align-self':'auto','overflow':'hidden','animation-duration':'1s'}" :labelWitdh="labelWidth" :theme="{'size':''}" :disabled="false" :label="`确认密码`" :placeholder="`请再次输入密码`" :title-mode="`col`" :label-witdh="labelWidth" :input-type="`password`" :rows="2" :show-word-limit="false" :clearable="false" :is-required="false" :auto-complete="false" ref="v2-form-input_1578552629581" :value.sync="userData.repeatPwd">
                 </v2-form-input>
                 <v2-form-input :wid="`1578552704152`" class="form-item-block V2Widget" :style="{'position':'relative','margin-top':'10px','margin-bottom':'10px','margin-left':'10px','margin-right':'10px','align-self':'auto','overflow':'hidden','animation-duration':'1s'}" :labelWitdh="labelWidth" :theme="{}" :disabled="false" :label="`联系电话`" :placeholder="`请输入联系电话`" :title-mode="`col`" :label-witdh="labelWidth" :input-type="`text`" :rows="2" :show-word-limit="false" :clearable="false" :is-required="true" :auto-complete="false" ref="v2-form-input_1578552704152" :value.sync="userData.phone">
                 </v2-form-input>
@@ -20,7 +20,7 @@
                 </v2-form-input>
             </div>
         </div>
-        <div :wid="`1579166732561`" class="diaglog-btn-ctn V2Container" style="position:relative;box-sizing:border-box;align-self:stretch;overflow:hidden;display:flex;flex-direction:row;justify-content:flex-end;align-items:flex-start;min-width:50px;min-height:50px;animation-duration:1s;" ref="v2Container_1579166732561">
+        <div :wid="`1579166732561`" class="diaglog-btn-ctn V2Container" style="position:relative;box-sizing:border-box;align-self:stretch;overflow:hidden;display:flex;flex-direction:row;justify-content:flex-end;align-items:flex-start;min-width:50px;min-height:50px;animation-duration:1s;height:auto;" ref="v2Container_1579166732561">
             <v2-component-btn :wid="`1579166663051`" class="common-btn-normal V2Widget" :style="{'position':'relative','margin-top':'10px','margin-bottom':'10px','margin-left':'10px','margin-right':'10px','align-self':'auto','flex-shrink':'0','overflow':'hidden','animation-duration':'1s'}" :theme="{'btnType':'normal','size':''}" :disabled="false" :loading="false" :btn-name="`取消`" :shape="`plain`" @_op_component-btn_btn:click="v2_component_btn_1578929870000" ref="v2-component-btn_1579166663051">
             </v2-component-btn>
             <v2-component-btn :wid="`1579166655478`" class="common-btn-focus margin-right20 V2Widget" :style="{'position':'relative','margin-top':'10px','margin-bottom':'10px','margin-left':'10px','margin-right':'10px','align-self':'auto','overflow':'hidden','animation-duration':'1s'}" :theme="{'btnType':'primary','size':''}" :disabled="false" :loading="false" :btn-name="`提交`" :shape="`def`" ref="v2-component-btn_1579166655478">
@@ -29,8 +29,8 @@
     </v2container>
 </template>
 <script>
-    import {mixins} from '@v2-lib/vue.spa.plugin'
     import {root} from '@v2-lib/webide.support.fusion/mixin/v2-view'
+    import {mixins} from '@v2-lib/vue.spa.plugin'
     /* __V2_DECOMPILABLE__ */
     export default {
         'mixins': [
@@ -143,7 +143,7 @@
              *  关闭编辑用户子页面
              *  @param 组件的vue实例 vueIns
              */
-            v2_component_btn_1578929870000(vueIns) {
+            v2_component_btn_1578929870000($event, vueIns=this.$refs['v2-component-btn_1579166663051']) {
                 /**
                 * 事件绑定在vue实例上，第一个参数是vue实例。
                 * 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN
@@ -244,7 +244,6 @@
         mounted() {
             /* Resume */;
             /* User Code */;
-            //函数内直接用ctx代替this访问vue页面的数据。
             const ctx = this;
             if(ctx.AParams.id){
                 ctx.getUserDetail();
