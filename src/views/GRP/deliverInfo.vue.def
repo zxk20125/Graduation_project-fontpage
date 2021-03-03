@@ -294,8 +294,8 @@
                 "toolBar": true,
                 "tableData": "${staffList}",
                 "pageSize": "${pageSize}",
-                "totalCount": "${staffTotalCount}",
                 "currentPage": "${currentPage}",
+                "totalCount": "${staffTotalCount}",
                 "theme": {
                     "tableType": "border",
                     "size": ""
@@ -588,7 +588,7 @@
             {
                 "name": "editStaff",
                 "desp": "编辑配送员信息",
-                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\nconsole.log(row.staff_id)\nctx.open({\n    title:'编辑配送员信息',\n    path:'/edit/Staff',\n    component:'example/editExampleSubPage',\n    type:'SUB',\n    closeOnClickModal:false,\n    params:{staffId:row.staff_id},\n    width:\"25vw\",\n    height:\"25vw\",\n    hideConfirmBtn:true, \n    hideCancelBtn:true, \n    confirmCallback:(params) => { \n        ctx.$axios.post(`${axios.server}/staffInfo/update`, params).then(res => {\n        //下一步的行为\n            if(res.success){\n                ctx.$notify({\n                    title: '编辑配送员成功',\n                    type: 'success'\n                });\n               ctx.getStaffInfo(ctx.currentPage);\n                \n            }else{\n                ctx.$notify({\n                    title: res.msg,\n                    type: 'error'\n                });\n               \n            }\n        }).catch(function (error) {\n            console.log(error);\n            ctx.$notify({\n                title: error.msg || '编辑失败',\n                type: 'error'\n            });\n        });\n       \n    },\n    cancelCallback:(e) => {\n        console.log('点击取消')\n    }\n})",
+                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\nconsole.log(row.staff_id)\nctx.open({\n    title:'编辑配送员信息',\n    path:'/edit/Staff',\n    component:'GRP/editdeliverSubPage',\n    type:'SUB',\n    closeOnClickModal:false,\n    params:{staffId:row.staff_id},\n    width:\"650px\",\n    height:\"550px\",\n    hideConfirmBtn:true, \n    hideCancelBtn:true, \n    confirmCallback:(params) => { \n        ctx.$axios.post(`${axios.server}/staffInfo/update`, params).then(res => {\n        //下一步的行为\n            if(res.success){\n                ctx.$notify({\n                    title: '编辑配送员成功',\n                    type: 'success'\n                });\n               ctx.getStaffInfo(ctx.currentPage);\n                \n            }else{\n                ctx.$notify({\n                    title: res.msg,\n                    type: 'error'\n                });\n               \n            }\n        }).catch(function (error) {\n            console.log(error);\n            ctx.$notify({\n                title: error.msg || '编辑失败',\n                type: 'error'\n            });\n        });\n       \n    },\n    cancelCallback:(e) => {\n        console.log('点击取消')\n    }\n})",
                 "params": [
                     {
                         "name": "index",

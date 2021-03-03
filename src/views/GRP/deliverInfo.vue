@@ -206,12 +206,12 @@
                 ctx.open({
                     title:'编辑配送员信息',
                     path:'/edit/Staff',
-                    component:'example/editExampleSubPage',
+                    component:'GRP/editdeliverSubPage',
                     type:'SUB',
                     closeOnClickModal:false,
                     params:{staffId:row.staff_id},
-                    width:"25vw",
-                    height:"25vw",
+                    width:"650px",
+                    height:"550px",
                     hideConfirmBtn:true, 
                     hideCancelBtn:true, 
                     confirmCallback:(params) => { 

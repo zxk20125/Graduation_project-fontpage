@@ -8,16 +8,16 @@
                 </v2-form-input>
                 <v2-form-input :wid="`1614764830485`" class="v2-form-input-1614764830485 V2Widget" :style="{'align-self':'auto','margin-bottom':'10px','width':'300px'}" :theme="{'size':''}" :disabled="false" :label="`联系电话`" :placeholder="`请输入联系电话`" :title-mode="`col`" :label-witdh="`80px`" :input-type="`text`" :rows="2" :show-word-limit="false" :clearable="false" :is-required="false" :auto-complete="false" :if="true" ref="v2FormInput_4" :value.sync="phone">
                 </v2-form-input>
-                <v2-form-select :wid="`1614765164838`" class="v2-form-select-1614765164838 V2Widget" :style="{'align-self':'auto','margin-bottom':'10px','width':'180px'}" :optionConfig="branchList" :theme="{'size':''}" :disabled="false" :data-type="`def`" :options="[]" :label="`网点`" :placeholder="`请选择`" :label-witdh="`80px`" :title-mode="`col`" :clearable="false" :prefix="false" :filterable="true" :is-required="false" :if="true" :option-config="branchList" ref="v2FormSelect_1" :value.sync="branch">
+                <v2-form-select :wid="`1614765164838`" class="v2-form-select-1614765164838 V2Widget" :style="{'align-self':'auto','margin-bottom':'10px','width':'180px'}" :optionConfig="branchList" :theme="{'size':''}" :disabled="false" :data-type="`def`" :option-config="branchList" :options="[]" :label="`网点`" :placeholder="`请选择`" :label-witdh="`80px`" :title-mode="`col`" :clearable="false" :prefix="false" :filterable="true" :is-required="false" :if="true" ref="v2FormSelect_1" :value.sync="branch">
                 </v2-form-select>
-                <v2-form-select :wid="`1614765166810`" class="v2-form-select-1614765166810 V2Widget" :style="{'align-self':'auto','margin-bottom':'10px','width':'180px'}" :optionConfig="sexList" :theme="{'size':''}" :disabled="false" :data-type="`def`" :options="[]" :label="`性别`" :placeholder="`请选择`" :label-witdh="`80px`" :title-mode="`col`" :clearable="false" :prefix="false" :filterable="true" :is-required="false" :if="true" :option-config="sexList" ref="v2FormSelect_2" :value.sync="sex">
+                <v2-form-select :wid="`1614765166810`" class="v2-form-select-1614765166810 V2Widget" :style="{'align-self':'auto','margin-bottom':'10px','width':'180px'}" :optionConfig="sexList" :theme="{'size':''}" :disabled="false" :data-type="`def`" :option-config="sexList" :options="[]" :label="`性别`" :placeholder="`请选择`" :label-witdh="`80px`" :title-mode="`col`" :clearable="false" :prefix="false" :filterable="true" :is-required="false" :if="true" ref="v2FormSelect_2" :value.sync="sex">
                 </v2-form-select>
             </div>
         </div>
         <div :wid="`1614766242007`" class="v2Container-1614766242007 V2Container" style="position:relative;box-sizing:border-box;align-self:stretch;overflow:hidden;display:flex;flex-direction:row;justify-content:flex-end;align-items:flex-start;min-width:50px;min-height:50px;animation-duration:1s;height:auto;flex-shrink:0;" :if="true" ref="v2Container_4">
-            <v2-component-btn :wid="`1614774384400`" class="v2-component-btn-1614774384400 V2Widget" :style="{'align-self':'auto','margin-top':'5px'}" :theme="{'btnType':'normal&shape=plain','size':'small'}" :disabled="false" :loading="false" :btn-name="`取消`" :shape="`def`" :if="true" ref="v2ComponentBtn_7">
+            <v2-component-btn :wid="`1614774384400`" class="v2-component-btn-1614774384400 V2Widget" :style="{'align-self':'auto','margin-top':'5px','flex-shrink':0}" :theme="{'btnType':'normal&shape=plain','size':'small'}" :disabled="false" :loading="false" :btn-name="`取消`" :shape="`def`" :if="true" @_op_component-btn_btn:click="v2_component_btn_1614781368622" ref="v2ComponentBtn_7">
             </v2-component-btn>
-            <v2-component-btn :wid="`1614766284343`" class="v2-component-btn-1614765251471 V2Widget" :style="{'align-self':'auto','margin-top':'5px','margin-right':'10px'}" :theme="{'btnType':'primary','size':'small'}" :disabled="false" :loading="false" :btn-name="`提交`" :shape="`def`" :if="true" ref="v2ComponentBtn_5">
+            <v2-component-btn :wid="`1614766284343`" class="v2-component-btn-1614765251471 V2Widget" :style="{'align-self':'auto','margin-top':'5px','margin-right':'10px'}" :theme="{'btnType':'primary','size':'small'}" :disabled="false" :loading="false" :btn-name="`提交`" :shape="`def`" :if="true" @_op_component-btn_btn:click="v2_component_btn_1614781011043" ref="v2ComponentBtn_5">
             </v2-component-btn>
         </div>
     </v2container>
@@ -103,6 +103,12 @@
                 'default': () => {
                     return ''
                 }
+            },
+            /* 员工编号 */
+            'staffId': {
+                'default': () => {
+                    return ''
+                }
             }
         },
         'computed': {
@@ -127,7 +133,7 @@
                         ctx.phone= obj&&obj.staffPhone;
                         ctx.sex= obj&&obj.staffSex;
                         ctx.branch= obj&&obj.dotId;
-                        
+                        ctx.staffId=obj&&obj.staffId
                         
                     }
                 }).catch(error=>{
@@ -153,6 +159,66 @@
                 }).catch(error=>{
                     console.log(error);
                 })
+            },
+            /**
+             *  v2_component_btn_1614781011043
+             *  @param $event $event
+             *  @param vueIns vueIns
+             */
+            v2_component_btn_1614781011043($event, vueIns=this.$refs['v2ComponentBtn_5']) {
+                //*====AGREE-ACTION-START====*//
+                //*+AGREE-CONFIG-*//
+                //{
+                //	"name": "custom",
+                //	"params": {}
+                //}
+                //*-AGREE-CONFIG+*//
+                //*++++AGREE-CODE-START++++*//
+                const ctx = this;
+                ctx.submitData();
+            },
+            /**
+             *  提交方法
+             */
+            submitData() {
+                // 函数内直接用 ctx 代替 this 访问 Vue 页面的数据。
+                /** @type {V2ViewType} */
+                const ctx = this;
+                let dataList={}
+                console.log(1)
+                dataList={
+                    staffId:ctx.staffId,
+                    staffName:ctx.name,
+                    staffAge:ctx.age,
+                    staffSex:ctx.sex,
+                    dotId:ctx.branch,
+                    staffPhone:ctx.phone
+                }
+                ctx.$root.confirm(dataList);
+            },
+            /**
+             *  v2_component_btn_1614781368622
+             */
+            v2_component_btn_1614781368622($event, vueIns=this.$refs['v2ComponentBtn_7']) {
+                //*====AGREE-ACTION-START====*//
+                //*+AGREE-CONFIG-*//
+                //{
+                //	"name": "custom",
+                //	"params": {}
+                //}
+                //*-AGREE-CONFIG+*//
+                //*++++AGREE-CODE-START++++*//
+                /**
+                * 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN
+                **/
+                
+                //函数内直接用ctx代替this访问vue页面的数据。
+                const ctx = this;
+                ctx.close();
+                //*++++AGREE-CODE-END++++*//
+                //*====AGREE-ACTION-END====*//
+                
+                
             }
         },
         beforeCreate() {
