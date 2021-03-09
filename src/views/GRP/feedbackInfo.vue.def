@@ -3,6 +3,120 @@
         "__resolveFromCode": false,
         "children": [
             {
+                "visible": true,
+                "if": true,
+                "__capacity": "1",
+                "__loadSwitch": false,
+                "__loading": false,
+                "element-loading-text": "正在加载中，请稍候…",
+                "element-loading-spinner": "el-icon-loading",
+                "element-loading-background": "rgba(0, 0, 0, 0.8)",
+                "component": "v2Container",
+                "href": "v2Container",
+                "name": "单容器",
+                "children": [
+                    {
+                        "theme": {
+                            "btnType": "danger",
+                            "size": "medium"
+                        },
+                        "disabled": false,
+                        "loading": false,
+                        "btnName": "删除",
+                        "shape": "def",
+                        "visible": true,
+                        "if": true,
+                        "__capacity": "1",
+                        "component": "v2-component-btn",
+                        "href": "v2-component-btn",
+                        "name": "按钮",
+                        "children": [],
+                        "events": {
+                            "_op_componentBtn_btn": {
+                                "click": {
+                                    "v2_component_btn_1614839644860": {
+                                        "params": ""
+                                    }
+                                }
+                            }
+                        },
+                        "version": "16.0.0",
+                        "id": 1614832083679,
+                        "pid": 1614832033329,
+                        "$ref": "v2ComponentBtn_1",
+                        "commonStyle": {
+                            "box-sizing": "border-box",
+                            "align-self": "auto",
+                            "flex-basis": "auto",
+                            "flex-shrink": 1,
+                            "flex-grow": 0,
+                            "margin-right": "20px"
+                        },
+                        "props": [
+                            "disabled",
+                            "loading",
+                            "btnName",
+                            "leftIcon",
+                            "rightIcon",
+                            "shape",
+                            "visible",
+                            "if",
+                            "customClass"
+                        ],
+                        "customClass": [
+                            "v2-component-btn-1614832083679",
+                            ""
+                        ],
+                        "sizeLocked": {
+                            "widthLock": false,
+                            "heightLock": false
+                        },
+                        "animate": [
+                            "",
+                            "animated"
+                        ]
+                    }
+                ],
+                "events": {},
+                "id": 1614832033329,
+                "pid": "root",
+                "$ref": "v2Container_1",
+                "commonStyle": {
+                    "box-sizing": "border-box",
+                    "align-self": "stretch",
+                    "flex-basis": "auto",
+                    "flex-shrink": "1",
+                    "flex-grow": "0",
+                    "display": "flex",
+                    "flex-direction": "row",
+                    "justify-content": "flex-end",
+                    "align-items": "flex-start",
+                    "flex-wrap": "nowrap",
+                    "align-content": "stretch"
+                },
+                "customClass": [
+                    "v2Container-1614832033329",
+                    ""
+                ],
+                "sizeLocked": {
+                    "widthLock": false,
+                    "heightLock": false
+                },
+                "animate": [
+                    "",
+                    "animated",
+                    ""
+                ],
+                "props": [
+                    "visible",
+                    "if",
+                    "element-loading-text",
+                    "element-loading-spinner",
+                    "element-loading-background",
+                    "customClass"
+                ]
+            },
+            {
                 "__resolveFromCode": false,
                 "children": [],
                 "component": "v2-component-table",
@@ -13,9 +127,9 @@
                 ],
                 "commonStyle": {
                     "align-self": "auto",
-                    "height": "90%",
+                    "height": "864.00px",
                     "margin-left": "0",
-                    "width": "98%",
+                    "width": "calc(100% - 20px)",
                     "flex-shrink": 0,
                     "border-radius": "0px",
                     "opacity": 1
@@ -53,11 +167,10 @@
                     "if",
                     "customClass"
                 ],
-                "setPageCallback": "getfeedBackInfo",
                 "toolBar": true,
                 "tableData": "${feedBackfList}",
                 "pageSize": "${pageSize}",
-                "totalCount": "${addressTotalCount}",
+                "totalCount": "${feedBackTotalCount}",
                 "theme": {
                     "tableType": "border",
                     "size": ""
@@ -155,6 +268,28 @@
                         "textMap": [],
                         "iconMap": [],
                         "filterMap": []
+                    },
+                    {
+                        "active": true,
+                        "type": "text",
+                        "prop": "id",
+                        "handleLink": true,
+                        "handleLinkCB": "handleLinkCallback",
+                        "linkTarget": "_blank",
+                        "openTooltip": false,
+                        "handleTooltip": true,
+                        "tooltipContent": "提示",
+                        "tooltipContentCallback": "tooltipContentCallback",
+                        "useMinWidth": true,
+                        "headerAlign": "left",
+                        "align": "left",
+                        "sortable": false,
+                        "openFilter": false,
+                        "combi": [],
+                        "tagMap": [],
+                        "textMap": [],
+                        "iconMap": [],
+                        "filterMap": []
                     }
                 ],
                 "selectionLocation": "left",
@@ -165,6 +300,7 @@
                 "indexLocation": "left",
                 "openPage": true,
                 "openSetPageCallback": true,
+                "setPageCallback": "getfeedBackInfo",
                 "toolTitle": "操作",
                 "toolHeaderAlign": "left",
                 "toolLocation": "right",
@@ -173,16 +309,7 @@
                     {
                         "active": true,
                         "btnName": "编辑",
-                        "type": "text",
-                        "handler": "",
-                        "rowName": " ",
-                        "toolIcon": " ",
-                        "rowValue": " "
-                    },
-                    {
-                        "active": true,
-                        "btnName": "删除",
-                        "type": "text",
+                        "type": "primary",
                         "handler": "",
                         "rowName": " ",
                         "toolIcon": " ",
@@ -206,14 +333,17 @@
                 "animate": [
                     "",
                     "animated"
-                ]
+                ],
+                "selection": "multi",
+                "value": "${selectItem}"
             }
         ],
         "component": "v2Container",
         "id": "root",
         "commonStyle": {
-            "flex-shrink": "0",
-            "box-sizing": "border-box"
+            "flex-shrink": 0,
+            "box-sizing": "border-box",
+            "flex-grow": 0
         },
         "customClass": [],
         "$ref": "v2Container_root",
@@ -248,7 +378,7 @@
             {
                 "name": "getfeedBackInfo",
                 "desp": "获取客户地址信息",
-                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\npage&&(ctx.currentPage=page);\n!page&&(ctx.currentPage=1);\nsize&&(ctx.pageSize=size);\n!size&&(ctx.pageSize=10);\n\nctx.$axios.get(`${axios.server}/feedBackInfo/list`).then(res=>{\n    if(res.success&&res.status){\n      const tableData = res.obj||[];\n      ctx.feedBackfList  = tableData.map(function(item){\n        return{\n          customer_id:item.feedbackId,\n          feedback_content:item.feedbackContent,\n          customer_phone:item.staff_sex,\n          customer_email:item.mailxbox,\n        }\n      });\n      ctx.staffTotalCount = res.obj&&res.obj.totalElements;\n    }\n}).catch(error=>{\n  \n})",
+                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\npage&&(ctx.currentPage=page);\n!page&&(ctx.currentPage=1);\nsize&&(ctx.pageSize=size);\n!size&&(ctx.pageSize=10);\nconst params = {\n  \"pageNum\": ctx.currentPage,\n  \"pageSize\": ctx.pageSize,\n  \"orders\": [],\n  \"query\": {},\n  \"ranges\": []\n};\nctx.$axios.post(`${axios.server}/feedBackInfo/list`,params).then(res=>{\n    if(res.success&&res.status){\n      const tableData = res.obj&& res.obj.records||[];\n      ctx.feedBackfList  = tableData.map(function(item){\n        return{\n          customer_id:item.loginName,\n          feedback_content:item.feedbackContent,\n          customer_phone:item.customerPhone,\n          customer_email:item.mailxbox,\n          id:item.feedbackId\n        }\n      });\n      ctx.feedBackTotalCount = res.obj&&res.obj.total;\n    }\n}).catch(error=>{\n  \n})",
                 "params": [
                     {
                         "name": "page",
@@ -267,6 +397,34 @@
                 "desp": "打开编辑子页面",
                 "code": "// 函数内直接用 ctx 代替 this 访问 Vue 页面的数据。\n/** @type {V2ViewType} */\nconst ctx = this;",
                 "params": [],
+                "isEvent": false,
+                "custom": true
+            },
+            {
+                "name": "v2_component_btn_1614839644860",
+                "desp": "删除",
+                "code": "//*====AGREE-ACTION-START====*//\n//*+AGREE-CONFIG-*//\n//{\n//\t\"name\": \"custom\",\n//\t\"params\": {}\n//}\n//*-AGREE-CONFIG+*//\n//*++++AGREE-CODE-START++++*//\n/**\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\n**/\n\n//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\n//*++++AGREE-CODE-END++++*//\n//*====AGREE-ACTION-END====*//\nctx.delectMethod()\n\n",
+                "params": [],
+                "isEvent": true,
+                "custom": true,
+                "id": 1614832083679,
+                "isExposed": false,
+                "emitName": ""
+            },
+            {
+                "name": "delectMethod",
+                "desp": "删除方法",
+                "code": "// 函数内直接用 ctx 代替 this 访问 Vue 页面的数据。\n/** @type {V2ViewType} */\nconst ctx = this;\nconsole.log(ctx.selectItem)\nlet list= ctx.selectItem.map(function(item){\n      return item.id\n})\nconsole.log()\nctx.$axios.post(`${axios.server}/feedBackInfo/delete`,JSON.stringify(list),{\n  headers: {\n        'Content-type':'application/json'\n        }\n}).then(res=>{\n    if(res.success){\n            ctx.$notify({\n                type: 'success',\n                title: '删除成功'\n            });\n            ctx.getfeedBackInfo();\n        }else{\n            this.$notify({\n                title: res.msg,\n                type: 'error'\n            });\n        }\n}).catch(error=>{\n  \n})",
+                "params": [
+                    {
+                        "name": "index",
+                        "desp": "新参数"
+                    },
+                    {
+                        "name": "row",
+                        "desp": "新参数"
+                    }
+                ],
                 "isEvent": false,
                 "custom": true
             }
@@ -329,17 +487,6 @@
                 "isExposed": true
             },
             {
-                "desp": "数据总条数",
-                "name": "staffTotalCount",
-                "code": "1",
-                "source": "pageData",
-                "belongTo": "data",
-                "type": "data",
-                "showSet": false,
-                "sync": false,
-                "isExposed": true
-            },
-            {
                 "desp": "客户地址信息列表",
                 "name": "feedBackfList",
                 "code": "[]",
@@ -349,6 +496,40 @@
                 "showSet": false,
                 "sync": false,
                 "isExposed": true
+            },
+            {
+                "desp": "当前页面",
+                "name": "currentPage",
+                "code": "1",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false,
+                "sync": false,
+                "syncComputed": "computed_newPageData",
+                "isExposed": true
+            },
+            {
+                "desp": "数据总条数",
+                "name": "feedBackTotalCount",
+                "code": "1",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false,
+                "sync": false,
+                "isExposed": true
+            },
+            {
+                "desp": "选中的值",
+                "name": "selectItem",
+                "code": "[]",
+                "setCode": "",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false,
+                "isExposed": false
             }
         ],
         "mapping": {
@@ -373,6 +554,12 @@
                 },
                 {
                     "id": 1612854187456,
+                    "modelValue": "value",
+                    "dataValue": "selectItem",
+                    "type": ""
+                },
+                {
+                    "id": 1612854187456,
                     "modelValue": "pageSize",
                     "dataValue": "pageSize",
                     "type": ""
@@ -380,7 +567,7 @@
                 {
                     "id": 1612854187456,
                     "modelValue": "totalCount",
-                    "dataValue": "addressTotalCount",
+                    "dataValue": "feedBackTotalCount",
                     "type": ""
                 }
             ],

@@ -1,10 +1,10 @@
 <template>
-    <v2container :wid="`root`" style="display:block;flex-direction:column;align-items:flex-start;align-self:stretch;min-width:50px;min-height:50px;animation-duration:1s;" class="form-user-info-wrapper V2Container">
+    <v2container :wid="`root`" style="display:block;flex-direction:column;align-items:flex-start;align-self:stretch;min-width:50px;min-height:50px;animation-duration:1s;box-sizing:border-box;" class="form-user-info-wrapper V2Container">
         <v2-form-input :wid="`1578880992719`" class="form-item-block V2Widget" :style="{'position':'relative','margin-top':'10px','margin-bottom':'10px','margin-left':'10px','margin-right':'10px','align-self':'auto','overflow':'hidden','animation-duration':'1s'}" :disabled="isDisable" :theme="{}" :label="`角色名`" :placeholder="`请输入角色名`" :title-mode="`col`" :label-witdh="`80px`" :input-type="`text`" :rows="2" :show-word-limit="false" :clearable="false" :is-required="true" :auto-complete="false" ref="v2-form-input_1578880992719" :value.sync="roleName">
         </v2-form-input>
         <v2-form-input :wid="`1578881040593`" class="form-textarea-margin v2-form-input-1578881040593 V2Widget" :style="{'position':'relative','margin-top':'10px','margin-bottom':'10px','margin-left':'10px','margin-right':'10px','align-self':'auto','overflow':'hidden','animation-duration':'1s'}" :theme="{'size':''}" :disabled="false" :label="`描述`" :placeholder="`请填写描述`" :title-mode="`col`" :label-witdh="`80px`" :input-type="`textarea`" :rows="5" :maxlength="200" :show-word-limit="true" :clearable="false" :is-required="false" :auto-complete="false" ref="v2-form-input_1578881040593" :value.sync="desp">
         </v2-form-input>
-        <div :wid="`1578881127712`" class="diaglog-btn-ctn V2Container" style="position:relative;box-sizing:border-box;align-self:stretch;overflow:hidden;display:flex;flex-direction:row;justify-content:flex-end;align-items:flex-start;min-width:50px;min-height:50px;animation-duration:1s;" ref="v2Container_1578881127712">
+        <div :wid="`1578881127712`" class="diaglog-btn-ctn V2Container" style="position:relative;box-sizing:border-box;align-self:stretch;overflow:hidden;display:flex;flex-direction:row;justify-content:flex-end;align-items:flex-start;min-width:50px;min-height:50px;animation-duration:1s;height:auto;" ref="v2Container_1578881127712">
             <v2-component-btn :wid="`1578881089113`" class="common-btn-normal V2Widget" :style="{'position':'relative','margin-top':'10px','margin-bottom':'10px','margin-left':'10px','margin-right':'10px','align-self':'auto','flex-shrink':'0','overflow':'hidden','animation-duration':'1s'}" :theme="{'btnType':'normal','size':''}" :disabled="false" :loading="false" :btn-name="`取消`" :shape="`plain`" @_op_component-btn_btn:click="v2_component_btn_1578894579000" ref="v2-component-btn_1578881089113">
             </v2-component-btn>
             <v2-component-btn :wid="`1578881126091`" class="common-btn-focus margin-right20 V2Widget" :style="{'position':'relative','margin-top':'10px','margin-bottom':'10px','margin-left':'10px','margin-right':'10px','align-self':'auto','overflow':'hidden','animation-duration':'1s'}" :theme="{'btnType':'primary','size':''}" :disabled="false" :loading="false" :btn-name="`提交`" :shape="`def`" ref="v2-component-btn_1578881126091">
@@ -13,8 +13,8 @@
     </v2container>
 </template>
 <script>
-    import {mixins} from '@v2-lib/vue.spa.plugin'
     import {root} from '@v2-lib/webide.support.fusion/mixin/v2-view'
+    import {mixins} from '@v2-lib/vue.spa.plugin'
     /* __V2_DECOMPILABLE__ */
     export default {
         'mixins': [
@@ -77,7 +77,7 @@
                                  */
                             
                                 var params = {
-                                    DESCRIPTION:data.desp||'',
+                                    desc:data.desp||'',
                                     name:data.roleName||''
                                 };
                                 if(ctx.AParams.id){
@@ -152,7 +152,7 @@
              *  关闭新增角色子页面
              *  @param 组件的vue实例 vueIns
              */
-            v2_component_btn_1578894579000(vueIns) {
+            v2_component_btn_1578894579000($event, vueIns=this.$refs['v2-component-btn_1578881089113']) {
                 /**
                 * 事件绑定在vue实例上，第一个参数是vue实例。
                 * 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN
@@ -199,7 +199,6 @@
                         fontSize: '12px'
                     }
                 })
-                
             }
         },
         beforeCreate() {
@@ -218,7 +217,6 @@
         mounted() {
             /* Resume */;
             /* User Code */;
-            //函数内直接用ctx代替this访问vue页面的数据。
             const ctx = this;
             if(ctx.AParams.id){
                 ctx.getRoleDetail();

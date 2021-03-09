@@ -2,15 +2,15 @@
     <v2container :wid="`root`" style="display:flex;height:auto;flex-direction:column;align-items:flex-start;align-self:stretch;min-width:50px;min-height:50px;animation-duration:1s;box-sizing:border-box;flex-shrink:0;" class="V2Container">
         <div :wid="`1614764771020`" class="v2Container-1614764771020 V2Container" style="position:relative;overflow:hidden;display:flex;height:auto;box-sizing:border-box;align-self:stretch;flex-direction:row;align-items:flex-start;min-width:50px;min-height:50px;animation-duration:1s;flex-shrink:0;justify-content:center;" :if="true" ref="v2Container_1">
             <div :wid="`1614764745782`" class="v2Container-1614764745782 V2Container" style="box-sizing:border-box;align-self:stretch;display:block;flex-direction:column;align-items:flex-start;margin-left:0;overflow:hidden;position:relative;flex-shrink:0;" :if="true" ref="v2Container_2">
-                <v2-form-input :wid="`1614764756124`" class="v2-form-input-1614764756124 V2Widget" :style="{'align-self':'auto','margin-bottom':'10px','width':'300px'}" :theme="{'size':''}" :disabled="false" :label="`姓名`" :placeholder="`请输入姓名`" :title-mode="`col`" :label-witdh="`80px`" :input-type="`text`" :rows="2" :show-word-limit="false" :clearable="false" :is-required="false" :auto-complete="false" :if="true" ref="v2FormInput_1" :value.sync="name">
+                <v2-form-input :wid="`1614764756124`" class="v2-form-input-1614764756124 V2Widget" :style="{'align-self':'auto','margin-bottom':'10px','width':'300px'}" :theme="{'size':''}" :disabled="false" :label="`姓名`" :placeholder="`请输入姓名`" :title-mode="`col`" :label-witdh="`80px`" :input-type="`text`" :rows="2" :show-word-limit="false" :clearable="false" :is-required="false" :auto-complete="false" :if="true" :value.sync="name" ref="v2FormInput_1">
                 </v2-form-input>
-                <v2-form-input :wid="`1614764837231`" class="v2-form-input-1614764837231 V2Widget" :style="{'align-self':'auto','margin-bottom':'10px','width':'300px'}" :theme="{'size':''}" :disabled="false" :label="`年龄`" :placeholder="`请输入年龄`" :title-mode="`col`" :label-witdh="`80px`" :input-type="`text`" :rows="2" :show-word-limit="false" :clearable="false" :is-required="false" :auto-complete="false" :if="true" ref="v2FormInput_2" :value.sync="age">
+                <v2-form-input :wid="`1614764837231`" class="v2-form-input-1614764837231 V2Widget" :style="{'align-self':'auto','margin-bottom':'10px','width':'300px'}" :theme="{'size':''}" :disabled="false" :label="`年龄`" :placeholder="`请输入年龄`" :title-mode="`col`" :label-witdh="`80px`" :input-type="`text`" :rows="2" :show-word-limit="false" :clearable="false" :is-required="false" :auto-complete="false" :if="true" :value.sync="age" ref="v2FormInput_2">
                 </v2-form-input>
-                <v2-form-input :wid="`1614764830485`" class="v2-form-input-1614764830485 V2Widget" :style="{'align-self':'auto','margin-bottom':'10px','width':'300px'}" :theme="{'size':''}" :disabled="false" :label="`联系电话`" :placeholder="`请输入联系电话`" :title-mode="`col`" :label-witdh="`80px`" :input-type="`text`" :rows="2" :show-word-limit="false" :clearable="false" :is-required="false" :auto-complete="false" :if="true" ref="v2FormInput_4" :value.sync="phone">
+                <v2-form-input :wid="`1614764830485`" class="v2-form-input-1614764830485 V2Widget" :style="{'align-self':'auto','margin-bottom':'10px','width':'300px'}" :theme="{'size':''}" :disabled="false" :label="`联系电话`" :placeholder="`请输入联系电话`" :title-mode="`col`" :label-witdh="`80px`" :input-type="`text`" :rows="2" :show-word-limit="false" :clearable="false" :is-required="false" :auto-complete="false" :if="true" :value.sync="phone" ref="v2FormInput_4">
                 </v2-form-input>
-                <v2-form-select :wid="`1614765164838`" class="v2-form-select-1614765164838 V2Widget" :style="{'align-self':'auto','margin-bottom':'10px','width':'180px'}" :optionConfig="branchList" :theme="{'size':''}" :disabled="false" :data-type="`def`" :option-config="branchList" :options="[]" :label="`网点`" :placeholder="`请选择`" :label-witdh="`80px`" :title-mode="`col`" :clearable="false" :prefix="false" :filterable="true" :is-required="false" :if="true" ref="v2FormSelect_1" :value.sync="branch">
+                <v2-form-select :wid="`1614765164838`" class="v2-form-select-1614765164838 V2Widget" :style="{'align-self':'auto','margin-bottom':'10px','width':'180px'}" :optionConfig="branchList" :theme="{'size':''}" :option-config="branchList" :disabled="false" :data-type="`def`" :options="[]" :label="`网点`" :placeholder="`请选择`" :label-witdh="`80px`" :title-mode="`col`" :clearable="false" :prefix="false" :filterable="true" :is-required="false" :if="true" :value.sync="branch" ref="v2FormSelect_1">
                 </v2-form-select>
-                <v2-form-select :wid="`1614765166810`" class="v2-form-select-1614765166810 V2Widget" :style="{'align-self':'auto','margin-bottom':'10px','width':'180px'}" :optionConfig="sexList" :theme="{'size':''}" :disabled="false" :data-type="`def`" :option-config="sexList" :options="[]" :label="`性别`" :placeholder="`请选择`" :label-witdh="`80px`" :title-mode="`col`" :clearable="false" :prefix="false" :filterable="true" :is-required="false" :if="true" ref="v2FormSelect_2" :value.sync="sex">
+                <v2-form-select :wid="`1614765166810`" class="v2-form-select-1614765166810 V2Widget" :style="{'align-self':'auto','margin-bottom':'10px','width':'180px'}" :optionConfig="sexList" :theme="{'size':''}" :option-config="sexList" :disabled="false" :data-type="`def`" :options="[]" :label="`性别`" :placeholder="`请选择`" :label-witdh="`80px`" :title-mode="`col`" :clearable="false" :prefix="false" :filterable="true" :is-required="false" :if="true" :value.sync="sex" ref="v2FormSelect_2">
                 </v2-form-select>
             </div>
         </div>
@@ -198,6 +198,8 @@
             },
             /**
              *  v2_component_btn_1614781368622
+             *  @param $event $event
+             *  @param vueIns vueIns
              */
             v2_component_btn_1614781368622($event, vueIns=this.$refs['v2ComponentBtn_7']) {
                 //*====AGREE-ACTION-START====*//
@@ -217,8 +219,6 @@
                 ctx.close();
                 //*++++AGREE-CODE-END++++*//
                 //*====AGREE-ACTION-END====*//
-                
-                
             }
         },
         beforeCreate() {

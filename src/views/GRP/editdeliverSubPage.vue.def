@@ -22,27 +22,29 @@
                                     "width": "300px"
                                 },
                                 "props": [
-                                    "value",
+                                    "theme",
                                     "disabled",
                                     "label",
                                     "placeholder",
-                                    "prepend",
-                                    "append",
                                     "titleMode",
                                     "labelWitdh",
                                     "inputType",
                                     "rows",
-                                    "maxlength",
-                                    "minlength",
-                                    "prefixIcon",
-                                    "suffixIcon",
                                     "showWordLimit",
                                     "clearable",
                                     "isRequired",
                                     "autoComplete",
+                                    "if",
+                                    "value.sync",
+                                    "value",
+                                    "prepend",
+                                    "append",
+                                    "maxlength",
+                                    "minlength",
+                                    "prefixIcon",
+                                    "suffixIcon",
                                     "suggestion",
                                     "visible",
-                                    "if",
                                     "customClass"
                                 ],
                                 "theme": {
@@ -96,27 +98,29 @@
                                     "width": "300px"
                                 },
                                 "props": [
-                                    "value",
+                                    "theme",
                                     "disabled",
                                     "label",
                                     "placeholder",
-                                    "prepend",
-                                    "append",
                                     "titleMode",
                                     "labelWitdh",
                                     "inputType",
                                     "rows",
-                                    "maxlength",
-                                    "minlength",
-                                    "prefixIcon",
-                                    "suffixIcon",
                                     "showWordLimit",
                                     "clearable",
                                     "isRequired",
                                     "autoComplete",
+                                    "if",
+                                    "value.sync",
+                                    "value",
+                                    "prepend",
+                                    "append",
+                                    "maxlength",
+                                    "minlength",
+                                    "prefixIcon",
+                                    "suffixIcon",
                                     "suggestion",
                                     "visible",
-                                    "if",
                                     "customClass"
                                 ],
                                 "theme": {
@@ -170,27 +174,29 @@
                                     "width": "300px"
                                 },
                                 "props": [
-                                    "value",
+                                    "theme",
                                     "disabled",
                                     "label",
                                     "placeholder",
-                                    "prepend",
-                                    "append",
                                     "titleMode",
                                     "labelWitdh",
                                     "inputType",
                                     "rows",
-                                    "maxlength",
-                                    "minlength",
-                                    "prefixIcon",
-                                    "suffixIcon",
                                     "showWordLimit",
                                     "clearable",
                                     "isRequired",
                                     "autoComplete",
+                                    "if",
+                                    "value.sync",
+                                    "value",
+                                    "prepend",
+                                    "append",
+                                    "maxlength",
+                                    "minlength",
+                                    "prefixIcon",
+                                    "suffixIcon",
                                     "suggestion",
                                     "visible",
-                                    "if",
                                     "customClass"
                                 ],
                                 "theme": {
@@ -236,8 +242,7 @@
                                 "component": "v2-form-select",
                                 "id": 1614765164838,
                                 "customClass": [
-                                    "v2-form-select-1614765164838",
-                                    ""
+                                    "v2-form-select-1614765164838"
                                 ],
                                 "commonStyle": {
                                     "align-self": "auto",
@@ -245,10 +250,10 @@
                                     "width": "180px"
                                 },
                                 "props": [
-                                    "value",
+                                    "optionConfig",
+                                    "theme",
                                     "disabled",
                                     "dataType",
-                                    "optionConfig",
                                     "options",
                                     "label",
                                     "placeholder",
@@ -258,8 +263,10 @@
                                     "prefix",
                                     "filterable",
                                     "isRequired",
-                                    "visible",
                                     "if",
+                                    "value.sync",
+                                    "value",
+                                    "visible",
                                     "customClass"
                                 ],
                                 "optionConfig": "${branchList}",
@@ -314,10 +321,10 @@
                                     "width": "180px"
                                 },
                                 "props": [
-                                    "value",
+                                    "optionConfig",
+                                    "theme",
                                     "disabled",
                                     "dataType",
-                                    "optionConfig",
                                     "options",
                                     "label",
                                     "placeholder",
@@ -327,8 +334,10 @@
                                     "prefix",
                                     "filterable",
                                     "isRequired",
-                                    "visible",
                                     "if",
+                                    "value.sync",
+                                    "value",
+                                    "visible",
                                     "customClass"
                                 ],
                                 "optionConfig": "${sexList}",
@@ -373,8 +382,7 @@
                         "component": "v2Container",
                         "id": 1614764745782,
                         "customClass": [
-                            "v2Container-1614764745782",
-                            ""
+                            "v2Container-1614764745782"
                         ],
                         "commonStyle": {
                             "box-sizing": "border-box",
@@ -385,12 +393,11 @@
                             "margin-left": "0",
                             "overflow": "hidden",
                             "position": "relative",
-                            "flex-shrink": 0,
-                            "flex-grow": 0
+                            "flex-shrink": "0"
                         },
                         "props": [
-                            "visible",
                             "if",
+                            "visible",
                             "element-loading-text",
                             "element-loading-spinner",
                             "element-loading-background",
@@ -441,8 +448,8 @@
                     "justify-content": "center"
                 },
                 "props": [
-                    "visible",
                     "if",
+                    "visible",
                     "element-loading-text",
                     "element-loading-spinner",
                     "element-loading-background",
@@ -480,24 +487,23 @@
                         "component": "v2-component-btn",
                         "id": 1614774384400,
                         "customClass": [
-                            "v2-component-btn-1614774384400",
-                            ""
+                            "v2-component-btn-1614774384400"
                         ],
                         "commonStyle": {
                             "align-self": "auto",
                             "margin-top": "5px",
-                            "flex-grow": 0,
                             "flex-shrink": 0
                         },
                         "props": [
+                            "theme",
                             "disabled",
                             "loading",
                             "btnName",
+                            "shape",
+                            "if",
                             "leftIcon",
                             "rightIcon",
-                            "shape",
                             "visible",
-                            "if",
                             "customClass"
                         ],
                         "theme": {
@@ -509,20 +515,18 @@
                         "btnName": "取消",
                         "shape": "def",
                         "if": true,
+                        "events": {
+                            "_op_componentBtn_btn": {
+                                "click": {
+                                    "v2_component_btn_1614781368622": {}
+                                }
+                            }
+                        },
                         "$ref": "v2ComponentBtn_7",
                         "visible": true,
                         "__capacity": "1",
                         "href": "v2-component-btn",
                         "name": "按钮",
-                        "events": {
-                            "_op_componentBtn_btn": {
-                                "click": {
-                                    "v2_component_btn_1614781368622": {
-                                        "params": ""
-                                    }
-                                }
-                            }
-                        },
                         "version": "16.0.0",
                         "pid": 1614766242007,
                         "sizeLocked": {
@@ -540,25 +544,23 @@
                         "component": "v2-component-btn",
                         "id": 1614766284343,
                         "customClass": [
-                            "v2-component-btn-1614765251471",
-                            ""
+                            "v2-component-btn-1614765251471"
                         ],
                         "commonStyle": {
                             "align-self": "auto",
                             "margin-top": "5px",
-                            "margin-right": "10px",
-                            "border-radius": "0px",
-                            "opacity": 1
+                            "margin-right": "10px"
                         },
                         "props": [
+                            "theme",
                             "disabled",
                             "loading",
                             "btnName",
+                            "shape",
+                            "if",
                             "leftIcon",
                             "rightIcon",
-                            "shape",
                             "visible",
-                            "if",
                             "customClass"
                         ],
                         "theme": {
@@ -619,8 +621,8 @@
                     "flex-shrink": "0"
                 },
                 "props": [
-                    "visible",
                     "if",
+                    "visible",
                     "element-loading-text",
                     "element-loading-spinner",
                     "element-loading-background",
@@ -726,9 +728,7 @@
                 ],
                 "isEvent": true,
                 "custom": true,
-                "id": 1614781011043,
-                "isExposed": false,
-                "emitName": ""
+                "id": 1614781011043
             },
             {
                 "name": "submitData",
@@ -741,13 +741,20 @@
             {
                 "name": "v2_component_btn_1614781368622",
                 "desp": "v2_component_btn_1614781368622",
-                "code": "//*====AGREE-ACTION-START====*//\n//*+AGREE-CONFIG-*//\n//{\n//\t\"name\": \"custom\",\n//\t\"params\": {}\n//}\n//*-AGREE-CONFIG+*//\n//*++++AGREE-CODE-START++++*//\n/**\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\n**/\n\n//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\nctx.close();\n//*++++AGREE-CODE-END++++*//\n//*====AGREE-ACTION-END====*//\n\n",
-                "params": [],
+                "code": "//*====AGREE-ACTION-START====*//\n//*+AGREE-CONFIG-*//\n//{\n//\t\"name\": \"custom\",\n//\t\"params\": {}\n//}\n//*-AGREE-CONFIG+*//\n//*++++AGREE-CODE-START++++*//\n/**\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\n**/\n\n//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\nctx.close();\n//*++++AGREE-CODE-END++++*//\n//*====AGREE-ACTION-END====*//",
+                "params": [
+                    {
+                        "name": "$event",
+                        "desp": "$event"
+                    },
+                    {
+                        "name": "vueIns",
+                        "desp": "vueIns"
+                    }
+                ],
                 "isEvent": true,
                 "custom": true,
-                "id": 1614774384400,
-                "isExposed": false,
-                "emitName": ""
+                "id": 1614781368622
             }
         ],
         "watch": {},
@@ -872,7 +879,6 @@
                 "type": "data",
                 "showSet": false,
                 "sync": false,
-                "syncComputed": "computed_newPageData",
                 "isExposed": true
             }
         ],

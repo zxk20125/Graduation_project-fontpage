@@ -46,7 +46,7 @@
                             "customClass"
                         ],
                         "theme": {
-                            "size": ""
+                            "size": "medium"
                         },
                         "disabled": false,
                         "label": "客户账号",
@@ -93,9 +93,10 @@
                         ],
                         "commonStyle": {
                             "align-self": "auto",
+                            "flex-shrink": 0,
                             "border-radius": "0px",
                             "flex-grow": 0,
-                            "flex-shrink": 0,
+                            "margin-left": "20px",
                             "opacity": 1
                         },
                         "props": [
@@ -111,7 +112,7 @@
                         ],
                         "theme": {
                             "btnType": "primary",
-                            "size": ""
+                            "size": "medium"
                         },
                         "disabled": false,
                         "loading": false,
@@ -121,9 +122,7 @@
                         "events": {
                             "_op_componentBtn_btn": {
                                 "click": {
-                                    "v2_component_btn_1614179211305": {
-                                        "params": ""
-                                    }
+                                    "v2_component_btn_1614179211305": {}
                                 }
                             }
                         },
@@ -141,14 +140,14 @@
                         "animate": [
                             "",
                             "animated"
-                        ]
+                        ],
+                        "rightIcon": "el-icon-search"
                     }
                 ],
                 "component": "v2Container",
                 "id": 1612854178100,
                 "customClass": [
-                    "v2Container-1612854178100",
-                    ""
+                    "v2Container-1612854178100"
                 ],
                 "commonStyle": {
                     "box-sizing": "border-box",
@@ -201,10 +200,12 @@
                 ],
                 "commonStyle": {
                     "align-self": "auto",
-                    "height": "864.00px",
+                    "height": "816.00px",
                     "margin-left": "0",
                     "width": "calc(100% - 20px)",
-                    "flex-shrink": 0
+                    "flex-shrink": 0,
+                    "border-radius": "0px",
+                    "opacity": 1
                 },
                 "props": [
                     "tooltipEffect",
@@ -239,7 +240,6 @@
                     "if",
                     "customClass"
                 ],
-                "setPageCallback": "getAddressInfo",
                 "tableData": "${addressList}",
                 "pageSize": "${pageSize}",
                 "totalCount": "${addressTotalCount}",
@@ -350,6 +350,7 @@
                 "indexLocation": "left",
                 "openPage": true,
                 "openSetPageCallback": true,
+                "setPageCallback": "getAddressInfo",
                 "toolBar": false,
                 "toolTitle": "操作",
                 "toolHeaderAlign": "left",
@@ -416,7 +417,7 @@
             {
                 "name": "getAddressInfo",
                 "desp": "获取客户地址信息",
-                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\npage&&(ctx.currentPage=page);\n!page&&(ctx.currentPage=1);\nsize&&(ctx.pageSize=size);\n!size&&(ctx.pageSize=10);\nconst params = {\n  \"pageNum\": ctx.currentPage,\n  \"pageSize\": ctx.pageSize,\n  \"orders\": [],\n  \"query\": {\n    \"loginName\": ctx.login_name\n  },\n  \"ranges\": []\n};\n\nctx.$axios.post(`${axios.server}/addressInfo/list`,params).then(res=>{\n    if(res.success&&res.status){\n      const tableData = res.obj && res.obj.records||[];\n      \n      ctx.addressList  = tableData.map(function(item){\n        return{\n          login_name:item.loginName,\n          address_name:item.addressName||'',\n          address:item.address||'',\n          phone:item.phone\n        }\n      });\n      ctx.addressTotalCount = res.obj&&res.obj.totalElements;\n    }\n}).catch(error=>{\n  \n})",
+                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\npage&&(ctx.currentPage=page);\n!page&&(ctx.currentPage=1);\nsize&&(ctx.pageSize=size);\n!size&&(ctx.pageSize=10);\nconst params = {\n  \"pageNum\": ctx.currentPage,\n  \"pageSize\": ctx.pageSize,\n  \"orders\": [],\n  \"query\": {\n    \"loginName\": ctx.login_name\n  },\n  \"ranges\": []\n};\n\nctx.$axios.post(`${axios.server}/addressInfo/list`,params).then(res=>{\n    if(res.success&&res.status){\n      const tableData = res.obj && res.obj.records||[];\n      \n      ctx.addressList  = tableData.map(function(item){\n        return{\n          login_name:item.loginName,\n          address_name:item.addressName||'',\n          address:item.address||'',\n          phone:item.phone\n        }\n      });\n      ctx.addressTotalCount = res.obj&&res.obj.total;\n    }\n}).catch(error=>{\n  \n})",
                 "params": [
                     {
                         "name": "page",
@@ -444,20 +445,26 @@
                         "desp": "组件的vue实例"
                     }
                 ],
-                "isEvent": true,
-                "custom": true,
-                "id": 1613138459846
+                "isEvent": false,
+                "custom": true
             },
             {
                 "name": "v2_component_btn_1614179211305",
                 "desp": "查询",
-                "code": "/**\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\n**/\n\n//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\n/**\n方法名称：getAddressInfo\n方法描述：获取客户地址信息\n参数1:page(新参数)\n参数2:size(新参数)\n**/\nctx.getAddressInfo(ctx.currentPage);\n",
-                "params": [],
+                "code": "/**\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\n**/\n\n//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\n/**\n方法名称：getAddressInfo\n方法描述：获取客户地址信息\n参数1:page(新参数)\n参数2:size(新参数)\n**/\nctx.getAddressInfo(ctx.currentPage);",
+                "params": [
+                    {
+                        "name": "$event",
+                        "desp": "$event"
+                    },
+                    {
+                        "name": "vueIns",
+                        "desp": "vueIns"
+                    }
+                ],
                 "isEvent": true,
                 "custom": true,
-                "id": 1612855111983,
-                "isExposed": false,
-                "emitName": ""
+                "id": 1614179211305
             }
         ],
         "watch": {},

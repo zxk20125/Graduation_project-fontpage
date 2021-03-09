@@ -1,22 +1,68 @@
 {
     "structure": {
-        "id": "root",
-        "component": "v2Container",
-        "direction": "row",
-        "layout": [
-            100
-        ],
-        "style": {
-            "width": "100%",
-            "height": "100%"
-        },
-        "data": {},
+        "__resolveFromCode": false,
         "children": [
             {
-                "theme": {
-                    "tableType": "border"
+                "__resolveFromCode": false,
+                "children": [],
+                "component": "v2-component-table",
+                "id": 1578626611968,
+                "customClass": [
+                    "role-table"
+                ],
+                "commonStyle": {
+                    "position": "relative",
+                    "margin-top": "10px",
+                    "margin-bottom": "10px",
+                    "margin-left": "10px",
+                    "margin-right": "10px",
+                    "align-self": "auto",
+                    "overflow": "hidden",
+                    "animation-duration": "1s",
+                    "width": "auto",
+                    "border-radius": "0px",
+                    "flex-grow": 0,
+                    "flex-shrink": 0,
+                    "opacity": 1
                 },
+                "props": [
+                    "tooltipEffect",
+                    "columns",
+                    "tableData",
+                    "selection",
+                    "radioSelect",
+                    "value",
+                    "selectionLocation",
+                    "tHeight",
+                    "tMaxHeight",
+                    "openIndex",
+                    "loading",
+                    "indexLocation",
+                    "openPage",
+                    "pagerCount",
+                    "pageSizes",
+                    "pageSize",
+                    "openSetPageCallback",
+                    "setPageCallback",
+                    "currentPage",
+                    "totalCount",
+                    "toolBar",
+                    "toolTitle",
+                    "toolHeaderAlign",
+                    "toolLocation",
+                    "toolWidth",
+                    "toolBtns",
+                    "expand",
+                    "expandMap",
+                    "visible",
+                    "if",
+                    "customClass"
+                ],
                 "tableData": "${roleTableList}",
+                "theme": {
+                    "tableType": "border",
+                    "size": ""
+                },
                 "columns": [
                     {
                         "active": true,
@@ -115,38 +161,22 @@
                 "toolBar": false,
                 "toolTitle": "操作列",
                 "toolLocation": "right",
-                "toolWidth": "100",
+                "toolWidth": 100,
                 "toolBtns": [],
                 "expand": false,
-                "visible": true,
-                "__capacity": "1",
-                "component": "v2-component-table",
-                "href": "v2-component-table",
-                "children": [],
                 "events": {
                     "_op_table_table": {
-                        "selection-change": [
-                            "v2_component_table_1578967582000"
-                        ]
+                        "selectionChange": {
+                            "v2_component_table_1578967582000": {}
+                        }
                     }
                 },
-                "id": 1578626611968,
+                "$ref": "v2-component-table_1578626611968",
+                "value.sync": "${selectedRoleList}",
+                "visible": true,
+                "__capacity": "1",
+                "href": "v2-component-table",
                 "pid": "root",
-                "commonStyle": {
-                    "position": "relative",
-                    "margin-top": "10px",
-                    "margin-bottom": "10px",
-                    "margin-left": "10px",
-                    "margin-right": "10px",
-                    "box-sizing": "border-box",
-                    "align-self": "auto",
-                    "flex-basis": "auto",
-                    "flex-shrink": 1,
-                    "flex-grow": 0,
-                    "overflow": "hidden",
-                    "animation-duration": "1s",
-                    "width": "auto"
-                },
                 "sizeLocked": {
                     "widthLock": true,
                     "heightLock": false
@@ -155,83 +185,65 @@
                     "",
                     "animated"
                 ],
-                "customClass": [
-                    "role-table"
-                ],
-                "props": [
-                    "tableData",
-                    "loading",
-                    "columns",
-                    "selection",
-                    "value",
-                    "selectionLocation",
-                    "tHeight",
-                    "tMaxHeight",
-                    "openIndex",
-                    "indexLocation",
-                    "openPage",
-                    "pagerCount",
-                    "pageSizes",
-                    "pageSize",
-                    "openSetPageCallback",
-                    "setPageCallback",
-                    "currentPage",
-                    "totalCount",
-                    "toolBar",
-                    "toolTitle",
-                    "toolLocation",
-                    "toolWidth",
-                    "toolBtns",
-                    "expand",
-                    "expandMap",
-                    "visible"
-                ]
+                "value": "${selectedRoleList}",
+                "selectionLocation": "left"
             },
             {
-                "component": "v2-layout",
-                "href": "v2-layout",
-                "direction": "col",
+                "__resolveFromCode": false,
                 "children": [
                     {
+                        "__resolveFromCode": false,
+                        "children": [],
+                        "component": "v2-component-btn",
+                        "id": 1578966933302,
+                        "customClass": [
+                            "common-btn-normal"
+                        ],
+                        "commonStyle": {
+                            "position": "relative",
+                            "margin-top": "10px",
+                            "margin-bottom": "10px",
+                            "margin-left": "10px",
+                            "margin-right": "10px",
+                            "align-self": "auto",
+                            "flex-shrink": "0",
+                            "overflow": "hidden",
+                            "animation-duration": "1s"
+                        },
+                        "props": [
+                            "disabled",
+                            "loading",
+                            "btnName",
+                            "leftIcon",
+                            "rightIcon",
+                            "shape",
+                            "visible",
+                            "if",
+                            "customClass"
+                        ],
                         "theme": {
                             "btnType": "normal",
                             "size": ""
-                        },
-                        "style": {
-                            "btnStyle": {}
                         },
                         "disabled": false,
                         "loading": false,
                         "btnName": "取消",
                         "shape": "plain",
-                        "visible": true,
-                        "__capacity": "1",
-                        "component": "v2-component-btn",
-                        "href": "v2-component-btn",
-                        "children": [],
                         "events": {
                             "_op_componentBtn_btn": {
-                                "click": [
-                                    "v2_component_btn_1578966973000"
-                                ]
+                                "click": {
+                                    "v2_component_btn_1578966973000": {}
+                                }
                             }
                         },
-                        "id": 1578966933302,
-                        "pid": 1578966899082,
-                        "commonStyle": {
-                            "position": "relative",
-                            "margin-top": "10px",
-                            "margin-bottom": "10px",
-                            "margin-left": "10px",
-                            "margin-right": "10px",
-                            "box-sizing": "border-box",
-                            "align-self": "auto",
-                            "flex-basis": "auto",
-                            "flex-shrink": "0",
-                            "flex-grow": "0",
-                            "overflow": "hidden",
-                            "animation-duration": "1s"
+                        "$ref": "v2-component-btn_1578966933302",
+                        "style": {
+                            "btnStyle": {}
                         },
+                        "visible": true,
+                        "__capacity": "1",
+                        "href": "v2-component-btn",
+                        "pid": 1578966899082,
                         "sizeLocked": {
                             "widthLock": false,
                             "heightLock": false
@@ -239,10 +251,27 @@
                         "animate": [
                             "",
                             "animated"
-                        ],
+                        ]
+                    },
+                    {
+                        "__resolveFromCode": false,
+                        "children": [],
+                        "component": "v2-component-btn",
+                        "id": 1578966925673,
                         "customClass": [
-                            "common-btn-normal"
+                            "common-btn-focus",
+                            "margin-right20"
                         ],
+                        "commonStyle": {
+                            "position": "relative",
+                            "margin-top": "10px",
+                            "margin-bottom": "10px",
+                            "margin-left": "10px",
+                            "margin-right": "10px",
+                            "align-self": "auto",
+                            "overflow": "hidden",
+                            "animation-duration": "1s"
+                        },
                         "props": [
                             "disabled",
                             "loading",
@@ -250,49 +279,33 @@
                             "leftIcon",
                             "rightIcon",
                             "shape",
-                            "visible"
-                        ]
-                    },
-                    {
+                            "visible",
+                            "if",
+                            "customClass"
+                        ],
                         "theme": {
                             "btnType": "primary",
                             "size": ""
-                        },
-                        "style": {
-                            "btnStyle": {}
                         },
                         "disabled": false,
                         "loading": false,
                         "btnName": "提交",
                         "shape": "def",
-                        "visible": true,
-                        "__capacity": "1",
-                        "component": "v2-component-btn",
-                        "href": "v2-component-btn",
-                        "children": [],
                         "events": {
                             "_op_componentBtn_btn": {
-                                "click": [
-                                    "v2_component_btn_1578967772000"
-                                ]
+                                "click": {
+                                    "v2_component_btn_1578967772000": {}
+                                }
                             }
                         },
-                        "id": 1578966925673,
-                        "pid": 1578966899082,
-                        "commonStyle": {
-                            "position": "relative",
-                            "margin-top": "10px",
-                            "margin-bottom": "10px",
-                            "margin-left": "10px",
-                            "margin-right": "10px",
-                            "box-sizing": "border-box",
-                            "align-self": "auto",
-                            "flex-basis": "auto",
-                            "flex-shrink": 1,
-                            "flex-grow": 0,
-                            "overflow": "hidden",
-                            "animation-duration": "1s"
+                        "$ref": "v2-component-btn_1578966925673",
+                        "style": {
+                            "btnStyle": {}
                         },
+                        "visible": true,
+                        "__capacity": "1",
+                        "href": "v2-component-btn",
+                        "pid": 1578966899082,
                         "sizeLocked": {
                             "widthLock": false,
                             "heightLock": false
@@ -300,53 +313,36 @@
                         "animate": [
                             "",
                             "animated"
-                        ],
-                        "customClass": [
-                            "common-btn-focus",
-                            "margin-right20"
-                        ],
-                        "props": [
-                            "disabled",
-                            "loading",
-                            "btnName",
-                            "leftIcon",
-                            "rightIcon",
-                            "shape",
-                            "visible"
                         ]
                     }
                 ],
-                "style": {},
+                "component": "v2Container",
+                "id": 1578966899082,
+                "customClass": [
+                    "diaglog-btn-ctn"
+                ],
                 "commonStyle": {
                     "position": "relative",
-                    "margin-top": "0px",
-                    "margin-bottom": "0px",
-                    "margin-left": "0px",
-                    "margin-right": "0px",
                     "box-sizing": "border-box",
                     "align-self": "stretch",
-                    "flex-basis": "auto",
-                    "flex-shrink": "1",
-                    "flex-grow": "0",
                     "overflow": "hidden",
                     "display": "flex",
                     "flex-direction": "row",
                     "justify-content": "flex-end",
                     "align-items": "flex-start",
-                    "flex-wrap": "nowrap",
-                    "align-content": "stretch",
                     "min-width": "50px",
                     "min-height": "50px",
-                    "animation-duration": "1s"
+                    "animation-duration": "1s",
+                    "height": "auto"
                 },
-                "id": 1578966899082,
+                "$ref": "v2Container_1578966899082",
+                "href": "v2Container",
+                "direction": "col",
+                "style": {},
                 "pid": "root",
                 "ctnStyle": [
                     {},
                     {}
-                ],
-                "customClass": [
-                    "diaglog-btn-ctn"
                 ],
                 "sizeLocked": {
                     "widthLock": false,
@@ -357,27 +353,40 @@
                     "animated"
                 ],
                 "props": [
-                    "height",
-                    "direction",
-                    "visible"
+                    "visible",
+                    "if",
+                    "element-loading-text",
+                    "element-loading-spinner",
+                    "element-loading-background",
+                    "customClass"
                 ]
             }
         ],
-        "events": {},
+        "component": "v2Container",
+        "id": "root",
         "commonStyle": {
             "display": "flex",
             "flex-direction": "column",
-            "justify-content": "flex-start",
             "align-items": "flex-start",
-            "flex-wrap": "nowrap",
-            "align-content": "stretch",
             "align-self": "stretch",
-            "flex-shrink": "1",
-            "flex-grow": "0",
             "min-width": "50px",
             "min-height": "50px",
-            "animation-duration": "1s"
+            "animation-duration": "1s",
+            "box-sizing": "border-box",
+            "height": "auto"
         },
+        "customClass": [],
+        "$ref": "v2Container_root",
+        "direction": "row",
+        "layout": [
+            100
+        ],
+        "style": {
+            "width": "100%",
+            "height": "100%"
+        },
+        "data": {},
+        "events": {},
         "ctnStyle": [
             {},
             {}
@@ -390,6 +399,14 @@
         "animate": [
             "",
             "animated"
+        ],
+        "props": [
+            "visible",
+            "if",
+            "element-loading-text",
+            "element-loading-spinner",
+            "element-loading-background",
+            "customClass"
         ]
     },
     "forms": [],
@@ -415,12 +432,12 @@
                 ],
                 "isEvent": true,
                 "custom": true,
-                "id": 1578966933302
+                "id": 1578966973000
             },
             {
                 "name": "associateRoles",
                 "desp": "关联角色",
-                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\nvar roleIds  = [];\n\nroleIds = ctx.selectedRoleList.map(function(item){\n    \n    return item.roleId;\n});\n\nctx.$axios.post(`${axios.server}/user/update/role/${ctx.AParams.id}`, JSON.stringify(roleIds),{\n    headers: {\n        'Content-type':'application/json'\n    }\n}).then(res => {\n    //下一步的行为\n    if(res.success){\n        ctx.$notify({\n            type: 'success',\n            title: '关联角色成功'\n        });\n        \n    }else{\n        this.$notify({\n            title: res.msg,\n            type: 'error'\n        });\n    }\n    ctx.close();\n    ctx.$root.confirm();\n        \n}).catch(function (error) {\n        console.log(error);\n});",
+                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\nvar roleIds  = [];\nconsole.log(ctx.selectedRoleList)\nroleIds = ctx.selectedRoleList.map(function(item){\n    \n    return item.roleId;\n});\n\nctx.$axios.post(`${axios.server}/user/update/role/${ctx.AParams.id}`, JSON.stringify(roleIds),{\n    headers: {\n        'Content-type':'application/json'\n    }\n}).then(res => {\n    //下一步的行为\n    if(res.success){\n        ctx.$notify({\n            type: 'success',\n            title: '关联角色成功'\n        });\n        \n    }else{\n        this.$notify({\n            title: res.msg,\n            type: 'error'\n        });\n    }\n    ctx.close();\n    ctx.$root.confirm();\n        \n}).catch(function (error) {\n        console.log(error);\n});",
                 "params": [],
                 "isEvent": false,
                 "custom": true
@@ -441,12 +458,12 @@
                 ],
                 "isEvent": true,
                 "custom": true,
-                "id": 1578626611968
+                "id": 1578967582000
             },
             {
                 "name": "v2_component_btn_1578967772000",
                 "desp": "关联角色",
-                "code": "/**\n* 事件绑定在vue实例上，第一个参数是vue实例。\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\n**/\n\n//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\nctx.associateRoles();\n",
+                "code": "/**\n* 事件绑定在vue实例上，第一个参数是vue实例。\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\n**/\n\n//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\nctx.associateRoles();",
                 "params": [
                     {
                         "name": "vueIns",
@@ -455,39 +472,39 @@
                 ],
                 "isEvent": true,
                 "custom": true,
-                "id": 1578966925673
+                "id": 1578967772000
             }
         ],
         "watch": {},
         "beforeCreate": {
-            "code": ""
+            "code": "let ctx = this;"
         },
         "created": {
-            "code": ""
+            "code": "let ctx = this;"
         },
         "beforeMount": {
-            "code": ""
+            "code": "let ctx = this;"
         },
         "mounted": {
-            "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\nctx.getRoleList();"
+            "code": "const ctx = this;\nctx.getRoleList();"
         },
         "beforeUpdate": {
-            "code": ""
+            "code": "let ctx = this;"
         },
         "updated": {
-            "code": ""
+            "code": "let ctx = this;"
         },
         "beforeDestroy": {
-            "code": ""
+            "code": "let ctx = this;"
         },
         "destroyed": {
-            "code": ""
+            "code": "let ctx = this;"
         },
         "activated": {
-            "code": ""
+            "code": "let ctx = this;"
         },
         "deactivated": {
-            "code": ""
+            "code": "let ctx = this;"
         },
         "pollList": [],
         "url2data": {
@@ -501,21 +518,21 @@
                 "desp": "角色表格数据",
                 "name": "roleTableList",
                 "code": "[]",
-                "setCode": "",
                 "source": "pageData",
                 "belongTo": "data",
                 "type": "data",
-                "showSet": false
+                "showSet": false,
+                "sync": false
             },
             {
                 "desp": "选中的角色数据",
                 "name": "selectedRoleList",
                 "code": "[]",
-                "setCode": "",
                 "source": "pageData",
                 "belongTo": "data",
                 "type": "data",
-                "showSet": false
+                "showSet": false,
+                "sync": false
             }
         ],
         "mapping": {
@@ -525,11 +542,18 @@
                     "modelValue": "tableData",
                     "dataValue": "roleTableList",
                     "type": ""
+                },
+                {
+                    "id": 1578626611968,
+                    "modelValue": "value",
+                    "dataValue": "selectedRoleList",
+                    "type": ""
                 }
             ]
         }
     },
     "events": {},
+    "emitList": [],
     "display": {
         "icon": "icontongyong",
         "desp": "角色列表",
@@ -537,9 +561,14 @@
         "width": "800px",
         "height": "1080px"
     },
-    "scssCode": ".role-table{\n    height:auto !important;\n    margin:0 !important;\n    overflow:auto!important;\n\n    .el-table{\n        min-width:655px!important;\n\n        .cell{\n            white-space: nowrap;\n        }\n    }\n}\n.role-table .el-table__body-wrapper{\n    height:auto !important;\n}\n.diaglog-btn-ctn{\n    position:absolute!important;\n    bottom:0;\n    width:100%;\n    right:0;\n    border-top:1px solid #e5e5e5;\n}\n.common-btn-focus{\n //   background:#457ce2;\n    height:32px;\n //   color:#fff;\n    line-height:32px;\n    padding-top:0;\n    padding-bottom:0;\n}\n.common-btn-normal{\n    height:32px;\n    line-height:32px;\n    padding-top:0;\n    padding-bottom:0;\n    border:1px solid #dcdfe6;\n //   color:#606266;\n //   background:#fff;\n}\n.margin-right20{\n    margin-right:20px!important;\n}\n",
+    "originCss": "",
+    "cssType": "scss",
+    "cssConfig": {
+        "scoped": null
+    },
     "nls": "",
     "mixins": [],
     "imports": [],
-    "disableVueSPA": false
+    "disableVueSPA": false,
+    "disableSupport": false
 }

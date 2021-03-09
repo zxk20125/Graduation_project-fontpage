@@ -60,8 +60,8 @@
                         "clearable": false,
                         "isRequired": false,
                         "autoComplete": false,
-                        "value.sync": "${creator}",
                         "$ref": "v2-form-input_1579152715570",
+                        "value.sync": "${creator}",
                         "style": {
                             "label": {}
                         },
@@ -137,8 +137,8 @@
                         "clearable": false,
                         "isRequired": false,
                         "autoComplete": false,
-                        "value.sync": "${name}",
                         "$ref": "v2-form-input_1580789804791",
+                        "value.sync": "${name}",
                         "style": {
                             "label": {}
                         },
@@ -212,8 +212,8 @@
                         "format": "yyyy 年 MM 月 dd 日",
                         "valueFormat": "timestamp",
                         "align": "left",
-                        "value.sync": "${createTime}",
                         "$ref": "v2-form-datepicker_1578537726108",
+                        "value.sync": "${createTime}",
                         "style": {
                             "label": {}
                         },
@@ -526,20 +526,19 @@
                     ""
                 ],
                 "commonStyle": {
-                    "position": "relative",
+                    "overflow": "hidden",
+                    "width": "calc(100% - 20px)",
+                    "height": "557.00px",
+                    "opacity": 1,
+                    "animation-duration": "1s",
                     "margin-top": "10px",
                     "margin-bottom": "10px",
                     "margin-left": "10px",
                     "margin-right": "10px",
-                    "flex-basis": "100%",
-                    "overflow": "hidden",
-                    "animation-duration": "1s",
-                    "width": "calc(100% - 20px)",
                     "flex-shrink": 0,
                     "border-radius": "0px",
                     "flex-grow": 0,
-                    "height": "557.00px",
-                    "opacity": 1
+                    "flex-basis": "auto"
                 },
                 "props": [
                     "tooltipEffect",
@@ -755,6 +754,28 @@
                                 "active": "true"
                             }
                         ]
+                    },
+                    {
+                        "active": true,
+                        "type": "text",
+                        "prop": "id",
+                        "handleLink": true,
+                        "handleLinkCB": "handleLinkCallback",
+                        "linkTarget": "_blank",
+                        "openTooltip": false,
+                        "handleTooltip": true,
+                        "tooltipContent": "提示",
+                        "tooltipContentCallback": "tooltipContentCallback",
+                        "useMinWidth": true,
+                        "headerAlign": "left",
+                        "align": "left",
+                        "sortable": false,
+                        "openFilter": false,
+                        "combi": [],
+                        "tagMap": [],
+                        "textMap": [],
+                        "iconMap": [],
+                        "filterMap": []
                     }
                 ],
                 "selection": "multi",
@@ -781,7 +802,6 @@
                     }
                 ],
                 "expand": false,
-                "value.sync": "${selectedAuthorityList}",
                 "events": {
                     "_op_table_table": {
                         "selectionChange": {
@@ -790,6 +810,7 @@
                     }
                 },
                 "$ref": "v2-component-table_1578539272258",
+                "value.sync": "${selectedAuthorityList}",
                 "visible": true,
                 "__capacity": "1",
                 "href": "v2-component-table",
@@ -984,7 +1005,7 @@
             {
                 "name": "getPageAuthorityList",
                 "desp": "获取菜单分页数据",
-                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\npage&&(ctx.currentPage=page);\n!page&&(ctx.currentPage=1);\nsize&&(ctx.pageSize=size);\n!size&&(ctx.pageSize=10);\nconst params = {\n  \"pageNum\": ctx.currentPage,\n  \"pageSize\": ctx.pageSize,\n  \"orders\": [\n    {\n      \"key\": \"createTime\",\n      \"order\": \"desc\"\n    }\n  ],\n  \"query\": {\n    \"name\": ctx.name||'',\n    \"createUserName\":ctx.creator||''\n  },\n    \"ranges\": [\n    {\n      \"from\": ctx.createTime?ctx.createTime[0]:null,\n      \"key\": \"createTime\",\n      \"to\":  ctx.createTime?ctx.createTime[1]+1000*60*60*24-1:null\n    }\n  ]\n};\n\nctx.$axios.post(`${axios.server}/authority/list`,params).then(res=>{\n    if(res.success&&res.status){\n      const tableData = res.obj&&res.obj.records||[];\n      \n      ctx.authorityTableList  = tableData.map(function(item){\n        return{\n          id:item.id,\n          name:item.name||'',\n          desp:item.desc||'',\n          createTime:ctx.timesTransferToDate(item.createTime),\n          creator:item.createUserName,\n          editor:item.updateUserName,\n          editTime:ctx.timesTransferToDate(item.updateTime)\n\n        }\n      });\n      ctx.authorityTotalCount = res.obj&&res.obj.totalElements;\n    }\n}).catch(error=>{\n  \n})",
+                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\npage&&(ctx.currentPage=page);\n!page&&(ctx.currentPage=1);\nsize&&(ctx.pageSize=size);\n!size&&(ctx.pageSize=10);\nconst params = {\n  \"pageNum\": ctx.currentPage,\n  \"pageSize\": ctx.pageSize,\n  \"orders\": [\n    {\n      \"key\": \"createTime\",\n      \"order\": \"desc\"\n    }\n  ],\n  \"query\": {\n    \"name\": ctx.name||'',\n    \"createUserName\":ctx.creator||''\n  },\n    \"ranges\": [\n    {\n      \"from\": ctx.createTime?ctx.createTime[0]:null,\n      \"key\": \"createTime\",\n      \"to\":  ctx.createTime?ctx.createTime[1]+1000*60*60*24-1:null\n    }\n  ]\n};\n\nctx.$axios.post(`${axios.server}/authority/list`,params).then(res=>{\n    if(res.success&&res.status){\n      const tableData = res.obj&&res.obj.records||[];\n      \n      ctx.authorityTableList  = tableData.map(function(item){\n        return{\n          id:item.id,\n          name:item.name||'',\n          desp:item.desc||'',\n          createTime:ctx.timesTransferToDate(item.createTime),\n          creator:item.createUserName,\n          editor:item.updateUserName,\n          editTime:ctx.timesTransferToDate(item.updateTime)\n\n        }\n      });\n      ctx.authorityTotalCount = res.obj&&res.obj.total;\n    }\n}).catch(error=>{\n  \n})",
                 "params": [
                     {
                         "name": "page",

@@ -11,40 +11,36 @@
                         "component": "v2-form-input",
                         "id": 1612854599723,
                         "customClass": [
-                            "v2-form-input-1612854599723",
-                            ""
+                            "v2-form-input-1612854599723"
                         ],
                         "commonStyle": {
                             "position": "relative",
                             "align-self": "auto",
                             "padding-left": 0,
-                            "flex-shrink": 0,
-                            "flex-grow": 0
+                            "flex-shrink": 0
                         },
                         "props": [
-                            "theme",
+                            "value",
                             "disabled",
                             "label",
                             "placeholder",
+                            "prepend",
+                            "append",
                             "titleMode",
                             "labelWitdh",
                             "inputType",
                             "rows",
-                            "showWordLimit",
-                            "clearable",
-                            "isRequired",
-                            "autoComplete",
-                            "if",
-                            "value.sync",
-                            "value",
-                            "prepend",
-                            "append",
                             "maxlength",
                             "minlength",
                             "prefixIcon",
                             "suffixIcon",
+                            "showWordLimit",
+                            "clearable",
+                            "isRequired",
+                            "autoComplete",
                             "suggestion",
                             "visible",
+                            "if",
                             "customClass"
                         ],
                         "theme": {
@@ -96,15 +92,14 @@
                             "align-self": "auto"
                         },
                         "props": [
-                            "theme",
                             "disabled",
                             "loading",
                             "btnName",
-                            "shape",
-                            "if",
                             "leftIcon",
                             "rightIcon",
+                            "shape",
                             "visible",
+                            "if",
                             "customClass"
                         ],
                         "theme": {
@@ -154,8 +149,8 @@
                     "height": "auto"
                 },
                 "props": [
-                    "if",
                     "visible",
+                    "if",
                     "element-loading-text",
                     "element-loading-spinner",
                     "element-loading-background",
@@ -199,17 +194,17 @@
                     "height": "816.00px",
                     "margin-left": "0",
                     "width": "calc(100% - 20px)",
-                    "flex-shrink": 0
+                    "flex-shrink": 0,
+                    "border-radius": "0px",
+                    "opacity": 1
                 },
                 "props": [
-                    "setPageCallback",
-                    "toolBar",
-                    "pageSize",
-                    "tableData",
-                    "totalCount",
-                    "theme",
                     "tooltipEffect",
                     "columns",
+                    "tableData",
+                    "selection",
+                    "radioSelect",
+                    "value",
                     "selectionLocation",
                     "tHeight",
                     "tMaxHeight",
@@ -217,28 +212,29 @@
                     "loading",
                     "indexLocation",
                     "openPage",
+                    "pagerCount",
+                    "pageSizes",
+                    "pageSize",
                     "openSetPageCallback",
+                    "setPageCallback",
+                    "currentPage",
+                    "totalCount",
+                    "toolBar",
                     "toolTitle",
                     "toolHeaderAlign",
                     "toolLocation",
                     "toolWidth",
                     "toolBtns",
                     "expand",
-                    "if",
-                    "selection",
-                    "radioSelect",
-                    "value",
-                    "pagerCount",
-                    "pageSizes",
-                    "currentPage",
                     "expandMap",
                     "visible",
+                    "if",
                     "customClass"
                 ],
                 "setPageCallback": "getbranchInfo",
                 "toolBar": true,
-                "pageSize": "${pageSize}",
                 "tableData": "${branchList}",
+                "pageSize": "${pageSize}",
                 "totalCount": "${branchTotalCount}",
                 "theme": {
                     "tableType": "border",
@@ -443,7 +439,7 @@
             {
                 "name": "getbranchInfo",
                 "desp": "获取网点信息",
-                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\npage&&(ctx.currentPage=page);\n!page&&(ctx.currentPage=1);\nsize&&(ctx.pageSize=size);\n!size&&(ctx.pageSize=10);\nconst params = {\n  \"pageNum\": ctx.currentPage,\n  \"pageSize\": ctx.pageSize,\n  \"orders\": [],\n  \"query\": {\n    \"dotName\": ctx.dot_name,\n  },\n  \"ranges\": []\n};\n\n\nctx.$axios.post(`${axios.server}/branchInfo/list`,params).then(res=>{\n    if(res.success&&res.status){\n      const tableData = res.obj&&res.obj.records||[];\n      \n      ctx.branchList  = tableData.map(function(item){\n        return{\n          dot_name:item.dotName,\n          dot_city:item.dotCity,\n          dot_address:item.dotAddress,\n          dot_phone:item.dotPhone,\n          id:item.dotId\n        }\n      });\n      ctx.branchTotalCount = res.obj&&res.obj.totalElements;\n    }\n}).catch(error=>{\n  \n})",
+                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\npage&&(ctx.currentPage=page);\n!page&&(ctx.currentPage=1);\nsize&&(ctx.pageSize=size);\n!size&&(ctx.pageSize=10);\nconst params = {\n  \"pageNum\": ctx.currentPage,\n  \"pageSize\": ctx.pageSize,\n  \"orders\": [],\n  \"query\": {\n    \"dotName\": ctx.dot_name,\n  },\n  \"ranges\": []\n};\n\n\nctx.$axios.post(`${axios.server}/branchInfo/list`,params).then(res=>{\n    if(res.success&&res.status){\n      const tableData = res.obj&&res.obj.records||[];\n      \n      ctx.branchList  = tableData.map(function(item){\n        return{\n          dot_name:item.dotName,\n          dot_city:item.dotCity,\n          dot_address:item.dotAddress,\n          dot_phone:item.dotPhone,\n          id:item.dotId\n        }\n      });\n      ctx.branchTotalCount = res.obj&&res.obj.total;\n    }\n}).catch(error=>{\n  \n})",
                 "params": [
                     {
                         "name": "page",
@@ -478,7 +474,7 @@
             {
                 "name": "openEditBranchPage",
                 "desp": "打开编辑子页面",
-                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\nconsole.log(row.staff_id)\nctx.open({\n    title:'编辑网点信息',\n    path:'/edit/Branch',\n    component:'GRP/editBranchSubPage',\n    type:'SUB',\n    closeOnClickModal:false,\n    params:{id:row.id},\n    hideConfirmBtn:true, \n    hideCancelBtn:true, \n    confirmCallback:(params) => { \n        ctx.$axios.post(`${axios.server}/branchInfo/update`, params).then(res => {\n        //下一步的行为\n            if(res.success){\n                ctx.$notify({\n                    title: '编辑网点信息成功',\n                    type: 'success'\n                });\n               ctx.getStaffInfo(ctx.currentPage);\n                \n            }else{\n                ctx.$notify({\n                    title: res.msg,\n                    type: 'error'\n                });\n               \n            }\n        }).catch(function (error) {\n            console.log(error);\n            ctx.$notify({\n                title: error.msg || '编辑失败',\n                type: 'error'\n            });\n        });\n       \n    },\n    cancelCallback:(e) => {\n        console.log('点击取消')\n    }\n})",
+                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\nconsole.log(row.staff_id)\nctx.open({\n    title:'编辑网点信息',\n    path:'/edit/Branch',\n    component:'GRP/editbranchSubPage',\n    type:'SUB',\n    closeOnClickModal:false,\n    params:{id:row.id},\n    hideConfirmBtn:true, \n    hideCancelBtn:true,\n    width:\"650px\",\n    height:\"550px\",\n    closeOnClickModal: true,\n    confirmCallback:(params) => { \n        ctx.$axios.post(`${axios.server}/branchInfo/update`, params).then(res => {\n        //下一步的行为\n            if(res.success){\n                ctx.$notify({\n                    title: '编辑网点信息成功',\n                    type: 'success'\n                });\n               ctx.getStaffInfo(ctx.currentPage);\n                \n            }else{\n                ctx.$notify({\n                    title: res.msg,\n                    type: 'error'\n                });\n               \n            }\n        }).catch(function (error) {\n            console.log(error);\n            ctx.$notify({\n                title: error.msg || '编辑失败',\n                type: 'error'\n            });\n        });\n       \n    },\n    cancelCallback:(e) => {\n        console.log('点击取消')\n    }\n})",
                 "params": [
                     {
                         "name": "index",

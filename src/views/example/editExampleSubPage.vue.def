@@ -20,39 +20,40 @@
                                 "commonStyle": {
                                     "align-self": "auto",
                                     "margin-bottom": "10px",
-                                    "width": "300px"
+                                    "width": "300px",
+                                    "border-radius": "0px",
+                                    "opacity": 1
                                 },
                                 "props": [
-                                    "theme",
+                                    "value",
                                     "disabled",
                                     "label",
                                     "placeholder",
+                                    "prepend",
+                                    "append",
                                     "titleMode",
                                     "labelWitdh",
                                     "inputType",
                                     "rows",
-                                    "showWordLimit",
-                                    "clearable",
-                                    "isRequired",
-                                    "autoComplete",
-                                    "if",
-                                    "value",
-                                    "prepend",
-                                    "append",
                                     "maxlength",
                                     "minlength",
                                     "prefixIcon",
                                     "suffixIcon",
+                                    "showWordLimit",
+                                    "clearable",
+                                    "isRequired",
+                                    "autoComplete",
                                     "suggestion",
                                     "visible",
+                                    "if",
                                     "customClass"
                                 ],
                                 "theme": {
                                     "size": ""
                                 },
                                 "disabled": false,
-                                "label": "姓名",
-                                "placeholder": "请输入姓名",
+                                "label": "物品类别",
+                                "placeholder": "请输入物品类别",
                                 "titleMode": "col",
                                 "labelWitdh": "80px",
                                 "inputType": "text",
@@ -63,6 +64,7 @@
                                 "autoComplete": false,
                                 "if": true,
                                 "$ref": "v2FormInput_1",
+                                "value.sync": "${name}",
                                 "style": {
                                     "label": {}
                                 },
@@ -81,82 +83,7 @@
                                     "",
                                     "animated"
                                 ],
-                                "value": "${name}"
-                            },
-                            {
-                                "__resolveFromCode": false,
-                                "children": [],
-                                "component": "v2-form-input",
-                                "id": 1614764837231,
-                                "customClass": [
-                                    "v2-form-input-1614764837231",
-                                    ""
-                                ],
-                                "commonStyle": {
-                                    "align-self": "auto",
-                                    "margin-bottom": "10px",
-                                    "width": "300px"
-                                },
-                                "props": [
-                                    "theme",
-                                    "disabled",
-                                    "label",
-                                    "placeholder",
-                                    "titleMode",
-                                    "labelWitdh",
-                                    "inputType",
-                                    "rows",
-                                    "showWordLimit",
-                                    "clearable",
-                                    "isRequired",
-                                    "autoComplete",
-                                    "if",
-                                    "value",
-                                    "prepend",
-                                    "append",
-                                    "maxlength",
-                                    "minlength",
-                                    "prefixIcon",
-                                    "suffixIcon",
-                                    "suggestion",
-                                    "visible",
-                                    "customClass"
-                                ],
-                                "theme": {
-                                    "size": ""
-                                },
-                                "disabled": false,
-                                "label": "年龄",
-                                "placeholder": "请输入年龄",
-                                "titleMode": "col",
-                                "labelWitdh": "80px",
-                                "inputType": "text",
-                                "rows": 2,
-                                "showWordLimit": false,
-                                "clearable": false,
-                                "isRequired": false,
-                                "autoComplete": false,
-                                "if": true,
-                                "$ref": "v2FormInput_2",
-                                "style": {
-                                    "label": {}
-                                },
-                                "visible": true,
-                                "__capacity": "1",
-                                "href": "v2-form-input",
-                                "name": "输入框",
-                                "events": {},
-                                "version": "16.0.0",
-                                "pid": 1614764745782,
-                                "sizeLocked": {
-                                    "widthLock": true,
-                                    "heightLock": false
-                                },
-                                "animate": [
-                                    "",
-                                    "animated"
-                                ],
-                                "value": "${age}"
+                                "value": "${resSort}"
                             },
                             {
                                 "__resolveFromCode": false,
@@ -173,36 +100,35 @@
                                     "width": "300px"
                                 },
                                 "props": [
-                                    "theme",
+                                    "value",
                                     "disabled",
                                     "label",
                                     "placeholder",
+                                    "prepend",
+                                    "append",
                                     "titleMode",
                                     "labelWitdh",
                                     "inputType",
                                     "rows",
-                                    "showWordLimit",
-                                    "clearable",
-                                    "isRequired",
-                                    "autoComplete",
-                                    "if",
-                                    "value",
-                                    "prepend",
-                                    "append",
                                     "maxlength",
                                     "minlength",
                                     "prefixIcon",
                                     "suffixIcon",
+                                    "showWordLimit",
+                                    "clearable",
+                                    "isRequired",
+                                    "autoComplete",
                                     "suggestion",
                                     "visible",
+                                    "if",
                                     "customClass"
                                 ],
                                 "theme": {
                                     "size": ""
                                 },
                                 "disabled": false,
-                                "label": "联系电话",
-                                "placeholder": "请输入联系电话",
+                                "label": "定价",
+                                "placeholder": "请输入定价",
                                 "titleMode": "col",
                                 "labelWitdh": "80px",
                                 "inputType": "text",
@@ -213,6 +139,7 @@
                                 "autoComplete": false,
                                 "if": true,
                                 "$ref": "v2FormInput_4",
+                                "value.sync": "${phone}",
                                 "style": {
                                     "label": {}
                                 },
@@ -231,154 +158,13 @@
                                     "",
                                     "animated"
                                 ],
-                                "value": "${phone}"
-                            },
-                            {
-                                "__resolveFromCode": false,
-                                "children": [],
-                                "component": "v2-form-select",
-                                "id": 1614765164838,
-                                "customClass": [
-                                    "v2-form-select-1614765164838",
-                                    ""
-                                ],
-                                "commonStyle": {
-                                    "align-self": "auto",
-                                    "margin-bottom": "10px",
-                                    "width": "180px"
-                                },
-                                "props": [
-                                    "theme",
-                                    "disabled",
-                                    "dataType",
-                                    "options",
-                                    "label",
-                                    "placeholder",
-                                    "labelWitdh",
-                                    "titleMode",
-                                    "clearable",
-                                    "prefix",
-                                    "filterable",
-                                    "isRequired",
-                                    "if",
-                                    "value",
-                                    "optionConfig",
-                                    "visible",
-                                    "customClass"
-                                ],
-                                "theme": {
-                                    "size": ""
-                                },
-                                "disabled": false,
-                                "dataType": "def",
-                                "options": [],
-                                "label": "网点",
-                                "placeholder": "请选择",
-                                "labelWitdh": "80px",
-                                "titleMode": "col",
-                                "clearable": false,
-                                "prefix": false,
-                                "filterable": true,
-                                "isRequired": false,
-                                "if": true,
-                                "$ref": "v2FormSelect_1",
-                                "style": {
-                                    "label": {}
-                                },
-                                "visible": true,
-                                "__capacity": "1",
-                                "href": "v2-form-select",
-                                "name": "下拉框",
-                                "events": {},
-                                "version": "16.0.4",
-                                "pid": 1614764745782,
-                                "sizeLocked": {
-                                    "widthLock": true,
-                                    "heightLock": false
-                                },
-                                "animate": [
-                                    "",
-                                    "animated"
-                                ],
-                                "optionConfig": "${branchList}",
-                                "value": "${branch}"
-                            },
-                            {
-                                "__resolveFromCode": false,
-                                "children": [],
-                                "component": "v2-form-select",
-                                "id": 1614765166810,
-                                "customClass": [
-                                    "v2-form-select-1614765166810",
-                                    ""
-                                ],
-                                "commonStyle": {
-                                    "align-self": "auto",
-                                    "margin-bottom": "10px",
-                                    "width": "180px"
-                                },
-                                "props": [
-                                    "theme",
-                                    "disabled",
-                                    "dataType",
-                                    "options",
-                                    "label",
-                                    "placeholder",
-                                    "labelWitdh",
-                                    "titleMode",
-                                    "clearable",
-                                    "prefix",
-                                    "filterable",
-                                    "isRequired",
-                                    "if",
-                                    "value",
-                                    "optionConfig",
-                                    "visible",
-                                    "customClass"
-                                ],
-                                "theme": {
-                                    "size": ""
-                                },
-                                "disabled": false,
-                                "dataType": "def",
-                                "options": [],
-                                "label": "性别",
-                                "placeholder": "请选择",
-                                "labelWitdh": "80px",
-                                "titleMode": "col",
-                                "clearable": false,
-                                "prefix": false,
-                                "filterable": true,
-                                "isRequired": false,
-                                "if": true,
-                                "$ref": "v2FormSelect_2",
-                                "style": {
-                                    "label": {}
-                                },
-                                "visible": true,
-                                "__capacity": "1",
-                                "href": "v2-form-select",
-                                "name": "下拉框",
-                                "events": {},
-                                "version": "16.0.4",
-                                "pid": 1614764745782,
-                                "sizeLocked": {
-                                    "widthLock": true,
-                                    "heightLock": false
-                                },
-                                "animate": [
-                                    "",
-                                    "animated"
-                                ],
-                                "optionConfig": "${sexList}",
-                                "value": "${sex}"
+                                "value": "${price}"
                             }
                         ],
                         "component": "v2Container",
                         "id": 1614764745782,
                         "customClass": [
-                            "v2Container-1614764745782",
-                            ""
+                            "v2Container-1614764745782"
                         ],
                         "commonStyle": {
                             "box-sizing": "border-box",
@@ -389,12 +175,11 @@
                             "margin-left": "0",
                             "overflow": "hidden",
                             "position": "relative",
-                            "flex-grow": 0,
-                            "flex-shrink": 0
+                            "flex-shrink": "0"
                         },
                         "props": [
-                            "if",
                             "visible",
+                            "if",
                             "element-loading-text",
                             "element-loading-spinner",
                             "element-loading-background",
@@ -427,8 +212,7 @@
                 "component": "v2Container",
                 "id": 1614764771020,
                 "customClass": [
-                    "v2Container-1614764771020",
-                    ""
+                    "v2Container-1614764771020"
                 ],
                 "commonStyle": {
                     "position": "relative",
@@ -442,13 +226,12 @@
                     "min-width": "50px",
                     "min-height": "50px",
                     "animation-duration": "1s",
-                    "flex-shrink": 0,
-                    "justify-content": "center",
-                    "flex-grow": 0
+                    "flex-shrink": "0",
+                    "justify-content": "center"
                 },
                 "props": [
-                    "if",
                     "visible",
+                    "if",
                     "element-loading-text",
                     "element-loading-spinner",
                     "element-loading-background",
@@ -481,32 +264,15 @@
                 "__resolveFromCode": false,
                 "children": [
                     {
-                        "theme": {
-                            "btnType": "normal&shape=plain",
-                            "size": "small"
-                        },
-                        "disabled": false,
-                        "loading": false,
-                        "btnName": "取消",
-                        "shape": "def",
-                        "visible": true,
-                        "if": true,
-                        "__capacity": "1",
-                        "component": "v2-component-btn",
-                        "href": "v2-component-btn",
-                        "name": "按钮",
+                        "__resolveFromCode": false,
                         "children": [],
-                        "events": {},
-                        "version": "16.0.0",
+                        "component": "v2-component-btn",
                         "id": 1614774384400,
-                        "pid": 1614766242007,
-                        "$ref": "v2ComponentBtn_7",
+                        "customClass": [
+                            "v2-component-btn-1614774384400"
+                        ],
                         "commonStyle": {
-                            "box-sizing": "border-box",
                             "align-self": "auto",
-                            "flex-basis": "auto",
-                            "flex-shrink": 1,
-                            "flex-grow": 0,
                             "margin-top": "5px"
                         },
                         "props": [
@@ -520,10 +286,29 @@
                             "if",
                             "customClass"
                         ],
-                        "customClass": [
-                            "v2-component-btn-1614774384400",
-                            ""
-                        ],
+                        "theme": {
+                            "btnType": "normal&shape=plain",
+                            "size": "small"
+                        },
+                        "disabled": false,
+                        "loading": false,
+                        "btnName": "取消",
+                        "shape": "def",
+                        "if": true,
+                        "events": {
+                            "_op_componentBtn_btn": {
+                                "click": {
+                                    "v2_component_btn_1614824974231": {}
+                                }
+                            }
+                        },
+                        "$ref": "v2ComponentBtn_7",
+                        "visible": true,
+                        "__capacity": "1",
+                        "href": "v2-component-btn",
+                        "name": "按钮",
+                        "version": "16.0.0",
+                        "pid": 1614766242007,
                         "sizeLocked": {
                             "widthLock": false,
                             "heightLock": false
@@ -539,8 +324,7 @@
                         "component": "v2-component-btn",
                         "id": 1614766284343,
                         "customClass": [
-                            "v2-component-btn-1614765251471",
-                            ""
+                            "v2-component-btn-1614765251471"
                         ],
                         "commonStyle": {
                             "align-self": "auto",
@@ -548,15 +332,14 @@
                             "margin-right": "10px"
                         },
                         "props": [
-                            "theme",
                             "disabled",
                             "loading",
                             "btnName",
-                            "shape",
-                            "if",
                             "leftIcon",
                             "rightIcon",
+                            "shape",
                             "visible",
+                            "if",
                             "customClass"
                         ],
                         "theme": {
@@ -568,12 +351,18 @@
                         "btnName": "提交",
                         "shape": "def",
                         "if": true,
+                        "events": {
+                            "_op_componentBtn_btn": {
+                                "click": {
+                                    "v2_component_btn_1614822992180": {}
+                                }
+                            }
+                        },
                         "$ref": "v2ComponentBtn_5",
                         "visible": true,
                         "__capacity": "1",
                         "href": "v2-component-btn",
                         "name": "按钮",
-                        "events": {},
                         "version": "16.0.0",
                         "pid": 1614766284422,
                         "sizeLocked": {
@@ -611,8 +400,8 @@
                     "flex-shrink": "0"
                 },
                 "props": [
-                    "if",
                     "visible",
+                    "if",
                     "element-loading-text",
                     "element-loading-spinner",
                     "element-loading-background",
@@ -654,8 +443,7 @@
             "min-height": "50px",
             "animation-duration": "1s",
             "box-sizing": "border-box",
-            "flex-shrink": 0,
-            "flex-grow": 0
+            "flex-shrink": "0"
         },
         "customClass": [],
         "$ref": "v2Container_root",
@@ -688,20 +476,56 @@
     "logic": {
         "methods": [
             {
-                "name": "getdeliverInfo",
-                "desp": "获取配送员信息",
-                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\nctx.$axios.get(`${axios.server}/staffInfo/get/${ctx.AParams.staffId}`).then(res=>{\n    if(res.success&&res.status){\n        var obj = res.obj;\n\n        ctx.name=obj&&obj.staffName;\n        ctx.age  = obj&&obj.staffAge;\n        ctx.phone= obj&&obj.staffPhone;\n        ctx.sex= obj&&obj.staffSex;\n        ctx.branch= obj&&obj.dotId;\n        \n        \n    }\n}).catch(error=>{\n    console.log(error);\n})",
+                "name": "getresSortInfo",
+                "desp": "获取物品类别定价信息",
+                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\nctx.$axios.get(`${axios.server}/resSortInfo/get/${ctx.AParams.staffId}`).then(res=>{\n    if(res.success&&res.status){\n        var obj = res.obj;\n\n        ctx.resSort=obj&&obj.resSort;\n        ctx.price= obj&&obj.resSortMoney;\n    }\n}).catch(error=>{\n    console.log(error);\n})",
                 "params": [],
                 "isEvent": false,
                 "custom": true
             },
             {
-                "name": "getbranchList",
-                "desp": "获取网点列表",
-                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\nctx.$axios.get(`${axios.server}/branchInfo/list`).then(res=>{\n    if(res.status&&res.success){\n       \n        ctx.branchList = res.obj.map(function(item){\n            return {\n                value:item.dotId,\n                label:item.dotName\n            }\n        })\n    }\n}).catch(error=>{\n    console.log(error);\n})",
+                "name": "v2_component_btn_1614822992180",
+                "desp": "提交",
+                "code": "//*====AGREE-ACTION-START====*//\n//*+AGREE-CONFIG-*//\n//{\n//\t\"name\": \"custom\",\n//\t\"params\": {}\n//}\n//*-AGREE-CONFIG+*//\n//*++++AGREE-CODE-START++++*//\n/**\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\n**/\n\n//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\n\n\n\n/**\n方法名称：SubmitMethod\n方法描述：提交方法\n**/\nctx.SubmitMethod();",
+                "params": [
+                    {
+                        "name": "$event",
+                        "desp": "$event"
+                    },
+                    {
+                        "name": "vueIns",
+                        "desp": "vueIns"
+                    }
+                ],
+                "isEvent": true,
+                "custom": true,
+                "id": 1614822992180
+            },
+            {
+                "name": "SubmitMethod",
+                "desp": "提交方法",
+                "code": "// 函数内直接用 ctx 代替 this 访问 Vue 页面的数据。\n/** @type {V2ViewType} */\nconst ctx = this;\nlet dataList={}\ndataList={\n    \n        resSort:ctx.resSort,\n        resSortMoney:ctx.price\n}\nctx.$root.confirm(dataList);",
                 "params": [],
                 "isEvent": false,
                 "custom": true
+            },
+            {
+                "name": "v2_component_btn_1614824974231",
+                "desp": "关闭",
+                "code": "//*====AGREE-ACTION-START====*//\n//*+AGREE-CONFIG-*//\n//{\n//\t\"name\": \"custom\",\n//\t\"params\": {}\n//}\n//*-AGREE-CONFIG+*//\n//*++++AGREE-CODE-START++++*//\n/**\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\n**/\n\n//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\nctx.close()\n//*++++AGREE-CODE-END++++*//\n//*====AGREE-ACTION-END====*//",
+                "params": [
+                    {
+                        "name": "$event",
+                        "desp": "$event"
+                    },
+                    {
+                        "name": "vueIns",
+                        "desp": "vueIns"
+                    }
+                ],
+                "isEvent": true,
+                "custom": true,
+                "id": 1614824974231
             }
         ],
         "watch": {},
@@ -715,7 +539,7 @@
             "code": "let ctx = this;"
         },
         "mounted": {
-            "code": "const ctx = this;\r\nif(ctx.AParams.staffId){\r\n    ctx.getdeliverInfo();\r\n}\r\nctx.getbranchList();"
+            "code": "const ctx = this;\nif(ctx.AParams.staffId){\n    ctx.getresSortInfo();\n}\n"
         },
         "beforeUpdate": {
             "code": "let ctx = this;"
@@ -741,87 +565,25 @@
         "data": {},
         "list": [
             {
-                "desp": "姓名",
-                "name": "name",
+                "desp": "定价",
+                "name": "price",
                 "code": "''",
                 "source": "pageData",
                 "belongTo": "data",
                 "type": "data",
                 "showSet": false,
                 "sync": false,
-                "syncComputed": "computed_newPageData",
                 "isExposed": true
             },
             {
-                "desp": "年龄",
-                "name": "age",
+                "desp": "物品类别",
+                "name": "resSort",
                 "code": "''",
                 "source": "pageData",
                 "belongTo": "data",
                 "type": "data",
                 "showSet": false,
                 "sync": false,
-                "syncComputed": "computed_newPageData",
-                "isExposed": true
-            },
-            {
-                "desp": "联系电话",
-                "name": "phone",
-                "code": "''",
-                "source": "pageData",
-                "belongTo": "data",
-                "type": "data",
-                "showSet": false,
-                "sync": false,
-                "syncComputed": "computed_newPageData",
-                "isExposed": true
-            },
-            {
-                "desp": "网点列表",
-                "name": "branchList",
-                "code": "[]",
-                "source": "pageData",
-                "belongTo": "data",
-                "type": "data",
-                "showSet": false,
-                "sync": false,
-                "syncComputed": "computed_newPageData",
-                "isExposed": true
-            },
-            {
-                "desp": "性别列表",
-                "name": "sexList",
-                "code": "[\r\n  {\r\n    \"value\": '男',\r\n    \"label\": \"男\"\r\n  },\r\n  {\r\n    \"value\": '女',\r\n    \"label\": \"女\"\r\n  }\r\n]",
-                "source": "pageData",
-                "belongTo": "data",
-                "type": "data",
-                "showSet": false,
-                "sync": false,
-                "syncComputed": "computed_newPageData",
-                "isExposed": true
-            },
-            {
-                "desp": "网点",
-                "name": "branch",
-                "code": "''",
-                "source": "pageData",
-                "belongTo": "data",
-                "type": "data",
-                "showSet": false,
-                "sync": false,
-                "syncComputed": "computed_newPageData",
-                "isExposed": true
-            },
-            {
-                "desp": "性别",
-                "name": "sex",
-                "code": "''",
-                "source": "pageData",
-                "belongTo": "data",
-                "type": "data",
-                "showSet": false,
-                "sync": false,
-                "syncComputed": "computed_newPageData",
                 "isExposed": true
             }
         ],
@@ -830,7 +592,7 @@
                 {
                     "id": 1614764756124,
                     "modelValue": "value",
-                    "dataValue": "name",
+                    "dataValue": "resSort",
                     "type": ""
                 }
             ],
@@ -838,7 +600,7 @@
                 {
                     "id": 1614764837231,
                     "modelValue": "value",
-                    "dataValue": "age",
+                    "dataValue": "endAddress",
                     "type": ""
                 }
             ],
@@ -846,7 +608,7 @@
                 {
                     "id": 1614764830485,
                     "modelValue": "value",
-                    "dataValue": "phone",
+                    "dataValue": "price",
                     "type": ""
                 }
             ],
@@ -875,6 +637,22 @@
                     "id": 1614765166810,
                     "modelValue": "optionConfig",
                     "dataValue": "sexList",
+                    "type": ""
+                }
+            ],
+            "1614822742740": [
+                {
+                    "id": 1614822742740,
+                    "modelValue": "value",
+                    "dataValue": "account",
+                    "type": ""
+                }
+            ],
+            "1614824450359": [
+                {
+                    "id": 1614824450359,
+                    "modelValue": "value",
+                    "dataValue": "id",
                     "type": ""
                 }
             ]

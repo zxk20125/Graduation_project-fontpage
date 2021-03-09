@@ -17,29 +17,27 @@
                             "align-self": "auto"
                         },
                         "props": [
-                            "theme",
+                            "value",
                             "disabled",
                             "label",
                             "placeholder",
+                            "prepend",
+                            "append",
                             "titleMode",
                             "labelWitdh",
                             "inputType",
                             "rows",
-                            "showWordLimit",
-                            "clearable",
-                            "isRequired",
-                            "autoComplete",
-                            "if",
-                            "value.sync",
-                            "value",
-                            "prepend",
-                            "append",
                             "maxlength",
                             "minlength",
                             "prefixIcon",
                             "suffixIcon",
+                            "showWordLimit",
+                            "clearable",
+                            "isRequired",
+                            "autoComplete",
                             "suggestion",
                             "visible",
+                            "if",
                             "customClass"
                         ],
                         "theme": {
@@ -57,8 +55,8 @@
                         "isRequired": false,
                         "autoComplete": false,
                         "if": true,
-                        "$ref": "v2FormInput_1",
                         "value.sync": "${queryRoleParams.roleName}",
+                        "$ref": "v2FormInput_1",
                         "style": {
                             "label": {}
                         },
@@ -91,7 +89,7 @@
                             "align-self": "auto"
                         },
                         "props": [
-                            "theme",
+                            "value",
                             "disabled",
                             "label",
                             "labelWitdh",
@@ -103,14 +101,12 @@
                             "format",
                             "valueFormat",
                             "align",
-                            "disabledDateList",
-                            "if",
-                            "value.sync",
-                            "value",
                             "disabledDateType",
+                            "disabledDateList",
                             "disabledDateListVar",
                             "disabledDateMethod",
                             "visible",
+                            "if",
                             "customClass"
                         ],
                         "theme": {
@@ -129,8 +125,8 @@
                         "align": "left",
                         "disabledDateList": [],
                         "if": true,
-                        "$ref": "v2FormDatepicker_1",
                         "value.sync": "${queryRoleParams.createTime}",
+                        "$ref": "v2FormDatepicker_1",
                         "style": {
                             "label": {}
                         },
@@ -167,10 +163,9 @@
                             "flex-shrink": 0
                         },
                         "props": [
-                            "theme",
-                            "btnName",
                             "disabled",
                             "loading",
+                            "btnName",
                             "leftIcon",
                             "rightIcon",
                             "shape",
@@ -287,10 +282,9 @@
                             "flex-shrink": "0"
                         },
                         "props": [
-                            "theme",
-                            "btnName",
                             "disabled",
                             "loading",
+                            "btnName",
                             "leftIcon",
                             "rightIcon",
                             "shape",
@@ -353,12 +347,11 @@
                         },
                         "props": [
                             "disabled",
-                            "theme",
-                            "btnName",
-                            "shape",
                             "loading",
+                            "btnName",
                             "leftIcon",
                             "rightIcon",
+                            "shape",
                             "visible",
                             "if",
                             "customClass"
@@ -462,45 +455,48 @@
                     ""
                 ],
                 "commonStyle": {
-                    "animation-duration": "1s",
                     "overflow": "hidden",
+                    "width": "calc(100% - 20px)",
+                    "height": "557.00px",
+                    "opacity": 1,
+                    "animation-duration": "1s",
                     "margin-top": "10px",
                     "margin-bottom": "10px",
                     "margin-left": "10px",
                     "margin-right": "10px",
-                    "flex-basis": "100%",
-                    "width": "calc(100% - 20px)",
-                    "flex-shrink": 0
+                    "flex-shrink": 0,
+                    "border-radius": "0px",
+                    "flex-grow": 0,
+                    "flex-basis": "auto"
                 },
                 "props": [
-                    "tableData",
-                    "pageSize",
-                    "totalCount",
-                    "theme",
-                    "columns",
-                    "selection",
-                    "tHeight",
-                    "tMaxHeight",
-                    "openIndex",
-                    "openPage",
-                    "openSetPageCallback",
-                    "setPageCallback",
-                    "toolBar",
-                    "toolTitle",
-                    "toolWidth",
-                    "toolBtns",
-                    "expand",
                     "tooltipEffect",
+                    "columns",
+                    "tableData",
+                    "selection",
                     "radioSelect",
                     "value",
                     "selectionLocation",
+                    "tHeight",
+                    "tMaxHeight",
+                    "openIndex",
                     "loading",
                     "indexLocation",
+                    "openPage",
                     "pagerCount",
                     "pageSizes",
+                    "pageSize",
+                    "openSetPageCallback",
+                    "setPageCallback",
                     "currentPage",
+                    "totalCount",
+                    "toolBar",
+                    "toolTitle",
                     "toolHeaderAlign",
                     "toolLocation",
+                    "toolWidth",
+                    "toolBtns",
+                    "expand",
                     "expandMap",
                     "visible",
                     "if",
@@ -706,6 +702,28 @@
                                 "active": "true"
                             }
                         ]
+                    },
+                    {
+                        "active": true,
+                        "type": "text",
+                        "prop": "roleId",
+                        "handleLink": true,
+                        "handleLinkCB": "handleLinkCallback",
+                        "linkTarget": "_blank",
+                        "openTooltip": false,
+                        "handleTooltip": true,
+                        "tooltipContent": "提示",
+                        "tooltipContentCallback": "tooltipContentCallback",
+                        "useMinWidth": true,
+                        "headerAlign": "left",
+                        "align": "left",
+                        "sortable": false,
+                        "openFilter": false,
+                        "combi": [],
+                        "tagMap": [],
+                        "textMap": [],
+                        "iconMap": [],
+                        "filterMap": []
                     }
                 ],
                 "selection": "multi",
@@ -786,7 +804,8 @@
             "flex-shrink": "0"
         },
         "customClass": [
-            "v2Container-root"
+            "v2Container-root",
+            ""
         ],
         "$ref": "v2Container_root",
         "direction": "row",
@@ -880,7 +899,7 @@
             {
                 "name": "getPageRoleList",
                 "desp": "获取分页角色列表",
-                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\npage&&(ctx.currentPage=page);\n!page&&(ctx.currentPage=1);\nsize&&(ctx.pageSize=size);\n!size&&(ctx.pageSize=10);\nconst params = {\n  \"pageNum\": ctx.currentPage,\n  \"pageSize\": ctx.pageSize,\n  \"orders\": [\n    {\n      \"key\": \"createTime\",\n      \"order\": \"desc\"\n    }\n  ],\n  \"query\": {\n\n    \"name\": ctx.queryRoleParams.roleName||'',\n  },\n  \"ranges\": [\n    {\n      \"from\": ctx.queryRoleParams.createTime?ctx.queryRoleParams.createTime[0]:null,\n      \"key\": \"createTime\",\n      \"to\":  ctx.queryRoleParams.createTime?ctx.queryRoleParams.createTime[1]+1000*60*60*24-1:null\n    }\n  ]\n};\n//console.log(ctx.__getVueIns('_op_pagination'));\nctx.$axios.post(`${axios.server}/role/list`,params).then(res=>{\n    if(res.success&&res.status){\n      const tableData = res.obj&&res.obj.records||[];\n      \n      ctx.roleTableData  = tableData.map(function(item){\n        return{\n          roleId:item.id,\n          menus:item.menus||[],\n          authorities:item.authorities||[],\n          roleName:item.name||'',\n          desp:item.desc||'',\n          createTime:ctx.timesTransferToDate(item.createTime),\n          creator:item.createUserName,\n          editor:item.updateUserName,\n          editTime:ctx.timesTransferToDate(item.updateTime)\n        }\n      });\n      ctx.roleTotalCount = res.obj&&res.obj.totalElements;\n    }\n}).catch(error=>{\n  \n})",
+                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\npage&&(ctx.currentPage=page);\n!page&&(ctx.currentPage=1);\nsize&&(ctx.pageSize=size);\n!size&&(ctx.pageSize=10);\nconst params = {\n  \"pageNum\": ctx.currentPage,\n  \"pageSize\": ctx.pageSize,\n  \"orders\": [\n    {\n      \"key\": \"createTime\",\n      \"order\": \"desc\"\n    }\n  ],\n  \"query\": {\n\n    \"name\": ctx.queryRoleParams.roleName||'',\n  },\n  \"ranges\": [\n    {\n      \"from\": ctx.queryRoleParams.createTime?ctx.queryRoleParams.createTime[0]:null,\n      \"key\": \"createTime\",\n      \"to\":  ctx.queryRoleParams.createTime?ctx.queryRoleParams.createTime[1]+1000*60*60*24-1:null\n    }\n  ]\n};\n//console.log(ctx.__getVueIns('_op_pagination'));\nctx.$axios.post(`${axios.server}/role/list`,params).then(res=>{\n    if(res.success&&res.status){\n      const tableData = res.obj&&res.obj.records||[];\n      \n      ctx.roleTableData  = tableData.map(function(item){\n        return{\n          roleId:item.id,\n          menus:item.menus||[],\n          authorities:item.authorities||[],\n          roleName:item.name||'',\n          desp:item.desc||'',\n          createTime:ctx.timesTransferToDate(item.createTime),\n          creator:item.createUserName,\n          editor:item.updateUserName,\n          editTime:ctx.timesTransferToDate(item.updateTime)\n        }\n      });\n      ctx.roleTotalCount = res.obj&&res.obj.total;\n    }\n}).catch(error=>{\n  \n})",
                 "params": [
                     {
                         "name": "page",

@@ -20,27 +20,29 @@
                             "flex-shrink": 0
                         },
                         "props": [
-                            "value",
+                            "theme",
                             "disabled",
                             "label",
                             "placeholder",
-                            "prepend",
-                            "append",
                             "titleMode",
                             "labelWitdh",
                             "inputType",
                             "rows",
-                            "maxlength",
-                            "minlength",
-                            "prefixIcon",
-                            "suffixIcon",
                             "showWordLimit",
                             "clearable",
                             "isRequired",
                             "autoComplete",
+                            "if",
+                            "value.sync",
+                            "value",
+                            "prepend",
+                            "append",
+                            "maxlength",
+                            "minlength",
+                            "prefixIcon",
+                            "suffixIcon",
                             "suggestion",
                             "visible",
-                            "if",
                             "customClass"
                         ],
                         "theme": {
@@ -94,14 +96,15 @@
                             "margin-left": "10px"
                         },
                         "props": [
+                            "theme",
                             "disabled",
                             "loading",
                             "btnName",
-                            "leftIcon",
                             "rightIcon",
                             "shape",
-                            "visible",
                             "if",
+                            "leftIcon",
+                            "visible",
                             "customClass"
                         ],
                         "theme": {
@@ -147,17 +150,19 @@
                         ],
                         "commonStyle": {
                             "align-self": "auto",
-                            "margin-left": "20px"
+                            "margin-left": "20px",
+                            "flex-shrink": 0
                         },
                         "props": [
+                            "theme",
                             "disabled",
                             "loading",
                             "btnName",
-                            "leftIcon",
                             "rightIcon",
                             "shape",
-                            "visible",
                             "if",
+                            "leftIcon",
+                            "visible",
                             "customClass"
                         ],
                         "theme": {
@@ -197,7 +202,8 @@
                 "component": "v2Container",
                 "id": 1612854178100,
                 "customClass": [
-                    "v2Container-1612854178100"
+                    "v2Container-1612854178100",
+                    ""
                 ],
                 "commonStyle": {
                     "box-sizing": "border-box",
@@ -208,8 +214,8 @@
                     "height": "auto"
                 },
                 "props": [
-                    "visible",
                     "if",
+                    "visible",
                     "element-loading-text",
                     "element-loading-spinner",
                     "element-loading-background",
@@ -253,17 +259,18 @@
                     "height": "816.00px",
                     "margin-left": "0",
                     "width": "calc(100% - 20px)",
-                    "flex-shrink": 0,
-                    "border-radius": "0px",
-                    "opacity": 1
+                    "flex-shrink": 0
                 },
                 "props": [
+                    "setPageCallback",
+                    "toolBar",
+                    "tableData",
+                    "pageSize",
+                    "currentPage",
+                    "totalCount",
+                    "theme",
                     "tooltipEffect",
                     "columns",
-                    "tableData",
-                    "selection",
-                    "radioSelect",
-                    "value",
                     "selectionLocation",
                     "tHeight",
                     "tMaxHeight",
@@ -271,23 +278,21 @@
                     "loading",
                     "indexLocation",
                     "openPage",
-                    "pagerCount",
-                    "pageSizes",
-                    "pageSize",
                     "openSetPageCallback",
-                    "setPageCallback",
-                    "currentPage",
-                    "totalCount",
-                    "toolBar",
                     "toolTitle",
                     "toolHeaderAlign",
                     "toolLocation",
                     "toolWidth",
                     "toolBtns",
                     "expand",
+                    "if",
+                    "selection",
+                    "radioSelect",
+                    "value",
+                    "pagerCount",
+                    "pageSizes",
                     "expandMap",
                     "visible",
-                    "if",
                     "customClass"
                 ],
                 "setPageCallback": "getStaffInfo",
@@ -510,8 +515,9 @@
         "component": "v2Container",
         "id": "root",
         "commonStyle": {
-            "flex-shrink": "0",
-            "box-sizing": "border-box"
+            "flex-shrink": 0,
+            "box-sizing": "border-box",
+            "flex-grow": 0
         },
         "customClass": [],
         "$ref": "v2Container_root",
@@ -580,7 +586,7 @@
             {
                 "name": "openEditStaffPage",
                 "desp": "新增配送员信息",
-                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\n\nctx.open({\n    title:'新增配送员',\n    path:'/add/authority',\n    component:'GRP/editStaffSubPage',\n    type:'SUB',\n    closeOnClickModal:false,\n    hideConfirmBtn:true, \n    hideCancelBtn:true, \n    confirmCallback:(params) => { \n       \n        ctx.$axios.post(`${axios.server}/staffInfo/add`, params).then(res => {\n            //下一步的行为\n            if(res.success){\n                ctx.$notify({\n                    title: '新增权限成功',\n                    type: 'success'\n                });\n                ctx.getPageAuthorityList();\n            }else{\n                ctx.$notify({\n                    title: res.msg,\n                    type: 'error'\n                });\n\n            }\n        }).catch(function (error) {\n            console.log(error);\n            ctx.$notify({\n                    title: error.msg || '新增失败',\n                    type: 'error'\n                });\n        });   \n  \n    },\n    cancelCallback:(e) => {\n        console.log('点击取消')\n    }\n})",
+                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\n\nctx.open({\n    title:'新增配送员',\n    path:'/add/authority',\n    component:'GRP/editdeliverSubPage',\n    type:'SUB',\n    closeOnClickModal:false,\n    hideConfirmBtn:true, \n    hideCancelBtn:true,\n    width:\"650px\",\n    height:\"550px\",\n    closeOnClickModal: true,\n    confirmCallback:(params) => { \n       \n        ctx.$axios.post(`${axios.server}/staffInfo/add`, params).then(res => {\n            //下一步的行为\n            if(res.success){\n                ctx.$notify({\n                    title: '新增权限成功',\n                    type: 'success'\n                });\n                ctx.getStaffInfo(ctx.currentPage);\n            }else{\n                ctx.$notify({\n                    title: res.msg,\n                    type: 'error'\n                });\n\n            }\n        }).catch(function (error) {\n            console.log(error);\n            ctx.$notify({\n                    title: error.msg || '新增失败',\n                    type: 'error'\n                });\n        });   \n  \n    },\n    cancelCallback:(e) => {\n        console.log('点击取消')\n    }\n})",
                 "params": [],
                 "isEvent": false,
                 "custom": true
@@ -588,7 +594,7 @@
             {
                 "name": "editStaff",
                 "desp": "编辑配送员信息",
-                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\nconsole.log(row.staff_id)\nctx.open({\n    title:'编辑配送员信息',\n    path:'/edit/Staff',\n    component:'GRP/editdeliverSubPage',\n    type:'SUB',\n    closeOnClickModal:false,\n    params:{staffId:row.staff_id},\n    width:\"650px\",\n    height:\"550px\",\n    hideConfirmBtn:true, \n    hideCancelBtn:true, \n    confirmCallback:(params) => { \n        ctx.$axios.post(`${axios.server}/staffInfo/update`, params).then(res => {\n        //下一步的行为\n            if(res.success){\n                ctx.$notify({\n                    title: '编辑配送员成功',\n                    type: 'success'\n                });\n               ctx.getStaffInfo(ctx.currentPage);\n                \n            }else{\n                ctx.$notify({\n                    title: res.msg,\n                    type: 'error'\n                });\n               \n            }\n        }).catch(function (error) {\n            console.log(error);\n            ctx.$notify({\n                title: error.msg || '编辑失败',\n                type: 'error'\n            });\n        });\n       \n    },\n    cancelCallback:(e) => {\n        console.log('点击取消')\n    }\n})",
+                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\nconsole.log(row.staff_id)\nctx.open({\n    title:'编辑配送员信息',\n    path:'/edit/Staff',\n    component:'GRP/editdeliverSubPage',\n    type:'SUB',\n    closeOnClickModal:false,\n    params:{staffId:row.staff_id},\n    width:\"650px\",\n    height:\"550px\",\n    hideConfirmBtn:true, \n    hideCancelBtn:true,\n    closeOnClickModal: true,\n    confirmCallback:(params) => { \n        ctx.$axios.post(`${axios.server}/staffInfo/update`, params).then(res => {\n        //下一步的行为\n            if(res.success){\n                ctx.$notify({\n                    title: '编辑配送员成功',\n                    type: 'success'\n                });\n               ctx.getStaffInfo(ctx.currentPage);\n                \n            }else{\n                ctx.$notify({\n                    title: res.msg,\n                    type: 'error'\n                });\n               \n            }\n        }).catch(function (error) {\n            console.log(error);\n            ctx.$notify({\n                title: error.msg || '编辑失败',\n                type: 'error'\n            });\n        });\n       \n    },\n    cancelCallback:(e) => {\n        console.log('点击取消')\n    }\n})",
                 "params": [
                     {
                         "name": "index",

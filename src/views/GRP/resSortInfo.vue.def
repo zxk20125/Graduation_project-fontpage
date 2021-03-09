@@ -11,21 +11,24 @@
                         "component": "v2-component-btn",
                         "id": 1614602925529,
                         "customClass": [
-                            "v2-component-btn-1614602925529"
+                            "v2-component-btn-1614602925529",
+                            ""
                         ],
                         "commonStyle": {
                             "align-self": "auto",
-                            "margin-right": "20px"
+                            "margin-right": "20px",
+                            "flex-shrink": 0
                         },
                         "props": [
+                            "theme",
                             "disabled",
                             "loading",
                             "btnName",
-                            "leftIcon",
                             "rightIcon",
                             "shape",
-                            "visible",
                             "if",
+                            "leftIcon",
+                            "visible",
                             "customClass"
                         ],
                         "theme": {
@@ -38,12 +41,18 @@
                         "rightIcon": "el-icon-delete",
                         "shape": "def",
                         "if": true,
+                        "events": {
+                            "_op_componentBtn_btn": {
+                                "click": {
+                                    "v2_component_btn_1614936068652": {}
+                                }
+                            }
+                        },
                         "$ref": "v2ComponentBtn_4",
                         "visible": true,
                         "__capacity": "1",
                         "href": "v2-component-btn",
                         "name": "按钮",
-                        "events": {},
                         "version": "16.0.0",
                         "pid": 1614602787546,
                         "sizeLocked": {
@@ -64,21 +73,25 @@
                                 "component": "v2-component-btn",
                                 "id": 1614602836812,
                                 "customClass": [
-                                    "v2-component-btn-1613475640042"
+                                    "v2-component-btn-1613475640042",
+                                    ""
                                 ],
                                 "commonStyle": {
                                     "align-self": "auto",
-                                    "margin-right": "20px"
+                                    "margin-right": "20px",
+                                    "flex-grow": 0,
+                                    "flex-shrink": 0
                                 },
                                 "props": [
+                                    "theme",
                                     "disabled",
                                     "loading",
                                     "btnName",
-                                    "leftIcon",
                                     "rightIcon",
                                     "shape",
-                                    "visible",
                                     "if",
+                                    "leftIcon",
+                                    "visible",
                                     "customClass"
                                 ],
                                 "theme": {
@@ -91,12 +104,18 @@
                                 "rightIcon": "el-icon-plus",
                                 "shape": "def",
                                 "if": true,
+                                "events": {
+                                    "_op_componentBtn_btn": {
+                                        "click": {
+                                            "v2_component_btn_1614936098166": {}
+                                        }
+                                    }
+                                },
                                 "$ref": "v2ComponentBtn_3",
                                 "visible": true,
                                 "__capacity": "1",
                                 "href": "v2-component-btn",
                                 "name": "按钮",
-                                "events": {},
                                 "version": "16.0.0",
                                 "pid": 1614602839167,
                                 "sizeLocked": {
@@ -127,8 +146,8 @@
                             "height": "auto"
                         },
                         "props": [
-                            "visible",
                             "if",
+                            "visible",
                             "element-loading-text",
                             "element-loading-spinner",
                             "element-loading-background",
@@ -209,17 +228,18 @@
                     "height": "816.00px",
                     "margin-left": "0",
                     "width": "calc(100% - 20px)",
-                    "flex-shrink": 0,
-                    "border-radius": "0px",
-                    "opacity": 1
+                    "flex-shrink": 0
                 },
                 "props": [
+                    "setPageCallback",
+                    "toolBar",
+                    "tableData",
+                    "pageSize",
+                    "totalCount",
+                    "theme",
                     "tooltipEffect",
                     "columns",
-                    "tableData",
                     "selection",
-                    "radioSelect",
-                    "value",
                     "selectionLocation",
                     "tHeight",
                     "tMaxHeight",
@@ -227,25 +247,25 @@
                     "loading",
                     "indexLocation",
                     "openPage",
-                    "pagerCount",
-                    "pageSizes",
-                    "pageSize",
                     "openSetPageCallback",
-                    "setPageCallback",
-                    "currentPage",
-                    "totalCount",
-                    "toolBar",
                     "toolTitle",
                     "toolHeaderAlign",
                     "toolLocation",
                     "toolWidth",
                     "toolBtns",
                     "expand",
+                    "if",
+                    "value.sync",
+                    "radioSelect",
+                    "value",
+                    "pagerCount",
+                    "pageSizes",
+                    "currentPage",
                     "expandMap",
                     "visible",
-                    "if",
                     "customClass"
                 ],
+                "setPageCallback": "getresSortInfo",
                 "toolBar": true,
                 "tableData": "${resSortList}",
                 "pageSize": "${pageSize}",
@@ -334,7 +354,6 @@
                 "indexLocation": "left",
                 "openPage": true,
                 "openSetPageCallback": true,
-                "setPageCallback": "getresSortInfo",
                 "toolTitle": "操作",
                 "toolHeaderAlign": "left",
                 "toolLocation": "right",
@@ -344,7 +363,7 @@
                         "active": true,
                         "btnName": "编辑",
                         "type": "primary",
-                        "handler": "openEditShipAddressPage",
+                        "handler": "openEditresSortPage",
                         "rowName": " ",
                         "toolIcon": " ",
                         "rowValue": " "
@@ -352,8 +371,8 @@
                 ],
                 "expand": false,
                 "if": true,
-                "$ref": "v2ComponentTable_1",
                 "value.sync": "${selectData}",
+                "$ref": "v2ComponentTable_1",
                 "visible": true,
                 "__capacity": "1",
                 "href": "v2-component-table",
@@ -426,9 +445,9 @@
                 "custom": true
             },
             {
-                "name": "openEditShipAddressPage",
+                "name": "openEditresSortPage",
                 "desp": "打开编辑子页面",
-                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\nconsole.log(row.staff_id)\nctx.open({\n    title:'编辑配送员信息',\n    path:'/edit/Staff',\n    component:'GRP/editResSortSubPage',\n    type:'SUB',\n    closeOnClickModal:false,\n    params:{id:row.id},\n    hideConfirmBtn:true, \n    hideCancelBtn:true, \n    confirmCallback:(params) => { \n        ctx.$axios.post(`${axios.server}/resSortInfo/update`, params).then(res => {\n        //下一步的行为\n            if(res.success){\n                ctx.$notify({\n                    title: '编辑定价信息成功',\n                    type: 'success'\n                });\n               ctx.getStaffInfo(ctx.currentPage);\n                \n            }else{\n                ctx.$notify({\n                    title: res.msg,\n                    type: 'error'\n                });\n               \n            }\n        }).catch(function (error) {\n            console.log(error);\n            ctx.$notify({\n                title: error.msg || '编辑失败',\n                type: 'error'\n            });\n        });\n       \n    },\n    cancelCallback:(e) => {\n        console.log('点击取消')\n    }\n})",
+                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\nctx.open({\n    title:'编辑配送员信息',\n    path:'/edit/resSort',\n    component:'GRP/editresSortSubPage',\n    type:'SUB',\n    closeOnClickModal:false,\n    params:{id:row.id},\n    hideConfirmBtn:true, \n    hideCancelBtn:true,\n    width:\"650px\",\n    height:\"550px\",\n    closeOnClickModal: true,\n    confirmCallback:(params) => { \n        ctx.$axios.post(`${axios.server}/resSortInfo/update`, params).then(res => {\n        //下一步的行为\n            if(res.success){\n                ctx.$notify({\n                    title: '编辑定价信息成功',\n                    type: 'success'\n                });\n               ctx.getStaffInfo(ctx.currentPage);\n                \n            }else{\n                ctx.$notify({\n                    title: res.msg,\n                    type: 'error'\n                });\n               \n            }\n        }).catch(function (error) {\n            console.log(error);\n            ctx.$notify({\n                title: error.msg || '编辑失败',\n                type: 'error'\n            });\n        });\n       \n    },\n    cancelCallback:(e) => {\n        console.log('点击取消')\n    }\n})",
                 "params": [
                     {
                         "name": "index",
@@ -439,6 +458,51 @@
                         "desp": "新参数"
                     }
                 ],
+                "isEvent": false,
+                "custom": true
+            },
+            {
+                "name": "deleteMethod",
+                "desp": "删除方法",
+                "code": "// 函数内直接用 ctx 代替 this 访问 Vue 页面的数据。\n/** @type {V2ViewType} */\nconst ctx = this;",
+                "params": [],
+                "isEvent": false,
+                "custom": true
+            },
+            {
+                "name": "v2_component_btn_1614936068652",
+                "desp": "删除",
+                "code": "//*====AGREE-ACTION-START====*//\n//*+AGREE-CONFIG-*//\n//{\n//\t\"name\": \"custom\",\n//\t\"params\": {}\n//}\n//*-AGREE-CONFIG+*//\n//*++++AGREE-CODE-START++++*//\n/**\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\n**/\n\n//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\nctx.deleteMethod()\n//*++++AGREE-CODE-END++++*//\n//*====AGREE-ACTION-END====*//",
+                "params": [
+                    {
+                        "name": "$event",
+                        "desp": "$event"
+                    },
+                    {
+                        "name": "vueIns",
+                        "desp": "vueIns"
+                    }
+                ],
+                "isEvent": true,
+                "custom": true,
+                "id": 1614936068652
+            },
+            {
+                "name": "v2_component_btn_1614936098166",
+                "desp": "新增",
+                "code": "//*====AGREE-ACTION-START====*//\n//*+AGREE-CONFIG-*//\n//{\n//\t\"name\": \"custom\",\n//\t\"params\": {}\n//}\n//*-AGREE-CONFIG+*//\n//*++++AGREE-CODE-START++++*//\n/**\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\n**/\n\n//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\nctx.openEditresSortPage()\n//*++++AGREE-CODE-END++++*//\n//*====AGREE-ACTION-END====*//\n\n",
+                "params": [],
+                "isEvent": true,
+                "custom": true,
+                "id": 1614936098166,
+                "isExposed": false,
+                "emitName": ""
+            },
+            {
+                "name": "openAddresSortPage",
+                "desp": "打开新增子页面",
+                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\n\nctx.open({\n    title:'新增权限',\n    path:'/add/resSort',\n    component:'GRP/editresSortSubPage',\n    type:'SUB',\n    closeOnClickModal:false,\n    hideConfirmBtn:true, \n    hideCancelBtn:true, \n    confirmCallback:(params) => { \n       \n        ctx.$axios.post(`${axios.server}/resSortInfo/add`, params).then(res => {\n            //下一步的行为\n            if(res.success){\n                ctx.$notify({\n                    title: '新增权限成功',\n                    type: 'success'\n                });\n                ctx.getresSortInfo(ctx.currentPage);\n            }else{\n                ctx.$notify({\n                    title: res.msg,\n                    type: 'error'\n                });\n\n            }\n        }).catch(function (error) {\n            console.log(error);\n            ctx.$notify({\n                    title: error.msg || '新增失败',\n                    type: 'error'\n                });\n        });   \n  \n    },\n    cancelCallback:(e) => {\n        console.log('点击取消')\n    }\n})",
+                "params": [],
                 "isEvent": false,
                 "custom": true
             }
@@ -521,6 +585,17 @@
                 "showSet": false,
                 "sync": false,
                 "isExposed": true
+            },
+            {
+                "desp": "当前页面",
+                "name": "currentPage",
+                "code": "''",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false,
+                "sync": false,
+                "isExposed": true
             }
         ],
         "mapping": {
@@ -539,6 +614,12 @@
                 },
                 {
                     "id": 1612854187456,
+                    "modelValue": "tableData",
+                    "dataValue": "resSortList",
+                    "type": ""
+                },
+                {
+                    "id": 1612854187456,
                     "modelValue": "value",
                     "dataValue": "selectData",
                     "type": ""
@@ -547,12 +628,6 @@
                     "id": 1612854187456,
                     "modelValue": "pageSize",
                     "dataValue": "pageSize",
-                    "type": ""
-                },
-                {
-                    "id": 1612854187456,
-                    "modelValue": "tableData",
-                    "dataValue": "resSortList",
                     "type": ""
                 },
                 {

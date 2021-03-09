@@ -16,15 +16,13 @@
                         ],
                         "commonStyle": {
                             "position": "relative",
-                            "margin-top": "10px",
-                            "margin-bottom": "10px",
-                            "margin-left": "10px",
-                            "margin-right": "10px",
+                            "margin-bottom": "0",
                             "overflow": "hidden",
                             "animation-duration": "1s",
+                            "flex-shrink": 0,
                             "border-radius": "0px",
                             "flex-grow": 0,
-                            "flex-shrink": 0,
+                            "padding-left": "0",
                             "opacity": 1
                         },
                         "props": [
@@ -66,7 +64,7 @@
                         "isRequired": false,
                         "autoComplete": false,
                         "$ref": "v2-form-input_1579152715570",
-                        "value.sync": "${name}",
+                        "value.sync": "${customerLoginName}",
                         "style": {
                             "label": {}
                         },
@@ -98,10 +96,8 @@
                         ],
                         "commonStyle": {
                             "position": "relative",
-                            "margin-top": "10px",
-                            "margin-bottom": "10px",
-                            "margin-left": "10px",
-                            "margin-right": "10px",
+                            "margin-bottom": "0",
+                            "margin-left": "20px",
                             "flex-shrink": 0,
                             "overflow": "hidden",
                             "animation-duration": "1s"
@@ -124,18 +120,15 @@
                         "disabled": false,
                         "loading": false,
                         "btnName": "查询",
+                        "rightIcon": "el-icon-search",
                         "shape": "def",
                         "events": {
                             "_op_componentBtn_btn": {
                                 "click": {
-                                    "v2_component_btn_1614351319319": {
-                                        "params": ""
-                                    }
+                                    "v2_component_btn_1614351319319": {}
                                 },
                                 "undefined": {
-                                    "v2_component_btn_1614351600155": {
-                                        "params": ""
-                                    }
+                                    "v2_component_btn_1614351600155": {}
                                 }
                             }
                         },
@@ -154,14 +147,14 @@
                         "animate": [
                             "",
                             "animated"
-                        ],
-                        "rightIcon": "el-icon-search"
+                        ]
                     }
                 ],
                 "component": "v2Container",
                 "id": 1612535056658,
                 "customClass": [
-                    "v2Container-1578537283708"
+                    "v2Container-1578537283708",
+                    ""
                 ],
                 "commonStyle": {
                     "display": "flex",
@@ -223,9 +216,7 @@
                     "width": "calc(100% - 20px)",
                     "height": "816.00px",
                     "flex-shrink": 0,
-                    "border-radius": "0px",
-                    "flex-grow": 0,
-                    "opacity": 1
+                    "flex-grow": 0
                 },
                 "props": [
                     "tooltipEffect",
@@ -263,6 +254,7 @@
                 "tableData": "${customerInfoList}",
                 "pageSize": "${pageSize}",
                 "currentPage": "${currentPage}",
+                "totalCount": "${customerTotalCount}",
                 "theme": {
                     "tableType": "border",
                     "size": ""
@@ -472,8 +464,7 @@
                 "animate": [
                     "",
                     "animated"
-                ],
-                "totalCount": "${customerTotalCount}"
+                ]
             }
         ],
         "component": "v2Container",
@@ -486,7 +477,7 @@
             "align-self": "stretch",
             "box-sizing": "border-box",
             "flex-direction": "column",
-            "flex-shrink": 0
+            "flex-shrink": "0"
         },
         "customClass": [],
         "$ref": "v2Container_root",
@@ -538,7 +529,7 @@
             {
                 "name": "openEditSub",
                 "desp": "打开编辑子页面",
-                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\n\nctx.open({\n    title: '编辑客户信息',\n    path: '/edit/customer',\n    component: 'GRP/editCustomerSubPage',\n    type: 'SUB',\n    closeOnClickModal: false,\n    hideConfirmBtn: true,\n    hideCancelBtn: true,\n    width: \"600px\", //弹窗的宽\n    height: \"500px\", //高，不设置默认是auto\n    closeOnClickModal: true,//点击弹窗外部是否关闭弹窗，不设置默认是true：会关闭，false：不关闭\n    params:{id:row.id},\n    confirmCallback: (ret) => {\n        ctx.$axios.post(`${axios.server}/customer/edit`, ret).then(res => {\n            //下一步的行为\n            if (res.success) {\n                ctx.$notify({\n                    title: '客户信息编辑成功',\n                    type: 'success'\n                });\n            } else {\n                ctx.$notify({\n                    title: res.msg,\n                    type: 'error'\n                });\n\n            }\n        }).catch(function (error) {\n            console.log(error);\n            ctx.$notify({\n                title: error.msg || '编辑失败',\n                type: 'error'\n            });\n        });\n\n    },\n    cancelCallback: (e) => {\n        console.log('点击取消')\n    }\n})",
+                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\n\nctx.open({\n    title: '编辑客户信息',\n    path: '/edit/customer',\n    component: 'GRP/editcustomerSubPage',\n    type: 'SUB',\n    closeOnClickModal: false,\n    hideConfirmBtn: true,\n    hideCancelBtn: true,\n    width:\"650px\",\n    height:\"550px\",\n    closeOnClickModal: true,//点击弹窗外部是否关闭弹窗，不设置默认是true：会关闭，false：不关闭\n    params:{id:row.id},\n    confirmCallback: (ret) => {\n        ctx.$axios.post(`${axios.server}/customer/edit`, ret).then(res => {\n            //下一步的行为\n            if (res.success) {\n                ctx.$notify({\n                    title: '客户信息编辑成功',\n                    type: 'success'\n                });\n            } else {\n                ctx.$notify({\n                    title: res.msg,\n                    type: 'error'\n                });\n\n            }\n        }).catch(function (error) {\n            console.log(error);\n            ctx.$notify({\n                title: error.msg || '编辑失败',\n                type: 'error'\n            });\n        });\n\n    },\n    cancelCallback: (e) => {\n        console.log('点击取消')\n    }\n})",
                 "params": [
                     {
                         "name": "index",
@@ -556,12 +547,19 @@
                 "name": "v2_component_btn_1614351319319",
                 "desp": "查询",
                 "code": "//*====AGREE-ACTION-START====*//\n//*+AGREE-CONFIG-*//\n//{\n//\t\"name\": \"custom\",\n//\t\"params\": {}\n//}\n//*-AGREE-CONFIG+*//\n//*++++AGREE-CODE-START++++*//\n/**\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\n**/\n\n//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\n\n/**\n方法名称：getcustomerInfoList\n方法描述：获取用户列表\n参数1:page(当前页码)\n参数2:size(总条数)\n**/\nctx.getcustomerInfoList(ctx.currentPage);",
-                "params": [],
+                "params": [
+                    {
+                        "name": "$event",
+                        "desp": "$event"
+                    },
+                    {
+                        "name": "vueIns",
+                        "desp": "vueIns"
+                    }
+                ],
                 "isEvent": true,
                 "custom": true,
-                "id": 1612535127748,
-                "isExposed": false,
-                "emitName": ""
+                "id": 1614351319319
             },
             {
                 "name": "v2_component_btn_1614351600155",
@@ -579,9 +577,7 @@
                 ],
                 "isEvent": true,
                 "custom": true,
-                "id": 1612535127748,
-                "isExposed": false,
-                "emitName": ""
+                "id": 1614351600155
             }
         ],
         "watch": {},
@@ -641,6 +637,16 @@
                 "sync": false
             },
             {
+                "desp": "用户账号",
+                "name": "customerLoginName",
+                "code": "''",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false,
+                "sync": false
+            },
+            {
                 "desp": "请求数据",
                 "name": "reqMessage",
                 "code": "''",
@@ -682,19 +688,7 @@
                 "type": "data",
                 "showSet": false,
                 "sync": false,
-                "syncComputed": "computed_newPageData",
                 "isExposed": true
-            },
-            {
-                "desp": "用户账号",
-                "name": "customerLoginName",
-                "code": "''",
-                "source": "pageData",
-                "belongTo": "data",
-                "type": "data",
-                "showSet": false,
-                "sync": false,
-                "isExposed": false
             }
         ],
         "mapping": {

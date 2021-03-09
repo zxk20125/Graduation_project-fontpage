@@ -343,7 +343,6 @@
                         "children": [],
                         "component": "v2-component-btn",
                         "id": 1578539271197,
-                        "visible": "${true}",
                         "customClass": [],
                         "commonStyle": {
                             "position": "relative",
@@ -353,10 +352,7 @@
                             "margin-right": "10px",
                             "flex-shrink": 0,
                             "overflow": "hidden",
-                            "animation-duration": "1s",
-                            "border-radius": "0px",
-                            "flex-grow": 0,
-                            "opacity": 1
+                            "animation-duration": "1s"
                         },
                         "props": [
                             "disabled",
@@ -385,6 +381,7 @@
                             }
                         },
                         "$ref": "v2-component-btn_1578539271197",
+                        "visible": "${true}",
                         "style": {
                             "btnStyle": {}
                         },
@@ -405,7 +402,6 @@
                         "children": [],
                         "component": "v2-component-btn",
                         "id": 1578539296885,
-                        "visible": "${true}",
                         "customClass": [],
                         "commonStyle": {
                             "position": "relative",
@@ -415,7 +411,6 @@
                             "margin-right": "10px",
                             "overflow": "hidden",
                             "animation-duration": "1s",
-                            "flex-basis": "auto",
                             "flex-shrink": 0
                         },
                         "props": [
@@ -445,6 +440,7 @@
                             }
                         },
                         "$ref": "v2-component-btn_1578539296885",
+                        "visible": "${true}",
                         "style": {
                             "btnStyle": {}
                         },
@@ -517,17 +513,19 @@
                 "id": 1578539272258,
                 "customClass": [],
                 "commonStyle": {
-                    "position": "relative",
+                    "overflow": "hidden",
+                    "width": "calc(100% - 20px)",
+                    "height": "557.00px",
+                    "opacity": 1,
+                    "animation-duration": "1s",
                     "margin-top": "10px",
                     "margin-bottom": "10px",
                     "margin-left": "10px",
                     "margin-right": "10px",
-                    "flex-basis": "100%",
-                    "overflow": "hidden",
-                    "animation-duration": "1s",
-                    "width": "calc(100% - 20px)",
-                    "height": "calc",
-                    "flex-shrink": 0
+                    "flex-shrink": 0,
+                    "border-radius": "0px",
+                    "flex-grow": 0,
+                    "flex-basis": "auto"
                 },
                 "props": [
                     "tooltipEffect",
@@ -1077,7 +1075,7 @@
             {
                 "name": "getPageMenuList",
                 "desp": "获取菜单分页数据",
-                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\npage&&(ctx.currentPage=page);\n!page&&(ctx.currentPage=1);\nsize&&(ctx.pageSize=size);\n!size&&(ctx.pageSize=10);\nconst params = {\n  \"pageNum\": ctx.currentPage,\n  \"pageSize\": ctx.pageSize,\n  \"orders\": [\n    {\n      \"key\": \"createTime\",\n      \"order\": \"desc\"\n    }\n  ],\n  \"query\": {\n    \"title\": ctx.menuTitle||'',\n    \"createUserName\":ctx.creator||''\n  },\n    \"ranges\": [\n    {\n      \"from\": ctx.createTime?ctx.createTime[0]:null,\n      \"key\": \"createTime\",\n      \"to\":  ctx.createTime?ctx.createTime[1]+1000*60*60*24-1:null\n    }\n  ]\n};\n\nctx.$axios.post(`${axios.server}/menu/list`,params).then(res=>{\n    if(res.success&&res.status){\n      const tableData = res.obj&&res.obj.records||[];\n      console.log(JSON.stringify(res))\n      ctx.menuTableList  = tableData.map(function(item){\n        return{\n          id:item.id,\n          name:item.name||'',\n          desp:item.desc||'',\n          createTime:ctx.timesTransferToDate(item.createTime),\n          creator:item.createUserName,\n          editor:item.updateUserName,\n          editTime:ctx.timesTransferToDate(item.updateTime),\n          path:item.path,\n          title:item.title||'',\n          icon:item.icon||''\n\n        }\n      });\n      ctx.menuTotalCount = res.obj&&res.obj.totalElements;\n    }\n}).catch(error=>{\n  \n})",
+                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\npage&&(ctx.currentPage=page);\n!page&&(ctx.currentPage=1);\nsize&&(ctx.pageSize=size);\n!size&&(ctx.pageSize=10);\nconst params = {\n  \"pageNum\": ctx.currentPage,\n  \"pageSize\": ctx.pageSize,\n  \"orders\": [\n    {\n      \"key\": \"createTime\",\n      \"order\": \"desc\"\n    }\n  ],\n  \"query\": {\n    \"title\": ctx.menuTitle||'',\n    \"createUserName\":ctx.creator||''\n  },\n    \"ranges\": [\n    {\n      \"from\": ctx.createTime?ctx.createTime[0]:null,\n      \"key\": \"createTime\",\n      \"to\":  ctx.createTime?ctx.createTime[1]+1000*60*60*24-1:null\n    }\n  ]\n};\n\nctx.$axios.post(`${axios.server}/menu/list`,params).then(res=>{\n    if(res.success&&res.status){\n      const tableData = res.obj&&res.obj.records||[];\n      console.log(JSON.stringify(res))\n      ctx.menuTableList  = tableData.map(function(item){\n        return{\n          id:item.id,\n          name:item.name||'',\n          desp:item.desc||'',\n          createTime:ctx.timesTransferToDate(item.createTime),\n          creator:item.createUserName,\n          editor:item.updateUserName,\n          editTime:ctx.timesTransferToDate(item.updateTime),\n          path:item.path,\n          title:item.title||'',\n          icon:item.icon||''\n\n        }\n      });\n      ctx.menuTotalCount = res.obj&&res.obj.total;\n    }\n}).catch(error=>{\n  \n})",
                 "params": [
                     {
                         "name": "page",
