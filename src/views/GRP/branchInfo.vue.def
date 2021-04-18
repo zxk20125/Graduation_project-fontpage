@@ -186,17 +186,14 @@
                 "component": "v2-component-table",
                 "id": 1612854187456,
                 "customClass": [
-                    "v2-component-table-1612854187456",
-                    ""
+                    "v2-component-table-1612854187456"
                 ],
                 "commonStyle": {
                     "align-self": "auto",
                     "height": "816.00px",
                     "margin-left": "0",
                     "width": "calc(100% - 20px)",
-                    "flex-shrink": 0,
-                    "border-radius": "0px",
-                    "opacity": 1
+                    "flex-shrink": 0
                 },
                 "props": [
                     "tooltipEffect",
@@ -474,7 +471,7 @@
             {
                 "name": "openEditBranchPage",
                 "desp": "打开编辑子页面",
-                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\nconsole.log(row.staff_id)\nctx.open({\n    title:'编辑网点信息',\n    path:'/edit/Branch',\n    component:'GRP/editbranchSubPage',\n    type:'SUB',\n    closeOnClickModal:false,\n    params:{id:row.id},\n    hideConfirmBtn:true, \n    hideCancelBtn:true,\n    width:\"650px\",\n    height:\"550px\",\n    closeOnClickModal: true,\n    confirmCallback:(params) => { \n        ctx.$axios.post(`${axios.server}/branchInfo/update`, params).then(res => {\n        //下一步的行为\n            if(res.success){\n                ctx.$notify({\n                    title: '编辑网点信息成功',\n                    type: 'success'\n                });\n               ctx.getStaffInfo(ctx.currentPage);\n                \n            }else{\n                ctx.$notify({\n                    title: res.msg,\n                    type: 'error'\n                });\n               \n            }\n        }).catch(function (error) {\n            console.log(error);\n            ctx.$notify({\n                title: error.msg || '编辑失败',\n                type: 'error'\n            });\n        });\n       \n    },\n    cancelCallback:(e) => {\n        console.log('点击取消')\n    }\n})",
+                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\nconsole.log(row.staff_id)\nctx.open({\n    title:'编辑网点信息',\n    path:'/edit/Branch',\n    component:'GRP/editBranchSubPage',\n    type:'SUB',\n    closeOnClickModal:false,\n    params:{id:row.id},\n    hideConfirmBtn:true, \n    hideCancelBtn:true,\n    width:\"650px\",\n    height:\"550px\",\n    closeOnClickModal: true,\n    confirmCallback:(params) => { \n        ctx.$axios.post(`${axios.server}/branchInfo/update`, params).then(res => {\n        //下一步的行为\n            if(res.success){\n                ctx.$notify({\n                    title: '编辑网点信息成功',\n                    type: 'success'\n                });\n               ctx.getStaffInfo(ctx.currentPage);\n                \n            }else{\n                ctx.$notify({\n                    title: res.msg,\n                    type: 'error'\n                });\n               \n            }\n        }).catch(function (error) {\n            console.log(error);\n            ctx.$notify({\n                title: error.msg || '编辑失败',\n                type: 'error'\n            });\n        });\n       \n    },\n    cancelCallback:(e) => {\n        console.log('点击取消')\n    }\n})",
                 "params": [
                     {
                         "name": "index",

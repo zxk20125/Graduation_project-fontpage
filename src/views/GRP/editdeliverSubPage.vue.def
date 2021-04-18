@@ -22,29 +22,27 @@
                                     "width": "300px"
                                 },
                                 "props": [
-                                    "theme",
+                                    "value",
                                     "disabled",
                                     "label",
                                     "placeholder",
+                                    "prepend",
+                                    "append",
                                     "titleMode",
                                     "labelWitdh",
                                     "inputType",
                                     "rows",
-                                    "showWordLimit",
-                                    "clearable",
-                                    "isRequired",
-                                    "autoComplete",
-                                    "if",
-                                    "value.sync",
-                                    "value",
-                                    "prepend",
-                                    "append",
                                     "maxlength",
                                     "minlength",
                                     "prefixIcon",
                                     "suffixIcon",
+                                    "showWordLimit",
+                                    "clearable",
+                                    "isRequired",
+                                    "autoComplete",
                                     "suggestion",
                                     "visible",
+                                    "if",
                                     "customClass"
                                 ],
                                 "theme": {
@@ -62,8 +60,8 @@
                                 "isRequired": false,
                                 "autoComplete": false,
                                 "if": true,
-                                "$ref": "v2FormInput_1",
                                 "value.sync": "${name}",
+                                "$ref": "v2FormInput_1",
                                 "style": {
                                     "label": {}
                                 },
@@ -98,29 +96,27 @@
                                     "width": "300px"
                                 },
                                 "props": [
-                                    "theme",
+                                    "value",
                                     "disabled",
                                     "label",
                                     "placeholder",
+                                    "prepend",
+                                    "append",
                                     "titleMode",
                                     "labelWitdh",
                                     "inputType",
                                     "rows",
-                                    "showWordLimit",
-                                    "clearable",
-                                    "isRequired",
-                                    "autoComplete",
-                                    "if",
-                                    "value.sync",
-                                    "value",
-                                    "prepend",
-                                    "append",
                                     "maxlength",
                                     "minlength",
                                     "prefixIcon",
                                     "suffixIcon",
+                                    "showWordLimit",
+                                    "clearable",
+                                    "isRequired",
+                                    "autoComplete",
                                     "suggestion",
                                     "visible",
+                                    "if",
                                     "customClass"
                                 ],
                                 "theme": {
@@ -138,8 +134,8 @@
                                 "isRequired": false,
                                 "autoComplete": false,
                                 "if": true,
-                                "$ref": "v2FormInput_2",
                                 "value.sync": "${age}",
+                                "$ref": "v2FormInput_2",
                                 "style": {
                                     "label": {}
                                 },
@@ -174,29 +170,27 @@
                                     "width": "300px"
                                 },
                                 "props": [
-                                    "theme",
+                                    "value",
                                     "disabled",
                                     "label",
                                     "placeholder",
+                                    "prepend",
+                                    "append",
                                     "titleMode",
                                     "labelWitdh",
                                     "inputType",
                                     "rows",
-                                    "showWordLimit",
-                                    "clearable",
-                                    "isRequired",
-                                    "autoComplete",
-                                    "if",
-                                    "value.sync",
-                                    "value",
-                                    "prepend",
-                                    "append",
                                     "maxlength",
                                     "minlength",
                                     "prefixIcon",
                                     "suffixIcon",
+                                    "showWordLimit",
+                                    "clearable",
+                                    "isRequired",
+                                    "autoComplete",
                                     "suggestion",
                                     "visible",
+                                    "if",
                                     "customClass"
                                 ],
                                 "theme": {
@@ -214,8 +208,8 @@
                                 "isRequired": false,
                                 "autoComplete": false,
                                 "if": true,
-                                "$ref": "v2FormInput_4",
                                 "value.sync": "${phone}",
+                                "$ref": "v2FormInput_4",
                                 "style": {
                                     "label": {}
                                 },
@@ -242,18 +236,21 @@
                                 "component": "v2-form-select",
                                 "id": 1614765164838,
                                 "customClass": [
-                                    "v2-form-select-1614765164838"
+                                    "v2-form-select-1614765164838",
+                                    ""
                                 ],
                                 "commonStyle": {
                                     "align-self": "auto",
                                     "margin-bottom": "10px",
-                                    "width": "180px"
+                                    "width": "195.00px",
+                                    "border-radius": "0px",
+                                    "opacity": 1
                                 },
                                 "props": [
-                                    "optionConfig",
-                                    "theme",
+                                    "value",
                                     "disabled",
                                     "dataType",
+                                    "optionConfig",
                                     "options",
                                     "label",
                                     "placeholder",
@@ -263,10 +260,8 @@
                                     "prefix",
                                     "filterable",
                                     "isRequired",
-                                    "if",
-                                    "value.sync",
-                                    "value",
                                     "visible",
+                                    "if",
                                     "customClass"
                                 ],
                                 "optionConfig": "${branchList}",
@@ -285,8 +280,8 @@
                                 "filterable": true,
                                 "isRequired": false,
                                 "if": true,
-                                "$ref": "v2FormSelect_1",
                                 "value.sync": "${branch}",
+                                "$ref": "v2FormSelect_1",
                                 "style": {
                                     "label": {}
                                 },
@@ -313,18 +308,19 @@
                                 "component": "v2-form-select",
                                 "id": 1614765166810,
                                 "customClass": [
-                                    "v2-form-select-1614765166810"
+                                    "v2-form-select-1614765166810",
+                                    ""
                                 ],
                                 "commonStyle": {
                                     "align-self": "auto",
                                     "margin-bottom": "10px",
-                                    "width": "180px"
+                                    "width": "195.00px"
                                 },
                                 "props": [
-                                    "optionConfig",
-                                    "theme",
+                                    "value",
                                     "disabled",
                                     "dataType",
+                                    "optionConfig",
                                     "options",
                                     "label",
                                     "placeholder",
@@ -334,10 +330,8 @@
                                     "prefix",
                                     "filterable",
                                     "isRequired",
-                                    "if",
-                                    "value.sync",
-                                    "value",
                                     "visible",
+                                    "if",
                                     "customClass"
                                 ],
                                 "optionConfig": "${sexList}",
@@ -356,8 +350,8 @@
                                 "filterable": true,
                                 "isRequired": false,
                                 "if": true,
-                                "$ref": "v2FormSelect_2",
                                 "value.sync": "${sex}",
+                                "$ref": "v2FormSelect_2",
                                 "style": {
                                     "label": {}
                                 },
@@ -396,8 +390,8 @@
                             "flex-shrink": "0"
                         },
                         "props": [
-                            "if",
                             "visible",
+                            "if",
                             "element-loading-text",
                             "element-loading-spinner",
                             "element-loading-background",
@@ -448,8 +442,8 @@
                     "justify-content": "center"
                 },
                 "props": [
-                    "if",
                     "visible",
+                    "if",
                     "element-loading-text",
                     "element-loading-spinner",
                     "element-loading-background",
@@ -495,15 +489,14 @@
                             "flex-shrink": 0
                         },
                         "props": [
-                            "theme",
                             "disabled",
                             "loading",
                             "btnName",
-                            "shape",
-                            "if",
                             "leftIcon",
                             "rightIcon",
+                            "shape",
                             "visible",
+                            "if",
                             "customClass"
                         ],
                         "theme": {
@@ -552,15 +545,14 @@
                             "margin-right": "10px"
                         },
                         "props": [
-                            "theme",
                             "disabled",
                             "loading",
                             "btnName",
-                            "shape",
-                            "if",
                             "leftIcon",
                             "rightIcon",
+                            "shape",
                             "visible",
+                            "if",
                             "customClass"
                         ],
                         "theme": {
@@ -621,8 +613,8 @@
                     "flex-shrink": "0"
                 },
                 "props": [
-                    "if",
                     "visible",
+                    "if",
                     "element-loading-text",
                     "element-loading-spinner",
                     "element-loading-background",

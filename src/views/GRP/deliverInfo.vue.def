@@ -20,29 +20,27 @@
                             "flex-shrink": 0
                         },
                         "props": [
-                            "theme",
+                            "value",
                             "disabled",
                             "label",
                             "placeholder",
+                            "prepend",
+                            "append",
                             "titleMode",
                             "labelWitdh",
                             "inputType",
                             "rows",
-                            "showWordLimit",
-                            "clearable",
-                            "isRequired",
-                            "autoComplete",
-                            "if",
-                            "value.sync",
-                            "value",
-                            "prepend",
-                            "append",
                             "maxlength",
                             "minlength",
                             "prefixIcon",
                             "suffixIcon",
+                            "showWordLimit",
+                            "clearable",
+                            "isRequired",
+                            "autoComplete",
                             "suggestion",
                             "visible",
+                            "if",
                             "customClass"
                         ],
                         "theme": {
@@ -60,8 +58,8 @@
                         "isRequired": false,
                         "autoComplete": false,
                         "if": true,
-                        "$ref": "v2FormInput_4",
                         "value.sync": "${staff_name}",
+                        "$ref": "v2FormInput_4",
                         "style": {
                             "label": {}
                         },
@@ -96,15 +94,14 @@
                             "margin-left": "10px"
                         },
                         "props": [
-                            "theme",
                             "disabled",
                             "loading",
                             "btnName",
+                            "leftIcon",
                             "rightIcon",
                             "shape",
-                            "if",
-                            "leftIcon",
                             "visible",
+                            "if",
                             "customClass"
                         ],
                         "theme": {
@@ -154,15 +151,14 @@
                             "flex-shrink": 0
                         },
                         "props": [
-                            "theme",
                             "disabled",
                             "loading",
                             "btnName",
+                            "leftIcon",
                             "rightIcon",
                             "shape",
-                            "if",
-                            "leftIcon",
                             "visible",
+                            "if",
                             "customClass"
                         ],
                         "theme": {
@@ -202,8 +198,7 @@
                 "component": "v2Container",
                 "id": 1612854178100,
                 "customClass": [
-                    "v2Container-1612854178100",
-                    ""
+                    "v2Container-1612854178100"
                 ],
                 "commonStyle": {
                     "box-sizing": "border-box",
@@ -214,8 +209,8 @@
                     "height": "auto"
                 },
                 "props": [
-                    "if",
                     "visible",
+                    "if",
                     "element-loading-text",
                     "element-loading-spinner",
                     "element-loading-background",
@@ -259,18 +254,17 @@
                     "height": "816.00px",
                     "margin-left": "0",
                     "width": "calc(100% - 20px)",
-                    "flex-shrink": 0
+                    "flex-shrink": 0,
+                    "border-radius": "0px",
+                    "opacity": 1
                 },
                 "props": [
-                    "setPageCallback",
-                    "toolBar",
-                    "tableData",
-                    "pageSize",
-                    "currentPage",
-                    "totalCount",
-                    "theme",
                     "tooltipEffect",
                     "columns",
+                    "tableData",
+                    "selection",
+                    "radioSelect",
+                    "value",
                     "selectionLocation",
                     "tHeight",
                     "tMaxHeight",
@@ -278,21 +272,23 @@
                     "loading",
                     "indexLocation",
                     "openPage",
+                    "pagerCount",
+                    "pageSizes",
+                    "pageSize",
                     "openSetPageCallback",
+                    "setPageCallback",
+                    "currentPage",
+                    "totalCount",
+                    "toolBar",
                     "toolTitle",
                     "toolHeaderAlign",
                     "toolLocation",
                     "toolWidth",
                     "toolBtns",
                     "expand",
-                    "if",
-                    "selection",
-                    "radioSelect",
-                    "value",
-                    "pagerCount",
-                    "pageSizes",
                     "expandMap",
                     "visible",
+                    "if",
                     "customClass"
                 ],
                 "setPageCallback": "getStaffInfo",
@@ -515,9 +511,8 @@
         "component": "v2Container",
         "id": "root",
         "commonStyle": {
-            "flex-shrink": 0,
-            "box-sizing": "border-box",
-            "flex-grow": 0
+            "flex-shrink": "0",
+            "box-sizing": "border-box"
         },
         "customClass": [],
         "$ref": "v2Container_root",
@@ -552,7 +547,7 @@
             {
                 "name": "getStaffInfo",
                 "desp": "获取客户地址信息",
-                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\npage&&(ctx.currentPage=page);\n!page&&(ctx.currentPage=1);\nsize&&(ctx.pageSize=size);\n!size&&(ctx.pageSize=10);\nconst params = {\n  \"pageNum\": ctx.currentPage,\n  \"pageSize\": ctx.pageSize,\n  \"orders\": [],\n  \"query\": {\n    \"staffName\": ctx.staff_name\n  },\n  \"ranges\": []\n};\n\nctx.$axios.post(`${axios.server}/staffInfo/list`,params).then(res=>{\n    if(res.success&&res.status){\n      const tableData = res.obj && res.obj.records||[];\n      \n      ctx.staffList  = tableData.map(function(item){\n        return{\n          staff_name:item.staffName,\n          staff_age:item.staffAge,\n          staff_sex:item.staffSex,\n          staff_id:item.staffId,\n          staff_phone:item.staffPhone,\n          hiredate:item.hiredate,\n          dot_id:item.dotId\n        }\n      });\n      ctx.staffTotalCount = res.obj&&res.obj.total;\n    }\n}).catch(error=>{\n  \n})",
+                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\npage&&(ctx.currentPage=page);\n!page&&(ctx.currentPage=1);\nsize&&(ctx.pageSize=size);\n!size&&(ctx.pageSize=10);\nconst params = {\n  \"pageNum\": ctx.currentPage,\n  \"pageSize\": ctx.pageSize,\n  \"orders\": [],\n  \"query\": {\n    \"staffName\": ctx.staff_name\n  },\n  \"ranges\": []\n};\n\nctx.$axios.post(`${axios.server}/staffInfo/list`,params).then(res=>{\n    if(res.success&&res.status){\n      const tableData = res.obj && res.obj.records||[];\n      \n      ctx.staffList  = tableData.map(function(item){\n        return{\n          staff_name:item.staffName,\n          staff_age:item.staffAge,\n          staff_sex:item.staffSex,\n          staff_id:item.staffId,\n          staff_phone:item.staffPhone,\n          hiredate:item.hiredate,\n          dot_id:ctx.getDotName(item.dotId)\n        }\n      });\n      ctx.staffTotalCount = res.obj&&res.obj.total;\n    }\n}).catch(error=>{\n  \n})",
                 "params": [
                     {
                         "name": "page",
@@ -643,6 +638,19 @@
                 "isEvent": true,
                 "custom": true,
                 "id": 1614091887290
+            },
+            {
+                "name": "getDotName",
+                "desp": "获取网点名",
+                "code": "// 函数内直接用 ctx 代替 this 访问 Vue 页面的数据。\n/** @type {V2ViewType} */\nconst ctx = this;\nswitch(dotid){\n    case 1 : return \"从化总部\";\n    case 2 : return \"海珠分部\";\n    case 4 : return \"荔湾分部\";\n    case 5 : return \"天河分部\";\n    case 6 : return \"白云分部\";\n    case 7 : return \"越秀分部\";\n    case 8 : return \"花都分部\";\n    case 9 : return \"增城分部\";\n    case 10:return \"番禺分部\";\n\n}",
+                "params": [
+                    {
+                        "name": "dotid",
+                        "desp": "新参数"
+                    }
+                ],
+                "isEvent": false,
+                "custom": true
             }
         ],
         "watch": {},

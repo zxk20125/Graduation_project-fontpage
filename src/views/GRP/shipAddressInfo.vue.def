@@ -16,7 +16,11 @@
                         ],
                         "commonStyle": {
                             "align-self": "auto",
-                            "margin-right": "20px"
+                            "margin-right": "20px",
+                            "border-radius": "0px",
+                            "flex-grow": 0,
+                            "flex-shrink": 0,
+                            "opacity": 1
                         },
                         "props": [
                             "disabled",
@@ -39,20 +43,18 @@
                         "rightIcon": "el-icon-delete",
                         "shape": "def",
                         "if": true,
+                        "events": {
+                            "_op_componentBtn_btn": {
+                                "click": {
+                                    "v2_component_btn_1614938619438": {}
+                                }
+                            }
+                        },
                         "$ref": "v2ComponentBtn_4",
                         "visible": true,
                         "__capacity": "1",
                         "href": "v2-component-btn",
                         "name": "按钮",
-                        "events": {
-                            "_op_componentBtn_btn": {
-                                "click": {
-                                    "v2_component_btn_1614938619438": {
-                                        "params": ""
-                                    }
-                                }
-                            }
-                        },
                         "version": "16.0.0",
                         "pid": 1614602787546,
                         "sizeLocked": {
@@ -79,9 +81,9 @@
                                 "commonStyle": {
                                     "align-self": "auto",
                                     "margin-right": "20px",
+                                    "flex-shrink": 0,
                                     "border-radius": "0px",
                                     "flex-grow": 0,
-                                    "flex-shrink": 0,
                                     "opacity": 1
                                 },
                                 "props": [
@@ -105,20 +107,18 @@
                                 "rightIcon": "el-icon-plus",
                                 "shape": "def",
                                 "if": true,
+                                "events": {
+                                    "_op_componentBtn_btn": {
+                                        "click": {
+                                            "v2_component_btn_1614938324743": {}
+                                        }
+                                    }
+                                },
                                 "$ref": "v2ComponentBtn_3",
                                 "visible": true,
                                 "__capacity": "1",
                                 "href": "v2-component-btn",
                                 "name": "按钮",
-                                "events": {
-                                    "_op_componentBtn_btn": {
-                                        "click": {
-                                            "v2_component_btn_1614938324743": {
-                                                "params": ""
-                                            }
-                                        }
-                                    }
-                                },
                                 "version": "16.0.0",
                                 "pid": 1614602839167,
                                 "sizeLocked": {
@@ -223,7 +223,8 @@
                 "component": "v2-component-table",
                 "id": 1612854187456,
                 "customClass": [
-                    "v2-component-table-1612854187456"
+                    "v2-component-table-1612854187456",
+                    ""
                 ],
                 "commonStyle": {
                     "align-self": "auto",
@@ -265,6 +266,7 @@
                     "if",
                     "customClass"
                 ],
+                "setPageCallback": "getshipAddressInfo",
                 "toolBar": true,
                 "tableData": "${shipAddressList}",
                 "pageSize": "${pageSize}",
@@ -376,7 +378,6 @@
                 "indexLocation": "left",
                 "openPage": true,
                 "openSetPageCallback": true,
-                "setPageCallback": "getshipAddressInfo",
                 "toolTitle": "操作",
                 "toolHeaderAlign": "left",
                 "toolLocation": "right",
@@ -411,7 +412,8 @@
                     "",
                     "animated"
                 ],
-                "value": "${selectData}"
+                "value": "${selectData}",
+                "currentPage": "${currentPage}"
             }
         ],
         "component": "v2Container",
@@ -470,7 +472,7 @@
             {
                 "name": "openEditShipAddressPage",
                 "desp": "打开编辑子页面",
-                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\nconsole.log(row.staff_id)\nctx.open({\n    title:'编辑配送员信息',\n    path:'/edit/shipAddress',\n    component:'GRP/editshipAddressSubPage',\n    type:'SUB',\n    closeOnClickModal:false,\n    params:{id:row.id},\n    hideConfirmBtn:true, \n    hideCancelBtn:true,\n    width:\"650px\",\n    height:\"550px\",\n    closeOnClickModal: true,\n    confirmCallback:(params) => { \n        ctx.$axios.post(`${axios.server}/shipAddressInfo/update`, params).then(res => {\n        //下一步的行为\n            if(res.success){\n                ctx.$notify({\n                    title: '编辑定价信息成功',\n                    type: 'success'\n                });\n               ctx.getStaffInfo(ctx.currentPage);\n                \n            }else{\n                ctx.$notify({\n                    title: res.msg,\n                    type: 'error'\n                });\n               \n            }\n        }).catch(function (error) {\n            console.log(error);\n            ctx.$notify({\n                title: error.msg || '编辑失败',\n                type: 'error'\n            });\n        });\n       \n    },\n    cancelCallback:(e) => {\n        console.log('点击取消')\n    }\n})",
+                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\nconsole.log(row.staff_id)\nctx.open({\n    title:'编辑定价信息',\n    path:'/edit/shipAddress',\n    component:'GRP/editShipAddressSubPage',\n    type:'SUB',\n    closeOnClickModal:false,\n    params:{id:row.id},\n    hideConfirmBtn:true, \n    hideCancelBtn:true,\n    width:\"650px\",\n    height:\"550px\",\n    closeOnClickModal: true,\n    confirmCallback:(params) => { \n        ctx.$axios.post(`${axios.server}/shipAddressInfo/update`, params).then(res => {\n        //下一步的行为\n            if(res.success){\n                ctx.$notify({\n                    title: '编辑定价信息',\n                    type: 'success'\n                });\n               ctx.getStaffInfo(ctx.currentPage);\n                \n            }else{\n                ctx.$notify({\n                    title: res.msg,\n                    type: 'error'\n                });\n               \n            }\n        }).catch(function (error) {\n            console.log(error);\n            ctx.$notify({\n                title: error.msg || '编辑失败',\n                type: 'error'\n            });\n        });\n       \n    },\n    cancelCallback:(e) => {\n        console.log('点击取消')\n    }\n})",
                 "params": [
                     {
                         "name": "index",
@@ -487,7 +489,7 @@
             {
                 "name": "openAddShipAddressPage",
                 "desp": "打开新增页面",
-                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\n\nctx.open({\n    title:'新增权限',\n    path:'/add/resSort',\n    component:'GRP/editshipAddressSubPage',\n    type:'SUB',\n    closeOnClickModal:false,\n    hideConfirmBtn:true, \n    hideCancelBtn:true, \n    confirmCallback:(params) => { \n       \n        ctx.$axios.post(`${axios.server}/shipAddressInfo/add`, params).then(res => {\n            //下一步的行为\n            if(res.success){\n                ctx.$notify({\n                    title: '新增成功',\n                    type: 'success'\n                });\n                ctx.getresSortInfo(ctx.currentPage);\n            }else{\n                ctx.$notify({\n                    title: res.msg,\n                    type: 'error'\n                });\n\n            }\n        }).catch(function (error) {\n            console.log(error);\n            ctx.$notify({\n                    title: error.msg || '新增失败',\n                    type: 'error'\n                });\n        });   \n  \n    },\n    cancelCallback:(e) => {\n        console.log('点击取消')\n    }\n})",
+                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\n\nctx.open({\n    title:'新增定价',\n    path:'/add/resSort',\n    component:'GRP/editShipAddressSubPage',\n    type:'SUB',\n    closeOnClickModal:false,\n    hideConfirmBtn:true, \n    hideCancelBtn:true, \n    confirmCallback:(params) => { \n        ctx.$axios.post(`${axios.server}/shipAddressInfo/add`, params).then(res => {\n            //下一步的行为\n            if(res.success){\n                ctx.$notify({\n                    title: '新增成功',\n                    type: 'success'\n                });\n                ctx.getshipAddressInfo(ctx.currentPage);\n            }else{\n                ctx.$notify({\n                    title: res.msg,\n                    type: 'error'\n                });\n\n            }\n        }).catch(function (error) {\n            console.log(error);\n            ctx.$notify({\n                    title: error.msg || '新增失败',\n                    type: 'error'\n                });\n        });   \n  \n    },\n    cancelCallback:(e) => {\n        console.log('点击取消')\n    }\n})",
                 "params": [],
                 "isEvent": false,
                 "custom": true
@@ -495,32 +497,55 @@
             {
                 "name": "v2_component_btn_1614938324743",
                 "desp": "新增",
-                "code": "//*====AGREE-ACTION-START====*//\n//*+AGREE-CONFIG-*//\n//{\n//\t\"name\": \"custom\",\n//\t\"params\": {}\n//}\n//*-AGREE-CONFIG+*//\n//*++++AGREE-CODE-START++++*//\n/**\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\n**/\n\n//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\nctx.openAddShipAddressPage()\n//*++++AGREE-CODE-END++++*//\n//*====AGREE-ACTION-END====*//\n\n",
-                "params": [],
+                "code": "//*====AGREE-ACTION-START====*//\n//*+AGREE-CONFIG-*//\n//{\n//\t\"name\": \"custom\",\n//\t\"params\": {}\n//}\n//*-AGREE-CONFIG+*//\n//*++++AGREE-CODE-START++++*//\n/**\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\n**/\n\n//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\nctx.openAddShipAddressPage()\n//*++++AGREE-CODE-END++++*//\n//*====AGREE-ACTION-END====*//",
+                "params": [
+                    {
+                        "name": "$event",
+                        "desp": "$event"
+                    },
+                    {
+                        "name": "vueIns",
+                        "desp": "vueIns"
+                    }
+                ],
                 "isEvent": true,
                 "custom": true,
-                "id": 1614602836812,
-                "isExposed": false,
-                "emitName": ""
+                "id": 1614938324743
             },
             {
                 "name": "deleteMethod",
                 "desp": "删除方法",
-                "code": "// 函数内直接用 ctx 代替 this 访问 Vue 页面的数据。\n/** @type {V2ViewType} */\nconst ctx = this;",
-                "params": [],
+                "code": "// 函数内直接用 ctx 代替 this 访问 Vue 页面的数据。\n/** @type {V2ViewType} */\nconst ctx = this;\nconsole.log(ctx.selectItem)\nlet list= ctx.selectData.map(function(item){\n      return item.id\n})\nconsole.log()\nctx.$axios.post(`${axios.server}/shipAddressInfo/delete`,JSON.stringify(list),{\n  headers: {\n        'Content-type':'application/json'\n        }\n}).then(res=>{\n    if(res.success){\n            ctx.$notify({\n                type: 'success',\n                title: '删除成功'\n            });\n            ctx.getshipAddressInfo(ctx.currentPage);\n        }else{\n            this.$notify({\n                title: res.msg,\n                type: 'error'\n            });\n        }\n}).catch(error=>{\n  \n})",
+                "params": [
+                    {
+                        "name": "index",
+                        "desp": "新参数"
+                    },
+                    {
+                        "name": "row",
+                        "desp": "新参数"
+                    }
+                ],
                 "isEvent": false,
                 "custom": true
             },
             {
                 "name": "v2_component_btn_1614938619438",
                 "desp": "v2_component_btn_1614938619438",
-                "code": "//*====AGREE-ACTION-START====*//\n//*+AGREE-CONFIG-*//\n//{\n//\t\"name\": \"custom\",\n//\t\"params\": {}\n//}\n//*-AGREE-CONFIG+*//\n//*++++AGREE-CODE-START++++*//\n/**\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\n**/\n\n//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\nctx.deleteMethod()\n//*++++AGREE-CODE-END++++*//\n//*====AGREE-ACTION-END====*//\n\n",
-                "params": [],
+                "code": "//*====AGREE-ACTION-START====*//\n//*+AGREE-CONFIG-*//\n//{\n//\t\"name\": \"custom\",\n//\t\"params\": {}\n//}\n//*-AGREE-CONFIG+*//\n//*++++AGREE-CODE-START++++*//\n/**\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\n**/\n\n//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\nctx.deleteMethod()\n//*++++AGREE-CODE-END++++*//\n//*====AGREE-ACTION-END====*//",
+                "params": [
+                    {
+                        "name": "$event",
+                        "desp": "$event"
+                    },
+                    {
+                        "name": "vueIns",
+                        "desp": "vueIns"
+                    }
+                ],
                 "isEvent": true,
                 "custom": true,
-                "id": 1614602925529,
-                "isExposed": false,
-                "emitName": ""
+                "id": 1614938619438
             }
         ],
         "watch": {},
@@ -612,6 +637,18 @@
                 "showSet": false,
                 "sync": false,
                 "isExposed": true
+            },
+            {
+                "desp": "当前页面",
+                "name": "currentPage",
+                "code": "1",
+                "source": "pageData",
+                "belongTo": "data",
+                "type": "data",
+                "showSet": false,
+                "sync": false,
+                "syncComputed": "computed_newPageData",
+                "isExposed": true
             }
         ],
         "mapping": {
@@ -650,6 +687,12 @@
                     "id": 1612854187456,
                     "modelValue": "totalCount",
                     "dataValue": "addressTotalCount",
+                    "type": ""
+                },
+                {
+                    "id": 1612854187456,
+                    "modelValue": "currentPage",
+                    "dataValue": "currentPage",
                     "type": ""
                 }
             ],

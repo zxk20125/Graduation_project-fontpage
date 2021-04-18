@@ -1,14 +1,14 @@
 <template>
     <v2container :wid="`root`" style="flex-shrink:0;box-sizing:border-box;" class="V2Container">
         <div :wid="`1614602787546`" class="v2Container-1614602787546 V2Container" style="box-sizing:border-box;align-self:stretch;display:flex;flex-direction:row;justify-content:flex-end;align-items:flex-start;height:auto;" ref="v2Container_2">
-            <v2-component-btn :wid="`1614602925529`" class="v2-component-btn-1614602925529 V2Widget" :style="{'align-self':'auto','margin-right':'20px'}" :theme="{'btnType':'danger','size':''}" :disabled="false" :loading="false" :btn-name="`删除`" :right-icon="`el-icon-delete`" :shape="`def`" :if="true" @_op_component-btn_btn:click="v2_component_btn_1614938619438" ref="v2ComponentBtn_4">
+            <v2-component-btn :wid="`1614602925529`" class="v2-component-btn-1614602925529 V2Widget" :style="{'align-self':'auto','margin-right':'20px','flex-shrink':0}" :theme="{'btnType':'danger','size':''}" :disabled="false" :loading="false" :btn-name="`删除`" :right-icon="`el-icon-delete`" :shape="`def`" :if="true" @_op_component-btn_btn:click="v2_component_btn_1614938619438" ref="v2ComponentBtn_4">
             </v2-component-btn>
             <div :wid="`1614602839167`" class="v2Container-1614602839167 V2Container" style="box-sizing:border-box;align-self:stretch;display:flex;flex-direction:column;align-items:flex-start;height:auto;" :if="true" ref="v2Container_1">
                 <v2-component-btn :wid="`1614602836812`" class="v2-component-btn-1613475640042 V2Widget" :style="{'align-self':'auto','margin-right':'20px','flex-shrink':0}" :theme="{'btnType':'primary','size':''}" :disabled="false" :loading="false" :btn-name="`新增`" :right-icon="`el-icon-plus`" :shape="`def`" :if="true" @_op_component-btn_btn:click="v2_component_btn_1614938324743" ref="v2ComponentBtn_3">
                 </v2-component-btn>
             </div>
         </div>
-        <v2-component-table :wid="`1612854187456`" class="v2-component-table-1612854187456 V2Widget" :style="{'align-self':'auto','height':'816.00px','margin-left':'0','width':'calc(100% - 20px)','flex-shrink':0}" :setPageCallback="setPageCallback" :toolBar="true" :tableData="shipAddressList" :pageSize="pageSize" :totalCount="addressTotalCount" :theme="{'tableType':'border','size':''}" :tooltip-effect="`dark`" :columns="[{'active':true,'type':'text','prop':'start_address','label':'起始地址','handleLink':true,'handleLinkCB':'handleLinkCallback','linkTarget':'_blank','openTooltip':false,'handleTooltip':true,'tooltipContent':'提示','tooltipContentCallback':'tooltipContentCallback','useMinWidth':true,'headerAlign':'left','align':'left','sortable':false,'openFilter':false,'combi':[],'tagMap':[],'textMap':[],'iconMap':[],'filterMap':[]},{'active':true,'type':'text','prop':'end_address','label':'终点地址','handleLink':true,'handleLinkCB':'handleLinkCallback','linkTarget':'_blank','openTooltip':false,'handleTooltip':true,'tooltipContent':'提示','tooltipContentCallback':'tooltipContentCallback','useMinWidth':true,'headerAlign':'left','align':'left','sortable':false,'openFilter':false,'combi':[],'tagMap':[],'textMap':[],'iconMap':[],'filterMap':[]},{'active':true,'type':'text','prop':'ship_address_money','label':'定价','handleLink':true,'handleLinkCB':'handleLinkCallback','linkTarget':'_blank','openTooltip':false,'handleTooltip':true,'tooltipContent':'提示','tooltipContentCallback':'tooltipContentCallback','useMinWidth':true,'headerAlign':'left','align':'left','sortable':false,'openFilter':false,'combi':[],'tagMap':[],'textMap':[],'iconMap':[],'filterMap':[]},{'active':true,'type':'text','prop':'id','handleLink':true,'handleLinkCB':'handleLinkCallback','linkTarget':'_blank','openTooltip':false,'handleTooltip':true,'tooltipContent':'提示','tooltipContentCallback':'tooltipContentCallback','useMinWidth':true,'headerAlign':'left','align':'left','sortable':false,'openFilter':false,'combi':[],'tagMap':[],'textMap':[],'iconMap':[],'filterMap':[]}]" :table-data="shipAddressList" :selection="`multi`" :selection-location="`left`" :t-height="`100%`" :t-max-height="`100%`" :open-index="false" :loading="false" :index-location="`left`" :open-page="true" :page-size="pageSize" :open-set-page-callback="true" :set-page-callback="`getshipAddressInfo`" :total-count="addressTotalCount" :tool-bar="true" :tool-title="`操作`" :tool-header-align="`left`" :tool-location="`right`" :tool-width="100" :tool-btns="[{'active':true,'btnName':'编辑','type':'primary','handler':'openEditShipAddressPage','rowName':' ','toolIcon':' ','rowValue':' '}]" :expand="false" :if="true" ref="v2ComponentTable_1" :value.sync="selectData">
+        <v2-component-table :wid="`1612854187456`" class="v2-component-table-1612854187456 V2Widget" :style="{'align-self':'auto','height':'816.00px','margin-left':'0','width':'calc(100% - 20px)','flex-shrink':0}" :setPageCallback="setPageCallback" :toolBar="true" :tableData="shipAddressList" :pageSize="pageSize" :totalCount="addressTotalCount" :currentPage="currentPage" :theme="{'tableType':'border','size':''}" :tooltip-effect="`dark`" :columns="[{'active':true,'type':'text','prop':'start_address','label':'起始地址','handleLink':true,'handleLinkCB':'handleLinkCallback','linkTarget':'_blank','openTooltip':false,'handleTooltip':true,'tooltipContent':'提示','tooltipContentCallback':'tooltipContentCallback','useMinWidth':true,'headerAlign':'left','align':'left','sortable':false,'openFilter':false,'combi':[],'tagMap':[],'textMap':[],'iconMap':[],'filterMap':[]},{'active':true,'type':'text','prop':'end_address','label':'终点地址','handleLink':true,'handleLinkCB':'handleLinkCallback','linkTarget':'_blank','openTooltip':false,'handleTooltip':true,'tooltipContent':'提示','tooltipContentCallback':'tooltipContentCallback','useMinWidth':true,'headerAlign':'left','align':'left','sortable':false,'openFilter':false,'combi':[],'tagMap':[],'textMap':[],'iconMap':[],'filterMap':[]},{'active':true,'type':'text','prop':'ship_address_money','label':'定价','handleLink':true,'handleLinkCB':'handleLinkCallback','linkTarget':'_blank','openTooltip':false,'handleTooltip':true,'tooltipContent':'提示','tooltipContentCallback':'tooltipContentCallback','useMinWidth':true,'headerAlign':'left','align':'left','sortable':false,'openFilter':false,'combi':[],'tagMap':[],'textMap':[],'iconMap':[],'filterMap':[]},{'active':true,'type':'text','prop':'id','handleLink':true,'handleLinkCB':'handleLinkCallback','linkTarget':'_blank','openTooltip':false,'handleTooltip':true,'tooltipContent':'提示','tooltipContentCallback':'tooltipContentCallback','useMinWidth':true,'headerAlign':'left','align':'left','sortable':false,'openFilter':false,'combi':[],'tagMap':[],'textMap':[],'iconMap':[],'filterMap':[]}]" :table-data="shipAddressList" :selection="`multi`" :selection-location="`left`" :t-height="`100%`" :t-max-height="`100%`" :open-index="false" :loading="false" :index-location="`left`" :open-page="true" :page-size="pageSize" :open-set-page-callback="true" :set-page-callback="`getshipAddressInfo`" :current-page="currentPage" :total-count="addressTotalCount" :tool-bar="true" :tool-title="`操作`" :tool-header-align="`left`" :tool-location="`right`" :tool-width="100" :tool-btns="[{'active':true,'btnName':'编辑','type':'primary','handler':'openEditShipAddressPage','rowName':' ','toolIcon':' ','rowValue':' '}]" :expand="false" :if="true" ref="v2ComponentTable_1" :value.sync="selectData">
         </v2-component-table>
     </v2container>
 </template>
@@ -36,7 +36,7 @@
 
                         ]
                     },
-                    'mapping': {"1612854187456":[{"id":1612854187456,"modelValue":"setPageCallback","dataValue":"setPageCallback","type":""},{"id":1612854187456,"modelValue":"toolBar","dataValue":"true","type":""},{"id":1612854187456,"modelValue":"tableData","dataValue":"shipAddressList","type":""},{"id":1612854187456,"modelValue":"value","dataValue":"selectData","type":""},{"id":1612854187456,"modelValue":"pageSize","dataValue":"pageSize","type":""},{"id":1612854187456,"modelValue":"totalCount","dataValue":"addressTotalCount","type":""}],"1612854599723":[{"id":1612854599723,"modelValue":"value","dataValue":"staff_name","type":""}]}
+                    'mapping': {"1612854187456":[{"id":1612854187456,"modelValue":"setPageCallback","dataValue":"setPageCallback","type":""},{"id":1612854187456,"modelValue":"toolBar","dataValue":"true","type":""},{"id":1612854187456,"modelValue":"tableData","dataValue":"shipAddressList","type":""},{"id":1612854187456,"modelValue":"value","dataValue":"selectData","type":""},{"id":1612854187456,"modelValue":"pageSize","dataValue":"pageSize","type":""},{"id":1612854187456,"modelValue":"totalCount","dataValue":"addressTotalCount","type":""},{"id":1612854187456,"modelValue":"currentPage","dataValue":"currentPage","type":""}],"1612854599723":[{"id":1612854599723,"modelValue":"value","dataValue":"staff_name","type":""}]}
                 },
                 /* 选中的数据 */
                 'selectData': ``,
@@ -65,6 +65,12 @@
             },
             /* 总条数 */
             'addressTotalCount': {
+                'default': () => {
+                    return 1
+                }
+            },
+            /* 当前页面 */
+            'currentPage': {
                 'default': () => {
                     return 1
                 }
@@ -125,9 +131,9 @@
                 const ctx = this;
                 console.log(row.staff_id)
                 ctx.open({
-                    title:'编辑配送员信息',
+                    title:'编辑定价信息',
                     path:'/edit/shipAddress',
-                    component:'GRP/editshipAddressSubPage',
+                    component:'GRP/editShipAddressSubPage',
                     type:'SUB',
                     closeOnClickModal:false,
                     params:{id:row.id},
@@ -141,7 +147,7 @@
                         //下一步的行为
                             if(res.success){
                                 ctx.$notify({
-                                    title: '编辑定价信息成功',
+                                    title: '编辑定价信息',
                                     type: 'success'
                                 });
                                ctx.getStaffInfo(ctx.currentPage);
@@ -175,15 +181,14 @@
                 const ctx = this;
                 
                 ctx.open({
-                    title:'新增权限',
+                    title:'新增定价',
                     path:'/add/resSort',
-                    component:'GRP/editshipAddressSubPage',
+                    component:'GRP/editShipAddressSubPage',
                     type:'SUB',
                     closeOnClickModal:false,
                     hideConfirmBtn:true, 
                     hideCancelBtn:true, 
                     confirmCallback:(params) => { 
-                       
                         ctx.$axios.post(`${axios.server}/shipAddressInfo/add`, params).then(res => {
                             //下一步的行为
                             if(res.success){
@@ -191,7 +196,7 @@
                                     title: '新增成功',
                                     type: 'success'
                                 });
-                                ctx.getresSortInfo(ctx.currentPage);
+                                ctx.getshipAddressInfo(ctx.currentPage);
                             }else{
                                 ctx.$notify({
                                     title: res.msg,
@@ -215,6 +220,8 @@
             },
             /**
              *  新增
+             *  @param $event $event
+             *  @param vueIns vueIns
              */
             v2_component_btn_1614938324743($event, vueIns=this.$refs['v2ComponentBtn_3']) {
                 //*====AGREE-ACTION-START====*//
@@ -234,19 +241,46 @@
                 ctx.openAddShipAddressPage()
                 //*++++AGREE-CODE-END++++*//
                 //*====AGREE-ACTION-END====*//
-                
-                
             },
             /**
              *  删除方法
+             *  @param 新参数 index
+             *  @param 新参数 row
              */
-            deleteMethod() {
+            deleteMethod(index, row) {
                 // 函数内直接用 ctx 代替 this 访问 Vue 页面的数据。
                 /** @type {V2ViewType} */
                 const ctx = this;
+                console.log(ctx.selectItem)
+                let list= ctx.selectData.map(function(item){
+                      return item.id
+                })
+                console.log()
+                ctx.$axios.post(`${axios.server}/shipAddressInfo/delete`,JSON.stringify(list),{
+                  headers: {
+                        'Content-type':'application/json'
+                        }
+                }).then(res=>{
+                    if(res.success){
+                            ctx.$notify({
+                                type: 'success',
+                                title: '删除成功'
+                            });
+                            ctx.getshipAddressInfo(ctx.currentPage);
+                        }else{
+                            this.$notify({
+                                title: res.msg,
+                                type: 'error'
+                            });
+                        }
+                }).catch(error=>{
+                  
+                })
             },
             /**
              *  v2_component_btn_1614938619438
+             *  @param $event $event
+             *  @param vueIns vueIns
              */
             v2_component_btn_1614938619438($event, vueIns=this.$refs['v2ComponentBtn_4']) {
                 //*====AGREE-ACTION-START====*//
@@ -266,8 +300,6 @@
                 ctx.deleteMethod()
                 //*++++AGREE-CODE-END++++*//
                 //*====AGREE-ACTION-END====*//
-                
-                
             }
         },
         beforeCreate() {

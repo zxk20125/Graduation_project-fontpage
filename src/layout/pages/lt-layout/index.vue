@@ -15,7 +15,7 @@
           </div>
         </el-col>
         <el-col :span="12" class="aweb-userinfo">
-          <el-tooltip
+          <!-- <el-tooltip
             effect="dark"
             placement="top"
             v-for="item in caseList"
@@ -28,7 +28,7 @@
               class="aweb-download-btn"
               @click="openMarket(item.doc)"
             ></el-button>
-          </el-tooltip>
+          </el-tooltip> -->
 
           <el-dropdown trigger="hover">
             <span class="el-dropdown-link aweb-userinfo-inner">
@@ -36,8 +36,8 @@
               {{sysUserName}}
             </span>
             <el-dropdown-menu slot="dropdown">
-              <el-dropdown-item>我的消息</el-dropdown-item>
-              <el-dropdown-item>设置</el-dropdown-item>
+              <!-- <el-dropdown-item>我的消息</el-dropdown-item>
+              <el-dropdown-item>设置</el-dropdown-item> -->
               <el-dropdown-item divided @click.native="logout">退出登录</el-dropdown-item>
             </el-dropdown-menu>
           </el-dropdown>
@@ -127,7 +127,7 @@ export default {
     },
     sysUserAvatar() {
       console.log(this.$store.state.user.avatar);
-      return this.$store.state.user.avatar;
+      return "../img/user.jpg";
     },
     logoSrc(){
       return this.$store.getters.logo||"../img/agree-logo.png"

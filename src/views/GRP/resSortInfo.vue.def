@@ -11,8 +11,7 @@
                         "component": "v2-component-btn",
                         "id": 1614602925529,
                         "customClass": [
-                            "v2-component-btn-1614602925529",
-                            ""
+                            "v2-component-btn-1614602925529"
                         ],
                         "commonStyle": {
                             "align-self": "auto",
@@ -20,15 +19,14 @@
                             "flex-shrink": 0
                         },
                         "props": [
-                            "theme",
                             "disabled",
                             "loading",
                             "btnName",
+                            "leftIcon",
                             "rightIcon",
                             "shape",
-                            "if",
-                            "leftIcon",
                             "visible",
+                            "if",
                             "customClass"
                         ],
                         "theme": {
@@ -79,19 +77,18 @@
                                 "commonStyle": {
                                     "align-self": "auto",
                                     "margin-right": "20px",
-                                    "flex-grow": 0,
-                                    "flex-shrink": 0
+                                    "flex-shrink": 0,
+                                    "flex-grow": 0
                                 },
                                 "props": [
-                                    "theme",
                                     "disabled",
                                     "loading",
                                     "btnName",
+                                    "leftIcon",
                                     "rightIcon",
                                     "shape",
-                                    "if",
-                                    "leftIcon",
                                     "visible",
+                                    "if",
                                     "customClass"
                                 ],
                                 "theme": {
@@ -146,8 +143,8 @@
                             "height": "auto"
                         },
                         "props": [
-                            "if",
                             "visible",
+                            "if",
                             "element-loading-text",
                             "element-loading-spinner",
                             "element-loading-background",
@@ -228,18 +225,17 @@
                     "height": "816.00px",
                     "margin-left": "0",
                     "width": "calc(100% - 20px)",
-                    "flex-shrink": 0
+                    "flex-shrink": 0,
+                    "border-radius": "0px",
+                    "opacity": 1
                 },
                 "props": [
-                    "setPageCallback",
-                    "toolBar",
-                    "tableData",
-                    "pageSize",
-                    "totalCount",
-                    "theme",
                     "tooltipEffect",
                     "columns",
+                    "tableData",
                     "selection",
+                    "radioSelect",
+                    "value",
                     "selectionLocation",
                     "tHeight",
                     "tMaxHeight",
@@ -247,22 +243,23 @@
                     "loading",
                     "indexLocation",
                     "openPage",
+                    "pagerCount",
+                    "pageSizes",
+                    "pageSize",
                     "openSetPageCallback",
+                    "setPageCallback",
+                    "currentPage",
+                    "totalCount",
+                    "toolBar",
                     "toolTitle",
                     "toolHeaderAlign",
                     "toolLocation",
                     "toolWidth",
                     "toolBtns",
                     "expand",
-                    "if",
-                    "value.sync",
-                    "radioSelect",
-                    "value",
-                    "pagerCount",
-                    "pageSizes",
-                    "currentPage",
                     "expandMap",
                     "visible",
+                    "if",
                     "customClass"
                 ],
                 "setPageCallback": "getresSortInfo",
@@ -388,14 +385,16 @@
                     "",
                     "animated"
                 ],
-                "value": "${selectData}"
+                "value": "${selectData}",
+                "currentPage": "${currentPage}"
             }
         ],
         "component": "v2Container",
         "id": "root",
         "commonStyle": {
-            "flex-shrink": "0",
-            "box-sizing": "border-box"
+            "flex-shrink": 0,
+            "box-sizing": "border-box",
+            "flex-grow": 0
         },
         "customClass": [],
         "$ref": "v2Container_root",
@@ -447,7 +446,7 @@
             {
                 "name": "openEditresSortPage",
                 "desp": "打开编辑子页面",
-                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\nctx.open({\n    title:'编辑配送员信息',\n    path:'/edit/resSort',\n    component:'GRP/editresSortSubPage',\n    type:'SUB',\n    closeOnClickModal:false,\n    params:{id:row.id},\n    hideConfirmBtn:true, \n    hideCancelBtn:true,\n    width:\"650px\",\n    height:\"550px\",\n    closeOnClickModal: true,\n    confirmCallback:(params) => { \n        ctx.$axios.post(`${axios.server}/resSortInfo/update`, params).then(res => {\n        //下一步的行为\n            if(res.success){\n                ctx.$notify({\n                    title: '编辑定价信息成功',\n                    type: 'success'\n                });\n               ctx.getStaffInfo(ctx.currentPage);\n                \n            }else{\n                ctx.$notify({\n                    title: res.msg,\n                    type: 'error'\n                });\n               \n            }\n        }).catch(function (error) {\n            console.log(error);\n            ctx.$notify({\n                title: error.msg || '编辑失败',\n                type: 'error'\n            });\n        });\n       \n    },\n    cancelCallback:(e) => {\n        console.log('点击取消')\n    }\n})",
+                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\nctx.open({\n    title:'编辑定价信息',\n    path:'/edit/resSort',\n    component:'GRP/editResSortSubPage',\n    type:'SUB',\n    closeOnClickModal:false,\n    params:{id:row.id},\n    hideConfirmBtn:true, \n    hideCancelBtn:true,\n    width:\"650px\",\n    height:\"550px\",\n    closeOnClickModal: true,\n    confirmCallback:(params) => { \n        ctx.$axios.post(`${axios.server}/resSortInfo/update`, params).then(res => {\n        //下一步的行为\n            if(res.success){\n                ctx.$notify({\n                    title: '编辑定价信息成功',\n                    type: 'success'\n                });\n               ctx.getresSortInfo(ctx.currentPage);\n                \n            }else{\n                ctx.$notify({\n                    title: res.msg,\n                    type: 'error'\n                });\n               \n            }\n        }).catch(function (error) {\n            console.log(error);\n            ctx.$notify({\n                title: error.msg || '编辑失败',\n                type: 'error'\n            });\n        });\n       \n    },\n    cancelCallback:(e) => {\n        console.log('点击取消')\n    }\n})",
                 "params": [
                     {
                         "name": "index",
@@ -464,7 +463,7 @@
             {
                 "name": "deleteMethod",
                 "desp": "删除方法",
-                "code": "// 函数内直接用 ctx 代替 this 访问 Vue 页面的数据。\n/** @type {V2ViewType} */\nconst ctx = this;",
+                "code": "// 函数内直接用 ctx 代替 this 访问 Vue 页面的数据。\n/** @type {V2ViewType} */\nconst ctx = this;\nconsole.log(ctx.selectItem)\nlet list= ctx.selectData.map(function(item){\n      return item.id\n})\nconsole.log()\nctx.$axios.post(`${axios.server}/resSortInfo/delete`,JSON.stringify(list),{\n  headers: {\n        'Content-type':'application/json'\n        }\n}).then(res=>{\n    if(res.success){\n            ctx.$notify({\n                type: 'success',\n                title: '删除成功'\n            });\n            ctx.getresSortInfo(ctx.currentPage);\n        }else{\n            this.$notify({\n                title: res.msg,\n                type: 'error'\n            });\n        }\n}).catch(error=>{\n  \n})",
                 "params": [],
                 "isEvent": false,
                 "custom": true
@@ -490,8 +489,17 @@
             {
                 "name": "v2_component_btn_1614936098166",
                 "desp": "新增",
-                "code": "//*====AGREE-ACTION-START====*//\n//*+AGREE-CONFIG-*//\n//{\n//\t\"name\": \"custom\",\n//\t\"params\": {}\n//}\n//*-AGREE-CONFIG+*//\n//*++++AGREE-CODE-START++++*//\n/**\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\n**/\n\n//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\nctx.openEditresSortPage()\n//*++++AGREE-CODE-END++++*//\n//*====AGREE-ACTION-END====*//\n\n",
-                "params": [],
+                "code": "//*====AGREE-ACTION-START====*//\n//*+AGREE-CONFIG-*//\n//{\n//\t\"name\": \"custom\",\n//\t\"params\": {}\n//}\n//*-AGREE-CONFIG+*//\n//*++++AGREE-CODE-START++++*//\n/**\n* 更多其他参数可以参考element-ui官网:https://element.eleme.cn/#/zh-CN\n**/\n\n//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\nctx.openAddresSortPage()\n//*++++AGREE-CODE-END++++*//\n//*====AGREE-ACTION-END====*//",
+                "params": [
+                    {
+                        "name": "$event",
+                        "desp": "$event"
+                    },
+                    {
+                        "name": "vueIns",
+                        "desp": "vueIns"
+                    }
+                ],
                 "isEvent": true,
                 "custom": true,
                 "id": 1614936098166,
@@ -500,8 +508,8 @@
             },
             {
                 "name": "openAddresSortPage",
-                "desp": "打开新增子页面",
-                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\n\nctx.open({\n    title:'新增权限',\n    path:'/add/resSort',\n    component:'GRP/editresSortSubPage',\n    type:'SUB',\n    closeOnClickModal:false,\n    hideConfirmBtn:true, \n    hideCancelBtn:true, \n    confirmCallback:(params) => { \n       \n        ctx.$axios.post(`${axios.server}/resSortInfo/add`, params).then(res => {\n            //下一步的行为\n            if(res.success){\n                ctx.$notify({\n                    title: '新增权限成功',\n                    type: 'success'\n                });\n                ctx.getresSortInfo(ctx.currentPage);\n            }else{\n                ctx.$notify({\n                    title: res.msg,\n                    type: 'error'\n                });\n\n            }\n        }).catch(function (error) {\n            console.log(error);\n            ctx.$notify({\n                    title: error.msg || '新增失败',\n                    type: 'error'\n                });\n        });   \n  \n    },\n    cancelCallback:(e) => {\n        console.log('点击取消')\n    }\n})",
+                "desp": "打开新增页面",
+                "code": "//函数内直接用ctx代替this访问vue页面的数据。\nconst ctx = this;\n\nctx.open({\n    title:'新增定价',\n    path:'/add/resSort',\n    component:'GRP/editResSortSubPage',\n    type:'SUB',\n    closeOnClickModal:false,\n    hideConfirmBtn:true, \n    hideCancelBtn:true, \n    confirmCallback:(params) => { \n        ctx.$axios.post(`${axios.server}/resSortInfo/add`, params).then(res => {\n            //下一步的行为\n            if(res.success){\n                ctx.$notify({\n                    title: '新增成功',\n                    type: 'success'\n                });\n                ctx.getresSortInfo(ctx.currentPage);\n            }else{\n                ctx.$notify({\n                    title: res.msg,\n                    type: 'error'\n                });\n\n            }\n        }).catch(function (error) {\n            console.log(error);\n            ctx.$notify({\n                    title: error.msg || '新增失败',\n                    type: 'error'\n                });\n        });   \n  \n    },\n    cancelCallback:(e) => {\n        console.log('点击取消')\n    }\n})",
                 "params": [],
                 "isEvent": false,
                 "custom": true
@@ -634,6 +642,12 @@
                     "id": 1612854187456,
                     "modelValue": "totalCount",
                     "dataValue": "resSortTotalCount",
+                    "type": ""
+                },
+                {
+                    "id": 1612854187456,
+                    "modelValue": "currentPage",
+                    "dataValue": "currentPage",
                     "type": ""
                 }
             ],

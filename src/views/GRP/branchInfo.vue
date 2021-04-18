@@ -151,7 +151,7 @@
                 ctx.open({
                     title:'编辑网点信息',
                     path:'/edit/Branch',
-                    component:'GRP/editbranchSubPage',
+                    component:'GRP/editBranchSubPage',
                     type:'SUB',
                     closeOnClickModal:false,
                     params:{id:row.id},
